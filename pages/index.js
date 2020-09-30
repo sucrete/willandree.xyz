@@ -19,6 +19,14 @@ export default function Home() {
             <br />
           </p>
         </section>
+        <section>
+          <p>
+            <span className="TITLE2">Will Andrée</span>
+
+            <br />
+            <span className="dev">developer</span>
+          </p>
+        </section>
       </main>
     </div>
   );

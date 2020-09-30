@@ -4,10 +4,6 @@
 }
 
 body {
-  margin: 0;
-}
-
-body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -18,6 +14,8 @@ body {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -29,7 +27,17 @@ body {
 
 main {
   margin: 0 auto;
-  width: 90vw;
+  width: clamp(80vw, 90vw, 95vw);
+}
+
+main section:first-child {
+  background-color: yellow;
+  padding: 3rem;
+}
+
+main section:last-child {
+  background-color: #413d30;
+  padding: 3rem;
 }
 
 .TITLE {
@@ -37,6 +45,21 @@ main {
   font-size: 10em;
   text-transform: uppercase;
   font-variation-settings: "susi" 90;
+  color: #353591;
+}
+
+.TITLE2 {
+  font-family: "mincho";
+  font-size: 8em;
+  text-transform: uppercase;
+  color: #e0dace;
+}
+
+.dev {
+  font-family: "sohne";
+  font-size: 5em;
+  color: #11100c;
+  text-transform: uppercase;
 }
 
 @font-face {
@@ -47,5 +70,55 @@ main {
 @font-face {
   font-family: "chickenshop";
   src: url("./fonts/CHICKENSHOP.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "mincho";
+  src: url("./fonts/MINCHO.ttf");
+}
+
+@font-face {
+  font-family: "sohne";
+  src: url("./fonts/Sohne-Extralight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "bossa regular";
+  src: url("./fonts/Bossa-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "bossa medium";
+  src: url("./fonts/Bossa-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "bossa light";
+  src: url("./fonts/Bossa-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "bossa ext regular";
+  src: url("./fonts/Bossa-ExtendedRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "bossa ext medium";
+  src: url("./fonts/Bossa-ExtendedMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "bossa exp regular";
+  src: url("./fonts/Bossa-ExpandedRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "bossa exp regular";
+  src: url("./fonts/Bossa-ExpandedMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "bossa exp light";
+  src: url("./fonts/Bossa-ExpandedLight.otf") format("opentype");
 }
 /*# sourceMappingURL=globals.css.map */

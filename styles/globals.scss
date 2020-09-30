@@ -7,21 +7,18 @@
   //   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  margin: 0;
-}
-body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
-  // webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
 }
 
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .container {
   margin: 25px;
@@ -32,17 +29,39 @@ body {
 
 main {
   margin: 0 auto;
-  width: max(90vw, min(95vw, 90vw));
+  // clamp(MIN, VAL, MAX)
+  // MIN for larger screens
+  // MAX for smaller screens
+  // width: max(75vw, min(90vw, 98vw));
+  width: clamp(80vw, 90vw, 95vw);
+  section:first-child {
+    background-color: yellow;
+    padding: 3rem;
+  }
+  section:last-child {
+    background-color: rgb(65, 61, 48);
+    padding: 3rem;
+  }
 }
 .TITLE {
   font-family: "chickenshop";
   font-size: 10em;
   text-transform: uppercase;
   font-variation-settings: "susi" 90;
-  //   color: rgb(53, 53, 145);
+  color: rgb(53, 53, 145);
   //   letter-spacing: 0.005em;
-  //   -webkit-font-smoothing: antialiased;
-  //   -moz-osx-font-smoothing: grayscale;
+}
+.TITLE2 {
+  font-family: "mincho";
+  font-size: 8em;
+  text-transform: uppercase;
+  color: rgb(224, 218, 206);
+}
+.dev {
+  font-family: "sohne";
+  font-size: 5em;
+  color: rgb(17, 16, 12);
+  text-transform: uppercase;
 }
 @font-face {
   font-family: "manifold regular";
@@ -52,4 +71,46 @@ main {
 @font-face {
   font-family: "chickenshop";
   src: url("./fonts/CHICKENSHOP.woff2") format("woff2");
+}
+@font-face {
+  font-family: "mincho";
+  src: url("./fonts/MINCHO.ttf");
+}
+
+@font-face {
+  font-family: "sohne";
+  src: url("./fonts/Sohne-Extralight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "bossa regular";
+  src: url("./fonts/Bossa-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "bossa medium";
+  src: url("./fonts/Bossa-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "bossa light";
+  src: url("./fonts/Bossa-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "bossa ext regular";
+  src: url("./fonts/Bossa-ExtendedRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "bossa ext medium";
+  src: url("./fonts/Bossa-ExtendedMedium.otf") format("opentype");
+}
+@font-face {
+  font-family: "bossa exp regular";
+  src: url("./fonts/Bossa-ExpandedRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "bossa exp regular";
+  src: url("./fonts/Bossa-ExpandedMedium.otf") format("opentype");
+}
+@font-face {
+  font-family: "bossa exp light";
+  src: url("./fonts/Bossa-ExpandedLight.otf") format("opentype");
 }
