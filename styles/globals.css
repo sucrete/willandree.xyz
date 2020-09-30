@@ -1,43 +1,23 @@
 .hello {
-  font-family: "manifold regular", monospace;
+  font-family: "manifold", monospace;
   font-size: 2em;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-  margin: 25px;
-  background-color: azure;
-  border-radius: 5px;
-  padding: 25px;
-}
-
 main {
+  border-radius: 5px;
   margin: 0 auto;
-  width: clamp(80vw, 90vw, 95vw);
+  width: 100vw;
 }
 
-main section:first-child {
-  background-color: yellow;
-  padding: 3rem;
-}
-
-main section:last-child {
+main section {
   background-color: #413d30;
   padding: 3rem;
+}
+
+.title {
+  font-size: 10em;
+  color: #e0dace;
+  text-transform: uppercase;
 }
 
 .TITLE {
@@ -50,20 +30,70 @@ main section:last-child {
 
 .TITLE2 {
   font-family: "mincho";
-  font-size: 8em;
-  text-transform: uppercase;
-  color: #e0dace;
+}
+
+.TITLE3 {
+  font-family: "bossa regular";
+}
+
+.TITLE4 {
+  font-family: "bossa medium";
+}
+
+.TITLE5 {
+  font-family: "bossa light";
+}
+
+.TITLE6 {
+  font-family: "bossa ext regular";
+}
+
+.TITLE7 {
+  font-family: "bossa ext medium";
+}
+
+.TITLE8 {
+  font-family: "bossa exp regular";
+}
+
+.TITLE9 {
+  font-family: "bossa exp medium";
+}
+
+.TITLE10 {
+  font-family: "bossa exp light";
+}
+
+.TITLE11 {
+  font-family: "pressura";
+}
+
+.TITLE12 {
+  font-family: "pressura";
+  font-size: 1.5em;
+  text-transform: unset;
+}
+
+.TITLE13 {
+  font-family: "rome";
+  text-transform: unset;
+}
+
+.TITLE14 {
+  font-family: "rome";
+  font-size: 10em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .dev {
-  font-family: "sohne";
+  font-family: "manifold";
   font-size: 5em;
-  color: #11100c;
-  text-transform: uppercase;
+  color: #d8c060;
 }
 
 @font-face {
-  font-family: "manifold regular";
+  font-family: "manifold";
   src: url("./fonts/Manifold_Sans-Regular.woff2") format("woff2");
 }
 
@@ -120,5 +150,35 @@ main section:last-child {
 @font-face {
   font-family: "bossa exp light";
   src: url("./fonts/Bossa-ExpandedLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "pressura";
+  src: url("./fonts/Pressura-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "tiempos";
+  src: url("./fonts/Tiempos.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "rome";
+  src: url("./fonts/Rome.otf") format("opentype");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 /*# sourceMappingURL=globals.css.map */

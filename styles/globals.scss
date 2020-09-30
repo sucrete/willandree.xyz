@@ -1,47 +1,25 @@
 .hello {
-  font-family: "manifold regular", monospace;
+  font-family: "manifold", monospace;
   font-size: 2em;
-  //   text-transform: uppercase;
-  //   letter-spacing: 0.03em;
-  //   -webkit-font-smoothing: antialiased;
-  //   -moz-osx-font-smoothing: grayscale;
-}
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-
-* {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.container {
-  margin: 25px;
-  background-color: azure;
-  border-radius: 5px;
-  padding: 25px;
 }
 
 main {
+  border-radius: 5px;
   margin: 0 auto;
   // clamp(MIN, VAL, MAX)
   // MIN for larger screens
   // MAX for smaller screens
   // width: max(75vw, min(90vw, 98vw));
-  width: clamp(80vw, 90vw, 95vw);
-  section:first-child {
-    background-color: yellow;
-    padding: 3rem;
-  }
-  section:last-child {
+  width: 100vw;
+  section {
     background-color: rgb(65, 61, 48);
     padding: 3rem;
   }
+}
+.title {
+  font-size: 10em;
+  color: rgb(224, 218, 206);
+  text-transform: uppercase;
 }
 .TITLE {
   font-family: "chickenshop";
@@ -53,18 +31,58 @@ main {
 }
 .TITLE2 {
   font-family: "mincho";
-  font-size: 8em;
-  text-transform: uppercase;
-  color: rgb(224, 218, 206);
 }
+.TITLE3 {
+  font-family: "bossa regular";
+}
+.TITLE4 {
+  font-family: "bossa medium";
+}
+.TITLE5 {
+  font-family: "bossa light";
+}
+.TITLE6 {
+  font-family: "bossa ext regular";
+}
+.TITLE7 {
+  font-family: "bossa ext medium";
+}
+.TITLE8 {
+  font-family: "bossa exp regular";
+}
+.TITLE9 {
+  font-family: "bossa exp medium";
+}
+.TITLE10 {
+  font-family: "bossa exp light";
+}
+.TITLE11 {
+  font-family: "pressura";
+}
+.TITLE12 {
+  font-family: "pressura";
+  font-size: 1.5em;
+  text-transform: unset;
+}
+.TITLE13 {
+  font-family: "rome";
+  text-transform: unset;
+}
+.TITLE14 {
+  font-family: "rome";
+  font-size: 10em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .dev {
-  font-family: "sohne";
+  font-family: "manifold";
   font-size: 5em;
-  color: rgb(17, 16, 12);
-  text-transform: uppercase;
+  color: rgb(216, 192, 96);
+  // text-transform: uppercase;
 }
 @font-face {
-  font-family: "manifold regular";
+  font-family: "manifold";
   src: url("./fonts/Manifold_Sans-Regular.woff2") format("woff2");
 }
 
@@ -113,4 +131,30 @@ main {
 @font-face {
   font-family: "bossa exp light";
   src: url("./fonts/Bossa-ExpandedLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "pressura";
+  src: url("./fonts/Pressura-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "tiempos";
+  src: url("./fonts/Tiempos.otf") format("opentype");
+}
+@font-face {
+  font-family: "rome";
+  src: url("./fonts/Rome.otf") format("opentype");
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
