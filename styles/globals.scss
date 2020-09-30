@@ -1,8 +1,11 @@
 .hello {
-  font-family: "manifold", monospace;
-  font-size: 2em;
+  font-family: "skelter", monospace;
+  font-size: 28em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgb(65, 61, 48);
 }
-
+$backgroundColor: rgb(224, 218, 206);
 main {
   border-radius: 5px;
   margin: 0 auto;
@@ -10,21 +13,27 @@ main {
   // MIN for larger screens
   // MAX for smaller screens
   // width: max(75vw, min(90vw, 98vw));
-  width: 100vw;
+  width: clamp(98vw, 98.5vw, 99, 5vw);
   section {
     background-color: rgb(65, 61, 48);
+    background-color: $backgroundColor;
     padding: 3rem;
   }
 }
+.container {
+  padding: clamp(2vw, 1.5vw, 0.5vw);
+}
+.window {
+  width: 250px;
+}
 .title {
   font-size: 10em;
-  color: rgb(224, 218, 206);
-  text-transform: uppercase;
+  color: rgb(65, 61, 48);
+  // text-transform: uppercase;
 }
 .TITLE {
   font-family: "chickenshop";
   font-size: 10em;
-  text-transform: uppercase;
   font-variation-settings: "susi" 90;
   color: rgb(53, 53, 145);
   //   letter-spacing: 0.005em;
@@ -81,6 +90,12 @@ main {
   color: rgb(216, 192, 96);
   // text-transform: uppercase;
 }
+
+@font-face {
+  font-family: "skelter";
+  src: url("./fonts/Skelter.woff2") format("woff2");
+}
+
 @font-face {
   font-family: "manifold";
   src: url("./fonts/Manifold_Sans-Regular.woff2") format("woff2");
@@ -151,6 +166,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
+  background-color: rgb(245, 239, 239);
 }
 
 * {

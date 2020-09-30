@@ -18,6 +18,7 @@ export default function Home() {
           <p className="TITLE1 title">
             Will Andrée <br />
             <br />
+            <img className="window" src="/window.svg" />
           </p>
         </section>
         <section>
