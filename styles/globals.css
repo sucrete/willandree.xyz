@@ -23,7 +23,7 @@ main section {
 }
 
 .window {
-  width: 180px;
+  width: 200px;
 }
 
 .window::after {
@@ -39,12 +39,12 @@ main section {
 }
 
 .title {
-  font-size: 4em;
+  font-size: 7em;
   color: #292419;
 }
 
 .TITLE2 {
-  font-family: "mincho";
+  font-family: "corporate";
   letter-spacing: -0.01em;
 }
 
@@ -54,7 +54,7 @@ main section {
 }
 
 .dev {
-  font-family: "pressura light";
+  font-family: "mincho";
   font-size: 3em;
   color: #e7d31a;
 }
@@ -80,68 +80,8 @@ main section {
 }
 
 @font-face {
-  font-family: "sohne";
-  src: url("./fonts/Sohne-Extralight.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "bossa regular";
-  src: url("./fonts/Bossa-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "bossa medium";
-  src: url("./fonts/Bossa-Medium.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "bossa light";
-  src: url("./fonts/Bossa-Light.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "bossa ext regular";
-  src: url("./fonts/Bossa-ExtendedRegular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "bossa ext medium";
-  src: url("./fonts/Bossa-ExtendedMedium.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "bossa exp regular";
-  src: url("./fonts/Bossa-ExpandedRegular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "bossa exp regular";
-  src: url("./fonts/Bossa-ExpandedMedium.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "bossa exp light";
-  src: url("./fonts/Bossa-ExpandedLight.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "pressura light";
-  src: url("./fonts/Pressura-Light.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "pressura regular";
-  src: url("./fonts/Pressura-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "tiempos";
-  src: url("./fonts/Tiempos.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "rome";
-  src: url("./fonts/Rome.otf") format("opentype");
+  font-family: "corporate";
+  src: url("./fonts/Corporate-Light.ttf");
 }
 
 body {
