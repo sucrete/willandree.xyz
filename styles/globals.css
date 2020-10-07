@@ -1,20 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 .hello {
   font-family: "skelter", monospace;
-  font-size: 28em;
+  font-size: 45em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #413d30;
+  color: #e9e8da;
+  line-height: 120%;
 }
 
 main {
   border-radius: 5px;
   margin: 0 auto;
-  width: clamp(98vw, 98.5vw, 99, 5vw);
 }
 
 main section {
-  background-color: #413d30;
-  background-color: #e0dace;
+  background-color: #e2e1d4;
   padding: 3rem;
 }
 
@@ -23,83 +23,40 @@ main section {
 }
 
 .window {
-  width: 250px;
+  width: 180px;
+}
+
+.window::after {
+  content: "big blue";
+  font-family: "skelter";
+  font-size: 1em;
+  color: blue;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  bottom: -50px;
 }
 
 .title {
-  font-size: 10em;
-  color: #413d30;
-}
-
-.TITLE {
-  font-family: "chickenshop";
-  font-size: 10em;
-  font-variation-settings: "susi" 90;
-  color: #353591;
+  font-size: 4em;
+  color: #292419;
 }
 
 .TITLE2 {
   font-family: "mincho";
-}
-
-.TITLE3 {
-  font-family: "bossa regular";
-}
-
-.TITLE4 {
-  font-family: "bossa medium";
-}
-
-.TITLE5 {
-  font-family: "bossa light";
-}
-
-.TITLE6 {
-  font-family: "bossa ext regular";
-}
-
-.TITLE7 {
-  font-family: "bossa ext medium";
-}
-
-.TITLE8 {
-  font-family: "bossa exp regular";
-}
-
-.TITLE9 {
-  font-family: "bossa exp medium";
-}
-
-.TITLE10 {
-  font-family: "bossa exp light";
+  letter-spacing: -0.01em;
 }
 
 .TITLE11 {
-  font-family: "pressura";
-}
-
-.TITLE12 {
-  font-family: "pressura";
-  font-size: 1.5em;
-  text-transform: unset;
-}
-
-.TITLE13 {
-  font-family: "rome";
-  text-transform: unset;
-}
-
-.TITLE14 {
-  font-family: "rome";
-  font-size: 10em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Karla";
+  font-size: 2em;
 }
 
 .dev {
-  font-family: "manifold";
-  font-size: 5em;
-  color: #d8c060;
+  font-family: "pressura light";
+  font-size: 3em;
+  color: #e7d31a;
 }
 
 @font-face {
@@ -119,7 +76,7 @@ main section {
 
 @font-face {
   font-family: "mincho";
-  src: url("./fonts/MINCHO.ttf");
+  src: url("./fonts/MS-Mincho.ttf");
 }
 
 @font-face {
@@ -168,8 +125,13 @@ main section {
 }
 
 @font-face {
-  font-family: "pressura";
+  font-family: "pressura light";
   src: url("./fonts/Pressura-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "pressura regular";
+  src: url("./fonts/Pressura-Regular.otf") format("opentype");
 }
 
 @font-face {
@@ -188,7 +150,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
-  background-color: #f5efef;
+  background-color: #e6e5d7;
 }
 
 * {
