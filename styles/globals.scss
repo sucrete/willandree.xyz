@@ -18,11 +18,15 @@ main {
   // width: clamp(98vw, 98.5vw, 99vw);
   section {
     background-color: $backgroundColor;
-    padding: 3rem;
+    padding: 5rem;
   }
 }
 .container {
   padding: clamp(2vw, 1.5vw, 0.5vw);
+}
+.firstSection {
+  padding-left: 6em;
+  padding-top: 4em;
 }
 .window {
   width: 200px;
@@ -50,14 +54,15 @@ main {
 
 .TITLE11 {
   font-family: "Karla";
-  font-size: 2em;
+  font-size: 1.5em;
+  color: rgb(122, 112, 68);
 }
 
 .dev {
   font-family: "mincho";
   font-size: 3em;
   // letter-spacing: -0.05em;
-  color: rgb(231, 211, 26);
+  color: rgb(177, 162, 28);
   // text-transform: uppercase;
 }
 

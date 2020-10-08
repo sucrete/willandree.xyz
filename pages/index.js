@@ -10,15 +10,15 @@ export default function Home() {
       </Head>
 
       <main>
-        <section style={{ paddingLeft: "5rem" }}>
-          <img className="window" src="/window.svg" />
+        <section className="firstSection">
+          <div className="flowerContainer">
+            <div></div>
+            <img className="window" src="/window.svg" />
+          </div>
         </section>
         <section>
           <p>
             <span className="TITLE2 title">Will Andrée</span>
-
-            <br />
-            <span className="dev">developer</span>
           </p>
         </section>
 

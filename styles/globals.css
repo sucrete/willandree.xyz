@@ -15,11 +15,16 @@ main {
 
 main section {
   background-color: #e2e1d4;
-  padding: 3rem;
+  padding: 5rem;
 }
 
 .container {
   padding: clamp(2vw, 1.5vw, 0.5vw);
+}
+
+.firstSection {
+  padding-left: 6em;
+  padding-top: 4em;
 }
 
 .window {
@@ -50,13 +55,14 @@ main section {
 
 .TITLE11 {
   font-family: "Karla";
-  font-size: 2em;
+  font-size: 1.5em;
+  color: #7a7044;
 }
 
 .dev {
   font-family: "mincho";
   font-size: 3em;
-  color: #e7d31a;
+  color: #b1a21c;
 }
 
 @font-face {
