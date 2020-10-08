@@ -12,7 +12,7 @@ export default function Home() {
       <main>
         <section className="firstSection">
           <div className="flowerContainer">
-            <div></div>
+            <div className="windowBackground"></div>
             <img className="window" src="/window.svg" />
           </div>
         </section>
