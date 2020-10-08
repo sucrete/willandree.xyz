@@ -6,16 +6,10 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>wilondraydotekswhyzee</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/5532_DuckWaddle.gif" />
       </Head>
 
       <main>
-        <section className="firstSection">
-          <div className="flowerContainer">
-            <div className="windowBackground"></div>
-            <img className="window" src="/window.svg" />
-          </div>
-        </section>
         <section>
           <p>
             <span className="TITLE2 title">Will Andrée</span>

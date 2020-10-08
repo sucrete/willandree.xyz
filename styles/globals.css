@@ -25,28 +25,39 @@ main section {
 .firstSection .flowerContainer {
   position: relative;
   left: 0em;
-  top: 9em;
+  top: 1em;
   width: 300px;
-  height: 100%;
+  height: 300px;
 }
 
 .firstSection .flowerContainer .window,
 .firstSection .flowerContainer .windowBackground {
   position: absolute;
-  top: 65%;
-  left: 35%;
+  top: 50%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 280px;
 }
 
 .firstSection .flowerContainer .window {
-  width: 200px;
+  z-index: 3;
+}
+
+.firstSection .flowerContainer .flower {
+  width: 330px;
+  bottom: 40px;
+  left: 51%;
+  z-index: 2;
 }
 
 .firstSection .flowerContainer .windowBackground {
-  width: 200px;
-  height: 300px;
-  background-color: yellowgreen;
+  height: 250px;
+  background: #d4ceca;
+  background-size: 30%;
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .title {

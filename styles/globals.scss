@@ -28,23 +28,54 @@ main {
   .flowerContainer {
     position: relative;
     left: 0em;
-    top: 9em;
+    top: 1em;
     width: 300px;
-    height: 100%;
+    height: 300px;
     .window,
     .windowBackground {
       position: absolute;
-      top: 65%;
-      left: 35%;
+      top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
+      width: 280px;
     }
     .window {
-      width: 200px;
+      z-index: 3;
     }
+    .flower {
+      width: 330px;
+      // visibility: hidden;
+      bottom: 40px;
+      left: 51%;
+      z-index: 2;
+    }
+
     .windowBackground {
-      width: 200px;
-      height: 300px;
-      background-color: yellowgreen;
+      height: 250px;
+      // background-image: linear-gradient(
+      //   to top,
+      //   hsl(32, 14.02%, 79.02%) 0%,
+      //   hsl(32.33, 14.04%, 79.06%) 0.3%,
+      //   hsl(33.27, 14.1%, 79.19%) 1.2%,
+      //   hsl(34.75, 14.19%, 79.38%) 2.7%,
+      //   hsl(36.69, 14.31%, 79.63%) 5%,
+      //   hsl(39.05, 14.46%, 79.94%) 8.1%,
+      //   hsl(41.74, 14.64%, 80.28%) 12.2%,
+      //   hsl(44.7, 14.84%, 80.66%) 17.1%,
+      //   hsl(47.85, 15.06%, 81.05%) 23.1%,
+      //   hsl(51.12, 15.29%, 81.45%) 30.2%,
+      //   hsl(54.43, 15.53%, 81.86%) 38.5%,
+      //   hsl(57.7, 15.78%, 82.25%) 48%,
+      //   hsl(60.83, 16.29%, 82.67%) 58.9%,
+      //   hsl(63.54, 17.46%, 83.15%) 71.1%,
+      //   hsl(65.76, 18.56%, 83.57%) 84.8%,
+      //   hsl(67.5, 19.51%, 83.92%) 100%
+      // );
+      background: rgb(212, 206, 202);
+      background-size: 30%;
+      background-position: 50% 10%;
+      background-repeat: no-repeat;
+      z-index: 1;
     }
   }
 }
