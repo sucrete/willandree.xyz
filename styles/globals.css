@@ -1,85 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
-.hello {
-  font-family: "skelter", monospace;
-  font-size: 45em;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #e9e8da;
-  line-height: 120%;
 }
 
-main {
-  border-radius: 5px;
-  margin: 0 auto;
+.customOverlay {
+  background: #e2e1d4 !important;
+  border: solid clamp(2vw, 1.5vw, 0.5vw) #e6e5d7;
 }
 
-main section {
-  background-color: #e2e1d4;
-  padding: 5rem;
+.customModal {
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+  background-color: #deddce !important;
+  width: clamp(calc(100%-4vw), calc(100%-3.5vw), calc(100%-2.5vw)) !important;
+  max-width: unset !important;
+}
+
+.customModal h2 {
+  color: #292419 !important;
+}
+
+.customModal button {
+  cursor: url("/pointer.png") !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.customModal button svg {
+  fill: #7a7044 !important;
+}
+
+.karla {
+  font-family: "Karla", sans-serif;
+  color: #7a7044;
 }
 
 .container {
   padding: clamp(2vw, 1.5vw, 0.5vw);
 }
 
-.firstSection .flowerContainer {
-  position: relative;
-  left: 0em;
-  top: 1em;
-  width: 300px;
-  height: 300px;
+.container main {
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: #e2e1d4;
+  padding: 5rem 6rem;
 }
 
-.firstSection .flowerContainer .window,
-.firstSection .flowerContainer .windowBackground {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 280px;
-}
-
-.firstSection .flowerContainer .window {
-  z-index: 3;
-}
-
-.firstSection .flowerContainer .flower {
-  width: 330px;
-  bottom: 40px;
-  left: 51%;
-  z-index: 2;
-}
-
-.firstSection .flowerContainer .windowBackground {
-  height: 250px;
-  background: #d4ceca;
-  background-size: 30%;
-  background-position: 50% 10%;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
-.title {
-  font-size: 5em;
+.email {
+  font-family: "chickenshop";
+  font-size: 13em;
+  font-variation-settings: "susi" 70;
   color: #292419;
 }
 
-.TITLE2 {
+.email .greybits {
+  color: #7a7044;
+}
+
+.title {
+  font-size: 4em;
+  color: #292419;
   font-family: "corporate";
-  letter-spacing: -0.01em;
+  line-height: 120%;
+  font-weight: unset;
+}
+
+.clickable {
+  cursor: url("/pointer.png"), pointer;
+  font-size: 1.5em;
 }
 
 .TITLE11 {
   font-family: "Karla";
-  font-size: 1.5em;
+  font-size: 2em;
   color: #7a7044;
-}
-
-.dev {
-  font-family: "mincho";
-  font-size: 3em;
-  color: #b1a21c;
 }
 
 @font-face {
@@ -114,12 +111,5 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
   background-color: #e6e5d7;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 /*# sourceMappingURL=globals.css.map */

@@ -1,5 +1,8 @@
 import Head from "next/head";
 // import window from "../public/window.svg";
+import Header from "../components/Header";
+import Contact from "../components/Contact";
+import Work from "../components/Work";
 
 export default function Home() {
   return (
@@ -10,17 +13,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <section>
-          <p>
-            <span className="TITLE2 title">Will Andrée</span>
-          </p>
-        </section>
-
-        <section>
-          <p>
-            <span className="TITLE11 title">Will Andrée</span>
-          </p>
-        </section>
+        <Header />
+        <Work />
+        <Contact />
       </main>
     </div>
   );

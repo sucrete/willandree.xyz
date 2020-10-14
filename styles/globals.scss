@@ -1,107 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
-.hello {
-  font-family: "skelter", monospace;
-  font-size: 45em;
+$backgroundColor: #e2e1d4;
+$color1: rgb(41, 36, 25);
+$color2: rgb(122, 112, 68);
+* {
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #e9e8da;
-  line-height: 120%;
 }
-$backgroundColor: #e2e1d4;
-main {
-  border-radius: 5px;
-  margin: 0 auto;
+.customOverlay {
+  background: #e2e1d4 !important;
+  border: solid clamp(2vw, 1.5vw, 0.5vw) rgb(230, 229, 215);
+}
+.customModal {
+  box-shadow: unset !important;
+  background-color: darken(#e2e1d4, 2%) !important;
+  width: clamp(calc(100%-4vw), calc(100%-3.5vw), calc(100%-2.5vw)) !important;
+  max-width: unset !important;
+  h2 {
+    color: $color1 !important;
+  }
+  button {
+    cursor: url("/pointer.png") !important;
+    border: none !important;
+    outline: none !important;
+    svg {
+      fill: $color2 !important;
+    }
+  }
+}
+.karla {
+  font-family: "Karla", sans-serif;
+  color: $color2;
+}
+.container {
   // clamp(MIN, VAL, MAX)
   // MIN for larger screens
   // MAX for smaller screens
-  // width: max(75vw, min(90vw, 98vw));
-  // width: clamp(98vw, 98.5vw, 99vw);
-  section {
-    background-color: $backgroundColor;
-    padding: 5rem;
-  }
-}
-.container {
+  // VAL for ideal mid value
   padding: clamp(2vw, 1.5vw, 0.5vw);
-}
-.firstSection {
-  .flowerContainer {
-    position: relative;
-    left: 0em;
-    top: 1em;
-    width: 300px;
-    height: 300px;
-    .window,
-    .windowBackground {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 280px;
-    }
-    .window {
-      z-index: 3;
-    }
-    .flower {
-      width: 330px;
-      // visibility: hidden;
-      bottom: 40px;
-      left: 51%;
-      z-index: 2;
-    }
-
-    .windowBackground {
-      height: 250px;
-      // background-image: linear-gradient(
-      //   to top,
-      //   hsl(32, 14.02%, 79.02%) 0%,
-      //   hsl(32.33, 14.04%, 79.06%) 0.3%,
-      //   hsl(33.27, 14.1%, 79.19%) 1.2%,
-      //   hsl(34.75, 14.19%, 79.38%) 2.7%,
-      //   hsl(36.69, 14.31%, 79.63%) 5%,
-      //   hsl(39.05, 14.46%, 79.94%) 8.1%,
-      //   hsl(41.74, 14.64%, 80.28%) 12.2%,
-      //   hsl(44.7, 14.84%, 80.66%) 17.1%,
-      //   hsl(47.85, 15.06%, 81.05%) 23.1%,
-      //   hsl(51.12, 15.29%, 81.45%) 30.2%,
-      //   hsl(54.43, 15.53%, 81.86%) 38.5%,
-      //   hsl(57.7, 15.78%, 82.25%) 48%,
-      //   hsl(60.83, 16.29%, 82.67%) 58.9%,
-      //   hsl(63.54, 17.46%, 83.15%) 71.1%,
-      //   hsl(65.76, 18.56%, 83.57%) 84.8%,
-      //   hsl(67.5, 19.51%, 83.92%) 100%
-      // );
-      background: rgb(212, 206, 202);
-      background-size: 30%;
-      background-position: 50% 10%;
-      background-repeat: no-repeat;
-      z-index: 1;
+  main {
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: $backgroundColor;
+    padding: 5rem 6rem;
+    section {
     }
   }
 }
-
-.title {
-  font-size: 5em;
+.email {
+  font-family: "chickenshop";
+  font-size: 13em;
+  font-variation-settings: "susi" 70;
   color: rgb(41, 36, 25);
-  // text-transform: uppercase;
+  .greybits {
+    color: rgb(122, 112, 68);
+  }
 }
-.TITLE2 {
+.title {
+  font-size: 4em;
+  color: rgb(41, 36, 25);
   font-family: "corporate";
-  letter-spacing: -0.01em;
+  line-height: 120%;
+  font-weight: unset;
 }
 
+.clickable {
+  cursor: url("/pointer.png"), pointer;
+  font-size: 1.5em;
+}
 .TITLE11 {
   font-family: "Karla";
-  font-size: 1.5em;
-  color: rgb(122, 112, 68);
-}
-
-.dev {
-  font-family: "mincho";
-  font-size: 3em;
-  // letter-spacing: -0.05em;
-  color: rgb(177, 162, 28);
-  // text-transform: uppercase;
+  font-size: 2em;
+  color: $color2;
 }
 
 @font-face {
@@ -135,10 +105,4 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
   background-color: rgb(230, 229, 215);
-}
-
-* {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
