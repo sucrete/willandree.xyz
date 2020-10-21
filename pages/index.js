@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Contact from "../components/Contact";
 import Work from "../components/Work";
+import Info from "../components/Info";
 
 export default function Home() {
   return (
@@ -14,7 +15,11 @@ export default function Home() {
 
       <main>
         <Header />
+        <hr />
         <Work />
+        <hr />
+        <Info />
+        <hr />
         <Contact />
       </main>
     </div>
