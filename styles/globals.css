@@ -4,17 +4,19 @@
   overflow: hidden;
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
+  padding: 0rem !important;
 }
 
 .customModal {
   -webkit-box-shadow: unset !important;
           box-shadow: unset !important;
-  background-color: #292419 !important;
+  background-color: #e2e1d4 !important;
   max-width: unset !important;
-  border-radius: 3px;
-  width: clamp(92vw, 93vw, 95vw) !important;
-  height: clamp(calc(100vh - 8vw), calc(100vh - 7.5vw), calc(100vh - 6vw)) !important;
+  width: 100vw !important;
+  height: 100vh !important;
   overflow: hidden;
+  padding: 0rem !important;
+  margin: 0px !important;
 }
 
 .customModal h1 {
@@ -41,10 +43,10 @@
 }
 
 .header {
-  font-size: 4em;
+  font-size: 5em;
   color: #292419;
   font-family: "corporate";
-  line-height: 120%;
+  line-height: 90%;
   font-weight: unset;
 }
 
@@ -61,23 +63,28 @@
   margin-bottom: 25px;
   margin-top: 0px;
   height: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
 .workItemContainer .workItem {
-  font-family: "pitch regular", sans-serif;
+  font-family: "pano light", sans-serif;
   color: #18160d;
-  font-size: 2.5em;
-  padding: 22px 22px 22px 35px;
+  font-size: 5.5em;
+  padding: 22px 22px 22px 0px;
   width: 100%;
   margin: 0px;
-  background-color: #d8d6c5;
+  line-height: 110%;
   cursor: pointer;
+  display: block;
 }
 
 .workSection {
   width: 100%;
   margin-bottom: 5em;
   margin-top: 7em;
+  display: block;
+  position: relative;
 }
 
 .workSection .workTitle {
@@ -87,8 +94,8 @@
 
 hr {
   border: 0;
-  height: 1px;
-  background: rgba(179, 171, 137, 0.521);
+  height: 2px;
+  background: tomato;
 }
 
 .container {
@@ -104,7 +111,7 @@ hr {
   padding: 5rem 5rem;
 }
 
-main > * {
+.container > * {
   -webkit-animation: 0.8s entranceAnimation ease-out;
           animation: 0.8s entranceAnimation ease-out;
 }
