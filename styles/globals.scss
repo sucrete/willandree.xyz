@@ -22,7 +22,7 @@ $color2: rgb(122, 112, 68);
   padding: 0rem !important;
   margin: 0px !important;
   h1 {
-    color: $backgroundColor !important;
+    color: $color1 !important;
     font-family: "corporate";
     font-size: 4em;
     padding-left: 1em;
@@ -45,7 +45,7 @@ $color2: rgb(122, 112, 68);
 }
 .header {
   font-size: 5em;
-  color: rgb(41, 36, 25);
+  color: tomato;
   font-family: "corporate";
   line-height: 90%;
   font-weight: unset;
@@ -67,7 +67,7 @@ $color2: rgb(122, 112, 68);
   display: block;
   margin: 0 auto;
   .workItem {
-    font-family: "pano light", sans-serif;
+    font-family: "obviously", sans-serif;
     color: darken($color2, 30%);
     font-size: 5.5em;
     padding: 22px 22px 22px 0px;
@@ -77,7 +77,10 @@ $color2: rgb(122, 112, 68);
     // background-color: darken($backgroundColor, 2%);
     cursor: pointer;
     display: block;
+    transition: all 0.7s ease;
+    font-variation-settings: "wght" 200, "wdth" 400;
     &:hover {
+      font-variation-settings: "wght" 400, "wdth" 420;
     }
   }
 }
@@ -94,7 +97,7 @@ $color2: rgb(122, 112, 68);
 hr {
   border: 0;
   height: 2px;
-  background: tomato;
+  background: $color1;
 }
 .container {
   // clamp(MIN, VAL, MAX)
@@ -196,6 +199,19 @@ body {
 @font-face {
   font-family: "pano regular";
   src: url("./fonts/Pano-Regular.otf") format("opentype");
+}
+// @font-face {
+//   font-family: "obviously";
+//   src: url("./fonts/ObviouslyVariable.woff2")
+//       format(‘woff2 supports variations’),
+//     url("./fonts/ObviouslyVariable.woff2") format("woff2-variations");
+//   font-weight: 150 800;
+//   font-display: swap;
+// }
+@font-face {
+  src: url("./fonts/ObviouslyVariable.woff2") format("woff2-variations");
+  font-family: "obviously";
+  font-style: normal;
 }
 
 @keyframes entranceAnimation {

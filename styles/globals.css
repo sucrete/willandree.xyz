@@ -20,7 +20,7 @@
 }
 
 .customModal h1 {
-  color: #e2e1d4 !important;
+  color: #292419 !important;
   font-family: "corporate";
   font-size: 4em;
   padding-left: 1em;
@@ -44,7 +44,7 @@
 
 .header {
   font-size: 5em;
-  color: #292419;
+  color: tomato;
   font-family: "corporate";
   line-height: 90%;
   font-weight: unset;
@@ -68,7 +68,7 @@
 }
 
 .workItemContainer .workItem {
-  font-family: "pano light", sans-serif;
+  font-family: "obviously", sans-serif;
   color: #18160d;
   font-size: 5.5em;
   padding: 22px 22px 22px 0px;
@@ -77,6 +77,13 @@
   line-height: 110%;
   cursor: pointer;
   display: block;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  font-variation-settings: "wght" 200, "wdth" 400;
+}
+
+.workItemContainer .workItem:hover {
+  font-variation-settings: "wght" 400, "wdth" 420;
 }
 
 .workSection {
@@ -95,7 +102,7 @@
 hr {
   border: 0;
   height: 2px;
-  background: tomato;
+  background: #292419;
 }
 
 .container {
@@ -205,6 +212,12 @@ body {
 @font-face {
   font-family: "pano regular";
   src: url("./fonts/Pano-Regular.otf") format("opentype");
+}
+
+@font-face {
+  src: url("./fonts/ObviouslyVariable.woff2") format("woff2-variations");
+  font-family: "obviously";
+  font-style: normal;
 }
 
 @-webkit-keyframes entranceAnimation {
