@@ -81,6 +81,8 @@ class Work extends React.Component {
             onClose={this.onCloseSecondModal}
             center
           >
+            <div className="projectDesignation">project 02</div>
+            <hr className="modalHR" />
             <h1 className="modalHeader">Simple centered modal dos</h1>
           </Modal>
         </div>

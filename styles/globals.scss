@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 $backgroundColor: #e2e1d4;
 $color1: rgb(41, 36, 25);
 $color2: rgb(122, 112, 68);
@@ -21,35 +21,49 @@ $color2: rgb(122, 112, 68);
   overflow: hidden;
   padding: 0rem !important;
   margin: 0px !important;
-  h1 {
+  .projectDesignation {
+    padding: 20px;
+    padding-left: 70px;
+    display: block;
+    font-size: 1em;
+    font-family: "flexa";
+    font-variation-settings: "wght" 300, "wdth" 100;
+    letter-spacing: 0.03em;
+    // text-transform: uppercase;
+  }
+  .modalHR {
+    height: 1px;
+    background-color: rgb(138, 138, 138);
+    margin-block-start: 0px;
+    margin-block-start: 0px;
+  }
+  .modalHeader {
     color: $color1 !important;
     font-family: "corporate";
     font-size: 4em;
     padding-left: 1em;
   }
   button {
-    cursor: url("/pointer.png") !important;
     border: none !important;
     outline: none !important;
     svg {
-      fill: $color2 !important;
+      fill: $color1 !important;
     }
   }
 }
 .sectionHeader {
-  margin-bottom: 3em;
-  height: 70%;
+  // margin-bottom: 2em;
+  height: 600px;
   display: block;
   p {
   }
 }
 .header {
-  font-size: 5em;
-  color: tomato;
+  font-size: 2.5em;
+  color: $color1;
   font-family: "corporate";
   line-height: 90%;
   font-weight: unset;
-
   // text-transform: uppercase;
 }
 .title {
@@ -58,6 +72,7 @@ $color2: rgb(122, 112, 68);
   font-family: "corporate";
   font-weight: unset;
   padding-left: 0.12em;
+  margin-block-start: 0px;
 }
 .workItemContainer {
   width: 100%;
@@ -67,20 +82,22 @@ $color2: rgb(122, 112, 68);
   display: block;
   margin: 0 auto;
   .workItem {
-    font-family: "obviously", sans-serif;
-    color: darken($color2, 30%);
-    font-size: 5.5em;
-    padding: 22px 22px 22px 0px;
+    font-family: "flexa", sans-serif;
+    // font-style: normal;
+    color: darken($color2, 25%);
+    font-size: 4.5em;
+    padding: 22px 22px 22px 20px;
     width: 100%;
     margin: 0px;
     line-height: 110%;
     // background-color: darken($backgroundColor, 2%);
     cursor: pointer;
     display: block;
-    transition: all 0.7s ease;
-    font-variation-settings: "wght" 200, "wdth" 400;
+    transition: all 0.3s ease;
+    font-variation-settings: "wght" 200, "wdth" 150;
     &:hover {
-      font-variation-settings: "wght" 400, "wdth" 420;
+      font-variation-settings: "wght" 350, "wdth" 150;
+      color: #3984ca;
     }
   }
 }
@@ -97,7 +114,7 @@ $color2: rgb(122, 112, 68);
 hr {
   border: 0;
   height: 2px;
-  background: $color1;
+  background: rgb(214, 205, 184);
 }
 .container {
   // clamp(MIN, VAL, MAX)
@@ -143,74 +160,12 @@ body {
 }
 
 @font-face {
-  font-family: "skelter";
-  src: url("./fonts/Skelter.woff2") format("woff2");
-}
-
-@font-face {
   font-family: "corporate";
   src: url("./fonts/Corporate-Light.ttf");
 }
-
 @font-face {
-  font-family: "space";
-  src: url("./fonts/SpaceGrotesk-Light.otf") format("opentype");
-}
-@font-face {
-  font-family: "space regular";
-  src: url("./fonts/SpaceGrotesk-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "cinetype light";
-  src: url("./fonts/GT-Cinetype-Trial-Light.otf") format("opentype");
-}
-@font-face {
-  font-family: "cinetype regular";
-  src: url("./fonts/GT-Cinetype-Trial-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "haptik";
-  src: url("./fonts/GT-Haptik-Trial-Light.otf") format("opentype");
-}
-@font-face {
-  font-family: "haptik rotalic";
-  src: url("./fonts/GT-Haptik-Trial-Light-Rotalic.otf") format("opentype");
-}
-@font-face {
-  font-family: "syne";
-  src: url("./fonts/Syne-Regular.ttf");
-}
-@font-face {
-  font-family: "syne extra";
-  src: url("./fonts/Syne-Extra.ttf");
-}
-@font-face {
-  font-family: "pitch";
-  src: url("./fonts/PitchSansTest-Light.otf") format("opentype");
-}
-@font-face {
-  font-family: "pitch regular";
-  src: url("./fonts/PitchSansTest-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "pano light";
-  src: url("./fonts/Pano-Light.otf") format("opentype");
-}
-@font-face {
-  font-family: "pano regular";
-  src: url("./fonts/Pano-Regular.otf") format("opentype");
-}
-// @font-face {
-//   font-family: "obviously";
-//   src: url("./fonts/ObviouslyVariable.woff2")
-//       format(‘woff2 supports variations’),
-//     url("./fonts/ObviouslyVariable.woff2") format("woff2-variations");
-//   font-weight: 150 800;
-//   font-display: swap;
-// }
-@font-face {
-  src: url("./fonts/ObviouslyVariable.woff2") format("woff2-variations");
-  font-family: "obviously";
+  src: url("./fonts/GT_Flexa_VAR.woff2") format("woff2-variations");
+  font-family: "flexa";
   font-style: normal;
 }
 
