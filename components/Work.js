@@ -49,12 +49,11 @@ class Work extends React.Component {
     } = this.state;
     return (
       <section className="workSection">
-        <h1 className="workTitle title"> Work</h1>
-        <div className="workItemContainer">
-          <div className=" workItem" onClick={this.onOpenFirstModal}>
+        {/* <h1 className="workTitle title"> Work</h1> */}
+        <span className="workItemContainer">
+          <span className=" workItem" onClick={this.onOpenFirstModal}>
             dumpTRUCK
-          </div>
-          <br />
+          </span>
           <Modal
             classNames={{
               overlay: "customOverlay",
@@ -64,14 +63,17 @@ class Work extends React.Component {
             onClose={this.onCloseFirstModal}
             center
           >
-            <h1 className="modalHeader">Simple centered modal</h1>
+            <div className="projectDesignation">i</div>
+            <hr className="modalHR" />
+            <div className="modalBody">
+              <h1 className="modalHeader">dumpTRUCK</h1>
+            </div>
           </Modal>
-        </div>
-        <div className="workItemContainer">
-          <div className=" workItem" onClick={this.onOpenSecondModal}>
-            MaxRosen.town
-          </div>{" "}
-          <br />
+        </span>
+        <span className="workItemContainer">
+          <span className=" workItem" onClick={this.onOpenSecondModal}>
+            maxrosen.town
+          </span>
           <Modal
             classNames={{
               overlay: "customOverlay",
@@ -81,16 +83,17 @@ class Work extends React.Component {
             onClose={this.onCloseSecondModal}
             center
           >
-            <div className="projectDesignation">project 02</div>
+            <div className="projectDesignation">ii</div>
             <hr className="modalHR" />
-            <h1 className="modalHeader">Simple centered modal dos</h1>
+            <div className="modalBody">
+              <h1 className="modalHeader">MaxRosen.town</h1>
+            </div>
           </Modal>
-        </div>
-        <div className="workItemContainer">
-          <div className=" workItem" onClick={this.onOpenThirdModal}>
+        </span>
+        <span className="workItemContainer">
+          <span className=" workItem" onClick={this.onOpenThirdModal}>
             Old Town Lofts
-          </div>{" "}
-          <br />
+          </span>
           <Modal
             classNames={{
               overlay: "customOverlay",
@@ -100,14 +103,22 @@ class Work extends React.Component {
             onClose={this.onCloseThirdModal}
             center
           >
-            <h1 className="modalHeader">Simple centered modal tres</h1>
+            <div className="projectDesignation">iii</div>
+            <hr className="modalHR" />
+            <div className="modalBody">
+              <h1 className="modalHeader">
+                Old Town Lofts{" "}
+                <span style={{ fontSize: ".5em", marginLeft: "0px" }}>
+                  prototype
+                </span>
+              </h1>
+            </div>
           </Modal>
-        </div>
-        <div className="workItemContainer">
-          <div className=" workItem" onClick={this.onOpenFourthModal}>
-            CalvinTodd.com
-          </div>{" "}
-          <br />
+        </span>
+        <span className="workItemContainer">
+          <span className=" workItem" onClick={this.onOpenFourthModal}>
+            calvintodd.com
+          </span>
           <Modal
             classNames={{
               overlay: "customOverlay",
@@ -117,14 +128,17 @@ class Work extends React.Component {
             onClose={this.onCloseFourthModal}
             center
           >
-            <h1 className="modalHeader">Simple centered modal quatro</h1>
+            <div className="projectDesignation">iv</div>
+            <hr className="modalHR" />
+            <div className="modalBody">
+              <h1 className="modalHeader">CalvinTodd.com</h1>
+            </div>
           </Modal>
-        </div>
-        <div className="workItemContainer">
-          <div className=" workItem" onClick={this.onOpenFifthModal}>
+        </span>
+        <span className="workItemContainer">
+          <span className=" workItem" onClick={this.onOpenFifthModal}>
             The Voter's Companion
-          </div>{" "}
-          <br />
+          </span>
           <Modal
             classNames={{
               overlay: "customOverlay",
@@ -134,9 +148,13 @@ class Work extends React.Component {
             onClose={this.onCloseFifthModal}
             center
           >
-            <h1 className="modalHeader">Simple centered modal cinco</h1>
+            <div className="projectDesignation">v</div>
+            <hr className="modalHR" />
+            <div className="modalBody">
+              <h1 className="modalHeader">The Voter's Companion</h1>
+            </div>
           </Modal>
-        </div>
+        </span>
       </section>
     );
   }
