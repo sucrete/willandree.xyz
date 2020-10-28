@@ -89,14 +89,14 @@ $color2: rgb(122, 112, 68);
   margin-block-start: 0px;
 }
 .workSection {
-  width: 60%;
+  width: 70%;
   margin-bottom: 5em;
   height: 80vh;
   position: relative;
   .workSectionBody {
     position: absolute;
     left: 0px;
-    bottom: 0px;
+    bottom: -700px;
     .workContainer {
       font-family: "flexa";
       color: rgb(26, 25, 24);
@@ -147,6 +147,43 @@ $color2: rgb(122, 112, 68);
   }
   // background: black;
 }
+.trails-main {
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    display: inline-block;
+    .trails-text {
+      display: inline-block !important;
+      div {
+        display: flex;
+        position: relative;
+        .workItemContainer {
+          border: solid 2px rgb(26, 25, 24);
+          border-radius: 55px;
+          padding: 22px 40px;
+          margin: 2px 2px 2px 0px;
+          white-space: nowrap;
+          position: relative;
+          transition: all 0.15s ease-in-out;
+          background: lighten($backgroundColor, 7%);
+          z-index: 6;
+          .workItem {
+            font-family: "flexa", sans-serif;
+            color: rgb(26, 25, 24);
+            font-size: 2.2rem;
+            line-height: 110%;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+            font-variation-settings: "wght" 275, "wdth" 115;
+            letter-spacing: -0.08rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
 hr {
   border: 0;
   height: 1px;

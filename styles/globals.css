@@ -82,7 +82,7 @@
 }
 
 .workSection {
-  width: 60%;
+  width: 70%;
   margin-bottom: 5em;
   height: 80vh;
   position: relative;
@@ -91,7 +91,7 @@
 .workSection .workSectionBody {
   position: absolute;
   left: 0px;
-  bottom: 0px;
+  bottom: -700px;
 }
 
 .workSection .workSectionBody .workContainer {
@@ -137,6 +137,55 @@
   font-family: "flexa", sans-serif;
   color: #1a1918;
   font-size: 2.5rem;
+  line-height: 110%;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  font-variation-settings: "wght" 275, "wdth" 115;
+  letter-spacing: -0.08rem;
+  text-align: center;
+}
+
+.trails-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.trails-main div {
+  display: inline-block;
+}
+
+.trails-main div .trails-text {
+  display: inline-block !important;
+}
+
+.trails-main div .trails-text div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.trails-main div .trails-text div .workItemContainer {
+  border: solid 2px #1a1918;
+  border-radius: 55px;
+  padding: 22px 40px;
+  margin: 2px 2px 2px 0px;
+  white-space: nowrap;
+  position: relative;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  background: #f0f0e9;
+  z-index: 6;
+}
+
+.trails-main div .trails-text div .workItemContainer .workItem {
+  font-family: "flexa", sans-serif;
+  color: #1a1918;
+  font-size: 2.2rem;
   line-height: 110%;
   cursor: pointer;
   -webkit-transition: all 0.15s ease-in-out;

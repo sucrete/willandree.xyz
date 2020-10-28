@@ -1,5 +1,20 @@
 import { Modal } from "react-responsive-modal";
+import React from "react";
+import WorkTrail from "./Trail";
 
+const work = [
+  "dumpTRUCK",
+  "maxrosen.town",
+  "Old Town Lofts",
+  "calvintodd.com",
+  "The Voter's Companion",
+  "willandree.xyz",
+];
+const allYourWork = work.map((project) => (
+  <span className="workItemContainer">
+    <span className="workItem">{project}</span>
+  </span>
+));
 class Work extends React.Component {
   state = {
     openFirst: false,
@@ -8,7 +23,6 @@ class Work extends React.Component {
     openFourth: false,
     openFifth: false,
   };
-
   onOpenFirstModal = () => {
     this.setState({ openFirst: true });
   };
@@ -52,6 +66,7 @@ class Work extends React.Component {
         <div className="workSectionBody">
           <div className="workContainer">work</div>{" "}
           <div className="workBody">
+            <WorkTrail>{allYourWork}</WorkTrail>
             <span className="workItemContainer">
               <span className=" workItem" onClick={this.onOpenFirstModal}>
                 dumpTRUCK
