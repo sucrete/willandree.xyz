@@ -41,6 +41,7 @@ $color2: rgb(122, 112, 68);
     letter-spacing: 0.05em;
     -webkit-font-smoothing: unset;
     -moz-osx-font-smoothing: unset;
+    border-bottom: solid 1px rgb(138, 138, 138);
   }
 
   button {
@@ -52,15 +53,9 @@ $color2: rgb(122, 112, 68);
       }
     }
     svg {
-      transition: all 0.2s ease;
+      transition: all 0.15s ease;
       fill: $color1 !important;
     }
-  }
-  .modalHR {
-    height: 1px;
-    background-color: rgb(138, 138, 138);
-    margin-block-start: 0px;
-    margin-block-start: 0px;
   }
   .modalBody {
     padding: 0em 1em;
@@ -93,42 +88,64 @@ $color2: rgb(122, 112, 68);
   padding-left: 0.12em;
   margin-block-start: 0px;
 }
-
 .workSection {
   width: 60%;
   margin-bottom: 5em;
-  display: flex;
-  flex-wrap: wrap;
+  height: 80vh;
   position: relative;
-  // background: black;
-
-  .workTitle {
-    margin-block-end: 0.35em;
-  }
-  .workItemContainer {
-    margin-top: 0px;
-    border: solid 2px rgb(26, 25, 24);
-    border-radius: 35px;
-    padding: 16px 36px;
-    margin: 2px 2px 2px 0px;
-    white-space: nowrap;
-    .workItem {
-      font-family: "flexa", sans-serif;
-      // white-space: nowrap;
+  .workSectionBody {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    .workContainer {
+      font-family: "flexa";
       color: rgb(26, 25, 24);
-      font-size: 2rem;
-      line-height: 110%;
-      cursor: pointer;
-      transition: all 0.15s;
-      font-variation-settings: "wght" 225, "wdth" 115;
-      letter-spacing: -0.08rem;
-      text-align: center;
-      &:hover {
-        font-variation-settings: "wght" 370, "wdth" 115;
-        // color: darkorange;
+      text-transform: uppercase;
+      font-size: 8em;
+      font-variation-settings: "wght" 625, "wdth" 0, "ital" 70;
+      padding-left: 10px;
+      line-height: 1 !important;
+      position: relative;
+      bottom: -30px;
+      z-index: 1;
+      display: flex;
+    }
+    .workBody {
+      display: flex;
+      flex-wrap: wrap;
+      z-index: 4;
+      position: relative;
+      .workItemContainer {
+        border: solid 2px rgb(26, 25, 24);
+        border-radius: 55px;
+        padding: 22px 32px;
+        margin: 2px 2px 2px 0px;
+        white-space: nowrap;
+        position: relative;
+        transition: all 0.15s ease-in-out;
+        background: lighten($backgroundColor, 7%);
+        z-index: 6;
+        .workItem {
+          font-family: "flexa", sans-serif;
+          // white-space: nowrap;
+          color: rgb(26, 25, 24);
+          font-size: 2.5rem;
+          line-height: 110%;
+          cursor: pointer;
+          transition: all 0.15s ease-in-out;
+          font-variation-settings: "wght" 275, "wdth" 115;
+          letter-spacing: -0.08rem;
+          text-align: center;
+
+          // &:hover {
+          //   // font-variation-settings: "wght" 370, "wdth" 115;
+          //   color: rgb(61, 52, 3);
+          // }
+        }
       }
     }
   }
+  // background: black;
 }
 hr {
   border: 0;
@@ -185,6 +202,11 @@ body {
 @font-face {
   src: url("./fonts/GT_Flexa_VAR.woff2") format("woff2-variations");
   font-family: "flexa";
+  font-style: normal;
+}
+@font-face {
+  src: url("./fonts/Jabin-Typeface.woff2") format("woff2-variations");
+  font-family: "jabin";
   font-style: normal;
 }
 
