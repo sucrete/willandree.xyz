@@ -2,19 +2,6 @@ import { Modal } from "react-responsive-modal";
 import React from "react";
 import WorkTrail from "./Trail";
 
-const work = [
-  "dumpTRUCK",
-  "maxrosen.town",
-  "Old Town Lofts",
-  "calvintodd.com",
-  "The Voter's Companion",
-  "willandree.xyz",
-];
-const allYourWork = work.map((project) => (
-  <span className="workItemContainer">
-    <span className="workItem">{project}</span>
-  </span>
-));
 class Work extends React.Component {
   state = {
     openFirst: false,
@@ -22,37 +9,9 @@ class Work extends React.Component {
     openThird: false,
     openFourth: false,
     openFifth: false,
+    openSixth: false,
   };
-  onOpenFirstModal = () => {
-    this.setState({ openFirst: true });
-  };
-  onCloseFirstModal = () => {
-    this.setState({ openFirst: false });
-  };
-  onOpenSecondModal = () => {
-    this.setState({ openSecond: true });
-  };
-  onCloseSecondModal = () => {
-    this.setState({ openSecond: false });
-  };
-  onOpenThirdModal = () => {
-    this.setState({ openThird: true });
-  };
-  onCloseThirdModal = () => {
-    this.setState({ openThird: false });
-  };
-  onOpenFourthModal = () => {
-    this.setState({ openFourth: true });
-  };
-  onCloseFourthModal = () => {
-    this.setState({ openFourth: false });
-  };
-  onOpenFifthModal = () => {
-    this.setState({ openFifth: true });
-  };
-  onCloseFifthModal = () => {
-    this.setState({ openFifth: false });
-  };
+
   render() {
     const {
       openFirst,
@@ -60,109 +19,174 @@ class Work extends React.Component {
       openThird,
       openFourth,
       openFifth,
+      openSixth,
     } = this.state;
+    const indexOfFunctions = {
+      first: {
+        o: () => {
+          this.setState({ openFirst: true });
+        },
+        c: () => {
+          this.setState({ openFirst: false });
+        },
+      },
+      second: {
+        o: () => {
+          this.setState({ openSecond: true });
+        },
+        c: () => {
+          this.setState({ openSecond: false });
+        },
+      },
+      third: {
+        o: () => {
+          this.setState({ openThird: true });
+        },
+        c: () => {
+          this.setState({ openThird: false });
+        },
+      },
+      fourth: {
+        o: () => {
+          this.setState({ openFourth: true });
+        },
+        c: () => {
+          this.setState({ openFourth: false });
+        },
+      },
+      fifth: {
+        o: () => {
+          this.setState({ openFifth: true });
+        },
+        c: () => {
+          this.setState({ openFifth: false });
+        },
+      },
+      sixth: {
+        o: () => {
+          this.setState({ openSixth: true });
+        },
+        c: () => {
+          this.setState({ openSixth: false });
+        },
+      },
+    };
+    const work = [
+      "dumpTRUCK",
+      "maxrosen.town",
+      "Old Town Lofts",
+      "calvintodd.com",
+      "The Voter's Companion",
+      "willandree.xyz",
+    ];
+    const modalOridinals = [
+      "first",
+      "second",
+      "third",
+      "fourth",
+      "fifth",
+      "sixth",
+    ];
+    const allYourWork = work.map((project, index) => (
+      <span
+        className="workItemContainer"
+        onClick={indexOfFunctions[modalOridinals[index]].o}
+      >
+        <span className="workItem">{project}</span>
+      </span>
+    ));
     return (
       <section className="workSection">
         <div className="workSectionBody">
           <div className="workContainer">work</div>{" "}
           <div className="workBody">
             <WorkTrail>{allYourWork}</WorkTrail>
-            <span className="workItemContainer">
-              <span className=" workItem" onClick={this.onOpenFirstModal}>
-                dumpTRUCK
-              </span>
-              <Modal
-                classNames={{
-                  overlay: "customOverlay",
-                  modal: "customModal",
-                }}
-                open={openFirst}
-                onClose={this.onCloseFirstModal}
-                center
-              >
-                <div className="projectDesignation">i</div>
+            <Modal
+              classNames={{
+                overlay: "customOverlay",
+                modal: "customModal",
+              }}
+              open={openFirst}
+              onClose={indexOfFunctions.first.c}
+              center
+            >
+              <div className="projectDesignation">i</div>
 
-                <div className="modalBody">
-                  <h1 className="modalHeader">dumpTRUCK</h1>
-                </div>
-              </Modal>
-            </span>
-            <span className="workItemContainer">
-              <span className=" workItem" onClick={this.onOpenSecondModal}>
-                maxrosen.town
-              </span>
-              <Modal
-                classNames={{
-                  overlay: "customOverlay",
-                  modal: "customModal",
-                }}
-                open={openSecond}
-                onClose={this.onCloseSecondModal}
-                center
-              >
-                <div className="projectDesignation">ii</div>
-                <div className="modalBody">
-                  <h1 className="modalHeader">maxrosen.town</h1>
-                </div>
-              </Modal>
-            </span>
-            <span className="workItemContainer">
-              <span className=" workItem" onClick={this.onOpenThirdModal}>
-                Old Town Lofts
-              </span>
-              <Modal
-                classNames={{
-                  overlay: "customOverlay",
-                  modal: "customModal",
-                }}
-                open={openThird}
-                onClose={this.onCloseThirdModal}
-                center
-              >
-                <div className="projectDesignation">iii</div>
-                <div className="modalBody">
-                  <h1 className="modalHeader">Old Town Lofts</h1>
-                </div>
-              </Modal>
-            </span>
-            <span className="workItemContainer">
-              <span className=" workItem" onClick={this.onOpenFourthModal}>
-                calvintodd.com
-              </span>
-              <Modal
-                classNames={{
-                  overlay: "customOverlay",
-                  modal: "customModal",
-                }}
-                open={openFourth}
-                onClose={this.onCloseFourthModal}
-                center
-              >
-                <div className="projectDesignation">iv</div>
-                <div className="modalBody">
-                  <h1 className="modalHeader">talvintodd.com</h1>
-                </div>
-              </Modal>
-            </span>
-            <span className="workItemContainer">
-              <span className=" workItem" onClick={this.onOpenFifthModal}>
-                The Voter's Companion
-              </span>
-              <Modal
-                classNames={{
-                  overlay: "customOverlay",
-                  modal: "customModal",
-                }}
-                open={openFifth}
-                onClose={this.onCloseFifthModal}
-                center
-              >
-                <div className="projectDesignation">v</div>
-                <div className="modalBody">
-                  <h1 className="modalHeader">The Voter's Companion</h1>
-                </div>
-              </Modal>
-            </span>
+              <div className="modalBody">
+                <h1 className="modalHeader">dumpTRUCK</h1>
+              </div>
+            </Modal>
+            <Modal
+              classNames={{
+                overlay: "customOverlay",
+                modal: "customModal",
+              }}
+              open={openSecond}
+              onClose={indexOfFunctions.second.c}
+              center
+            >
+              <div className="projectDesignation">ii</div>
+              <div className="modalBody">
+                <h1 className="modalHeader">maxrosen.town</h1>
+              </div>
+            </Modal>
+            <Modal
+              classNames={{
+                overlay: "customOverlay",
+                modal: "customModal",
+              }}
+              open={openThird}
+              onClose={indexOfFunctions.third.c}
+              center
+            >
+              <div className="projectDesignation">iii</div>
+              <div className="modalBody">
+                <h1 className="modalHeader">Old Town Lofts</h1>
+              </div>
+            </Modal>
+            <Modal
+              classNames={{
+                overlay: "customOverlay",
+                modal: "customModal",
+              }}
+              open={openFourth}
+              onClose={indexOfFunctions.fourth.c}
+              center
+            >
+              <div className="projectDesignation">iv</div>
+              <div className="modalBody">
+                <h1 className="modalHeader">talvintodd.com</h1>
+              </div>
+            </Modal>
+            <Modal
+              classNames={{
+                overlay: "customOverlay",
+                modal: "customModal",
+              }}
+              open={openFifth}
+              onClose={indexOfFunctions.fifth.c}
+              center
+            >
+              <div className="projectDesignation">v</div>
+              <div className="modalBody">
+                <h1 className="modalHeader">The Voter's Companion</h1>
+              </div>
+            </Modal>
+            <Modal
+              classNames={{
+                overlay: "customOverlay",
+                modal: "customModal",
+              }}
+              open={openSixth}
+              onClose={indexOfFunctions.sixth.c}
+              center
+            >
+              <div className="projectDesignation">vi</div>
+
+              <div className="modalBody">
+                <h1 className="modalHeader">willandree.xyz</h1>
+              </div>
+            </Modal>
           </div>
         </div>
       </section>

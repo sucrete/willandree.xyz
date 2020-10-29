@@ -167,6 +167,7 @@ $color2: rgb(122, 112, 68);
           transition: all 0.15s ease-in-out;
           background: lighten($backgroundColor, 7%);
           z-index: 6;
+          cursor: pointer;
           .workItem {
             font-family: "flexa", sans-serif;
             color: rgb(26, 25, 24);
