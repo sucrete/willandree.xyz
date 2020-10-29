@@ -96,93 +96,70 @@ $color2: rgb(122, 112, 68);
   .workSectionBody {
     position: absolute;
     left: 0px;
-    bottom: -700px;
+    bottom: 0px;
     .workContainer {
       font-family: "flexa";
-      color: rgb(26, 25, 24);
       text-transform: uppercase;
       font-size: 8em;
-      font-variation-settings: "wght" 625, "wdth" 0, "ital" 70;
-      padding-left: 10px;
+      font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
+      padding-left: 30px;
       line-height: 1 !important;
       position: relative;
-      bottom: -30px;
+      color: rgb(26, 25, 24);
       z-index: 1;
       display: flex;
+      animation-duration: 1s;
+      animation-name: entranceAnimation;
+      animation-timing-function: ease;
+      // animation-iteration-count: 3;
+      animation-fill-mode: forwards;
+      bottom: -3px;
     }
     .workBody {
       display: flex;
       flex-wrap: wrap;
       z-index: 4;
       position: relative;
-      .workItemContainer {
-        border: solid 2px rgb(26, 25, 24);
-        border-radius: 55px;
-        padding: 22px 32px;
-        margin: 2px 2px 2px 0px;
-        white-space: nowrap;
-        position: relative;
-        transition: all 0.15s ease-in-out;
-        background: lighten($backgroundColor, 7%);
-        z-index: 6;
-        .workItem {
-          font-family: "flexa", sans-serif;
-          // white-space: nowrap;
-          color: rgb(26, 25, 24);
-          font-size: 2.5rem;
-          line-height: 110%;
-          cursor: pointer;
-          transition: all 0.15s ease-in-out;
-          font-variation-settings: "wght" 275, "wdth" 115;
-          letter-spacing: -0.08rem;
-          text-align: center;
-
-          // &:hover {
-          //   // font-variation-settings: "wght" 370, "wdth" 115;
-          //   color: rgb(61, 52, 3);
-          // }
-        }
-      }
-    }
-  }
-  // background: black;
-}
-.trails-main {
-  display: flex;
-  flex-wrap: wrap;
-  div {
-    display: inline-block;
-    .trails-text {
-      display: inline-block !important;
-      div {
+      .trails-main {
         display: flex;
-        position: relative;
-        .workItemContainer {
-          border: solid 2px rgb(26, 25, 24);
-          border-radius: 55px;
-          padding: 22px 40px;
-          margin: 2px 2px 2px 0px;
-          white-space: nowrap;
-          position: relative;
-          transition: all 0.15s ease-in-out;
-          background: lighten($backgroundColor, 7%);
-          z-index: 6;
-          cursor: pointer;
-          .workItem {
-            font-family: "flexa", sans-serif;
-            color: rgb(26, 25, 24);
-            font-size: 2.2rem;
-            line-height: 110%;
-            cursor: pointer;
-            transition: all 0.15s ease-in-out;
-            font-variation-settings: "wght" 275, "wdth" 115;
-            letter-spacing: -0.08rem;
-            text-align: center;
+        flex-wrap: wrap;
+        div {
+          display: inline-block;
+          .trails-text {
+            display: inline-block !important;
+            div {
+              display: flex;
+              position: relative;
+              .workItemContainer {
+                border: solid 2px rgb(26, 25, 24);
+                border-radius: 55px;
+                padding: 22px 40px;
+                margin: 2px 2px 2px 0px;
+                white-space: nowrap;
+                position: relative;
+                transition: all 0.15s ease-in-out;
+                background: lighten($backgroundColor, 7%);
+                z-index: 6;
+                cursor: pointer;
+                .workItem {
+                  font-family: "flexa", sans-serif;
+                  color: rgb(26, 25, 24);
+                  font-size: 2.2rem;
+                  line-height: 110%;
+                  cursor: pointer;
+                  transition: all 0.15s ease-in-out;
+                  font-variation-settings: "wght" 275, "wdth" 100;
+                  letter-spacing: -0.08rem;
+                  text-align: center;
+                }
+              }
+            }
           }
         }
       }
     }
   }
+  // background: black;
 }
 
 hr {
@@ -250,11 +227,9 @@ body {
 
 @keyframes entranceAnimation {
   from {
-    transform: translate(10px, 10px);
     opacity: 0;
   }
   to {
-    transform: translate(0px, 0px);
     opacity: 1;
   }
 }

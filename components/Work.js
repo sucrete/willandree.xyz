@@ -155,7 +155,7 @@ class Work extends React.Component {
             >
               <div className="projectDesignation">iv</div>
               <div className="modalBody">
-                <h1 className="modalHeader">talvintodd.com</h1>
+                <h1 className="modalHeader">calvintodd.com</h1>
               </div>
             </Modal>
             <Modal

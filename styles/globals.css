@@ -91,23 +91,31 @@
 .workSection .workSectionBody {
   position: absolute;
   left: 0px;
-  bottom: -700px;
+  bottom: 0px;
 }
 
 .workSection .workSectionBody .workContainer {
   font-family: "flexa";
-  color: #1a1918;
   text-transform: uppercase;
   font-size: 8em;
-  font-variation-settings: "wght" 625, "wdth" 0, "ital" 70;
-  padding-left: 10px;
+  font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
+  padding-left: 30px;
   line-height: 1 !important;
   position: relative;
-  bottom: -30px;
+  color: #1a1918;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: entranceAnimation;
+          animation-name: entranceAnimation;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  bottom: -3px;
 }
 
 .workSection .workSectionBody .workBody {
@@ -120,33 +128,7 @@
   position: relative;
 }
 
-.workSection .workSectionBody .workBody .workItemContainer {
-  border: solid 2px #1a1918;
-  border-radius: 55px;
-  padding: 22px 32px;
-  margin: 2px 2px 2px 0px;
-  white-space: nowrap;
-  position: relative;
-  -webkit-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-  background: #f0f0e9;
-  z-index: 6;
-}
-
-.workSection .workSectionBody .workBody .workItemContainer .workItem {
-  font-family: "flexa", sans-serif;
-  color: #1a1918;
-  font-size: 2.5rem;
-  line-height: 110%;
-  cursor: pointer;
-  -webkit-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-  font-variation-settings: "wght" 275, "wdth" 115;
-  letter-spacing: -0.08rem;
-  text-align: center;
-}
-
-.trails-main {
+.workSection .workSectionBody .workBody .trails-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,22 +136,22 @@
       flex-wrap: wrap;
 }
 
-.trails-main div {
+.workSection .workSectionBody .workBody .trails-main div {
   display: inline-block;
 }
 
-.trails-main div .trails-text {
+.workSection .workSectionBody .workBody .trails-main div .trails-text {
   display: inline-block !important;
 }
 
-.trails-main div .trails-text div {
+.workSection .workSectionBody .workBody .trails-main div .trails-text div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
-.trails-main div .trails-text div .workItemContainer {
+.workSection .workSectionBody .workBody .trails-main div .trails-text div .workItemContainer {
   border: solid 2px #1a1918;
   border-radius: 55px;
   padding: 22px 40px;
@@ -183,7 +165,7 @@
   cursor: pointer;
 }
 
-.trails-main div .trails-text div .workItemContainer .workItem {
+.workSection .workSectionBody .workBody .trails-main div .trails-text div .workItemContainer .workItem {
   font-family: "flexa", sans-serif;
   color: #1a1918;
   font-size: 2.2rem;
@@ -191,7 +173,7 @@
   cursor: pointer;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
-  font-variation-settings: "wght" 275, "wdth" 115;
+  font-variation-settings: "wght" 275, "wdth" 100;
   letter-spacing: -0.08rem;
   text-align: center;
 }
@@ -251,26 +233,18 @@ body {
 
 @-webkit-keyframes entranceAnimation {
   from {
-    -webkit-transform: translate(10px, 10px);
-            transform: translate(10px, 10px);
     opacity: 0;
   }
   to {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
     opacity: 1;
   }
 }
 
 @keyframes entranceAnimation {
   from {
-    -webkit-transform: translate(10px, 10px);
-            transform: translate(10px, 10px);
     opacity: 0;
   }
   to {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
     opacity: 1;
   }
 }
