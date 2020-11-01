@@ -30,6 +30,7 @@ $color2: rgb(122, 112, 68);
   padding: 0rem !important;
   margin: 0px !important;
   .projectDesignation {
+    background-color: $backgroundColor !important;
     padding: 15px;
     padding-left: 22px;
     display: block;
@@ -39,8 +40,6 @@ $color2: rgb(122, 112, 68);
     font-weight: 500;
     // font-variation-settings: "wght" 450, "wdth" 150;
     letter-spacing: 0.05em;
-    -webkit-font-smoothing: unset;
-    -moz-osx-font-smoothing: unset;
     border-bottom: solid 1px rgb(138, 138, 138);
   }
 
@@ -58,12 +57,21 @@ $color2: rgb(122, 112, 68);
     }
   }
   .modalBody {
-    padding: 0em 1em;
+    padding: 1em 1em;
+    background: lighten($backgroundColor, 7%);
+    height: 100%;
     .modalHeader {
       color: $color1 !important;
-      font-family: "corporate";
+      font-family: "flexa";
       font-size: 4em;
-      padding-left: 1em;
+      padding-left: 4rem;
+      font-variation-settings: "wght" 275, "wdth" 100;
+      margin-block-end: 0rem;
+    }
+    .modalSubheading {
+      color: rgb(126, 125, 121);
+      font-size: 2em;
+      padding-left: 4rem;
     }
   }
 }
@@ -113,7 +121,7 @@ $color2: rgb(122, 112, 68);
       animation-timing-function: ease;
       // animation-iteration-count: 3;
       animation-fill-mode: forwards;
-      bottom: -3px;
+      bottom: -25px;
     }
     .workBody {
       display: flex;
