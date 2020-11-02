@@ -31,16 +31,16 @@ $color2: rgb(122, 112, 68);
   margin: 0px !important;
   .projectDesignation {
     background-color: $backgroundColor !important;
-    padding: 15px;
+    padding: 11px;
     padding-left: 22px;
     display: block;
     color: $color1;
-    font-size: 1em;
+    font-size: 1.3em;
     font-family: "Work Sans";
     font-weight: 500;
     // font-variation-settings: "wght" 450, "wdth" 150;
     letter-spacing: 0.05em;
-    border-bottom: solid 1px rgb(138, 138, 138);
+    border-bottom: solid 2px rgb(26, 25, 24);
   }
 
   button {
@@ -57,21 +57,22 @@ $color2: rgb(122, 112, 68);
     }
   }
   .modalBody {
-    padding: 1em 1em;
+    padding: 1rem 4.5rem;
     background: lighten($backgroundColor, 7%);
     height: 100%;
     .modalHeader {
       color: $color1 !important;
       font-family: "flexa";
       font-size: 4em;
-      padding-left: 4rem;
       font-variation-settings: "wght" 275, "wdth" 100;
       margin-block-end: 0rem;
+      line-height: 110%;
+      margin-block-start: 2.5rem;
     }
     .modalSubheading {
-      color: rgb(126, 125, 121);
-      font-size: 2em;
-      padding-left: 4rem;
+      color: rgb(139, 133, 110);
+      font-size: 1.5em;
+      padding-left: 5px;
     }
   }
 }
@@ -141,8 +142,8 @@ $color2: rgb(122, 112, 68);
               .workItemContainer {
                 border: solid 2px rgb(26, 25, 24);
                 border-radius: 55px;
-                padding: 22px 40px;
-                margin: 2px 2px 2px 0px;
+                padding: 22px 42px;
+                margin: 2px 4px 2px 0px;
                 white-space: nowrap;
                 position: relative;
                 transition: all 0.15s ease-in-out;
@@ -209,7 +210,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
-  background-color: rgb(230, 229, 215);
+  background-color: $backgroundColor;
 }
 * {
   box-sizing: border-box;
