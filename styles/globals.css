@@ -71,25 +71,43 @@
   padding-left: 5px;
 }
 
+.header {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: entranceAnimation;
+          animation-name: entranceAnimation;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+}
+
 .header .headerContainer {
   position: absolute;
   top: 4rem;
   right: 4rem;
-  height: 500px;
-  width: 300px;
+  height: 275px;
+  width: 220px;
   background: #04151f;
   border-radius: 4px 4px 200px 200px;
-  border: solid 15px #1f6594;
-  -webkit-box-shadow: 3px 5px 10px #aba882;
-          box-shadow: 3px 5px 10px #aba882;
+  border: solid 11px #1f6594;
+  -webkit-box-shadow: 3px 5px 17px #959164;
+          box-shadow: 3px 5px 17px #959164;
 }
 
 .header .headerContainer .monogram {
-  color: #85c3db;
-  font-family: "jabin";
+  color: #364f66;
+  font-family: "corporate";
   text-align: center;
-  font-size: 8em;
+  font-size: 5.2em;
   font-variation-settings: "wght" 60.26, "XXXX" 0;
+  line-height: 140%;
+  letter-spacing: -0.03em;
 }
 
 .header .headerContainer .headerBody {
@@ -105,8 +123,8 @@
 .header .headerContainer img {
   position: absolute;
   bottom: 1px;
-  left: 7px;
-  width: 260px;
+  left: 0px;
+  width: 190px;
   margin: 0 auto;
 }
 
