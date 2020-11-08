@@ -202,6 +202,8 @@
   transition: all 0.15s ease-in-out;
   background: #f0f0e9;
   z-index: 6;
+  -webkit-box-shadow: 0px 4px 15px #c9c8af;
+          box-shadow: 0px 4px 15px #c9c8af;
   cursor: pointer;
 }
 
@@ -213,7 +215,7 @@
   cursor: pointer;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
-  font-variation-settings: "wght" 200, "wdth" 100;
+  font-variation-settings: "wght" 225, "wdth" 100;
   letter-spacing: -0.08rem;
   text-align: center;
 }
