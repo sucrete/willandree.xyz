@@ -14,6 +14,9 @@ export default function Home() {
       </Head>
 
       <main>
+        <div className="navigation">Wm. Andrée</div>
+        <hr />
+        {/* <img className="thistle" src="/thistle.png" /> */}
         <Header />
         <Work />
         <hr />
