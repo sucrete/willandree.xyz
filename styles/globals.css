@@ -15,6 +15,19 @@
   font-family: "corporate regular";
   font-size: 1.4em;
   text-rendering: optimizeLegibility;
+  background-image: url("../public/Roman.jpg");
+  background-repeat: no-repeat;
+  background-size: 250% 250%;
+  -webkit-animation: square 3500ms linear;
+          animation: square 3500ms linear;
+  -webkit-background-clip: text;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: transparent;
+  width: 200px;
+  text-align: center;
+  line-height: 200px;
+  position: relative;
 }
 
 .navigation .whereToContainer {
@@ -320,6 +333,46 @@ body {
   to {
     opacity: 1;
     font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
+  }
+}
+
+@-webkit-keyframes square {
+  0% {
+    background-position: 100% 0%;
+  }
+  25% {
+    background-position: 100% 100%;
+  }
+  55% {
+    background-position: 10% 100%;
+  }
+  80% {
+    color: transparent;
+    background-position: 0% 30%;
+  }
+  100% {
+    background-position: 0% 0%;
+    color: #292419;
+  }
+}
+
+@keyframes square {
+  0% {
+    background-position: 100% 0%;
+  }
+  25% {
+    background-position: 100% 100%;
+  }
+  55% {
+    background-position: 10% 100%;
+  }
+  80% {
+    color: transparent;
+    background-position: 0% 30%;
+  }
+  100% {
+    background-position: 0% 0%;
+    color: #292419;
   }
 }
 /*# sourceMappingURL=globals.css.map */
