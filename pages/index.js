@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Contact from "../components/Contact";
 import Work from "../components/Work";
 import Info from "../components/Info";
+import Nav from "../components/Navigation";
 
 export default function Home() {
   return (
@@ -14,9 +15,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="navigation">Wm. Andrée</div>
+        <Nav />
         <hr />
-        {/* <img className="thistle" src="/thistle.png" /> */}
         <Header />
         <Work />
         <hr />

@@ -8,87 +8,36 @@
 }
 
 .navigation {
-  font-family: "corporate";
-  font-size: 1.5em;
-  padding: 0rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
-.customModal {
-  -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
-  background-color: #e2e1d4 !important;
-  max-width: unset !important;
-  width: 100vw !important;
-  height: 100vh !important;
-  overflow: hidden;
-  padding: 0rem !important;
-  margin: 0px !important;
+.navigation .name {
+  font-family: "corporate regular";
+  font-size: 1.4em;
+  text-rendering: optimizeLegibility;
 }
 
-.customModal .projectDesignation {
-  background-color: #f0f0e9 !important;
-  padding: 11px;
-  padding-left: 22px;
-  display: block;
-  color: #292419;
-  font-size: 1.3em;
-  font-family: "flexa";
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  border-bottom: solid 1px #1a1918;
+.navigation .whereToContainer {
+  float: right;
+  font-family: "Work Sans", sans-serif;
+  color: #474747;
+  font-size: 1.2em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 400;
 }
 
-.customModal button {
-  border: none !important;
-  outline: none !important;
+.navigation .whereToContainer a {
+  padding-left: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.27s ease-in-out;
+  transition: all 0.27s ease-in-out;
 }
 
-.customModal button:hover svg {
-  fill: darkorange !important;
-}
-
-.customModal button svg {
-  -webkit-transition: all 0.15s ease;
-  transition: all 0.15s ease;
-  fill: #292419 !important;
-}
-
-.customModal .modalBody {
-  padding: 1rem 4.5rem;
-  background: #f0f0e9;
-  height: 100%;
-}
-
-.customModal .modalBody .modalHeader {
-  color: #292419 !important;
-  font-family: "flexa";
-  font-size: 4em;
-  font-variation-settings: "wght" 200, "wdth" 100;
-  -webkit-margin-after: 0rem;
-          margin-block-end: 0rem;
-  line-height: 110%;
-  -webkit-margin-before: 2.5rem;
-          margin-block-start: 2.5rem;
-}
-
-.customModal .modalBody .modalSubheading {
-  color: #81807b;
-  font-size: 1.5em;
-  padding-left: 5px;
-}
-
-.thistle {
-  position: absolute;
-  top: -100px;
-  right: 0px;
-  margin: 0 auto;
-}
-
-.header {
+header {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-name: entranceAnimation;
-          animation-name: entranceAnimation;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
@@ -100,17 +49,20 @@
       image-rendering: pixelated;
   position: relative;
   width: 100%;
+  height: 60vh;
 }
 
-.header .descriptionContainer {
-  color: #2676ab;
+header .descriptionContainer {
+  color: #4d84f1;
   font-family: "corporate";
-  font-size: 3em;
-  width: 50%;
+  font-size: 6em;
+  width: 45%;
   position: absolute;
-  right: 0px;
+  border-radius: 5px;
+  right: 3rem;
   top: 0px;
-  padding: 1rem;
+  padding: 1.8rem 3.4rem;
+  margin-top: 4rem;
 }
 
 .title {
@@ -199,12 +151,12 @@
   margin: 2px 4px 2px 0px;
   white-space: nowrap;
   position: relative;
-  -webkit-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
   background: #f0f0e9;
   z-index: 6;
-  -webkit-box-shadow: 0px 0px 10px rgba(26, 25, 24, 0.095);
-          box-shadow: 0px 0px 10px rgba(26, 25, 24, 0.095);
+  -webkit-box-shadow: 0px 0px 10px rgba(26, 25, 24, 0.19);
+          box-shadow: 0px 0px 10px rgba(26, 25, 24, 0.19);
   cursor: pointer;
 }
 
@@ -219,6 +171,70 @@
   font-variation-settings: "wght" 225, "wdth" 100;
   letter-spacing: -0.08rem;
   text-align: center;
+}
+
+.customModal {
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+  background-color: #e2e1d4 !important;
+  max-width: unset !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden;
+  padding: 0rem !important;
+  margin: 0px !important;
+}
+
+.customModal .projectDesignation {
+  background-color: #f0f0e9 !important;
+  padding: 11px;
+  padding-left: 22px;
+  display: block;
+  color: #292419;
+  font-size: 1.3em;
+  font-family: "flexa";
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-bottom: solid 1px #1a1918;
+}
+
+.customModal button {
+  border: none !important;
+  outline: none !important;
+}
+
+.customModal button:hover svg {
+  fill: darkorange !important;
+}
+
+.customModal button svg {
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  fill: #292419 !important;
+}
+
+.customModal .modalBody {
+  padding: 1rem 4.5rem;
+  background: #f0f0e9;
+  height: 100%;
+}
+
+.customModal .modalBody .modalHeader {
+  color: #292419 !important;
+  font-family: "flexa";
+  font-size: 4em;
+  font-variation-settings: "wght" 200, "wdth" 100;
+  -webkit-margin-after: 0rem;
+          margin-block-end: 0rem;
+  line-height: 110%;
+  -webkit-margin-before: 2.5rem;
+          margin-block-start: 2.5rem;
+}
+
+.customModal .modalBody .modalSubheading {
+  color: #81807b;
+  font-size: 1.5em;
+  padding-left: 5px;
 }
 
 hr {
@@ -272,6 +288,11 @@ body {
   src: url("./fonts/Jabin.woff2") format("woff2-variations");
   font-family: "jabin";
   font-style: normal;
+}
+
+@font-face {
+  src: url("./fonts/CorporateABQ-Regular.otf") format("opentype");
+  font-family: "corporate regular";
 }
 
 @-webkit-keyframes entranceAnimation {
