@@ -2,8 +2,7 @@
 $backgroundColor: #dae6e4;
 $color1: rgb(41, 36, 25);
 $color2: rgb(122, 112, 68);
-.forNow {
-}
+
 .customOverlay {
   background: rgba(41, 36, 25, 0.089) !important;
   // border: solid clamp(2vw, 1.5vw, 0.5vw) rgb(230, 229, 215);
@@ -108,7 +107,6 @@ header {
       font-family: "flexa";
       text-transform: uppercase;
       font-size: 8em;
-      // font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
       padding-left: 30px;
       line-height: 1 !important;
       position: relative;
@@ -149,15 +147,14 @@ header {
                 z-index: 6;
                 box-shadow: 0px 0px 10px rgba(26, 25, 24, 0.19);
                 cursor: pointer;
-
                 .workItem {
                   font-family: "flexa", sans-serif;
                   color: rgb(26, 25, 24);
-                  font-size: 2.2rem;
+                  font-size: 2.8rem;
                   line-height: 110%;
                   cursor: pointer;
                   transition: all 0.15s ease-in-out;
-                  font-variation-settings: "wght" 225, "wdth" 100;
+                  font-variation-settings: "wght" 245, "wdth" 95;
                   letter-spacing: -0.08rem;
                   text-align: center;
                 }
@@ -215,13 +212,13 @@ header {
       color: $color1 !important;
       font-family: "flexa";
       font-size: 4em;
-      font-variation-settings: "wght" 200, "wdth" 100;
+      font-variation-settings: "wght" 245, "wdth" 95;
       margin-block-end: 0rem;
       line-height: 110%;
       margin-block-start: 2.5rem;
     }
     .modalSubheading {
-      color: rgb(129, 128, 123);
+      color: rgb(139, 139, 139);
       font-size: 1.5em;
       padding-left: 5px;
     }
@@ -262,9 +259,14 @@ hr {
       hsl(134.12, 22.08%, 84.9%) 100%
     );
     overflow: hidden;
-    padding: 1rem 5rem 5rem 5rem;
-
-    section {
+    height: 100%;
+    .noise {
+      height: 100%;
+      width: 100%;
+      top: 0px;
+      background: url("http://i.imgur.com/P0Kkvuv.png");
+      position: absolute;
+      z-index: 10;
     }
   }
 }

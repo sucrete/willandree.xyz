@@ -183,12 +183,12 @@ header .descriptionContainer {
 .workSection .workSectionBody .workBody .trails-main div .trails-text div .workItemContainer .workItem {
   font-family: "flexa", sans-serif;
   color: #1a1918;
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   line-height: 110%;
   cursor: pointer;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
-  font-variation-settings: "wght" 225, "wdth" 100;
+  font-variation-settings: "wght" 245, "wdth" 95;
   letter-spacing: -0.08rem;
   text-align: center;
 }
@@ -243,7 +243,7 @@ header .descriptionContainer {
   color: #292419 !important;
   font-family: "flexa";
   font-size: 4em;
-  font-variation-settings: "wght" 200, "wdth" 100;
+  font-variation-settings: "wght" 245, "wdth" 95;
   -webkit-margin-after: 0rem;
           margin-block-end: 0rem;
   line-height: 110%;
@@ -252,7 +252,7 @@ header .descriptionContainer {
 }
 
 .customModal .modalBody .modalSubheading {
-  color: #81807b;
+  color: #8b8b8b;
   font-size: 1.5em;
   padding-left: 5px;
 }
@@ -269,7 +269,16 @@ hr {
   background: -webkit-gradient(linear, left bottom, left top, from(#e2eee8), color-stop(8.1%, #e2eee8), color-stop(15.5%, #e1ede7), color-stop(22.5%, #e0ede6), color-stop(29%, #dfece4), color-stop(35.3%, #ddebe3), color-stop(41.2%, #dce9e1), color-stop(47.1%, #dae8df), color-stop(52.9%, #d8e7dd), color-stop(58.8%, #d6e6db), color-stop(64.7%, #d5e4d9), color-stop(71%, #d3e3d8), color-stop(77.5%, #d2e2d6), color-stop(84.5%, #d1e2d5), color-stop(91.9%, #d0e1d4), to(#d0e1d4));
   background: linear-gradient(to top, #e2eee8 0%, #e2eee8 8.1%, #e1ede7 15.5%, #e0ede6 22.5%, #dfece4 29%, #ddebe3 35.3%, #dce9e1 41.2%, #dae8df 47.1%, #d8e7dd 52.9%, #d6e6db 58.8%, #d5e4d9 64.7%, #d3e3d8 71%, #d2e2d6 77.5%, #d1e2d5 84.5%, #d0e1d4 91.9%, #d0e1d4 100%);
   overflow: hidden;
-  padding: 1rem 5rem 5rem 5rem;
+  height: 100%;
+}
+
+.container main .noise {
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  background: url("http://i.imgur.com/P0Kkvuv.png");
+  position: absolute;
+  z-index: 10;
 }
 
 .clickable {

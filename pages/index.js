@@ -15,6 +15,7 @@ export default function Home() {
       </Head>
 
       <main>
+        <div className="noise"></div>
         <Nav />
         {/* <hr /> */}
         <Header />
