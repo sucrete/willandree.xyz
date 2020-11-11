@@ -9,17 +9,20 @@
 
 .navigation {
   padding: 0.5rem 1rem;
+  height: 3rem;
+  position: relative;
+  -webkit-animation: entranceAnimation2 1500ms ease;
+          animation: entranceAnimation2 1500ms ease;
 }
 
 .navigation .name {
   font-family: "corporate regular";
   font-size: 1.4em;
-  text-rendering: optimizeLegibility;
   background-image: url("../public/Roman.jpg");
   background-repeat: no-repeat;
-  background-size: 250% 250%;
-  -webkit-animation: square 3500ms linear;
-          animation: square 3500ms linear;
+  background-size: 190% 190%;
+  -webkit-animation: square 4000ms ease;
+          animation: square 4000ms ease;
   -webkit-background-clip: text;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -27,7 +30,11 @@
   width: 200px;
   text-align: center;
   line-height: 200px;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0px;
 }
 
 .navigation .whereToContainer {
@@ -166,7 +173,7 @@ header .descriptionContainer {
   position: relative;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  background: #f0f0e9;
+  background: #eff4f4;
   z-index: 6;
   -webkit-box-shadow: 0px 0px 10px rgba(26, 25, 24, 0.19);
           box-shadow: 0px 0px 10px rgba(26, 25, 24, 0.19);
@@ -189,7 +196,7 @@ header .descriptionContainer {
 .customModal {
   -webkit-box-shadow: unset !important;
           box-shadow: unset !important;
-  background-color: #e2e1d4 !important;
+  background-color: #dae6e4 !important;
   max-width: unset !important;
   width: 100vw !important;
   height: 100vh !important;
@@ -199,7 +206,7 @@ header .descriptionContainer {
 }
 
 .customModal .projectDesignation {
-  background-color: #f0f0e9 !important;
+  background-color: #eff4f4 !important;
   padding: 11px;
   padding-left: 22px;
   display: block;
@@ -228,7 +235,7 @@ header .descriptionContainer {
 
 .customModal .modalBody {
   padding: 1rem 4.5rem;
-  background: #f0f0e9;
+  background: #eff4f4;
   height: 100%;
 }
 
@@ -259,8 +266,8 @@ hr {
 .container main {
   border-radius: 3px;
   margin: 0 auto;
-  background-color: #e2e1d4;
-  background-image: url("/public/img-noise.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(#e2eee8), color-stop(8.1%, #e2eee8), color-stop(15.5%, #e1ede7), color-stop(22.5%, #e0ede6), color-stop(29%, #dfece4), color-stop(35.3%, #ddebe3), color-stop(41.2%, #dce9e1), color-stop(47.1%, #dae8df), color-stop(52.9%, #d8e7dd), color-stop(58.8%, #d6e6db), color-stop(64.7%, #d5e4d9), color-stop(71%, #d3e3d8), color-stop(77.5%, #d2e2d6), color-stop(84.5%, #d1e2d5), color-stop(91.9%, #d0e1d4), to(#d0e1d4));
+  background: linear-gradient(to top, #e2eee8 0%, #e2eee8 8.1%, #e1ede7 15.5%, #e0ede6 22.5%, #dfece4 29%, #ddebe3 35.3%, #dce9e1 41.2%, #dae8df 47.1%, #d8e7dd 52.9%, #d6e6db 58.8%, #d5e4d9 64.7%, #d3e3d8 71%, #d2e2d6 77.5%, #d1e2d5 84.5%, #d0e1d4 91.9%, #d0e1d4 100%);
   overflow: hidden;
   padding: 1rem 5rem 5rem 5rem;
 }
@@ -275,7 +282,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
-  background-color: #e2e1d4;
+  background-color: #d0e1d4;
 }
 
 * {
@@ -336,43 +343,45 @@ body {
   }
 }
 
+@-webkit-keyframes entranceAnimation2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes entranceAnimation2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes square {
   0% {
-    background-position: 100% 0%;
+    background-position: 95% 95%;
   }
-  25% {
-    background-position: 100% 100%;
-  }
-  55% {
-    background-position: 10% 100%;
-  }
-  80% {
+  70% {
     color: transparent;
-    background-position: 0% 30%;
   }
   100% {
-    background-position: 0% 0%;
-    color: #292419;
+    background-position: 70% -15%;
   }
 }
 
 @keyframes square {
   0% {
-    background-position: 100% 0%;
+    background-position: 95% 95%;
   }
-  25% {
-    background-position: 100% 100%;
-  }
-  55% {
-    background-position: 10% 100%;
-  }
-  80% {
+  70% {
     color: transparent;
-    background-position: 0% 30%;
   }
   100% {
-    background-position: 0% 0%;
-    color: #292419;
+    background-position: 70% -15%;
   }
 }
 /*# sourceMappingURL=globals.css.map */
