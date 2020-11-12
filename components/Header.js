@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="header">
+    <section className="header">
       <div className="descriptionContainer">
         <span>h</span>
         <span>e</span>
@@ -8,6 +8,6 @@ export default function Header() {
         <span>l</span>
         <span>o</span>
       </div>
-    </header>
+    </section>
   );
 }

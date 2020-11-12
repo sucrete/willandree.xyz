@@ -8,7 +8,8 @@
 }
 
 .navigation {
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
+  margin: 1rem 4rem;
   height: 3rem;
   position: relative;
   -webkit-animation: entranceAnimation2 1500ms ease;
@@ -55,7 +56,7 @@
   transition: all 0.27s ease-in-out;
 }
 
-header {
+.header {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-timing-function: ease;
@@ -72,7 +73,7 @@ header {
   height: 60vh;
 }
 
-header .descriptionContainer {
+.header .descriptionContainer {
   color: #4d84f1;
   font-family: "corporate";
   font-size: 6em;
@@ -96,14 +97,13 @@ header .descriptionContainer {
 }
 
 .workSection {
-  width: 70%;
+  width: 80%;
   margin-bottom: 5em;
   height: 80vh;
   position: relative;
 }
 
 .workSection .workSectionBody {
-  position: absolute;
   left: 0px;
   bottom: 0px;
 }
@@ -189,7 +189,7 @@ header .descriptionContainer {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   font-variation-settings: "wght" 245, "wdth" 95;
-  letter-spacing: -0.08rem;
+  letter-spacing: -0.125rem;
   text-align: center;
 }
 
@@ -270,15 +270,15 @@ hr {
   background: linear-gradient(to top, #e2eee8 0%, #e2eee8 8.1%, #e1ede7 15.5%, #e0ede6 22.5%, #dfece4 29%, #ddebe3 35.3%, #dce9e1 41.2%, #dae8df 47.1%, #d8e7dd 52.9%, #d6e6db 58.8%, #d5e4d9 64.7%, #d3e3d8 71%, #d2e2d6 77.5%, #d1e2d5 84.5%, #d0e1d4 91.9%, #d0e1d4 100%);
   overflow: hidden;
   height: 100%;
+  position: relative;
 }
 
 .container main .noise {
-  height: 100%;
+  height: 120%;
   width: 100%;
-  top: 0px;
+  top: -10%;
   background: url("http://i.imgur.com/P0Kkvuv.png");
   position: absolute;
-  z-index: 10;
 }
 
 .clickable {
@@ -300,6 +300,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: unset;
+}
+
+section {
+  padding: 0rem 5rem;
 }
 
 @font-face {
