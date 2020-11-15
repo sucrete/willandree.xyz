@@ -15,6 +15,9 @@ export default function Home() {
       </Head>
 
       <main>
+        <div className="cloud cloud1"></div>
+        <div className="cloud cloud2"></div>
+        <div className="cloud cloud3"></div>
         <div className="noise"></div>
         <Nav />
         {/* <hr /> */}
@@ -25,6 +28,28 @@ export default function Home() {
         <hr />
         <Contact />
       </main>
+
+      <svg width="0" height="0">
+        <filter id="filter">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency=".01"
+            numOctaves="4"
+          />
+          <feDisplacementMap in="SourceGraphic" scale="180" />
+        </filter>
+      </svg>
+      <svg width="0" height="0">
+        <filter id="filter2">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency=".008"
+            numOctaves="10"
+          />
+
+          <feDisplacementMap in="SourceGraphic" scale="225" />
+        </filter>
+      </svg>
     </div>
   );
 }
