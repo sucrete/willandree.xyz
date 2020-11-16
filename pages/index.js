@@ -17,6 +17,7 @@ export default function Home() {
       <main>
         <div className="cloud cloud1"></div>
         <div className="cloud cloud2"></div>
+        <div className="cloud cloud2-2"></div>
         <div className="cloud cloud3"></div>
         <div className="noise"></div>
         <Nav />
@@ -39,15 +40,24 @@ export default function Home() {
           <feDisplacementMap in="SourceGraphic" scale="180" />
         </filter>
       </svg>
-      <svg width="0" height="0">
+      <svg>
         <filter id="filter2">
           <feTurbulence
             type="fractalNoise"
             baseFrequency=".008"
-            numOctaves="10"
+            numOctaves="9"
           />
-
           <feDisplacementMap in="SourceGraphic" scale="225" />
+        </filter>
+      </svg>
+      <svg>
+        <filter id="filter2-2">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency=".008"
+            numOctaves="9"
+          />
+          <feDisplacementMap in="SourceGraphic" scale="190" />
         </filter>
       </svg>
     </div>

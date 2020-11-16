@@ -7,8 +7,8 @@
 .cloud1 {
   width: 100px;
   height: 1250px;
-  top: -120px;
-  left: -10vw;
+  top: -60px;
+  left: -15vw;
   -webkit-filter: url(#filter);
           filter: url(#filter);
   -webkit-box-shadow: 400px 400px 60px 0px #dce9df;
@@ -16,21 +16,32 @@
 }
 
 .cloud2 {
-  width: 170px;
-  height: 1500px;
-  top: -520px;
-  left: 20vw;
   -webkit-filter: url(#filter2);
           filter: url(#filter2);
+}
+
+.cloud2-2 {
+  -webkit-filter: url(#filter2-2);
+          filter: url(#filter2-2);
+}
+
+.cloud2,
+.cloud2-2 {
+  width: 200px;
+  height: 1500px;
+  top: -20px;
+  left: 60vw;
   -webkit-box-shadow: 400px 400px 60px 0px #dce9df;
           box-shadow: 400px 400px 60px 0px #dce9df;
 }
 
 .cloud3 {
-  width: 900px;
-  height: 125px;
-  top: -320px;
-  left: -320px;
+  width: 90px;
+  height: 905px;
+  top: 520px;
+  left: 80vw;
+  -webkit-box-shadow: 400px 400px 60px 0px #dce9df;
+          box-shadow: 400px 400px 60px 0px #dce9df;
 }
 
 .customOverlay {
@@ -116,6 +127,7 @@
   border-radius: 5px;
   right: 3rem;
   top: 0px;
+  letter-spacing: 0.01rem;
   padding: 1.8rem 3.4rem;
   margin-top: 4rem;
 }

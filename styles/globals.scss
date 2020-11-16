@@ -9,24 +9,31 @@ $color2: rgb(122, 112, 68);
 .cloud1 {
   width: 100px;
   height: 1250px;
-  top: -120px;
-  left: -10vw;
+  top: -60px;
+  left: -15vw;
   filter: url(#filter);
   box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 4%);
 }
 .cloud2 {
-  width: 170px;
-  height: 1500px;
-  top: -520px;
-  left: 20vw;
   filter: url(#filter2);
+}
+.cloud2-2 {
+  filter: url(#filter2-2);
+}
+.cloud2,
+.cloud2-2 {
+  width: 200px;
+  height: 1500px;
+  top: -20px;
+  left: 60vw;
   box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 4%);
 }
 .cloud3 {
-  width: 900px;
-  height: 125px;
-  top: -320px;
-  left: -320px;
+  width: 90px;
+  height: 905px;
+  top: 520px;
+  left: 80vw;
+  box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 4%);
 }
 .customOverlay {
   background: rgba(41, 36, 25, 0.089) !important;
@@ -101,6 +108,7 @@ $color2: rgb(122, 112, 68);
     border-radius: 5px;
     right: 3rem;
     top: 0px;
+    letter-spacing: 0.01rem;
     padding: 1.8rem 3.4rem;
     // border: solid 1px rgb(194, 194, 194);
     // background: lighten($backgroundColor, 7%);
