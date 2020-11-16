@@ -2,38 +2,46 @@
 $backgroundColor: #dae6e4;
 $color1: rgb(41, 36, 25);
 $color2: rgb(122, 112, 68);
+svg {
+  overflow: hidden;
+  display: none;
+}
 .cloud {
   border-radius: 50%;
   position: absolute;
+  // overflow: hidden;
 }
 .cloud1 {
   width: 100px;
   height: 1250px;
-  top: -60px;
+  top: -160px;
   left: -15vw;
   filter: url(#filter);
   box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 4%);
 }
+.cloud2,
+.cloud2-2 {
+  width: 250px;
+  height: 1800px;
+  top: -700px;
+  left: 10vw;
+}
 .cloud2 {
   filter: url(#filter2);
+  box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 2%);
 }
 .cloud2-2 {
   filter: url(#filter2-2);
+  box-shadow: 400px 400px 60px 0px rgba(225, 221, 208, 0.25);
 }
-.cloud2,
-.cloud2-2 {
-  width: 200px;
-  height: 1500px;
-  top: -20px;
-  left: 60vw;
-  box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 4%);
-}
+
 .cloud3 {
   width: 90px;
   height: 905px;
-  top: 520px;
-  left: 80vw;
-  box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 4%);
+  top: 20px;
+  left: 50vw;
+  filter: url(#filter3);
+  box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 2%);
 }
 .customOverlay {
   background: rgba(41, 36, 25, 0.089) !important;
@@ -45,7 +53,7 @@ $color2: rgb(122, 112, 68);
 }
 .navigation {
   padding: 1rem 2rem;
-  margin: 1rem 4rem;
+  margin: 1rem 5rem;
   height: 3rem;
   position: relative;
   animation: entranceAnimation2 1500ms ease;
@@ -108,7 +116,7 @@ $color2: rgb(122, 112, 68);
     border-radius: 5px;
     right: 3rem;
     top: 0px;
-    letter-spacing: 0.01rem;
+    letter-spacing: -0.09rem;
     padding: 1.8rem 3.4rem;
     // border: solid 1px rgb(194, 194, 194);
     // background: lighten($backgroundColor, 7%);
@@ -268,29 +276,14 @@ hr {
   // MAX for smaller screens
   // VAL for ideal mid value
   // padding: clamp(2vw, 1.5vw, 0.5vw);
+  // overflow: hidden;
 
   main {
     border-radius: 3px;
     margin: 0 auto;
-    background: linear-gradient(
-      to top,
-      hsl(150, 26.09%, 90.98%) 0%,
-      hsl(149.71, 26%, 90.9%) 8.1%,
-      hsl(148.93, 25.77%, 90.69%) 15.5%,
-      hsl(147.76, 25.43%, 90.35%) 22.5%,
-      hsl(146.32, 25.03%, 89.91%) 29%,
-      hsl(144.74, 24.61%, 89.4%) 35.3%,
-      hsl(143.09, 24.18%, 88.84%) 41.2%,
-      hsl(141.47, 23.77%, 88.24%) 47.1%,
-      hsl(139.93, 23.39%, 87.64%) 52.9%,
-      hsl(138.52, 23.06%, 87.04%) 58.8%,
-      hsl(137.26, 22.77%, 86.48%) 64.7%,
-      hsl(136.19, 22.53%, 85.97%) 71%,
-      hsl(135.32, 22.34%, 85.53%) 77.5%,
-      hsl(134.67, 22.2%, 85.2%) 84.5%,
-      hsl(134.26, 22.11%, 84.98%) 91.9%,
-      hsl(134.12, 22.08%, 84.9%) 100%
-    );
+    // overflow: hidden;
+    background: hsl(134.12, 22.08%, 84.9%);
+
     overflow: hidden;
     height: 100%;
     position: relative;
@@ -320,6 +313,7 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
   background-color: #d0e1d4;
+  // overflow: hidden;
 }
 * {
   box-sizing: border-box;

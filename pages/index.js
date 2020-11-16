@@ -39,25 +39,31 @@ export default function Home() {
           />
           <feDisplacementMap in="SourceGraphic" scale="180" />
         </filter>
-      </svg>
-      <svg>
+
         <filter id="filter2">
           <feTurbulence
             type="fractalNoise"
-            baseFrequency=".008"
-            numOctaves="9"
+            baseFrequency=".01"
+            numOctaves="1"
           />
-          <feDisplacementMap in="SourceGraphic" scale="225" />
+          <feDisplacementMap in="SourceGraphic" scale="220" />
         </filter>
-      </svg>
-      <svg>
+
         <filter id="filter2-2">
           <feTurbulence
             type="fractalNoise"
             baseFrequency=".008"
-            numOctaves="9"
+            numOctaves="2"
           />
-          <feDisplacementMap in="SourceGraphic" scale="190" />
+          <feDisplacementMap in="SourceGraphic" scale="300" />
+        </filter>
+        <filter id="filter3">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency=".008"
+            numOctaves="5"
+          />
+          <feDisplacementMap in="SourceGraphic" scale="380" />
         </filter>
       </svg>
     </div>

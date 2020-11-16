@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
+svg {
+  overflow: hidden;
+  display: none;
+}
+
 .cloud {
   border-radius: 50%;
   position: absolute;
@@ -7,7 +12,7 @@
 .cloud1 {
   width: 100px;
   height: 1250px;
-  top: -60px;
+  top: -160px;
   left: -15vw;
   -webkit-filter: url(#filter);
           filter: url(#filter);
@@ -15,33 +20,37 @@
           box-shadow: 400px 400px 60px 0px #dce9df;
 }
 
+.cloud2,
+.cloud2-2 {
+  width: 250px;
+  height: 1800px;
+  top: -700px;
+  left: 10vw;
+}
+
 .cloud2 {
   -webkit-filter: url(#filter2);
           filter: url(#filter2);
+  -webkit-box-shadow: 400px 400px 60px 0px #d6e5da;
+          box-shadow: 400px 400px 60px 0px #d6e5da;
 }
 
 .cloud2-2 {
   -webkit-filter: url(#filter2-2);
           filter: url(#filter2-2);
-}
-
-.cloud2,
-.cloud2-2 {
-  width: 200px;
-  height: 1500px;
-  top: -20px;
-  left: 60vw;
-  -webkit-box-shadow: 400px 400px 60px 0px #dce9df;
-          box-shadow: 400px 400px 60px 0px #dce9df;
+  -webkit-box-shadow: 400px 400px 60px 0px rgba(225, 221, 208, 0.25);
+          box-shadow: 400px 400px 60px 0px rgba(225, 221, 208, 0.25);
 }
 
 .cloud3 {
   width: 90px;
   height: 905px;
-  top: 520px;
-  left: 80vw;
-  -webkit-box-shadow: 400px 400px 60px 0px #dce9df;
-          box-shadow: 400px 400px 60px 0px #dce9df;
+  top: 20px;
+  left: 50vw;
+  -webkit-filter: url(#filter3);
+          filter: url(#filter3);
+  -webkit-box-shadow: 400px 400px 60px 0px #d6e5da;
+          box-shadow: 400px 400px 60px 0px #d6e5da;
 }
 
 .customOverlay {
@@ -54,7 +63,7 @@
 
 .navigation {
   padding: 1rem 2rem;
-  margin: 1rem 4rem;
+  margin: 1rem 5rem;
   height: 3rem;
   position: relative;
   -webkit-animation: entranceAnimation2 1500ms ease;
@@ -127,7 +136,7 @@
   border-radius: 5px;
   right: 3rem;
   top: 0px;
-  letter-spacing: 0.01rem;
+  letter-spacing: -0.09rem;
   padding: 1.8rem 3.4rem;
   margin-top: 4rem;
 }
@@ -312,8 +321,7 @@ hr {
 .container main {
   border-radius: 3px;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left bottom, left top, from(#e2eee8), color-stop(8.1%, #e2eee8), color-stop(15.5%, #e1ede7), color-stop(22.5%, #e0ede6), color-stop(29%, #dfece4), color-stop(35.3%, #ddebe3), color-stop(41.2%, #dce9e1), color-stop(47.1%, #dae8df), color-stop(52.9%, #d8e7dd), color-stop(58.8%, #d6e6db), color-stop(64.7%, #d5e4d9), color-stop(71%, #d3e3d8), color-stop(77.5%, #d2e2d6), color-stop(84.5%, #d1e2d5), color-stop(91.9%, #d0e1d4), to(#d0e1d4));
-  background: linear-gradient(to top, #e2eee8 0%, #e2eee8 8.1%, #e1ede7 15.5%, #e0ede6 22.5%, #dfece4 29%, #ddebe3 35.3%, #dce9e1 41.2%, #dae8df 47.1%, #d8e7dd 52.9%, #d6e6db 58.8%, #d5e4d9 64.7%, #d3e3d8 71%, #d2e2d6 77.5%, #d1e2d5 84.5%, #d0e1d4 91.9%, #d0e1d4 100%);
+  background: #d0e1d4;
   overflow: hidden;
   height: 100%;
   position: relative;
