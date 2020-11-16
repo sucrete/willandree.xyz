@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
-svg {
-  overflow: hidden;
-  display: none;
-}
-
 .cloud {
   border-radius: 50%;
   position: absolute;
+  -webkit-animation: 1s entranceAnimation2 ease;
+          animation: 1s entranceAnimation2 ease;
 }
 
 .cloud1 {
@@ -22,7 +19,7 @@ svg {
 
 .cloud2,
 .cloud2-2 {
-  width: 250px;
+  width: 130px;
   height: 1800px;
   top: -700px;
   left: 10vw;
@@ -136,7 +133,7 @@ svg {
   border-radius: 5px;
   right: 3rem;
   top: 0px;
-  letter-spacing: -0.09rem;
+  letter-spacing: -0.1em;
   padding: 1.8rem 3.4rem;
   margin-top: 4rem;
 }
@@ -170,7 +167,7 @@ svg {
   padding-left: 30px;
   line-height: 1 !important;
   position: relative;
-  color: #1a1918;
+  color: #141413;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;

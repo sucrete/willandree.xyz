@@ -60,10 +60,10 @@ export default function Home() {
         <filter id="filter3">
           <feTurbulence
             type="fractalNoise"
-            baseFrequency=".008"
+            baseFrequency=".006"
             numOctaves="5"
           />
-          <feDisplacementMap in="SourceGraphic" scale="380" />
+          <feDisplacementMap in="SourceGraphic" scale="280" />
         </filter>
       </svg>
     </div>

@@ -3,13 +3,14 @@ $backgroundColor: #dae6e4;
 $color1: rgb(41, 36, 25);
 $color2: rgb(122, 112, 68);
 svg {
-  overflow: hidden;
-  display: none;
+  // overflow: hidden;
+  // display: none;
 }
 .cloud {
   border-radius: 50%;
   position: absolute;
   // overflow: hidden;
+  animation: 1s entranceAnimation2 ease;
 }
 .cloud1 {
   width: 100px;
@@ -21,7 +22,7 @@ svg {
 }
 .cloud2,
 .cloud2-2 {
-  width: 250px;
+  width: 130px;
   height: 1800px;
   top: -700px;
   left: 10vw;
@@ -116,7 +117,7 @@ svg {
     border-radius: 5px;
     right: 3rem;
     top: 0px;
-    letter-spacing: -0.09rem;
+    letter-spacing: -0.1em;
     padding: 1.8rem 3.4rem;
     // border: solid 1px rgb(194, 194, 194);
     // background: lighten($backgroundColor, 7%);
@@ -151,7 +152,7 @@ svg {
       padding-left: 30px;
       line-height: 1 !important;
       position: relative;
-      color: rgb(26, 25, 24);
+      color: rgb(20, 20, 19);
       z-index: 1;
       display: flex;
       animation-duration: 1s;
