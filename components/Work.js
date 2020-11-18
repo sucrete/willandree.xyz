@@ -1,6 +1,7 @@
 import { Modal } from "react-responsive-modal";
 import React from "react";
 import WorkTrail from "./Trail";
+import WorkTitle from "./WorkTitle";
 
 class Work extends React.Component {
   state = {
@@ -10,8 +11,8 @@ class Work extends React.Component {
     openFourth: false,
     openFifth: false,
     openSixth: false,
+    change: false,
   };
-
   render() {
     const {
       openFirst,
@@ -21,6 +22,7 @@ class Work extends React.Component {
       openFifth,
       openSixth,
     } = this.state;
+
     const indexOfFunctions = {
       first: {
         o: () => {
@@ -98,7 +100,7 @@ class Work extends React.Component {
     return (
       <section className="workSection">
         <div className="workSectionBody">
-          <div className="workContainer">work</div>{" "}
+          <WorkTitle />
           <div className="workBody">
             <WorkTrail>{allYourWork}</WorkTrail>
             <Modal

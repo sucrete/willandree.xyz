@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
 $backgroundColor: #dae6e4;
-$color1: rgb(41, 36, 25);
+$color1: #1e2018;
 $color2: rgb(122, 112, 68);
 
 .cloud {
@@ -57,7 +57,7 @@ $color2: rgb(122, 112, 68);
   margin: 1rem 5rem;
   height: 3rem;
   position: relative;
-  animation: entranceAnimation2 1500ms ease;
+  // animation: entranceAnimation2 1500ms ease;
   z-index: 5;
   .name {
     font-family: "corporate regular";
@@ -112,11 +112,11 @@ $color2: rgb(122, 112, 68);
   z-index: 12;
   .descriptionContainer {
     float: right;
-    width: 500px;
+    width: 480px;
     padding-right: 3rem;
     h1 {
       margin-block-start: 0px;
-      margin-block-end: -2rem;
+      margin-block-end: -1.5rem;
       line-height: 50%;
       text-align: right;
       color: transparent;
@@ -130,7 +130,7 @@ $color2: rgb(122, 112, 68);
       animation-timing-function: ease;
       animation-fill-mode: forwards;
       image-rendering: pixelated;
-      animation-delay: 1s;
+      animation-delay: 2s;
       letter-spacing: -0.02em;
     }
     .description {
@@ -141,6 +141,14 @@ $color2: rgb(122, 112, 68);
       font-weight: unset;
       line-height: 90%;
       letter-spacing: -0.03em;
+      -ms-word-break: break-all;
+      word-break: break-all;
+
+      /* Non standard for WebKit */
+
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto;
     }
   }
 }
@@ -167,7 +175,7 @@ $color2: rgb(122, 112, 68);
       font-family: "flexa";
       text-transform: uppercase;
       font-size: 10em;
-      padding-left: 30px;
+      padding-left: 2.5rem;
       line-height: 1 !important;
       position: relative;
       color: #bbccbf;
@@ -176,12 +184,12 @@ $color2: rgb(122, 112, 68);
       opacity: 0;
       display: flex;
       font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
-      animation-duration: 1s;
+      animation-duration: 1400ms;
       animation-name: entranceAnimation2;
-      animation-timing-function: ease-in-out;
+      animation-timing-function: ease;
       animation-fill-mode: forwards;
       image-rendering: pixelated;
-      animation-delay: 1.5s;
+      animation-delay: 2.5s;
       bottom: -25px;
       z-index: 7;
     }
@@ -202,7 +210,7 @@ $color2: rgb(122, 112, 68);
               display: flex;
               position: relative;
               .workItemContainer {
-                border: solid 2px rgb(26, 25, 24);
+                border: solid 2px $color1;
                 border-radius: 55px;
                 padding: 22px 42px;
                 margin: 2px 4px 2px 0px;
@@ -262,7 +270,7 @@ $color2: rgb(122, 112, 68);
     outline: none !important;
     &:hover {
       svg {
-        fill: darkorange !important;
+        fill: #999922 !important;
       }
     }
     svg {
@@ -376,14 +384,14 @@ section {
   }
   to {
     opacity: 1;
-    -webkit-text-stroke: 1px $color1;
+    -webkit-text-stroke: 1px #1e201898;
     font-variation-settings: "wght" 325, "wdth" 0, "ital" 80;
   }
 }
 @keyframes entranceAnimation2 {
   from {
     opacity: 0;
-    transform: translateY(6%);
+    transform: translateY(16%);
   }
   to {
     opacity: 1;

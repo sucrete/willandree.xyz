@@ -64,8 +64,6 @@
   margin: 1rem 5rem;
   height: 3rem;
   position: relative;
-  -webkit-animation: entranceAnimation2 1500ms ease;
-          animation: entranceAnimation2 1500ms ease;
   z-index: 5;
 }
 
@@ -129,15 +127,15 @@
 
 .header .descriptionContainer {
   float: right;
-  width: 500px;
+  width: 480px;
   padding-right: 3rem;
 }
 
 .header .descriptionContainer h1 {
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
-  -webkit-margin-after: -2rem;
-          margin-block-end: -2rem;
+  -webkit-margin-after: -1.5rem;
+          margin-block-end: -1.5rem;
   line-height: 50%;
   text-align: right;
   color: transparent;
@@ -157,19 +155,25 @@
       image-rendering: -moz-crisp-edges;
       image-rendering: -o-pixelated;
       image-rendering: pixelated;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   letter-spacing: -0.02em;
 }
 
 .header .descriptionContainer .description {
   font-family: "corporate";
   font-size: 5em;
-  color: #292419;
+  color: #1e2018;
   text-align: right;
   font-weight: unset;
   line-height: 90%;
   letter-spacing: -0.03em;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for WebKit */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
 }
 
 .title {
@@ -198,7 +202,7 @@
   font-family: "flexa";
   text-transform: uppercase;
   font-size: 10em;
-  padding-left: 30px;
+  padding-left: 2.5rem;
   line-height: 1 !important;
   position: relative;
   color: #bbccbf;
@@ -209,12 +213,12 @@
   display: -ms-flexbox;
   display: flex;
   font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 1400ms;
+          animation-duration: 1400ms;
   -webkit-animation-name: entranceAnimation2;
           animation-name: entranceAnimation2;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -ms-interpolation-mode: nearest-neighbor;
@@ -222,8 +226,8 @@
       image-rendering: -moz-crisp-edges;
       image-rendering: -o-pixelated;
       image-rendering: pixelated;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
   bottom: -25px;
   z-index: 7;
 }
@@ -263,7 +267,7 @@
 }
 
 .workSection .workSectionBody .workBody .trails-main div .trails-text div .workItemContainer {
-  border: solid 2px #1a1918;
+  border: solid 2px #1e2018;
   border-radius: 55px;
   padding: 22px 42px;
   margin: 2px 4px 2px 0px;
@@ -308,7 +312,7 @@
   padding: 11px;
   padding-left: 22px;
   display: block;
-  color: #292419;
+  color: #1e2018;
   font-size: 1.3em;
   font-family: "flexa";
   font-weight: 500;
@@ -322,13 +326,13 @@
 }
 
 .customModal button:hover svg {
-  fill: darkorange !important;
+  fill: #999922 !important;
 }
 
 .customModal button svg {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
-  fill: #292419 !important;
+  fill: #1e2018 !important;
 }
 
 .customModal .modalBody {
@@ -338,7 +342,7 @@
 }
 
 .customModal .modalBody .modalHeader {
-  color: #292419 !important;
+  color: #1e2018 !important;
   font-family: "flexa";
   font-size: 4em;
   font-variation-settings: "wght" 245, "wdth" 95;
@@ -434,7 +438,7 @@ section {
   }
   to {
     opacity: 1;
-    -webkit-text-stroke: 1px #292419;
+    -webkit-text-stroke: 1px #1e201898;
     font-variation-settings: "wght" 325, "wdth" 0, "ital" 80;
   }
 }
@@ -447,7 +451,7 @@ section {
   }
   to {
     opacity: 1;
-    -webkit-text-stroke: 1px #292419;
+    -webkit-text-stroke: 1px #1e201898;
     font-variation-settings: "wght" 325, "wdth" 0, "ital" 80;
   }
 }
@@ -455,8 +459,8 @@ section {
 @-webkit-keyframes entranceAnimation2 {
   from {
     opacity: 0;
-    -webkit-transform: translateY(6%);
-            transform: translateY(6%);
+    -webkit-transform: translateY(16%);
+            transform: translateY(16%);
   }
   to {
     opacity: 1;
@@ -468,8 +472,8 @@ section {
 @keyframes entranceAnimation2 {
   from {
     opacity: 0;
-    -webkit-transform: translateY(6%);
-            transform: translateY(6%);
+    -webkit-transform: translateY(16%);
+            transform: translateY(16%);
   }
   to {
     opacity: 1;
