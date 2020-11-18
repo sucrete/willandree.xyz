@@ -10,7 +10,7 @@ svg {
   border-radius: 50%;
   position: absolute;
   // overflow: hidden;
-  animation: 1s entranceAnimation2 ease;
+  animation: 1s entranceAnimation3 ease;
 }
 .cloud1 {
   width: 100px;
@@ -19,30 +19,32 @@ svg {
   left: -15vw;
   filter: url(#filter);
   box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 4%);
-}
-.cloud2,
-.cloud2-2 {
-  width: 130px;
-  height: 1800px;
-  top: -700px;
-  left: 10vw;
+  // visibility: hidden;
 }
 .cloud2 {
+  width: 130px;
+  height: 1800px;
   filter: url(#filter2);
+  top: -700px;
+  left: 10vw;
   box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 2%);
 }
 .cloud2-2 {
+  width: 100px;
+  height: 1800px;
+  top: -700px;
+  left: 10vw;
   filter: url(#filter2-2);
-  box-shadow: 400px 400px 60px 0px rgba(225, 221, 208, 0.25);
+  box-shadow: 400px 400px 60px 0px rgba(231, 180, 153, 0.05);
 }
 
 .cloud3 {
   width: 90px;
-  height: 905px;
-  top: 20px;
-  left: 50vw;
+  height: 1305px;
+  top: 0px;
+  left: 55vw;
   filter: url(#filter3);
-  box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 2%);
+  box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 3%);
 }
 .customOverlay {
   background: rgba(41, 36, 25, 0.089) !important;
@@ -107,24 +109,28 @@ svg {
   image-rendering: pixelated;
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   .descriptionContainer {
-    color: #4d84f1;
-    font-family: "corporate";
-    font-size: 6em;
-    width: 45%;
-    position: absolute;
-    border-radius: 5px;
-    right: 3rem;
-    top: 0px;
-    letter-spacing: -0.1em;
-    padding: 1.8rem 3.4rem;
-    // border: solid 1px rgb(194, 194, 194);
-    // background: lighten($backgroundColor, 7%);
-    margin-top: 4rem;
-    // box-shadow: 0 4.5px 3.6px rgba(0, 0, 0, 0.017),
-    //   0 12.5px 10px rgba(0, 0, 0, 0.025), 0 30.1px 24.1px rgba(0, 0, 0, 0.033),
-    //   0 100px 80px rgba(0, 0, 0, 0.05);
+    color: transparent;
+    // color: #4d84f1;
+    -webkit-text-stroke: 2px $color1;
+    font-family: "flexa";
+    // font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
+    font-size: 16em;
+    animation-duration: 1s;
+    animation-name: entranceAnimation;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    image-rendering: pixelated;
+    animation-delay: 1s;
+    // position: absolute;
+    // text-transform: uppercase;
+    letter-spacing: -0.03em;
+    h1 {
+      margin-block-start: 0px;
+      line-height: 50%;
+      text-align: right;
+    }
   }
 }
 
@@ -148,18 +154,21 @@ svg {
     .workContainer {
       font-family: "flexa";
       text-transform: uppercase;
-      font-size: 8em;
+      font-size: 10em;
       padding-left: 30px;
       line-height: 1 !important;
       position: relative;
-      color: rgb(20, 20, 19);
+      color: #bbccbf;
       z-index: 1;
+      letter-spacing: -0.03em;
       display: flex;
+      font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
       animation-duration: 1s;
-      animation-name: entranceAnimation;
-      animation-timing-function: ease;
-      // animation-iteration-count: 3;
+      animation-name: entranceAnimation2;
+      animation-timing-function: ease-in-out;
       animation-fill-mode: forwards;
+      image-rendering: pixelated;
+      animation-delay: 1.5s;
       bottom: -25px;
     }
     .workBody {
@@ -354,10 +363,20 @@ section {
   }
   to {
     opacity: 1;
-    font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
+    font-variation-settings: "wght" 325, "wdth" 0, "ital" 80;
   }
 }
 @keyframes entranceAnimation2 {
+  from {
+    opacity: 0;
+    transform: translateY(6%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes entranceAnimation3 {
   from {
     opacity: 0;
   }
