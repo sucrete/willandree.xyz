@@ -44,7 +44,7 @@ export default function Home() {
           <feTurbulence
             type="fractalNoise"
             baseFrequency=".01"
-            numOctaves="2"
+            numOctaves="4"
           />
           <feDisplacementMap in="SourceGraphic" scale="220" />
         </filter>

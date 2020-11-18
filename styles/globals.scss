@@ -2,15 +2,13 @@
 $backgroundColor: #dae6e4;
 $color1: rgb(41, 36, 25);
 $color2: rgb(122, 112, 68);
-svg {
-  // overflow: hidden;
-  // display: none;
-}
+
 .cloud {
   border-radius: 50%;
   position: absolute;
   // overflow: hidden;
   animation: 1s entranceAnimation3 ease;
+  z-index: 5;
 }
 .cloud1 {
   width: 100px;
@@ -35,7 +33,7 @@ svg {
   top: -700px;
   left: 10vw;
   filter: url(#filter2-2);
-  box-shadow: 400px 400px 60px 0px rgba(231, 180, 153, 0.05);
+  box-shadow: 400px 400px 60px 0px rgba(231, 180, 153, 0.08);
 }
 
 .cloud3 {
@@ -60,6 +58,7 @@ svg {
   height: 3rem;
   position: relative;
   animation: entranceAnimation2 1500ms ease;
+  z-index: 5;
   .name {
     font-family: "corporate regular";
     font-size: 1.4em;
@@ -110,26 +109,38 @@ svg {
   position: relative;
   width: 100%;
   height: 70vh;
+  z-index: 12;
   .descriptionContainer {
-    color: transparent;
-    // color: #4d84f1;
-    -webkit-text-stroke: 2px $color1;
-    font-family: "flexa";
-    // font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
-    font-size: 16em;
-    animation-duration: 1s;
-    animation-name: entranceAnimation;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    image-rendering: pixelated;
-    animation-delay: 1s;
-    // position: absolute;
-    // text-transform: uppercase;
-    letter-spacing: -0.03em;
+    float: right;
+    width: 500px;
+    padding-right: 3rem;
     h1 {
       margin-block-start: 0px;
+      margin-block-end: -2rem;
       line-height: 50%;
       text-align: right;
+      color: transparent;
+      // color: #4d84f1;
+      font-family: "flexa";
+      // font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
+      font-size: 19em;
+      font-weight: unset;
+      animation-duration: 1s;
+      animation-name: entranceAnimation;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+      image-rendering: pixelated;
+      animation-delay: 1s;
+      letter-spacing: -0.02em;
+    }
+    .description {
+      font-family: "corporate";
+      font-size: 5em;
+      color: $color1;
+      text-align: right;
+      font-weight: unset;
+      line-height: 90%;
+      letter-spacing: -0.03em;
     }
   }
 }
@@ -147,6 +158,7 @@ svg {
   margin-bottom: 5em;
   height: 80vh;
   position: relative;
+
   .workSectionBody {
     // position: absolute;
     left: 0px;
@@ -161,6 +173,7 @@ svg {
       color: #bbccbf;
       z-index: 1;
       letter-spacing: -0.03em;
+      opacity: 0;
       display: flex;
       font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
       animation-duration: 1s;
@@ -170,12 +183,14 @@ svg {
       image-rendering: pixelated;
       animation-delay: 1.5s;
       bottom: -25px;
+      z-index: 7;
     }
     .workBody {
       display: flex;
       flex-wrap: wrap;
       z-index: 4;
       position: relative;
+      z-index: 11;
       .trails-main {
         display: flex;
         flex-wrap: wrap;
@@ -303,7 +318,7 @@ hr {
       top: -10%;
       background: url("http://i.imgur.com/P0Kkvuv.png");
       position: absolute;
-      // z-index: 10;
+      z-index: 10;
     }
   }
 }
@@ -356,13 +371,12 @@ section {
 @keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 625, "wdth" 0, "ital" 0;
-  }
-  50% {
-    opacity: 1;
+    font-variation-settings: "wght" 425, "wdth" 0, "ital" 50;
+    -webkit-text-stroke: 1px transparent;
   }
   to {
     opacity: 1;
+    -webkit-text-stroke: 1px $color1;
     font-variation-settings: "wght" 325, "wdth" 0, "ital" 80;
   }
 }
