@@ -12,7 +12,6 @@ class Work extends React.Component {
     openFourth: false,
     openFifth: false,
     openSixth: false,
-    change: false,
   };
   render() {
     const {
@@ -82,7 +81,7 @@ class Work extends React.Component {
       "The Voter's Companion",
       "willandree.xyz",
     ];
-    const modalOridinals = [
+    const modalOrdinals = [
       "first",
       "second",
       "third",
@@ -93,7 +92,7 @@ class Work extends React.Component {
     const allYourWork = work.map((project, index) => (
       <span
         className="workItemContainer"
-        onClick={indexOfFunctions[modalOridinals[index]].o}
+        onClick={indexOfFunctions[modalOrdinals[index]].o}
       >
         <span className="workItem">{project}</span>
       </span>
@@ -101,13 +100,13 @@ class Work extends React.Component {
     function WorkBody() {
       const { ref, inView } = useInView({
         /* Optional options */
-        threshold: 1,
+        threshold: 0,
         triggerOnce: true,
       });
 
       return (
         <div ref={ref} className="workBodyBody">
-          {inView === true ? (
+          {inView && (
             <div className="workBody">
               <WorkTrail>{allYourWork}</WorkTrail>
               <Modal
@@ -192,13 +191,12 @@ class Work extends React.Component {
                 center
               >
                 <div className="projectDesignation">vi</div>
-
                 <div className="modalBody">
                   <h1 className="modalHeader">willandree.xyz</h1>
                 </div>
               </Modal>
             </div>
-          ) : null}
+          )}
         </div>
       );
     }

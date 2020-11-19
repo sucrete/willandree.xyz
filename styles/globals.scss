@@ -166,7 +166,6 @@ $color2: rgb(122, 112, 68);
   margin-bottom: 5em;
   height: 80vh;
   position: relative;
-
   .workSectionBody {
     // position: absolute;
     left: 0px;
@@ -379,12 +378,15 @@ section {
 @keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 425, "wdth" 0, "ital" 50;
+    font-variation-settings: "wght" 455, "wdth" 0, "ital" 30;
+    -webkit-text-stroke: 1px transparent;
+  }
+  20% {
     -webkit-text-stroke: 1px transparent;
   }
   to {
     opacity: 1;
-    -webkit-text-stroke: 1px #1e201898;
+    -webkit-text-stroke: 1px #1e2018a9;
     font-variation-settings: "wght" 325, "wdth" 0, "ital" 80;
   }
 }
