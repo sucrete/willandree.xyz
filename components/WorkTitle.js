@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 export default function WorkTitle() {
   const { ref, inView } = useInView({
     /* Optional options */
-    threshold: 1,
+    threshold: 0.9,
     triggerOnce: true,
   });
   let style = {

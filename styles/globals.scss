@@ -48,7 +48,7 @@ $color2: rgb(122, 112, 68);
   background: rgba(41, 36, 25, 0.089) !important;
   // border: solid clamp(2vw, 1.5vw, 0.5vw) rgb(230, 229, 215);
   // outline-color: darken(#e2e1d4, 2%);
-  overflow: hidden;
+  // overflow: hidden;
   backdrop-filter: blur(7px);
   padding: 0rem !important;
 }
@@ -112,7 +112,7 @@ $color2: rgb(122, 112, 68);
   z-index: 12;
   .descriptionContainer {
     float: right;
-    width: 475px;
+    width: 550px;
     padding-right: 3rem;
     h1 {
       margin-block-start: 0px;
@@ -123,7 +123,7 @@ $color2: rgb(122, 112, 68);
       // color: #4d84f1;
       font-family: "flexa";
       // font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
-      font-size: 19em;
+      font-size: 22em;
       font-weight: unset;
       animation-duration: 1s;
       animation-name: entranceAnimation;
