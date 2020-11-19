@@ -382,10 +382,6 @@ hr {
   z-index: 10;
 }
 
-.clickable {
-  cursor: url("/pointer.png"), pointer;
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -432,10 +428,10 @@ section {
 @-webkit-keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 455, "wdth" 0, "ital" 30;
+    font-variation-settings: "wght" 555, "wdth" 0, "ital" 30;
     -webkit-text-stroke: 1px transparent;
   }
-  20% {
+  30% {
     -webkit-text-stroke: 1px transparent;
   }
   to {
@@ -448,10 +444,10 @@ section {
 @keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 455, "wdth" 0, "ital" 30;
+    font-variation-settings: "wght" 555, "wdth" 0, "ital" 30;
     -webkit-text-stroke: 1px transparent;
   }
-  20% {
+  30% {
     -webkit-text-stroke: 1px transparent;
   }
   to {

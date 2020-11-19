@@ -329,13 +329,6 @@ hr {
     }
   }
 }
-.container > * {
-  // animation: 0.8s entranceAnimation ease-out;
-}
-
-.clickable {
-  cursor: url("/pointer.png"), pointer;
-}
 
 body {
   padding: 0;
@@ -378,10 +371,10 @@ section {
 @keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 455, "wdth" 0, "ital" 30;
+    font-variation-settings: "wght" 555, "wdth" 0, "ital" 30;
     -webkit-text-stroke: 1px transparent;
   }
-  20% {
+  30% {
     -webkit-text-stroke: 1px transparent;
   }
   to {

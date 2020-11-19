@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import WorkTitle from "./WorkTitle";
-import { useInView } from "react-intersection-observer";
 import { Modal } from "react-responsive-modal";
 import WorkTrail from "./Trail";
 
@@ -98,105 +97,97 @@ class Work extends React.Component {
       </span>
     ));
     function WorkBody() {
-      const { ref, inView } = useInView({
-        /* Optional options */
-        threshold: 0,
-        triggerOnce: true,
-      });
-
       return (
-        <div ref={ref} className="workBodyBody">
-          {inView && (
-            <div className="workBody">
-              <WorkTrail>{allYourWork}</WorkTrail>
-              <Modal
-                classNames={{
-                  overlay: "customOverlay",
-                  modal: "customModal",
-                }}
-                open={openFirst}
-                onClose={indexOfFunctions.first.c}
-                center
-              >
-                <div className="projectDesignation">i</div>
+        <div className="workBodyBody">
+          <div className="workBody">
+            <WorkTrail>{allYourWork}</WorkTrail>
+            <Modal
+              classNames={{
+                overlay: "customOverlay",
+                modal: "customModal",
+              }}
+              open={openFirst}
+              onClose={indexOfFunctions.first.c}
+              center
+            >
+              <div className="projectDesignation">i</div>
 
-                <div className="modalBody">
-                  <h1 className="modalHeader">dumpTRUCK</h1>
-                </div>
-              </Modal>
-              <Modal
-                classNames={{
-                  overlay: "customOverlay",
-                  modal: "customModal",
-                }}
-                open={openSecond}
-                onClose={indexOfFunctions.second.c}
-                center
-              >
-                <div className="projectDesignation">ii</div>
-                <div className="modalBody">
-                  <h1 className="modalHeader">maxrosen.town</h1>
-                </div>
-              </Modal>
-              <Modal
-                classNames={{
-                  overlay: "customOverlay",
-                  modal: "customModal",
-                }}
-                open={openThird}
-                onClose={indexOfFunctions.third.c}
-                center
-              >
-                <div className="projectDesignation">iii</div>
-                <div className="modalBody">
-                  <h1 className="modalHeader">Old Town Lofts</h1>
-                </div>
-              </Modal>
-              <Modal
-                classNames={{
-                  overlay: "customOverlay",
-                  modal: "customModal",
-                }}
-                open={openFourth}
-                onClose={indexOfFunctions.fourth.c}
-                center
-              >
-                <div className="projectDesignation">iv</div>
-                <div className="modalBody">
-                  <h1 className="modalHeader">calvintodd.com</h1>
-                  <div className="modalSubheading">personal website</div>
-                </div>
-              </Modal>
-              <Modal
-                classNames={{
-                  overlay: "customOverlay",
-                  modal: "customModal",
-                }}
-                open={openFifth}
-                onClose={indexOfFunctions.fifth.c}
-                center
-              >
-                <div className="projectDesignation">v</div>
-                <div className="modalBody">
-                  <h1 className="modalHeader">The Voter's Companion</h1>
-                </div>
-              </Modal>
-              <Modal
-                classNames={{
-                  overlay: "customOverlay",
-                  modal: "customModal",
-                }}
-                open={openSixth}
-                onClose={indexOfFunctions.sixth.c}
-                center
-              >
-                <div className="projectDesignation">vi</div>
-                <div className="modalBody">
-                  <h1 className="modalHeader">willandree.xyz</h1>
-                </div>
-              </Modal>
-            </div>
-          )}
+              <div className="modalBody">
+                <h1 className="modalHeader">dumpTRUCK</h1>
+              </div>
+            </Modal>
+            <Modal
+              classNames={{
+                overlay: "customOverlay",
+                modal: "customModal",
+              }}
+              open={openSecond}
+              onClose={indexOfFunctions.second.c}
+              center
+            >
+              <div className="projectDesignation">ii</div>
+              <div className="modalBody">
+                <h1 className="modalHeader">maxrosen.town</h1>
+              </div>
+            </Modal>
+            <Modal
+              classNames={{
+                overlay: "customOverlay",
+                modal: "customModal",
+              }}
+              open={openThird}
+              onClose={indexOfFunctions.third.c}
+              center
+            >
+              <div className="projectDesignation">iii</div>
+              <div className="modalBody">
+                <h1 className="modalHeader">Old Town Lofts</h1>
+              </div>
+            </Modal>
+            <Modal
+              classNames={{
+                overlay: "customOverlay",
+                modal: "customModal",
+              }}
+              open={openFourth}
+              onClose={indexOfFunctions.fourth.c}
+              center
+            >
+              <div className="projectDesignation">iv</div>
+              <div className="modalBody">
+                <h1 className="modalHeader">calvintodd.com</h1>
+                <div className="modalSubheading">personal website</div>
+              </div>
+            </Modal>
+            <Modal
+              classNames={{
+                overlay: "customOverlay",
+                modal: "customModal",
+              }}
+              open={openFifth}
+              onClose={indexOfFunctions.fifth.c}
+              center
+            >
+              <div className="projectDesignation">v</div>
+              <div className="modalBody">
+                <h1 className="modalHeader">The Voter's Companion</h1>
+              </div>
+            </Modal>
+            <Modal
+              classNames={{
+                overlay: "customOverlay",
+                modal: "customModal",
+              }}
+              open={openSixth}
+              onClose={indexOfFunctions.sixth.c}
+              center
+            >
+              <div className="projectDesignation">vi</div>
+              <div className="modalBody">
+                <h1 className="modalHeader">willandree.xyz</h1>
+              </div>
+            </Modal>
+          </div>
         </div>
       );
     }
