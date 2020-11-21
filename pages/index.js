@@ -1,5 +1,4 @@
 import Head from "next/head";
-// import window from "../public/window.svg";
 import Header from "../components/Header";
 import Contact from "../components/Contact";
 import Work from "../components/Work";

@@ -1,9 +1,45 @@
-import React, { useState, useEffect, useRef } from "react";
-import WorkTitle from "./WorkTitle";
+import React from "react";
+import { Trail, animated } from "react-spring/renderprops";
+// import { useInView } from "react-intersection-observer";
 import { Modal } from "react-responsive-modal";
-import WorkTrail from "./Trail";
+import WorkTitle from "./WorkTitle";
 
-class Work extends React.Component {
+// function WorkTrail({ open, children, ...props }) {
+// const { ref, inView } = useInView({
+//   threshold: 1,
+//   triggerOnce: true,
+// });
+//   const items = React.Children.toArray(children);
+//   const trail = useTrail(items.length, {
+//     config: { mass: 5, tension: 1800, friction: 230 },
+//     opacity: 1,
+//     x: 0,
+//     delay: 300,
+//     from: { opacity: 0, x: 150 },
+//   });
+
+//   return (
+//     <div className="trails-main">
+//       <div>
+//         {trail.map(({ x, ...rest }, index) => (
+//           <a.div
+//             key={index}
+//             className="trails-text"
+//             style={{
+//               ...rest,
+//               transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
+//             }}
+//           >
+//             <a.div key={index}>{items[index]}</a.div>
+//           </a.div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+// export default React.memo(Work);
+
+export default class Work extends React.PureComponent {
   state = {
     openFirst: false,
     openSecond: false,
@@ -11,6 +47,15 @@ class Work extends React.Component {
     openFourth: false,
     openFifth: false,
     openSixth: false,
+    work: [
+      "dumpTRUCK",
+      "maxrosen.town",
+      "Old Town Lofts",
+      "calvintodd.com",
+      "The Voter's Companion",
+      "willandree.xyz",
+    ],
+    modalOrdinals: ["first", "second", "third", "fourth", "fifth", "sixth"],
   };
   render() {
     const {
@@ -20,6 +65,8 @@ class Work extends React.Component {
       openFourth,
       openFifth,
       openSixth,
+      work,
+      modalOrdinals,
     } = this.state;
 
     const indexOfFunctions = {
@@ -72,134 +119,117 @@ class Work extends React.Component {
         },
       },
     };
-    const work = [
-      "dumpTRUCK",
-      "maxrosen.town",
-      "Old Town Lofts",
-      "calvintodd.com",
-      "The Voter's Companion",
-      "willandree.xyz",
-    ];
-    const modalOrdinals = [
-      "first",
-      "second",
-      "third",
-      "fourth",
-      "fifth",
-      "sixth",
-    ];
-    const allYourWork = work.map((project, index) => (
-      <span
-        className="workItemContainer"
-        onClick={indexOfFunctions[modalOrdinals[index]].o}
-      >
-        <span className="workItem">{project}</span>
-      </span>
-    ));
-    function WorkBody() {
-      return (
-        <div className="workBodyBody">
-          <div className="workBody">
-            <WorkTrail>{allYourWork}</WorkTrail>
-            <Modal
-              classNames={{
-                overlay: "customOverlay",
-                modal: "customModal",
-              }}
-              open={openFirst}
-              onClose={indexOfFunctions.first.c}
-              center
-            >
-              <div className="projectDesignation">i</div>
-
-              <div className="modalBody">
-                <h1 className="modalHeader">dumpTRUCK</h1>
-              </div>
-            </Modal>
-            <Modal
-              classNames={{
-                overlay: "customOverlay",
-                modal: "customModal",
-              }}
-              open={openSecond}
-              onClose={indexOfFunctions.second.c}
-              center
-            >
-              <div className="projectDesignation">ii</div>
-              <div className="modalBody">
-                <h1 className="modalHeader">maxrosen.town</h1>
-              </div>
-            </Modal>
-            <Modal
-              classNames={{
-                overlay: "customOverlay",
-                modal: "customModal",
-              }}
-              open={openThird}
-              onClose={indexOfFunctions.third.c}
-              center
-            >
-              <div className="projectDesignation">iii</div>
-              <div className="modalBody">
-                <h1 className="modalHeader">Old Town Lofts</h1>
-              </div>
-            </Modal>
-            <Modal
-              classNames={{
-                overlay: "customOverlay",
-                modal: "customModal",
-              }}
-              open={openFourth}
-              onClose={indexOfFunctions.fourth.c}
-              center
-            >
-              <div className="projectDesignation">iv</div>
-              <div className="modalBody">
-                <h1 className="modalHeader">calvintodd.com</h1>
-                <div className="modalSubheading">personal website</div>
-              </div>
-            </Modal>
-            <Modal
-              classNames={{
-                overlay: "customOverlay",
-                modal: "customModal",
-              }}
-              open={openFifth}
-              onClose={indexOfFunctions.fifth.c}
-              center
-            >
-              <div className="projectDesignation">v</div>
-              <div className="modalBody">
-                <h1 className="modalHeader">The Voter's Companion</h1>
-              </div>
-            </Modal>
-            <Modal
-              classNames={{
-                overlay: "customOverlay",
-                modal: "customModal",
-              }}
-              open={openSixth}
-              onClose={indexOfFunctions.sixth.c}
-              center
-            >
-              <div className="projectDesignation">vi</div>
-              <div className="modalBody">
-                <h1 className="modalHeader">willandree.xyz</h1>
-              </div>
-            </Modal>
-          </div>
-        </div>
-      );
-    }
 
     return (
-      <section className="workSection">
-        <div className="workSectionBody">
-          <WorkTitle />
-          <WorkBody />
-        </div>
+      <section>
+        <WorkTitle />
+        <Trail
+          native
+          // initial={null}
+          items={work}
+          from={{ opacity: 0, x: 150 }}
+          to={{ opacity: 1, x: 0 }}
+        >
+          {(pieceOfWork) => ({ x, opacity }, index) => (
+            <animated.div
+              className="workItemContainer"
+              // onClick={indexOfFunctions[modalOrdinals[index]].o}
+              style={{
+                opacity,
+                transform: x.interpolate((x) => `translate3d(${x}%,0,0)`),
+              }}
+            >
+              <span className="workItem">{pieceOfWork}</span>
+            </animated.div>
+          )}
+        </Trail>
+        <Modal
+          classNames={{
+            overlay: "customOverlay",
+            modal: "customModal",
+          }}
+          open={openFirst}
+          onClose={indexOfFunctions.first.c}
+          center
+        >
+          <div className="projectDesignation">i</div>
+
+          <div className="modalBody">
+            <h1 className="modalHeader">dumpTRUCK</h1>
+          </div>
+        </Modal>
+        <Modal
+          classNames={{
+            overlay: "customOverlay",
+            modal: "customModal",
+          }}
+          open={openSecond}
+          onClose={indexOfFunctions.second.c}
+          center
+        >
+          <div className="projectDesignation">ii</div>
+          <div className="modalBody">
+            <h1 className="modalHeader">maxrosen.town</h1>
+          </div>
+        </Modal>
+        <Modal
+          classNames={{
+            overlay: "customOverlay",
+            modal: "customModal",
+          }}
+          open={openThird}
+          onClose={indexOfFunctions.third.c}
+          center
+        >
+          <div className="projectDesignation">iii</div>
+          <div className="modalBody">
+            <h1 className="modalHeader">Old Town Lofts</h1>
+          </div>
+        </Modal>
+        <Modal
+          classNames={{
+            overlay: "customOverlay",
+            modal: "customModal",
+          }}
+          open={openFourth}
+          onClose={indexOfFunctions.fourth.c}
+          center
+        >
+          <div className="projectDesignation">iv</div>
+          <div className="modalBody">
+            <h1 className="modalHeader">calvintodd.com</h1>
+            <div className="modalSubheading">personal website</div>
+          </div>
+        </Modal>
+        <Modal
+          classNames={{
+            overlay: "customOverlay",
+            modal: "customModal",
+          }}
+          open={openFifth}
+          onClose={indexOfFunctions.fifth.c}
+          center
+        >
+          <div className="projectDesignation">v</div>
+          <div className="modalBody">
+            <h1 className="modalHeader">The Voter's Companion</h1>
+          </div>
+        </Modal>
+        <Modal
+          classNames={{
+            overlay: "customOverlay",
+            modal: "customModal",
+          }}
+          open={openSixth}
+          onClose={indexOfFunctions.sixth.c}
+          center
+        >
+          <div className="projectDesignation">vi</div>
+          <div className="modalBody">
+            <h1 className="modalHeader">willandree.xyz</h1>
+          </div>
+        </Modal>
       </section>
     );
   }
 }
-export default Work;
