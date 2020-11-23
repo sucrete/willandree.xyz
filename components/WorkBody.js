@@ -1,6 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-
-import WorkTrail from "./WorkTrail";
+import React from "react";
 
 class WorkBody extends React.Component {
   render() {

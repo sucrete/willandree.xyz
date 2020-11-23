@@ -1,9 +1,10 @@
-import React from "react";
-import { Trail, animated } from "react-spring/renderprops";
 // import { useInView } from "react-intersection-observer";
 import { Modal } from "react-responsive-modal";
 import WorkTitle from "./WorkTitle";
-
+import Trail from "./Trail";
+import React, { useState, useRef } from "react";
+import { useTrail, animated } from "react-spring";
+import DumpTRUCKContent from "./ModalContent/DumpTRUCK";
 // function WorkTrail({ open, children, ...props }) {
 // const { ref, inView } = useInView({
 //   threshold: 1,
@@ -37,128 +38,131 @@ import WorkTitle from "./WorkTitle";
 //     </div>
 //   );
 // }
-// export default React.memo(Work);
+const work = [
+  "dumpTRUCK",
+  "maxrosen.town",
+  "Old Town Lofts",
+  "calvintodd.com",
+  "The Voter's Companion",
+  "willandree.xyz",
+];
+const modals = ["dt", "mr", "otl", "cal", "votr", "wil"];
+// const allModals =
 
-export default class Work extends React.PureComponent {
-  state = {
-    openFirst: false,
-    openSecond: false,
-    openThird: false,
-    openFourth: false,
-    openFifth: false,
-    openSixth: false,
-    work: [
-      "dumpTRUCK",
-      "maxrosen.town",
-      "Old Town Lofts",
-      "calvintodd.com",
-      "The Voter's Companion",
-      "willandree.xyz",
-    ],
-    modalOrdinals: ["first", "second", "third", "fourth", "fifth", "sixth"],
+export default function Work() {
+  const [dumpTRUCK, setDumpTRUCK] = useState(false);
+  const [maxRosen, setMaxRosen] = useState(false);
+  const [OTL, setOTL] = useState(false);
+  const [calvin, setCalvin] = useState(false);
+  const [votr, setVotr] = useState(false);
+  const [willAndree, setWillAndree] = useState(false);
+  const functions = {
+    // dumpTRUCK
+    dt: {
+      o: () => {
+        setDumpTRUCK(true);
+      },
+      c: () => {
+        setDumpTRUCK(false);
+      },
+    },
+    // maxRosen.town
+    mr: {
+      o: () => {
+        setMaxRosen(true);
+      },
+      c: () => {
+        setMaxRosen(false);
+      },
+    },
+    // old town lofts
+    otl: {
+      o: () => {
+        setOTL(true);
+      },
+      c: () => {
+        setOTL(false);
+      },
+    },
+    // calvin Todd
+    cal: {
+      o: () => {
+        setCalvin(true);
+      },
+      c: () => {
+        setCalvin(false);
+      },
+    },
+    // The Voter's Companion
+    votr: {
+      o: () => {
+        setVotr(true);
+      },
+      c: () => {
+        setVotr(false);
+      },
+    },
+    // willandree.xyz
+    wil: {
+      o: () => {
+        setWillAndree(true);
+      },
+      c: () => {
+        setWillAndree(false);
+      },
+    },
   };
-  render() {
-    const {
-      openFirst,
-      openSecond,
-      openThird,
-      openFourth,
-      openFifth,
-      openSixth,
-      work,
-      modalOrdinals,
-    } = this.state;
-
-    const indexOfFunctions = {
-      first: {
-        o: () => {
-          this.setState({ openFirst: true });
-        },
-        c: () => {
-          this.setState({ openFirst: false });
-        },
-      },
-      second: {
-        o: () => {
-          this.setState({ openSecond: true });
-        },
-        c: () => {
-          this.setState({ openSecond: false });
-        },
-      },
-      third: {
-        o: () => {
-          this.setState({ openThird: true });
-        },
-        c: () => {
-          this.setState({ openThird: false });
-        },
-      },
-      fourth: {
-        o: () => {
-          this.setState({ openFourth: true });
-        },
-        c: () => {
-          this.setState({ openFourth: false });
-        },
-      },
-      fifth: {
-        o: () => {
-          this.setState({ openFifth: true });
-        },
-        c: () => {
-          this.setState({ openFifth: false });
-        },
-      },
-      sixth: {
-        o: () => {
-          this.setState({ openSixth: true });
-        },
-        c: () => {
-          this.setState({ openSixth: false });
-        },
-      },
-    };
-
-    return (
-      <section>
-        <WorkTitle />
-        <Trail
-          native
-          // initial={null}
-          items={work}
-          from={{ opacity: 0, x: 150 }}
-          to={{ opacity: 1, x: 0 }}
-        >
-          {(pieceOfWork) => ({ x, opacity }, index) => (
-            <animated.div
-              className="workItemContainer"
-              // onClick={indexOfFunctions[modalOrdinals[index]].o}
-              style={{
-                opacity,
-                transform: x.interpolate((x) => `translate3d(${x}%,0,0)`),
-              }}
-            >
-              <span className="workItem">{pieceOfWork}</span>
-            </animated.div>
-          )}
-        </Trail>
-        <Modal
-          classNames={{
-            overlay: "customOverlay",
-            modal: "customModal",
+  const trail = useTrail(work.length, {
+    // items,
+    opacity: 1,
+    x: 0,
+    from: { opacity: 0, x: 20 },
+    config: { mass: 5, tension: 2000, friction: 200 },
+  });
+  const MyModal = (props) => (
+    <Modal
+      classNames={{
+        overlay: "customOverlay",
+        modal: "customModal",
+      }}
+      center
+      open={props.bool}
+      onClose={props.closeFunction}
+    >
+      {props.children}
+    </Modal>
+  );
+  return (
+    <section className="work">
+      <div className="workContainer" style={{ color: "#1e2018" }}>
+        work
+      </div>
+      {trail.map(({ x, ...rest }, index) => (
+        <animated.a
+          className="workItemContainer"
+          key={work[index]}
+          style={{
+            ...rest,
+            transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
+            cursor: "pointer",
           }}
-          open={openFirst}
-          onClose={indexOfFunctions.first.c}
-          center
+          onClick={functions[modals[index]].o}
         >
-          <div className="projectDesignation">i</div>
-
-          <div className="modalBody">
-            <h1 className="modalHeader">dumpTRUCK</h1>
-          </div>
-        </Modal>
-        <Modal
+          <animated.span className="workItem">{work[index]}</animated.span>
+        </animated.a>
+      ))}
+      {/* <Modal
+        classNames={{
+          overlay: "customOverlay",
+          modal: "customModal",
+        }}
+        open={dumpTRUCK}
+        onClose={functions.dt.c}
+      ></Modal> */}
+      <MyModal bool={dumpTRUCK} closeFunction={functions.dt.c}>
+        <DumpTRUCKContent /> and boobs
+      </MyModal>
+      {/* <Modal
           classNames={{
             overlay: "customOverlay",
             modal: "customModal",
@@ -228,8 +232,7 @@ export default class Work extends React.PureComponent {
           <div className="modalBody">
             <h1 className="modalHeader">willandree.xyz</h1>
           </div>
-        </Modal>
-      </section>
-    );
-  }
+        </Modal> */}
+    </section>
+  );
 }

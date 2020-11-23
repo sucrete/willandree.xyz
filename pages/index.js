@@ -20,7 +20,6 @@ export default function Home() {
         <div className="cloud cloud3"></div>
         <div className="noise"></div>
         <Nav />
-        {/* <hr /> */}
         <Header />
         <Work />
         <hr />

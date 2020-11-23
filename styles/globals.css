@@ -175,6 +175,11 @@
       hyphens: auto;
 }
 
+.work {
+  position: relative;
+  z-index: 20;
+}
+
 .title {
   font-size: 6.5em;
   color: #292419;

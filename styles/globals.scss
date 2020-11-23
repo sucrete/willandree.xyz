@@ -152,7 +152,10 @@ $color2: rgb(122, 112, 68);
     }
   }
 }
-
+.work {
+  position: relative;
+  z-index: 20;
+}
 .title {
   font-size: 6.5em;
   color: rgb(41, 36, 25);
