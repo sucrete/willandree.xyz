@@ -1,7 +1,5 @@
 // import { useInView } from "react-intersection-observer";
 import { Modal } from "react-responsive-modal";
-import WorkTitle from "./WorkTitle";
-import Trail from "./Trail";
 import React, { useState, useRef } from "react";
 import { useTrail, animated } from "react-spring";
 import DumpTRUCKContent from "./ModalContent/DumpTRUCK";
@@ -160,7 +158,7 @@ export default function Work() {
         onClose={functions.dt.c}
       ></Modal> */}
       <MyModal bool={dumpTRUCK} closeFunction={functions.dt.c}>
-        <DumpTRUCKContent /> and boobs
+        <DumpTRUCKContent />
       </MyModal>
       {/* <Modal
           classNames={{
