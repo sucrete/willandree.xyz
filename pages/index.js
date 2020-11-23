@@ -22,10 +22,10 @@ export default function Home() {
         <Nav />
         <Header />
         <Work />
-        <hr />
+        {/* <hr />
         <Info />
         <hr />
-        <Contact />
+        <Contact /> */}
       </main>
 
       <svg width="0" height="0">

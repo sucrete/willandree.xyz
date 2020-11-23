@@ -139,7 +139,7 @@
   text-align: right;
   color: transparent;
   font-family: "flexa";
-  font-size: 22em;
+  font-size: 35em;
   font-weight: unset;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -161,7 +161,7 @@
 
 .header .descriptionContainer .description {
   font-family: "corporate";
-  font-size: 5em;
+  font-size: 2em;
   color: #1e2018;
   text-align: right;
   font-weight: unset;
@@ -223,6 +223,7 @@
   z-index: 4;
   position: relative;
   z-index: 11;
+  width: 80%;
 }
 
 .work .workBody .workItemContainer {
@@ -401,9 +402,6 @@ section {
     font-variation-settings: "wght" 555, "wdth" 0, "ital" 30;
     -webkit-text-stroke: 1px transparent;
   }
-  30% {
-    -webkit-text-stroke: 1px transparent;
-  }
   to {
     opacity: 1;
     -webkit-text-stroke: 1px #1e2018a9;
@@ -415,9 +413,6 @@ section {
   from {
     opacity: 0;
     font-variation-settings: "wght" 555, "wdth" 0, "ital" 30;
-    -webkit-text-stroke: 1px transparent;
-  }
-  30% {
     -webkit-text-stroke: 1px transparent;
   }
   to {

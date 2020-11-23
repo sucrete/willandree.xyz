@@ -123,7 +123,7 @@ $color2: rgb(122, 112, 68);
       // color: #4d84f1;
       font-family: "flexa";
       // font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
-      font-size: 22em;
+      font-size: 35em;
       font-weight: unset;
       animation-duration: 1s;
       animation-name: entranceAnimation;
@@ -135,7 +135,7 @@ $color2: rgb(122, 112, 68);
     }
     .description {
       font-family: "corporate";
-      font-size: 5em;
+      font-size: 2em;
       color: $color1;
       text-align: right;
       font-weight: unset;
@@ -183,6 +183,7 @@ $color2: rgb(122, 112, 68);
     z-index: 4;
     position: relative;
     z-index: 11;
+    width: 80%;
     .workItemContainer {
       border: solid 2px $color1;
       border-radius: 55px;
@@ -352,9 +353,9 @@ section {
     font-variation-settings: "wght" 555, "wdth" 0, "ital" 30;
     -webkit-text-stroke: 1px transparent;
   }
-  30% {
-    -webkit-text-stroke: 1px transparent;
-  }
+  // 30% {
+  //   -webkit-text-stroke: 1px transparent;
+  // }
   to {
     opacity: 1;
     -webkit-text-stroke: 1px #1e2018a9;

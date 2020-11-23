@@ -116,12 +116,7 @@ export default function Work() {
       },
     },
   };
-  const trail = useTrail(work.length, {
-    config: { mass: 5, tension: 1800, friction: 230 },
-    opacity: 1,
-    x: 0,
-    from: { opacity: 0, x: 150 },
-  });
+
   const MyModal = (props) => (
     <Modal
       classNames={{
@@ -135,12 +130,18 @@ export default function Work() {
       {props.children}
     </Modal>
   );
+  const trail = useTrail(work.length, {
+    config: { mass: 5, tension: 1800, friction: 150 },
+    opacity: 1,
+    x: 0,
+    from: { opacity: 0, x: 150 },
+  });
   return (
     <section className="work">
       <div className="workContainer">work</div>
       <div className="workBody">
         {trail.map(({ x, ...rest }, index) => (
-          <animated.a
+          <animated.div
             className="workItemContainer"
             key={work[index]}
             style={{
@@ -151,7 +152,7 @@ export default function Work() {
             onClick={functions[modals[index]].o}
           >
             <animated.span className="workItem">{work[index]}</animated.span>
-          </animated.a>
+          </animated.div>
         ))}
       </div>
       <MyModal bool={dumpTRUCK} closeFunction={functions.dt.c}>
