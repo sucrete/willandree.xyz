@@ -180,36 +180,14 @@
   z-index: 20;
 }
 
-.title {
-  font-size: 6.5em;
-  color: #292419;
-  font-family: "corporate";
-  font-weight: unset;
-  padding-left: 0.12em;
-  -webkit-margin-before: 0px;
-          margin-block-start: 0px;
-}
-
-.workSection {
-  width: 80%;
-  margin-bottom: 5em;
-  height: 80vh;
-  position: relative;
-}
-
-.workSection .workSectionBody {
-  left: 0px;
-  bottom: 0px;
-}
-
-.workSection .workSectionBody .workContainer {
+.work .workContainer {
   font-family: "flexa";
   text-transform: uppercase;
   font-size: 10em;
   padding-left: 2.5rem;
   line-height: 1 !important;
   position: relative;
-  color: #bbccbf;
+  color: #1e2018;
   z-index: 1;
   letter-spacing: -0.03em;
   opacity: 0;
@@ -219,8 +197,8 @@
   font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
   -webkit-animation-duration: 1400ms;
           animation-duration: 1400ms;
-  -webkit-animation-name: entranceAnimation2;
-          animation-name: entranceAnimation2;
+  -webkit-animation-name: entranceAnimation3;
+          animation-name: entranceAnimation3;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
@@ -236,7 +214,7 @@
   z-index: 7;
 }
 
-.workSection .workSectionBody .workBody {
+.work .workBody {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,30 +225,7 @@
   z-index: 11;
 }
 
-.workSection .workSectionBody .workBody .trails-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.workSection .workSectionBody .workBody .trails-main div {
-  display: inline-block;
-}
-
-.workSection .workSectionBody .workBody .trails-main div .trails-text {
-  display: inline-block !important;
-}
-
-.workSection .workSectionBody .workBody .trails-main div .trails-text div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.workSection .workSectionBody .workBody .trails-main div .trails-text div .workItemContainer {
+.work .workBody .workItemContainer {
   border: solid 2px #1e2018;
   border-radius: 55px;
   padding: 22px 42px;
@@ -286,7 +241,7 @@
   cursor: pointer;
 }
 
-.workSection .workSectionBody .workBody .trails-main div .trails-text div .workItemContainer .workItem {
+.work .workBody .workItemContainer .workItem {
   font-family: "flexa", sans-serif;
   color: #1a1918;
   font-size: 2.8rem;
@@ -297,6 +252,16 @@
   font-variation-settings: "wght" 245, "wdth" 95;
   letter-spacing: -0.125rem;
   text-align: center;
+}
+
+.title {
+  font-size: 6.5em;
+  color: #292419;
+  font-family: "corporate";
+  font-weight: unset;
+  padding-left: 0.12em;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
 }
 
 .customModal {

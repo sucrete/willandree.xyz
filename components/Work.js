@@ -3,6 +3,12 @@ import { Modal } from "react-responsive-modal";
 import React, { useState, useRef } from "react";
 import { useTrail, animated } from "react-spring";
 import DumpTRUCKContent from "./ModalContent/DumpTRUCK";
+import MaxContent from "./ModalContent/MaxRosen";
+import CalvinContent from "./ModalContent/CalvinTodd";
+import OTLContent from "./ModalContent/OTL";
+import VOTRContent from "./ModalContent/TheVotersCompanion";
+import WillContent from "./ModalContent/WillAndreedotxyz";
+
 // function WorkTrail({ open, children, ...props }) {
 // const { ref, inView } = useInView({
 //   threshold: 1,
@@ -111,11 +117,10 @@ export default function Work() {
     },
   };
   const trail = useTrail(work.length, {
-    // items,
+    config: { mass: 5, tension: 1800, friction: 230 },
     opacity: 1,
     x: 0,
-    from: { opacity: 0, x: 20 },
-    config: { mass: 5, tension: 2000, friction: 200 },
+    from: { opacity: 0, x: 150 },
   });
   const MyModal = (props) => (
     <Modal
@@ -132,105 +137,42 @@ export default function Work() {
   );
   return (
     <section className="work">
-      <div className="workContainer" style={{ color: "#1e2018" }}>
-        work
+      <div className="workContainer">work</div>
+      <div className="workBody">
+        {trail.map(({ x, ...rest }, index) => (
+          <animated.a
+            className="workItemContainer"
+            key={work[index]}
+            style={{
+              ...rest,
+              transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
+              cursor: "pointer",
+            }}
+            onClick={functions[modals[index]].o}
+          >
+            <animated.span className="workItem">{work[index]}</animated.span>
+          </animated.a>
+        ))}
       </div>
-      {trail.map(({ x, ...rest }, index) => (
-        <animated.a
-          className="workItemContainer"
-          key={work[index]}
-          style={{
-            ...rest,
-            transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
-            cursor: "pointer",
-          }}
-          onClick={functions[modals[index]].o}
-        >
-          <animated.span className="workItem">{work[index]}</animated.span>
-        </animated.a>
-      ))}
-      {/* <Modal
-        classNames={{
-          overlay: "customOverlay",
-          modal: "customModal",
-        }}
-        open={dumpTRUCK}
-        onClose={functions.dt.c}
-      ></Modal> */}
       <MyModal bool={dumpTRUCK} closeFunction={functions.dt.c}>
         <DumpTRUCKContent />
       </MyModal>
-      {/* <Modal
-          classNames={{
-            overlay: "customOverlay",
-            modal: "customModal",
-          }}
-          open={openSecond}
-          onClose={indexOfFunctions.second.c}
-          center
-        >
-          <div className="projectDesignation">ii</div>
-          <div className="modalBody">
-            <h1 className="modalHeader">maxrosen.town</h1>
-          </div>
-        </Modal>
-        <Modal
-          classNames={{
-            overlay: "customOverlay",
-            modal: "customModal",
-          }}
-          open={openThird}
-          onClose={indexOfFunctions.third.c}
-          center
-        >
-          <div className="projectDesignation">iii</div>
-          <div className="modalBody">
-            <h1 className="modalHeader">Old Town Lofts</h1>
-          </div>
-        </Modal>
-        <Modal
-          classNames={{
-            overlay: "customOverlay",
-            modal: "customModal",
-          }}
-          open={openFourth}
-          onClose={indexOfFunctions.fourth.c}
-          center
-        >
-          <div className="projectDesignation">iv</div>
-          <div className="modalBody">
-            <h1 className="modalHeader">calvintodd.com</h1>
-            <div className="modalSubheading">personal website</div>
-          </div>
-        </Modal>
-        <Modal
-          classNames={{
-            overlay: "customOverlay",
-            modal: "customModal",
-          }}
-          open={openFifth}
-          onClose={indexOfFunctions.fifth.c}
-          center
-        >
-          <div className="projectDesignation">v</div>
-          <div className="modalBody">
-            <h1 className="modalHeader">The Voter's Companion</h1>
-          </div>
-        </Modal>
-        <Modal
-          classNames={{
-            overlay: "customOverlay",
-            modal: "customModal",
-          }}
-          open={openSixth}
-          onClose={indexOfFunctions.sixth.c}
-          center
-        >
-          <div className="projectDesignation">vi</div>
-          <div className="modalBody">
-            <h1 className="modalHeader">willandree.xyz</h1>
-          </div>
-        </Modal> */}
+      <MyModal bool={maxRosen} closeFunction={functions.mr.c}>
+        <MaxContent />
+      </MyModal>
+
+      <MyModal bool={OTL} closeFunction={functions.otl.c}>
+        <OTLContent />
+      </MyModal>
+      <MyModal bool={calvin} closeFunction={functions.cal.c}>
+        <CalvinContent />
+      </MyModal>
+      <MyModal bool={votr} closeFunction={functions.votr.c}>
+        <VOTRContent />
+      </MyModal>
+      <MyModal bool={willAndree} closeFunction={functions.wil.c}>
+        <WillContent />
+      </MyModal>
     </section>
   );
 }
