@@ -9,6 +9,7 @@ $color2: rgb(122, 112, 68);
   // overflow: hidden;
   animation: 1s entranceAnimation3 ease;
   z-index: 5;
+  background: transparent;
 }
 .cloud1 {
   width: 100px;
@@ -168,12 +169,12 @@ $color2: rgb(122, 112, 68);
     opacity: 0;
     display: flex;
     font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
-    animation-duration: 1400ms;
+    animation-duration: 2000ms;
     animation-name: entranceAnimation3;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     image-rendering: pixelated;
-    animation-delay: 2.5s;
+    // animation-delay: 2.5s;
     bottom: -25px;
     z-index: 7;
   }
