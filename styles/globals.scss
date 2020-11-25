@@ -54,8 +54,7 @@ $color2: rgb(122, 112, 68);
   padding: 0rem !important;
 }
 .navigation {
-  padding: 1rem 2rem;
-  margin: 1rem 5rem;
+  margin: 2.5rem 7rem;
   height: 3rem;
   position: relative;
   // animation: entranceAnimation2 1500ms ease;
@@ -113,40 +112,50 @@ $color2: rgb(122, 112, 68);
   z-index: 12;
   .descriptionContainer {
     float: right;
-    width: 550px;
-    padding-right: 3rem;
-    h1 {
-      margin-block-start: 0px;
-      margin-block-end: -1.5rem;
-      line-height: 50%;
-      text-align: right;
-      color: transparent;
-      // color: #4d84f1;
-      font-family: "flexa";
-      // font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
-      font-size: 35em;
-      font-weight: unset;
-      animation-duration: 1s;
-      animation-name: entranceAnimation;
-      animation-timing-function: ease;
-      animation-fill-mode: forwards;
-      image-rendering: pixelated;
-      animation-delay: 2s;
-      letter-spacing: -0.02em;
+    width: 300px;
+    // background-color: rgb(146, 145, 143);
+    border-radius: 5px;
+    .rotate-wrap {
+      .box-rotate-gyro {
+        perspective: 1000px;
+        line-height: 50%;
+        display: grid;
+        place-items: center;
+        color: tomato;
+        // color: #4d84f1;
+        font-family: "flexa";
+
+        font-size: 12em;
+        font-weight: unset;
+        animation-duration: 1s;
+        animation-name: entranceAnimation;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        image-rendering: pixelated;
+        animation-delay: 4s;
+        letter-spacing: -0.02em;
+        $text-shadow-color: rgb(34, 23, 21);
+        // text-shadow: -1px 2px 1px $text-shadow-color,
+        //   -2px 4px 1px $text-shadow-color, -3px 6px 1px $text-shadow-color,
+        //   -4px 8px 1px $text-shadow-color, -5px 10px 1px $text-shadow-color,
+        //   -6px 12px 1px $text-shadow-color, -7px 14px 1px $text-shadow-color,
+        //   -8px 16px 1px $text-shadow-color, -9px 18px 1px $text-shadow-color,
+        //   -10px 20px 1px $text-shadow-color, -11px 22px 1px $text-shadow-color;
+      }
     }
     .description {
       font-family: "corporate";
       font-size: 2em;
-      color: $color1;
+      padding: 2rem;
+      width: 100%;
+      color: rgb(29, 28, 28);
       text-align: right;
       font-weight: unset;
       line-height: 95%;
       letter-spacing: -0.022em;
-      -ms-word-break: break-all;
-      word-break: break-all;
-
+      // -ms-word-break: break-all;
+      // word-break: break-all;
       /* Non standard for WebKit */
-
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
       hyphens: auto;
@@ -351,16 +360,16 @@ section {
 @keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 555, "wdth" 0, "ital" 30;
-    -webkit-text-stroke: 1px transparent;
+    font-variation-settings: "wght" 325, "wdth" 0, "ital" 20;
+    transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 0deg);
   }
-  // 30% {
-  //   -webkit-text-stroke: 1px transparent;
-  // }
+  30% {
+    opacity: 0.75;
+  }
   to {
     opacity: 1;
-    -webkit-text-stroke: 1px #1e2018a9;
-    font-variation-settings: "wght" 325, "wdth" 0, "ital" 80;
+    font-variation-settings: "wght" 325, "wdth" 0, "ital" 90;
+    transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 45deg);
   }
 }
 @keyframes entranceAnimation2 {

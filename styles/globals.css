@@ -60,8 +60,7 @@
 }
 
 .navigation {
-  padding: 1rem 2rem;
-  margin: 1rem 5rem;
+  margin: 2.5rem 7rem;
   height: 3rem;
   position: relative;
   z-index: 5;
@@ -127,20 +126,20 @@
 
 .header .descriptionContainer {
   float: right;
-  width: 550px;
-  padding-right: 3rem;
+  width: 300px;
+  border-radius: 5px;
 }
 
-.header .descriptionContainer h1 {
-  -webkit-margin-before: 0px;
-          margin-block-start: 0px;
-  -webkit-margin-after: -1.5rem;
-          margin-block-end: -1.5rem;
+.header .descriptionContainer .rotate-wrap .box-rotate-gyro {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   line-height: 50%;
-  text-align: right;
-  color: transparent;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: tomato;
   font-family: "flexa";
-  font-size: 35em;
+  font-size: 12em;
   font-weight: unset;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -155,21 +154,21 @@
       image-rendering: -moz-crisp-edges;
       image-rendering: -o-pixelated;
       image-rendering: pixelated;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
   letter-spacing: -0.02em;
 }
 
 .header .descriptionContainer .description {
   font-family: "corporate";
   font-size: 2em;
-  color: #1e2018;
+  padding: 2rem;
+  width: 100%;
+  color: #1d1c1c;
   text-align: right;
   font-weight: unset;
   line-height: 95%;
   letter-spacing: -0.022em;
-  -ms-word-break: break-all;
-  word-break: break-all;
   /* Non standard for WebKit */
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
@@ -395,26 +394,36 @@ section {
 @-webkit-keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 555, "wdth" 0, "ital" 30;
-    -webkit-text-stroke: 1px transparent;
+    font-variation-settings: "wght" 325, "wdth" 0, "ital" 20;
+    -webkit-transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 0deg);
+            transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 0deg);
+  }
+  30% {
+    opacity: 0.75;
   }
   to {
     opacity: 1;
-    -webkit-text-stroke: 1px #1e2018a9;
-    font-variation-settings: "wght" 325, "wdth" 0, "ital" 80;
+    font-variation-settings: "wght" 325, "wdth" 0, "ital" 90;
+    -webkit-transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 45deg);
+            transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 45deg);
   }
 }
 
 @keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 555, "wdth" 0, "ital" 30;
-    -webkit-text-stroke: 1px transparent;
+    font-variation-settings: "wght" 325, "wdth" 0, "ital" 20;
+    -webkit-transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 0deg);
+            transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 0deg);
+  }
+  30% {
+    opacity: 0.75;
   }
   to {
     opacity: 1;
-    -webkit-text-stroke: 1px #1e2018a9;
-    font-variation-settings: "wght" 325, "wdth" 0, "ital" 80;
+    font-variation-settings: "wght" 325, "wdth" 0, "ital" 90;
+    -webkit-transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 45deg);
+            transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 45deg);
   }
 }
 
