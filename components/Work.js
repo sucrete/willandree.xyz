@@ -131,10 +131,10 @@ export default function Work() {
     </Modal>
   );
   const trail = useTrail(work.length, {
-    config: { mass: 5, tension: 1800, friction: 150 },
+    config: { mass: 6, tension: 1900, friction: 250 },
     opacity: 1,
     x: 0,
-    from: { opacity: 0, x: 150 },
+    from: { opacity: 0, x: 50 },
   });
   return (
     <section className="work">
