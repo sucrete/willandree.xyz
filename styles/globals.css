@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@0,300;0,400;&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
 .cloud {
   border-radius: 50%;
   position: absolute;
@@ -171,6 +172,8 @@
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
       hyphens: auto;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
 }
 
 .work {
@@ -220,31 +223,27 @@
   position: relative;
   z-index: 11;
   width: 80%;
+  padding-bottom: 5rem;
 }
 
 .work .workBody .workItemContainer {
-  border: solid 2px #1e2018;
   border-radius: 55px;
   padding: 22px 42px;
-  margin: 0px 4px 0px 0px;
+  margin: 0px 2px 2px 0px;
   white-space: nowrap;
-  background: #eff4f4;
+  background: #f1edd5;
   z-index: 6;
-  -webkit-box-shadow: 0px 0px 10px rgba(26, 25, 24, 0.19);
-          box-shadow: 0px 0px 10px rgba(26, 25, 24, 0.19);
+  -webkit-box-shadow: 0px 0px 15px rgba(26, 25, 24, 0.05);
+          box-shadow: 0px 0px 15px rgba(26, 25, 24, 0.05);
   cursor: pointer;
 }
 
 .work .workBody .workItemContainer .workItem {
-  font-family: "flexa", sans-serif;
-  color: #1a1918;
-  font-size: 2.8rem;
+  font-family: "america", sans-serif;
+  color: #272316;
+  font-size: 2.5rem;
   line-height: 110%;
   cursor: pointer;
-  -webkit-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-  font-variation-settings: "wght" 245, "wdth" 95;
-  letter-spacing: -0.125rem;
   text-align: center;
 }
 
@@ -373,8 +372,13 @@ section {
 }
 
 @font-face {
-  src: url("./fonts/GT_Flexa_VAR.woff2") format("woff2-variations");
+  font-family: "bossa";
+  src: url("./fonts/Bossa-Light.otf") format("opentype");
+}
+
+@font-face {
   font-family: "flexa";
+  src: url("./fonts/GT_Flexa_VAR.woff2") format("woff2-variations");
   font-style: normal;
 }
 
@@ -385,8 +389,24 @@ section {
 }
 
 @font-face {
+  src: url("./fonts/styrene.woff") format("woff");
+  font-family: "styrene";
+  font-style: normal;
+}
+
+@font-face {
   src: url("./fonts/CorporateABQ-Regular.otf") format("opentype");
   font-family: "corporate regular";
+}
+
+@font-face {
+  src: url("./fonts/America-Light-Reg.otf") format("opentype");
+  font-family: "america";
+}
+
+@font-face {
+  src: url("./fonts/SpaceGrotesk-Light.otf") format("opentype");
+  font-family: "space";
 }
 
 @-webkit-keyframes entranceAnimation {

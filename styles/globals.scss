@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@0,300;0,400;&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
 $backgroundColor: #dae6e4;
 $color1: #1e2018;
 $color2: rgb(122, 112, 68);
@@ -157,6 +158,13 @@ $color2: rgb(122, 112, 68);
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
       hyphens: auto;
+      margin-block-start: 0px;
+      // background-color: #565656;
+      // color: transparent;
+      // text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+      // -webkit-background-clip: text;
+      // -moz-background-clip: text;
+      // background-clip: text;
     }
   }
 }
@@ -192,27 +200,26 @@ $color2: rgb(122, 112, 68);
     position: relative;
     z-index: 11;
     width: 80%;
+    padding-bottom: 5rem;
     .workItemContainer {
-      border: solid 2px $color1;
+      // border: solid 1px rgb(54, 45, 18);
       border-radius: 55px;
       padding: 22px 42px;
-      margin: 0px 4px 0px 0px;
+      margin: 0px 2px 2px 0px;
       white-space: nowrap;
-      // position: relative;
-      // transition: all 0.35s ease;
-      background: lighten($backgroundColor, 7%);
+      background: #f1edd5;
       z-index: 6;
-      box-shadow: 0px 0px 10px rgba(26, 25, 24, 0.19);
+      box-shadow: 0px 0px 15px rgba(26, 25, 24, 0.05);
       cursor: pointer;
       .workItem {
-        font-family: "flexa", sans-serif;
-        color: rgb(26, 25, 24);
-        font-size: 2.8rem;
+        font-family: "america", sans-serif;
+        color: rgb(39, 35, 22);
+        font-size: 2.5rem;
+        // font-weight: 300;
         line-height: 110%;
         cursor: pointer;
-        transition: all 0.15s ease-in-out;
-        font-variation-settings: "wght" 245, "wdth" 95;
-        letter-spacing: -0.125rem;
+        // font-variation-settings: "wght" 245, "wdth" 95;
+        // letter-spacing: -0.095rem;
         text-align: center;
       }
     }
@@ -341,8 +348,12 @@ section {
   src: url("./fonts/Corporate-Light.ttf");
 }
 @font-face {
-  src: url("./fonts/GT_Flexa_VAR.woff2") format("woff2-variations");
+  font-family: "bossa";
+  src: url("./fonts/Bossa-Light.otf") format("opentype");
+}
+@font-face {
   font-family: "flexa";
+  src: url("./fonts/GT_Flexa_VAR.woff2") format("woff2-variations");
   font-style: normal;
 }
 @font-face {
@@ -351,8 +362,21 @@ section {
   font-style: normal;
 }
 @font-face {
+  src: url("./fonts/styrene.woff") format("woff");
+  font-family: "styrene";
+  font-style: normal;
+}
+@font-face {
   src: url("./fonts/CorporateABQ-Regular.otf") format("opentype");
   font-family: "corporate regular";
+}
+@font-face {
+  src: url("./fonts/America-Light-Reg.otf") format("opentype");
+  font-family: "america";
+}
+@font-face {
+  src: url("./fonts/SpaceGrotesk-Light.otf") format("opentype");
+  font-family: "space";
 }
 
 @keyframes entranceAnimation {
