@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@0,300;0,400;&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
 .cloud {
   border-radius: 50%;
@@ -122,7 +122,7 @@
       image-rendering: pixelated;
   position: relative;
   width: 100%;
-  z-index: 12;
+  z-index: 9;
 }
 
 .header .descriptionContainer {
@@ -224,6 +224,21 @@
   text-align: center;
 }
 
+.work .workBody .workItemContainer .mr:after {
+  content: "WIP";
+  position: absolute;
+  font-size: 1rem;
+  font-family: "Karla";
+  padding: 2px 10px;
+  color: #201d18;
+  bottom: 15px;
+  right: 35px;
+  line-height: 100%;
+  background-color: rgba(255, 192, 203, 0.651);
+  z-index: 30;
+  border-radius: 50px;
+}
+
 .title {
   font-size: 6.5em;
   color: #292419;
@@ -290,12 +305,14 @@
   line-height: 110%;
   -webkit-margin-before: 2.5rem;
           margin-block-start: 2.5rem;
+  letter-spacing: 0.05rem;
 }
 
 .customModal .modalBody .modalSubheading {
   color: grey;
   font-size: 1.5em;
   padding-left: 3px;
+  letter-spacing: 0.05rem;
 }
 
 hr {
@@ -325,7 +342,6 @@ hr {
   position: absolute;
   z-index: 10;
   overflow: hidden;
-  display: none;
 }
 
 html,

@@ -151,7 +151,9 @@ export default function Work() {
             }}
             onClick={functions[modals[index]].o}
           >
-            <animated.span className="workItem">{work[index]}</animated.span>
+            <animated.span className={`workItem ${modals[index]}`}>
+              {work[index]}
+            </animated.span>
           </animated.div>
         ))}
       </div>
