@@ -133,7 +133,6 @@
   font-size: 6em;
   padding-right: 2rem;
   width: 100%;
-  color: #1d1c1c;
   text-align: right;
   font-weight: unset;
   line-height: 95%;
@@ -143,8 +142,7 @@
       hyphens: auto;
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #272423), to(#6a5030));
-  background: linear-gradient(to bottom, #272423 10%, #6a5030);
+  background: radial-gradient(ellipse farthest-corner at 60% 100%, #471c03, #2c3246 60%);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -185,6 +183,7 @@
       image-rendering: pixelated;
   bottom: -25px;
   z-index: 7;
+  width: 100%;
 }
 
 .work .workBody {
@@ -317,6 +316,8 @@ hr {
 .container main .noise {
   height: 100%;
   width: 100%;
+  top: 0%;
+  left: 0%;
   background: url("http://i.imgur.com/P0Kkvuv.png");
   position: absolute;
   z-index: 10;
@@ -326,6 +327,7 @@ html,
 body {
   padding: 0px;
   margin: 0px;
+  height: 100%;
 }
 
 body {

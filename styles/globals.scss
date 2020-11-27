@@ -111,7 +111,6 @@ $warmBlack: #201d18;
       font-size: 6em;
       padding-right: 2rem;
       width: 100%;
-      color: rgb(29, 28, 28);
       text-align: right;
       font-weight: unset;
       line-height: 95%;
@@ -120,10 +119,15 @@ $warmBlack: #201d18;
       -moz-hyphens: auto;
       hyphens: auto;
       margin-block-start: 0px;
-      background: linear-gradient(
-        to bottom,
-        darken(rgb(133, 124, 119), 35%) 10%,
-        darken(rgb(184, 145, 97), 25%)
+      // background: linear-gradient(
+      //   to bottom,
+      //   darken(rgb(133, 124, 119), 35%) 10%,
+      //   darken(rgb(184, 145, 97), 25%)
+      // );
+      background: radial-gradient(
+        ellipse farthest-corner at 60% 100%,
+        darken(rgb(219, 85, 8), 30%),
+        darken(rgb(94, 105, 148), 25%) 60%
       );
       -webkit-background-clip: text;
       color: transparent;
@@ -155,6 +159,7 @@ $warmBlack: #201d18;
     // animation-delay: 2.5s;
     bottom: -25px;
     z-index: 7;
+    width: 100%;
   }
   .workBody {
     display: flex;
@@ -276,7 +281,8 @@ hr {
     .noise {
       height: 100%;
       width: 100%;
-      // top: -10%;
+      top: 0%;
+      left: 0%;
       background: url("http://i.imgur.com/P0Kkvuv.png");
       position: absolute;
       z-index: 10;
@@ -287,6 +293,7 @@ html,
 body {
   padding: 0px;
   margin: 0px;
+  height: 100%;
 }
 body {
   padding: 0;
