@@ -61,7 +61,8 @@
 }
 
 .navigation {
-  margin: 2.5rem 7rem;
+  padding: 3.3rem 6rem;
+  margin: 0rem 6rem;
   height: 3rem;
   position: relative;
   z-index: 5;
@@ -73,12 +74,10 @@
   background-image: url("../public/Roman.jpg");
   background-repeat: no-repeat;
   background-size: 190% 190%;
-  -webkit-animation: square 4000ms ease;
-          animation: square 4000ms ease;
   -webkit-background-clip: text;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  color: transparent;
+  color: #201d18;
   width: 200px;
   text-align: center;
   line-height: 200px;
@@ -129,35 +128,6 @@
   border-radius: 5px;
 }
 
-.header .descriptionContainer .rotate-wrap .box-rotate-gyro {
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  line-height: 50%;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  color: tomato;
-  font-family: "flexa";
-  font-size: 12em;
-  font-weight: unset;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-name: entranceAnimation;
-          animation-name: entranceAnimation;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -ms-interpolation-mode: nearest-neighbor;
-      image-rendering: -webkit-optimize-contrast;
-      image-rendering: -moz-crisp-edges;
-      image-rendering: -o-pixelated;
-      image-rendering: pixelated;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-  letter-spacing: -0.02em;
-}
-
 .header .descriptionContainer .description {
   font-family: "corporate";
   font-size: 6em;
@@ -168,24 +138,28 @@
   font-weight: unset;
   line-height: 95%;
   letter-spacing: -0.022em;
-  /* Non standard for WebKit */
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
       hyphens: auto;
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #272423), to(#6a5030));
+  background: linear-gradient(to bottom, #272423 10%, #6a5030);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .work {
   position: relative;
   z-index: 20;
+  padding: 0px 6rem;
 }
 
 .work .workContainer {
   font-family: "flexa";
   text-transform: uppercase;
   font-size: 10em;
-  padding-left: 2.5rem;
+  padding-left: 2rem;
   line-height: 1 !important;
   position: relative;
   color: #1e2018;
@@ -223,27 +197,28 @@
   position: relative;
   z-index: 11;
   width: 80%;
-  padding-bottom: 5rem;
+  padding-left: 1rem;
 }
 
 .work .workBody .workItemContainer {
   border-radius: 55px;
-  padding: 22px 42px;
+  padding: 27px 47px 25px 47px;
   margin: 0px 2px 2px 0px;
   white-space: nowrap;
-  background: #f1edd5;
+  background: #ecebe0;
   z-index: 6;
-  -webkit-box-shadow: 0px 0px 15px rgba(26, 25, 24, 0.05);
-          box-shadow: 0px 0px 15px rgba(26, 25, 24, 0.05);
+  -webkit-box-shadow: 0px 0px 15px rgba(26, 25, 24, 0.09);
+          box-shadow: 0px 0px 15px rgba(26, 25, 24, 0.09);
   cursor: pointer;
 }
 
 .work .workBody .workItemContainer .workItem {
-  font-family: "america", sans-serif;
-  color: #272316;
-  font-size: 2.5rem;
+  font-family: "sohne regular", sans-serif;
+  color: #201d18;
+  font-size: 2rem;
   line-height: 110%;
   cursor: pointer;
+  letter-spacing: 0.05rem;
   text-align: center;
 }
 
@@ -327,22 +302,30 @@ hr {
   background: #3f3e3d;
 }
 
+.container {
+  height: 100%;
+}
+
 .container main {
   border-radius: 3px;
   margin: 0 auto;
   background: #d0e1d4;
-  overflow: hidden;
   height: 100%;
   position: relative;
 }
 
 .container main .noise {
-  height: 120%;
+  height: 100%;
   width: 100%;
-  top: -10%;
   background: url("http://i.imgur.com/P0Kkvuv.png");
   position: absolute;
   z-index: 10;
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
@@ -364,6 +347,7 @@ body {
 
 section {
   padding: 0rem 5rem;
+  display: block;
 }
 
 @font-face {
@@ -379,12 +363,6 @@ section {
 @font-face {
   font-family: "flexa";
   src: url("./fonts/GT_Flexa_VAR.woff2") format("woff2-variations");
-  font-style: normal;
-}
-
-@font-face {
-  src: url("./fonts/Jabin.woff2") format("woff2-variations");
-  font-family: "jabin";
   font-style: normal;
 }
 
@@ -405,8 +383,18 @@ section {
 }
 
 @font-face {
-  src: url("./fonts/SpaceGrotesk-Light.otf") format("opentype");
-  font-family: "space";
+  src: url("./fonts/Pano-Regular.otf") format("opentype");
+  font-family: "pano";
+}
+
+@font-face {
+  src: url("./fonts/Sohne-Light.otf") format("opentype");
+  font-family: "sohne light";
+}
+
+@font-face {
+  src: url("./fonts/Sohne-Regular.otf") format("opentype");
+  font-family: "sohne regular";
 }
 
 @-webkit-keyframes entranceAnimation {
