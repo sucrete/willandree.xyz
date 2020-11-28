@@ -192,21 +192,6 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
         letter-spacing: 0.05rem;
         text-align: center;
       }
-      .mr:after {
-        content: "WIP";
-        position: absolute;
-        font-size: 1rem;
-        font-family: "Karla";
-        padding: 2px 10px;
-        color: $warmBlack;
-        bottom: 15px;
-        right: 35px;
-        line-height: 100%;
-        background-color: rgba(255, 192, 203, 0.651);
-        z-index: 30;
-        border-radius: 50px;
-        // border: solid 1px pink;
-      }
     }
   }
 }
@@ -256,11 +241,12 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     }
   }
   .modalBody {
-    padding: 1rem 4.5rem;
+    padding: 1.5rem 5.5rem;
     background: $warmWhite;
     height: 100%;
+
     .modalHeader {
-      color: $warmBlack !important;
+      color: $warmBlack;
       font-family: "sohne regular";
       font-size: 3em;
       font-variation-settings: "wght" 245, "wdth" 95;
@@ -274,6 +260,27 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
       font-size: 1.5em;
       padding-left: 3px;
       letter-spacing: 0.05rem;
+      .lilCapsule {
+        font-size: 1rem;
+        font-family: "Karla";
+        padding: 2px 10px;
+        color: $warmBlack;
+        line-height: 100%;
+        border-radius: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translate(12%, -30%);
+      }
+    }
+    &.maxRosen {
+      .modalSubheading {
+        padding-left: 2px;
+        span {
+          background-color: pink;
+
+          // border: solid 1px pink;
+        }
+      }
     }
   }
 }
