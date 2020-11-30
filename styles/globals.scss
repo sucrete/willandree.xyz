@@ -9,7 +9,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
 .cloud {
   border-radius: 50%;
   position: absolute;
-  // overflow: hidden;
+  overflow: hidden;
   animation: 1s entranceAnimation3 ease;
   z-index: 5;
   background: transparent;
@@ -267,9 +267,8 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
         color: $warmBlack;
         line-height: 100%;
         border-radius: 50px;
-        position: absolute;
-        top: 50%;
-        transform: translate(12%, -30%);
+        position: relative;
+        bottom: 2px;
       }
     }
     &.maxRosen {
@@ -298,13 +297,12 @@ hr {
   // overflow: hidden;
   height: 100%;
   main {
-    border-radius: 3px;
     margin: 0 auto;
     background: hsl(134.12, 22.08%, 84.9%);
     height: 100%;
     position: relative;
     .noise {
-      height: 100vh;
+      min-height: 2000px;
       width: 100%;
       top: 0%;
       left: 0%;
@@ -321,6 +319,7 @@ body {
   padding: 0px;
   margin: 0px;
   height: 100%;
+  position: relative;
 }
 body {
   padding: 0;
@@ -346,32 +345,18 @@ section {
   font-family: "corporate";
   src: url("./fonts/Corporate-Light.ttf");
 }
-@font-face {
-  font-family: "bossa";
-  src: url("./fonts/Bossa-Light.otf") format("opentype");
-}
+
 @font-face {
   font-family: "flexa";
   src: url("./fonts/GT_Flexa_VAR.woff2") format("woff2-variations");
   font-style: normal;
 }
-@font-face {
-  src: url("./fonts/styrene.woff") format("woff");
-  font-family: "styrene";
-  font-style: normal;
-}
+
 @font-face {
   src: url("./fonts/CorporateABQ-Regular.otf") format("opentype");
   font-family: "corporate regular";
 }
-@font-face {
-  src: url("./fonts/America-Light-Reg.otf") format("opentype");
-  font-family: "america";
-}
-@font-face {
-  src: url("./fonts/Pano-Regular.otf") format("opentype");
-  font-family: "pano";
-}
+
 @font-face {
   src: url("./fonts/Sohne-Light.otf") format("opentype");
   font-family: "sohne light";
