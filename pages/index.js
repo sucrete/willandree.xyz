@@ -4,6 +4,7 @@ import Contact from "../components/Contact";
 import Work from "../components/Work";
 import Info from "../components/Info";
 import Nav from "../components/Navigation";
+import Skills from "../components/Skills";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Info />
         <hr />
         <Contact /> */}
+        <Skills />
       </main>
 
       <svg width="0" height="0">
