@@ -61,7 +61,6 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
   margin: 0rem 6rem;
   height: 3rem;
   position: relative;
-  // animation: entranceAnimation2 1500ms ease;
   z-index: 5;
   .name {
     font-family: "corporate regular";
@@ -81,17 +80,17 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     transform: translateY(-50%);
     left: 0px;
   }
-  .whereToContainer {
-    float: right;
-    font-family: "Work Sans", sans-serif;
-    color: rgb(71, 71, 71);
-    font-size: 1.2em;
-    display: inline-flex;
-    font-weight: 400;
-    a {
-      padding-left: 1rem;
-      cursor: pointer;
-      transition: all 0.27s ease-in-out;
+  .navLine {
+    fill: none;
+    stroke-width: 0.1px;
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    path {
+      // stroke-width: 2px;
+      stroke: #757968;
+      animation: str8nLine 3s cubic-bezier(0.07, 0.85, 0.68, 1.01);
+      animation-fill-mode: forwards;
     }
   }
 }
@@ -364,6 +363,18 @@ section {
 @font-face {
   src: url("./fonts/Sohne-Regular.otf") format("opentype");
   font-family: "sohne regular";
+}
+@keyframes str8nLine {
+  from {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  to {
+    d: path("M 3 8 Q 5 8 13 8 Q 17 8 28 8 Q 34 8 49 8 Q 58 8 99 8");
+    opacity: 1;
+  }
 }
 @keyframes entranceAnimation {
   from {
