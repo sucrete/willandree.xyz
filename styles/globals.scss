@@ -3,7 +3,7 @@
 $backgroundColor: #dae6e4;
 $color1: #1e2018;
 $color2: rgb(122, 112, 68);
-$warmBlack: #201d18;
+$warmBlack: #24170f;
 $warmWhite: #ecebe0;
 $mOrange: darken(rgb(218, 109, 37), 5%);
 .cloud {
@@ -88,7 +88,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     left: 0px;
     path {
       animation-delay: 2s;
-      animation: str8nLine 3.5s cubic-bezier(0.49, 0.48, 0.27, 0.99);
+      animation: str8nLine 3s cubic-bezier(0.49, 0.48, 0.27, 0.99);
       animation-fill-mode: forwards;
     }
   }
@@ -219,7 +219,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     display: block;
     color: $warmBlack;
     font-size: 1.3em;
-    font-family: "flexa";
+    font-family: "sohne regular";
     font-weight: 500;
     // font-variation-settings: "wght" 450, "wdth" 150;
     letter-spacing: 0.05em;
@@ -369,17 +369,17 @@ section {
     transform: translateY(-3px);
     stroke: #fa6825;
   }
-  50% {
+  40% {
     opacity: 0;
   }
-  60% {
-    stroke: #fa6825;
+  50% {
+    stroke: #f12b11;
   }
   to {
     d: path("M 1 8 C 9 8 13 8 70 8 C 84 8 94 8 99 8");
-    opacity: 0.8;
+    opacity: 0.7;
     transform: translateY(0.25px);
-    stroke: #565b7c;
+    stroke: $warmBlack;
   }
 }
 @keyframes entranceAnimation {
@@ -419,12 +419,10 @@ section {
   0% {
     background-position: 95% 95%;
   }
-  70% {
+  88% {
     color: transparent;
   }
   100% {
     background-position: 70% -15%;
-    // color: $color1;
-    // -webkit-background-clip: unset;
   }
 }
