@@ -134,6 +134,7 @@ export default function Work() {
     config: { mass: 6, tension: 1900, friction: 250 },
     opacity: 1,
     x: 0,
+    delay: 2000,
     from: { opacity: 0, x: 50 },
   });
   return (

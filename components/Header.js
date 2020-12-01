@@ -1,8 +1,10 @@
 export default function Header() {
   const descriptionItems = [
     "front-end",
-    " web developer and",
-    "graphic designer",
+    "web devel",
+    "oper and",
+    "graphic d",
+    "esigner",
   ];
   const werk = descriptionItems.map((item, index) => (
     <div className={`descItem${index}`}>{item}</div>
