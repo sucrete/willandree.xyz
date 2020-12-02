@@ -152,6 +152,7 @@ export default function Work() {
             }}
             onClick={functions[modals[index]].o}
           >
+            <div className="shadowDiv"></div>
             <animated.span className={`workItem ${modals[index]}`}>
               {work[index]}
             </animated.span>

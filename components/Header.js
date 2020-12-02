@@ -1,14 +1,20 @@
+import { useTrail, animated } from "react-spring";
 export default function Header() {
   const descriptionItems = [
-    "front-end",
-    "web devel",
-    "oper and",
-    "graphic d",
-    "esigner",
+    "front-end developer",
+    "graphic designer",
+    "hopeless neophile",
   ];
-  const werk = descriptionItems.map((item, index) => (
-    <div className={`descItem${index}`}>{item}</div>
-  ));
+  // const werk = descriptionItems.map((item, index) => (
+  //   <div className={`descItem${index}`}>{item}</div>
+  // ));
+  const trail = useTrail(descriptionItems.length, {
+    config: { mass: 5, tension: 1700, friction: 250 },
+    opacity: 1,
+    x: 0,
+    delay: 2000,
+    from: { opacity: 0, x: 40 },
+  });
   return (
     <section className="header">
       <div className="descriptionContainer">
@@ -17,7 +23,21 @@ export default function Header() {
             <h1>i am</h1>
           </div>
         </div> */}
-        <p className="description">{werk}</p>
+        <p className="description">
+          {trail.map(({ x, ...rest }, index) => (
+            <animated.div
+              className="workItemContainer"
+              key={descriptionItems[index]}
+              style={{
+                ...rest,
+                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
+                cursor: "pointer",
+              }}
+            >
+              {descriptionItems[index]}
+            </animated.div>
+          ))}
+        </p>
       </div>
     </section>
   );
