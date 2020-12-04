@@ -23,10 +23,10 @@ export default function Home() {
         <Nav />
         <Header />
         <Work />
-        {/* <hr />
+        <hr />
         <Info />
         <hr />
-        <Contact /> */}
+        <Contact />
         <Skills />
       </main>
 

@@ -94,7 +94,7 @@
 .navigation .whereToContainer {
   float: right;
   line-height: 0px;
-  margin-right: -30px;
+  margin-right: -45px;
   position: relative;
   z-index: 15;
 }
@@ -104,16 +104,29 @@
   font-size: 1em;
   margin-left: 38px;
   color: #24170f;
-  opacity: 0.7;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   letter-spacing: 0.05em;
   cursor: pointer;
+  -webkit-animation: entranceAnimation4 1200ms ease;
+          animation: entranceAnimation4 1200ms ease;
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: relative;
+  text-decoration: none;
+}
+
+.navigation .whereToContainer a:first-of-type {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
 }
 
 .navigation .whereToContainer a:hover {
   color: #c46221;
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .navigation .navLine {
@@ -157,7 +170,7 @@
 
 .header .descriptionContainer .description {
   font-family: "corporate";
-  font-size: 7em;
+  font-size: 9em;
   width: 100%;
   text-align: left;
   font-weight: unset;
@@ -174,10 +187,14 @@
   color: #c46221;
 }
 
+.header .descriptionContainer .description .descriptionItem2 {
+  font-family: "flexa";
+}
+
 .work {
   position: relative;
   z-index: 20;
-  padding: 0px 7rem;
+  padding: 0px 6rem;
 }
 
 .work .workContainer {
@@ -391,6 +408,7 @@ body {
   margin: 0px;
   height: 100%;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -398,7 +416,6 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  scroll-behavior: smooth;
   background-color: #d0e1d4;
 }
 
@@ -452,7 +469,7 @@ section {
   }
   to {
     d: path("M 1 8 C 9 8 13 8 70 8 C 84 8 94 8 99 8");
-    opacity: 0.7;
+    opacity: 0.72;
     -webkit-transform: translateY(0.25px);
             transform: translateY(0.25px);
   }
@@ -469,7 +486,7 @@ section {
   }
   to {
     d: path("M 1 8 C 9 8 13 8 70 8 C 84 8 94 8 99 8");
-    opacity: 0.7;
+    opacity: 0.72;
     -webkit-transform: translateY(0.25px);
             transform: translateY(0.25px);
   }
@@ -552,6 +569,28 @@ section {
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes entranceAnimation4 {
+  from {
+    opacity: 0;
+    top: -8px;
+  }
+  to {
+    opacity: 0.72;
+    top: 0px;
+  }
+}
+
+@keyframes entranceAnimation4 {
+  from {
+    opacity: 0;
+    top: -8px;
+  }
+  to {
+    opacity: 0.72;
+    top: 0px;
   }
 }
 
