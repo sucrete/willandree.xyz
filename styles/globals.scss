@@ -138,7 +138,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     padding: 4rem 3rem 7rem 3rem;
     .description {
       font-family: "corporate";
-      font-size: 9em;
+      font-size: 8.5em;
       width: 100%;
       text-align: left;
       font-weight: unset;
@@ -152,6 +152,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
       -webkit-background-clip: text;
       color: darken(rgb(218, 109, 37), 5%);
       // color: $warmBlack;
+      text-transform: capitalize;
       .dItem {
         display: block;
       }

@@ -162,7 +162,7 @@
 
 .header .descriptionContainer .description {
   font-family: "corporate";
-  font-size: 9em;
+  font-size: 8.5em;
   width: 100%;
   text-align: left;
   font-weight: unset;
@@ -177,6 +177,7 @@
           margin-block-end: 0px;
   -webkit-background-clip: text;
   color: #c46221;
+  text-transform: capitalize;
 }
 
 .header .descriptionContainer .description .dItem {
