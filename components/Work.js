@@ -2,6 +2,7 @@
 import { Modal } from "react-responsive-modal";
 import React, { useState, useRef } from "react";
 import { useTrail, animated } from "react-spring";
+import Skills from "../components/Skills";
 import DumpTRUCKContent from "./ModalContent/DumpTRUCK";
 import MaxContent from "./ModalContent/MaxRosen";
 import CalvinContent from "./ModalContent/CalvinTodd";
@@ -139,26 +140,30 @@ export default function Work() {
   });
   return (
     <section className="work">
-      <div className="workContainer">work</div>
-      <div className="workBody">
-        {trail.map(({ x, ...rest }, index) => (
-          <animated.div
-            className="workItemContainer"
-            key={work[index]}
-            style={{
-              ...rest,
-              transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
-              cursor: "pointer",
-            }}
-            onClick={functions[modals[index]].o}
-          >
-            <div className="shadowDiv"></div>
-            <animated.span className={`workItem ${modals[index]}`}>
-              {work[index]}
-            </animated.span>
-          </animated.div>
-        ))}
+      <div className="workHeader">work</div>
+      <div className="workContainer">
+        <div className="workBody">
+          {trail.map(({ x, ...rest }, index) => (
+            <animated.div
+              className="workItemContainer"
+              key={work[index]}
+              style={{
+                ...rest,
+                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
+                cursor: "pointer",
+              }}
+              onClick={functions[modals[index]].o}
+            >
+              <div className="shadowDiv"></div>
+              <animated.span className={`workItem ${modals[index]}`}>
+                {work[index]}
+              </animated.span>
+            </animated.div>
+          ))}
+        </div>
+        <Skills />
       </div>
+
       <MyModal bool={dumpTRUCK} closeFunction={functions.dt.c}>
         <DumpTRUCKContent />
       </MyModal>

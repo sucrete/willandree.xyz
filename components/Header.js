@@ -1,15 +1,15 @@
 import { useTrail, animated } from "react-spring";
 export default function Header() {
   const descriptionItems = [
+    "UX designer",
     "front-end developer",
-    "graphic designer",
-    "aesthetic monster",
+    "hopeless neophile",
   ];
   // const werk = descriptionItems.map((item, index) => (
   //   <div className={`descItem${index}`}>{item}</div>
   // ));
   const trail = useTrail(descriptionItems.length, {
-    config: { mass: 5, tension: 1700, friction: 350 },
+    config: { mass: 7, tension: 1400, friction: 285 },
     opacity: 1,
     x: 0,
     delay: 2000,

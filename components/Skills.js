@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-const skillsContent = `tech proficiencies:
+const skillsContent = `TECH PROFFFICIENCIES:
 JavaScript
 React
 HTML
@@ -19,7 +19,7 @@ export default function Skills() {
       setTimeout(function () {
         accumulator += bug;
         preformatted.innerHTML = accumulator;
-      }, 800);
+      }, 500);
     });
   });
   return (
