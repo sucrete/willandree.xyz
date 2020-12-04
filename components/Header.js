@@ -1,7 +1,7 @@
 import { useTrail, animated } from "react-spring";
 export default function Header() {
   const descriptionItems = [
-    "UX developer",
+    "front-end developer",
     "graphic designer",
     "aesthetic monster",
   ];
@@ -9,7 +9,7 @@ export default function Header() {
   //   <div className={`descItem${index}`}>{item}</div>
   // ));
   const trail = useTrail(descriptionItems.length, {
-    config: { mass: 5, tension: 1700, friction: 250 },
+    config: { mass: 5, tension: 1700, friction: 350 },
     opacity: 1,
     x: 0,
     delay: 2000,
@@ -25,8 +25,8 @@ export default function Header() {
         </div> */}
         <p className="description">
           {trail.map(({ x, ...rest }, index) => (
-            <animated.div
-              className={`descriptionItem${index}`}
+            <animated.span
+              className={`dItem descriptionItem${index}`}
               key={descriptionItems[index]}
               style={{
                 ...rest,
@@ -35,7 +35,7 @@ export default function Header() {
               }}
             >
               {descriptionItems[index]}
-            </animated.div>
+            </animated.span>
           ))}
         </p>
       </div>

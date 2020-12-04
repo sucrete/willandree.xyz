@@ -104,13 +104,13 @@
   font-size: 1em;
   margin-left: 38px;
   color: #24170f;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
   letter-spacing: 0.05em;
   cursor: pointer;
-  -webkit-animation: entranceAnimation4 1200ms ease;
-          animation: entranceAnimation4 1200ms ease;
+  opacity: 0;
+  -webkit-animation: entranceAnimation4 1000ms ease-out;
+          animation: entranceAnimation4 1000ms ease-out;
   -webkit-animation-delay: 2100ms;
           animation-delay: 2100ms;
   -webkit-animation-fill-mode: forwards;
@@ -126,7 +126,6 @@
 
 .navigation .whereToContainer a:hover {
   color: #c46221;
-  opacity: 1 !important;
 }
 
 .navigation .navLine {
@@ -187,14 +186,21 @@
   color: #c46221;
 }
 
+.header .descriptionContainer .description .dItem {
+  display: block;
+}
+
 .header .descriptionContainer .description .descriptionItem2 {
   font-family: "flexa";
+  font-variation-settings: "wdth" 90, "ital" 70;
+  color: #6c72aa;
+  letter-spacing: -0.45rem;
 }
 
 .work {
   position: relative;
   z-index: 20;
-  padding: 0px 6rem;
+  padding: 0px 6.5rem;
 }
 
 .work .workContainer {
@@ -469,7 +475,7 @@ section {
   }
   to {
     d: path("M 1 8 C 9 8 13 8 70 8 C 84 8 94 8 99 8");
-    opacity: 0.72;
+    opacity: 0.82;
     -webkit-transform: translateY(0.25px);
             transform: translateY(0.25px);
   }
@@ -486,7 +492,7 @@ section {
   }
   to {
     d: path("M 1 8 C 9 8 13 8 70 8 C 84 8 94 8 99 8");
-    opacity: 0.72;
+    opacity: 0.82;
     -webkit-transform: translateY(0.25px);
             transform: translateY(0.25px);
   }
@@ -578,7 +584,7 @@ section {
     top: -8px;
   }
   to {
-    opacity: 0.72;
+    opacity: 0.82;
     top: 0px;
   }
 }
@@ -589,7 +595,7 @@ section {
     top: -8px;
   }
   to {
-    opacity: 0.72;
+    opacity: 0.82;
     top: 0px;
   }
 }
