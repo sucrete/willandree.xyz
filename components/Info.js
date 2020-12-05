@@ -2,10 +2,10 @@ export default function Info() {
   return (
     <section id="info" className="info">
       <h1 className="title">Info</h1>
-      {/* <div className="email">
-          will<span className="greybits">at</span>willandree
-          <span className="greybits">dot</span>xyz
-        </div> */}
+      <div className="infoBody">
+        <p className="education">education</p>
+        <p className="aboutMe"> About me Lorem Ipsum</p>
+      </div>
     </section>
   );
 }
