@@ -6,7 +6,7 @@ export default function MaxRosen() {
         <h1 className="modalHeader">maxrosen.town</h1>
         <div className="modalSubheading">
           personal website for director/editor Max Rosen{" "}
-          <span className="lilCapsule">W.I.P.</span>
+          <span className="lilCapsule">Work In Progress</span>
         </div>
       </div>
     </>
