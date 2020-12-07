@@ -1,8 +1,8 @@
 import { useTrail, animated } from "react-spring";
 export default function Header() {
   const descriptionItems = [
-    "UX designer",
     "front-end developer",
+    "graphic designer",
     "hopeless neophile",
   ];
   // const werk = descriptionItems.map((item, index) => (

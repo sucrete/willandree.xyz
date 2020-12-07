@@ -1,5 +1,6 @@
-import { useEffect } from "react";
-const skillsContent = `TECH PROFFFICIENCIES:
+import { useInView } from "react-intersection-observer";
+import { useTrail, animated } from "react-spring";
+const skillsContent = `PROFFFICIENCIES:
 JavaScript
 React
 HTML
@@ -11,20 +12,15 @@ node
 express
 `;
 export default function Skills() {
-  useEffect(() => {
-    const preformatted = document.getElementsByClassName("preformatted")[0];
-    const newSkills = skillsContent.split("");
-    let accumulator = ``;
-    newSkills.forEach((bug) => {
-      setTimeout(function () {
-        accumulator += bug;
-        preformatted.innerHTML = accumulator;
-      }, 500);
-    });
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0.8,
+    triggerOnce: true,
   });
+
   return (
-    <div className="skillsContainer">
-      <pre className="preformatted"></pre>
+    <div ref={ref} className={`skillsContainer inView${inView}`}>
+      <pre className="preformatted">{skillsContent}</pre>
     </div>
   );
 }

@@ -1,6 +1,6 @@
-// import { useInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 import { Modal } from "react-responsive-modal";
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { useTrail, animated } from "react-spring";
 import Skills from "../components/Skills";
 import DumpTRUCKContent from "./ModalContent/DumpTRUCK";
@@ -9,7 +9,6 @@ import CalvinContent from "./ModalContent/CalvinTodd";
 import OTLContent from "./ModalContent/OTL";
 import VOTRContent from "./ModalContent/TheVotersCompanion";
 import WillContent from "./ModalContent/WillAndreedotxyz";
-
 // function WorkTrail({ open, children, ...props }) {
 // const { ref, inView } = useInView({
 //   threshold: 1,
@@ -52,7 +51,6 @@ const work = [
   "willandree.xyz",
 ];
 const modals = ["dt", "mr", "otl", "cal", "votr", "wil"];
-// const allModals =
 
 export default function Work() {
   const [dumpTRUCK, setDumpTRUCK] = useState(false);
@@ -61,6 +59,7 @@ export default function Work() {
   const [calvin, setCalvin] = useState(false);
   const [votr, setVotr] = useState(false);
   const [willAndree, setWillAndree] = useState(false);
+
   const functions = {
     // dumpTRUCK
     dt: {
@@ -131,17 +130,20 @@ export default function Work() {
       {props.children}
     </Modal>
   );
+  const { ref, inView } = useInView({
+    threshold: 0.75,
+    triggerOnce: true,
+  });
   const trail = useTrail(work.length, {
     config: { mass: 6, tension: 1900, friction: 250 },
-    opacity: 1,
-    x: 0,
-    delay: 2000,
+    opacity: inView ? 1 : 0,
+    x: inView ? 0 : 50,
     from: { opacity: 0, x: 50 },
   });
   return (
     <section className="work">
-      <div className="workHeader">work</div>
-      <div className="workContainer">
+      <div className={`workHeader inView${inView}`}>work</div>
+      <div ref={ref} className="workContainer">
         <div className="workBody">
           {trail.map(({ x, ...rest }, index) => (
             <animated.div
