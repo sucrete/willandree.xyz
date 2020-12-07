@@ -1,6 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import { useTrail, animated } from "react-spring";
-const skillsContent = `SKILLSET:
+const skillsContent = `TECH/PROFICIENCIES:
 
 JavaScript
 React
@@ -20,7 +19,12 @@ export default function Skills() {
 
   return (
     <div ref={ref} className={`skillsContainer inView${inView}`}>
-      <div className="topBar"></div>
+      <div className="topBar">
+        {" "}
+        <span className="circleButton CB1"></span>
+        <span className="circleButton CB2"></span>
+        <span className="circleButton CB3"></span>
+      </div>
       <pre className="preformatted">{skillsContent}</pre>
     </div>
   );

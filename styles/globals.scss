@@ -109,7 +109,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
         animation-delay: 1425ms;
       }
       &:hover {
-        color: lighten(#3f332b, 15%);
+        color: $mOrange;
       }
     }
   }
@@ -188,7 +188,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
 .work {
   position: relative;
   z-index: 20;
-  padding: 0rem 7rem;
+  padding: 0rem 9rem 0rem 7rem;
   .workHeader {
     font-family: "flexa";
     text-transform: uppercase;
@@ -250,17 +250,30 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     .skillsContainer {
       background: #262727;
       font-family: monospace;
-      width: 25%;
+      width: 275px;
       border-radius: 5px;
       opacity: 0;
       position: relative;
       top: -150px;
+      left: -35px;
       border: 1px solid $grey2;
       box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.2);
       .topBar {
         height: 26px;
         width: 100%;
         background: $grey2;
+        position: relative;
+        display: flex;
+        padding-left: 3px;
+        .circleButton {
+          background: grey;
+          border-radius: 55px;
+          height: 12px;
+          width: 12px;
+          margin-left: 5px;
+          margin-top: 6px;
+          // display: inline-block;
+        }
       }
       pre {
         padding: 25px;

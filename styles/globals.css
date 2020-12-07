@@ -123,7 +123,7 @@
 }
 
 .navigation .whereToContainer a:hover {
-  color: #6c584a;
+  color: #c46221;
 }
 
 .navigation .navLine {
@@ -205,7 +205,7 @@
 .work {
   position: relative;
   z-index: 20;
-  padding: 0rem 7rem;
+  padding: 0rem 9rem 0rem 7rem;
 }
 
 .work .workHeader {
@@ -274,11 +274,12 @@
 .work .workContainer .skillsContainer {
   background: #262727;
   font-family: monospace;
-  width: 25%;
+  width: 275px;
   border-radius: 5px;
   opacity: 0;
   position: relative;
   top: -150px;
+  left: -35px;
   border: 1px solid #4b4d4b;
   -webkit-box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.2);
           box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.2);
@@ -288,6 +289,20 @@
   height: 26px;
   width: 100%;
   background: #4b4d4b;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 3px;
+}
+
+.work .workContainer .skillsContainer .topBar .circleButton {
+  background: grey;
+  border-radius: 55px;
+  height: 12px;
+  width: 12px;
+  margin-left: 5px;
+  margin-top: 6px;
 }
 
 .work .workContainer .skillsContainer pre {
