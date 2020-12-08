@@ -1,14 +1,15 @@
 import { useInView } from "react-intersection-observer";
-const skillsContent = `TECH/PROFICIENCIES:
+const skillsContent = `TECH/SKILLS:
 
+UX Design
 JavaScript
 React
-Graphic Design
 CSS/SCSS
+Graphic Design
 Vue
 Bootstrap
 node
-express
+express.js
 `;
 export default function Skills() {
   const { ref, inView } = useInView({

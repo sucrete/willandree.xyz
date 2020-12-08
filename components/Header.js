@@ -9,7 +9,7 @@ export default function Header() {
   //   <div className={`descItem${index}`}>{item}</div>
   // ));
   const trail = useTrail(descriptionItems.length, {
-    config: { mass: 7, tension: 1400, friction: 285 },
+    config: { mass: 7, tension: 1300, friction: 205 },
     opacity: 1,
     x: 0,
     delay: 2000,

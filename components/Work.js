@@ -142,12 +142,12 @@ export default function Work() {
   });
   return (
     <section className="work">
-      <div className={`workHeader inView${inView}`}>work</div>
+      <div className={`workHeader inView${inView}Title`}>work</div>
       <div ref={ref} className="workContainer">
         <div className="workBody">
           {trail.map(({ x, ...rest }, index) => (
             <animated.div
-              className="workItemContainer"
+              className={`workItemContainer ${modals[index]}Container`}
               key={work[index]}
               style={{
                 ...rest,

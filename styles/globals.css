@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
 .cloud {
   border-radius: 50%;
   position: absolute;
@@ -160,7 +158,7 @@
 }
 
 .header .descriptionContainer {
-  padding: 4rem 3rem 7rem 3rem;
+  padding: 4rem 3rem 2rem 3rem;
 }
 
 .header .descriptionContainer .description {
@@ -212,17 +210,18 @@
   font-family: "flexa";
   text-transform: uppercase;
   font-size: 10em;
-  padding-left: 2rem;
+  padding-left: 3rem;
   line-height: 1 !important;
   position: relative;
-  color: #1e221b;
+  color: #24170f;
   z-index: 1;
   letter-spacing: -0.03em;
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
   bottom: -25px;
   z-index: 7;
   width: 100%;
@@ -245,7 +244,7 @@
       flex-wrap: wrap;
   z-index: 4;
   position: relative;
-  z-index: 11;
+  z-index: 12;
   width: 75%;
   padding-left: 1rem;
 }
@@ -255,10 +254,23 @@
   padding: 27px 47px 25px 47px;
   margin: 0px 2px 2px 0px;
   white-space: nowrap;
-  background: #ecebe0;
+  background-color: #ecebe0;
   z-index: 299;
   position: relative;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-transition-property: background-color, z-index, -webkit-box-shadow;
+  transition-property: background-color, z-index, -webkit-box-shadow;
+  transition-property: background-color, box-shadow, z-index;
+  transition-property: background-color, box-shadow, z-index, -webkit-box-shadow;
   cursor: pointer;
+}
+
+.work .workContainer .workBody .workItemContainer:hover {
+  background-color: #eeede3;
+  -webkit-box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3), 0px -1px 1px rgba(255, 255, 255, 0.719), 0px 1px 0px rgba(78, 77, 77, 0.03), 0px 5px 25px rgba(0, 0, 0, 0.095);
+          box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3), 0px -1px 1px rgba(255, 255, 255, 0.719), 0px 1px 0px rgba(78, 77, 77, 0.03), 0px 5px 25px rgba(0, 0, 0, 0.095);
+  z-index: 300;
 }
 
 .work .workContainer .workBody .workItemContainer .workItem {
@@ -266,6 +278,8 @@
   color: #24170f;
   font-size: 2rem;
   line-height: 110%;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
   cursor: pointer;
   letter-spacing: 0.05rem;
   text-align: center;
@@ -281,8 +295,10 @@
   top: -150px;
   left: -35px;
   border: 1px solid #4b4d4b;
-  -webkit-box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.2);
-          box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
 }
 
 .work .workContainer .skillsContainer .topBar {
@@ -297,7 +313,7 @@
 }
 
 .work .workContainer .skillsContainer .topBar .circleButton {
-  background: grey;
+  background: #646764;
   border-radius: 55px;
   height: 12px;
   width: 12px;
@@ -306,7 +322,7 @@
 }
 
 .work .workContainer .skillsContainer pre {
-  padding: 25px;
+  padding: 25px 28px;
   margin: 0 auto;
   color: white;
   line-height: 130%;
@@ -325,7 +341,20 @@
 }
 
 section.info {
-  padding: 0px 8.5rem;
+  padding: 0px 10.5rem;
+  position: relative;
+  z-index: 17;
+}
+
+section.info .title {
+  color: #19100b;
+  float: right;
+  font-family: "flexa";
+  text-transform: uppercase;
+  font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
+  font-size: 10em;
+  padding-right: 1em;
+  text-align: right;
 }
 
 section.info .infoBody {
@@ -414,7 +443,7 @@ section.info .infoBody .aboutMe {
 
 .customModal .modalBody .modalSubheading .lilCapsule {
   font-size: 1rem;
-  font-family: "Karla";
+  font-family: "sohne regular";
   padding: 2px 10px;
   color: #24170f;
   line-height: 100%;
@@ -432,8 +461,19 @@ section.info .infoBody .aboutMe {
 }
 
 .inViewtrue {
-  -webkit-animation: entranceAnimation2 1200ms ease;
-          animation: entranceAnimation2 1200ms ease;
+  -webkit-animation: entranceAnimation2;
+          animation: entranceAnimation2;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.inViewtrueTitle {
+  -webkit-animation: entranceAnimation;
+          animation: entranceAnimation;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -455,7 +495,7 @@ hr {
   position: relative;
 }
 
-.container main .noise {
+.container main .a {
   min-height: 2000px;
   width: 100%;
   top: 0%;
@@ -558,36 +598,28 @@ section {
 @-webkit-keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 325, "wdth" 0, "ital" 20;
-    -webkit-transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 0deg);
-            transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 0deg);
+    font-variation-settings: "wght" 625, "wdth" 0, "ital" 20;
   }
   30% {
     opacity: 0.75;
   }
   to {
     opacity: 1;
-    font-variation-settings: "wght" 325, "wdth" 0, "ital" 90;
-    -webkit-transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 45deg);
-            transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 45deg);
+    font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
   }
 }
 
 @keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 325, "wdth" 0, "ital" 20;
-    -webkit-transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 0deg);
-            transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 0deg);
+    font-variation-settings: "wght" 625, "wdth" 0, "ital" 20;
   }
   30% {
     opacity: 0.75;
   }
   to {
     opacity: 1;
-    font-variation-settings: "wght" 325, "wdth" 0, "ital" 90;
-    -webkit-transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 45deg);
-            transform: translate3d(0, 0, 0) rotate3d(0.75, 1, 0, 45deg);
+    font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
   }
 }
 
