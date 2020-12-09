@@ -311,6 +311,8 @@
   display: -ms-flexbox;
   display: flex;
   padding-left: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .work .workContainer .skillsContainer .topBar .circleButton {
@@ -320,6 +322,18 @@
   width: 11px;
   margin-left: 5px;
   margin-top: 5px;
+  position: relative;
+}
+
+.work .workContainer .skillsContainer .topBar .CB1 img {
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  top: 53%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 33;
 }
 
 .work .workContainer .skillsContainer .topBar .midSpan {

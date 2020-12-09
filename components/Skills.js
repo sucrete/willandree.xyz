@@ -27,7 +27,9 @@ export default function Skills() {
   return (
     <div ref={ref} className={`skillsContainer inView${inView}`}>
       <div className="topBar">
-        <span className="circleButton CB1"></span>
+        <span className="circleButton CB1">
+          <img src="/close.svg" />
+        </span>
         <span className="circleButton CB2"></span>
         <span className="circleButton CB3"></span>
 

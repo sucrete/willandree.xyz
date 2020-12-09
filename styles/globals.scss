@@ -272,14 +272,28 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
         position: relative;
         display: flex;
         padding-left: 3px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
         .circleButton {
-          background: lighten($grey2, 8%);
+          background: rgb(95, 98, 95);
           border-radius: 55px;
           height: 11px;
           width: 11px;
           margin-left: 5px;
           margin-top: 5px;
+          position: relative;
           // display: inline-block;
+        }
+        .CB1 {
+          img {
+            position: absolute;
+            height: 11px;
+            width: 11px;
+            top: 53%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 33;
+          }
         }
         .midSpan {
           position: absolute;
