@@ -213,15 +213,15 @@
   padding-left: 3rem;
   line-height: 1 !important;
   position: relative;
-  color: #24170f;
+  color: #20150e;
   z-index: 1;
   letter-spacing: -0.03em;
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
   bottom: -25px;
   z-index: 7;
   width: 100%;
@@ -288,7 +288,7 @@
 .work .workContainer .skillsContainer {
   background: #262727;
   font-family: monospace;
-  width: 275px;
+  width: 325px;
   border-radius: 5px;
   opacity: 0;
   position: relative;
@@ -299,10 +299,11 @@
           box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
   -webkit-animation-duration: 1200ms;
           animation-duration: 1200ms;
+  height: 300px;
 }
 
 .work .workContainer .skillsContainer .topBar {
-  height: 26px;
+  height: 22px;
   width: 100%;
   background: #4b4d4b;
   position: relative;
@@ -313,19 +314,35 @@
 }
 
 .work .workContainer .skillsContainer .topBar .circleButton {
-  background: #646764;
+  background: #5f625f;
   border-radius: 55px;
-  height: 12px;
-  width: 12px;
+  height: 11px;
+  width: 11px;
   margin-left: 5px;
-  margin-top: 6px;
+  margin-top: 5px;
 }
 
-.work .workContainer .skillsContainer pre {
-  padding: 25px 28px;
+.work .workContainer .skillsContainer .topBar img {
+  height: 18px;
+  width: auto;
+}
+
+.work .workContainer .skillsContainer .preContainer {
+  padding: 5px 5px;
+}
+
+.work .workContainer .skillsContainer .preContainer pre {
+  width: inherit;
   margin: 0 auto;
   color: white;
-  line-height: 130%;
+  line-height: 120%;
+  word-wrap: break-word;
+  font-size: 9pt;
+  font-family: "sanfran", monospace;
+}
+
+.work .workContainer .skillsContainer .preContainer pre:nth-of-type(2) {
+  color: #5dc12d;
 }
 
 .title {
@@ -347,7 +364,7 @@ section.info {
 }
 
 section.info .title {
-  color: #19100b;
+  color: #20150e;
   float: right;
   font-family: "flexa";
   text-transform: uppercase;
@@ -359,20 +376,23 @@ section.info .title {
 
 section.info .infoBody {
   width: 100%;
-  font-family: "corporate", serif;
+  font-family: "corporate regular", serif;
   font-size: 1.2rem;
   color: #24170f;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 section.info .infoBody .education {
-  width: 30%;
+  width: 26%;
 }
 
 section.info .infoBody .aboutMe {
-  width: 70%;
+  width: 60%;
 }
 
 .customModal {
@@ -547,6 +567,11 @@ section {
 }
 
 @font-face {
+  font-family: "sanfran";
+  src: url("./fonts/SFMonoRegular.otf") format("opentype");
+}
+
+@font-face {
   src: url("./fonts/CorporateABQ-Regular.otf") format("opentype");
   font-family: "corporate regular";
 }
@@ -598,7 +623,7 @@ section {
 @-webkit-keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 625, "wdth" 0, "ital" 20;
+    font-variation-settings: "wght" 720, "wdth" 10, "ital" 60;
   }
   30% {
     opacity: 0.75;
@@ -612,7 +637,7 @@ section {
 @keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 625, "wdth" 0, "ital" 20;
+    font-variation-settings: "wght" 720, "wdth" 10, "ital" 60;
   }
   30% {
     opacity: 0.75;

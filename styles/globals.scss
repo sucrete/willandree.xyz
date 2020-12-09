@@ -4,20 +4,7 @@ $color2: rgb(122, 112, 68);
 $warmBlack: #24170f;
 $warmWhite: #ecebe0;
 $mOrange: darken(rgb(218, 109, 37), 5%);
-@mixin shadow($color, $steps, $glow) {
-  $all: ();
-  $all: append($all, 0px 1px 0 rgba($color, 0.1), comma);
-  $all: append($all, 0px -1px 0 rgba($glow, 0.08), comma);
-  $all: append($all, 0px 1px 0 rgba($glow, 0.08), comma);
-  $all: append($all, 0px 0px 25px rgba($glow, 0.4), comma);
-  @for $i from 1 through $steps {
-    $all: append(
-      $all,
-      append($i * 0px $i * 0.9px $i * 1.5px, rgba($color, 2 / $i))
-    );
-  }
-  box-shadow: $all;
-}
+
 .cloud {
   border-radius: 50%;
   position: absolute;
@@ -208,13 +195,13 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     padding-left: 3rem;
     line-height: 1 !important;
     position: relative;
-    color: $warmBlack;
+    color: darken($warmBlack, 1%);
     z-index: 1;
     letter-spacing: -0.03em;
     opacity: 0;
     display: flex;
     // font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
-    animation-duration: 1000ms;
+    animation-duration: 1200ms;
     bottom: -25px;
     z-index: 7;
     width: 100%;
@@ -268,7 +255,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     .skillsContainer {
       background: #262727;
       font-family: monospace;
-      width: 275px;
+      width: 325px;
       border-radius: 5px;
       opacity: 0;
       position: relative;
@@ -277,28 +264,43 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
       border: 1px solid $grey2;
       box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
       animation-duration: 1200ms;
+      height: 300px;
       .topBar {
-        height: 26px;
+        height: 22px;
         width: 100%;
         background: $grey2;
         position: relative;
         display: flex;
         padding-left: 3px;
         .circleButton {
-          background: lighten($grey2, 10%);
+          background: lighten($grey2, 8%);
           border-radius: 55px;
-          height: 12px;
-          width: 12px;
+          height: 11px;
+          width: 11px;
           margin-left: 5px;
-          margin-top: 6px;
+          margin-top: 5px;
           // display: inline-block;
         }
+        img {
+          height: 18px;
+          width: auto;
+        }
       }
-      pre {
-        padding: 25px 28px;
-        margin: 0 auto;
-        color: white;
-        line-height: 130%;
+      .preContainer {
+        padding: 5px 5px;
+
+        pre {
+          width: inherit;
+          margin: 0 auto;
+          color: white;
+          line-height: 120%;
+          word-wrap: break-word;
+          font-size: 9pt;
+          font-family: "sanfran", monospace;
+          &:nth-of-type(2) {
+            color: #5dc12d;
+          }
+        }
       }
     }
   }
@@ -317,7 +319,7 @@ section.info {
   position: relative;
   z-index: 17;
   .title {
-    color: darken($warmBlack, 3%);
+    color: darken($warmBlack, 1%);
     float: right;
     font-family: "flexa";
     text-transform: uppercase;
@@ -329,15 +331,16 @@ section.info {
 
   .infoBody {
     width: 100%;
-    font-family: "corporate", serif;
+    font-family: "corporate regular", serif;
     font-size: 1.2rem;
     color: $warmBlack;
     display: inline-flex;
+    justify-content: space-between;
     .education {
-      width: 30%;
+      width: 26%;
     }
     .aboutMe {
-      width: 70%;
+      width: 60%;
     }
   }
 }
@@ -498,7 +501,10 @@ section {
   src: url("./fonts/GT_Flexa_VAR.woff2") format("woff2-variations");
   font-style: normal;
 }
-
+@font-face {
+  font-family: "sanfran";
+  src: url("./fonts/SFMonoRegular.otf") format("opentype");
+}
 @font-face {
   src: url("./fonts/CorporateABQ-Regular.otf") format("opentype");
   font-family: "corporate regular";
@@ -529,7 +535,7 @@ section {
 @keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 625, "wdth" 0, "ital" 20;
+    font-variation-settings: "wght" 720, "wdth" 10, "ital" 60;
   }
   30% {
     opacity: 0.75;
