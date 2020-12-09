@@ -283,7 +283,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
         }
         .midSpan {
           position: absolute;
-          left: 50%;
+          left: 52%;
           top: 50%;
           transform: translate(-50%, -50%);
           color: rgb(182, 182, 182);
@@ -291,6 +291,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
           line-height: 22px;
           font-size: 9pt;
           display: flex;
+          min-width: fit-content;
           img {
             padding-top: 2px;
             height: 18px;
@@ -301,7 +302,6 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
       }
       .preContainer {
         padding: 5px 5px;
-
         pre {
           width: inherit;
           margin: 0 auto;
@@ -312,6 +312,15 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
           font-family: "sanfran", monospace;
           &:nth-of-type(2) {
             color: #5dc12d;
+          }
+          &:nth-of-type(3) {
+            // TERMINAL TYPING POSITION RECTANGLE
+            span {
+              height: 15px;
+              width: 10px;
+              background: #fff;
+              display: inline;
+            }
           }
         }
       }

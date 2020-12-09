@@ -324,7 +324,7 @@
 
 .work .workContainer .skillsContainer .topBar .midSpan {
   position: absolute;
-  left: 50%;
+  left: 52%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -335,6 +335,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 .work .workContainer .skillsContainer .topBar .midSpan img {
@@ -360,6 +363,13 @@
 
 .work .workContainer .skillsContainer .preContainer pre:nth-of-type(2) {
   color: #5dc12d;
+}
+
+.work .workContainer .skillsContainer .preContainer pre:nth-of-type(3) span {
+  height: 15px;
+  width: 10px;
+  background: #fff;
+  display: inline;
 }
 
 .title {

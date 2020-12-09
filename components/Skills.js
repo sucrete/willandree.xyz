@@ -16,7 +16,7 @@ express.js
 `;
 const skillsContentBottom = `
 betelgeuses-computer:willandree.xyz betelgeus
-e$`;
+e$ `;
 export default function Skills() {
   const { ref, inView } = useInView({
     /* Optional options */
@@ -33,13 +33,16 @@ export default function Skills() {
 
         <span className="midSpan">
           <img src="/macfolder.png" />
-          something
+          willandree.xyz — ‒bash — 45x16
         </span>
       </div>
       <div className="preContainer">
         <pre className="preformatted">{skillsContent}</pre>
         <pre className="preformatted2">{skillsContentMiddle}</pre>
-        <pre className="preformatted3">{skillsContentBottom}</pre>
+        <pre className="preformatted3">
+          {skillsContentBottom}
+          <span> </span>
+        </pre>
       </div>
     </div>
   );
