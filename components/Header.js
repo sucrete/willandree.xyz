@@ -31,7 +31,6 @@ export default function Header() {
               style={{
                 ...rest,
                 transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
-                cursor: "pointer",
               }}
             >
               {descriptionItems[index]}

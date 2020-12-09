@@ -299,12 +299,12 @@
           box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
   -webkit-animation-duration: 1200ms;
           animation-duration: 1200ms;
-  height: 300px;
+  height: 290px;
 }
 
 .work .workContainer .skillsContainer .topBar {
   height: 22px;
-  width: 100%;
+  width: calc(100%-2px);
   background: #4b4d4b;
   position: relative;
   display: -webkit-box;
@@ -322,9 +322,26 @@
   margin-top: 5px;
 }
 
-.work .workContainer .skillsContainer .topBar img {
+.work .workContainer .skillsContainer .topBar .midSpan {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #b6b6b6;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 22px;
+  font-size: 9pt;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work .workContainer .skillsContainer .topBar .midSpan img {
+  padding-top: 2px;
   height: 18px;
   width: auto;
+  padding-right: 3px;
 }
 
 .work .workContainer .skillsContainer .preContainer {
@@ -337,7 +354,7 @@
   color: white;
   line-height: 120%;
   word-wrap: break-word;
-  font-size: 9pt;
+  font-size: 8.5pt;
   font-family: "sanfran", monospace;
 }
 

@@ -264,10 +264,10 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
       border: 1px solid $grey2;
       box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
       animation-duration: 1200ms;
-      height: 300px;
+      height: 290px;
       .topBar {
         height: 22px;
-        width: 100%;
+        width: calc(100%-2px);
         background: $grey2;
         position: relative;
         display: flex;
@@ -281,9 +281,22 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
           margin-top: 5px;
           // display: inline-block;
         }
-        img {
-          height: 18px;
-          width: auto;
+        .midSpan {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          color: rgb(182, 182, 182);
+          font-family: Arial, Helvetica, sans-serif;
+          line-height: 22px;
+          font-size: 9pt;
+          display: flex;
+          img {
+            padding-top: 2px;
+            height: 18px;
+            width: auto;
+            padding-right: 3px;
+          }
         }
       }
       .preContainer {
@@ -295,7 +308,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
           color: white;
           line-height: 120%;
           word-wrap: break-word;
-          font-size: 9pt;
+          font-size: 8.5pt;
           font-family: "sanfran", monospace;
           &:nth-of-type(2) {
             color: #5dc12d;

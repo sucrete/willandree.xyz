@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
-const skillsContent = `betelgeuses-computer:willandree.xyz betelg
-euse$ node printSkillz.js`;
+const skillsContent = `betelgeuses-computer:willandree.xyz betelgeus
+e$ node printSkillz.js`;
 const skillsContentMiddle = `
 TECH/SKILLS:
 
@@ -15,8 +15,8 @@ node
 express.js
 `;
 const skillsContentBottom = `
-betelgeuses-computer:willandree.xyz betelg
-euse$`;
+betelgeuses-computer:willandree.xyz betelgeus
+e$`;
 export default function Skills() {
   const { ref, inView } = useInView({
     /* Optional options */
@@ -30,8 +30,11 @@ export default function Skills() {
         <span className="circleButton CB1"></span>
         <span className="circleButton CB2"></span>
         <span className="circleButton CB3"></span>
-        <img src="/macfolder.png" />
-        <span></span>
+
+        <span className="midSpan">
+          <img src="/macfolder.png" />
+          something
+        </span>
       </div>
       <div className="preContainer">
         <pre className="preformatted">{skillsContent}</pre>
