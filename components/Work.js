@@ -135,8 +135,9 @@ export default function Work() {
     triggerOnce: true,
   });
   const trail = useTrail(work.length, {
-    config: { mass: 6, tension: 1900, friction: 250 },
+    config: { mass: 6, tension: 1700, friction: 250 },
     opacity: inView ? 1 : 0,
+    delay: 1000,
     x: inView ? 0 : 50,
     from: { opacity: 0, x: 50 },
   });
