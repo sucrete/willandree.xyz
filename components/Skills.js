@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 const skillsContent = `betelgeuses-computer:willandree.xyz betelgeus
 e$ node printSkillz.js`;
@@ -18,16 +19,25 @@ const skillsContentBottom = `
 betelgeuses-computer:willandree.xyz betelgeus
 e$ `;
 export default function Skills() {
+  const [isHidden, setHidden] = useState(false);
   const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0.5,
     triggerOnce: true,
   });
-
+  const handleToggle = () => {
+    setHidden(!isHidden);
+  };
   return (
-    <div ref={ref} className={`skillsContainer inView${inView}`}>
+    <div
+      ref={ref}
+      className={`skillsContainer inView${inView} ${
+        isHidden ? "skillsContainer--hidden" : null
+      }`}
+    >
+      <img className="doug" src="/doug.png" />
       <div className="topBar">
-        <span className="circleButton CB1">
+        <span onClick={handleToggle} className="circleButton CB1">
           <img src="/close.svg" />
         </span>
         <span className="circleButton CB2"></span>

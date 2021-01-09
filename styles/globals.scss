@@ -1,8 +1,8 @@
 $backgroundColor: #dae6e4;
 $color1: #1e2018;
 $color2: rgb(122, 112, 68);
-$warmBlack: #24170f;
-$warmWhite: #ecebe0;
+$warmBlack: rgb(36, 23, 15);
+$warmWhite: rgb(236, 235, 224);
 $mOrange: darken(rgb(218, 109, 37), 5%);
 
 .cloud {
@@ -253,18 +253,32 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     }
     $grey2: rgb(75, 77, 75);
     .skillsContainer {
-      background: #262727;
       font-family: monospace;
       width: 325px;
       border-radius: 5px;
       opacity: 0;
       position: relative;
       top: -150px;
-      left: -35px;
+      left: -30px;
       border: 1px solid $grey2;
       box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
       animation-duration: 1200ms;
       height: 290px;
+      &--hidden {
+        border: 0px solid transparent;
+        box-shadow: unset;
+        .topBar,
+        .preContainer {
+          opacity: 0;
+        }
+      }
+      .doug {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 80;
+      }
       .topBar {
         height: 22px;
         width: calc(100%-2px);
@@ -280,8 +294,9 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
           height: 11px;
           width: 11px;
           margin-left: 5px;
-          margin-top: 5px;
+          // margin-top: 5px;
           position: relative;
+          top: 5px;
           // display: inline-block;
         }
         .CB1 {
@@ -293,6 +308,13 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 33;
+            opacity: 0;
+          }
+          &:hover {
+            background: tomato;
+            img {
+              opacity: 0.6;
+            }
           }
         }
         .midSpan {
@@ -316,6 +338,12 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
       }
       .preContainer {
         padding: 5px 5px;
+        position: relative;
+        z-index: 88;
+        background: #262727;
+        height: calc(100% - 22px);
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
         pre {
           width: inherit;
           margin: 0 auto;
@@ -571,14 +599,16 @@ section {
 @keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 720, "wdth" 10, "ital" 60;
+    font-variation-settings: "wght" 600, "wdth" 0, "ital" 0;
+    transform: translateY(50px);
   }
-  30% {
-    opacity: 0.75;
-  }
+  // 30% {
+  //   opacity: 0.75;
+  // }
   to {
     opacity: 1;
-    font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
+    font-variation-settings: "wght" 600, "wdth" 0, "ital" 80;
+    transform: translateY(0px);
   }
 }
 @keyframes entranceAnimation2 {

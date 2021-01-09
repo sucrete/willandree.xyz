@@ -286,20 +286,39 @@
 }
 
 .work .workContainer .skillsContainer {
-  background: #262727;
   font-family: monospace;
   width: 325px;
   border-radius: 5px;
   opacity: 0;
   position: relative;
   top: -150px;
-  left: -35px;
+  left: -30px;
   border: 1px solid #4b4d4b;
   -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
   -webkit-animation-duration: 1200ms;
           animation-duration: 1200ms;
   height: 290px;
+}
+
+.work .workContainer .skillsContainer--hidden {
+  border: 0px solid transparent;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.work .workContainer .skillsContainer--hidden .topBar,
+.work .workContainer .skillsContainer--hidden .preContainer {
+  opacity: 0;
+}
+
+.work .workContainer .skillsContainer .doug {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 80;
 }
 
 .work .workContainer .skillsContainer .topBar {
@@ -321,8 +340,8 @@
   height: 11px;
   width: 11px;
   margin-left: 5px;
-  margin-top: 5px;
   position: relative;
+  top: 5px;
 }
 
 .work .workContainer .skillsContainer .topBar .CB1 img {
@@ -334,6 +353,15 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 33;
+  opacity: 0;
+}
+
+.work .workContainer .skillsContainer .topBar .CB1:hover {
+  background: tomato;
+}
+
+.work .workContainer .skillsContainer .topBar .CB1:hover img {
+  opacity: 0.6;
 }
 
 .work .workContainer .skillsContainer .topBar .midSpan {
@@ -363,6 +391,12 @@
 
 .work .workContainer .skillsContainer .preContainer {
   padding: 5px 5px;
+  position: relative;
+  z-index: 88;
+  background: #262727;
+  height: calc(100% - 22px);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .work .workContainer .skillsContainer .preContainer pre {
@@ -664,28 +698,30 @@ section {
 @-webkit-keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 720, "wdth" 10, "ital" 60;
-  }
-  30% {
-    opacity: 0.75;
+    font-variation-settings: "wght" 600, "wdth" 0, "ital" 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
   to {
     opacity: 1;
-    font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
+    font-variation-settings: "wght" 600, "wdth" 0, "ital" 80;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 @keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 720, "wdth" 10, "ital" 60;
-  }
-  30% {
-    opacity: 0.75;
+    font-variation-settings: "wght" 600, "wdth" 0, "ital" 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
   to {
     opacity: 1;
-    font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
+    font-variation-settings: "wght" 600, "wdth" 0, "ital" 80;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
