@@ -28,7 +28,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
   filter: url(#filter2);
   top: -700px;
   left: 10vw;
-  box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 2%);
+  box-shadow: 400px 400px 60px 0px lighten(rgba(225, 224, 208, 0.5), 1%);
 }
 .cloud2-2 {
   width: 100px;
@@ -36,7 +36,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
   top: -700px;
   left: 10vw;
   filter: url(#filter2-2);
-  box-shadow: 400px 400px 60px 0px rgba(231, 180, 153, 0.08);
+  box-shadow: 400px 400px 60px 120px rgba(93, 129, 34, 0.04);
 }
 
 .cloud3 {
@@ -201,6 +201,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     opacity: 0;
     display: flex;
     // font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
+    font-variation-settings: "wght" 600, "wdth" 0, "ital" 80;
     animation-duration: 1200ms;
     bottom: -25px;
     z-index: 7;
@@ -382,6 +383,8 @@ section.info {
   padding: 0px 10.5rem;
   position: relative;
   z-index: 17;
+  position: relative;
+  top: -90px;
   .title {
     color: darken($warmBlack, 1%);
     float: right;
@@ -389,10 +392,11 @@ section.info {
     text-transform: uppercase;
     font-variation-settings: "wght" 625, "wdth" 0, "ital" 80;
     font-size: 10em;
-    padding-right: 1em;
+    padding-right: 50px;
     text-align: right;
+    opacity: 0;
+    animation-duration: 1200ms;
   }
-
   .infoBody {
     width: 100%;
     font-family: "corporate regular", serif;
@@ -400,6 +404,13 @@ section.info {
     color: $warmBlack;
     display: inline-flex;
     justify-content: space-between;
+    position: relative;
+    top: -70px;
+    .education,
+    .aboutMe {
+      animation-duration: 1200ms;
+      opacity: 0;
+    }
     .education {
       width: 26%;
     }
@@ -496,6 +507,9 @@ section.info {
   animation: entranceAnimation;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
+}
+.inViewtrueAboutMe {
+  animation-delay: 0.75s;
 }
 hr {
   border: 0;
@@ -599,7 +613,6 @@ section {
 @keyframes entranceAnimation {
   from {
     opacity: 0;
-    font-variation-settings: "wght" 600, "wdth" 0, "ital" 0;
     transform: translateY(50px);
   }
   // 30% {
@@ -607,14 +620,13 @@ section {
   // }
   to {
     opacity: 1;
-    font-variation-settings: "wght" 600, "wdth" 0, "ital" 80;
     transform: translateY(0px);
   }
 }
 @keyframes entranceAnimation2 {
   from {
     opacity: 0;
-    transform: translateY(35px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;

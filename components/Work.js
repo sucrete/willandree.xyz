@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { Modal } from "react-responsive-modal";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useTrail, animated } from "react-spring";
 import Skills from "../components/Skills";
 import DumpTRUCKContent from "./ModalContent/DumpTRUCK";
@@ -9,39 +9,7 @@ import CalvinContent from "./ModalContent/CalvinTodd";
 import OTLContent from "./ModalContent/OTL";
 import VOTRContent from "./ModalContent/TheVotersCompanion";
 import WillContent from "./ModalContent/WillAndreedotxyz";
-// function WorkTrail({ open, children, ...props }) {
-// const { ref, inView } = useInView({
-//   threshold: 1,
-//   triggerOnce: true,
-// });
-//   const items = React.Children.toArray(children);
-//   const trail = useTrail(items.length, {
-//     config: { mass: 5, tension: 1800, friction: 230 },
-//     opacity: 1,
-//     x: 0,
-//     delay: 300,
-//     from: { opacity: 0, x: 150 },
-//   });
 
-//   return (
-//     <div className="trails-main">
-//       <div>
-//         {trail.map(({ x, ...rest }, index) => (
-//           <a.div
-//             key={index}
-//             className="trails-text"
-//             style={{
-//               ...rest,
-//               transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
-//             }}
-//           >
-//             <a.div key={index}>{items[index]}</a.div>
-//           </a.div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
 const work = [
   "dumpTRUCK",
   "maxrosen.town",
