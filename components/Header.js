@@ -11,11 +11,11 @@ export default function Header() {
   //   <div className={`descItem${index}`}>{item}</div>
   // ));
   const trail1 = useTrail(line1.length, {
-    config: { mass: 6, tension: 5300, friction: 300 },
+    config: { mass: 3, tension: 5300, friction: 190 },
     opacity: 1,
     x: 0,
     delay: 700,
-    from: { opacity: 0, x: 10 },
+    from: { opacity: 0, x: 9 },
   });
   return (
     <section className="header">
