@@ -5,15 +5,17 @@ export default function Header() {
     "graphic designer",
     "hopeless neophile",
   ];
+  const l1 = "Front-end developer,";
+  const line1 = l1.split("");
   // const werk = descriptionItems.map((item, index) => (
   //   <div className={`descItem${index}`}>{item}</div>
   // ));
-  const trail = useTrail(descriptionItems.length, {
-    config: { mass: 7, tension: 1300, friction: 205 },
+  const trail1 = useTrail(line1.length, {
+    config: { mass: 6, tension: 5300, friction: 300 },
     opacity: 1,
     x: 0,
-    delay: 2000,
-    from: { opacity: 0, x: 40 },
+    delay: 700,
+    from: { opacity: 0, x: 10 },
   });
   return (
     <section className="header">
@@ -23,8 +25,20 @@ export default function Header() {
             <h1>i am</h1>
           </div>
         </div> */}
-        <p className="description">
-          {trail.map(({ x, ...rest }, index) => (
+        <div className="description line1Container">
+          {trail1.map(({ x, ...rest }, index) => (
+            <animated.span
+              className={`dItem descriptionItem${index}`}
+              key={line1[index]}
+              style={{
+                ...rest,
+                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
+              }}
+            >
+              {line1[index]}
+            </animated.span>
+          ))}
+          {/* {trail1.map(({ x, ...rest }, index) => (
             <animated.span
               className={`dItem descriptionItem${index}`}
               key={descriptionItems[index]}
@@ -36,7 +50,19 @@ export default function Header() {
               {descriptionItems[index]}
             </animated.span>
           ))}
-        </p>
+          {trail1.map(({ x, ...rest }, index) => (
+            <animated.span
+              className={`dItem descriptionItem${index}`}
+              key={descriptionItems[index]}
+              style={{
+                ...rest,
+                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
+              }}
+            >
+              {descriptionItems[index]}
+            </animated.span>
+          ))} */}
+        </div>
       </div>
     </section>
   );
