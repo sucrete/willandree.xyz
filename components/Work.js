@@ -99,7 +99,7 @@ export default function Work() {
     </Modal>
   );
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.25,
     triggerOnce: true,
   });
   const trail = useTrail(work.length, {
