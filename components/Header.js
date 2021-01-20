@@ -12,25 +12,25 @@ export default function Header() {
   const line2 = l2.split("");
   const line3 = l3.split("");
   const trail1 = useTrail(line1.length, {
-    config: { mass: 3, tension: 4300, friction: 200 },
+    config: { mass: 2, tension: 5300, friction: 200 },
     opacity: 1,
     x: 0,
     delay: 700,
-    from: { opacity: 0, x: 9 },
+    from: { opacity: 0, x: 5 },
   });
   const trail2 = useTrail(line2.length, {
-    config: { mass: 3, tension: 4300, friction: 200 },
+    config: { mass: 2, tension: 5300, friction: 200 },
     opacity: 1,
     x: 0,
     delay: 850,
-    from: { opacity: 0, x: 9 },
+    from: { opacity: 0, x: 5 },
   });
   const trail3 = useTrail(line3.length, {
-    config: { mass: 3, tension: 4300, friction: 200 },
+    config: { mass: 2, tension: 5300, friction: 200 },
     opacity: 1,
     x: 0,
     delay: 1000,
-    from: { opacity: 0, x: 9 },
+    from: { opacity: 0, x: 5 },
   });
   return (
     <section className="header">
