@@ -141,7 +141,7 @@
 .work .workHeader {
   font-family: "flexa";
   text-transform: uppercase;
-  font-size: 19em;
+  font-size: 21em;
   padding-left: 1.9rem;
   line-height: 1 !important;
   position: relative;
@@ -166,7 +166,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: -175px;
+  top: -75px;
   position: relative;
 }
 
@@ -375,7 +375,7 @@ section.info {
   position: relative;
   z-index: 17;
   position: relative;
-  top: -90px;
+  top: -110px;
 }
 
 section.info .title {
@@ -384,7 +384,7 @@ section.info .title {
   font-family: "flexa";
   text-transform: uppercase;
   font-variation-settings: "wght" 625, "wdth" 10, "ital" 80;
-  font-size: 19em;
+  font-size: 21em;
   padding-right: 50px;
   text-align: right;
   opacity: 0;
@@ -406,7 +406,7 @@ section.info .infoBody {
           justify-content: space-between;
   line-height: 120%;
   position: relative;
-  top: -90px;
+  top: -110px;
 }
 
 section.info .infoBody .education,

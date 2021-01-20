@@ -1,7 +1,7 @@
 import { useInView } from "react-intersection-observer";
 export default function Info() {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.25,
     triggerOnce: true,
   });
   return (
@@ -9,7 +9,10 @@ export default function Info() {
       <h1 className={`title inView${inView}Title`}>Info</h1>
       <div className="infoBody">
         <div className={`education inView${inView}`}>
-          <h1>education</h1>
+          <h1 className="educationHeader">education</h1>
+          <div className="educationBody">
+            <div></div>
+          </div>
         </div>
         <div className={`aboutMe inView${inView}AboutMe inView${inView}`}>
           {" "}
