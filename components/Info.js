@@ -9,7 +9,7 @@ export default function Info() {
       <h1 className={`title inView${inView}Title`}>Info</h1>
       <div className="infoBody">
         <div className={`education inView${inView}`}>
-          <h1 className="educationHeader">education</h1>
+          <div className="educationHeader">education</div>
           <div className="educationBody">
             <div></div>
           </div>

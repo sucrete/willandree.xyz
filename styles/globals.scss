@@ -4,7 +4,7 @@ $color2: rgb(122, 112, 68);
 $warmBlack: rgb(48, 35, 27);
 $warmWhite: rgb(236, 235, 224);
 $mOrange: darken(rgb(218, 109, 37), 5%);
-
+$citrine: #646425;
 .customOverlay {
   background: rgba(41, 36, 25, 0.089) !important;
   // border: solid clamp(2vw, 1.5vw, 0.5vw) rgb(230, 229, 215);
@@ -35,7 +35,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     animation: entranceAnimation4 600ms cubic-bezier(0.49, 0.48, 0.27, 0.99);
     animation-fill-mode: forwards;
     animation-delay: 2500ms;
-    color: lighten($warmBlack, 15%);
+    color: $citrine;
     width: 200px;
     line-height: 200px;
     position: absolute;
@@ -54,7 +54,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
       font-family: "sohne regular";
       font-size: 1.2em;
       margin-left: 38px;
-      color: lighten($warmBlack, 15%);
+      color: $citrine;
       transition: color 0.25s ease;
       letter-spacing: 0.05em;
       cursor: pointer;
@@ -83,7 +83,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
       animation: str8nLine 2s cubic-bezier(0.49, 0.48, 0.27, 0.99);
       animation-fill-mode: forwards;
       animation-delay: 2000ms;
-      stroke: darken($warmWhite, 4%);
+      stroke: darken(rgba(238, 236, 217, 0.7), 3%);
     }
   }
 }
@@ -115,6 +115,9 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
       .dItem {
         display: inline-block;
         min-width: 30px;
+        div {
+          // overflow: hidden;
+        }
       }
       // text-transform: capitalize;
       // .dItem {
@@ -158,7 +161,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     padding-left: 1.9rem;
     line-height: 1 !important;
     position: relative;
-    color: darken(rgba(236, 235, 224, 0.6), 3%);
+    color: darken(rgba(235, 233, 212, 0.6), 3%);
     z-index: 1;
     letter-spacing: -0.03em;
     opacity: 0;
@@ -193,20 +196,20 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
         transition-property: background-color, box-shadow, z-index;
         cursor: pointer;
         &:hover {
-          background-color: rgba(236, 235, 224, 0.6);
+          background-color: rgba(231, 228, 218, 0.8);
           box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3),
             0px -1px 1px rgba(255, 255, 255, 0.5),
             0px 1px 0px rgba(78, 77, 77, 0.03),
-            0px 5px 25px rgba(0, 0, 0, 0.095);
+            0px 5px 15px rgba(0, 0, 0, 0.075);
           z-index: 300;
           .workItem {
-            color: lighten($warmBlack, 5%);
+            color: lighten(rgba(100, 100, 37, 0.91), 3%);
           }
         }
 
         .workItem {
           font-family: "sohne regular", sans-serif;
-          color: lighten($warmBlack, 10%);
+          color: #646425e8;
           font-size: 2rem;
           // font-weight: 300;
           line-height: 110%;
@@ -221,6 +224,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     $grey2: rgb(75, 77, 75);
     .skillsContainer {
       font-family: monospace;
+      visibility: hidden;
       width: 325px;
       border-radius: 5px;
       opacity: 0;
@@ -368,7 +372,7 @@ section.info {
     width: 100%;
     font-family: "corporate regular", serif;
     font-size: 2rem;
-    color: lighten($warmBlack, 15%);
+    color: $citrine;
     display: inline-flex;
     justify-content: space-between;
     line-height: 120%;
@@ -381,6 +385,22 @@ section.info {
     }
     .education {
       width: 26%;
+      .educationHeader {
+        // text-decoration: underline;
+        position: relative;
+        width: 100%;
+        &::before {
+          content: " ";
+          display: block;
+          position: absolute;
+          border-bottom: solid 0.08em rgb(233, 9, 9);
+          bottom: 0px;
+          width: 47%;
+          left: 0%;
+          margin: 0 auto;
+          z-index: -1;
+        }
+      }
     }
     .aboutMe {
       width: 60%;
@@ -542,7 +562,7 @@ hr {
       top: 0px;
       left: 55vw;
       filter: url(#filter3);
-      box-shadow: 400px 400px 60px 0px lighten(hsl(134.12, 22.08%, 84.9%), 2%);
+      box-shadow: 400px 400px 60px 0px lighten(rgba(225, 225, 208, 0.5), 2%);
     }
     .noise {
       width: 100vw;
@@ -573,7 +593,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   // overflow: hidden;
-  background: #cbd4c4;
+  background: #d7dbcd;
 }
 * {
   box-sizing: border-box;

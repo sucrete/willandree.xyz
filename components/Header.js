@@ -36,9 +36,8 @@ export default function Header() {
     config: { mass: 5, tension: 2000, friction: 200 },
     opacity: 1,
     x: 0,
-    height: 110,
     delay: 700,
-    from: { opacity: 0, x: 20, height: 0 },
+    from: { opacity: 0, x: 20 },
   });
   return (
     <section className="header">
@@ -49,7 +48,7 @@ export default function Header() {
           </div>
         </div> */}
         <div className="description line1Container">
-          {trail4.map(({ x, height, ...rest }, index) => (
+          {trail4.map(({ x, ...rest }, index) => (
             <animated.span
               className={`dItem descriptionItem${index}`}
               key={descriptionItems[index]}
@@ -58,9 +57,7 @@ export default function Header() {
                 transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
               }}
             >
-              <animated.div style={{ height }}>
-                {descriptionItems[index]}
-              </animated.div>
+              <animated.div>{descriptionItems[index]}</animated.div>
             </animated.span>
           ))}
         </div>

@@ -2,6 +2,8 @@ import { useInView } from "react-intersection-observer";
 import { Modal } from "react-responsive-modal";
 import { useState } from "react";
 import { useTrail, animated } from "react-spring";
+// import ReactDOM from "react-dom";
+// import { Parallax, ParallaxLayer } from "react-spring/addons";
 import Skills from "../components/Skills";
 import DumpTRUCKContent from "./ModalContent/DumpTRUCK";
 import MaxContent from "./ModalContent/MaxRosen";
