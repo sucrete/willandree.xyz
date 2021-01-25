@@ -34,7 +34,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
     // color: transparent;
     animation: entranceAnimation4 600ms cubic-bezier(0.49, 0.48, 0.27, 0.99);
     animation-fill-mode: forwards;
-    animation-delay: 3000ms;
+    animation-delay: 2500ms;
     color: lighten($warmBlack, 15%);
     width: 200px;
     line-height: 200px;
@@ -60,12 +60,12 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
       cursor: pointer;
       opacity: 0;
       animation: entranceAnimation4 600ms cubic-bezier(0.49, 0.48, 0.27, 0.99);
-      animation-delay: 3500ms;
+      animation-delay: 3000ms;
       animation-fill-mode: forwards;
       position: relative;
       text-decoration: none;
       &:first-of-type {
-        animation-delay: 3425ms;
+        animation-delay: 2925ms;
       }
       &:hover {
         color: $mOrange;
@@ -82,7 +82,7 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
       opacity: 0;
       animation: str8nLine 2s cubic-bezier(0.49, 0.48, 0.27, 0.99);
       animation-fill-mode: forwards;
-      animation-delay: 2100ms;
+      animation-delay: 2000ms;
       stroke: darken($warmWhite, 4%);
     }
   }
@@ -186,16 +186,16 @@ $mOrange: darken(rgb(218, 109, 37), 5%);
         padding: 27px 47px 25px 47px;
         margin: 0px 2px 2px 0px;
         white-space: nowrap;
-        background-color: #ecebe0;
+        background-color: darken(rgba(236, 235, 224, 0.6), 3%);
         z-index: 299;
         position: relative;
         transition: 0.2s ease;
         transition-property: background-color, box-shadow, z-index;
         cursor: pointer;
         &:hover {
-          background-color: lighten(#ecebe0, 1%);
+          background-color: rgba(236, 235, 224, 0.6);
           box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3),
-            0px -1px 1px rgba(255, 255, 255, 0.719),
+            0px -1px 1px rgba(255, 255, 255, 0.5),
             0px 1px 0px rgba(78, 77, 77, 0.03),
             0px 5px 25px rgba(0, 0, 0, 0.095);
           z-index: 300;

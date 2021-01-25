@@ -21,8 +21,8 @@
           animation: entranceAnimation4 600ms cubic-bezier(0.49, 0.48, 0.27, 0.99);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
   color: #614737;
   width: 200px;
   line-height: 200px;
@@ -53,8 +53,8 @@
   opacity: 0;
   -webkit-animation: entranceAnimation4 600ms cubic-bezier(0.49, 0.48, 0.27, 0.99);
           animation: entranceAnimation4 600ms cubic-bezier(0.49, 0.48, 0.27, 0.99);
-  -webkit-animation-delay: 3500ms;
-          animation-delay: 3500ms;
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   position: relative;
@@ -62,8 +62,8 @@
 }
 
 .navigation .whereToContainer a:first-of-type {
-  -webkit-animation-delay: 3425ms;
-          animation-delay: 3425ms;
+  -webkit-animation-delay: 2925ms;
+          animation-delay: 2925ms;
 }
 
 .navigation .whereToContainer a:hover {
@@ -84,8 +84,8 @@
           animation: str8nLine 2s cubic-bezier(0.49, 0.48, 0.27, 0.99);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2100ms;
-          animation-delay: 2100ms;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
   stroke: #e4e3d3;
 }
 
@@ -188,7 +188,7 @@
   padding: 27px 47px 25px 47px;
   margin: 0px 2px 2px 0px;
   white-space: nowrap;
-  background-color: #ecebe0;
+  background-color: rgba(230, 229, 215, 0.6);
   z-index: 299;
   position: relative;
   -webkit-transition: 0.2s ease;
@@ -201,9 +201,9 @@
 }
 
 .work .workContainer .workBody .workItemContainer:hover {
-  background-color: #eeede3;
-  -webkit-box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3), 0px -1px 1px rgba(255, 255, 255, 0.719), 0px 1px 0px rgba(78, 77, 77, 0.03), 0px 5px 25px rgba(0, 0, 0, 0.095);
-          box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3), 0px -1px 1px rgba(255, 255, 255, 0.719), 0px 1px 0px rgba(78, 77, 77, 0.03), 0px 5px 25px rgba(0, 0, 0, 0.095);
+  background-color: rgba(236, 235, 224, 0.6);
+  -webkit-box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3), 0px -1px 1px rgba(255, 255, 255, 0.5), 0px 1px 0px rgba(78, 77, 77, 0.03), 0px 5px 25px rgba(0, 0, 0, 0.095);
+          box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3), 0px -1px 1px rgba(255, 255, 255, 0.5), 0px 1px 0px rgba(78, 77, 77, 0.03), 0px 5px 25px rgba(0, 0, 0, 0.095);
   z-index: 300;
 }
 
