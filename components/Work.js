@@ -101,7 +101,7 @@ export default function Work() {
     </Modal>
   );
   const { ref, inView } = useInView({
-    threshold: 0.25,
+    threshold: 0.5,
     triggerOnce: true,
   });
   const trail = useTrail(work.length, {
@@ -113,11 +113,11 @@ export default function Work() {
   });
   return (
     <section className="work">
-      <div className={`workHeader inView${inView}Title`}>work</div>
-      <div ref={ref} className="workContainer">
-        <div className="workBody">
+      <div className="workContainer">
+        <div ref={ref} className="workBody">
+          <span className={`workHeader inView${inView}Title`}>Work</span>
           {trail.map(({ x, ...rest }, index) => (
-            <animated.div
+            <animated.span
               className={`workItemContainer ${modals[index]}Container`}
               key={work[index]}
               style={{
@@ -127,11 +127,10 @@ export default function Work() {
               }}
               onClick={functions[modals[index]].o}
             >
-              <div className="shadowDiv"></div>
               <animated.span className={`workItem ${modals[index]}`}>
                 {work[index]}
               </animated.span>
-            </animated.div>
+            </animated.span>
           ))}
         </div>
         <Skills />

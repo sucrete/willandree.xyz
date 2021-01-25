@@ -4,7 +4,7 @@ $color2: rgb(122, 112, 68);
 $warmBlack: rgb(48, 35, 27);
 $warmWhite: rgb(236, 235, 224);
 $mOrange: darken(rgb(218, 109, 37), 5%);
-$citrine: #646425;
+$citrine: #3f3f1d;
 .customOverlay {
   background: rgba(41, 36, 25, 0.089) !important;
   // border: solid clamp(2vw, 1.5vw, 0.5vw) rgb(230, 229, 215);
@@ -97,7 +97,7 @@ $citrine: #646425;
   width: 100%;
   z-index: 9;
   .descriptionContainer {
-    padding: 4rem 3rem 2rem 3rem;
+    padding: 4rem 3rem 5rem 3rem;
     .description {
       font-family: "corporate";
       font-size: 8.5em;
@@ -153,28 +153,11 @@ $citrine: #646425;
 .work {
   position: relative;
   z-index: 20;
-  padding: 0rem 9rem 0rem 7rem;
-  .workHeader {
-    font-family: "flexa";
-    text-transform: uppercase;
-    font-size: 21em;
-    padding-left: 1.9rem;
-    line-height: 1 !important;
-    position: relative;
-    color: darken(rgba(235, 233, 212, 0.6), 3%);
-    z-index: 1;
-    letter-spacing: -0.03em;
-    opacity: 0;
-    display: flex;
-    font-variation-settings: "wght" 600, "wdth" 10, "ital" 80;
-    animation-duration: 1200ms;
-    z-index: 7;
-    width: 100%;
-  }
+  padding: 0rem 8rem 0rem 8rem;
+
   .workContainer {
     display: inline-flex;
     justify-content: space-between;
-    top: -75px;
     position: relative;
     .workBody {
       display: flex;
@@ -182,42 +165,60 @@ $citrine: #646425;
       z-index: 4;
       position: relative;
       z-index: 12;
-      width: 75%;
-      padding-left: 1rem;
+      width: 80%;
+      padding-left: 1.5rem;
+      border-radius: 7px;
+      .workHeader {
+        font-family: "corporate regular";
+        font-size: 5em;
+        color: $citrine;
+        z-index: 1;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        opacity: 0;
+        margin-right: 1rem;
+        // font-variation-settings: "wght" 600, "wdth" 10, "ital" 80;
+        animation-duration: 1200ms;
+        z-index: 7;
+        position: relative;
+        padding-bottom: 3px;
+      }
       .workItemContainer {
-        border-radius: 55px;
-        padding: 27px 47px 25px 47px;
-        margin: 0px 2px 2px 0px;
+        border-radius: 75px;
+        line-height: 5em;
+        height: 5em;
+        margin: 0px 4px 4px 0px;
         white-space: nowrap;
-        background-color: darken(rgba(236, 235, 224, 0.6), 3%);
+        background-color: darken(rgba(236, 235, 222, 0.7), 3%);
         z-index: 299;
         position: relative;
         transition: 0.2s ease;
         transition-property: background-color, box-shadow, z-index;
         cursor: pointer;
         &:hover {
-          background-color: rgba(231, 228, 218, 0.8);
+          background-color: rgba(236, 235, 222, 0.8);
           box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3),
             0px -1px 1px rgba(255, 255, 255, 0.5),
-            0px 1px 0px rgba(78, 77, 77, 0.03),
+            0px 1px 0px rgba(73, 72, 72, 0.03),
             0px 5px 15px rgba(0, 0, 0, 0.075);
           z-index: 300;
           .workItem {
-            color: lighten(rgba(100, 100, 37, 0.91), 3%);
+            color: lighten($citrine, 3%);
           }
         }
-
         .workItem {
           font-family: "sohne regular", sans-serif;
-          color: #646425e8;
-          font-size: 2rem;
-          // font-weight: 300;
-          line-height: 110%;
+          color: $citrine;
+          font-size: 1.8em;
+          height: 5em;
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-bottom: 3px;
           transition: color 0.3s ease;
           cursor: pointer;
-          // font-variation-settings: "wght" 245, "wdth" 95;
           letter-spacing: 0.05rem;
           text-align: center;
+          margin: auto;
         }
       }
     }
@@ -393,7 +394,7 @@ section.info {
           content: " ";
           display: block;
           position: absolute;
-          border-bottom: solid 0.08em rgb(233, 9, 9);
+          border-bottom: solid 0.08em darken(rgba(238, 236, 217, 0.7), 3%);
           bottom: 0px;
           width: 47%;
           left: 0%;
@@ -514,7 +515,7 @@ hr {
   height: 100%;
   main {
     margin: 0 auto;
-    background: #d5e0ce;
+    background: #d1d6c6;
     height: 100%;
     position: relative;
     .cloud {
@@ -562,7 +563,7 @@ hr {
       top: 0px;
       left: 55vw;
       filter: url(#filter3);
-      box-shadow: 400px 400px 60px 0px lighten(rgba(225, 225, 208, 0.5), 2%);
+      box-shadow: 400px 400px 60px 0px rgba(225, 225, 208, 0.3);
     }
     .noise {
       width: 100vw;
@@ -593,7 +594,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   // overflow: hidden;
-  background: #d7dbcd;
+  background: #d8dac7;
 }
 * {
   box-sizing: border-box;
