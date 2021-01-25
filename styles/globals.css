@@ -197,7 +197,7 @@
 }
 
 .work .workContainer .workBody .workItemContainer:hover {
-  background-color: rgba(236, 235, 222, 0.8);
+  background-color: rgba(235, 234, 220, 0.8);
   -webkit-box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3), 0px -1px 1px rgba(255, 255, 255, 0.5), 0px 1px 0px rgba(73, 72, 72, 0.03), 0px 5px 15px rgba(0, 0, 0, 0.075);
           box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3), 0px -1px 1px rgba(255, 255, 255, 0.5), 0px 1px 0px rgba(73, 72, 72, 0.03), 0px 5px 15px rgba(0, 0, 0, 0.075);
   z-index: 300;
