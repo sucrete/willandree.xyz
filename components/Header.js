@@ -42,11 +42,6 @@ export default function Header() {
   return (
     <section className="header">
       <div className="descriptionContainer">
-        {/* <div className="iAmContainer rotate-wrap">
-          <div class="box box-rotate box-rotate-gyro">
-            <h1>i am</h1>
-          </div>
-        </div> */}
         <div className="description line1Container">
           {trail4.map(({ x, ...rest }, index) => (
             <animated.span
@@ -61,48 +56,6 @@ export default function Header() {
             </animated.span>
           ))}
         </div>
-        {/* <div className="description line1Container">
-          {trail1.map(({ x, ...rest }, index) => (
-            <animated.span
-              className={`dItem descriptionItem${index}`}
-              key={line1[index]}
-              style={{
-                ...rest,
-                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
-              }}
-            >
-              {line1[index]}
-            </animated.span>
-          ))}
-        </div>
-        <div className="description line2Container">
-          {trail2.map(({ x, ...rest }, index) => (
-            <animated.span
-              className={`dItem descriptionItem${index}`}
-              key={line2[index]}
-              style={{
-                ...rest,
-                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
-              }}
-            >
-              {line2[index]}
-            </animated.span>
-          ))}
-        </div>
-        <div className="description line3Container">
-          {trail3.map(({ x, ...rest }, index) => (
-            <animated.span
-              className={`dItem descriptionItem${index}`}
-              key={line3[index]}
-              style={{
-                ...rest,
-                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
-              }}
-            >
-              {line3[index]}
-            </animated.span>
-          ))}
-        </div> */}
       </div>
     </section>
   );

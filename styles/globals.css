@@ -107,7 +107,7 @@
 }
 
 .header .descriptionContainer {
-  padding: 3rem 3rem 5rem 3rem;
+  padding: 3rem 3rem 6rem 3rem;
 }
 
 .header .descriptionContainer .description {
@@ -157,7 +157,7 @@
   z-index: 4;
   position: relative;
   z-index: 12;
-  width: 90%;
+  width: 80%;
   padding-left: 1.5rem;
   border-radius: 7px;
 }
@@ -250,114 +250,6 @@
   opacity: 0;
 }
 
-.work .workContainer .skillsContainer .doug {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 80;
-}
-
-.work .workContainer .skillsContainer .topBar {
-  height: 22px;
-  width: calc(100%-2px);
-  background: #4b4d4b;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 3px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-
-.work .workContainer .skillsContainer .topBar .circleButton {
-  background: #5f625f;
-  border-radius: 55px;
-  height: 11px;
-  width: 11px;
-  margin-left: 5px;
-  position: relative;
-  top: 5px;
-}
-
-.work .workContainer .skillsContainer .topBar .CB1 img {
-  position: absolute;
-  height: 11px;
-  width: 11px;
-  top: 53%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 33;
-  opacity: 0;
-}
-
-.work .workContainer .skillsContainer .topBar .CB1:hover {
-  background: tomato;
-}
-
-.work .workContainer .skillsContainer .topBar .CB1:hover img {
-  opacity: 0.6;
-}
-
-.work .workContainer .skillsContainer .topBar .midSpan {
-  position: absolute;
-  left: 52%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #b6b6b6;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 22px;
-  font-size: 9pt;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-}
-
-.work .workContainer .skillsContainer .topBar .midSpan img {
-  padding-top: 2px;
-  height: 18px;
-  width: auto;
-  padding-right: 3px;
-}
-
-.work .workContainer .skillsContainer .preContainer {
-  padding: 5px 5px;
-  position: relative;
-  z-index: 88;
-  background: #262727;
-  height: calc(100% - 22px);
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-.work .workContainer .skillsContainer .preContainer pre {
-  width: inherit;
-  margin: 0 auto;
-  color: white;
-  line-height: 120%;
-  word-wrap: break-word;
-  font-size: 8.5pt;
-  font-family: "sanfran", monospace;
-}
-
-.work .workContainer .skillsContainer .preContainer pre:nth-of-type(2) {
-  color: #5dc12d;
-}
-
-.work .workContainer .skillsContainer .preContainer pre:nth-of-type(3) span {
-  height: 15px;
-  width: 10px;
-  background: #fff;
-  display: inline;
-}
-
 .title {
   font-size: 6.5em;
   color: #292419;
@@ -371,32 +263,15 @@
 }
 
 section.info {
-  padding: 0px 10.5rem;
+  padding: 5rem 10.5rem;
   position: relative;
   z-index: 17;
   position: relative;
-  top: -110px;
-}
-
-section.info .title {
-  color: rgba(230, 229, 215, 0.6);
-  float: right;
-  font-family: "flexa";
-  text-transform: uppercase;
-  font-variation-settings: "wght" 625, "wdth" 10, "ital" 80;
-  font-size: 21em;
-  padding-right: 50px;
-  text-align: right;
-  opacity: 0;
-  -webkit-animation-duration: 1200ms;
-          animation-duration: 1200ms;
-  line-height: 100%;
 }
 
 section.info .infoBody {
   width: 100%;
   font-family: "corporate regular", serif;
-  font-size: 2rem;
   color: #3f3f1d;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -404,9 +279,7 @@ section.info .infoBody {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  line-height: 120%;
   position: relative;
-  top: -110px;
 }
 
 section.info .infoBody .education,
@@ -423,22 +296,45 @@ section.info .infoBody .education {
 section.info .infoBody .education .educationHeader {
   position: relative;
   width: 100%;
-}
-
-section.info .infoBody .education .educationHeader::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  border-bottom: solid 0.08em rgba(233, 231, 206, 0.7);
-  bottom: 0px;
-  width: 47%;
-  left: 0%;
-  margin: 0 auto;
-  z-index: -1;
+  font-size: 2em;
 }
 
 section.info .infoBody .aboutMe {
   width: 60%;
+}
+
+section.info .infoBody .aboutMe .title {
+  color: #3f3f1d;
+  float: right;
+  padding-left: 10px;
+  padding-right: 5px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  font-family: "corporate regular";
+  font-size: 6.2em;
+  text-align: right;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  opacity: 0;
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
+  background: url("../public/info.svg");
+  line-height: 100%;
+  background-size: 92%;
+  background-repeat: no-repeat;
+  background-position: 76% 39%;
+}
+
+section.info .infoBody .aboutMe p {
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  font-family: "corporate regular";
+  font-size: 2em;
+  line-height: 115%;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .customModal {

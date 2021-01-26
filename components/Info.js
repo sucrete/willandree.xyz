@@ -6,16 +6,16 @@ export default function Info() {
   });
   return (
     <section id="info" className="info">
-      <h1 className={`title inView${inView}Title`}>Info</h1>
       <div className="infoBody">
         <div className={`education inView${inView}`}>
-          <div className="educationHeader">education</div>
+          <div className="educationHeader">Education</div>
           <div className="educationBody">
             <div></div>
           </div>
         </div>
         <div className={`aboutMe inView${inView}AboutMe inView${inView}`}>
           {" "}
+          <span className={`title inView${inView}Title`}>Info</span>
           <p ref={ref}>
             About me Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Duis egestas ipsum nulla, in ultrices metus cursus non. Curabitur
