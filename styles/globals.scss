@@ -97,7 +97,7 @@ $citrine: #3f3f1d;
   width: 100%;
   z-index: 9;
   .descriptionContainer {
-    padding: 4rem 3rem 5rem 3rem;
+    padding: 3rem 3rem 5rem 3rem;
     .description {
       font-family: "corporate";
       font-size: 8.5em;
@@ -170,8 +170,10 @@ $citrine: #3f3f1d;
       border-radius: 7px;
       .workHeader {
         font-family: "corporate regular";
-        font-size: 5em;
+        font-size: 5.2em;
         color: $citrine;
+        // overflow: hidden;
+        height: 1em;
         z-index: 1;
         line-height: 100%;
         letter-spacing: -0.03em;
@@ -181,12 +183,12 @@ $citrine: #3f3f1d;
         animation-duration: 1200ms;
         z-index: 7;
         position: relative;
-        padding-bottom: 3px;
+        // padding-bottom: 3px;
       }
       .workItemContainer {
         border-radius: 75px;
-        line-height: 5em;
-        height: 5em;
+        line-height: 5.8em;
+        height: 5.8em;
         margin: 0px 4px 4px 0px;
         white-space: nowrap;
         background-color: darken(rgba(236, 235, 222, 0.7), 3%);
@@ -215,10 +217,10 @@ $citrine: #3f3f1d;
           padding-right: 40px;
           padding-bottom: 3px;
           transition: color 0.3s ease;
+          // line-height: 110%;
           cursor: pointer;
           letter-spacing: 0.05rem;
           text-align: center;
-          margin: auto;
         }
       }
     }

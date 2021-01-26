@@ -107,7 +107,7 @@
 }
 
 .header .descriptionContainer {
-  padding: 4rem 3rem 5rem 3rem;
+  padding: 3rem 3rem 5rem 3rem;
 }
 
 .header .descriptionContainer .description {
@@ -164,8 +164,9 @@
 
 .work .workContainer .workBody .workHeader {
   font-family: "corporate regular";
-  font-size: 5em;
+  font-size: 5.2em;
   color: #3f3f1d;
+  height: 1em;
   z-index: 1;
   line-height: 100%;
   letter-spacing: -0.03em;
@@ -175,13 +176,12 @@
           animation-duration: 1200ms;
   z-index: 7;
   position: relative;
-  padding-bottom: 3px;
 }
 
 .work .workContainer .workBody .workItemContainer {
   border-radius: 75px;
-  line-height: 5em;
-  height: 5em;
+  line-height: 5.8em;
+  height: 5.8em;
   margin: 0px 4px 4px 0px;
   white-space: nowrap;
   background-color: rgba(230, 229, 212, 0.7);
@@ -220,7 +220,6 @@
   cursor: pointer;
   letter-spacing: 0.05rem;
   text-align: center;
-  margin: auto;
 }
 
 .work .workContainer .skillsContainer {
