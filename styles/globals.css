@@ -157,14 +157,14 @@
   z-index: 4;
   position: relative;
   z-index: 12;
-  width: 80%;
+  width: 90%;
   padding-left: 1.5rem;
   border-radius: 7px;
 }
 
 .work .workContainer .workBody .workHeader {
   font-family: "corporate regular";
-  font-size: 5.2em;
+  font-size: 5.8em;
   color: #3f3f1d;
   height: 1em;
   z-index: 1;
@@ -225,7 +225,7 @@
 .work .workContainer .skillsContainer {
   font-family: monospace;
   visibility: hidden;
-  width: 325px;
+  width: 10%;
   border-radius: 5px;
   opacity: 0;
   position: relative;
