@@ -36,15 +36,16 @@
 .navigation .whereToContainer {
   float: right;
   line-height: 0px;
-  margin-right: -45px;
   position: relative;
   z-index: 15;
+  top: 1px;
+  right: -45px;
 }
 
 .navigation .whereToContainer a {
   font-family: "sohne regular";
   font-size: 1em;
-  margin-left: 38px;
+  margin-left: 43px;
   color: #11130b;
   -webkit-transition: color 0.25s ease;
   transition: color 0.25s ease;
@@ -86,7 +87,7 @@
           animation-fill-mode: forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms;
-  stroke: #e9e7ce;
+  stroke: rgba(238, 236, 222, 0.945);
 }
 
 .header {
@@ -184,7 +185,7 @@
   height: 5.8em;
   margin: 0px 4px 4px 0px;
   white-space: nowrap;
-  background-color: rgba(238, 237, 223, 0.911);
+  background-color: rgba(238, 236, 222, 0.945);
   z-index: 299;
   position: relative;
   -webkit-transition: 0.2s ease;
@@ -458,7 +459,7 @@ hr {
 
 .container main {
   margin: 0 auto;
-  background: #dfe4d8;
+  background: #dee0d7;
   height: 100%;
   position: relative;
 }
