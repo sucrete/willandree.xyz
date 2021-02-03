@@ -23,7 +23,7 @@
           animation-fill-mode: forwards;
   -webkit-animation-delay: 2500ms;
           animation-delay: 2500ms;
-  color: #3f3f1d;
+  color: #1c240a;
   width: 200px;
   line-height: 200px;
   position: absolute;
@@ -45,7 +45,7 @@
   font-family: "sohne regular";
   font-size: 1.2em;
   margin-left: 38px;
-  color: #3f3f1d;
+  color: #1c240a;
   -webkit-transition: color 0.25s ease;
   transition: color 0.25s ease;
   letter-spacing: 0.05em;
@@ -165,7 +165,7 @@
 .work .workContainer .workBody .workHeader {
   font-family: "corporate regular";
   font-size: 5.8em;
-  color: #3f3f1d;
+  color: #1f2016;
   height: 1em;
   z-index: 1;
   line-height: 100%;
@@ -179,12 +179,12 @@
 }
 
 .work .workContainer .workBody .workItemContainer {
-  border-radius: 75px;
+  border-radius: 3px;
   line-height: 5.8em;
   height: 5.8em;
   margin: 0px 4px 4px 0px;
   white-space: nowrap;
-  background-color: rgba(230, 229, 212, 0.7);
+  background-color: transparent;
   z-index: 299;
   position: relative;
   -webkit-transition: 0.2s ease;
@@ -193,23 +193,24 @@
   transition-property: background-color, z-index, -webkit-box-shadow;
   transition-property: background-color, box-shadow, z-index;
   transition-property: background-color, box-shadow, z-index, -webkit-box-shadow;
+  border: solid 2px rgba(233, 231, 206, 0.7);
   cursor: pointer;
 }
 
 .work .workContainer .workBody .workItemContainer:hover {
-  background-color: rgba(235, 234, 220, 0.8);
+  background-color: rgba(247, 245, 230, 0.945);
   -webkit-box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3), 0px -1px 1px rgba(255, 255, 255, 0.5), 0px 1px 0px rgba(73, 72, 72, 0.03), 0px 5px 15px rgba(0, 0, 0, 0.075);
           box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3), 0px -1px 1px rgba(255, 255, 255, 0.5), 0px 1px 0px rgba(73, 72, 72, 0.03), 0px 5px 15px rgba(0, 0, 0, 0.075);
   z-index: 300;
 }
 
 .work .workContainer .workBody .workItemContainer:hover .workItem {
-  color: #494922;
+  color: #28291c;
 }
 
 .work .workContainer .workBody .workItemContainer .workItem {
   font-family: "sohne regular", sans-serif;
-  color: #3f3f1d;
+  color: #1f2016;
   font-size: 1.8em;
   height: 5em;
   padding-left: 40px;
@@ -272,7 +273,7 @@ section.info {
 section.info .infoBody {
   width: 100%;
   font-family: "corporate regular", serif;
-  color: #3f3f1d;
+  color: #1f2016;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -304,32 +305,32 @@ section.info .infoBody .aboutMe {
 }
 
 section.info .infoBody .aboutMe .title {
-  color: #3f3f1d;
+  color: #1f2016;
   float: right;
   padding-left: 10px;
   padding-right: 5px;
   -webkit-margin-after: 0px;
           margin-block-end: 0px;
   font-family: "corporate regular";
-  font-size: 6.2em;
+  font-size: 7.2em;
   text-align: right;
   letter-spacing: -0.03em;
   text-transform: capitalize;
   opacity: 0;
   -webkit-animation-duration: 1200ms;
           animation-duration: 1200ms;
-  background: url("../public/info.svg");
   line-height: 100%;
-  background-size: 92%;
+  background-size: 96%;
   background-repeat: no-repeat;
-  background-position: 76% 39%;
+  background-position: 0.3rem 0.5rem;
+  overflow: visible;
 }
 
 section.info .infoBody .aboutMe p {
   -webkit-margin-before: 0em;
           margin-block-start: 0em;
-  font-family: "corporate regular";
-  font-size: 2em;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1.5em;
   line-height: 115%;
   word-break: break-all;
   -webkit-hyphens: auto;
@@ -452,7 +453,7 @@ hr {
 }
 
 .container {
-  height: 100%;
+  overflow: hidden;
 }
 
 .container main {
