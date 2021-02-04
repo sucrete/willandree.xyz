@@ -24,7 +24,7 @@ export default function Home() {
         <Header />
         <Work />
         <Info />
-        <Contact />
+        {/* <Contact/> */}
       </main>
 
       <svg width="0" height="0">
