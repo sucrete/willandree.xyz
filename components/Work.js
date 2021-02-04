@@ -21,6 +21,7 @@ const work = [
   "willandree.xyz",
 ];
 const modals = ["dt", "mr", "otl", "cal", "votr", "wil"];
+const numbers = ["i.", "ii.", "iii.", "iv.", "v.", "vi."];
 
 export default function Work() {
   const [dumpTRUCK, setDumpTRUCK] = useState(false);
@@ -107,7 +108,7 @@ export default function Work() {
   const trail = useTrail(work.length, {
     config: { mass: 6, tension: 1700, friction: 250 },
     opacity: inView ? 1 : 0,
-    delay: 1000,
+    delay: 200,
     x: inView ? 0 : 50,
     from: { opacity: 0, x: 50 },
   });
@@ -117,7 +118,7 @@ export default function Work() {
         <div ref={ref} className="workBody">
           <span className={`workHeader inView${inView}Title`}>Work</span>
           {trail.map(({ x, ...rest }, index) => (
-            <animated.span
+            <animated.div
               className={`workItemContainer ${modals[index]}Container`}
               key={work[index]}
               style={{
@@ -127,10 +128,8 @@ export default function Work() {
               }}
               onClick={functions[modals[index]].o}
             >
-              <animated.span className={`workItem ${modals[index]}`}>
-                {work[index]}
-              </animated.span>
-            </animated.span>
+                <span className="numbers">{numbers[index]}</span>{work[index]}
+            </animated.div>
           ))}
         </div>
         <Skills />
