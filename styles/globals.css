@@ -506,8 +506,8 @@ section.info .infoBody .aboutMe p {
   left: -15vw;
   -webkit-filter: url(#filter);
           filter: url(#filter);
-  -webkit-box-shadow: 400px 400px 60px 0px rgba(219, 227, 211, 0.836);
-          box-shadow: 400px 400px 60px 0px rgba(219, 227, 211, 0.836);
+  -webkit-box-shadow: 400px 400px 60px 0px rgba(239, 226, 150, 0.124);
+          box-shadow: 400px 400px 60px 0px rgba(239, 226, 150, 0.124);
 }
 
 .container main .cloud2 {
@@ -517,21 +517,9 @@ section.info .infoBody .aboutMe p {
           filter: url(#filter2);
   top: -700px;
   left: 10vw;
-  -webkit-box-shadow: 400px 400px 60px 0px rgba(255, 255, 255, 0.155);
-          box-shadow: 400px 400px 60px 0px rgba(255, 255, 255, 0.155);
+  -webkit-box-shadow: 400px 400px 60px 0px rgba(186, 178, 135, 0.236);
+          box-shadow: 400px 400px 60px 0px rgba(186, 178, 135, 0.236);
   z-index: 9;
-}
-
-.container main .cloud2-2 {
-  width: 100px;
-  height: 1800px;
-  top: -700px;
-  left: 10vw;
-  -webkit-filter: url(#filter2-2);
-          filter: url(#filter2-2);
-  -webkit-box-shadow: 400px 400px 60px 120px rgba(138, 193, 106, 0.09);
-          box-shadow: 400px 400px 60px 120px rgba(138, 193, 106, 0.09);
-  visibility: hidden;
 }
 
 .container main .cloud3 {
@@ -541,8 +529,8 @@ section.info .infoBody .aboutMe p {
   left: 55vw;
   -webkit-filter: url(#filter3);
           filter: url(#filter3);
-  -webkit-box-shadow: 400px 400px 60px 0px rgba(225, 225, 208, 0.3);
-          box-shadow: 400px 400px 60px 0px rgba(225, 225, 208, 0.3);
+  -webkit-box-shadow: 400px 400px 60px 0px rgba(218, 213, 190, 0.536);
+          box-shadow: 400px 400px 60px 0px rgba(218, 213, 190, 0.536);
 }
 
 .container main .noise {

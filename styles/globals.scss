@@ -425,7 +425,7 @@ section.info {
       top: -160px;
       left: -15vw;
       filter: url(#filter);
-      box-shadow: 400px 400px 60px 0px lighten(rgba(216, 225, 208, 0.836), 1%);
+      box-shadow: 400px 400px 60px 0px lighten(rgba(218, 190, 33, 0.124), 27%);
       // visibility: hidden;
     }
     .cloud2 {
@@ -434,19 +434,9 @@ section.info {
       filter: url(#filter2);
       top: -700px;
       left: 10vw;
-      box-shadow: 400px 400px 60px 0px lighten(rgba(114, 111, 117, 0.155), 85%);
+      box-shadow: 400px 400px 60px 0px lighten(rgba(155, 145, 89, 0.236), 15%);
       // opacity: 3;
       z-index: 9;
-    }
-    .cloud2-2 {
-      // this is the larger cloud under .cloud2
-      width: 100px;
-      height: 1800px;
-      top: -700px;
-      left: 10vw;
-      filter: url(#filter2-2);
-      box-shadow: 400px 400px 60px 120px lighten(rgba(88, 139, 58, 0.09), 20%);
-      visibility: hidden;
     }
 
     $greatGreen: lighten(rgba(124, 172, 4, 0.216), 3%);
@@ -456,7 +446,7 @@ section.info {
       top: 0px;
       left: 55vw;
       filter: url(#filter3);
-      box-shadow: 400px 400px 60px 0px rgba(225, 225, 208, 0.3);
+      box-shadow: 400px 400px 60px 0px lighten(rgba(155, 145, 89, 0.536), 32%);
     }
     .noise {
       width: 100vw;
