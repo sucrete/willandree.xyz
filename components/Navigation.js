@@ -9,9 +9,9 @@ export default function Navigation() {
             <radialGradient id="GradientReflect"
                   cx="0.5" cy="0.5" r="0.4" fx="0.75" fy="0.75"
                   spreadMethod="pad">
-              <stop offset="0%" stop-color="#15146b"/>
-              <stop offset="70%" stop-color="#01011c"/>
-              <stop offset="100%" stop-color="#2b1f14"/>
+              <stop offset="0%" stopColor="#15146b"/>
+              <stop offset="70%" stopColor="#01011c"/>
+              <stop offset="100%" stopColor="#2b1f14"/>
             </radialGradient>
           </defs>
           <rect x="0" y="0" rx="73" ry="73" width="75" height="75" fill="url(#GradientReflect)"/>
@@ -21,7 +21,7 @@ export default function Navigation() {
         <a href="#info">info</a>
         <a href="#contact">contact</a>
       </span>
-      <svg viewBox="0 0 100 15" class="navLine">
+      <svg viewBox="0 0 100 15" className="navLine">
         <path d="M 2 6 C 8 8 13 8 70 8 C 85 8 95 8 97 3" />
       </svg>
     </section>

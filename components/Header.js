@@ -1,11 +1,11 @@
 import { useTrail, animated } from "react-spring";
 export default function Header() {
   const descriptionItems = [
-    "UX Designer/Front-end ",
-    "Developer/Graphic Designer/",
-    "Aggregator of Image Objects,",
-    "Color Combinations, Modes",
-    "of Expression..."
+    "UX Designer/ Front-end",
+    "Developer/ Graphic Designer/",
+    "Aggregator of Images, Color",
+    "Combinations, Type, New",
+    "Modes of Expression..."
   ];
   const trail = useTrail(descriptionItems.length, {
     config: { mass: 5, tension: 2000, friction: 200 },
@@ -20,7 +20,7 @@ export default function Header() {
         <div className="description line1Container">
           {trail.map(({ x, ...rest }, index) => (
             <animated.span
-              className={`dItem descriptionItem${index}`}
+              className={`dItem dItem${index}`}
               key={descriptionItems[index]}
               style={{
                 ...rest,

@@ -46,8 +46,8 @@
 .navigation .svgContainer svg {
   position: relative;
   z-index: 1;
-  -webkit-animation: hueChange 2000ms ease;
-          animation: hueChange 2000ms ease;
+  -webkit-animation: hueChange 3000ms ease;
+          animation: hueChange 3000ms ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 2000ms;
@@ -157,20 +157,48 @@
   text-align: left;
   font-weight: unset;
   letter-spacing: -0.25em;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-      hyphens: auto;
   -webkit-margin-before: 5px;
           margin-block-start: 5px;
   color: #c46221;
   position: relative;
 }
 
-.header .descriptionContainer .description .dItem {
+.header .descriptionContainer .description .dItem div {
   display: inline-block;
   min-width: 30px;
-  line-height: 95%;
+  line-height: 105%;
   font-size: 6em;
+  background-color: #c46221;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.header .descriptionContainer .description .dItem0 div {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bd6428), color-stop(8.1%, #bd6428), color-stop(15.5%, #bb6328), color-stop(22.5%, #b96227));
+  background-image: linear-gradient(to bottom, #bd6428 0%, #bd6428 8.1%, #bb6328 15.5%, #b96227 22.5%);
+}
+
+.header .descriptionContainer .description .dItem1 div {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #b76127), color-stop(35.3%, #b45f26), color-stop(41.2%, #b15d25));
+  background-image: linear-gradient(to bottom, #b76127 29%, #b45f26 35.3%, #b15d25 41.2%);
+}
+
+.header .descriptionContainer .description .dItem2 div {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47.1%, #ad5c25), color-stop(52.9%, #a95a24), color-stop(58.8%, #a55823));
+  background-image: linear-gradient(to bottom, #ad5c25 47.1%, #a95a24 52.9%, #a55823 58.8%);
+}
+
+.header .descriptionContainer .description .dItem3 div {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(64.7%, #a25622), color-stop(71%, #9e5422), color-stop(77.5%, #9b5221));
+  background-image: linear-gradient(to bottom, #a25622 64.7%, #9e5422 71%, #9b5221 77.5%);
+}
+
+.header .descriptionContainer .description .dItem4 div {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(84.5%, #995120), color-stop(91.9%, #985020), to(#975020));
+  background-image: linear-gradient(to bottom, #995120 84.5%, #985020 91.9%, #975020 100%);
 }
 
 .work {
@@ -196,16 +224,16 @@
   position: relative;
   z-index: 12;
   width: 80%;
-  padding-left: 1.5rem;
+  padding-left: 0.9rem;
   border-radius: 7px;
 }
 
 .work .workContainer .workBody .workHeader {
   font-family: "corporate regular";
-  font-size: 4.8em;
+  font-size: 5em;
   color: #2b1f14;
   z-index: 1;
-  line-height: 120%;
+  line-height: 125%;
   letter-spacing: -0.03em;
   opacity: 0;
   -webkit-animation-duration: 1200ms;
@@ -216,36 +244,33 @@
 
 .work .workContainer .workBody .workItemContainer {
   margin: 0px 4px 4px 0px;
-  white-space: nowrap;
   z-index: 299;
   position: relative;
-  -webkit-transition-property: background-color, z-index, -webkit-box-shadow;
-  transition-property: background-color, z-index, -webkit-box-shadow;
-  transition-property: background-color, box-shadow, z-index;
-  transition-property: background-color, box-shadow, z-index, -webkit-box-shadow;
-  line-height: 115%;
-  display: block;
+  line-height: 1.1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   cursor: pointer;
   font-family: "sohne regular", sans-serif;
-  color: #825e3c;
-  font-size: 2.5em;
-  -webkit-transition: color 0.1s ease;
-  transition: color 0.1s ease;
+  color: #322417;
+  font-size: 3em;
+  -webkit-transition: -webkit-text-decoration-color 0.2s ease;
+  transition: -webkit-text-decoration-color 0.2s ease;
+  transition: text-decoration-color 0.2s ease;
+  transition: text-decoration-color 0.2s ease, -webkit-text-decoration-color 0.2s ease;
   left: 0.15em;
-  cursor: pointer;
-  letter-spacing: 0.05rem;
-  text-align: left;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  -webkit-text-decoration-color: #322417;
+          text-decoration-color: #322417;
+  text-decoration-thickness: 2.5px;
 }
 
-.work .workContainer .workBody .workItemContainer:hover span {
-  color: #2b1f14;
-}
-
-.work .workContainer .workBody .workItemContainer .numbers {
-  padding-right: 20px;
-  font-size: 0.5em;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: #2b1f14;
+.work .workContainer .workBody .workItemContainer:hover {
+  -webkit-text-decoration-color: purple;
+          text-decoration-color: purple;
 }
 
 .work .workContainer .skillsContainer {
@@ -746,12 +771,15 @@ section {
 @-webkit-keyframes hueChange {
   0% {
     opacity: 0;
-    -webkit-filter: hue-rotate(170deg);
-            filter: hue-rotate(170deg);
+    -webkit-filter: hue-rotate(270deg);
+            filter: hue-rotate(270deg);
   }
   40% {
-    -webkit-filter: hue-rotate(100deg);
-            filter: hue-rotate(100deg);
+    -webkit-filter: hue-rotate(150deg);
+            filter: hue-rotate(150deg);
+  }
+  80% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
@@ -763,12 +791,15 @@ section {
 @keyframes hueChange {
   0% {
     opacity: 0;
-    -webkit-filter: hue-rotate(170deg);
-            filter: hue-rotate(170deg);
+    -webkit-filter: hue-rotate(270deg);
+            filter: hue-rotate(270deg);
   }
   40% {
-    -webkit-filter: hue-rotate(100deg);
-            filter: hue-rotate(100deg);
+    -webkit-filter: hue-rotate(150deg);
+            filter: hue-rotate(150deg);
+  }
+  80% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
