@@ -20,8 +20,8 @@ const work = [
   "The Voter's Companion",
   "willandree.xyz",
 ];
+const tittle = ["Work"];
 const modals = ["dt", "mr", "otl", "cal", "votr", "wil"];
-const numbers = ["i.", "ii.", "iii.", "iv.", "v.", "vi."];
 
 export default function Work() {
   const [dumpTRUCK, setDumpTRUCK] = useState(false);
@@ -106,9 +106,15 @@ export default function Work() {
     triggerOnce: true,
   });
   const trail = useTrail(work.length, {
-    config: { mass: 6, tension: 1700, friction: 250 },
+    config: { mass: 5, tension: 1700, friction: 250 },
     opacity: inView ? 1 : 0,
-    delay: 200,
+    delay: 400,
+    x: inView ? 0 : 50,
+    from: { opacity: 0, x: 50 },
+  });
+  const trail2 = useTrail(tittle.length, {
+    config: { mass: 5, tension: 1700, friction: 250 },
+    opacity: inView ? 1 : 0,
     x: inView ? 0 : 50,
     from: { opacity: 0, x: 50 },
   });
@@ -116,7 +122,18 @@ export default function Work() {
     <section className="work">
       <div className="workContainer">
         <div ref={ref} className="workBody">
-          <span className={`workHeader inView${inView}Title`}>Work</span>
+          {trail2.map(({ x, ...rest }, index) => (
+            <animated.div
+              className="workHeader"
+              key={tittle[index]}
+              style={{
+                ...rest,
+                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
+              }}
+            >
+                {tittle[index]}
+            </animated.div>
+          ))}
           {trail.map(({ x, ...rest }, index) => (
             <animated.div
               className={`workItemContainer ${modals[index]}Container`}
@@ -128,7 +145,7 @@ export default function Work() {
               }}
               onClick={functions[modals[index]].o}
             >
-                <span className="numbers">{numbers[index]}</span>{work[index]}
+              {work[index]}
             </animated.div>
           ))}
         </div>
