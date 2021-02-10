@@ -335,11 +335,11 @@ section.info {
       opacity: 0;
     }
     .education {
-      width: 26%;
+      width: 100%;
       .educationHeader {
         position: relative;
         width: 100%;
-        font-size: 2em;
+        font-size: 2.1em;
         color: $citrine;
         font-family: "sohne regular", serif;
         letter-spacing: -0.03em;
@@ -347,6 +347,11 @@ section.info {
         text-decoration-style: solid;
         text-decoration-color: lighten($citrine, 2%);
         text-decoration-thickness: 1px;
+      }
+      .educationBody {
+        font-family: "Epilogue", sans-serif;
+        font-size: 1.7em;
+        color: $citrine;
       }
     }
     .aboutMe {
@@ -356,7 +361,7 @@ section.info {
         font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI,
           Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
           Helvetica Neue, sans-serif;
-        font-size: 1.5em;
+        font-size: 1.7em;
         line-height: 115%;
         word-break: break-all;
         -webkit-hyphens: auto;
