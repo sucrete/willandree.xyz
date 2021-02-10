@@ -301,10 +301,9 @@ $mPurple: #a08783;
   margin-block-end: 5px;
 }
 section.info {
-  padding: 5rem 10.5rem;
+  padding: 5rem 10rem;
   position: relative;
   z-index: 17;
-  position: relative;
   .title {
     color: $citrine;
     float: right;
@@ -312,7 +311,7 @@ section.info {
     padding-right: 5px;
     margin-block-end: 0px;
     font-family: "corporate regular";
-    font-size: 5.5em;
+    font-size: 6em;
     text-align: right;
     letter-spacing: -0.03em;
     text-transform: capitalize;
@@ -329,6 +328,7 @@ section.info {
     display: inline-flex;
     justify-content: space-between;
     position: relative;
+    gap: 20px;
     .education,
     .aboutMe {
       animation-duration: 1200ms;
@@ -336,6 +336,9 @@ section.info {
     }
     .education {
       width: 100%;
+      flex: 1;
+      position: relative;
+      top: -30px;
       .educationHeader {
         position: relative;
         width: 100%;
@@ -347,15 +350,32 @@ section.info {
         text-decoration-style: solid;
         text-decoration-color: lighten($citrine, 2%);
         text-decoration-thickness: 1px;
+        margin-block-end: 0.25em;
       }
       .educationBody {
         font-family: "Epilogue", sans-serif;
-        font-size: 1.7em;
-        color: $citrine;
+        font-size: 1.2em;
+        color: #61554a;
+        letter-spacing: -0.03em;
+        .educationItem {
+          line-height: 110%;
+          // the institution (eg Drury U)
+          &--0,
+          &--3,
+          &--6 {
+            font-size: 1.2em;
+            color: $citrine;
+          }
+          // gap between the sections
+          &--2,
+          &--5 {
+            margin-block-end: 1em;
+          }
+        }
       }
     }
     .aboutMe {
-      width: 60%;
+      flex: 1.5;
       p {
         margin-block-start: 1em;
         font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI,
@@ -364,6 +384,7 @@ section.info {
         font-size: 1.7em;
         line-height: 115%;
         word-break: break-all;
+        letter-spacing: -0.03em;
         -webkit-hyphens: auto;
         -moz-hyphens: auto;
         -ms-hyphens: auto;

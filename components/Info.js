@@ -1,6 +1,16 @@
 import { useInView } from "react-intersection-observer";
 import { useTrail, animated } from "react-spring";
-const schools = ["LaunchCode - Kansas City, MO", "Computer Science/Front-End Development", "Drury University - Springfield, MO", "Art History, focus on Architectural History", "Savannah College of Art and Design - Savannah, GA", "Art and Architecture Fundamentals"];
+const schools = [
+  "LaunchCodeKC", 
+  "Kansas City, MO",
+  "Computer Science/Front-End Development", 
+  "Drury University",
+  "Springfield, MO",
+  "Art History, focus on Architectural History",
+  "Savannah College of Art and Design", 
+  "Savannah, GA",
+  "Art and Architecture Fundamentals"
+];
 export default function Info() {
   const { ref, inView } = useInView({
     threshold: 0.5,
@@ -25,7 +35,7 @@ export default function Info() {
           <div className="educationBody">
           {trail.map(({ x, ...rest }, index) => (
             <animated.div
-              className={`education education--${[index]}`}
+              className={`educationItem educationItem--${index}`}
               key={schools[index]}
               style={{
                 ...rest,
