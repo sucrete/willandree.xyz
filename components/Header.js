@@ -4,7 +4,7 @@ export default function Header() {
     "Front-end Developer/",
     "Graphic Designer/",
     "UX Designer/ Student",
-    "of Expression..."]
+    "of Novelty"]
   const trail = useTrail(descriptionItems.length, {
     config: { mass: 5, tension: 2000, friction: 200 },
     opacity: 1,
