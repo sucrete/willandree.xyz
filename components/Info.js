@@ -6,6 +6,7 @@ export default function Info() {
   });
   return (
     <section id="info" className="info">
+      <span className={`title inView${inView}Title`}>Info</span>
       <div className="infoBody">
         <div className={`education inView${inView}`}>
           <div className="educationHeader">Education</div>
@@ -15,7 +16,6 @@ export default function Info() {
         </div>
         <div className={`aboutMe inView${inView}AboutMe inView${inView}`}>
           {" "}
-          <span className={`title inView${inView}Title`}>Info</span>
           <p ref={ref}>
             About me Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Duis egestas ipsum nulla, in ultrices metus cursus non. Curabitur

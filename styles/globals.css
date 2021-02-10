@@ -31,6 +31,7 @@
   -webkit-transform: translateY(-23%);
           transform: translateY(-23%);
   left: 3rem;
+  letter-spacing: -0.03em;
 }
 
 .navigation .svgContainer {
@@ -87,8 +88,8 @@
   font-size: 1.2em;
   margin-left: 43px;
   color: #2b1f14;
-  -webkit-transition: color 0.25s ease;
-  transition: color 0.25s ease;
+  -webkit-transition: color 0.15s ease;
+  transition: color 0.15s ease;
   letter-spacing: 0.05em;
   cursor: pointer;
   opacity: 0;
@@ -108,14 +109,14 @@
 }
 
 .navigation .whereToContainer a:hover {
-  color: #c46221;
+  color: #a08783;
 }
 
 .navigation .navLine {
   fill: none;
   stroke-width: 0.08px;
   position: absolute;
-  top: 2px;
+  top: 7px;
   left: 0px;
 }
 
@@ -156,49 +157,21 @@
   width: 100%;
   text-align: left;
   font-weight: unset;
-  letter-spacing: -0.25em;
+  letter-spacing: -0.2em;
   -webkit-margin-before: 5px;
           margin-block-start: 5px;
   color: #c46221;
   position: relative;
 }
 
-.header .descriptionContainer .description .dItem div {
-  display: inline-block;
-  min-width: 30px;
-  line-height: 105%;
-  font-size: 6em;
+.header .descriptionContainer .description .dItem {
+  line-height: 100%;
+  font-size: 7.6em;
   background-color: #c46221;
-  background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-}
-
-.header .descriptionContainer .description .dItem0 div {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#bd6428), color-stop(8.1%, #bd6428), color-stop(15.5%, #bb6328), color-stop(22.5%, #b96227));
-  background-image: linear-gradient(to bottom, #bd6428 0%, #bd6428 8.1%, #bb6328 15.5%, #b96227 22.5%);
-}
-
-.header .descriptionContainer .description .dItem1 div {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #b76127), color-stop(35.3%, #b45f26), color-stop(41.2%, #b15d25));
-  background-image: linear-gradient(to bottom, #b76127 29%, #b45f26 35.3%, #b15d25 41.2%);
-}
-
-.header .descriptionContainer .description .dItem2 div {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47.1%, #ad5c25), color-stop(52.9%, #a95a24), color-stop(58.8%, #a55823));
-  background-image: linear-gradient(to bottom, #ad5c25 47.1%, #a95a24 52.9%, #a55823 58.8%);
-}
-
-.header .descriptionContainer .description .dItem3 div {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(64.7%, #a25622), color-stop(71%, #9e5422), color-stop(77.5%, #9b5221));
-  background-image: linear-gradient(to bottom, #a25622 64.7%, #9e5422 71%, #9b5221 77.5%);
-}
-
-.header .descriptionContainer .description .dItem4 div {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(84.5%, #995120), color-stop(91.9%, #985020), to(#975020));
-  background-image: linear-gradient(to bottom, #995120 84.5%, #985020 91.9%, #975020 100%);
 }
 
 .work {
@@ -269,8 +242,9 @@
 }
 
 .work .workContainer .workBody .workItemContainer:hover {
-  -webkit-text-decoration-color: purple;
-          text-decoration-color: purple;
+  -webkit-text-decoration-color: #a08783;
+          text-decoration-color: #a08783;
+  color: #a08783;
 }
 
 .work .workContainer .skillsContainer {
@@ -320,10 +294,30 @@ section.info {
   position: relative;
 }
 
+section.info .title {
+  color: #2b1f14;
+  float: right;
+  padding-left: 10px;
+  padding-right: 5px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  font-family: "corporate regular";
+  font-size: 5.5em;
+  text-align: right;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  opacity: 0;
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
+  line-height: 100%;
+  background-size: 96%;
+  background-repeat: no-repeat;
+  background-position: 0.3rem 0.5rem;
+  overflow: visible;
+}
+
 section.info .infoBody {
   width: 100%;
-  font-family: "corporate regular", serif;
-  color: #2b1f14;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -348,38 +342,26 @@ section.info .infoBody .education .educationHeader {
   position: relative;
   width: 100%;
   font-size: 2em;
+  color: #2b1f14;
+  font-family: "corporate regular", serif;
+  letter-spacing: -0.03em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  -webkit-text-decoration-color: #322417;
+          text-decoration-color: #322417;
+  text-decoration-thickness: 1px;
 }
 
 section.info .infoBody .aboutMe {
   width: 60%;
 }
 
-section.info .infoBody .aboutMe .title {
-  color: #2b1f14;
-  float: right;
-  padding-left: 10px;
-  padding-right: 5px;
-  -webkit-margin-after: 0px;
-          margin-block-end: 0px;
-  font-family: "corporate regular";
-  font-size: 7.2em;
-  text-align: right;
-  letter-spacing: -0.03em;
-  text-transform: capitalize;
-  opacity: 0;
-  -webkit-animation-duration: 1200ms;
-          animation-duration: 1200ms;
-  line-height: 100%;
-  background-size: 96%;
-  background-repeat: no-repeat;
-  background-position: 0.3rem 0.5rem;
-  overflow: visible;
-}
-
 section.info .infoBody .aboutMe p {
-  -webkit-margin-before: 0em;
-          margin-block-start: 0em;
-  font-family: "corporate regular", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1.5em;
   line-height: 115%;
   word-break: break-all;
@@ -420,7 +402,7 @@ section.info .infoBody .aboutMe p {
 }
 
 .customModal button:hover svg {
-  fill: #c46221 !important;
+  fill: #a08783 !important;
 }
 
 .customModal button svg {
@@ -577,7 +559,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  background: #d8dac7;
+  background: #cfd1c1;
 }
 
 * {
@@ -630,7 +612,7 @@ section {
     -webkit-transform: translateY(-3px);
             transform: translateY(-3px);
   }
-  60% {
+  50% {
     opacity: 0;
   }
   to {
@@ -647,7 +629,7 @@ section {
     -webkit-transform: translateY(-3px);
             transform: translateY(-3px);
   }
-  60% {
+  50% {
     opacity: 0;
   }
   to {
@@ -771,40 +753,24 @@ section {
 @-webkit-keyframes hueChange {
   0% {
     opacity: 0;
-    -webkit-filter: hue-rotate(270deg);
-            filter: hue-rotate(270deg);
-  }
-  40% {
-    -webkit-filter: hue-rotate(150deg);
-            filter: hue-rotate(150deg);
   }
   80% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
   }
 }
 
 @keyframes hueChange {
   0% {
     opacity: 0;
-    -webkit-filter: hue-rotate(270deg);
-            filter: hue-rotate(270deg);
-  }
-  40% {
-    -webkit-filter: hue-rotate(150deg);
-            filter: hue-rotate(150deg);
   }
   80% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
   }
 }
 
