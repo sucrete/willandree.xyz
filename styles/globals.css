@@ -265,7 +265,7 @@
   height: 370px;
   min-width: 300px;
   border: solid 2px #d6d8c696;
-  color: white;
+  color: #634d4b;
   background: linear-gradient(217deg, rgba(218, 200, 180, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, #caccbd96, rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(180, 184, 175, 0.8), rgba(0, 0, 255, 0) 70.71%);
 }
 
@@ -301,7 +301,7 @@ section.info {
 section.info .title {
   color: #2b1f14;
   float: right;
-  padding-right: 30px;
+  padding-right: 10px;
   -webkit-margin-after: 0px;
           margin-block-end: 0px;
   font-family: "corporate regular";
@@ -368,7 +368,7 @@ section.info .infoBody .education .educationHeader {
 section.info .infoBody .education .educationBody {
   font-family: "Epilogue", sans-serif;
   font-size: 1.2em;
-  color: #61554a;
+  color: #473f38;
   letter-spacing: -0.03em;
 }
 
@@ -377,9 +377,14 @@ section.info .infoBody .education .educationBody .educationItem {
 }
 
 section.info .infoBody .education .educationBody .educationItem--0, section.info .infoBody .education .educationBody .educationItem--3, section.info .infoBody .education .educationBody .educationItem--6 {
+  font-size: 1.3em;
   color: #2b1f14;
   -webkit-margin-after: 0.05em;
           margin-block-end: 0.05em;
+}
+
+section.info .infoBody .education .educationBody .educationItem--1, section.info .infoBody .education .educationBody .educationItem--2, section.info .infoBody .education .educationBody .educationItem--4, section.info .infoBody .education .educationBody .educationItem--5, section.info .infoBody .education .educationBody .educationItem--7, section.info .infoBody .education .educationBody .educationItem--8 {
+  line-height: 115%;
 }
 
 section.info .infoBody .education .educationBody .educationItem--2, section.info .infoBody .education .educationBody .educationItem--5 {
@@ -388,24 +393,37 @@ section.info .infoBody .education .educationBody .educationItem--2, section.info
 }
 
 section.info .infoBody .aboutMe {
-  -webkit-box-flex: 1.5;
-      -ms-flex: 1.5;
-          flex: 1.5;
+  -webkit-box-flex: 1.2;
+      -ms-flex: 1.2;
+          flex: 1.2;
+}
+
+section.info .infoBody .aboutMe .aboutMeContainer {
+  font-size: 2em;
+  padding: 5px;
+  float: left;
+  font-family: "corporate";
+  color: yellow;
+}
+
+section.info .infoBody .aboutMe .aboutMeContainer div {
+  text-align: justify;
 }
 
 section.info .infoBody .aboutMe p {
   position: relative;
-  right: -10px;
   -webkit-margin-before: 1em;
           margin-block-start: 1em;
+  right: 0;
   font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 1.7em;
+  font-size: 1.9em;
   line-height: 115%;
   letter-spacing: -0.03em;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
   color: #2b1f14;
+  text-align: justify;
 }
 
 .customModal {

@@ -49,10 +49,10 @@ export default function Info() {
         <div className={`aboutMe inView${inView}AboutMe inView${inView}`}>
           {" "}
           <p ref={ref}>
-            Web developer based in Kansas City with rich art and design
-            background. Compulsive aggregator of images, color combinations,
-            fonts, and modes of expression. Experience with front and back-end
-            development, keenly drawn to user-facing design.
+            Web developer based in Kansas City. Compulsive aggregator of images,
+            color combinations, fonts, and unique modes of expression.
+            Experienced on the MERN stack but keenly drawn to user-facing
+            design.
           </p>
         </div>
       </div>

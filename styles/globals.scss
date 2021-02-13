@@ -231,7 +231,7 @@ $mPurple: #a08783;
       height: 370px;
       min-width: 300px;
       border: solid 2px #d6d8c696;
-      color: white;
+      color: #634d4b;
       background: linear-gradient(
           217deg,
           rgba(218, 200, 180, 0.8),
@@ -270,7 +270,7 @@ section.info {
   .title {
     color: $citrine;
     float: right;
-    padding-right: 30px;
+    padding-right: 10px;
     margin-block-end: 0px;
     font-family: "corporate regular";
     font-size: 6em;
@@ -296,6 +296,7 @@ section.info {
       animation-duration: 1200ms;
       opacity: 0;
     }
+
     .education {
       width: 100%;
       flex: 1;
@@ -317,16 +318,25 @@ section.info {
       .educationBody {
         font-family: "Epilogue", sans-serif;
         font-size: 1.2em;
-        color: #61554a;
+        color: #473f38;
         letter-spacing: -0.03em;
         .educationItem {
           line-height: 110%;
-          // the institution (eg Drury U)
+          // the institution (eg Drury)
           &--0,
           &--3,
           &--6 {
+            font-size: 1.3em;
             color: $citrine;
             margin-block-end: 0.05em;
+          }
+          &--1,
+          &--2,
+          &--4,
+          &--5,
+          &--7,
+          &--8 {
+            line-height: 115%;
           }
           // gap between the sections
           &--2,
@@ -337,19 +347,30 @@ section.info {
       }
     }
     .aboutMe {
-      flex: 1.5;
+      flex: 1.2;
+      .aboutMeContainer {
+        font-size: 2em;
+        padding: 5px;
+        float: left;
+        font-family: "corporate";
+        color: yellow;
+        div {
+          text-align: justify;
+        }
+      }
       p {
         position: relative;
-        right: -10px;
         margin-block-start: 1em;
+        right: 0;
         font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI,
           Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
           Helvetica Neue, sans-serif;
-        font-size: 1.7em;
+        font-size: 1.9em;
         line-height: 115%;
         letter-spacing: -0.03em;
         hyphens: auto;
         color: $citrine;
+        text-align: justify;
       }
     }
   }
