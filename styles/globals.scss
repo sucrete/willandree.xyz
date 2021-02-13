@@ -152,14 +152,13 @@ $mPurple: #a08783;
       font-family: "corporate";
       width: 100%;
       text-align: left;
-
       letter-spacing: -0.2em;
       margin-block-start: 5px;
       color: $mOrange;
       position: relative;
       .dItem {
         line-height: 98%;
-        font-size: 7.6em;
+        font-size: 8em;
         overflow: visible;
         font-weight: unset;
         height: 100%;
@@ -226,12 +225,12 @@ $mPurple: #a08783;
       opacity: 0;
       position: relative;
       box-shadow: 0px 5px 55px rgba(0, 0, 0, 0.2);
-      animation-duration: 1200ms;
+      animation-duration: 600ms;
       padding: 36px;
       height: 370px;
       min-width: 300px;
       border: solid 2px #d6d8c696;
-      color: #634d4b;
+      color: #473432;
       background: linear-gradient(
           217deg,
           rgba(218, 200, 180, 0.8),
@@ -371,6 +370,16 @@ section.info {
         hyphens: auto;
         color: $citrine;
         text-align: justify;
+        .aboutMeSpan {
+          padding: 15px;
+          color: $mOrange;
+          font-family: "sohne regular";
+          letter-spacing: 0em;
+          font-size: 2em;
+          text-transform: uppercase;
+          float: left;
+          display: none;
+        }
       }
     }
   }
