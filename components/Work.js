@@ -2,8 +2,9 @@ import { useInView } from "react-intersection-observer";
 import { Modal } from "react-responsive-modal";
 import { useState } from "react";
 import { useTrail, animated } from "react-spring";
+import React, { useEffect } from "react";
 // import ReactDOM from "react-dom";
-// import { Parallax, ParallaxLayer } from "react-spring/addons";
+// import locomotiveScroll from "locomotive-scroll";
 import Skills from "../components/Skills";
 import DumpTRUCKContent from "./ModalContent/DumpTRUCK";
 import MaxContent from "./ModalContent/MaxRosen";
@@ -24,6 +25,16 @@ const tittle = ["Work"];
 const modals = ["dt", "mr", "otl", "cal", "votr", "wil"];
 
 export default function Work() {
+  // const scrollRef = React.createRef();
+  // useEffect(() => {
+  //   import("locomotive-scroll").then((locomotiveModule) => {
+  //     const scroll = new locomotiveModule.default({
+  //       el: scrollRef.current,
+  //       smooth: true,
+  //       smoothMobile: false,
+  //     });
+  //   });
+  // }, []);
   const [dumpTRUCK, setDumpTRUCK] = useState(false);
   const [maxRosen, setMaxRosen] = useState(false);
   const [OTL, setOTL] = useState(false);
@@ -120,7 +131,7 @@ export default function Work() {
   });
   return (
     <section className="work">
-      <div className="workContainer">
+      <div className="workContainer scroll">
         <div ref={ref} className="workBody">
           {trail2.map(({ x, ...rest }, index) => (
             <animated.div
@@ -131,7 +142,7 @@ export default function Work() {
                 transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
               }}
             >
-                {tittle[index]}
+              {tittle[index]}
             </animated.div>
           ))}
           {trail.map(({ x, ...rest }, index) => (
