@@ -1,4 +1,5 @@
 import { useTrail, animated } from "react-spring";
+
 export default function Header() {
   const descriptionItems = [
     "Front-end Developer,",

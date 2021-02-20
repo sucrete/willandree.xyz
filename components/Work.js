@@ -5,7 +5,6 @@ import { useTrail, animated } from "react-spring";
 import React, { useEffect } from "react";
 // import ReactDOM from "react-dom";
 // import locomotiveScroll from "locomotive-scroll";
-import Skills from "../components/Skills";
 import DumpTRUCKContent from "./ModalContent/DumpTRUCK";
 import MaxContent from "./ModalContent/MaxRosen";
 import CalvinContent from "./ModalContent/CalvinTodd";
@@ -160,7 +159,6 @@ export default function Work() {
             </animated.div>
           ))}
         </div>
-        <Skills />
       </div>
       <MyModal bool={dumpTRUCK} closeFunction={functions.dt.c}>
         <DumpTRUCKContent />

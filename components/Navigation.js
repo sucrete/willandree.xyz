@@ -1,7 +1,15 @@
 export default function Navigation() {
   return (
     <section className="navigation">
-      <span className="name">Wm. Andrée</span>{" "}
+      <span className="wmContainer">
+        <div className="wm">Wm.</div>
+        <div className="conicalGradientTop"></div>
+      </span>
+      <span className="andree">
+        <span>And</span>
+        <span>ré</span>
+        <span>e</span>
+      </span>
       {/* <span className="svgContainer">
         <span className="svgNoise"></span>
         <svg width="65" height="65" version="1.1" xmlns="http://www.w3.org/2000/svg">
