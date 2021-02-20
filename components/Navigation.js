@@ -7,8 +7,8 @@ export default function Navigation() {
       </span>
       <span className="andree">
         <span>And</span>
-        <span>ré</span>
-        <span>e</span>
+        <span className="re">ré</span>
+        <span className="e">e</span>
       </span>
       {/* <span className="svgContainer">
         <span className="svgNoise"></span>

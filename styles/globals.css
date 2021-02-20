@@ -48,25 +48,28 @@ section.navigation .wmContainer {
 }
 
 section.navigation .wmContainer .wm {
-  font-size: 7rem;
+  font-size: 6.5rem;
   position: relative;
-  top: 10px;
+  top: 38px;
   font-family: "corporate condensed regular";
   line-height: 120%;
   letter-spacing: -0.2rem;
+  text-align: center;
 }
 
 section.navigation .wmContainer .conicalGradientTop {
   width: 140px;
   height: 140px;
-  border: solid 5px #2b1f14;
+  border: solid 5px #322417;
   background: conic-gradient(from 3.1416rad at 50% 50%, #2b1f14, #d6d8c6);
   margin: 0 auto;
+  position: relative;
+  top: 35px;
 }
 
 section.navigation .andree {
-  letter-spacing: -0.3rem;
-  font-size: 22rem;
+  letter-spacing: -0.4rem;
+  font-size: 21.5rem;
   line-height: 100%;
   width: 100%;
   font-family: "corporate condensed light";
@@ -74,6 +77,16 @@ section.navigation .andree {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+section.navigation .andree .re {
+  position: relative;
+  margin-left: -15px;
+}
+
+section.navigation .andree .e {
+  position: relative;
+  margin-left: -15px;
 }
 
 section.header {
