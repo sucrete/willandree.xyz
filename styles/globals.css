@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700;1,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 .customOverlay {
   background: rgba(41, 36, 25, 0.089) !important;
   -webkit-backdrop-filter: blur(7px);
@@ -34,6 +32,7 @@
           transform: translateY(-23%);
   left: 3rem;
   letter-spacing: -0.03em;
+  text-transform: upppercase;
 }
 
 .navigation .svgContainer {
@@ -150,6 +149,7 @@
   position: relative;
   width: 100%;
   z-index: 9;
+  height: 700px;
 }
 
 .header .descriptionContainer {
@@ -157,23 +157,20 @@
 }
 
 .header .descriptionContainer .description {
-  font-family: "corporate";
+  font-family: "Corporate A", sans-serif;
   width: 100%;
-  text-align: left;
   letter-spacing: -0.2em;
-  -webkit-margin-before: 5px;
-          margin-block-start: 5px;
   color: #c46221;
   position: relative;
 }
 
 .header .descriptionContainer .description .dItem {
-  line-height: 98%;
-  font-size: 8em;
-  overflow: visible;
-  font-weight: unset;
-  height: 100%;
+  font-size: 6.6em;
+  overflow: hidden;
   color: #c46221;
+  text-align: justify;
+  height: 110px;
+  line-height: 110px;
 }
 
 .work {
@@ -253,7 +250,7 @@
 }
 
 .work .workContainer .skillsContainer {
-  font-family: "Epilogue", sans-serif;
+  font-family: "flexa", sans-serif;
   font-weight: 600;
   border-radius: 5px;
   opacity: 0;
@@ -262,19 +259,18 @@
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-animation-duration: 600ms;
           animation-duration: 600ms;
-  padding: 36px;
+  padding: 42px;
   height: 370px;
   min-width: 300px;
-  border: solid 2px #d6d8c696;
   color: #283108;
   background-color: #dadccc;
 }
 
 .work .workContainer .skillsContainer h3 {
+  font-family: "flexa";
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
   font-weight: 800;
-  font-style: italic;
 }
 
 .work .workContainer .skillsContainer ul {
@@ -369,7 +365,7 @@ section.info .infoBody .education .educationHeader {
 }
 
 section.info .infoBody .education .educationBody {
-  font-family: "Epilogue", sans-serif;
+  font-family: "flexa", sans-serif;
   font-size: 1.2em;
   color: #473f38;
   letter-spacing: -0.03em;
@@ -418,7 +414,7 @@ section.info .infoBody .aboutMe p {
   -webkit-margin-before: 1em;
           margin-block-start: 1em;
   right: 0;
-  font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "flexa", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1.9em;
   line-height: 115%;
   letter-spacing: -0.03em;
@@ -503,7 +499,7 @@ section.info .infoBody .aboutMe p .aboutMeSpan {
   color: grey;
   font-size: 1.3em;
   padding-left: 3px;
-  font-family: "Epilogue";
+  font-family: "flexa";
 }
 
 .customModal .modalBody .modalSubheading .lilCapsule {
@@ -656,8 +652,15 @@ section {
 }
 
 @font-face {
-  font-family: "sanfran";
-  src: url("./fonts/SFMonoRegular.otf") format("opentype");
+  font-family: "corporate condensed regular";
+  src: url("./fonts/Corporate Condensed Regular.woff2") format("woff2-variations");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "corporate condensed light";
+  src: url("./fonts/Corporate Condensed Light.woff2") format("woff2-variations");
+  font-style: normal;
 }
 
 @font-face {
@@ -673,40 +676,6 @@ section {
 @font-face {
   src: url("./fonts/Sohne-Regular.otf") format("opentype");
   font-family: "sohne regular";
-}
-
-@-webkit-keyframes str8nLine {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
-  }
-  50% {
-    opacity: 0;
-  }
-  to {
-    d: path("M 1 8 C 9 8 13 8 70 8 C 84 8 94 8 99 8");
-    opacity: 1;
-    -webkit-transform: translateY(0.25px);
-            transform: translateY(0.25px);
-  }
-}
-
-@keyframes str8nLine {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
-  }
-  50% {
-    opacity: 0;
-  }
-  to {
-    d: path("M 1 8 C 9 8 13 8 70 8 C 84 8 94 8 99 8");
-    opacity: 1;
-    -webkit-transform: translateY(0.25px);
-            transform: translateY(0.25px);
-  }
 }
 
 @-webkit-keyframes entranceAnimation {
@@ -798,74 +767,6 @@ section {
   to {
     opacity: 1;
     top: 0px;
-  }
-}
-
-@-webkit-keyframes square {
-  0% {
-    background-position: 95% 95%;
-  }
-  100% {
-    background-position: 70% -15%;
-  }
-}
-
-@keyframes square {
-  0% {
-    background-position: 95% 95%;
-  }
-  100% {
-    background-position: 70% -15%;
-  }
-}
-
-@-webkit-keyframes hueChange {
-  0% {
-    -webkit-filter: hue-rotate(100deg) drop-shadow(4px 4px 3px rgba(41, 8, 33, 0.836)) drop-shadow(-1px -1px 3px rgba(202, 76, 17, 0.884));
-            filter: hue-rotate(100deg) drop-shadow(4px 4px 3px rgba(41, 8, 33, 0.836)) drop-shadow(-1px -1px 3px rgba(202, 76, 17, 0.884));
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    -webkit-filter: hue-rotate(0deg) drop-shadow(4px 4px 3px rgba(41, 8, 33, 0.836)) drop-shadow(-1px -1px 3px rgba(202, 76, 17, 0.884));
-            filter: hue-rotate(0deg) drop-shadow(4px 4px 3px rgba(41, 8, 33, 0.836)) drop-shadow(-1px -1px 3px rgba(202, 76, 17, 0.884));
-  }
-}
-
-@keyframes hueChange {
-  0% {
-    -webkit-filter: hue-rotate(100deg) drop-shadow(4px 4px 3px rgba(41, 8, 33, 0.836)) drop-shadow(-1px -1px 3px rgba(202, 76, 17, 0.884));
-            filter: hue-rotate(100deg) drop-shadow(4px 4px 3px rgba(41, 8, 33, 0.836)) drop-shadow(-1px -1px 3px rgba(202, 76, 17, 0.884));
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    -webkit-filter: hue-rotate(0deg) drop-shadow(4px 4px 3px rgba(41, 8, 33, 0.836)) drop-shadow(-1px -1px 3px rgba(202, 76, 17, 0.884));
-            filter: hue-rotate(0deg) drop-shadow(4px 4px 3px rgba(41, 8, 33, 0.836)) drop-shadow(-1px -1px 3px rgba(202, 76, 17, 0.884));
-  }
-}
-
-@-webkit-keyframes opacityChange {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.2;
-  }
-}
-
-@keyframes opacityChange {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.2;
   }
 }
 /*# sourceMappingURL=globals.css.map */

@@ -2,7 +2,7 @@ export default function Navigation() {
   return (
     <section className="navigation">
       <span className="name">Wm. Andrée</span>{" "}
-      <span className="svgContainer">
+      {/* <span className="svgContainer">
         <span className="svgNoise"></span>
         <svg width="65" height="65" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -23,7 +23,7 @@ export default function Navigation() {
       </span>
       <svg viewBox="0 0 100 15" className="navLine">
         <path d="M 2 6 C 8 8 13 8 70 8 C 85 8 95 8 97 3" />
-      </svg>
+      </svg> */}
     </section>
   );
 }
