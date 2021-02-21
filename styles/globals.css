@@ -129,8 +129,8 @@ section.header .descriptionContainer.trails-main .description .dItem.trails-text
 }
 
 section.header .descriptionContainer.trails-main .description .dItem.trails-text div {
-  -webkit-transform-origin: -1500px 140px;
-          transform-origin: -1500px 140px;
+  -webkit-transform-origin: -10px 40px;
+          transform-origin: -10px 40px;
   overflow: hidden;
 }
 

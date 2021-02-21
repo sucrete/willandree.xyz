@@ -4,7 +4,13 @@ $mOrange: #c46221;
 $citrine: hsl(29, 37%, 12%);
 $mPurple: #a08783;
 $flexaTitle: "wght" 255, "wdth" 100, "ital" 0;
-
+@mixin nth-animation-delay($items, $time: 0.1s) {
+  @for $i from 1 through $items {
+    &:nth-child(#{$i}) {
+      animation-delay: $time * $i;
+    }
+  }
+}
 html,
 body {
   padding: 0px;
@@ -132,7 +138,7 @@ section.header {
         will-change: transform, opacity;
         overflow: hidden;
         div {
-          transform-origin: -1500px 140px;
+          transform-origin: -10px 40px;
           overflow: hidden;
         }
       }
