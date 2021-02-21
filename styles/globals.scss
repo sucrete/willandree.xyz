@@ -126,12 +126,13 @@ section.header {
       font-size: clamp(3rem, 6.9vw, 6.2rem);
       color: $mOrange;
       .dItem.trails-text {
-        height: 100px !important;
-        line-height: 85px;
+        height: 95px !important;
+        line-height: 75px;
         position: relative;
         will-change: transform, opacity;
         overflow: hidden;
         div {
+          transform-origin: -1500px 140px;
           overflow: hidden;
         }
       }

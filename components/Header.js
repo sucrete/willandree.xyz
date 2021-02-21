@@ -8,17 +8,19 @@ export default function Header() {
     "Novelty",
   ];
   const trail = useTrail(descriptionItems.length, {
-    config: { mass: 5, tension: 2000, friction: 200 },
+    config: { mass: 5, tension: 2000, friction: 250 },
     opacity: 1,
     x: 0,
     height: 100,
-    from: { opacity: 0, x: 20, height: 0 },
+    delay: 700,
+    rotate: 0,
+    from: { opacity: 0, x: 20, height: 0, rotate: 3 },
   });
   return (
     <section className="header">
       <div className="descriptionContainer trails-main">
         <div className="description line1Container">
-          {trail.map(({ x, height, ...rest }, index) => (
+          {trail.map(({ x, rotate, height, ...rest }, index) => (
             <animated.div
               className={`dItem dItem--${index} trails-text`}
               key={descriptionItems[index]}
@@ -27,7 +29,14 @@ export default function Header() {
                 transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
               }}
             >
-              <animated.div style={{ height }}>
+              <animated.div
+                style={{
+                  height,
+                  transform: rotate.interpolate(
+                    (rotate) => `rotate(${rotate}deg)`
+                  ),
+                }}
+              >
                 {descriptionItems[index]}
               </animated.div>
             </animated.div>

@@ -121,14 +121,16 @@ section.header .descriptionContainer.trails-main .description {
 }
 
 section.header .descriptionContainer.trails-main .description .dItem.trails-text {
-  height: 100px !important;
-  line-height: 85px;
+  height: 95px !important;
+  line-height: 75px;
   position: relative;
   will-change: transform, opacity;
   overflow: hidden;
 }
 
 section.header .descriptionContainer.trails-main .description .dItem.trails-text div {
+  -webkit-transform-origin: -1500px 140px;
+          transform-origin: -1500px 140px;
   overflow: hidden;
 }
 
