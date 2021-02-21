@@ -3,7 +3,8 @@ $warmWhite: rgb(236, 235, 224);
 $mOrange: #c46221;
 $citrine: #2b1f14;
 $mPurple: #a08783;
-$flexaBodySetting: "wght" 249.43, "wdth" 106.51, "ital" 0;
+$flexaTitle: "wght" 255, "wdth" 100, "ital" 0;
+
 html,
 body {
   padding: 0px;
@@ -28,12 +29,13 @@ body {
   font-weight: unset;
 }
 section {
-  padding: 0rem 10rem;
+  padding: 0rem clamp(1rem, 10vw, 10rem);
   display: block;
+  margin: 0 auto;
 }
 section.navigation {
   position: relative;
-  padding: 1rem 10rem;
+  padding-top: 1.1rem;
   display: flex;
   color: $citrine;
   justify-content: space-between;
@@ -53,7 +55,7 @@ section.navigation {
     .conicalGradientTop {
       width: 140px;
       height: 140px;
-      border: solid 5px lighten($citrine, 2%);
+      // border: solid 5px lighten($citrine, 2%);
       background: conic-gradient(from 3.1416rad at 50% 50%, $citrine, #d6d8c6);
       margin: 0 auto;
       position: relative;
@@ -62,7 +64,7 @@ section.navigation {
   }
   .andree {
     letter-spacing: -0.4rem;
-    font-size: 21.5rem;
+    font-size: clamp(10rem, 25vw, 21.5rem);
     line-height: 100%;
     width: 100%;
     font-family: "corporate condensed light";
@@ -82,15 +84,17 @@ section.header {
   animation-duration: 1s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
-  image-rendering: pixelated;
   position: relative;
   width: 100%;
   z-index: 9;
   height: 700px;
   .descriptionContainer {
+    float: right;
+    width: 79%;
+    margin-right: 5px;
     .description {
       font-family: "flexa", sans-serif;
-      width: 100%;
+
       letter-spacing: -0.2em;
       color: $mOrange;
       position: relative;
@@ -105,7 +109,7 @@ section.header {
     }
   }
 }
-.work {
+section.work {
   position: relative;
   z-index: 20;
   padding: 0rem 10rem 0rem 8rem;
@@ -124,7 +128,7 @@ section.header {
       padding-left: 0.9rem;
       border-radius: 7px;
       .workHeader {
-        font-family: "corporate regular";
+        font-family: "corporate condensed regular";
         font-size: 5em;
         color: $citrine;
         z-index: 1;
@@ -143,10 +147,10 @@ section.header {
         display: flex;
         cursor: pointer;
         font-family: "flexa", sans-serif;
-        font-variation-settings: "wght" 280, "wdth" 100.51;
+        font-variation-settings: $flexaTitle;
         color: lighten($citrine, 2%);
         font-size: 3em;
-        transition: text-decoration-color 0.2s ease;
+        transition: all 0.3s ease;
         left: 0.15em;
         text-decoration-line: underline;
         text-decoration-style: solid;
@@ -154,6 +158,7 @@ section.header {
         text-decoration-thickness: 2.5px;
         &:hover {
           text-decoration-color: $mPurple;
+          font-variation-settings: "wght" 255, "wdth" 100, "ital" 30;
           color: $mPurple;
         }
       }
@@ -178,7 +183,7 @@ section.info {
     float: right;
     padding-right: 10px;
     margin-block-end: 0px;
-    font-family: "corporate regular";
+    font-family: "corporate condensed regular";
     font-size: 6em;
     text-align: right;
     letter-spacing: -0.03em;
@@ -275,19 +280,9 @@ section.info {
         line-height: 115%;
         letter-spacing: -0.03em;
         hyphens: auto;
-        color: $citrine;
+        color: #473f38;
         text-align: justify;
-        font-variation-settings: "wght" 280, "wdth" 100.51;
-        .aboutMeSpan {
-          padding: 15px;
-          color: $mOrange;
-          font-family: "sohne regular";
-          letter-spacing: 0em;
-          font-size: 2em;
-          text-transform: uppercase;
-          float: left;
-          display: none;
-        }
+        font-variation-settings: "wght" 255, "wdth" 90;
       }
     }
   }
@@ -316,7 +311,6 @@ section.info {
     font-size: 1.3em;
     font-family: "sohne regular";
     font-weight: 500;
-    // font-variation-settings: "wght" 450, "wdth" 150;
     letter-spacing: 0.05em;
     border-bottom: solid 1px rgb(26, 25, 24);
   }
@@ -392,9 +386,10 @@ section.info {
 }
 .container {
   // clamp(MIN, VAL, MAX)
-  // MIN for larger screens
-  // MAX for smaller screens
-  // VAL for ideal mid value
+  // MIN for a small as you'll allow it to go
+  // VAL for the ideal value
+  // MAX for the upper ceiling you'll allow it to go
+
   // padding: clamp(2vw, 1.5vw, 0.5vw);
   overflow: hidden;
   main {

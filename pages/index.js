@@ -22,7 +22,7 @@ export default function Home() {
         <div className="noise"></div>
         <Nav />
         <Header />
-        <Work />
+        <Work hidden />
         <Info />
         {/* <Contact/> */}
       </main>

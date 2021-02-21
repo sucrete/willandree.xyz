@@ -49,10 +49,11 @@ export default function Info() {
         <div className={`aboutMe inView${inView}AboutMe inView${inView}`}>
           {" "}
           <p ref={ref}>
-            <span className="aboutMeSpan"></span>Web developer based in Kansas
-            City. Compulsive aggregator of images, color combinations, fonts,
-            and unique modes of expression. Experienced on the MERN stack.
-            Keenly drawn to user-facing design.
+            <span className="aboutMeSpan"></span>Hi there. My name is William
+            Andrée and I'm a web developer based in Kansas City. As a compulsive
+            aggregator of images, color combinations, fonts, and unique modes of
+            expression, I'm invariably drawn to user-facing design. Experienced
+            on the MERN stack.
           </p>
         </div>
       </div>
