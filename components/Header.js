@@ -11,8 +11,8 @@ export default function Header() {
     config: { mass: 5, tension: 2000, friction: 200 },
     opacity: 1,
     x: 0,
-    height: 95,
-    from: { opacity: 0, x: 20, height: 50 },
+    height: 100,
+    from: { opacity: 0, x: 20, height: 0 },
   });
   return (
     <section className="header">
@@ -24,7 +24,7 @@ export default function Header() {
               key={descriptionItems[index]}
               style={{
                 ...rest,
-                transform: x.interpolate((x) => `translate3d(0,${x}px,0))`),
+                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
               }}
             >
               <animated.div style={{ height }}>

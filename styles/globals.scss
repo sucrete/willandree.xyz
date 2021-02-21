@@ -125,9 +125,9 @@ section.header {
       letter-spacing: -0.3rem;
       font-size: clamp(3rem, 6.9vw, 6.2rem);
       color: $mOrange;
-      .dItem.trailstext {
-        height: 100px;
-        line-height: 100px;
+      .dItem.trails-text {
+        height: 100px !important;
+        line-height: 85px;
         position: relative;
         will-change: transform, opacity;
         overflow: hidden;
