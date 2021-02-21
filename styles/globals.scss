@@ -1,7 +1,7 @@
 $warmBlack: rgb(48, 35, 27);
 $warmWhite: rgb(236, 235, 224);
 $mOrange: #c46221;
-$citrine: #2b1f14;
+$citrine: hsl(29, 37%, 12%);
 $mPurple: #a08783;
 $flexaTitle: "wght" 255, "wdth" 100, "ital" 0;
 
@@ -52,11 +52,36 @@ section.navigation {
       letter-spacing: -0.2rem;
       text-align: center;
     }
+    // .forNow {
+    //   linear-gradient(
+    //     to bottom,
+    //     hsl(28.7, 37.7%, 11.96%) 0%,
+    //     hsl(29.42, 24.61%, 15.17%) 8.1%,
+    //     hsl(34.09, 13.91%, 21.51%) 15.5%,
+    //     hsl(40.52, 9.35%, 28.56%) 22.5%,
+    //     hsl(46.61, 7.22%, 35.63%) 29%,
+    //     hsl(51.66, 6.09%, 42.44%) 35.3%,
+    //     hsl(55.64, 5.42%, 48.88%) 41.2%,
+    //     hsl(58.71, 6.08%, 54.87%) 47.1%,
+    //     hsl(61.06, 7.33%, 60.41%) 52.9%,
+    //     hsl(62.76, 8.97%, 65.44%) 58.8%,
+    //     hsl(63.99, 10.87%, 69.87%) 64.7%,
+    //     hsl(64.89, 13.01%, 73.65%) 71%,
+    //     hsl(65.53, 15.25%, 76.72%) 77.5%,
+    //     hsl(65.97, 17.37%, 79.02%) 84.5%,
+    //     hsl(66.23, 18.97%, 80.47%) 91.9%,
+    //     hsl(66.32, 19.59%, 80.98%) 100%
+    //   );
+    // };
     .conicalGradientTop {
       width: 140px;
       height: 140px;
       // border: solid 5px lighten($citrine, 2%);
-      background: conic-gradient(from 3.1416rad at 50% 50%, $citrine, #d6d8c6);
+      background: conic-gradient(
+        from 3.1416rad at 50% 50%,
+        $citrine,
+        hsl(67, 19%, 81%)
+      );
       margin: 0 auto;
       position: relative;
       top: 35px;
@@ -88,28 +113,33 @@ section.header {
   width: 100%;
   z-index: 9;
   height: 700px;
-  .descriptionContainer {
+  .descriptionContainer.trails-main {
     float: right;
     width: 79%;
     margin-right: 5px;
+    position: relative;
+    display: flex;
     .description {
       font-family: "flexa", sans-serif;
-
-      letter-spacing: -0.2em;
+      font-variation-settings: "wght" 300, "wdth" 98, "ital" 0;
+      letter-spacing: -0.3rem;
+      font-size: clamp(3rem, 6.9vw, 6.2rem);
       color: $mOrange;
-      position: relative;
-      .dItem {
-        font-size: 6.6em;
+      .dItem.trailstext {
+        height: 100px;
+        line-height: 100px;
+        position: relative;
+        will-change: transform, opacity;
         overflow: hidden;
-        color: $mOrange;
-        text-align: justify;
-        height: 110px;
-        line-height: 110px;
+        div {
+          overflow: hidden;
+        }
       }
     }
   }
 }
 section.work {
+  display: none;
   position: relative;
   z-index: 20;
   padding: 0rem 10rem 0rem 8rem;
@@ -175,6 +205,7 @@ section.work {
   margin-block-end: 5px;
 }
 section.info {
+  display: none;
   padding: 5rem 9rem 5rem 10rem;
   position: relative;
   z-index: 17;
