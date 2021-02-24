@@ -51,22 +51,24 @@ section.navigation .wmContainer {
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  opacity: 1;
+}
+
+section.navigation .wmContainer .wm {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   -webkit-animation: 1500ms entranceAnimation4 ease;
           animation: 1500ms entranceAnimation4 ease;
   position: relative;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
   opacity: 0;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform: rotateX(90deg) translateZ(170px);
           transform: rotateX(90deg) translateZ(170px);
-  opacity: 1;
-}
-
-section.navigation .wmContainer .wm {
   font-size: 6.5rem;
   position: relative;
   top: 38px;
@@ -77,6 +79,20 @@ section.navigation .wmContainer .wm {
 }
 
 section.navigation .wmContainer .conicalGradientTop {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: 1500ms entranceAnimation4 ease;
+          animation: 1500ms entranceAnimation4 ease;
+  position: relative;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateX(90deg) translateZ(170px);
+          transform: rotateX(90deg) translateZ(170px);
   width: 140px;
   height: 140px;
   background: conic-gradient(from 3.1416rad at 50% 50%, #2a1e13, #d6d8c5);
@@ -103,8 +119,8 @@ section.navigation .andree {
   position: relative;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2500ms;
-          animation-delay: 2500ms;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
   opacity: 0;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -683,7 +699,7 @@ section.info .infoBody .aboutMe p {
     -webkit-transform: rotateX(90deg) translateZ(185px);
             transform: rotateX(90deg) translateZ(185px);
   }
-  60% {
+  20% {
     opacity: 0;
   }
   100% {
@@ -699,7 +715,7 @@ section.info .infoBody .aboutMe p {
     -webkit-transform: rotateX(90deg) translateZ(185px);
             transform: rotateX(90deg) translateZ(185px);
   }
-  60% {
+  20% {
     opacity: 0;
   }
   100% {
