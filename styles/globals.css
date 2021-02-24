@@ -98,8 +98,8 @@ section.navigation .andree {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  -webkit-animation: 1500ms entranceAnimation4 ease;
-          animation: 1500ms entranceAnimation4 ease;
+  -webkit-animation: 2000ms entranceAnimation4 ease;
+          animation: 2000ms entranceAnimation4 ease;
   position: relative;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
