@@ -53,7 +53,7 @@ export default function Header() {
     height: 100,
     delay: 700,
     rotate: 0,
-    from: { opacity: 0, x: 20, height: 0, rotate: 2 },
+    from: { opacity: 0, x: 20, height: 0, rotate: 1.5 },
   });
   return (
     <section className="header">
