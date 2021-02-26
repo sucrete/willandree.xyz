@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300..800&display=swap");
 html,
 body {
   padding: 0px;
@@ -24,7 +24,7 @@ body {
 }
 
 section {
-  padding: 0rem clamp(1rem, 10vw, 10rem);
+  padding: 0rem clamp(0.5rem, 10vw, 10rem);
   display: block;
   margin: 0 auto;
 }
@@ -105,7 +105,7 @@ section.navigation .wmContainer .conicalGradientTop {
 
 section.navigation .andree {
   letter-spacing: -0.4rem;
-  font-size: clamp(10rem, 25vw, 21.5rem);
+  font-size: 21.5rem;
   line-height: 100%;
   width: 100%;
   font-family: "corporate condensed light";
@@ -160,8 +160,7 @@ section.header .descriptionContainer.trails-main {
 
 section.header .descriptionContainer.trails-main .description {
   font-family: "Epilogue", sans-serif;
-  letter-spacing: -0.3rem;
-  font-size: clamp(2rem, 6.7vw, 6rem);
+  font-size: 5.9rem;
   font-weight: 400;
   color: #c46221;
 }
@@ -178,10 +177,18 @@ section.header .descriptionContainer.trails-main .description .dItem.trails-text
   -webkit-transform-origin: -10px 40px;
           transform-origin: -10px 40px;
   overflow: hidden;
+  letter-spacing: -0.3rem;
+}
+
+section.header .descriptionContainer.trails-main .description .dItem.trails-text .dItemBaby > * {
+  -webkit-transition-property: all;
+  transition-property: all;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 section.work {
-  display: none;
   position: relative;
   z-index: 20;
   padding: 0rem 10rem 0rem 8rem;
@@ -195,7 +202,8 @@ section.work .workContainer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  width: 100%;
+  width: 80%;
+  margin-left: auto;
 }
 
 section.work .workContainer .workBody {
@@ -229,31 +237,30 @@ section.work .workContainer .workBody .workItemContainer {
   margin: 0px 4px 4px 0px;
   z-index: 299;
   position: relative;
-  line-height: 1.1;
+  line-height: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
-  font-family: "flexa", sans-serif;
-  font-variation-settings: "wght" 255, "wdth" 100, "ital" 0;
+  font-family: "Epilogue", sans-serif;
   color: #312316;
   font-size: 3em;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   left: 0.15em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
   -webkit-text-decoration-color: #312316;
           text-decoration-color: #312316;
   text-decoration-thickness: 2.5px;
+  font-weight: 400;
 }
 
 section.work .workContainer .workBody .workItemContainer:hover {
   -webkit-text-decoration-color: #a08783;
           text-decoration-color: #a08783;
-  font-variation-settings: "wght" 255, "wdth" 100, "ital" 30;
   color: #a08783;
 }
 
@@ -611,18 +618,14 @@ section.info .infoBody .aboutMe p {
 }
 
 @font-face {
+  font-family: "massimo";
+  src: url("./fonts/massimodisplay-bold-webfont.woff2") format("woff2-variations");
+  font-style: normal;
+}
+
+@font-face {
   src: url("./fonts/CorporateABQ-Regular.otf") format("opentype");
   font-family: "corporate regular";
-}
-
-@font-face {
-  src: url("./fonts/Sohne-Light.otf") format("opentype");
-  font-family: "sohne light";
-}
-
-@font-face {
-  src: url("./fonts/Sohne-Regular.otf") format("opentype");
-  font-family: "sohne regular";
 }
 
 @-webkit-keyframes entranceAnimation {
@@ -701,7 +704,7 @@ section.info .infoBody .aboutMe p {
     -webkit-transform: rotateX(90deg) translateZ(185px);
             transform: rotateX(90deg) translateZ(185px);
   }
-  20% {
+  40% {
     opacity: 0;
   }
   100% {
@@ -717,7 +720,7 @@ section.info .infoBody .aboutMe p {
     -webkit-transform: rotateX(90deg) translateZ(185px);
             transform: rotateX(90deg) translateZ(185px);
   }
-  20% {
+  40% {
     opacity: 0;
   }
   100% {
@@ -729,31 +732,37 @@ section.info .infoBody .aboutMe p {
 
 @-webkit-keyframes headerFlex {
   0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
+    font-variation-settings: "wght" 400;
   }
-  15% {
-    opacity: 1;
+  10% {
+    font-variation-settings: "wght" 750;
+  }
+  20% {
+    font-variation-settings: "wght" 350;
+  }
+  30% {
+    font-variation-settings: "wght" 400;
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    font-variation-settings: "wght" 400;
   }
 }
 
 @keyframes headerFlex {
   0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
+    font-variation-settings: "wght" 400;
   }
-  15% {
-    opacity: 1;
+  10% {
+    font-variation-settings: "wght" 750;
+  }
+  20% {
+    font-variation-settings: "wght" 350;
+  }
+  30% {
+    font-variation-settings: "wght" 400;
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    font-variation-settings: "wght" 400;
   }
 }
 /*# sourceMappingURL=globals.css.map */

@@ -29,22 +29,20 @@ export default function Header() {
     const dItemBaby1 = document.getElementsByClassName("dItemBaby--1")[0];
     const dItemBaby2 = document.getElementsByClassName("dItemBaby--2")[0];
     const dItemBaby3 = document.getElementsByClassName("dItemBaby--3")[0];
-    const Baby0Join = "";
-
     const swapBabies = (baby, which) => {
       baby.innerHTML = "";
       arrayOfItems[which].forEach((eachSpan) => {
         baby.innerHTML += eachSpan;
       });
     };
-    const timer = setTimeout(() => {
-      console.log("This will run after 2.5 seconds!");
-      swapBabies(dItemBaby0, 0);
-      swapBabies(dItemBaby1, 1);
-      swapBabies(dItemBaby2, 2);
-      swapBabies(dItemBaby3, 3);
-    }, 2500);
-    return () => clearTimeout(timer);
+    // const timer = setTimeout(() => {
+    //   console.log("This will run after 2.5 seconds!");
+    //   swapBabies(dItemBaby0, 0);
+    //   swapBabies(dItemBaby1, 1);
+    //   swapBabies(dItemBaby2, 2);
+    //   swapBabies(dItemBaby3, 3);
+    // }, 2500);
+    // return () => clearTimeout(timer);
   });
   const trail = useTrail(descriptionItems.length, {
     config: { mass: 5, tension: 2000, friction: 250 },
