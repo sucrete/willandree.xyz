@@ -20,7 +20,7 @@ const work = [
   "The Voter's Companion,",
   "willandree.xyz",
 ];
-const tittle = ["work"];
+const tittle = ["Work"];
 const modals = ["dt", "mr", "otl", "cal", "votr", "wil"];
 
 export default function Work() {
@@ -156,6 +156,7 @@ export default function Work() {
               onClick={functions[modals[index]].o}
             >
               {work[index]}
+              <span> </span>
             </animated.div>
           ))}
         </div>

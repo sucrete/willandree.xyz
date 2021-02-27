@@ -1,9 +1,44 @@
+import { useEffect } from "react";
 export default function Navigation() {
+  useEffect(() => {
+    var boxBox = document.getElementsByClassName("boxBox")[0];
+    var boxBoxH = boxBox.clientHeight;
+    var boxBoxW = boxBox.clientWidth;
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+    }
+    function getRandomSize(max) {
+      return Math.floor(Math.random() * Math.floor(max)) + 1;
+    }
+
+    function freshDot(phatObj, height, width, padding) {
+      let newObj = document.createElement("div");
+      newObj = document.createElement("div");
+      newObj.classList.add("gox");
+      newObj.style.top = getRandomInt(padding, height - padding) + "px";
+      newObj.style.left = getRandomInt(padding, width - padding) + "px";
+      newObj.size = getRandomSize(2);
+      newObj.style.height = newObj.size + "px";
+      newObj.style.width = newObj.size + "px";
+      phatObj.appendChild(newObj);
+    }
+    for (var z = 0; z < 3000; z++) {
+      freshDot(boxBox, boxBoxH, boxBoxW, 3);
+    }
+    for (var p = 0; p < 10000; p++) {
+      freshDot(boxBox, boxBoxH, boxBoxW, 7);
+    }
+    for (var i = 0; i < 25000; i++) {
+      freshDot(boxBox, boxBoxH, boxBoxW, 11);
+    }
+  });
   return (
     <section className="navigation">
       <span className="wmContainer">
         <div className="wm">Wm.</div>
-        <div className="conicalGradientTop"></div>
+        <div className="conicalGradientTop boxBox"></div>
       </span>
       <span className="andree">
         <span>And</span>

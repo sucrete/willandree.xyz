@@ -3,7 +3,8 @@
 $warmBlack: rgb(48, 35, 27);
 $warmWhite: rgb(236, 235, 224);
 $mOrange: #c46221;
-$citrine: hsl(29, 37%, 12%);
+$citrine: #583f1d;
+$shadowColor: silver;
 $mPurple: #a08783;
 $flexaTitle: "wght" 255, "wdth" 100, "ital" 0;
 @mixin nth-animation-delay($items, $time) {
@@ -12,6 +13,12 @@ $flexaTitle: "wght" 255, "wdth" 100, "ital" 0;
       animation-delay: $time * $i;
     }
   }
+}
+.gox {
+  background-color: $shadowColor;
+  position: fixed;
+  border-radius: 50%;
+  z-index: 1;
 }
 html,
 body {
@@ -41,11 +48,10 @@ section {
   display: block;
   margin: 0 auto;
 }
-$cubicB: cubic-bezier(0.45, 0.03, 0.9, 0.44);
 section.navigation {
   position: relative;
-
   padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
   display: flex;
   color: $citrine;
   justify-content: space-between;
@@ -60,7 +66,7 @@ section.navigation {
     z-index: 2;
     .wm {
       transform-style: preserve-3d;
-      animation: 1200ms entranceAnimation4 $cubicB;
+      animation: 1200ms entranceAnimation4 ease;
       position: relative;
       animation-fill-mode: forwards;
       animation-delay: 1500ms;
@@ -77,7 +83,7 @@ section.navigation {
     }
     .conicalGradientTop {
       transform-style: preserve-3d;
-      animation: 1200ms entranceAnimation4 $cubicB;
+      animation: 1200ms entranceAnimation4 ease;
       position: relative;
       animation-fill-mode: forwards;
       animation-delay: 1400ms;
@@ -86,15 +92,16 @@ section.navigation {
       transform: rotateX(90deg) translateZ(170px);
       width: 140px;
       height: 140px;
-      // border: solid 5px lighten($citrine, 2%);
+      // border: solid 5px $citrine;
       background: conic-gradient(
         from 3.1416rad at 50% 50%,
-        $citrine,
-        hsl(67, 19%, 81%)
+        darken($citrine, 2%),
+        hsl(69, 16%, 75%)
       );
       margin: 0 auto;
       position: relative;
       top: 35px;
+      z-index: 2;
     }
   }
   .andree {
@@ -106,12 +113,14 @@ section.navigation {
     text-transform: uppercase;
     display: flex;
     flex: 1;
-    animation: 1500ms entranceAnimation4 $cubicB;
+    animation: 1700ms entranceAnimation4 cubic-bezier(0.35, 0.46, 0.43, 0.98);
     position: relative;
     animation-fill-mode: forwards;
     animation-delay: 1900ms;
     opacity: 0;
     backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     transform: rotateX(90deg) translateZ(170px);
     opacity: 1;
 
@@ -128,7 +137,7 @@ section.navigation {
 section.header {
   position: relative;
   width: 100%;
-  z-index: 9;
+  z-index: 6;
   padding-bottom: 5rem;
   .descriptionContainer.trails-main {
     width: 79%;
@@ -140,12 +149,12 @@ section.header {
     .description {
       font-family: "Epilogue", sans-serif;
       // font-variation-settings: "wght" 300, "wdth" 98, "ital" 0;
-      font-size: 5.9rem;
+      font-size: 6rem;
       font-weight: 400;
       color: $mOrange;
       .dItem.trails-text {
-        height: 100px !important;
-        line-height: 100px;
+        height: 98px !important;
+        line-height: 98px;
         position: relative;
         will-change: transform, opacity;
         overflow: hidden;
@@ -185,18 +194,16 @@ section.work {
     margin-left: auto;
     margin-right: 0;
     .workBody {
-      // display: flex;
       flex-wrap: wrap;
       z-index: 4;
       position: relative;
       z-index: 12;
       flex: 1;
-      padding-left: 0.9rem;
-      border-radius: 7px;
-
+      padding-left: 0.2rem;
+      // border-radius: 7px;
       .workHeader {
         font-family: "corporate condensed regular";
-        font-size: 6.5em;
+        font-size: 6em;
         color: $citrine;
         z-index: 1;
         line-height: 1;
@@ -205,7 +212,8 @@ section.work {
         animation-duration: 1200ms;
         z-index: 7;
         position: relative;
-        display: inline;
+        display: block;
+        padding-left: 0.3rem;
       }
       .workItemContainer {
         margin: 0px 4px 4px 0px;
@@ -215,25 +223,23 @@ section.work {
         display: inline;
         cursor: pointer;
         font-family: "Epilogue", sans-serif;
-        // font-variation-settings: $flexaTitle;
         color: $citrine;
-        font-size: 5em;
+        font-size: 4.5em;
         transition: all 0.2s ease;
         left: 0.15em;
         text-decoration-line: underline;
-        text-decoration-style: wavy;
-        text-decoration-color: lighten($citrine, 2%);
+        text-decoration-color: $mPurple;
         text-decoration-thickness: 2px;
-        font-weight: 300;
+        font-weight: 400;
         word-break: break-all;
-        span {
-          text-decoration: none !important;
-          text-decoration-color: transparent;
-        }
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+        letter-spacing: -0.2rem;
         &:hover {
           text-decoration-color: $mPurple;
           // font-variation-settings: "wght" 255, "wdth" 100, "ital" 30;
-          color: $mPurple;
+          color: lighten($citrine, 5%);
         }
       }
     }
@@ -480,24 +486,24 @@ section.info {
       z-index: 5;
       background: transparent;
     }
+
     .cloud1 {
+      // cloud1 is furthest left cloud
       width: 100px;
       height: 1250px;
       top: -160px;
       left: -15vw;
       filter: url(#filter);
-      box-shadow: 400px 400px 60px 0px lighten(rgba(218, 190, 33, 0.124), 27%);
-      // visibility: hidden;
+      box-shadow: 400px 400px 60px 0px lighten(rgba(201, 194, 159, 0.401), 20%);
     }
+
     .cloud2 {
       width: 100px;
       height: 1900px;
       filter: url(#filter2);
       top: -700px;
-      left: 10vw;
-      box-shadow: 400px 400px 60px 0px lighten(rgba(155, 145, 89, 0.236), 20%);
-      // opacity: 3;
-      z-index: 9;
+      left: 8vw;
+      box-shadow: 400px 400px 60px 0px lighten(rgba(188, 201, 159, 0.645), 20%);
     }
 
     $greatGreen: lighten(rgba(124, 172, 4, 0.216), 3%);
@@ -507,7 +513,7 @@ section.info {
       top: 0px;
       left: 55vw;
       filter: url(#filter3);
-      box-shadow: 400px 400px 60px 0px lighten(rgba(155, 145, 89, 0.536), 32%);
+      box-shadow: 400px 400px 60px 0px lighten(rgba(155, 145, 89, 0.671), 32%);
     }
     .noise {
       width: 100vw;
@@ -518,7 +524,7 @@ section.info {
       opacity: 0.75;
       top: 0;
       left: 0;
-      z-index: 15;
+      z-index: 7;
     }
   }
 }
