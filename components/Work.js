@@ -13,14 +13,14 @@ import VOTRContent from "./ModalContent/TheVotersCompanion";
 import WillContent from "./ModalContent/WillAndreedotxyz";
 
 const work = [
-  "dumpTRUCK",
-  "maxrosen.town",
-  "Old Town Lofts",
-  "calvintodd.com",
-  "The Voter's Companion",
+  "dumpTRUCK,",
+  "maxrosen.town,",
+  "Old Town Lofts,",
+  "calvintodd.com,",
+  "The Voter's Companion,",
   "willandree.xyz",
 ];
-const tittle = ["Work"];
+const tittle = ["work"];
 const modals = ["dt", "mr", "otl", "cal", "votr", "wil"];
 
 export default function Work() {
@@ -138,7 +138,7 @@ export default function Work() {
               key={tittle[index]}
               style={{
                 ...rest,
-                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
+                top: x.interpolate((x) => `${x}px`),
               }}
             >
               {tittle[index]}
@@ -150,7 +150,7 @@ export default function Work() {
               key={work[index]}
               style={{
                 ...rest,
-                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
+                top: x.interpolate((x) => `${x}px`),
                 cursor: "pointer",
               }}
               onClick={functions[modals[index]].o}

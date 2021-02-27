@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300..800&display=swap");
+@import url(//db.onlinewebfonts.com/c/6bc2f718cba6b7271b847dc5c23f74f1?family=Corporate+A);
 html,
 body {
   padding: 0px;
@@ -59,8 +60,8 @@ section.navigation .wmContainer {
 section.navigation .wmContainer .wm {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-animation: 1200ms entranceAnimation4 ease;
-          animation: 1200ms entranceAnimation4 ease;
+  -webkit-animation: 1200ms entranceAnimation4 cubic-bezier(0.45, 0.03, 0.9, 0.44);
+          animation: 1200ms entranceAnimation4 cubic-bezier(0.45, 0.03, 0.9, 0.44);
   position: relative;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -83,8 +84,8 @@ section.navigation .wmContainer .wm {
 section.navigation .wmContainer .conicalGradientTop {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-animation: 1200ms entranceAnimation4 ease;
-          animation: 1200ms entranceAnimation4 ease;
+  -webkit-animation: 1200ms entranceAnimation4 cubic-bezier(0.45, 0.03, 0.9, 0.44);
+          animation: 1200ms entranceAnimation4 cubic-bezier(0.45, 0.03, 0.9, 0.44);
   position: relative;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -116,8 +117,8 @@ section.navigation .andree {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  -webkit-animation: 1500ms entranceAnimation4 ease;
-          animation: 1500ms entranceAnimation4 ease;
+  -webkit-animation: 1500ms entranceAnimation4 cubic-bezier(0.45, 0.03, 0.9, 0.44);
+          animation: 1500ms entranceAnimation4 cubic-bezier(0.45, 0.03, 0.9, 0.44);
   position: relative;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -145,13 +146,13 @@ section.header {
   position: relative;
   width: 100%;
   z-index: 9;
-  height: 700px;
+  padding-bottom: 5rem;
 }
 
 section.header .descriptionContainer.trails-main {
-  float: right;
   width: 79%;
   margin-right: 5px;
+  margin-left: auto;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,19 +192,16 @@ section.header .descriptionContainer.trails-main .description .dItem.trails-text
 section.work {
   position: relative;
   z-index: 20;
-  padding: 0rem 10rem 0rem 8rem;
 }
 
 section.work .workContainer {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   width: 80%;
   margin-left: auto;
+  margin-right: 0;
 }
 
 section.work .workContainer .workBody {
@@ -221,16 +219,17 @@ section.work .workContainer .workBody {
 
 section.work .workContainer .workBody .workHeader {
   font-family: "corporate condensed regular";
-  font-size: 5em;
+  font-size: 6.5em;
   color: #2a1e13;
   z-index: 1;
-  line-height: 125%;
+  line-height: 1;
   letter-spacing: -0.03em;
   opacity: 0;
   -webkit-animation-duration: 1200ms;
           animation-duration: 1200ms;
   z-index: 7;
   position: relative;
+  display: inline;
 }
 
 section.work .workContainer .workBody .workItemContainer {
@@ -238,13 +237,11 @@ section.work .workContainer .workBody .workItemContainer {
   z-index: 299;
   position: relative;
   line-height: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline;
   cursor: pointer;
   font-family: "Epilogue", sans-serif;
-  color: #312316;
-  font-size: 3em;
+  color: #2a1e13;
+  font-size: 5em;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   left: 0.15em;
@@ -254,8 +251,15 @@ section.work .workContainer .workBody .workItemContainer {
           text-decoration-style: wavy;
   -webkit-text-decoration-color: #312316;
           text-decoration-color: #312316;
-  text-decoration-thickness: 2.5px;
-  font-weight: 400;
+  text-decoration-thickness: 2px;
+  font-weight: 300;
+  word-break: break-all;
+}
+
+section.work .workContainer .workBody .workItemContainer span {
+  text-decoration: none !important;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
 }
 
 section.work .workContainer .workBody .workItemContainer:hover {
@@ -278,7 +282,7 @@ section.work .workContainer .workBody .workItemContainer:hover {
 
 section.info {
   display: none;
-  padding: 5rem 9rem 5rem 10rem;
+  padding: 0rem 9rem 5rem 10rem;
   position: relative;
   z-index: 17;
 }
@@ -467,7 +471,7 @@ section.info .infoBody .aboutMe p {
 
 .customModal .modalBody .modalHeader {
   color: #30231b;
-  font-family: "sohne regular";
+  font-family: "Epilogue";
   font-size: 3em;
   font-variation-settings: "wght" 245, "wdth" 95;
   -webkit-margin-after: 0rem;
@@ -482,12 +486,12 @@ section.info .infoBody .aboutMe p {
   color: grey;
   font-size: 1.3em;
   padding-left: 3px;
-  font-family: "flexa";
+  font-family: "Epilogue";
 }
 
 .customModal .modalBody .modalSubheading .lilCapsule {
   font-size: 0.7em;
-  font-family: "sohne regular";
+  font-family: "Epilogue";
   padding: 5px 15px;
   color: #30231b;
   line-height: 100%;
