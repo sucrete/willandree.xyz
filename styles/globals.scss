@@ -1,25 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300..800&display=swap");
-@import url(//db.onlinewebfonts.com/c/6bc2f718cba6b7271b847dc5c23f74f1?family=Corporate+A);
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..800&display=swap");
 $warmBlack: rgb(48, 35, 27);
 $warmWhite: rgb(236, 235, 224);
 $mOrange: #c46221;
-$citrine: #583f1d;
-$shadowColor: silver;
+$citrine: #362c1e;
 $mPurple: #a08783;
-$flexaTitle: "wght" 255, "wdth" 100, "ital" 0;
-@mixin nth-animation-delay($items, $time) {
-  @for $i from 1 through $items {
-    &:nth-child(#{$i}) {
-      animation-delay: $time * $i;
-    }
-  }
-}
-.gox {
-  background-color: $shadowColor;
-  position: fixed;
-  border-radius: 50%;
-  z-index: 1;
-}
 html,
 body {
   padding: 0px;
@@ -50,14 +35,81 @@ section {
 }
 section.navigation {
   position: relative;
-  padding-top: 1.1rem;
-  padding-bottom: 1.1rem;
+  padding-top: 2.5rem;
   display: flex;
   color: $citrine;
   justify-content: space-between;
   z-index: 11;
   width: 100%;
   transform-style: preserve-3d;
+  svg {
+  }
+  .cover {
+    // width: 165px;
+    // height: 165px;
+    // position: absolute;
+    // z-index: 1;
+    // background: linear-gradient(
+    //     45deg,
+    //     rgba(46, 244, 205, 0) 30%,
+    //     rgba(198, 171, 203, 0) 60%,
+    //     rgba(246, 148, 203, 1) 100%
+    //   ),
+    //   radial-gradient(
+    //     ellipse at center,
+    //     rgba(76, 110, 207, 0) 27%,
+    //     rgba(76, 110, 207, 0.33) 51%,
+    //     rgba(89, 88, 179, 0.58) 69%,
+    //     rgba(89, 78, 183, 1) 100%
+    //   ),
+    //   linear-gradient(
+    //     80deg,
+    //     rgba(246, 148, 203, 0) 0%,
+    //     rgba(70, 232, 205, 0.1) 70%,
+    //     rgba(46, 244, 205, 1) 100%
+    //   ),
+    //   linear-gradient(
+    //     45deg,
+    //     rgba(46, 244, 205, 1) 0%,
+    //     rgba(76, 110, 207, 0.2) 50%,
+    //     rgba(76, 110, 207, 0) 60%
+    //   );
+    // border-radius: 100%;
+    // box-shadow: 0 15px 55px 20px rgba(0, 0, 0, 0.1);
+  }
+  .name {
+    width: 80%;
+    font-family: "corporate condensed light";
+    margin-right: 0px;
+    margin-left: auto;
+    font-size: 8rem;
+    line-height: 1.3;
+    position: relative;
+    .andree {
+      letter-spacing: -0.03rem;
+      width: 100%;
+      display: inline;
+      flex: 1;
+      animation: 1700ms entranceAnimation4 cubic-bezier(0.35, 0.46, 0.43, 0.98);
+      position: relative;
+      animation-fill-mode: forwards;
+      animation-delay: 1900ms;
+      opacity: 0;
+      backface-visibility: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transform: rotateX(90deg) translateZ(170px);
+      opacity: 1;
+    }
+    .dre {
+      position: relative;
+      margin-left: -5px;
+    }
+    // .e {
+    //   position: relative;
+    //   margin-left: -15px;
+    // }
+  }
   .wmContainer {
     flex: 1;
     position: relative;
@@ -80,6 +132,7 @@ section.navigation {
       line-height: 120%;
       letter-spacing: -0.2rem;
       text-align: center;
+      text-rendering: optimizeLegibility;
     }
     .conicalGradientTop {
       transform-style: preserve-3d;
@@ -104,35 +157,6 @@ section.navigation {
       z-index: 2;
     }
   }
-  .andree {
-    letter-spacing: -0.4rem;
-    font-size: 21.5rem;
-    line-height: 100%;
-    width: 100%;
-    font-family: "corporate condensed light";
-    text-transform: uppercase;
-    display: flex;
-    flex: 1;
-    animation: 1700ms entranceAnimation4 cubic-bezier(0.35, 0.46, 0.43, 0.98);
-    position: relative;
-    animation-fill-mode: forwards;
-    animation-delay: 1900ms;
-    opacity: 0;
-    backface-visibility: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: rotateX(90deg) translateZ(170px);
-    opacity: 1;
-
-    .re {
-      position: relative;
-      margin-left: -15px;
-    }
-    .e {
-      position: relative;
-      margin-left: -15px;
-    }
-  }
 }
 section.header {
   position: relative;
@@ -145,16 +169,14 @@ section.header {
     margin-left: auto;
     position: relative;
     display: flex;
-
     .description {
-      font-family: "Epilogue", sans-serif;
-      // font-variation-settings: "wght" 300, "wdth" 98, "ital" 0;
+      font-family: "Space Grotesk", sans-serif;
       font-size: 6rem;
-      font-weight: 400;
+      font-weight: 440;
       color: $mOrange;
       .dItem.trails-text {
-        height: 98px !important;
-        line-height: 98px;
+        height: 93px !important;
+        line-height: 87px;
         position: relative;
         will-change: transform, opacity;
         overflow: hidden;
@@ -162,8 +184,9 @@ section.header {
         .dItemBaby {
           transform-origin: -10px 40px;
           overflow: hidden;
-          letter-spacing: -0.3rem;
+          letter-spacing: -0.2rem;
           // text-align: justify;
+          font-family: "Space Grotesk", sans-serif;
           span {
           }
           &--3 {
@@ -203,7 +226,7 @@ section.work {
       // border-radius: 7px;
       .workHeader {
         font-family: "corporate condensed regular";
-        font-size: 6em;
+        font-size: 8em;
         color: $citrine;
         z-index: 1;
         line-height: 1;
@@ -219,27 +242,28 @@ section.work {
         margin: 0px 4px 4px 0px;
         z-index: 299;
         position: relative;
-        line-height: 1;
+        height: 93px !important;
+        line-height: 87px;
         display: inline;
         cursor: pointer;
-        font-family: "Epilogue", sans-serif;
-        color: $citrine;
-        font-size: 4.5em;
+        font-family: "Space Grotesk", sans-serif;
+        color: $mPurple;
+        font-size: 6rem;
         transition: all 0.2s ease;
         left: 0.15em;
         text-decoration-line: underline;
         text-decoration-color: $mPurple;
-        text-decoration-thickness: 2px;
-        font-weight: 400;
+        text-decoration-thickness: 2.5px;
+        font-weight: 440;
         word-break: break-all;
         -webkit-hyphens: auto;
         -moz-hyphens: auto;
         hyphens: auto;
-        letter-spacing: -0.2rem;
+        letter-spacing: -0.1rem;
         &:hover {
-          text-decoration-color: $mPurple;
+          text-decoration-color: darken($mOrange, 5%);
           // font-variation-settings: "wght" 255, "wdth" 100, "ital" 30;
-          color: lighten($citrine, 5%);
+          color: darken($mOrange, 5%);
         }
       }
     }
@@ -248,20 +272,17 @@ section.work {
 .title {
   font-size: 6.5em;
   color: rgb(41, 36, 25);
-  font-family: "corporate";
   font-weight: unset;
   padding-left: 0.12em;
   margin-block-start: 0px;
   margin-block-end: 5px;
 }
 section.info {
-  display: none;
   padding: 0rem 9rem 5rem 10rem;
   position: relative;
   z-index: 17;
   .title {
     color: $citrine;
-    float: right;
     padding-right: 10px;
     margin-block-end: 0px;
     font-family: "corporate condensed regular";
@@ -390,7 +411,7 @@ section.info {
     display: block;
     color: $warmBlack;
     font-size: 1.3em;
-    font-family: "sohne regular";
+    font-family: "Space Grotesk";
     font-weight: 500;
     letter-spacing: 0.05em;
     border-bottom: solid 1px rgb(26, 25, 24);
@@ -415,9 +436,8 @@ section.info {
 
     .modalHeader {
       color: $warmBlack;
-      font-family: "Epilogue";
+      font-family: "Space Grotesk";
       font-size: 3em;
-      font-variation-settings: "wght" 245, "wdth" 95;
       margin-block-end: 0rem;
       line-height: 110%;
       margin-block-start: 2.5rem;
@@ -428,10 +448,10 @@ section.info {
       font-size: 1.3em;
       padding-left: 3px;
       // letter-spacing: 0.05rem;
-      font-family: "Epilogue";
+      font-family: "Space Grotesk";
       .lilCapsule {
         font-size: 0.7em;
-        font-family: "Epilogue";
+        font-family: "Space Grotesk";
         padding: 5px 15px;
         color: $warmBlack;
         line-height: 100%;
