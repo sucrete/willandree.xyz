@@ -36,6 +36,7 @@ section {
 section.navigation {
   position: relative;
   padding-top: 2.5rem;
+  padding-bottom: 2rem;
   display: flex;
   color: $citrine;
   justify-content: space-between;
@@ -82,8 +83,8 @@ section.navigation {
     font-family: "corporate condensed light";
     margin-right: 0px;
     margin-left: auto;
-    font-size: 8rem;
-    line-height: 1.3;
+    font-size: 9rem;
+    line-height: 1.1;
     position: relative;
     .andree {
       letter-spacing: -0.03rem;
@@ -226,42 +227,44 @@ section.work {
       // border-radius: 7px;
       .workHeader {
         font-family: "corporate condensed regular";
-        font-size: 8em;
+        font-size: 6.7rem;
+        // color: #bcb22f;
         color: $citrine;
         z-index: 1;
-        line-height: 1;
+        line-height: 1.1;
         letter-spacing: -0.03em;
         opacity: 0;
         animation-duration: 1200ms;
         z-index: 7;
         position: relative;
-        display: block;
+        display: inline;
         padding-left: 0.3rem;
+        padding-right: 1.6rem;
       }
       .workItemContainer {
         margin: 0px 4px 4px 0px;
         z-index: 299;
         position: relative;
-        height: 93px !important;
+        height: 92px !important;
         line-height: 87px;
         display: inline;
         cursor: pointer;
         font-family: "Space Grotesk", sans-serif;
-        color: $mPurple;
+        color: $citrine;
         font-size: 6rem;
         transition: all 0.2s ease;
         left: 0.15em;
         text-decoration-line: underline;
-        text-decoration-color: $mPurple;
+        text-decoration-color: transparent;
         text-decoration-thickness: 2.5px;
         font-weight: 440;
         word-break: break-all;
         -webkit-hyphens: auto;
         -moz-hyphens: auto;
         hyphens: auto;
-        letter-spacing: -0.1rem;
+        letter-spacing: -0.2rem;
         &:hover {
-          text-decoration-color: darken($mOrange, 5%);
+          // text-decoration-color: darken($mOrange, 5%);
           // font-variation-settings: "wght" 255, "wdth" 100, "ital" 30;
           color: darken($mOrange, 5%);
         }

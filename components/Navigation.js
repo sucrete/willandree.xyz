@@ -34,7 +34,7 @@ export default function Navigation() {
       </svg> */}
       <div className="cover"></div>
       <span className="name">
-        <span className="wm">Wm. </span>
+        <span className="wm">Will </span>
         <span className="lastName">
           <span>An</span>
           <span className="andree dre">dré</span>
