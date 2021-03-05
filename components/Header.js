@@ -1,11 +1,11 @@
 import { useTrail, animated } from "react-spring";
+import { DistortionText } from "react-text-fun";
 
 export default function Header() {
   const descriptionItems = [
     "Front-end Developer,",
     "Graphic Designer, UX",
     "Designer, Student of",
-    "New Forms",
   ];
 
   const trail = useTrail(descriptionItems.length, {
@@ -32,6 +32,13 @@ export default function Header() {
               </animated.div>
             </animated.div>
           ))}
+          <DistortionText
+            id="distortion"
+            fontSize={73}
+            fill="#dfff7c"
+            fontFamily="Epilogue"
+            text="Novelty"
+          />
         </div>
       </div>
       <svg class="svg" xmlns="http://www.w3.org/2000/svg">

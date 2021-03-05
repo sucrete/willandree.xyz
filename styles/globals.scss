@@ -90,7 +90,7 @@ section.navigation {
 section.header {
   position: relative;
   width: 100%;
-  color: lighten(#dfff00, 15%);
+  color: #dfff7c;
   font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 5rem;
@@ -100,6 +100,9 @@ section.header {
   .descriptionContainer {
     .description {
       .dItem {
+        #distortion {
+          padding-left: 4px;
+        }
         &--3 {
           .dItemBaby {
             position: relative;
