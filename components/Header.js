@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useTrail, animated } from "react-spring";
 
 export default function Header() {
@@ -6,81 +5,74 @@ export default function Header() {
     "Front-end Developer,",
     "Graphic Designer, UX",
     "Designer, Student of",
-    "Novelty",
+    "New Forms",
   ];
 
-  const arrayOfItems = [];
-
-  const splitMe = (_2array) => {
-    let thing2split = _2array.split("");
-    let splitArray = [];
-    thing2split.forEach((letter) => {
-      splitArray.push(`<span>${letter}</span>`);
-    });
-    return splitArray;
-  };
-
-  descriptionItems.forEach((descItem) => {
-    arrayOfItems.push(splitMe(descItem));
-  });
-
-  useEffect(() => {
-    const dItemBaby0 = document.getElementsByClassName("dItemBaby--0")[0];
-    const dItemBaby1 = document.getElementsByClassName("dItemBaby--1")[0];
-    const dItemBaby2 = document.getElementsByClassName("dItemBaby--2")[0];
-    const dItemBaby3 = document.getElementsByClassName("dItemBaby--3")[0];
-    const swapBabies = (baby, which) => {
-      baby.innerHTML = "";
-      arrayOfItems[which].forEach((eachSpan) => {
-        baby.innerHTML += eachSpan;
-      });
-    };
-    // const timer = setTimeout(() => {
-    //   console.log("This will run after 2.5 seconds!");
-    //   swapBabies(dItemBaby0, 0);
-    //   swapBabies(dItemBaby1, 1);
-    //   swapBabies(dItemBaby2, 2);
-    //   swapBabies(dItemBaby3, 3);
-    // }, 2500);
-    // return () => clearTimeout(timer);
-  });
   const trail = useTrail(descriptionItems.length, {
     config: { mass: 5, tension: 2000, friction: 250 },
     opacity: 1,
-    x: 0,
-    height: 100,
-    delay: 700,
-    rotate: 0,
-    from: { opacity: 0, x: 20, height: 0, rotate: 1.5 },
+    delay: 500,
+    from: { opacity: 0 },
   });
+
   return (
     <section className="header">
       <div className="descriptionContainer trails-main">
         <div className="description line1Container">
-          {trail.map(({ x, rotate, height, ...rest }, index) => (
+          {trail.map(({ ...rest }, index) => (
             <animated.div
               className={`dItem dItem--${index} trails-text`}
               key={descriptionItems[index]}
               style={{
                 ...rest,
-                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
               }}
             >
-              <animated.div
-                className={`dItemBaby dItemBaby--${index}`}
-                style={{
-                  height,
-                  transform: rotate.interpolate(
-                    (rotate) => `rotate(${rotate}deg)`
-                  ),
-                }}
-              >
+              <animated.div className={`dItemBaby dItemBaby--${index}`}>
                 {descriptionItems[index]}
               </animated.div>
             </animated.div>
           ))}
         </div>
       </div>
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+        <filter id="filter">
+          <feTurbulence
+            type="turbulence"
+            baseFrequency="0"
+            id="turbulence"
+            numOctaves="1"
+            result="turbulence"
+            seed="5"
+          >
+            <animate
+              id="noiseAnimate"
+              attributeName="baseFrequency"
+              values="0.02; 0.04; 0.02"
+              calcMode="spline"
+              keySplines="0.42 0.0 0.58 1.0;0.42 0.0 0.58 1.0"
+              dur="15s"
+              repeatCount="indefinite"
+            ></animate>
+          </feTurbulence>
+          <feDisplacementMap
+            in="SourceGraphic"
+            in2="turbulence"
+            scale="10"
+            xChannelSelector="R"
+            yChannelSelector="B"
+          ></feDisplacementMap>
+        </filter>
+      </svg>
+      <svg>
+        <filter id="wavy">
+          <feTurbulence
+            type="turbulence"
+            baseFrequency="0.005"
+            numOctaves="5"
+          ></feTurbulence>
+          <feDisplacementMap in="SourceGraphic" scale="50"></feDisplacementMap>
+        </filter>
+      </svg>
     </section>
   );
 }
