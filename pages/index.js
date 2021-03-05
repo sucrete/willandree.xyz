@@ -12,14 +12,9 @@ export default function Home() {
       <Head>
         <title>wilondraydotekswhyzee</title>
         <link rel="icon" href="/5532_DuckWaddle.gif" />
+        <script src="https://unpkg.com/blotterjs-fork@0.1.0/build/blotter.min.js"></script>
       </Head>
-
       <main>
-        <div className="cloud cloud1"></div>
-        <div className="cloud cloud2"></div>
-        <div className="cloud cloud2-2"></div>
-        <div className="cloud cloud3"></div>
-        <div className="noise"></div>
         <Nav />
         <Header />
         <Work />
