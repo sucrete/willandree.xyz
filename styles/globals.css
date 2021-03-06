@@ -73,7 +73,7 @@ section.navigation .name .wm:before {
 
 section.navigation .cone {
   height: 65px;
-  width: 65px;
+  width: 70px;
   position: relative;
   background: conic-gradient(from 3.1416rad at 50% 50%, black, white);
 }
@@ -87,14 +87,8 @@ section.header {
   line-height: 1.1;
 }
 
-section.header .descriptionContainer .description .dItem #distortion {
-  padding-left: 4px;
-}
-
-section.header .descriptionContainer .description .dItem--3 .dItemBaby {
-  position: relative;
-  -webkit-filter: url(#wavy) blur(0px) contrast(1);
-          filter: url(#wavy) blur(0px) contrast(1);
+section.header .descriptionContainer .description #distortion {
+  padding-left: 8px;
 }
 
 section.work {

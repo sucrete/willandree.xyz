@@ -34,52 +34,15 @@ export default function Header() {
           ))}
           <DistortionText
             id="distortion"
-            fontSize={73}
+            fontSize={72}
+            noiseAmplitude={0.05}
+            distortX={0.9}
             fill="#dfff7c"
             fontFamily="Epilogue"
-            text="Novelty"
+            text="Novel Forms"
           />
         </div>
       </div>
-      <svg class="svg" xmlns="http://www.w3.org/2000/svg">
-        <filter id="filter">
-          <feTurbulence
-            type="turbulence"
-            baseFrequency="0"
-            id="turbulence"
-            numOctaves="1"
-            result="turbulence"
-            seed="5"
-          >
-            <animate
-              id="noiseAnimate"
-              attributeName="baseFrequency"
-              values="0.02; 0.04; 0.02"
-              calcMode="spline"
-              keySplines="0.42 0.0 0.58 1.0;0.42 0.0 0.58 1.0"
-              dur="15s"
-              repeatCount="indefinite"
-            ></animate>
-          </feTurbulence>
-          <feDisplacementMap
-            in="SourceGraphic"
-            in2="turbulence"
-            scale="10"
-            xChannelSelector="R"
-            yChannelSelector="B"
-          ></feDisplacementMap>
-        </filter>
-      </svg>
-      <svg>
-        <filter id="wavy">
-          <feTurbulence
-            type="turbulence"
-            baseFrequency="0.005"
-            numOctaves="5"
-          ></feTurbulence>
-          <feDisplacementMap in="SourceGraphic" scale="50"></feDisplacementMap>
-        </filter>
-      </svg>
     </section>
   );
 }

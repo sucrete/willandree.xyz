@@ -74,7 +74,7 @@ section.navigation {
   }
   .cone {
     height: 65px;
-    width: 65px;
+    width: 70px;
     position: relative;
     background: conic-gradient(from 3.1416rad at 50% 50%, black, white);
   }
@@ -99,14 +99,12 @@ section.header {
   // text-transform: lowercase;
   .descriptionContainer {
     .description {
+      #distortion {
+        padding-left: 8px;
+      }
       .dItem {
-        #distortion {
-          padding-left: 4px;
-        }
         &--3 {
           .dItemBaby {
-            position: relative;
-            filter: url(#wavy) blur(0px) contrast(1);
             &::before {
               // content: "New Forms";
               // position: absolute;
