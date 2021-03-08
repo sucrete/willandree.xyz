@@ -3,7 +3,7 @@ export default function Navigation() {
   const fullName = "Will Andrée";
   const splitName = fullName.split(" ");
   const trail = useTrail(splitName.length, {
-    config: { mass: 3, tension: 2500, friction: 200 },
+    config: { mass: 4, tension: 2200, friction: 250 },
     opacity: 1,
     x: 0,
     delay: 700,
@@ -25,8 +25,8 @@ export default function Navigation() {
             <span> </span>
           </animated.span>
         ))}
-        <span className="cone"></span>
       </span>
+      <span className="cone"></span>
     </section>
   );
 }

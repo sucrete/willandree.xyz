@@ -58,11 +58,75 @@ section.navigation .name .nameItem {
   position: relative;
 }
 
+section.navigation .name:before {
+  position: absolute;
+  bottom: -6px;
+  left: 2px;
+  height: 1px;
+  content: "";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #eee;
+  -webkit-animation: 700ms lineAnim ease;
+          animation: 700ms lineAnim ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+@-webkit-keyframes lineAnim {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 70px;
+  }
+}
+
+@keyframes lineAnim {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 70px;
+  }
+}
+
 section.navigation .cone {
   height: 60px;
-  width: 65px;
+  width: 66px;
   position: relative;
   background: conic-gradient(from 3.1416rad at 50% 50%, black, white);
+  -webkit-animation: 900ms coneAnim ease;
+          animation: 900ms coneAnim ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+  opacity: 0;
+}
+
+@-webkit-keyframes coneAnim {
+  from {
+    opacity: 0;
+    top: -20px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+@keyframes coneAnim {
+  from {
+    opacity: 0;
+    top: -20px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
 }
 
 section.header {
@@ -72,6 +136,7 @@ section.header {
   font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 5rem;
   line-height: 1.1;
+  padding-top: 2rem;
 }
 
 section.header .descriptionContainer {

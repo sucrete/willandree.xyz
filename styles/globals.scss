@@ -58,12 +58,46 @@ section.navigation {
     .nameItem {
       position: relative;
     }
+    &:before {
+      position: absolute;
+      bottom: -6px;
+      left: 2px;
+      height: 1px;
+      content: "";
+      transition: 0.3s;
+      background-color: #eee;
+      animation: 700ms lineAnim ease;
+      animation-fill-mode: forwards;
+      animation-delay: 700ms;
+    }
+    @keyframes lineAnim {
+      from {
+        width: 0px;
+      }
+      to {
+        width: 70px;
+      }
+    }
   }
   .cone {
     height: 60px;
-    width: 65px;
+    width: 66px;
     position: relative;
     background: conic-gradient(from 3.1416rad at 50% 50%, black, white);
+    animation: 900ms coneAnim ease;
+    animation-fill-mode: forwards;
+    animation-delay: 700ms;
+    opacity: 0;
+  }
+  @keyframes coneAnim {
+    from {
+      opacity: 0;
+      top: -20px;
+    }
+    to {
+      opacity: 1;
+      top: 0px;
+    }
   }
 }
 
@@ -82,8 +116,7 @@ section.header {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 5rem;
   line-height: 1.1;
-  // font-weight: 400;
-  // text-transform: lowercase;
+  padding-top: 2rem;
   .descriptionContainer {
     position: relative;
     .description {
