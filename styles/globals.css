@@ -51,24 +51,11 @@ section.navigation {
 
 section.navigation .name {
   width: 100%;
-}
-
-section.navigation .name .wm {
   position: relative;
-  width: 100%;
 }
 
-section.navigation .name .wm:before {
-  position: absolute;
-  bottom: -6px;
-  right: 0px;
-  width: 65px;
-  left: 5px;
-  height: 1px;
-  content: "";
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  background-color: #eee;
+section.navigation .name .nameItem {
+  position: relative;
 }
 
 section.navigation .cone {
@@ -87,8 +74,20 @@ section.header {
   line-height: 1.1;
 }
 
+section.header .descriptionContainer {
+  position: relative;
+}
+
+section.header .descriptionContainer .description {
+  position: relative;
+}
+
 section.header .descriptionContainer .description #distortion {
   padding-left: 6px;
+}
+
+section.header .descriptionContainer .description .dItem {
+  position: relative;
 }
 
 section.work {
@@ -131,6 +130,7 @@ section.info {
   padding: 0rem 9rem 5rem 10rem;
   position: relative;
   z-index: 17;
+  color: white;
 }
 
 .customOverlay {
