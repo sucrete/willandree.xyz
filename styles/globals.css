@@ -98,12 +98,12 @@ section.navigation .cone {
   width: 66px;
   position: relative;
   background: conic-gradient(from 3.1416rad at 50% 50%, black, white);
-  -webkit-animation: 900ms coneAnim ease;
-          animation: 900ms coneAnim ease;
+  -webkit-animation: 700ms coneAnim ease;
+          animation: 700ms coneAnim ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 700ms;
-          animation-delay: 700ms;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
   opacity: 0;
 }
 
@@ -174,13 +174,14 @@ section.work .workContainer .workBody .workHeader {
   font-size: 3.5rem;
   font-family: "corporate condensed regular";
   position: relative;
-  -webkit-margin-after: 1rem;
-          margin-block-end: 1rem;
+  display: inline;
+  line-height: 1.1;
+  padding-right: 1rem;
 }
 
 section.work .workContainer .workBody .workItemContainer {
   font-family: "Epilogue", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 1.1;
   word-break: break-all;
   display: inline;

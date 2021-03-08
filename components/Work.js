@@ -123,10 +123,11 @@ export default function Work() {
     from: { opacity: 0, x: 50 },
   });
   const trail2 = useTrail(tittle.length, {
-    config: { mass: 5, tension: 2000, friction: 270 },
+    config: { mass: 5, tension: 2000, friction: 220 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 50,
-    from: { opacity: 0, x: 50 },
+    color: inView ? "#c46221" : "#c46221",
+    from: { opacity: 0, x: 50, color: "#c46221" },
   });
   return (
     <section className="work">
