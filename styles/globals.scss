@@ -130,19 +130,21 @@ section.work {
   padding-top: 5rem;
 
   .workContainer {
-    width: 40%;
+    width: 50%;
     .workBody {
       margin-left: 0.75rem;
       .workHeader {
         font-size: 3.5rem;
         font-family: "corporate condensed regular";
+        position: relative;
       }
       .workItemContainer {
         font-family: "Epilogue", sans-serif;
         font-size: 2.5rem;
-        line-height: 1;
+        line-height: 1.1;
         word-break: break-all;
         display: inline;
+        position: relative;
         &:hover {
           color: #dfff7c;
         }
@@ -193,7 +195,7 @@ section.info {
     display: block;
     color: $warmBlack;
     font-size: 1.3em;
-    font-family: "Space Grotesk";
+    font-family: "Epilogue";
     font-weight: 500;
     letter-spacing: 0.05em;
     border-bottom: solid 1px rgb(26, 25, 24);
@@ -218,7 +220,7 @@ section.info {
 
     .modalHeader {
       color: $warmBlack;
-      font-family: "Space Grotesk";
+      font-family: "Epilogue";
       font-size: 3em;
       margin-block-end: 0rem;
       line-height: 110%;
@@ -230,10 +232,10 @@ section.info {
       font-size: 1.3em;
       padding-left: 3px;
       // letter-spacing: 0.05rem;
-      font-family: "Space Grotesk";
+      font-family: "Epilogue";
       .lilCapsule {
         font-size: 0.7em;
-        font-family: "Space Grotesk";
+        font-family: "Epilogue";
         padding: 5px 15px;
         color: $warmBlack;
         line-height: 100%;
