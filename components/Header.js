@@ -3,9 +3,9 @@ import { DistortionText } from "react-text-fun";
 
 export default function Header() {
   const descriptionItems = [
-    "Front-end Developer,",
-    "Graphic Designer, UX",
-    "Designer, Student of",
+    "Front-end Developer/",
+    "Graphic Designer/ UX",
+    "Designer/ Student of",
   ];
 
   const trail = useTrail(descriptionItems.length, {
@@ -39,7 +39,7 @@ export default function Header() {
             distortX={0.9}
             fill="#dfff7c"
             fontFamily="Epilogue"
-            text="Novel Forms"
+            text="Novelty"
           />
         </div>
       </div>
