@@ -6,6 +6,10 @@ img {
   position: absolute;
   // left: 50%;
   // transform: translateX(-20%);
+  opacity: 0;
+  animation: 2000ms entranceAnimation1 ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1000ms;
 }
 html,
 body {
@@ -61,7 +65,6 @@ section.navigation {
   .name {
     width: 100%;
     position: relative;
-
     .nameItem {
       position: relative;
       text-shadow: 0px 0px 20px black;
@@ -76,7 +79,7 @@ section.navigation {
       background-color: #eee;
       animation: 500ms lineAnim ease;
       animation-fill-mode: forwards;
-      animation-delay: 1200ms;
+      animation-delay: 2100ms;
     }
     @keyframes lineAnim {
       from {
@@ -99,7 +102,7 @@ section.navigation {
     );
     animation: 700ms coneAnim ease;
     animation-fill-mode: forwards;
-    animation-delay: 1900ms;
+    animation-delay: 2300ms;
     opacity: 0;
     box-shadow: 0 0 20px 10px black;
   }

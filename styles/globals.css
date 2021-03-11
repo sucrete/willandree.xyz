@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300..800&display=swap");
 img {
   position: absolute;
+  opacity: 0;
+  -webkit-animation: 2000ms entranceAnimation1 ease;
+          animation: 2000ms entranceAnimation1 ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 
 html,
@@ -78,8 +85,8 @@ section.navigation .name:before {
           animation: 500ms lineAnim ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1200ms;
-          animation-delay: 1200ms;
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms;
 }
 
 @-webkit-keyframes lineAnim {
@@ -109,8 +116,8 @@ section.navigation .cone {
           animation: 700ms coneAnim ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1900ms;
-          animation-delay: 1900ms;
+  -webkit-animation-delay: 2300ms;
+          animation-delay: 2300ms;
   opacity: 0;
   -webkit-box-shadow: 0 0 20px 10px black;
           box-shadow: 0 0 20px 10px black;
