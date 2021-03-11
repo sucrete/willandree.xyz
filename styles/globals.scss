@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300..800&display=swap");
-$warmBlack: rgb(48, 35, 27);
-$warmWhite: rgb(248, 246, 232);
+$warmBlack: rgb(24, 23, 22);
+$warmWhite: rgb(253, 252, 244);
 $mOrange: #c46221;
 img {
   position: absolute;
+  // left: 50%;
+  // transform: translateX(-20%);
 }
 html,
 body {
@@ -13,6 +15,7 @@ body {
   position: relative;
   scroll-behavior: smooth;
   width: 100%;
+  overflow-x: hidden;
 }
 body {
   padding: 0;
@@ -257,7 +260,7 @@ section.info {
       margin-block-end: 0rem;
       line-height: 110%;
       margin-block-start: 2.5rem;
-      letter-spacing: 0.05rem;
+      letter-spacing: 0rem;
     }
     .modalSubheading {
       color: grey;

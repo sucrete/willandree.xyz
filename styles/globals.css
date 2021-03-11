@@ -11,6 +11,7 @@ body {
   position: relative;
   scroll-behavior: smooth;
   width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -218,7 +219,7 @@ section.info {
 .customModal {
   -webkit-box-shadow: unset !important;
           box-shadow: unset !important;
-  background-color: #f8f6e8 !important;
+  background-color: #fdfcf4 !important;
   max-width: unset !important;
   width: 100vw !important;
   height: 100vh !important;
@@ -228,11 +229,11 @@ section.info {
 }
 
 .customModal .projectDesignation {
-  background-color: #f8f6e8 !important;
+  background-color: #fdfcf4 !important;
   padding: 11px;
   padding-left: 22px;
   display: block;
-  color: #30231b;
+  color: #181716;
   font-size: 1.3em;
   font-family: "Epilogue";
   font-weight: 500;
@@ -252,17 +253,17 @@ section.info {
 .customModal button svg {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
-  fill: #30231b !important;
+  fill: #181716 !important;
 }
 
 .customModal .modalBody {
   padding: 1.5rem 5.5rem;
-  background: #f8f6e8;
+  background: #fdfcf4;
   height: 100%;
 }
 
 .customModal .modalBody .modalHeader {
-  color: #30231b;
+  color: #181716;
   font-family: "Epilogue";
   font-size: 3em;
   -webkit-margin-after: 0rem;
@@ -270,7 +271,7 @@ section.info {
   line-height: 110%;
   -webkit-margin-before: 2.5rem;
           margin-block-start: 2.5rem;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0rem;
 }
 
 .customModal .modalBody .modalSubheading {
@@ -284,7 +285,7 @@ section.info {
   font-size: 0.7em;
   font-family: "Epilogue";
   padding: 5px 15px;
-  color: #30231b;
+  color: #181716;
   line-height: 100%;
   border-radius: 50px;
   position: relative;
