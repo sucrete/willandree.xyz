@@ -15,7 +15,7 @@ export default function Home() {
         <script src="https://unpkg.com/blotterjs-fork@0.1.0/build/blotter.min.js"></script>
       </Head>
       <main>
-        <img src="../raib.png" />
+        <img src="../roman.png" />
         <Nav />
         <Header />
         <Work />

@@ -123,7 +123,7 @@ export default function Work() {
     from: { opacity: 0, x: 50 },
   });
   const trail2 = useTrail(tittle.length, {
-    config: { mass: 5, tension: 2000, friction: 220 },
+    config: { mass: 5, tension: 2000, friction: 250 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 50,
     from: { opacity: 0, x: 50 },
