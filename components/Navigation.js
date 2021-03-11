@@ -3,11 +3,11 @@ export default function Navigation() {
   const fullName = "Will Andrée";
   const splitName = fullName.split(" ");
   const trail = useTrail(splitName.length, {
-    config: { mass: 4, tension: 2200, friction: 250 },
+    config: { mass: 5, tension: 2200, friction: 250 },
     opacity: 1,
     x: 0,
-    delay: 700,
-    from: { opacity: 0, x: -20 },
+    delay: 1700,
+    from: { opacity: 0, x: -10 },
   });
   return (
     <section className="navigation">

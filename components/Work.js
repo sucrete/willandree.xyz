@@ -126,8 +126,7 @@ export default function Work() {
     config: { mass: 5, tension: 2000, friction: 220 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 50,
-    color: inView ? "#c46221" : "#c46221",
-    from: { opacity: 0, x: 50, color: "#c46221" },
+    from: { opacity: 0, x: 50 },
   });
   return (
     <section className="work">

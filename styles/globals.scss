@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300..800&display=swap");
 $warmBlack: rgb(48, 35, 27);
-$warmWhite: rgb(243, 238, 210);
+$warmWhite: rgb(248, 246, 232);
 $mOrange: #c46221;
-
+img {
+  position: absolute;
+}
 html,
 body {
   padding: 0px;
@@ -10,6 +12,7 @@ body {
   height: 100%;
   position: relative;
   scroll-behavior: smooth;
+  width: 100%;
 }
 body {
   padding: 0;
@@ -66,9 +69,9 @@ section.navigation {
       content: "";
       transition: 0.3s;
       background-color: #eee;
-      animation: 700ms lineAnim ease;
+      animation: 500ms lineAnim ease;
       animation-fill-mode: forwards;
-      animation-delay: 700ms;
+      animation-delay: 1200ms;
     }
     @keyframes lineAnim {
       from {
@@ -83,10 +86,15 @@ section.navigation {
     height: 60px;
     width: 66px;
     position: relative;
-    background: conic-gradient(from 3.1416rad at 50% 50%, black, white);
+    background: conic-gradient(
+      from 3.1416rad at 50% 50%,
+      black,
+      white 80%,
+      white
+    );
     animation: 700ms coneAnim ease;
     animation-fill-mode: forwards;
-    animation-delay: 900ms;
+    animation-delay: 1900ms;
     opacity: 0;
   }
   @keyframes coneAnim {
@@ -156,7 +164,7 @@ section.work {
         display: inline;
         line-height: 1.1;
         padding-right: 1rem;
-        // color: rgba(255, 255, 255, 0.548);
+        color: #8f8f8f;
       }
       .workItemContainer {
         font-family: "Epilogue", sans-serif;
@@ -297,6 +305,7 @@ section.info {
   // MAX for the upper ceiling you'll allow it to go
 
   // padding: clamp(2vw, 1.5vw, 0.5vw);
+
   main {
   }
 }

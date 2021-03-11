@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300..800&display=swap");
+img {
+  position: absolute;
+}
+
 html,
 body {
   padding: 0px;
@@ -6,6 +10,7 @@ body {
   height: 100%;
   position: relative;
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 body {
@@ -67,12 +72,12 @@ section.navigation .name:before {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: #eee;
-  -webkit-animation: 700ms lineAnim ease;
-          animation: 700ms lineAnim ease;
+  -webkit-animation: 500ms lineAnim ease;
+          animation: 500ms lineAnim ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 700ms;
-          animation-delay: 700ms;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
 }
 
 @-webkit-keyframes lineAnim {
@@ -97,13 +102,13 @@ section.navigation .cone {
   height: 60px;
   width: 66px;
   position: relative;
-  background: conic-gradient(from 3.1416rad at 50% 50%, black, white);
+  background: conic-gradient(from 3.1416rad at 50% 50%, black, white 80%, white);
   -webkit-animation: 700ms coneAnim ease;
           animation: 700ms coneAnim ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 900ms;
-          animation-delay: 900ms;
+  -webkit-animation-delay: 1900ms;
+          animation-delay: 1900ms;
   opacity: 0;
 }
 
@@ -177,6 +182,7 @@ section.work .workContainer .workBody .workHeader {
   display: inline;
   line-height: 1.1;
   padding-right: 1rem;
+  color: #8f8f8f;
 }
 
 section.work .workContainer .workBody .workItemContainer {
@@ -209,7 +215,7 @@ section.info {
 .customModal {
   -webkit-box-shadow: unset !important;
           box-shadow: unset !important;
-  background-color: #f3eed2 !important;
+  background-color: #f8f6e8 !important;
   max-width: unset !important;
   width: 100vw !important;
   height: 100vh !important;
@@ -219,7 +225,7 @@ section.info {
 }
 
 .customModal .projectDesignation {
-  background-color: #f3eed2 !important;
+  background-color: #f8f6e8 !important;
   padding: 11px;
   padding-left: 22px;
   display: block;
@@ -248,7 +254,7 @@ section.info {
 
 .customModal .modalBody {
   padding: 1.5rem 5.5rem;
-  background: #f3eed2;
+  background: #f8f6e8;
   height: 100%;
 }
 
