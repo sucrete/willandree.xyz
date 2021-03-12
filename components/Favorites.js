@@ -41,15 +41,15 @@ function Box3() {
       <ul>
         <li>JavaScript</li>
         <li>React</li>
-
         <li>UX Design</li>
+        <li>HTML/CSS</li>
         <li>SCSS</li>
         <li>Graphic Design</li>
-        <li>InDesign</li>
+        <li>Illustrator</li>
         <li>Photoshop</li>
         <li>Wordpress</li>
         <li>Vue</li>
-
+        <li>Vuex</li>
         <li>Node</li>
       </ul>
     </div>
@@ -66,7 +66,7 @@ export default function Favorites() {
   const trail = useTrail(boxes.length, {
     config: { mass: 5, tension: 2200, friction: 270 },
     opacity: inView ? 1 : 0,
-    delay: 500,
+    delay: 200,
     x: inView ? 0 : 50,
     from: { opacity: 0, x: 50 },
   });
