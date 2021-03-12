@@ -4,13 +4,33 @@ function Box1() {
   return (
     <div className="designers">
       <div>favorite designers rn:</div>
+      <ul>
+        <li>
+          <a target="_blank" href="https://www.tmthyl.uk">
+            Timothy Luke
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.instagram.com/trvsbrthrs/">
+            Travis Brothers
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://www.thibaudallie.com/">
+            Thibaud Allie
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }
 function Box2() {
   return (
-    <div className="colors">
+    <div className="fonts">
       <div>favorite fonts atm:</div>
+      <img src="/editorialnew.svg" alt="editorial new font svg" />
+      <img src="/rightgrotesk.svg" alt="right grotesk font svg" />
+      <img src="/mincho.svg" alt="mincho font svg" />
     </div>
   );
 }
@@ -35,7 +55,7 @@ export default function Favorites() {
   const boxes = [<Box1 />, <Box2 />];
   const oneBox = [<Box3 />];
   const { ref, inView } = useInView({
-    threshold: 0.9,
+    threshold: 0.5,
     triggerOnce: true,
   });
   const trail = useTrail(boxes.length, {

@@ -2,6 +2,7 @@
 $warmBlack: rgb(24, 23, 22);
 $warmWhite: rgb(253, 252, 244);
 $mOrange: #c46221;
+$myGrey: rgb(173, 173, 173);
 img {
   position: absolute;
   // left: 50%;
@@ -65,9 +66,9 @@ section.navigation {
   .name {
     width: 100%;
     position: relative;
+    left: 7px;
     .nameItem {
       position: relative;
-      text-shadow: 0px 0px 20px black;
     }
     &:before {
       position: absolute;
@@ -94,6 +95,7 @@ section.navigation {
     height: 60px;
     width: 66px;
     position: relative;
+    right: 20px;
     background: conic-gradient(
       from 3.1416rad at 50% 50%,
       black,
@@ -104,7 +106,7 @@ section.navigation {
     animation-fill-mode: forwards;
     animation-delay: 2300ms;
     opacity: 0;
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.664);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
   }
   @keyframes coneAnim {
     from {
@@ -162,7 +164,7 @@ section.work {
   color: white;
   // padding-top: 5rem;
   .workContainer {
-    width: 45%;
+    width: 47%;
     margin-left: auto;
     margin-right: 1rem;
     .workBody {
@@ -175,7 +177,7 @@ section.work {
         display: inline;
         line-height: 1.1;
         padding-right: 1rem;
-        color: rgb(173, 173, 173);
+        color: $myGrey;
       }
       .workItemContainer {
         font-family: "Epilogue", sans-serif;
@@ -206,14 +208,13 @@ section.favorites {
   display: flex;
   padding-top: 1rem;
   padding-bottom: 1rem;
-
   .favoritesContainer {
-    top: -50px;
+    top: -120px;
     position: relative;
     color: white;
     width: 45%;
     margin-right: auto;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -230,10 +231,52 @@ section.favorites {
         // border: 1px solid white;
         height: 47%;
         padding: 1.75rem;
+        padding-left: 1.85rem;
         position: relative;
         background: black;
-      }
-      .designers {
+        .fonts {
+          div {
+            padding-bottom: 1rem;
+          }
+          img {
+            height: 22px;
+            width: auto;
+            display: block;
+            position: relative;
+            &:nth-of-type(1) {
+              margin-bottom: 14px;
+            }
+            &:nth-of-type(2) {
+              margin-bottom: 9px;
+              height: 26px;
+            }
+          }
+        }
+        .designers {
+          font-family: "Epilogue", sans-serif;
+          ul {
+            list-style: none;
+            padding-left: 2px;
+            font-size: 1.2rem;
+
+            li {
+              line-height: 1.5;
+
+              a {
+                text-decoration: underline;
+                text-decoration-color: darken($myGrey, 25%);
+                color: white;
+                &:visited {
+                  color: white;
+                }
+                &:hover {
+                  color: blue;
+                  text-decoration-color: darken(blue, 15%);
+                }
+              }
+            }
+          }
+        }
       }
     }
     .boxColumn {
@@ -241,12 +284,13 @@ section.favorites {
       // border: 1px solid white;
       border-radius: 15px;
       padding: 1.75rem;
+      padding-left: 1.85rem;
       position: relative;
       background: black;
       .skills {
         ul {
           list-style: none;
-          padding-left: 0;
+          padding-left: 1px;
         }
       }
     }
