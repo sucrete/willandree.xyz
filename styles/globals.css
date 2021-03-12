@@ -153,8 +153,8 @@ section.header {
   font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 5rem;
   line-height: 1.1;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 section.header .descriptionContainer {
@@ -187,25 +187,38 @@ section.work .workContainer {
 
 section.work .workContainer .workBody {
   margin-left: 0.75rem;
+  text-align: justify;
 }
 
 section.work .workContainer .workBody .workHeader {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-family: "corporate condensed regular";
   position: relative;
   display: inline;
   line-height: 1.1;
   padding-right: 1rem;
-  color: #adadad;
+  color: white;
+  text-transform: uppercase;
 }
 
 section.work .workContainer .workBody .workItemContainer {
   font-family: "Epilogue", sans-serif;
   font-size: 3rem;
   line-height: 1.1;
-  word-break: break-all;
   display: inline;
   position: relative;
+}
+
+section.work .workContainer .workBody .workItemContainer.calContainer {
+  word-break: break-all;
+}
+
+section.work .workContainer .workBody .workItemContainer.wilContainer {
+  word-break: break-all;
+}
+
+section.work .workContainer .workBody .workItemContainer.mrContainer {
+  word-break: break-all;
 }
 
 section.work .workContainer .workBody .workItemContainer:hover {
@@ -231,11 +244,10 @@ section.favorites {
   display: -ms-flexbox;
   display: flex;
   padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 section.favorites .favoritesContainer {
-  top: -120px;
+  top: -150px;
   position: relative;
   color: white;
   width: 45%;
@@ -314,8 +326,8 @@ section.favorites .favoritesContainer .leftContainer .boxItem .designers ul li {
 
 section.favorites .favoritesContainer .leftContainer .boxItem .designers ul li a {
   text-decoration: underline;
-  -webkit-text-decoration-color: #6d6d6d;
-          text-decoration-color: #6d6d6d;
+  -webkit-text-decoration-color: #575757;
+          text-decoration-color: #575757;
   color: white;
 }
 
@@ -344,10 +356,32 @@ section.favorites .favoritesContainer .boxColumn .skills ul {
 }
 
 section.info {
-  padding: 0rem 9rem 5rem 10rem;
   position: relative;
   z-index: 17;
   color: white;
+  width: 100%;
+}
+
+section.info .infoBody {
+  width: 47%;
+  margin-left: auto;
+  margin-right: 1rem;
+  font-size: 3rem;
+  font-family: "Epilogue", sans-serif;
+  line-height: 1.1;
+  top: -250px;
+  position: relative;
+  text-align: justify;
+}
+
+section.info .infoBody .aboutHeader {
+  font-size: 3.5rem;
+  font-family: "corporate condensed regular";
+  position: relative;
+  text-transform: uppercase;
+  display: inline;
+  padding-right: 1rem;
+  line-height: 1.1;
 }
 
 .customOverlay {

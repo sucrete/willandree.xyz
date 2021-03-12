@@ -33,29 +33,24 @@ export default function Info() {
     from: { opacity: 0, x: 50 },
   });
   return (
-    <section id="info" className="info">
-      {trail1.map(({ x, ...rest }, index) => (
-        <animated.div
-          className="aboutHeader"
-          key={aboutTitle[index]}
-          style={{
-            ...rest,
-            top: x.interpolate((x) => `${x}px`),
-          }}
-        >
-          {aboutTitle[index]}
-        </animated.div>
-      ))}
-      <div className="infoBody">
-        <div className={`aboutMe inView${inView}AboutMe inView${inView}`}>
-          <p ref={ref}>
-            My name is Will Andrée and I'm a front-end developer based in Kansas
-            City. My expertise lies in sculpting unique websites on the
-            industry's fastest tech. I am an enthusiast of design of all types,
-            driven to tackle the hard task of creating truly novel user
-            experiences.
-          </p>
-        </div>
+    <section className="info">
+      <div ref={ref} className="infoBody">
+        {trail1.map(({ x, ...rest }, index) => (
+          <animated.div
+            className="aboutHeader"
+            key={aboutTitle[index]}
+            style={{
+              ...rest,
+              top: x.interpolate((x) => `${x}px`),
+            }}
+          >
+            {aboutTitle[index]}
+          </animated.div>
+        ))}
+        My name is Will Andrée and I'm a front-end developer based in Kansas
+        City. My expertise lies in sculpting unique websites on the industry's
+        fastest tech. I am an enthusiast of design, drawn to the hard task of
+        creating truly novel user experiences.
       </div>
     </section>
   );

@@ -2,7 +2,7 @@
 $warmBlack: rgb(24, 23, 22);
 $warmWhite: rgb(253, 252, 244);
 $mOrange: #c46221;
-$myGrey: rgb(173, 173, 173);
+$myGrey: rgb(151, 151, 151);
 img {
   position: absolute;
   // left: 50%;
@@ -135,8 +135,8 @@ section.header {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 5rem;
   line-height: 1.1;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
   .descriptionContainer {
     position: relative;
     .description {
@@ -169,24 +169,34 @@ section.work {
     margin-right: 1rem;
     .workBody {
       margin-left: 0.75rem;
+      text-align: justify;
       .workHeader {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
         font-family: "corporate condensed regular";
         position: relative;
         // margin-block-end: 1rem;
         display: inline;
         line-height: 1.1;
         padding-right: 1rem;
-        color: $myGrey;
+        color: white;
+        text-transform: uppercase;
       }
       .workItemContainer {
         font-family: "Epilogue", sans-serif;
         font-size: 3rem;
         line-height: 1.1;
-        word-break: break-all;
+
         display: inline;
         position: relative;
-
+        &.calContainer {
+          word-break: break-all;
+        }
+        &.wilContainer {
+          word-break: break-all;
+        }
+        &.mrContainer {
+          word-break: break-all;
+        }
         &:hover {
           color: #dfff7c;
         }
@@ -215,9 +225,8 @@ section.favorites {
   height: 450px;
   display: flex;
   padding-top: 1rem;
-  padding-bottom: 1rem;
   .favoritesContainer {
-    top: -120px;
+    top: -150px;
     position: relative;
     color: white;
     width: 45%;
@@ -314,10 +323,30 @@ section.favorites {
 // ╚═╝╚═╝  ╚═══╝╚═╝      ╚═════╝          ╚═╝
 
 section.info {
-  padding: 0rem 9rem 5rem 10rem;
   position: relative;
   z-index: 17;
   color: white;
+  width: 100%;
+  .infoBody {
+    width: 47%;
+    margin-left: auto;
+    margin-right: 1rem;
+    font-size: 3rem;
+    font-family: "Epilogue", sans-serif;
+    line-height: 1.1;
+    top: -250px;
+    position: relative;
+    text-align: justify;
+    .aboutHeader {
+      font-size: 3.5rem;
+      font-family: "corporate condensed regular";
+      position: relative;
+      text-transform: uppercase;
+      display: inline;
+      padding-right: 1rem;
+      line-height: 1.1;
+    }
+  }
 }
 
 // ███╗   ███╗ ██████╗ ██████╗  █████╗ ██╗         ███████╗████████╗██╗   ██╗██╗     ██╗███╗   ██╗ ██████╗          ██╗
