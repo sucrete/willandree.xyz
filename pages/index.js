@@ -4,8 +4,7 @@ import Contact from "../components/Contact";
 import Work from "../components/Work";
 import Info from "../components/Info";
 import Nav from "../components/Navigation";
-import Skills from "../components/Skills";
-
+import Favorites from "../components/Favorites";
 export default function Home() {
   return (
     <div className="container">
@@ -19,6 +18,7 @@ export default function Home() {
         <Nav />
         <Header />
         <Work />
+        <Favorites />
         <Info />
         {/* <Contact/> */}
       </main>

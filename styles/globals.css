@@ -119,8 +119,8 @@ section.navigation .cone {
   -webkit-animation-delay: 2300ms;
           animation-delay: 2300ms;
   opacity: 0;
-  -webkit-box-shadow: 0 0 20px 10px black;
-          box-shadow: 0 0 20px 10px black;
+  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.664);
+          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.664);
 }
 
 @-webkit-keyframes coneAnim {
@@ -207,6 +207,15 @@ section.work .workContainer .workBody .workItemContainer {
 
 section.work .workContainer .workBody .workItemContainer:hover {
   color: #dfff7c;
+}
+
+section.favorites {
+  position: relative;
+  z-index: 20;
+}
+
+section.favorites .favoritesContainer {
+  color: white;
 }
 
 section.info {

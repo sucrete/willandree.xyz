@@ -2,9 +2,6 @@ import { useInView } from "react-intersection-observer";
 import { Modal } from "react-responsive-modal";
 import { useState } from "react";
 import { useTrail, animated } from "react-spring";
-import React, { useEffect } from "react";
-// import ReactDOM from "react-dom";
-// import locomotiveScroll from "locomotive-scroll";
 import DumpTRUCKContent from "./ModalContent/DumpTRUCK";
 import MaxContent from "./ModalContent/MaxRosen";
 import CalvinContent from "./ModalContent/CalvinTodd";
@@ -24,16 +21,6 @@ const tittle = ["Work"];
 const modals = ["dt", "mr", "otl", "cal", "votr", "wil"];
 
 export default function Work() {
-  // const scrollRef = React.createRef();
-  // useEffect(() => {
-  //   import("locomotive-scroll").then((locomotiveModule) => {
-  //     const scroll = new locomotiveModule.default({
-  //       el: scrollRef.current,
-  //       smooth: true,
-  //       smoothMobile: false,
-  //     });
-  //   });
-  // }, []);
   const [dumpTRUCK, setDumpTRUCK] = useState(false);
   const [maxRosen, setMaxRosen] = useState(false);
   const [OTL, setOTL] = useState(false);
