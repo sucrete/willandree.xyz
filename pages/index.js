@@ -11,7 +11,10 @@ export default function Home() {
       <Head>
         <title>wilondraydotekswhyzee</title>
         <link rel="icon" href="/5532_DuckWaddle.gif" />
-        <script src="https://unpkg.com/blotterjs-fork@0.1.0/build/blotter.min.js"></script>
+        <script
+          src="https://unpkg.com/blotterjs-fork@0.1.0/build/blotter.min.js"
+          defer
+        ></script>
       </Head>
       <main>
         <img src="../roman.png" />

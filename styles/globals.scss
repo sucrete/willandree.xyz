@@ -134,6 +134,7 @@ section.header {
   font-size: 5rem;
   line-height: 1.1;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   .descriptionContainer {
     position: relative;
     .description {
@@ -160,7 +161,6 @@ section.work {
   z-index: 20;
   color: white;
   padding-top: 5rem;
-
   .workContainer {
     width: 50%;
     .workBody {
@@ -200,8 +200,42 @@ section.work {
 section.favorites {
   position: relative;
   z-index: 20;
+  height: 475px;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   .favoritesContainer {
+    position: relative;
     color: white;
+    width: 50%;
+    margin-left: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    font-family: "Epilogue", sans-serif;
+    .rightContainer {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      .boxItem {
+        border-radius: 15px;
+        border: 1px solid white;
+        height: 47%;
+        padding: 2rem;
+        // box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.479);
+        position: relative;
+      }
+    }
+    .boxColumn {
+      width: 48%;
+      border: 1px solid white;
+      border-radius: 15px;
+      padding: 2rem;
+      // box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.479);
+      position: relative;
+    }
   }
 }
 
