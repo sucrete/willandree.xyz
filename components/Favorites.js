@@ -3,21 +3,30 @@ import { useInView } from "react-intersection-observer";
 function Box1() {
   return (
     <div className="designers">
-      <div>designers on my radar</div>
+      <div>favorite designers rn:</div>
     </div>
   );
 }
 function Box2() {
   return (
     <div className="colors">
-      <div>favorite fonts atm</div>
+      <div>favorite fonts atm:</div>
     </div>
   );
 }
 function Box3() {
   return (
-    <div className="fonts">
-      <div>tech/skills</div>
+    <div className="skills">
+      <div>tech/skills:</div>
+      <ul>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
   );
 }
@@ -45,19 +54,7 @@ export default function Favorites() {
   return (
     <section ref={ref} className="favorites">
       <div className="favoritesContainer">
-        {trail2.map(({ x, ...rest }, index) => (
-          <animated.div
-            className="boxColumn"
-            key={`boxColumn${index}`}
-            style={{
-              ...rest,
-              top: x.interpolate((x) => `${x}px`),
-            }}
-          >
-            {oneBox[index]}
-          </animated.div>
-        ))}
-        <div className="rightContainer">
+        <div className="leftContainer">
           {trail.map(({ x, ...rest }, index) => (
             <animated.div
               className={`boxItem boxItem--${index}`}
@@ -71,6 +68,18 @@ export default function Favorites() {
             </animated.div>
           ))}
         </div>
+        {trail2.map(({ x, ...rest }, index) => (
+          <animated.div
+            className="boxColumn"
+            key={`boxColumn${index}`}
+            style={{
+              ...rest,
+              top: x.interpolate((x) => `${x}px`),
+            }}
+          >
+            {oneBox[index]}
+          </animated.div>
+        ))}
       </div>
     </section>
   );
