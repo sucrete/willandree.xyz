@@ -186,8 +186,16 @@ section.work {
         word-break: break-all;
         display: inline;
         position: relative;
+
         &:hover {
           color: #dfff7c;
+        }
+        .innerSpan {
+          text-decoration: none;
+          box-shadow: inset 0 -2px 0px black;
+        }
+        span {
+          text-decoration: solid underline transparent 1px;
         }
       }
     }
@@ -230,8 +238,8 @@ section.favorites {
         border-radius: 15px;
         // border: 1px solid white;
         height: 47%;
-        padding: 1.75rem;
-        padding-left: 1.85rem;
+        padding: 2rem;
+        padding-left: 2.2rem;
         position: relative;
         background: black;
         .fonts {
@@ -284,8 +292,8 @@ section.favorites {
       width: 48%;
       // border: 1px solid white;
       border-radius: 15px;
-      padding: 1.75rem;
-      padding-left: 1.85rem;
+      padding: 2rem;
+      padding-left: 2.2rem;
       position: relative;
       background: black;
       .skills {

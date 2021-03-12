@@ -11,9 +11,10 @@ const schools = [
   "Savannah, GA",
   "Art and Architecture fundamentals",
 ];
+const aboutTitle = ["About"];
 export default function Info() {
   const { ref, inView } = useInView({
-    threshold: 0.7,
+    threshold: 0.75,
     triggerOnce: true,
   });
 
@@ -24,36 +25,35 @@ export default function Info() {
     x: inView ? 0 : 50,
     from: { opacity: 0, x: 50 },
   });
-
+  const trail1 = useTrail(aboutTitle.length, {
+    config: { mass: 5, tension: 2000, friction: 250 },
+    opacity: inView ? 1 : 0,
+    delay: 400,
+    x: inView ? 0 : 50,
+    from: { opacity: 0, x: 50 },
+  });
   return (
     <section id="info" className="info">
-      <span className={`title inView${inView}Title`}>Info</span>
+      {trail1.map(({ x, ...rest }, index) => (
+        <animated.div
+          className="aboutHeader"
+          key={aboutTitle[index]}
+          style={{
+            ...rest,
+            top: x.interpolate((x) => `${x}px`),
+          }}
+        >
+          {aboutTitle[index]}
+        </animated.div>
+      ))}
       <div className="infoBody">
-        <div className={`education inView${inView}`}>
-          <div className="educationHeader">Education</div>
-          <div className="educationBody">
-            {trail.map(({ x, ...rest }, index) => (
-              <animated.div
-                className={`educationItem educationItem--${index}`}
-                key={schools[index]}
-                style={{
-                  ...rest,
-                  transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
-                }}
-              >
-                {schools[index]}
-              </animated.div>
-            ))}
-          </div>
-        </div>
         <div className={`aboutMe inView${inView}AboutMe inView${inView}`}>
-          {" "}
           <p ref={ref}>
-            <span className="aboutMeSpan"></span>Hi there. My name is William
-            Andrée and I'm a web developer based in Kansas City. As a compulsive
-            aggregator of images, color combinations, fonts, and unique modes of
-            expression, I'm invariably drawn to user-facing design. Experienced
-            on the MERN stack.
+            My name is Will Andrée and I'm a front-end developer based in Kansas
+            City. My expertise lies in sculpting unique websites on the
+            industry's fastest tech. I am an enthusiast of design of all types,
+            driven to tackle the hard task of creating truly novel user
+            experiences.
           </p>
         </div>
       </div>

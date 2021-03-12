@@ -142,7 +142,7 @@ export default function Work() {
               }}
               onClick={functions[modals[index]].o}
             >
-              {work[index]}
+              <span className="innerSpan">{work[index]}</span>
               <span> </span>
             </animated.div>
           ))}
