@@ -41,11 +41,16 @@ function Box3() {
       <ul>
         <li>JavaScript</li>
         <li>React</li>
+
+        <li>UX Design</li>
+        <li>SCSS</li>
+        <li>Graphic Design</li>
+        <li>InDesign</li>
+        <li>Photoshop</li>
+        <li>Wordpress</li>
+        <li>Vue</li>
+
         <li>Node</li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
       </ul>
     </div>
   );
