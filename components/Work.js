@@ -10,11 +10,11 @@ import VOTRContent from "./ModalContent/TheVotersCompanion";
 import WillContent from "./ModalContent/WillAndreedotxyz";
 
 const work = [
-  "dumpTRUCK,",
-  "maxrosen.town,",
-  "Old Town Lofts,",
-  "calvintodd.com,",
-  "The Voter's Companion,",
+  "dumpTRUCK",
+  "maxrosen.town",
+  "Old Town Lofts",
+  "calvintodd.com",
+  "The Voter's Companion",
   "willandree.xyz",
 ];
 const tittle = ["Work"];
@@ -132,7 +132,7 @@ export default function Work() {
             </animated.div>
           ))}
           {trail.map(({ x, ...rest }, index) => (
-            <animated.div
+            <animated.span
               className={`workItemContainer ${modals[index]}Container`}
               key={work[index]}
               style={{
@@ -142,9 +142,9 @@ export default function Work() {
               }}
               onClick={functions[modals[index]].o}
             >
-              <span className="innerSpan">{work[index]}</span>
-              <span> </span>
-            </animated.div>
+              <span>{work[index]}</span>
+              <br />
+            </animated.span>
           ))}
         </div>
       </div>

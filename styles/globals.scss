@@ -200,31 +200,24 @@ section.work {
         // }
       }
       .workItemContainer {
-        font-family: "Epilogue", sans-serif;
-        font-size: 2.5rem;
-        line-height: 1.1;
-        display: inline;
+        margin-block-end: 8px;
         position: relative;
-        &.calContainer {
-          word-break: break-all;
-        }
-        &.wilContainer {
-          word-break: break-all;
-        }
-        &.mrContainer {
-          word-break: break-all;
-        }
-        &:hover {
-          color: #dfff7c;
-          .innerSpan {
-            text-decoration: solid underline #dfff7c 2px;
-          }
-        }
-        .innerSpan {
-          text-decoration: solid underline white 2px;
-        }
         span {
-          text-decoration: solid underline transparent 2px;
+          font-family: "Epilogue", sans-serif;
+          font-size: 2.5rem;
+          // line-height: 1.1;
+          position: relative;
+          // background: white;
+          border-radius: 599px;
+          color: white;
+          border: solid 1px white;
+          padding: 10px 26px 4px 26px;
+          transition: all 0.3s ease;
+          margin-left: -15px;
+          &:hover {
+            color: black;
+            background: white;
+          }
         }
       }
     }
@@ -245,7 +238,7 @@ section.favorites {
   display: flex;
   padding-top: 1rem;
   .favoritesContainer {
-    top: -110px;
+    top: -150px;
     position: relative;
     color: white;
     width: 495px;
