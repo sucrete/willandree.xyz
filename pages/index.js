@@ -23,7 +23,7 @@ export default function Home() {
         <Work />
         <Favorites />
         <Info />
-        {/* <Contact/> */}
+        <Contact />
       </main>
     </div>
   );

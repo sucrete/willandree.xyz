@@ -197,7 +197,7 @@ section.work .workContainer .workBody .workHeader {
   display: inline;
   line-height: 1.1;
   padding-right: 1rem;
-  color: white;
+  color: #979797;
   text-transform: uppercase;
 }
 
@@ -247,10 +247,10 @@ section.favorites {
 }
 
 section.favorites .favoritesContainer {
-  top: -150px;
+  top: -170px;
   position: relative;
   color: white;
-  width: 45%;
+  width: 475px;
   margin-right: auto;
   margin-left: 1rem;
   display: -webkit-box;
@@ -371,7 +371,7 @@ section.info .infoBody {
   font-size: 3rem;
   font-family: "Epilogue", sans-serif;
   line-height: 1.1;
-  top: -270px;
+  top: -290px;
   position: relative;
 }
 
@@ -392,12 +392,41 @@ section.info .infoBody .aboutVerbiage:nth-of-type(1) {
 }
 
 section.info .infoBody .aboutVerbiage:nth-of-type(1) span:nth-of-type(1) {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-family: "corporate condensed regular";
   position: relative;
   text-transform: uppercase;
-  padding-right: 1rem;
-  top: -0.8rem;
+  top: -0.5rem;
+  color: #979797;
+}
+
+section.contact {
+  margin-top: -300px;
+}
+
+section.contact .contentContainer {
+  position: relative;
+  top: -300px;
+  padding: 3rem;
+}
+
+section.contact .contentContainer .copyContainer {
+  position: absolute;
+}
+
+section.contact .contentContainer .copyContainer .contactHeader {
+  font-size: 3.2rem;
+  font-family: "corporate condensed regular", serif;
+  line-height: 1.1;
+  color: #979797;
+  text-transform: uppercase;
+}
+
+section.contact .contentContainer .grid {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 0;
 }
 
 .customOverlay {

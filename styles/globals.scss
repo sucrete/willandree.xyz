@@ -178,7 +178,7 @@ section.work {
         display: inline;
         line-height: 1.1;
         padding-right: 1rem;
-        color: white;
+        color: $myGrey;
         text-transform: uppercase;
       }
       .workItemContainer {
@@ -226,10 +226,10 @@ section.favorites {
   display: flex;
   padding-top: 1rem;
   .favoritesContainer {
-    top: -150px;
+    top: -170px;
     position: relative;
     color: white;
-    width: 45%;
+    width: 475px;
     margin-right: auto;
     margin-left: 1rem;
     display: flex;
@@ -336,7 +336,7 @@ section.info {
     font-size: 3rem;
     font-family: "Epilogue", sans-serif;
     line-height: 1.1;
-    top: -270px;
+    top: -290px;
     position: relative;
     // .aboutHeader {
     //   font-size: 3.5rem;
@@ -356,15 +356,49 @@ section.info {
       &:nth-of-type(1) {
         line-height: 0.9;
         span:nth-of-type(1) {
-          font-size: 3.5rem;
+          font-size: 3.2rem;
           font-family: "corporate condensed regular";
           position: relative;
           text-transform: uppercase;
-          padding-right: 1rem;
-          top: -0.8rem;
+          // padding-right: 1rem;
+          top: -0.5rem;
+          color: $myGrey;
           // line-height: 1.1;
         }
       }
+    }
+  }
+}
+
+// ██████╗ ██████╗ ███╗   ██╗████████╗ █████╗  ██████╗████████╗         ██╗
+// ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔══██╗██╔════╝╚══██╔══╝         ╚██╗
+// ██║     ██║   ██║██╔██╗ ██║   ██║   ███████║██║        ██║       █████╗╚██╗
+// ██║     ██║   ██║██║╚██╗██║   ██║   ██╔══██║██║        ██║       ╚════╝██╔╝
+// ╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║╚██████╗   ██║            ██╔╝
+//  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═╝            ╚═╝
+
+section.contact {
+  margin-top: -300px;
+  .contentContainer {
+    position: relative;
+    top: -300px;
+    padding: 3rem;
+    .copyContainer {
+      position: absolute;
+      .contactHeader {
+        font-size: 3.2rem;
+        font-family: "corporate condensed regular", serif;
+        line-height: 1.1;
+        color: $myGrey;
+        text-transform: uppercase;
+      }
+    }
+
+    .grid {
+      position: absolute;
+      width: 500px;
+      left: 0;
+      top: 0;
     }
   }
 }

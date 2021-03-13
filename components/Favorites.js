@@ -65,7 +65,7 @@ export default function Favorites() {
   const trail = useTrail(boxes.length, {
     config: { mass: 5, tension: 2200, friction: 270 },
     opacity: inView ? 1 : 0,
-    delay: 200,
+    delay: 100,
     x: inView ? 0 : 30,
     from: { opacity: 0, x: 30 },
   });
