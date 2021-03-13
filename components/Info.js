@@ -1,32 +1,18 @@
 import { useInView } from "react-intersection-observer";
 import { useTrail, animated } from "react-spring";
-const schools = [
-  "LaunchCodeKC",
-  "Kansas City, MO",
-  "Computer Science/Front-End Development",
-  "Drury University",
-  "Springfield, MO",
-  "Art History, emphasis on Architectural History",
-  "Savannah College of Art and Design",
-  "Savannah, GA",
-  "Art and Architecture fundamentals",
-];
+
 const abootVerbiage = [
-  "About My name is Will",
-  "Andrée and I'm a",
-  "front-end developer",
-  "based in Kansas City.",
-  "My expertise lies in",
-  "creating unique",
-  "websites using",
-  "JavaScript - driven",
-  "technologies. As a",
-  "devotee of all visual",
-  "design, I am keenly",
-  "drawn to the task of",
-  "developing singular",
-  "user - facing",
-  "experiences.",
+  "My name is Will Andrée",
+  "and I'm a front-end",
+  "developer based in Kansas",
+  "City. My expertise lies in",
+  "creating unique websites",
+  "using JavaScript-driven",
+  "technologies. As an avid",
+  "devotee of the visual arts,",
+  "I am keenly drawn to the",
+  "task of producing singular",
+  "user-facing experiences.",
 ];
 const aboutVerbiage = [];
 function unpickVerbiage() {
@@ -39,28 +25,29 @@ unpickVerbiage();
 const aboutTitle = ["About"];
 export default function Info() {
   const { ref, inView } = useInView({
-    threshold: 0.45,
+    threshold: 0.65,
     triggerOnce: true,
   });
 
   const trail = useTrail(aboutVerbiage.length, {
-    config: { mass: 5, tension: 2000, friction: 250 },
+    config: { mass: 5, tension: 2200, friction: 250 },
     opacity: inView ? 1 : 0,
     delay: 500,
-    x: inView ? 0 : 50,
-    from: { opacity: 0, x: 50 },
+    x: inView ? 0 : 10,
+    from: { opacity: 0, x: 10 },
   });
   const trail1 = useTrail(aboutTitle.length, {
-    config: { mass: 5, tension: 2000, friction: 250 },
+    config: { mass: 5, tension: 2200, friction: 250 },
     opacity: inView ? 1 : 0,
     delay: 400,
-    x: inView ? 0 : 50,
-    from: { opacity: 0, x: 50 },
+    x: inView ? 0 : 10,
+    from: { opacity: 0, x: 10 },
   });
+
   return (
     <section className="info">
       <div ref={ref} className="infoBody">
-        {/* {trail1.map(({ x, ...rest }, index) => (
+        {trail1.map(({ x, ...rest }, index) => (
           <animated.div
             className="aboutHeader"
             key={aboutTitle[index]}
@@ -71,7 +58,7 @@ export default function Info() {
           >
             {aboutTitle[index]}
           </animated.div>
-        ))} */}
+        ))}
         {trail.map(({ x, ...rest }, index) => (
           <animated.div
             className="aboutVerbiage"

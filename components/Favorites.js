@@ -66,14 +66,14 @@ export default function Favorites() {
     config: { mass: 5, tension: 2200, friction: 270 },
     opacity: inView ? 1 : 0,
     delay: 100,
-    x: inView ? 0 : 30,
-    from: { opacity: 0, x: 30 },
+    x: inView ? 0 : 10,
+    from: { opacity: 0, x: 10 },
   });
   const trail2 = useTrail(oneBox.length, {
     config: { mass: 5, tension: 2200, friction: 270 },
     opacity: inView ? 1 : 0,
-    x: inView ? 0 : 30,
-    from: { opacity: 0, x: 30 },
+    x: inView ? 0 : 10,
+    from: { opacity: 0, x: 10 },
   });
   return (
     <section ref={ref} className="favorites">

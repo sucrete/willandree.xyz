@@ -65,7 +65,7 @@ section.navigation {
 section.navigation .name {
   width: 100%;
   position: relative;
-  left: 7px;
+  left: 20px;
 }
 
 section.navigation .name .nameItem {
@@ -81,8 +81,8 @@ section.navigation .name:before {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: #eee;
-  -webkit-animation: 900ms lineAnim ease;
-          animation: 900ms lineAnim ease;
+  -webkit-animation: 700ms lineAnim ease;
+          animation: 700ms lineAnim ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 2100ms;
@@ -108,8 +108,8 @@ section.navigation .name:before {
 }
 
 section.navigation .cone {
-  height: 60px;
-  width: 66px;
+  height: 70px;
+  width: 77px;
   position: relative;
   right: 20px;
   background: conic-gradient(from 3.1416rad at 50% 50%, black, white 80%, white);
@@ -159,14 +159,15 @@ section.header {
 
 section.header .descriptionContainer {
   position: relative;
+  left: 0.7rem;
 }
 
 section.header .descriptionContainer .description {
   position: relative;
 }
 
-section.header .descriptionContainer .description #distortion {
-  padding-left: 6px;
+section.header .descriptionContainer .description .dItem .dItemBaby #distortion {
+  padding-left: 2px;
 }
 
 section.header .descriptionContainer .description .dItem {
@@ -180,7 +181,7 @@ section.work {
 }
 
 section.work .workContainer {
-  width: 47%;
+  width: 530px;
   margin-left: auto;
   margin-right: 1rem;
 }
@@ -191,19 +192,20 @@ section.work .workContainer .workBody {
 }
 
 section.work .workContainer .workBody .workHeader {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   font-family: "corporate condensed regular";
   position: relative;
-  display: inline;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  display: block;
   line-height: 1.1;
   padding-right: 1rem;
-  color: #979797;
-  text-transform: uppercase;
+  color: white;
 }
 
 section.work .workContainer .workBody .workItemContainer {
   font-family: "Epilogue", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.1;
   display: inline;
   position: relative;
@@ -225,15 +227,19 @@ section.work .workContainer .workBody .workItemContainer:hover {
   color: #dfff7c;
 }
 
+section.work .workContainer .workBody .workItemContainer:hover .innerSpan {
+  -webkit-text-decoration: solid underline #dfff7c 2px;
+          text-decoration: solid underline #dfff7c 2px;
+}
+
 section.work .workContainer .workBody .workItemContainer .innerSpan {
-  text-decoration: none;
-  -webkit-box-shadow: inset 0 -2px 0px black;
-          box-shadow: inset 0 -2px 0px black;
+  -webkit-text-decoration: solid underline white 2px;
+          text-decoration: solid underline white 2px;
 }
 
 section.work .workContainer .workBody .workItemContainer span {
-  -webkit-text-decoration: solid underline transparent 1px;
-          text-decoration: solid underline transparent 1px;
+  -webkit-text-decoration: solid underline transparent 2px;
+          text-decoration: solid underline transparent 2px;
 }
 
 section.favorites {
@@ -247,10 +253,10 @@ section.favorites {
 }
 
 section.favorites .favoritesContainer {
-  top: -170px;
+  top: -110px;
   position: relative;
   color: white;
-  width: 475px;
+  width: 495px;
   margin-right: auto;
   margin-left: 1rem;
   display: -webkit-box;
@@ -283,10 +289,9 @@ section.favorites .favoritesContainer .leftContainer {
 
 section.favorites .favoritesContainer .leftContainer .boxItem {
   border-radius: 15px;
-  height: 47%;
+  height: 48%;
   padding: 2rem;
   padding-left: 2.2rem;
-  position: relative;
   background: black;
   position: relative;
 }
@@ -368,11 +373,20 @@ section.info .infoBody {
   width: 47%;
   margin-left: auto;
   margin-right: 1rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Epilogue", sans-serif;
   line-height: 1.1;
-  top: -290px;
+  top: -260px;
   position: relative;
+}
+
+section.info .infoBody .aboutHeader {
+  font-size: 3.5rem;
+  font-family: "corporate condensed regular";
+  position: relative;
+  color: white;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
 }
 
 section.info .infoBody .aboutVerbiage {
@@ -395,37 +409,47 @@ section.info .infoBody .aboutVerbiage:nth-of-type(1) span:nth-of-type(1) {
   font-size: 3.2rem;
   font-family: "corporate condensed regular";
   position: relative;
-  text-transform: uppercase;
   top: -0.5rem;
   color: #979797;
 }
 
 section.contact {
-  margin-top: -300px;
+  margin-top: -70px;
 }
 
 section.contact .contentContainer {
   position: relative;
   top: -300px;
-  padding: 3rem;
 }
 
 section.contact .contentContainer .copyContainer {
   position: absolute;
+  padding: 3rem;
+  padding-top: 2rem;
+}
+
+section.contact .contentContainer .copyContainer .educationHeader {
+  font-size: 3.5rem;
+  font-family: "corporate condensed regular", serif;
+  line-height: 1.1;
+  color: white;
+  z-index: 10;
+  position: relative;
 }
 
 section.contact .contentContainer .copyContainer .contactHeader {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   font-family: "corporate condensed regular", serif;
   line-height: 1.1;
-  color: #979797;
-  text-transform: uppercase;
+  color: white;
+  position: relative;
+  z-index: 10;
 }
 
-section.contact .contentContainer .grid {
+section.contact .contentContainer .grid img {
   position: absolute;
   width: 500px;
-  left: 0;
+  left: 15px;
   top: 0;
 }
 

@@ -103,17 +103,17 @@ export default function Work() {
     triggerOnce: true,
   });
   const trail = useTrail(work.length, {
-    config: { mass: 5, tension: 2000, friction: 220 },
+    config: { mass: 5, tension: 2200, friction: 200 },
     opacity: inView ? 1 : 0,
     delay: 400,
-    x: inView ? 0 : 30,
-    from: { opacity: 0, x: 30 },
+    x: inView ? 0 : 10,
+    from: { opacity: 0, x: 10 },
   });
   const trail2 = useTrail(tittle.length, {
-    config: { mass: 5, tension: 2000, friction: 250 },
+    config: { mass: 5, tension: 2200, friction: 200 },
     opacity: inView ? 1 : 0,
-    x: inView ? 0 : 30,
-    from: { opacity: 0, x: 30 },
+    x: inView ? 0 : 10,
+    from: { opacity: 0, x: 10 },
   });
   return (
     <section className="work">
