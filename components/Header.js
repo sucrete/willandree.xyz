@@ -24,7 +24,7 @@ export default function Header() {
   const trail = useTrail(descriptionItems.length, {
     config: { mass: 5, tension: 2200, friction: 250 },
     opacity: 1,
-    delay: 500,
+    delay: 700,
     x: 0,
     from: { opacity: 0, x: 50 },
   });

@@ -6,8 +6,8 @@ img {
           animation: 2000ms entranceAnimation1 ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
 }
 
 html,
@@ -57,7 +57,7 @@ section.navigation {
   text-align: left;
   z-index: 11;
   width: 100%;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   font-family: "corporate condensed regular";
   width: 100%;
 }
@@ -81,8 +81,8 @@ section.navigation .name:before {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: #eee;
-  -webkit-animation: 500ms lineAnim ease;
-          animation: 500ms lineAnim ease;
+  -webkit-animation: 900ms lineAnim ease;
+          animation: 900ms lineAnim ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 2100ms;
@@ -117,8 +117,8 @@ section.navigation .cone {
           animation: 700ms coneAnim ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2300ms;
-          animation-delay: 2300ms;
+  -webkit-animation-delay: 2900ms;
+          animation-delay: 2900ms;
   opacity: 0;
   -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
           box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
@@ -127,22 +127,22 @@ section.navigation .cone {
 @-webkit-keyframes coneAnim {
   from {
     opacity: 0;
-    top: -20px;
+    top: 10px;
   }
   to {
     opacity: 1;
-    top: 10px;
+    top: 20px;
   }
 }
 
 @keyframes coneAnim {
   from {
     opacity: 0;
-    top: -20px;
+    top: 10px;
   }
   to {
     opacity: 1;
-    top: 10px;
+    top: 20px;
   }
 }
 
@@ -288,6 +288,7 @@ section.favorites .favoritesContainer .leftContainer .boxItem {
   padding-left: 2.2rem;
   position: relative;
   background: black;
+  position: relative;
 }
 
 section.favorites .favoritesContainer .leftContainer .boxItem .fonts div {
@@ -360,6 +361,7 @@ section.info {
   z-index: 17;
   color: white;
   width: 100%;
+  z-index: 20;
 }
 
 section.info .infoBody {
@@ -369,19 +371,33 @@ section.info .infoBody {
   font-size: 3rem;
   font-family: "Epilogue", sans-serif;
   line-height: 1.1;
-  top: -250px;
+  top: -270px;
   position: relative;
-  text-align: justify;
 }
 
-section.info .infoBody .aboutHeader {
+section.info .infoBody .aboutVerbiage {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 1.1;
+}
+
+section.info .infoBody .aboutVerbiage:nth-of-type(1) {
+  line-height: 0.9;
+}
+
+section.info .infoBody .aboutVerbiage:nth-of-type(1) span:nth-of-type(1) {
   font-size: 3.5rem;
   font-family: "corporate condensed regular";
   position: relative;
   text-transform: uppercase;
-  display: inline;
   padding-right: 1rem;
-  line-height: 1.1;
+  top: -0.8rem;
 }
 
 .customOverlay {

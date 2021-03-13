@@ -11,17 +11,41 @@ const schools = [
   "Savannah, GA",
   "Art and Architecture fundamentals",
 ];
+const abootVerbiage = [
+  "About My name is Will",
+  "Andrée and I'm a",
+  "front-end developer",
+  "based in Kansas City.",
+  "My expertise lies in",
+  "creating unique",
+  "websites on the",
+  "industry's fastest",
+  "tech. I am an",
+  "enthusiast of design,",
+  "drawn to the hard",
+  "task of creating truly",
+  "novel user",
+  "experiences.",
+];
+const aboutVerbiage = [];
+function unpickVerbiage() {
+  abootVerbiage.forEach((string) => {
+    let bot = string.split(" ");
+    aboutVerbiage.push(bot);
+  });
+}
+unpickVerbiage();
 const aboutTitle = ["About"];
 export default function Info() {
   const { ref, inView } = useInView({
-    threshold: 0.75,
+    threshold: 0.45,
     triggerOnce: true,
   });
 
-  const trail = useTrail(schools.length, {
+  const trail = useTrail(aboutVerbiage.length, {
     config: { mass: 5, tension: 2000, friction: 250 },
     opacity: inView ? 1 : 0,
-    delay: 400,
+    delay: 500,
     x: inView ? 0 : 50,
     from: { opacity: 0, x: 50 },
   });
@@ -35,7 +59,7 @@ export default function Info() {
   return (
     <section className="info">
       <div ref={ref} className="infoBody">
-        {trail1.map(({ x, ...rest }, index) => (
+        {/* {trail1.map(({ x, ...rest }, index) => (
           <animated.div
             className="aboutHeader"
             key={aboutTitle[index]}
@@ -46,11 +70,25 @@ export default function Info() {
           >
             {aboutTitle[index]}
           </animated.div>
+        ))} */}
+        {trail.map(({ x, ...rest }, index) => (
+          <animated.div
+            className="aboutVerbiage"
+            key={aboutVerbiage[index]}
+            style={{
+              ...rest,
+              top: x.interpolate((x) => `${x}px`),
+            }}
+          >
+            {aboutVerbiage[index].map((value, index) => (
+              <span key={index}>{value}</span>
+            ))}
+          </animated.div>
         ))}
-        My name is Will Andrée and I'm a front-end developer based in Kansas
+        {/* My name is Will Andrée and I'm a front-end developer based in Kansas
         City. My expertise lies in sculpting unique websites on the industry's
         fastest tech. I am an enthusiast of design, drawn to the hard task of
-        creating truly novel user experiences.
+        creating truly novel user experiences. */}
       </div>
     </section>
   );
