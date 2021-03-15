@@ -76,7 +76,7 @@ export default function Favorites() {
     from: { opacity: 0, x: 20 },
   });
   return (
-    <section ref={ref} className="favorites">
+    <div ref={ref} className="favorites">
       <div className="favoritesContainer">
         <div className="leftContainer">
           {trail.map(({ x, ...rest }, index) => (
@@ -105,6 +105,6 @@ export default function Favorites() {
           </animated.div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

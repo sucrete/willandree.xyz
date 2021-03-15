@@ -2,6 +2,9 @@ import { useInView } from "react-intersection-observer";
 import { Modal } from "react-responsive-modal";
 import { useState } from "react";
 import { useTrail, animated } from "react-spring";
+
+import Favorites from "./Favorites";
+
 import DumpTRUCKContent from "./ModalContent/DumpTRUCK";
 import MaxContent from "./ModalContent/MaxRosen";
 import CalvinContent from "./ModalContent/CalvinTodd";
@@ -148,13 +151,13 @@ export default function Work() {
           ))}
         </div>
       </div>
+      <Favorites />
       <MyModal bool={dumpTRUCK} closeFunction={functions.dt.c}>
         <DumpTRUCKContent />
       </MyModal>
       <MyModal bool={maxRosen} closeFunction={functions.mr.c}>
         <MaxContent />
       </MyModal>
-
       <MyModal bool={OTL} closeFunction={functions.otl.c}>
         <OTLContent />
       </MyModal>

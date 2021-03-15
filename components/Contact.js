@@ -70,14 +70,14 @@ export default function Contact() {
           ))}
           {trail3.map(({ x, ...rest }, index) => (
             <animated.div
-              className="educationItem"
+              className={`educationItem educationItem--${index}`}
               key={schools[index]}
               style={{
                 ...rest,
                 top: x.interpolate((x) => `${x}px`),
               }}
             >
-              Education
+              {schools[index]}
             </animated.div>
           ))}
           {trail1.map(({ x, ...rest }, index) => (
