@@ -14,7 +14,7 @@ const schools = [
 
 export default function Contact() {
   const { ref, inView } = useInView({
-    threshold: 0.65,
+    threshold: 1,
     triggerOnce: true,
   });
   // GRID 👇
@@ -53,7 +53,7 @@ export default function Contact() {
   });
 
   return (
-    <section ref={ref} id="contact" className="contact">
+    <section id="contact" className="contact">
       <div className="contentContainer">
         <div className="copyContainer">
           {trail.map(({ x, ...rest }, index) => (
@@ -96,6 +96,7 @@ export default function Contact() {
             <animated.div
               className="contactHeader title"
               key="contact"
+              ref={ref}
               style={{
                 ...rest,
                 top: x.interpolate((x) => `${x}px`),
