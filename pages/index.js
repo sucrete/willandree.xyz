@@ -20,8 +20,8 @@ export default function Home() {
         <img src="../roman.png" />
         <Nav />
         <Header />
-        <Work />
         <Favorites />
+        <Work />
         <Info />
         <Contact />
       </main>

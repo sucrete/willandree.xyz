@@ -25,7 +25,7 @@ unpickVerbiage();
 const aboutTitle = ["About"];
 export default function Info() {
   const { ref, inView } = useInView({
-    threshold: 0.65,
+    threshold: 0.45,
     triggerOnce: true,
   });
 
@@ -49,7 +49,7 @@ export default function Info() {
       <div ref={ref} className="infoBody">
         {trail1.map(({ x, ...rest }, index) => (
           <animated.div
-            className="aboutHeader"
+            className="aboutHeader title"
             key={aboutTitle[index]}
             style={{
               ...rest,

@@ -4,12 +4,13 @@ function DistText() {
   return (
     <DistortionText
       id="distortion"
-      fontSize={72}
+      fontSize={100}
       noiseAmplitude={0.05}
       distortX={0.9}
       fill="#dfff7c"
       fontFamily="Epilogue"
       text="Novelty"
+      lineHeight={1.1}
     />
   );
 }

@@ -24,10 +24,10 @@ export default function Contact() {
     from: { opacity: 0, x: 10 },
   });
   const trail1 = useTrail(education.length, {
-    config: { mass: 5, tension: 2200, friction: 250 },
+    config: { mass: 5, tension: 2200, friction: 330 },
     opacity: inView ? 1 : 0,
-    x: inView ? 0 : 10,
-    from: { opacity: 0, x: 10 },
+    x: inView ? 0 : 20,
+    from: { opacity: 0, x: 20 },
   });
   const trail2 = useTrail(education.length, {
     config: { mass: 5, tension: 2200, friction: 250 },
@@ -41,7 +41,7 @@ export default function Contact() {
         <div className="copyContainer">
           {trail.map(({ x, ...rest }, index) => (
             <animated.div
-              className="educationHeader"
+              className="educationHeader title"
               key={education[index]}
               style={{
                 ...rest,
@@ -65,7 +65,7 @@ export default function Contact() {
           ))}
           {trail2.map(({ x, ...rest }, index) => (
             <animated.div
-              className="contactHeader"
+              className="contactHeader title"
               key="contact"
               style={{
                 ...rest,

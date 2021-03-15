@@ -121,7 +121,7 @@ export default function Work() {
         <div ref={ref} className="workBody">
           {trail2.map(({ x, ...rest }, index) => (
             <animated.div
-              className="workHeader"
+              className="workHeader title"
               key={tittle[index]}
               style={{
                 ...rest,
