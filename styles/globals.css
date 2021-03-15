@@ -44,6 +44,17 @@ section {
   margin: 0 auto;
 }
 
+.container {
+  overflow: hidden;
+  position: relative;
+}
+
+.container main {
+  height: 2100px;
+  overflow: hidden;
+  position: relative;
+}
+
 .title {
   font-size: 3rem;
   font-family: "drucc", serif;
@@ -234,6 +245,7 @@ section.work .workContainer .workBody .workItemContainer span {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: white;
+  white-space: nowrap;
 }
 
 section.work .workContainer .workBody .workItemContainer span:hover {
@@ -377,6 +389,8 @@ section.info {
   width: 100%;
   z-index: 5;
   padding-top: 3rem;
+  height: auto;
+  overflow: visible;
 }
 
 section.info .infoBody {
