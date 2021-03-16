@@ -4,7 +4,6 @@ import Contact from "../components/Contact";
 import Work from "../components/Work";
 import Info from "../components/Info";
 import Nav from "../components/Navigation";
-import Favorites from "../components/Favorites";
 export default function Home() {
   return (
     <div className="container">

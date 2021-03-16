@@ -19,7 +19,7 @@ export default function Contact() {
   });
   // GRID 👇
   const trail1 = useTrail(1, {
-    config: { mass: 5, tension: 2200, friction: 330 },
+    config: { mass: 5, tension: 2200, friction: 360 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 20,
     from: { opacity: 0, x: 20 },

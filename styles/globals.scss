@@ -53,7 +53,7 @@ section {
   overflow: hidden;
   position: relative;
   main {
-    height: 2100px;
+    height: 2200px;
     overflow: hidden;
     position: relative;
   }
@@ -149,28 +149,19 @@ section.navigation {
 section.header {
   position: relative;
   width: 100%;
-  color: #dfff7c;
+  // color: #dfff7c;
+  color: white;
   font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 6.5rem;
-  line-height: 1;
+  font-size: 6.4rem;
+  line-height: 1.08;
+  font-weight: 450;
   padding-top: 0.5rem;
   .descriptionContainer {
     position: relative;
     left: 0.7rem;
     .description {
       position: relative;
-      .dItem {
-        .dItemBaby {
-          #distortion {
-            padding-left: 2px;
-            canvas {
-              // height: 50px;
-            }
-          }
-        }
-      }
-
       .dItem {
         position: relative;
       }
@@ -526,7 +517,7 @@ section.contact {
     outline: none !important;
     &:hover {
       svg {
-        fill: tomato !important;
+        fill: #dfff7c !important;
       }
     }
     svg {
@@ -538,7 +529,23 @@ section.contact {
     padding: 1.5rem 5.5rem;
     background: $warmWhite;
     height: 100%;
-
+    position: relative;
+    .modalContent {
+      height: 500px;
+      position: relative;
+      .modalImagesContainer {
+        height: 500px;
+        position: relative;
+        .modalImage {
+          height: auto;
+          width: 500px;
+          position: absolute;
+          will-change: opacity transform;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
     .modalHeader {
       color: $warmBlack;
       font-family: "Epilogue";

@@ -1,25 +1,11 @@
 import { useTrail, animated } from "react-spring";
-import { DistortionText } from "react-text-fun";
-function DistText() {
-  return (
-    <DistortionText
-      id="distortion"
-      fontSize={100}
-      noiseAmplitude={0.05}
-      distortX={0.9}
-      fill="#dfff7c"
-      fontFamily="Epilogue"
-      text="Novelty"
-      lineHeight={1.1}
-    />
-  );
-}
+
 export default function Header() {
   const descriptionItems = [
     "Front-end Developer/",
     "Graphic Designer/ UX",
     "Designer/ Student of",
-    <DistText />,
+    "Novelty",
   ];
 
   const trail = useTrail(descriptionItems.length, {
