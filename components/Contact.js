@@ -27,7 +27,7 @@ export default function Contact() {
 
   // EDUCATION HEADER 👇
   const trail = useTrail(1, {
-    config: { mass: 5, tension: 2200, friction: 250 },
+    config: { mass: 5, tension: 2200, friction: 220 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 10,
     delay: 200,
@@ -36,7 +36,7 @@ export default function Contact() {
 
   // SCHOOLS 👇
   const trail3 = useTrail(schools.length, {
-    config: { mass: 5, tension: 2200, friction: 220 },
+    config: { mass: 5, tension: 2200, friction: 200 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 10,
     delay: 300,
@@ -45,7 +45,7 @@ export default function Contact() {
 
   // CONTACT HEADER 👇
   const trail2 = useTrail(1, {
-    config: { mass: 5, tension: 2200, friction: 250 },
+    config: { mass: 5, tension: 2200, friction: 220 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 10,
     delay: 500,
