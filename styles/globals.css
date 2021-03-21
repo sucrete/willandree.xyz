@@ -39,9 +39,10 @@ body {
 }
 
 section {
-  padding: 0rem clamp(0.5rem, 15vw, 10rem);
+  width: 1077px;
   display: block;
-  margin: 0 auto;
+  margin: auto;
+  position: relative;
 }
 
 .container {
@@ -74,8 +75,7 @@ section {
 }
 
 section.navigation {
-  position: relative;
-  padding-top: 4rem;
+  padding-top: 2.7rem;
   padding-bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,10 +86,8 @@ section.navigation {
           justify-content: space-between;
   text-align: left;
   z-index: 11;
-  width: 100%;
   font-size: 3.2rem;
   font-family: "corporate condensed regular";
-  width: 100%;
 }
 
 section.navigation img {
@@ -149,7 +147,7 @@ section.navigation .cone {
   height: 70px;
   width: 77px;
   position: relative;
-  right: 30px;
+  right: 15px;
   background: conic-gradient(from 3.1416rad at 50% 50%, black, white 80%, white);
   -webkit-animation: 700ms coneAnim ease;
           animation: 700ms coneAnim ease;
@@ -185,11 +183,9 @@ section.navigation .cone {
 }
 
 section.header {
-  position: relative;
-  width: 100%;
   color: white;
   font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 6.4rem;
+  font-size: 6rem;
   line-height: 1.08;
   font-weight: 450;
   padding-top: 0.5rem;
@@ -197,7 +193,7 @@ section.header {
 
 section.header .descriptionContainer {
   position: relative;
-  left: 0.7rem;
+  left: 1.2rem;
 }
 
 section.header .descriptionContainer .description {
@@ -206,7 +202,7 @@ section.header .descriptionContainer .description {
 
 section.header .descriptionContainer .description .dItem {
   position: relative;
-  height: 110px;
+  height: 100px;
 }
 
 section.header .descriptionContainer .description .dItem .dItemBaby {
@@ -214,7 +210,6 @@ section.header .descriptionContainer .description .dItem .dItemBaby {
 }
 
 section.work {
-  position: relative;
   z-index: 20;
   color: white;
   padding-top: 2rem;
@@ -409,10 +404,8 @@ section.work div.favorites .favoritesContainer .boxColumn .skills ul li {
 }
 
 section.info {
-  position: relative;
   z-index: 17;
   color: white;
-  width: 100%;
   z-index: 5;
   padding-top: 7rem;
   height: auto;
@@ -476,8 +469,8 @@ section.contact .contentContainer {
 
 section.contact .contentContainer .copyContainer {
   position: absolute;
-  padding: 3rem;
-  padding-top: 2rem;
+  padding: 2rem;
+  padding-top: 1.5rem;
 }
 
 section.contact .contentContainer .copyContainer .educationHeader {
@@ -485,8 +478,8 @@ section.contact .contentContainer .copyContainer .educationHeader {
   color: white;
   z-index: 10;
   position: relative;
-  -webkit-margin-after: 0.5rem;
-          margin-block-end: 0.5rem;
+  -webkit-margin-after: 0.7rem;
+          margin-block-end: 0.7rem;
 }
 
 section.contact .contentContainer .copyContainer .educationItem {
@@ -499,46 +492,18 @@ section.contact .contentContainer .copyContainer .educationItem {
   padding-left: 0.2rem;
 }
 
-section.contact .contentContainer .copyContainer .educationItem--0 {
+section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
   font-family: "Epilogue", sans-serif;
   font-weight: 600;
 }
 
-section.contact .contentContainer .copyContainer .educationItem--1 {
+section.contact .contentContainer .copyContainer .educationItem--1, section.contact .contentContainer .copyContainer .educationItem--4, section.contact .contentContainer .copyContainer .educationItem--7 {
   margin-top: -3px;
 }
 
-section.contact .contentContainer .copyContainer .educationItem--2 {
-  -webkit-margin-after: 0.7rem;
-          margin-block-end: 0.7rem;
-}
-
-section.contact .contentContainer .copyContainer .educationItem--3 {
-  font-family: "Epilogue", sans-serif;
-  font-weight: 600;
-}
-
-section.contact .contentContainer .copyContainer .educationItem--4 {
-  margin-top: -3px;
-}
-
-section.contact .contentContainer .copyContainer .educationItem--5 {
-  -webkit-margin-after: 0.7rem;
-          margin-block-end: 0.7rem;
-}
-
-section.contact .contentContainer .copyContainer .educationItem--6 {
-  font-family: "Epilogue", sans-serif;
-  font-weight: 600;
-}
-
-section.contact .contentContainer .copyContainer .educationItem--7 {
-  margin-top: -3px;
-}
-
-section.contact .contentContainer .copyContainer .educationItem--8 {
-  -webkit-margin-after: 0.7rem;
-          margin-block-end: 0.7rem;
+section.contact .contentContainer .copyContainer .educationItem--2, section.contact .contentContainer .copyContainer .educationItem--5, section.contact .contentContainer .copyContainer .educationItem--8 {
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo {
@@ -551,8 +516,8 @@ section.contact .contentContainer .copyContainer .contactInfo {
 section.contact .contentContainer .copyContainer .contactInfo--0 {
   font-size: 3rem;
   font-family: "drucc", serif;
-  -webkit-margin-after: 0.5rem;
-          margin-block-end: 0.5rem;
+  -webkit-margin-after: 0.7rem;
+          margin-block-end: 0.7rem;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 {
@@ -566,8 +531,6 @@ section.contact .contentContainer .copyContainer .contactInfo--1 {
 section.contact .contentContainer .copyContainer .contactInfo--1 a {
   text-decoration: none;
   color: white;
-  -webkit-transition: 300ms color ease;
-  transition: 300ms color ease;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
@@ -582,8 +545,8 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a:hover {
 section.contact .contentContainer .grid img {
   position: absolute;
   width: 500px;
-  left: 15px;
   top: 0;
+  overflow: visible;
 }
 
 .customOverlay {

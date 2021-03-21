@@ -13,7 +13,7 @@ export default function Header() {
     opacity: 1,
     delay: 700,
     x: 0,
-    height: 110,
+    height: 100,
     from: { opacity: 0, x: 50, height: 0 },
   });
 
