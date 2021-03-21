@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300..800&display=swap");
 $warmBlack: rgb(24, 23, 22);
 $warmWhite: rgb(253, 252, 244);
-$mOrange: #c46221;
+$myOrange: #c46221;
 $myGrey: rgb(151, 151, 151);
 
 img {
@@ -54,6 +54,7 @@ section {
   // overflow: hidden;
   position: relative;
   height: 100vh;
+
   main {
     // overflow: hidden;
     position: relative;
@@ -63,6 +64,17 @@ section {
 .title {
   font-size: 3rem;
   font-family: "drucc", serif;
+}
+.cursor {
+  width: auto;
+  height: 70px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  &--hidden {
+    visibility: hidden;
+  }
 }
 // ███╗   ██╗ █████╗ ██╗   ██╗██╗ ██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗         ██╗
 // ████╗  ██║██╔══██╗██║   ██║██║██╔════╝ ██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║         ╚██╗
@@ -108,7 +120,7 @@ section.navigation {
       background-color: #eee;
       animation: 700ms lineAnim ease;
       animation-fill-mode: forwards;
-      animation-delay: 2100ms;
+      animation-delay: 2000ms;
     }
     @keyframes lineAnim {
       from {
@@ -173,6 +185,10 @@ section.header {
       position: relative;
       .dItem {
         position: relative;
+        height: 110px;
+        .dItemBaby {
+          overflow: hidden;
+        }
       }
     }
   }
@@ -196,7 +212,7 @@ section.work {
   position: relative;
   z-index: 20;
   color: white;
-  padding-top: 0rem;
+  padding-top: 2rem;
   display: flex;
   align-content: space-between;
   .workContainer {
@@ -204,14 +220,14 @@ section.work {
     margin-right: auto;
     margin-left: 1rem;
     z-index: 1;
-    transform: translateY(100px);
+    position: relative;
+    top: 50px;
+    transform: translateY(75px);
     .workBody {
       margin-left: -0.25rem;
       z-index: 2;
       .workHeader {
         font-size: 3.5rem;
-        font-family: "drucc";
-        // color: rgb(153, 81, 153);
         position: relative;
         margin-block-end: 1rem;
         display: block;
@@ -236,7 +252,7 @@ section.work {
           background: white;
           white-space: nowrap;
           &:hover {
-            background: #dfff7c;
+            background: rgb(223, 255, 124);
           }
         }
       }
@@ -359,11 +375,11 @@ section.info {
   color: white;
   width: 100%;
   z-index: 5;
-  padding-top: 3rem;
+  padding-top: 7rem;
   height: auto;
   overflow: visible;
   .infoBody {
-    width: 530px;
+    width: 500px;
     margin-left: auto;
     margin-right: 1rem;
     font-size: 2.5rem;
@@ -386,7 +402,7 @@ section.info {
       justify-content: space-between;
       line-height: 0.95;
       font-family: "corporate condensed regular";
-      font-size: 3.7rem;
+      font-size: 3.5rem;
       &:nth-of-type(1) {
         line-height: 0.9;
         span:nth-of-type(1) {
@@ -412,7 +428,7 @@ section.info {
 //  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═╝            ╚═╝
 
 section.contact {
-  margin-top: -370px;
+  margin-top: -470px;
   height: 100%;
   .contentContainer {
     position: relative;
@@ -425,7 +441,7 @@ section.contact {
         color: white;
         z-index: 10;
         position: relative;
-        margin-block-end: 5px;
+        margin-block-end: 0.5rem;
       }
       .educationItem {
         font-family: "corporate condensed regular";
@@ -433,7 +449,6 @@ section.contact {
         line-height: 1.1;
         color: white;
         z-index: 10;
-
         position: relative;
         padding-left: 0.2rem;
         &--0 {
@@ -444,7 +459,7 @@ section.contact {
           margin-top: -3px;
         }
         &--2 {
-          margin-block-end: 0.5rem;
+          margin-block-end: 0.7rem;
         }
         &--3 {
           font-family: "Epilogue", sans-serif;
@@ -454,7 +469,7 @@ section.contact {
           margin-top: -3px;
         }
         &--5 {
-          margin-block-end: 0.5rem;
+          margin-block-end: 0.7rem;
         }
         &--6 {
           font-family: "Epilogue", sans-serif;
@@ -464,16 +479,40 @@ section.contact {
           margin-top: -3px;
         }
         &--8 {
-          margin-block-end: 0.5rem;
+          margin-block-end: 0.7rem;
         }
       }
 
-      .contactHeader {
+      .contactInfo {
         line-height: 1.1;
         color: white;
         position: relative;
         z-index: 10;
         // text-transform: uppercase;
+        &--0 {
+          font-size: 3rem;
+          font-family: "drucc", serif;
+          margin-block-end: 0.5rem;
+        }
+        &--1 {
+          font-family: "Epilogue", sans-serif;
+          font-weight: 600;
+          font-size: 1.5rem;
+          position: relative;
+          padding-left: 0.3rem;
+          a {
+            text-decoration: none;
+            color: white;
+            transition: 300ms color ease;
+            &:visited {
+              color: white;
+            }
+            &:hover {
+              color: rgb(117, 117, 117);
+              cursor: none;
+            }
+          }
+        }
       }
     }
     .grid {
@@ -511,14 +550,13 @@ section.contact {
   margin: 0px !important;
   .projectDesignation {
     background-color: $warmWhite !important;
-    padding: 11px;
-    padding-left: 22px;
+    padding: 12.5px 0 10px 22px;
     display: block;
     color: $warmBlack;
     font-size: 1.3em;
     font-family: "Epilogue";
     font-weight: 500;
-    letter-spacing: 0.05em;
+    // letter-spacing: 0.05em;
     border-bottom: solid 1px rgb(26, 25, 24);
   }
   button {

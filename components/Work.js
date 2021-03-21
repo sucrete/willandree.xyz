@@ -18,7 +18,6 @@ const work = [
   "Old Town Lofts",
   "calvintodd.com",
   "The Voter's Companion",
-  "willandree.xyz",
 ];
 const tittle = ["Work"];
 const modals = ["dt", "mr", "otl", "cal", "votr", "wil"];
@@ -102,13 +101,13 @@ export default function Work() {
     </Modal>
   );
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.65,
     triggerOnce: true,
   });
   const trail = useTrail(work.length, {
     config: { mass: 5, tension: 2200, friction: 200 },
     opacity: inView ? 1 : 0,
-    delay: 400,
+    delay: 100,
     x: inView ? 0 : 10,
     from: { opacity: 0, x: 10 },
   });

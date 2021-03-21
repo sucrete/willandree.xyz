@@ -6,7 +6,7 @@ export default function Navigation() {
     config: { mass: 5, tension: 2000, friction: 250 },
     opacity: 1,
     x: 0,
-    delay: 3000,
+    delay: 2500,
     from: { opacity: 0, x: -10 },
   });
   return (

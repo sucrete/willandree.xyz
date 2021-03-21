@@ -8,7 +8,7 @@ const abootVerbiage = [
   "City. My expertise lies in",
   "creating unique websites",
   "using JavaScript-driven",
-  "technologies. As an avid",
+  "technologies. As a",
   "devotee of the visual arts,",
   "I am keenly drawn to the",
   "task of producing singular",
@@ -25,7 +25,7 @@ unpickVerbiage();
 const aboutTitle = ["About"];
 export default function Info() {
   const { ref, inView } = useInView({
-    threshold: 0.45,
+    threshold: 0.35,
     triggerOnce: true,
   });
 

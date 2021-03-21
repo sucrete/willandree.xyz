@@ -59,18 +59,18 @@ export default function Favorites() {
   const boxes = [<Box1 />, <Box2 />];
   const oneBox = [<Box3 />];
   const { ref, inView } = useInView({
-    threshold: 0.55,
+    threshold: 0.5,
     triggerOnce: true,
   });
   const trail = useTrail(boxes.length, {
-    config: { mass: 5, tension: 2200, friction: 330 },
+    config: { mass: 5, tension: 1600, friction: 300 },
     opacity: inView ? 1 : 0,
     delay: 100,
     x: inView ? 0 : 20,
     from: { opacity: 0, x: 20 },
   });
   const trail2 = useTrail(oneBox.length, {
-    config: { mass: 5, tension: 2200, friction: 330 },
+    config: { mass: 5, tension: 1600, friction: 300 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 20,
     from: { opacity: 0, x: 20 },
@@ -78,6 +78,18 @@ export default function Favorites() {
   return (
     <div ref={ref} className="favorites">
       <div className="favoritesContainer">
+        {trail2.map(({ x, ...rest }, index) => (
+          <animated.div
+            className="boxColumn"
+            key={`boxColumn${index}`}
+            style={{
+              ...rest,
+              top: x.interpolate((x) => `${x}px`),
+            }}
+          >
+            {oneBox[index]}
+          </animated.div>
+        ))}
         <div className="leftContainer">
           {trail.map(({ x, ...rest }, index) => (
             <animated.div
@@ -92,18 +104,6 @@ export default function Favorites() {
             </animated.div>
           ))}
         </div>
-        {trail2.map(({ x, ...rest }, index) => (
-          <animated.div
-            className="boxColumn"
-            key={`boxColumn${index}`}
-            style={{
-              ...rest,
-              top: x.interpolate((x) => `${x}px`),
-            }}
-          >
-            {oneBox[index]}
-          </animated.div>
-        ))}
       </div>
     </div>
   );

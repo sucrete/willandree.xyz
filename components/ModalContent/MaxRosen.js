@@ -1,7 +1,7 @@
 export default function MaxRosen() {
   return (
     <>
-      <div className="projectDesignation">ii</div>
+      <div className="projectDesignation">2020-</div>
       <div className="modalBody maxRosen">
         <h1 className="modalHeader">maxrosen.town</h1>
         <div className="modalSubheading">
