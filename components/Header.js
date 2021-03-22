@@ -9,11 +9,11 @@ export default function Header() {
   ];
 
   const trail = useTrail(descriptionItems.length, {
-    config: { mass: 5, tension: 2200, friction: 235 },
+    config: { mass: 7, tension: 2200, friction: 225 },
     opacity: 1,
     delay: 700,
     x: 0,
-    height: 100,
+    height: 110,
     from: { opacity: 0, x: 50, height: 0 },
   });
 

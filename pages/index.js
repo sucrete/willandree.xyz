@@ -4,6 +4,8 @@ import Contact from "../components/Contact";
 import Work from "../components/Work";
 import Info from "../components/Info";
 import Nav from "../components/Navigation";
+import Resume from "../components/Resume";
+
 export default function Home() {
   return (
     <div className="container">
@@ -17,6 +19,7 @@ export default function Home() {
         <Work />
         <Info />
         <Contact />
+        <Resume />
       </main>
     </div>
   );

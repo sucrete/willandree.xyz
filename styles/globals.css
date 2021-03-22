@@ -121,8 +121,8 @@ section.navigation .name:before {
           animation: 700ms lineAnim ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
 }
 
 @-webkit-keyframes lineAnim {
@@ -147,14 +147,13 @@ section.navigation .cone {
   height: 70px;
   width: 77px;
   position: relative;
-  right: 15px;
   background: conic-gradient(from 3.1416rad at 50% 50%, black, white 80%, white);
   -webkit-animation: 700ms coneAnim ease;
           animation: 700ms coneAnim ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2900ms;
-          animation-delay: 2900ms;
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
   opacity: 0;
   -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
           box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
@@ -185,9 +184,9 @@ section.navigation .cone {
 section.header {
   color: white;
   font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 6rem;
+  font-size: 6.3rem;
   line-height: 1.08;
-  font-weight: 450;
+  font-weight: 440;
   padding-top: 0.5rem;
 }
 
@@ -202,7 +201,7 @@ section.header .descriptionContainer .description {
 
 section.header .descriptionContainer .description .dItem {
   position: relative;
-  height: 100px;
+  height: 110px;
 }
 
 section.header .descriptionContainer .description .dItem .dItemBaby {
@@ -459,7 +458,7 @@ section.info .infoBody .aboutVerbiage:nth-of-type(1) span:nth-of-type(1) {
 }
 
 section.contact {
-  margin-top: -470px;
+  margin-top: -490px;
   height: 100%;
 }
 
@@ -545,8 +544,40 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a:hover {
 section.contact .contentContainer .grid img {
   position: absolute;
   width: 500px;
+  left: 0px;
   top: 0;
   overflow: visible;
+}
+
+section.resume {
+  display: block;
+  width: 1077px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  top: -210px;
+  height: 290px;
+}
+
+section.resume a {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-family: "Epilogue";
+  font-size: 9rem;
+  font-weight: 350;
+  padding: 0 5rem;
+  background: white;
+  border-radius: 999px;
+  width: 100%;
+  color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin: 0;
+}
+
+section.resume a:hover {
+  background: #dfff7c;
 }
 
 .customOverlay {

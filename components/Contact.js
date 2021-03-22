@@ -100,14 +100,14 @@ export default function Contact() {
 
   // SCHOOLS 👇
   const trail3 = useTrail(schools.length, {
-    config: { mass: 5, tension: 2200, friction: 200 },
+    config: { mass: 5, tension: 2200, friction: 220 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 10,
     delay: 300,
     from: { opacity: 0, x: 10 },
   });
 
-  // CONTACT HEADER 👇
+  // CONTACT SECTION 👇
   const trail2 = useTrail(contactInfo.length, {
     config: { mass: 5, tension: 2200, friction: 220 },
     opacity: inView ? 1 : 0,

@@ -3,6 +3,7 @@ $warmBlack: rgb(24, 23, 22);
 $warmWhite: rgb(253, 252, 244);
 $myOrange: #c46221;
 $myGrey: rgb(151, 151, 151);
+$chartreuse: #dfff7c;
 
 img {
   position: absolute;
@@ -118,7 +119,7 @@ section.navigation {
       background-color: #eee;
       animation: 700ms lineAnim ease;
       animation-fill-mode: forwards;
-      animation-delay: 2000ms;
+      animation-delay: 1800ms;
     }
     @keyframes lineAnim {
       from {
@@ -133,7 +134,6 @@ section.navigation {
     height: 70px;
     width: 77px;
     position: relative;
-    right: 15px;
     background: conic-gradient(
       from 3.1416rad at 50% 50%,
       black,
@@ -142,7 +142,7 @@ section.navigation {
     );
     animation: 700ms coneAnim ease;
     animation-fill-mode: forwards;
-    animation-delay: 2900ms;
+    animation-delay: 2500ms;
     opacity: 0;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
   }
@@ -166,13 +166,12 @@ section.navigation {
 // ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝         ╚═╝
 
 section.header {
-  // color: #dfff7c;
   color: white;
   font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 6rem;
+  font-size: 6.3rem;
   line-height: 1.08;
-  font-weight: 450;
+  font-weight: 440;
   padding-top: 0.5rem;
   .descriptionContainer {
     position: relative;
@@ -181,7 +180,7 @@ section.header {
       position: relative;
       .dItem {
         position: relative;
-        height: 100px;
+        height: 110px;
         .dItemBaby {
           overflow: hidden;
         }
@@ -247,7 +246,7 @@ section.work {
           background: white;
           white-space: nowrap;
           &:hover {
-            background: rgb(223, 255, 124);
+            background: $chartreuse;
           }
         }
       }
@@ -421,7 +420,7 @@ section.info {
 //  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═╝            ╚═╝
 
 section.contact {
-  margin-top: -470px;
+  margin-top: -490px;
   height: 100%;
   .contentContainer {
     position: relative;
@@ -497,9 +496,44 @@ section.contact {
       img {
         position: absolute;
         width: 500px;
+        left: 0px;
         top: 0;
         overflow: visible;
       }
+    }
+  }
+}
+
+// ██████╗ ███████╗███████╗██╗   ██╗███╗   ███╗███████╗         ██╗
+// ██╔══██╗██╔════╝██╔════╝██║   ██║████╗ ████║██╔════╝         ╚██╗
+// ██████╔╝█████╗  ███████╗██║   ██║██╔████╔██║█████╗      █████╗╚██╗
+// ██╔══██╗██╔══╝  ╚════██║██║   ██║██║╚██╔╝██║██╔══╝      ╚════╝██╔╝
+// ██║  ██║███████╗███████║╚██████╔╝██║ ╚═╝ ██║███████╗         ██╔╝
+// ╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝         ╚═╝
+
+section.resume {
+  display: block;
+  width: 1077px;
+  align-content: center;
+  top: -210px;
+  height: 290px;
+  a {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-family: "Epilogue";
+    font-size: 9rem;
+    font-weight: 350;
+    padding: 0 5rem;
+    background: white;
+    border-radius: 999px;
+    width: 100%;
+    color: black;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin: 0;
+    &:hover {
+      background: $chartreuse;
     }
   }
 }
@@ -542,7 +576,7 @@ section.contact {
     outline: none !important;
     &:hover {
       svg {
-        fill: #dfff7c !important;
+        fill: $chartreuse !important;
       }
     }
     svg {
