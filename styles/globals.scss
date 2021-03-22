@@ -180,7 +180,7 @@ section.header {
       position: relative;
       .dItem {
         position: relative;
-        height: 110px;
+        height: 105px;
         .dItemBaby {
           overflow: hidden;
         }
@@ -206,7 +206,7 @@ section.header {
 section.work {
   z-index: 20;
   color: white;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   display: flex;
   align-content: space-between;
   .workContainer {
@@ -215,7 +215,7 @@ section.work {
     margin-left: 1rem;
     z-index: 1;
     position: relative;
-    top: 50px;
+    top: 0px;
     transform: translateY(75px);
     .workBody {
       margin-left: -0.25rem;
@@ -367,7 +367,7 @@ section.info {
   z-index: 17;
   color: white;
   z-index: 5;
-  padding-top: 7rem;
+  padding-top: 3rem;
   height: auto;
   overflow: visible;
   .infoBody {
@@ -516,24 +516,30 @@ section.resume {
   width: 1077px;
   align-content: center;
   top: -210px;
-  height: 290px;
+  height: 325px;
   a {
     position: relative;
     display: block;
     text-align: center;
     font-family: "Epilogue";
-    font-size: 9rem;
-    font-weight: 350;
-    padding: 0 5rem;
-    background: white;
+    font-size: 1rem;
+    font-weight: 450;
+    // letter-spacing: -0.5rem;
+    padding: 7rem 0rem;
+    border: 1px solid white;
+    background: black;
     border-radius: 999px;
     width: 100%;
-    color: black;
+    color: white;
     transition: all 0.3s ease;
     text-decoration: none;
     margin: 0;
     &:hover {
+      font-size: 9rem;
+      padding: 2rem 0;
+      color: black;
       background: $chartreuse;
+      border: 1px solid $chartreuse;
     }
   }
 }

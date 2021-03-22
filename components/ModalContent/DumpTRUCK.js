@@ -3,7 +3,9 @@ const slides = [
   { id: 1, url: "/thistle.png" },
   { id: 2, url: "/5532_DuckWaddle.gif" },
 ];
-
+const imageSlides = slides.map((slide, index) => {
+  return <div>{slide.id}</div>;
+});
 export default function DumpTRUCK() {
   return (
     <>

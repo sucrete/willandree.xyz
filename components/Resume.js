@@ -6,7 +6,7 @@ export default function Resume() {
     triggerOnce: true,
   });
   const trail = useTrail(1, {
-    config: { mass: 9, tension: 2200, friction: 250 },
+    config: { mass: 5, tension: 2200, friction: 290 },
     opacity: inView ? 1 : 0,
     delay: 700,
     x: inView ? 0 : 50,
