@@ -11,7 +11,6 @@ export default function Navigation() {
   });
   return (
     <section className="navigation">
-      <img src="../roman.png" />
       <span className="name">
         {trail.map(({ x, ...rest }, index) => (
           <animated.span
