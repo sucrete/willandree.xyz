@@ -61,8 +61,6 @@ section {
 }
 
 .cursor {
-  width: auto;
-  height: 70px;
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -71,6 +69,20 @@ section {
 }
 
 .cursor--hidden {
+  visibility: hidden;
+}
+
+.resumeCursor {
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  height: 60px;
+  width: auto;
+  z-index: 9999;
+}
+
+.resumeCursor--hidden {
   visibility: hidden;
 }
 
@@ -104,7 +116,7 @@ section.navigation .name:before {
   position: absolute;
   bottom: -6px;
   left: 2px;
-  height: 1px;
+  height: 3px;
   content: "";
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -177,9 +189,9 @@ section.navigation .cone {
 section.header {
   color: white;
   font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 6.3rem;
+  font-size: 6.2rem;
   line-height: 1.08;
-  font-weight: 440;
+  font-weight: 500;
   padding-top: 0.5rem;
 }
 
@@ -312,7 +324,7 @@ section.work div.favorites .favoritesContainer .leftContainer {
 
 section.work div.favorites .favoritesContainer .leftContainer .boxItem {
   border-radius: 15px;
-  border: 4px solid white;
+  border: 3px solid white;
   height: 48%;
   padding: 2rem;
   padding-left: 2.2rem;
@@ -378,7 +390,7 @@ section.work div.favorites .favoritesContainer .leftContainer .boxItem .designer
 
 section.work div.favorites .favoritesContainer .boxColumn {
   width: 48%;
-  border: 4px solid white;
+  border: 3px solid white;
   border-radius: 15px;
   padding: 2rem;
   padding-left: 2.2rem;
@@ -537,7 +549,7 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:hover {
-  color: #757575;
+  color: #494949;
   cursor: none;
 }
 
@@ -577,10 +589,11 @@ section.resume a {
   text-decoration: none;
   margin: 0;
   height: 300px;
+  cursor: none;
 }
 
 section.resume a:hover {
-  color: black;
+  color: transparent;
   background: #dfff7c;
   border: 5px solid #dfff7c;
 }
@@ -722,7 +735,14 @@ section.resume a:hover {
     width: 800px;
   }
   section.navigation {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    padding-bottom: 5rem;
+    width: 775px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  section.navigation .name:before {
+    height: 2px;
   }
   section.navigation .cone {
     width: 75px;
@@ -732,29 +752,37 @@ section.resume a:hover {
             transform: translateY(-5px);
   }
   section.header {
-    font-size: 4.7rem;
+    font-size: 4.5rem;
+    padding-bottom: 2.5rem;
   }
   section.header .descriptionContainer .description .dItem {
-    height: 80px;
+    height: 82px;
+  }
+  section.work {
+    width: 800px;
+    padding-bottom: 12rem;
   }
   section.work .workContainer {
-    -webkit-transform: translateY(35px);
-            transform: translateY(35px);
+    -webkit-transform: translate(-50%, 35px);
+            transform: translate(-50%, 35px);
+    width: 725px !important;
+    left: 45%;
   }
   section.work .workContainer .workBody .workHeader {
     left: 5px;
-    font-size: 2.7rem;
+    font-size: 3.7rem;
   }
   section.work .workContainer .workBody .workItemContainer {
     margin-bottom: 8px;
   }
   section.work .workContainer .workBody .workItemContainer span {
-    font-size: 3.6rem;
-    padding: 18px 52px 10px 52px;
+    font-size: 3.5rem;
+    padding: 18px 69px 10px 69px;
   }
   section.work .favorites {
-    -webkit-transform: translateY(70px);
-            transform: translateY(70px);
+    padding-top: 2rem;
+    -webkit-transform: translateY(120px);
+            transform: translateY(120px);
     width: 800px;
   }
   section.work .favorites .favoritesContainer {
@@ -762,6 +790,10 @@ section.resume a:hover {
     height: 700px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+  section.work .favorites .favoritesContainer .leftContainer {
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
   }
   section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts {
     font-size: 1.5rem;
@@ -795,7 +827,7 @@ section.resume a:hover {
     width: 48%;
   }
   section.work .favorites .favoritesContainer .boxColumn .skills {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
   section.work .favorites .favoritesContainer .boxColumn .skills ul li {
     font-size: 2.5rem !important;
@@ -811,20 +843,21 @@ section.resume a:hover {
     margin-right: auto;
   }
   section.info .infoBody .aboutHeader {
-    font-size: 2.7rem;
+    font-size: 3.7rem;
   }
   section.info .infoBody .aboutVerbiage {
     font-size: 4.7rem;
   }
   section.contact {
-    margin-top: 22rem;
+    margin-top: 26rem;
   }
   section.contact .contentContainer {
     margin-left: auto;
     margin-right: auto;
   }
   section.contact .contentContainer .copyContainer .educationHeader {
-    font-size: 2.7rem;
+    font-size: 3.7rem;
+    padding-bottom: 1rem;
     left: 20px;
   }
   section.contact .contentContainer .copyContainer .educationItem {
@@ -835,22 +868,26 @@ section.resume a:hover {
     left: 20px;
   }
   section.contact .contentContainer .copyContainer .contactInfo--0 {
-    font-size: 2.7rem;
+    font-size: 3.7rem;
+    padding-bottom: 1rem;
+    padding-top: 0rem;
   }
   section.contact .contentContainer .copyContainer .contactInfo--1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   section.contact .contentContainer .grid img {
     position: absolute;
-    width: 800px;
-    left: 0px;
-    top: 0;
+    width: 755px;
+    left: 52%;
+    top: 50%;
     overflow: visible;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   section.resume {
-    width: 800px;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    width: 750px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
 }
 

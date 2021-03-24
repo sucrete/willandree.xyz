@@ -3,7 +3,7 @@ $warmBlack: rgb(24, 23, 22);
 $warmWhite: rgb(253, 252, 244);
 $myOrange: #c46221;
 $myGrey: rgb(151, 151, 151);
-$chartreuse: #dfff7c;
+$chartreuse: rgb(223, 255, 124);
 
 img {
   position: absolute;
@@ -68,11 +68,20 @@ section {
   font-family: "drucc", serif;
 }
 .cursor {
-  width: auto;
-  height: 70px;
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  z-index: 9999;
+  &--hidden {
+    visibility: hidden;
+  }
+}
+.resumeCursor {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  height: 60px;
+  width: auto;
   z-index: 9999;
   &--hidden {
     visibility: hidden;
@@ -107,7 +116,7 @@ section.navigation {
       position: absolute;
       bottom: -6px;
       left: 2px;
-      height: 1px;
+      height: 3px;
       content: "";
       transition: 0.3s;
       background-color: #eee;
@@ -164,9 +173,9 @@ section.header {
   color: white;
   font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 6.3rem;
+  font-size: 6.2rem;
   line-height: 1.08;
-  font-weight: 440;
+  font-weight: 500;
   padding-top: 0.5rem;
   .descriptionContainer {
     position: relative;
@@ -274,7 +283,7 @@ section.work {
         z-index: 2;
         .boxItem {
           border-radius: 15px;
-          border: 4px solid white;
+          border: 3px solid white;
           height: 48%;
           padding: 2rem;
           padding-left: 2.2rem;
@@ -331,7 +340,7 @@ section.work {
       }
       .boxColumn {
         width: 48%;
-        border: 4px solid white;
+        border: 3px solid white;
         border-radius: 15px;
         padding: 2rem;
         padding-left: 2.2rem;
@@ -483,7 +492,7 @@ section.contact {
               color: white;
             }
             &:hover {
-              color: rgb(117, 117, 117);
+              color: rgb(73, 73, 73);
               cursor: none;
             }
           }
@@ -534,9 +543,10 @@ section.resume {
     text-decoration: none;
     margin: 0;
     height: 300px;
+    cursor: none;
     &:hover {
       // font-weight: 800;
-      color: black;
+      color: transparent;
       background: $chartreuse;
       border: 5px solid $chartreuse;
     }
@@ -672,8 +682,18 @@ section.resume {
 @media screen and (max-width: 1090px) {
   section {
     width: 800px;
+
     &.navigation {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      padding-bottom: 5rem;
+      width: 775px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      .name {
+        &:before {
+          height: 2px;
+        }
+      }
       .cone {
         width: 75px;
         height: 63.63;
@@ -682,34 +702,40 @@ section.resume {
       }
     }
     &.header {
-      font-size: 4.7rem;
+      font-size: 4.5rem;
+      padding-bottom: 2.5rem;
       .descriptionContainer {
         .description {
           .dItem {
-            height: 80px;
+            height: 82px;
           }
         }
       }
     }
     &.work {
+      width: 800px;
+      padding-bottom: 12rem;
       .workContainer {
-        transform: translateY(35px);
+        transform: translate(-50%, 35px);
+        width: 725px !important;
+        left: 45%;
         .workBody {
           .workHeader {
             left: 5px;
-            font-size: 2.7rem;
+            font-size: 3.7rem;
           }
           .workItemContainer {
             margin-bottom: 8px;
             span {
-              font-size: 3.6rem;
-              padding: 18px 52px 10px 52px;
+              font-size: 3.5rem;
+              padding: 18px 69px 10px 69px;
             }
           }
         }
       }
       .favorites {
-        transform: translateY(70px);
+        padding-top: 2rem;
+        transform: translateY(120px);
         width: 800px;
         .favoritesContainer {
           width: 700px !important;
@@ -717,6 +743,7 @@ section.resume {
           margin-left: auto !important;
           margin-right: auto !important;
           .leftContainer {
+            transform: translateY(60px);
             .boxItem {
               .fonts {
                 font-size: 1.5rem;
@@ -754,7 +781,7 @@ section.resume {
           .boxColumn {
             width: 48%;
             .skills {
-              font-size: 1.5rem;
+              font-size: 1.5rem !important;
               ul {
                 li {
                   font-size: 2.5rem !important;
@@ -773,7 +800,7 @@ section.resume {
         margin-left: auto;
         margin-right: auto;
         .aboutHeader {
-          font-size: 2.7rem;
+          font-size: 3.7rem;
         }
         .aboutVerbiage {
           font-size: 4.7rem;
@@ -785,57 +812,49 @@ section.resume {
       }
     }
     &.contact {
-      margin-top: 22rem;
+      margin-top: 26rem;
+      // padding-bottom: 2rem;
       .contentContainer {
         // width: 700px !important;
         margin-left: auto;
         margin-right: auto;
         .copyContainer {
           .educationHeader {
-            font-size: 2.7rem;
+            font-size: 3.7rem;
+            padding-bottom: 1rem;
             left: 20px;
           }
           .educationItem {
             left: 20px;
             font-size: 2.5rem;
-            &--0,
-            &--3,
-            &--6 {
-            }
-            &--1,
-            &--4,
-            &--7 {
-            }
-            &--2,
-            &--5,
-            &--8 {
-            }
           }
-
           .contactInfo {
             left: 20px;
             &--0 {
-              font-size: 2.7rem;
+              font-size: 3.7rem;
+              padding-bottom: 1rem;
+              padding-top: 0rem;
             }
             &--1 {
-              font-size: 2.5rem;
+              font-size: 2.3rem;
             }
           }
         }
         .grid {
           img {
             position: absolute;
-            width: 800px;
-            left: 0px;
-            top: 0;
+            width: 755px;
+            left: 52%;
+            top: 50%;
             overflow: visible;
+            transform: translate(-50%, -50%);
           }
         }
       }
     }
     &.resume {
-      width: 800px;
-      transform: translateY(0px);
+      width: 750px;
+      transform: translateY(-5px);
     }
   }
 }
