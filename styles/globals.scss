@@ -3,7 +3,7 @@ $warmBlack: rgb(24, 23, 22);
 $warmWhite: rgb(253, 252, 244);
 $myOrange: #c46221;
 $myGrey: rgb(151, 151, 151);
-$chartreuse: hsl(75, 100%, 74%);
+$chartreuse: rgb(222, 255, 122);
 
 img {
   position: absolute;
@@ -23,6 +23,9 @@ body {
   position: relative;
   scroll-behavior: smooth;
   width: 100%;
+  overflow-x: hidden;
+}
+body > * {
   overflow-x: hidden;
 }
 body {
@@ -83,6 +86,7 @@ section {
   height: 60px;
   width: auto;
   z-index: 9999;
+  // mix-blend-mode: difference;
   &--hidden {
     visibility: hidden;
   }
@@ -102,7 +106,7 @@ section.navigation {
   justify-content: space-between;
   text-align: left;
   z-index: 11;
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   font-family: "corporate condensed regular";
 
   .name {
@@ -146,7 +150,7 @@ section.navigation {
     );
     animation: 700ms coneAnim ease;
     animation-fill-mode: forwards;
-    animation-delay: 2500ms;
+    animation-delay: 2200ms;
     opacity: 0;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
   }
@@ -239,7 +243,6 @@ section.work {
         position: relative;
         display: block;
         z-index: 3;
-
         span {
           font-family: "Epilogue", sans-serif;
           font-size: 2.5rem;
@@ -250,22 +253,10 @@ section.work {
           height: 100%;
           width: 100%;
           padding: 20px 42px 14px 42px;
-          transition: all 0.3s ease;
+          transition: all 0.1s ease;
           background: white;
           white-space: nowrap;
           z-index: 99;
-          &:before {
-            content: "";
-            position: absolute;
-            height: 100%;
-            width: 37px;
-            color: hsl(75, 100%, 74%);
-            right: 0px;
-            top: 0px;
-            display: inline-block;
-            z-index: 109;
-          }
-
           &:hover {
             background: $chartreuse;
             color: black;
@@ -306,7 +297,7 @@ section.work {
           padding-left: 2.2rem;
           position: relative;
           z-index: 3;
-          font-size: 0.9rem;
+          font-size: 1rem;
           .fonts {
             div {
               padding-bottom: 1rem;
@@ -362,7 +353,7 @@ section.work {
         padding-left: 2.2rem;
         position: relative;
         .skills {
-          font-size: 0.9rem;
+          font-size: 1rem;
           ul {
             list-style: none;
             padding-left: 1px;
@@ -403,10 +394,10 @@ section.info {
     .aboutHeader {
       letter-spacing: 0.1rem;
       position: relative;
-      line-height: 0.7;
+      line-height: 0.9;
       // text-transform: uppercase;
       color: white;
-      margin-block-end: 1rem;
+      margin-block-end: 1.5rem;
       left: 5px;
     }
     .aboutVerbiage {
@@ -414,22 +405,9 @@ section.info {
       position: relative;
       display: flex;
       justify-content: space-between;
-      line-height: 0.95;
-      font-family: "corporate condensed regular";
-      font-size: 3.5rem;
-      &:nth-of-type(1) {
-        line-height: 0.9;
-        span:nth-of-type(1) {
-          font-size: 3.2rem;
-          font-family: "corporate condensed regular";
-          position: relative;
-          // text-transform: uppercase;
-          // padding-right: 1rem;
-          top: -0.5rem;
-          color: $myGrey;
-          // line-height: 1.1;
-        }
-      }
+      line-height: 1.1;
+      font-family: "Epilogue", sans-serif;
+      font-size: 1.85rem;
     }
   }
 }
@@ -450,6 +428,7 @@ section.contact {
       position: absolute;
       padding: 2rem;
       padding-top: 1.5rem;
+      left: 4px;
       .educationHeader {
         line-height: 1.1;
         color: white;
@@ -469,7 +448,7 @@ section.contact {
         &--3,
         &--6 {
           font-family: "Epilogue", sans-serif;
-          font-weight: 600;
+          font-weight: 400;
         }
         &--1,
         &--4,
@@ -496,13 +475,14 @@ section.contact {
         }
         &--1 {
           font-family: "Epilogue", sans-serif;
-          font-weight: 600;
+          font-weight: 500;
           font-size: 1.5rem;
           position: relative;
           padding-left: 0.3rem;
           a {
             text-decoration: none;
             color: white;
+            transition: all 100ms ease;
             &:visited {
               color: white;
             }
@@ -537,9 +517,9 @@ section.resume {
   display: block;
   width: 1077px;
   align-content: center;
-  transform: translateY(-210px);
-  height: 325px;
+  height: 250px;
   overflow: hidden;
+  transform: translateY(-200px);
   a {
     position: relative;
     display: block;
@@ -548,19 +528,21 @@ section.resume {
     font-size: 5rem;
     // font-weight: 450;
     // letter-spacing: -0.5rem;
-    padding: 5rem 0rem;
-    border: 5px solid white;
+    padding: 0rem 0rem;
+    border: 2px solid white;
     border-radius: 999px;
     width: 100%;
     color: white;
     // transition: all 0.3s ease;
     text-decoration: none;
     margin: 0;
-    height: 300px;
+    transition: all 100ms ease;
+    height: 200px;
+    line-height: 198px;
     cursor: none;
     &:hover {
       // font-weight: 800;
-      color: transparent;
+      color: rgba(0, 0, 0, 0);
       background: $chartreuse;
       border: 5px solid $chartreuse;
     }
@@ -732,9 +714,8 @@ section.resume {
       padding-bottom: 12rem;
       padding-top: 3rem;
       .workContainer {
-        transform: translate(-50%, 35px);
+        transform: translate(-3px, 35px);
         width: 800px !important;
-        left: 49%;
         .workBody {
           width: 100%;
           .workHeader {
@@ -743,7 +724,7 @@ section.resume {
           }
           .workItemContainer {
             margin-bottom: -25px;
-            width: 708px !important;
+            width: 703px !important;
             display: block !important;
             margin-left: auto !important;
             margin-right: auto !important;
@@ -759,13 +740,27 @@ section.resume {
               padding-top: 22px;
               padding-bottom: 15px;
               background: transparent;
+              &:before {
+                content: url("../public/expand-button.svg");
+                position: absolute;
+                height: 100%;
+                width: auto;
+                background-color: transparent;
+                right: -20px;
+                top: -20px;
+                opacity: 0;
+                transition: all 100ms ease;
+              }
               &:hover {
                 border-top: solid 0px transparent;
                 border-left: solid 0px transparent;
                 border-right: solid 0px transparent;
                 border-bottom: solid 2px white;
-                color: white;
+                color: $chartreuse;
                 background: transparent;
+                &:before {
+                  opacity: 1;
+                }
               }
             }
             &.dtContainer {
@@ -786,7 +781,6 @@ section.resume {
           margin-left: auto !important;
           margin-right: auto !important;
           .leftContainer {
-            // transform: translateY(60px);
             .boxItem {
               .fonts {
                 font-size: 1.5rem;
@@ -840,67 +834,53 @@ section.resume {
       width: 800px !important;
       transform: translateY(290px);
       .infoBody {
-        width: 700px !important;
+        width: 720px !important;
         margin-left: auto;
         margin-right: auto;
+        transform: translateX(11px);
         .aboutHeader {
           font-size: 3.5rem;
         }
         .aboutVerbiage {
-          font-size: 4.7rem;
+          font-size: 2.7rem;
           justify-content: unset;
-          span {
-            margin-right: 25px;
-          }
-          &:nth-of-type(1) {
-            span:nth-of-type(1) {
-            }
-          }
         }
       }
     }
     &.contact {
-      margin-top: 26rem;
+      margin-top: 23rem;
       .contentContainer {
         margin-left: auto;
         margin-right: auto;
+        transform: translateX(5px);
         .copyContainer {
           .educationHeader {
             font-size: 3.7rem;
             padding-bottom: 1rem;
-            left: 20px;
+            left: 10px;
           }
           .educationItem {
-            left: 20px;
+            left: 9px;
             font-size: 2.5rem;
           }
           .contactInfo {
-            left: 20px;
+            left: 9px;
             &--0 {
               font-size: 3.7rem;
               padding-bottom: 1rem;
-              padding-top: 0rem;
+              padding-top: 1.5rem;
             }
             &--1 {
               font-size: 2.3rem;
             }
           }
         }
-        .grid {
-          img {
-            position: absolute;
-            width: 755px;
-            left: 52%;
-            top: 50%;
-            overflow: visible;
-            transform: translate(-50%, -50%);
-          }
-        }
       }
     }
     &.resume {
-      width: 750px;
-      transform: translateY(30px);
+      width: 720px;
+      left: 0px;
+      transform: translateY(50px);
       a {
         border: solid 2px white;
       }

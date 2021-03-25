@@ -22,6 +22,10 @@ body {
   overflow-x: hidden;
 }
 
+body > * {
+  overflow-x: hidden;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -98,7 +102,7 @@ section.navigation {
           justify-content: space-between;
   text-align: left;
   z-index: 11;
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   font-family: "corporate condensed regular";
 }
 
@@ -157,8 +161,8 @@ section.navigation .cone {
           animation: 700ms coneAnim ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2500ms;
-          animation-delay: 2500ms;
+  -webkit-animation-delay: 2200ms;
+          animation-delay: 2200ms;
   opacity: 0;
   -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
           box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
@@ -270,23 +274,11 @@ section.work .workContainer .workBody .workItemContainer span {
   height: 100%;
   width: 100%;
   padding: 20px 42px 14px 42px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
   background: white;
   white-space: nowrap;
   z-index: 99;
-}
-
-section.work .workContainer .workBody .workItemContainer span:before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 37px;
-  color: #deff7a;
-  right: 0px;
-  top: 0px;
-  display: inline-block;
-  z-index: 109;
 }
 
 section.work .workContainer .workBody .workItemContainer span:hover {
@@ -347,7 +339,7 @@ section.work div.favorites .favoritesContainer .leftContainer .boxItem {
   padding-left: 2.2rem;
   position: relative;
   z-index: 3;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 section.work div.favorites .favoritesContainer .leftContainer .boxItem .fonts div {
@@ -414,7 +406,7 @@ section.work div.favorites .favoritesContainer .boxColumn {
 }
 
 section.work div.favorites .favoritesContainer .boxColumn .skills {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 section.work div.favorites .favoritesContainer .boxColumn .skills ul {
@@ -451,10 +443,10 @@ section.info .infoBody {
 section.info .infoBody .aboutHeader {
   letter-spacing: 0.1rem;
   position: relative;
-  line-height: 0.7;
+  line-height: 0.9;
   color: white;
-  -webkit-margin-after: 1rem;
-          margin-block-end: 1rem;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
   left: 5px;
 }
 
@@ -467,21 +459,9 @@ section.info .infoBody .aboutVerbiage {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  line-height: 0.95;
-  font-family: "corporate condensed regular";
-  font-size: 3.5rem;
-}
-
-section.info .infoBody .aboutVerbiage:nth-of-type(1) {
-  line-height: 0.9;
-}
-
-section.info .infoBody .aboutVerbiage:nth-of-type(1) span:nth-of-type(1) {
-  font-size: 3.2rem;
-  font-family: "corporate condensed regular";
-  position: relative;
-  top: -0.5rem;
-  color: #979797;
+  line-height: 1.1;
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.85rem;
 }
 
 section.contact {
@@ -497,6 +477,7 @@ section.contact .contentContainer .copyContainer {
   position: absolute;
   padding: 2rem;
   padding-top: 1.5rem;
+  left: 4px;
 }
 
 section.contact .contentContainer .copyContainer .educationHeader {
@@ -520,7 +501,7 @@ section.contact .contentContainer .copyContainer .educationItem {
 
 section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
   font-family: "Epilogue", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 section.contact .contentContainer .copyContainer .educationItem--1, section.contact .contentContainer .copyContainer .educationItem--4, section.contact .contentContainer .copyContainer .educationItem--7 {
@@ -548,7 +529,7 @@ section.contact .contentContainer .copyContainer .contactInfo--0 {
 
 section.contact .contentContainer .copyContainer .contactInfo--1 {
   font-family: "Epilogue", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.5rem;
   position: relative;
   padding-left: 0.3rem;
@@ -557,6 +538,8 @@ section.contact .contentContainer .copyContainer .contactInfo--1 {
 section.contact .contentContainer .copyContainer .contactInfo--1 a {
   text-decoration: none;
   color: white;
+  -webkit-transition: all 100ms ease;
+  transition: all 100ms ease;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
@@ -581,10 +564,10 @@ section.resume {
   width: 1077px;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-transform: translateY(-210px);
-          transform: translateY(-210px);
-  height: 325px;
+  height: 250px;
   overflow: hidden;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
 }
 
 section.resume a {
@@ -593,19 +576,22 @@ section.resume a {
   text-align: center;
   font-family: "Epilogue";
   font-size: 5rem;
-  padding: 5rem 0rem;
-  border: 5px solid white;
+  padding: 0rem 0rem;
+  border: 2px solid white;
   border-radius: 999px;
   width: 100%;
   color: white;
   text-decoration: none;
   margin: 0;
-  height: 300px;
+  -webkit-transition: all 100ms ease;
+  transition: all 100ms ease;
+  height: 200px;
+  line-height: 198px;
   cursor: none;
 }
 
 section.resume a:hover {
-  color: transparent;
+  color: rgba(0, 0, 0, 0);
   background: #deff7a;
   border: 5px solid #deff7a;
 }
@@ -777,10 +763,9 @@ section.resume a:hover {
     padding-top: 3rem;
   }
   section.work .workContainer {
-    -webkit-transform: translate(-50%, 35px);
-            transform: translate(-50%, 35px);
+    -webkit-transform: translate(-3px, 35px);
+            transform: translate(-3px, 35px);
     width: 800px !important;
-    left: 49%;
   }
   section.work .workContainer .workBody {
     width: 100%;
@@ -791,7 +776,7 @@ section.resume a:hover {
   }
   section.work .workContainer .workBody .workItemContainer {
     margin-bottom: -25px;
-    width: 708px !important;
+    width: 703px !important;
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -809,13 +794,28 @@ section.resume a:hover {
     padding-bottom: 15px;
     background: transparent;
   }
+  section.work .workContainer .workBody .workItemContainer span:before {
+    content: url("../public/expand-button.svg");
+    position: absolute;
+    height: 100%;
+    width: auto;
+    background-color: transparent;
+    right: -20px;
+    top: -20px;
+    opacity: 0;
+    -webkit-transition: all 100ms ease;
+    transition: all 100ms ease;
+  }
   section.work .workContainer .workBody .workItemContainer span:hover {
     border-top: solid 0px transparent;
     border-left: solid 0px transparent;
     border-right: solid 0px transparent;
     border-bottom: solid 2px white;
-    color: white;
+    color: #deff7a;
     background: transparent;
+  }
+  section.work .workContainer .workBody .workItemContainer span:hover:before {
+    opacity: 1;
   }
   section.work .workContainer .workBody .workItemContainer.dtContainer span {
     border-top: solid 2px white;
@@ -876,62 +876,55 @@ section.resume a:hover {
             transform: translateY(290px);
   }
   section.info .infoBody {
-    width: 700px !important;
+    width: 720px !important;
     margin-left: auto;
     margin-right: auto;
+    -webkit-transform: translateX(11px);
+            transform: translateX(11px);
   }
   section.info .infoBody .aboutHeader {
     font-size: 3.5rem;
   }
   section.info .infoBody .aboutVerbiage {
-    font-size: 4.7rem;
+    font-size: 2.7rem;
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
   }
-  section.info .infoBody .aboutVerbiage span {
-    margin-right: 25px;
-  }
   section.contact {
-    margin-top: 26rem;
+    margin-top: 23rem;
   }
   section.contact .contentContainer {
     margin-left: auto;
     margin-right: auto;
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
   section.contact .contentContainer .copyContainer .educationHeader {
     font-size: 3.7rem;
     padding-bottom: 1rem;
-    left: 20px;
+    left: 10px;
   }
   section.contact .contentContainer .copyContainer .educationItem {
-    left: 20px;
+    left: 9px;
     font-size: 2.5rem;
   }
   section.contact .contentContainer .copyContainer .contactInfo {
-    left: 20px;
+    left: 9px;
   }
   section.contact .contentContainer .copyContainer .contactInfo--0 {
     font-size: 3.7rem;
     padding-bottom: 1rem;
-    padding-top: 0rem;
+    padding-top: 1.5rem;
   }
   section.contact .contentContainer .copyContainer .contactInfo--1 {
     font-size: 2.3rem;
   }
-  section.contact .contentContainer .grid img {
-    position: absolute;
-    width: 755px;
-    left: 52%;
-    top: 50%;
-    overflow: visible;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
   section.resume {
-    width: 750px;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    width: 720px;
+    left: 0px;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
   section.resume a {
     border: solid 2px white;

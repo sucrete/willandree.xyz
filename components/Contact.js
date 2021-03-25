@@ -78,17 +78,9 @@ function Cursor() {
 const contactInfo = ["Contact", <MailTo />];
 export default function Contact() {
   const { ref, inView } = useInView({
-    threshold: 0.4,
+    threshold: 0.5,
     triggerOnce: true,
   });
-  // GRID 👇
-  const trail1 = useTrail(1, {
-    config: { mass: 5, tension: 2200, friction: 460 },
-    opacity: inView ? 1 : 0,
-    x: inView ? 0 : 20,
-    from: { opacity: 0, x: 20 },
-  });
-
   // EDUCATION HEADER 👇
   const trail = useTrail(1, {
     config: { mass: 5, tension: 2200, friction: 220 },
@@ -119,7 +111,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact">
       <Cursor />
-      <div className="contentContainer">
+      <div ref={ref} className="contentContainer">
         <div className="copyContainer">
           {trail.map(({ x, ...rest }, index) => (
             <animated.div
@@ -143,18 +135,6 @@ export default function Contact() {
               }}
             >
               {schools[index]}
-            </animated.div>
-          ))}
-          {trail1.map(({ x, ...rest }) => (
-            <animated.div
-              className="grid"
-              key="grid"
-              style={{
-                ...rest,
-                top: x.interpolate((x) => `${x}px`),
-              }}
-            >
-              <img ref={ref} src="/grid.svg" alt="background svg image" />
             </animated.div>
           ))}
           {trail2.map(({ x, ...rest }, index) => (
