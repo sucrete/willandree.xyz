@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 function Box1() {
   return (
     <div className="designers">
-      <div>favorite designers rn:</div>
+      <div>favorite designers:</div>
       <ul>
         <li>
           <a target="_blank" href="https://www.tmthyl.uk">

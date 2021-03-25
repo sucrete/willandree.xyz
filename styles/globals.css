@@ -116,7 +116,7 @@ section.navigation .name:before {
   position: absolute;
   bottom: -6px;
   left: 2px;
-  height: 3px;
+  height: 2px;
   content: "";
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -245,8 +245,8 @@ section.work .workContainer .workBody {
 section.work .workContainer .workBody .workHeader {
   font-size: 3.5rem;
   position: relative;
-  -webkit-margin-after: 1rem;
-          margin-block-end: 1rem;
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
   display: block;
   line-height: 1.1;
   color: white;
@@ -254,7 +254,7 @@ section.work .workContainer .workBody .workHeader {
 }
 
 section.work .workContainer .workBody .workItemContainer {
-  margin-bottom: 12px;
+  margin-bottom: 21px;
   position: relative;
   display: block;
   z-index: 3;
@@ -263,18 +263,35 @@ section.work .workContainer .workBody .workItemContainer {
 section.work .workContainer .workBody .workItemContainer span {
   font-family: "Epilogue", sans-serif;
   font-size: 2.5rem;
+  font-weight: 400;
   position: relative;
   border-radius: 599px;
   color: black;
-  padding: 15px 36px 10px 36px;
+  height: 100%;
+  width: 100%;
+  padding: 20px 42px 14px 42px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: white;
   white-space: nowrap;
+  z-index: 99;
+}
+
+section.work .workContainer .workBody .workItemContainer span:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 37px;
+  color: #deff7a;
+  right: 0px;
+  top: 0px;
+  display: inline-block;
+  z-index: 109;
 }
 
 section.work .workContainer .workBody .workItemContainer span:hover {
-  background: #dfff7c;
+  background: #deff7a;
+  color: black;
 }
 
 section.work div.favorites {
@@ -324,11 +341,10 @@ section.work div.favorites .favoritesContainer .leftContainer {
 
 section.work div.favorites .favoritesContainer .leftContainer .boxItem {
   border-radius: 15px;
-  border: 3px solid white;
+  border: 2px solid white;
   height: 48%;
   padding: 2rem;
   padding-left: 2.2rem;
-  background: black;
   position: relative;
   z-index: 3;
   font-size: 0.9rem;
@@ -390,12 +406,11 @@ section.work div.favorites .favoritesContainer .leftContainer .boxItem .designer
 
 section.work div.favorites .favoritesContainer .boxColumn {
   width: 48%;
-  border: 3px solid white;
+  border: 2px solid white;
   border-radius: 15px;
   padding: 2rem;
   padding-left: 2.2rem;
   position: relative;
-  background: black;
 }
 
 section.work div.favorites .favoritesContainer .boxColumn .skills {
@@ -549,7 +564,7 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:hover {
-  color: #494949;
+  color: rgba(73, 73, 73, 0);
   cursor: none;
 }
 
@@ -580,12 +595,9 @@ section.resume a {
   font-size: 5rem;
   padding: 5rem 0rem;
   border: 5px solid white;
-  background: black;
   border-radius: 999px;
   width: 100%;
   color: white;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   text-decoration: none;
   margin: 0;
   height: 300px;
@@ -594,8 +606,8 @@ section.resume a {
 
 section.resume a:hover {
   color: transparent;
-  background: #dfff7c;
-  border: 5px solid #dfff7c;
+  background: #deff7a;
+  border: 5px solid #deff7a;
 }
 
 .customOverlay {
@@ -634,7 +646,7 @@ section.resume a:hover {
 }
 
 .customModal button:hover svg {
-  fill: #dfff7c !important;
+  fill: #deff7a !important;
 }
 
 .customModal button svg {
@@ -735,9 +747,9 @@ section.resume a:hover {
     width: 800px;
   }
   section.navigation {
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding-bottom: 5rem;
-    width: 775px !important;
+    width: 750px !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
@@ -747,37 +759,66 @@ section.resume a:hover {
   section.navigation .cone {
     width: 75px;
     height: 63.63;
-    right: 0px;
+    right: 15px;
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
   }
   section.header {
-    font-size: 4.5rem;
-    padding-bottom: 2.5rem;
+    width: 750px;
+    font-size: 4.2rem;
+    padding-bottom: 0rem;
   }
   section.header .descriptionContainer .description .dItem {
-    height: 82px;
+    height: 79px;
   }
   section.work {
     width: 800px;
     padding-bottom: 12rem;
+    padding-top: 3rem;
   }
   section.work .workContainer {
     -webkit-transform: translate(-50%, 35px);
             transform: translate(-50%, 35px);
-    width: 725px !important;
-    left: 45%;
+    width: 800px !important;
+    left: 49%;
+  }
+  section.work .workContainer .workBody {
+    width: 100%;
   }
   section.work .workContainer .workBody .workHeader {
-    left: 5px;
-    font-size: 3.7rem;
+    left: 27px;
+    font-size: 3.2rem;
   }
   section.work .workContainer .workBody .workItemContainer {
-    margin-bottom: 8px;
+    margin-bottom: -25px;
+    width: 708px !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   section.work .workContainer .workBody .workItemContainer span {
-    font-size: 3.5rem;
-    padding: 18px 69px 10px 69px;
+    font-size: 2.8rem;
+    display: block !important;
+    border-radius: 0px;
+    display: block !important;
+    border-bottom: solid 2px white;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 22px;
+    padding-bottom: 15px;
+    background: transparent;
+  }
+  section.work .workContainer .workBody .workItemContainer span:hover {
+    border-top: solid 0px transparent;
+    border-left: solid 0px transparent;
+    border-right: solid 0px transparent;
+    border-bottom: solid 2px white;
+    color: white;
+    background: transparent;
+  }
+  section.work .workContainer .workBody .workItemContainer.dtContainer span {
+    border-top: solid 2px white;
   }
   section.work .favorites {
     padding-top: 2rem;
@@ -790,10 +831,6 @@ section.resume a:hover {
     height: 700px !important;
     margin-left: auto !important;
     margin-right: auto !important;
-  }
-  section.work .favorites .favoritesContainer .leftContainer {
-    -webkit-transform: translateY(60px);
-            transform: translateY(60px);
   }
   section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts {
     font-size: 1.5rem;
@@ -818,7 +855,7 @@ section.resume a:hover {
     font-size: 1.5rem;
   }
   section.work .favorites .favoritesContainer .leftContainer .boxItem .designers ul li {
-    font-size: 2.5rem !important;
+    font-size: 2.65rem !important;
   }
   section.work .favorites .favoritesContainer .leftContainer .boxItem .designers ul li a {
     text-decoration-thickness: 2px !important;
@@ -830,12 +867,13 @@ section.resume a:hover {
     font-size: 1.5rem !important;
   }
   section.work .favorites .favoritesContainer .boxColumn .skills ul li {
-    font-size: 2.5rem !important;
+    font-size: 2.65rem !important;
+    line-height: 1.24 !important;
   }
   section.info {
     width: 800px !important;
-    -webkit-transform: translateY(320px);
-            transform: translateY(320px);
+    -webkit-transform: translateY(290px);
+            transform: translateY(290px);
   }
   section.info .infoBody {
     width: 700px !important;
@@ -843,10 +881,16 @@ section.resume a:hover {
     margin-right: auto;
   }
   section.info .infoBody .aboutHeader {
-    font-size: 3.7rem;
+    font-size: 3.5rem;
   }
   section.info .infoBody .aboutVerbiage {
     font-size: 4.7rem;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  section.info .infoBody .aboutVerbiage span {
+    margin-right: 25px;
   }
   section.contact {
     margin-top: 26rem;
@@ -886,8 +930,11 @@ section.resume a:hover {
   }
   section.resume {
     width: 750px;
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  section.resume a {
+    border: solid 2px white;
   }
 }
 

@@ -3,7 +3,7 @@ $warmBlack: rgb(24, 23, 22);
 $warmWhite: rgb(253, 252, 244);
 $myOrange: #c46221;
 $myGrey: rgb(151, 151, 151);
-$chartreuse: rgb(223, 255, 124);
+$chartreuse: hsl(75, 100%, 74%);
 
 img {
   position: absolute;
@@ -116,7 +116,7 @@ section.navigation {
       position: absolute;
       bottom: -6px;
       left: 2px;
-      height: 3px;
+      height: 2px;
       content: "";
       transition: 0.3s;
       background-color: #eee;
@@ -228,30 +228,47 @@ section.work {
       .workHeader {
         font-size: 3.5rem;
         position: relative;
-        margin-block-end: 1rem;
+        margin-block-end: 1.5rem;
         display: block;
         line-height: 1.1;
         color: white;
         padding-left: 1rem;
       }
       .workItemContainer {
-        margin-bottom: 12px;
+        margin-bottom: 21px;
         position: relative;
         display: block;
         z-index: 3;
+
         span {
           font-family: "Epilogue", sans-serif;
           font-size: 2.5rem;
+          font-weight: 400;
           position: relative;
           border-radius: 599px;
           color: black;
-          // border: solid 1px white;
-          padding: 15px 36px 10px 36px;
+          height: 100%;
+          width: 100%;
+          padding: 20px 42px 14px 42px;
           transition: all 0.3s ease;
           background: white;
           white-space: nowrap;
+          z-index: 99;
+          &:before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 37px;
+            color: hsl(75, 100%, 74%);
+            right: 0px;
+            top: 0px;
+            display: inline-block;
+            z-index: 109;
+          }
+
           &:hover {
             background: $chartreuse;
+            color: black;
           }
         }
       }
@@ -283,11 +300,10 @@ section.work {
         z-index: 2;
         .boxItem {
           border-radius: 15px;
-          border: 3px solid white;
+          border: 2px solid white;
           height: 48%;
           padding: 2rem;
           padding-left: 2.2rem;
-          background: black;
           position: relative;
           z-index: 3;
           font-size: 0.9rem;
@@ -340,12 +356,11 @@ section.work {
       }
       .boxColumn {
         width: 48%;
-        border: 3px solid white;
+        border: 2px solid white;
         border-radius: 15px;
         padding: 2rem;
         padding-left: 2.2rem;
         position: relative;
-        background: black;
         .skills {
           font-size: 0.9rem;
           ul {
@@ -492,7 +507,7 @@ section.contact {
               color: white;
             }
             &:hover {
-              color: rgb(73, 73, 73);
+              color: rgba(73, 73, 73, 0);
               cursor: none;
             }
           }
@@ -535,11 +550,10 @@ section.resume {
     // letter-spacing: -0.5rem;
     padding: 5rem 0rem;
     border: 5px solid white;
-    background: black;
     border-radius: 999px;
     width: 100%;
     color: white;
-    transition: all 0.3s ease;
+    // transition: all 0.3s ease;
     text-decoration: none;
     margin: 0;
     height: 300px;
@@ -684,9 +698,9 @@ section.resume {
     width: 800px;
 
     &.navigation {
-      font-size: 3rem;
+      font-size: 3.5rem;
       padding-bottom: 5rem;
-      width: 775px !important;
+      width: 750px !important;
       margin-left: auto !important;
       margin-right: auto !important;
       .name {
@@ -697,17 +711,18 @@ section.resume {
       .cone {
         width: 75px;
         height: 63.63;
-        right: 0px;
+        right: 15px;
         transform: translateY(-5px);
       }
     }
     &.header {
-      font-size: 4.5rem;
-      padding-bottom: 2.5rem;
+      width: 750px;
+      font-size: 4.2rem;
+      padding-bottom: 0rem;
       .descriptionContainer {
         .description {
           .dItem {
-            height: 82px;
+            height: 79px;
           }
         }
       }
@@ -715,20 +730,48 @@ section.resume {
     &.work {
       width: 800px;
       padding-bottom: 12rem;
+      padding-top: 3rem;
       .workContainer {
         transform: translate(-50%, 35px);
-        width: 725px !important;
-        left: 45%;
+        width: 800px !important;
+        left: 49%;
         .workBody {
+          width: 100%;
           .workHeader {
-            left: 5px;
-            font-size: 3.7rem;
+            left: 27px;
+            font-size: 3.2rem;
           }
           .workItemContainer {
-            margin-bottom: 8px;
+            margin-bottom: -25px;
+            width: 708px !important;
+            display: block !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
             span {
-              font-size: 3.5rem;
-              padding: 18px 69px 10px 69px;
+              font-size: 2.8rem;
+              display: block !important;
+              border-radius: 0px;
+              display: block !important;
+              border-bottom: solid 2px white;
+              color: white;
+              padding-left: 5px;
+              padding-right: 5px;
+              padding-top: 22px;
+              padding-bottom: 15px;
+              background: transparent;
+              &:hover {
+                border-top: solid 0px transparent;
+                border-left: solid 0px transparent;
+                border-right: solid 0px transparent;
+                border-bottom: solid 2px white;
+                color: white;
+                background: transparent;
+              }
+            }
+            &.dtContainer {
+              span {
+                border-top: solid 2px white;
+              }
             }
           }
         }
@@ -743,7 +786,7 @@ section.resume {
           margin-left: auto !important;
           margin-right: auto !important;
           .leftContainer {
-            transform: translateY(60px);
+            // transform: translateY(60px);
             .boxItem {
               .fonts {
                 font-size: 1.5rem;
@@ -769,7 +812,7 @@ section.resume {
                 font-size: 1.5rem;
                 ul {
                   li {
-                    font-size: 2.5rem !important;
+                    font-size: 2.65rem !important;
                     a {
                       text-decoration-thickness: 2px !important;
                     }
@@ -784,7 +827,8 @@ section.resume {
               font-size: 1.5rem !important;
               ul {
                 li {
-                  font-size: 2.5rem !important;
+                  font-size: 2.65rem !important;
+                  line-height: 1.24 !important;
                 }
               }
             }
@@ -794,16 +838,20 @@ section.resume {
     }
     &.info {
       width: 800px !important;
-      transform: translateY(320px);
+      transform: translateY(290px);
       .infoBody {
         width: 700px !important;
         margin-left: auto;
         margin-right: auto;
         .aboutHeader {
-          font-size: 3.7rem;
+          font-size: 3.5rem;
         }
         .aboutVerbiage {
           font-size: 4.7rem;
+          justify-content: unset;
+          span {
+            margin-right: 25px;
+          }
           &:nth-of-type(1) {
             span:nth-of-type(1) {
             }
@@ -813,9 +861,7 @@ section.resume {
     }
     &.contact {
       margin-top: 26rem;
-      // padding-bottom: 2rem;
       .contentContainer {
-        // width: 700px !important;
         margin-left: auto;
         margin-right: auto;
         .copyContainer {
@@ -854,7 +900,10 @@ section.resume {
     }
     &.resume {
       width: 750px;
-      transform: translateY(-5px);
+      transform: translateY(30px);
+      a {
+        border: solid 2px white;
+      }
     }
   }
 }

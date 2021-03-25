@@ -2,7 +2,7 @@ import { useTrail, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
 export default function Resume() {
   const { ref, inView } = useInView({
-    threshold: 0.35,
+    threshold: 0.4,
     triggerOnce: true,
   });
   const trail = useTrail(1, {

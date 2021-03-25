@@ -78,7 +78,7 @@ function Cursor() {
 const contactInfo = ["Contact", <MailTo />];
 export default function Contact() {
   const { ref, inView } = useInView({
-    threshold: 0.7,
+    threshold: 0.4,
     triggerOnce: true,
   });
   // GRID 👇
