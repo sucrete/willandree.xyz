@@ -119,7 +119,7 @@ section.navigation .name .nameItem {
 section.navigation .name:before {
   position: absolute;
   bottom: -6px;
-  left: 2px;
+  left: 4px;
   height: 2px;
   content: "";
   -webkit-transition: 0.3s;
@@ -459,13 +459,13 @@ section.info .infoBody .aboutVerbiage {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  line-height: 1.1;
+  line-height: 1.15;
   font-family: "Epilogue", sans-serif;
   font-size: 1.85rem;
 }
 
 section.contact {
-  margin-top: -490px;
+  margin-top: -400px;
   height: 750px;
 }
 
@@ -797,11 +797,10 @@ section.resume a:hover {
   section.work .workContainer .workBody .workItemContainer span:before {
     content: url("../public/expand-button.svg");
     position: absolute;
-    height: 100%;
     width: auto;
     background-color: transparent;
-    right: -20px;
-    top: -20px;
+    right: -2px;
+    top: -5px;
     opacity: 0;
     -webkit-transition: all 100ms ease;
     transition: all 100ms ease;
@@ -876,17 +875,17 @@ section.resume a:hover {
             transform: translateY(290px);
   }
   section.info .infoBody {
-    width: 720px !important;
+    width: 710px !important;
     margin-left: auto;
     margin-right: auto;
-    -webkit-transform: translateX(11px);
-            transform: translateX(11px);
+    -webkit-transform: translateX(13px);
+            transform: translateX(13px);
   }
   section.info .infoBody .aboutHeader {
     font-size: 3.5rem;
   }
   section.info .infoBody .aboutVerbiage {
-    font-size: 2.7rem;
+    font-size: 2.6rem;
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
