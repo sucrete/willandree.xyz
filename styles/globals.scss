@@ -407,14 +407,8 @@ section.info {
       font-family: "Epilogue", sans-serif;
       font-size: 1.85rem;
       &--13,
-      &--14,
-      &--16 {
-        display: inline;
-      }
-      &--15 {
-        &:after {
-          content: ".";
-        }
+      &--14 {
+        // line-height: 1.1;
       }
     }
   }
@@ -428,7 +422,7 @@ section.info {
 //  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═╝            ╚═╝
 
 section.contact {
-  margin-top: -400px;
+  margin-top: -490px;
   height: 750px;
   .contentContainer {
     position: relative;
@@ -456,7 +450,8 @@ section.contact {
         &--3,
         &--6 {
           font-family: "Epilogue", sans-serif;
-          font-weight: 400;
+          // font-weight: 400;
+          font-size: 1.85rem;
         }
         &--1,
         &--4,

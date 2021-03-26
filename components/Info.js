@@ -15,12 +15,14 @@ const aboutVerbiage = [
   <br />,
   "In addition to my design work, I",
   "teach practical web development",
-  "skills through ",
+  <span>
+    skills through{" "}
+    <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
+      Nucamp Coding
+    </a>
+  </span>,
   <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
-    Nucamp Coding
-  </a>,
-  <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
-    Bootcamp
+    Bootcamp.
   </a>,
   <br />,
   "If you are interested in using my",

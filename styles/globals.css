@@ -462,16 +462,8 @@ section.info .infoBody .aboutVerbiage {
   font-size: 1.85rem;
 }
 
-section.info .infoBody .aboutVerbiage--13, section.info .infoBody .aboutVerbiage--14, section.info .infoBody .aboutVerbiage--16 {
-  display: inline;
-}
-
-section.info .infoBody .aboutVerbiage--15:after {
-  content: ".";
-}
-
 section.contact {
-  margin-top: -400px;
+  margin-top: -490px;
   height: 750px;
 }
 
@@ -507,7 +499,7 @@ section.contact .contentContainer .copyContainer .educationItem {
 
 section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
   font-family: "Epilogue", sans-serif;
-  font-weight: 400;
+  font-size: 1.85rem;
 }
 
 section.contact .contentContainer .copyContainer .educationItem--1, section.contact .contentContainer .copyContainer .educationItem--4, section.contact .contentContainer .copyContainer .educationItem--7 {

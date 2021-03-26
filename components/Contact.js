@@ -15,7 +15,7 @@ const schools = [
   "Drury University",
   "Springfield, MO",
   "Art History, emphasis on Architectural History",
-  "Savannah College of Art and Design",
+  "SCAD",
   "Savannah, GA",
   "Art and Architecture fundamentals",
 ];
