@@ -406,6 +406,16 @@ section.info {
       line-height: 1.15;
       font-family: "Epilogue", sans-serif;
       font-size: 1.85rem;
+      &--13,
+      &--14,
+      &--16 {
+        display: inline;
+      }
+      &--15 {
+        &:after {
+          content: ".";
+        }
+      }
     }
   }
 }

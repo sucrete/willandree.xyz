@@ -13,11 +13,14 @@ const aboutVerbiage = [
   "to the challenges of creating",
   "singular user-facing experiences.",
   <br />,
-  "On top of my design work, I teach",
-  "practical web development skills",
-  "through the coding bootcamp,",
+  "In addition to my design work, I",
+  "teach practical web development",
+  "skills through ",
   <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
-    Nucamp<span>.</span>
+    Nucamp Coding
+  </a>,
+  <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
+    Bootcamp
   </a>,
   <br />,
   "If you are interested in using my",
@@ -64,7 +67,7 @@ export default function Info() {
         ))}
         {trail.map(({ x, ...rest }, index) => (
           <animated.span
-            className="aboutVerbiage"
+            className={`aboutVerbiage aboutVerbiage--${index}`}
             key={aboutVerbiage[index]}
             style={{
               ...rest,
