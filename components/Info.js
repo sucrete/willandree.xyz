@@ -14,13 +14,15 @@ const aboutVerbiage = [
   "singular user-facing experiences.",
   <br />,
   "On top of my design work, I teach",
-  "industry-ready web development",
-  "skills through Nucamp Coding",
-  "Bootcamp.",
+  "practical web development skills",
+  "through the coding bootcamp,",
+  <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
+    Nucamp<span>.</span>
+  </a>,
   <br />,
   "If you are interested in using my",
   "development services, please,",
-  "feel free to contact me anytime.",
+  "feel free to contact me, anytime.",
 ];
 
 const aboutTitle = ["About"];
@@ -31,7 +33,7 @@ export default function Info() {
   });
 
   const trail = useTrail(aboutVerbiage.length, {
-    config: { mass: 5, tension: 2200, friction: 220 },
+    config: { mass: 5, tension: 2200, friction: 200 },
     opacity: inView ? 1 : 0,
     delay: 300,
     x: inView ? 0 : 10,
