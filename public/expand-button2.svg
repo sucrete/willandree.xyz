@@ -5,6 +5,8 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="Capa_1"
    x="0px"
@@ -12,109 +14,81 @@
    width="40.80228"
    height="117.79334"
    viewBox="0 0 40.80228 117.79334"
-   xml:space="preserve"><style
-   id="style6922"></style><metadata
-   id="metadata6359"><rdf:RDF><cc:Work
-       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-   id="defs6357" />
-
-<g
-   id="g6324"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6326"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6328"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6330"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6332"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6334"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6336"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6338"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6340"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6342"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6344"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6346"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6348"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6350"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g6352"
-   transform="matrix(0.19607843,0,0,0.19607843,-9.5988589,64.900326)"
-   style="fill:#deff7a;fill-opacity:1">
-</g>
-<g
-   id="g7053"
-   transform="matrix(0.34670469,0,0,0.34670469,6.5329531,33.065906)"
+   xml:space="preserve"
+   sodipodi:docname="expand-button2.svg"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"><g
+   id="g924"
+   transform="translate(0,-5.0000002)"
    style="fill:#ffffff"><g
-     id="g6322"
-     transform="matrix(0.19607843,0,0,0.19607843,10,80.507308)"
-     style="fill:#ffffff;fill-opacity:1">
-	<g
-   id="expand-more"
-   style="fill:#ffffff;fill-opacity:1">
-		<polygon
-   points="306,94.35 270.3,58.65 153,175.95 35.7,58.65 0,94.35 153,247.35 "
-   id="polygon6319"
-   style="fill:#ffffff;fill-opacity:1" />
-	</g>
-</g><g
      id="g6322-7"
-     transform="matrix(-0.19607843,0,0,-0.19607843,70,68.5)"
+     transform="matrix(-0.05340918,0,0,-0.05340918,28.572745,62.298179)"
      style="fill:#ffffff;fill-opacity:1"><g
        id="expand-more-8"
        style="fill:#ffffff;fill-opacity:1"><polygon
-         points="306,94.35 270.3,58.65 153,175.95 35.7,58.65 0,94.35 153,247.35 "
+         points="153,247.35 306,94.35 270.3,58.65 153,175.95 35.7,58.65 0,94.35 "
          id="polygon6319-0"
-         style="fill:#ffffff;fill-opacity:1" /></g></g></g></svg>
+         style="fill:#ffffff;fill-opacity:1" /></g></g><g
+     id="g6322-7-2"
+     transform="matrix(0.05340918,0,0,0.05340918,12.229535,65.495164)"
+     style="fill:#ffffff;fill-opacity:1"><g
+       id="expand-more-8-4"
+       style="fill:#ffffff;fill-opacity:1"><polygon
+         points="153,247.35 306,94.35 270.3,58.65 153,175.95 35.7,58.65 0,94.35 "
+         id="polygon6319-0-8"
+         style="fill:#ffffff;fill-opacity:1" /></g></g></g><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1158"
+   inkscape:window-height="680"
+   id="namedview861"
+   showgrid="false"
+   inkscape:zoom="5.3398604"
+   inkscape:cx="1.1122463"
+   inkscape:cy="61.893004"
+   inkscape:window-x="0"
+   inkscape:window-y="25"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Capa_1" /><style
+   id="style6922"></style><metadata
+   id="metadata6359"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+   id="defs6357">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</defs>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</svg>

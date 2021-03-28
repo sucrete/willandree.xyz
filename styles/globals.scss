@@ -3,7 +3,7 @@ $warmBlack: rgb(24, 23, 22);
 $warmWhite: rgb(253, 252, 244);
 $myOrange: #c46221;
 $myGrey: rgb(151, 151, 151);
-$chartreuse: rgb(222, 255, 122);
+$chartreuse: rgb(255, 221, 85);
 
 img {
   position: absolute;
@@ -331,11 +331,13 @@ section.work {
                   text-decoration: underline;
                   text-decoration-color: darken($myGrey, 25%);
                   color: white;
+
                   &:visited {
                     color: white;
                   }
                   &:hover {
                     color: blue;
+                    cursor: url("https://i.imgur.com/tbDTemD.png"), auto;
                     text-decoration-color: darken(blue, 15%);
                   }
                 }
@@ -483,14 +485,14 @@ section.contact {
           position: relative;
           padding-left: 0.3rem;
           a {
-            text-decoration: none;
+            text-decoration-color: rgb(172, 147, 157);
             color: white;
             transition: all 100ms ease;
             &:visited {
               color: white;
             }
             &:hover {
-              color: rgba(73, 73, 73, 0);
+              color: rgb(172, 147, 157);
               cursor: none;
             }
           }

@@ -282,7 +282,7 @@ section.work .workContainer .workBody .workItemContainer span {
 }
 
 section.work .workContainer .workBody .workItemContainer span:hover {
-  background: #deff7a;
+  background: #ffdd55;
   color: black;
 }
 
@@ -391,6 +391,7 @@ section.work div.favorites .favoritesContainer .leftContainer .boxItem .designer
 
 section.work div.favorites .favoritesContainer .leftContainer .boxItem .designers ul li a:hover {
   color: blue;
+  cursor: url("https://i.imgur.com/tbDTemD.png"), auto;
   -webkit-text-decoration-color: #0000b3;
           text-decoration-color: #0000b3;
 }
@@ -534,7 +535,8 @@ section.contact .contentContainer .copyContainer .contactInfo--1 {
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a {
-  text-decoration: none;
+  -webkit-text-decoration-color: #ac939d;
+          text-decoration-color: #ac939d;
   color: white;
   -webkit-transition: all 100ms ease;
   transition: all 100ms ease;
@@ -545,7 +547,7 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:hover {
-  color: rgba(73, 73, 73, 0);
+  color: #ac939d;
   cursor: none;
 }
 
@@ -590,8 +592,8 @@ section.resume a {
 
 section.resume a:hover {
   color: rgba(0, 0, 0, 0);
-  background: #deff7a;
-  border: 5px solid #deff7a;
+  background: #ffdd55;
+  border: 5px solid #ffdd55;
 }
 
 .customOverlay {
@@ -630,7 +632,7 @@ section.resume a:hover {
 }
 
 .customModal button:hover svg {
-  fill: #deff7a !important;
+  fill: #ffdd55 !important;
 }
 
 .customModal button svg {
@@ -819,7 +821,7 @@ section.resume a:hover {
     border-left: solid 0px transparent;
     border-right: solid 0px transparent;
     border-bottom: solid 2px white;
-    color: #deff7a;
+    color: #ffdd55;
     background: transparent;
   }
   section.work .workContainer .workBody .workItemContainer span:hover:before {
