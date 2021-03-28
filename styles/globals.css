@@ -803,6 +803,17 @@ section.resume a:hover {
     -webkit-transition: all 100ms ease;
     transition: all 100ms ease;
   }
+  section.work .workContainer .workBody .workItemContainer span:after {
+    content: url("../public/expand-button2.svg");
+    position: absolute;
+    width: auto;
+    background-color: transparent;
+    right: -2px;
+    top: -5px;
+    opacity: 1;
+    -webkit-transition: all 100ms ease;
+    transition: all 100ms ease;
+  }
   section.work .workContainer .workBody .workItemContainer span:hover {
     border-top: solid 0px transparent;
     border-left: solid 0px transparent;
@@ -813,6 +824,9 @@ section.resume a:hover {
   }
   section.work .workContainer .workBody .workItemContainer span:hover:before {
     opacity: 1;
+  }
+  section.work .workContainer .workBody .workItemContainer span:hover:after {
+    opacity: 0;
   }
   section.work .workContainer .workBody .workItemContainer.dtContainer span {
     border-top: solid 2px white;
@@ -894,8 +908,8 @@ section.resume a:hover {
   section.contact .contentContainer {
     margin-left: auto;
     margin-right: auto;
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
+    -webkit-transform: translateX(9px);
+            transform: translateX(9px);
   }
   section.contact .contentContainer .copyContainer .educationHeader {
     font-size: 3.7rem;

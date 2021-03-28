@@ -27,7 +27,7 @@ const aboutVerbiage = [
   <br />,
   "If you are interested in using my",
   "development services, please,",
-  "feel free to contact me, anytime.",
+  "feel free to reach out.",
 ];
 
 const aboutTitle = ["About"];

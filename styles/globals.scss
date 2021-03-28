@@ -753,6 +753,16 @@ section.resume {
                 opacity: 0;
                 transition: all 100ms ease;
               }
+              &:after {
+                content: url("../public/expand-button2.svg");
+                position: absolute;
+                width: auto;
+                background-color: transparent;
+                right: -2px;
+                top: -5px;
+                opacity: 1;
+                transition: all 100ms ease;
+              }
               &:hover {
                 border-top: solid 0px transparent;
                 border-left: solid 0px transparent;
@@ -762,6 +772,9 @@ section.resume {
                 background: transparent;
                 &:before {
                   opacity: 1;
+                }
+                &:after {
+                  opacity: 0;
                 }
               }
             }
@@ -854,7 +867,7 @@ section.resume {
       .contentContainer {
         margin-left: auto;
         margin-right: auto;
-        transform: translateX(5px);
+        transform: translateX(9px);
         .copyContainer {
           .educationHeader {
             font-size: 3.7rem;
