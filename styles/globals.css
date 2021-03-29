@@ -282,7 +282,7 @@ section.work .workContainer .workBody .workItemContainer span {
 }
 
 section.work .workContainer .workBody .workItemContainer span:hover {
-  background: #ffdd55;
+  background: #f0e68c;
   color: black;
 }
 
@@ -390,10 +390,9 @@ section.work div.favorites .favoritesContainer .leftContainer .boxItem .designer
 }
 
 section.work div.favorites .favoritesContainer .leftContainer .boxItem .designers ul li a:hover {
-  color: blue;
-  cursor: url("https://i.imgur.com/tbDTemD.png"), auto;
-  -webkit-text-decoration-color: #0000b3;
-          text-decoration-color: #0000b3;
+  color: #97b3f0;
+  -webkit-text-decoration-color: #97b3f0;
+          text-decoration-color: #97b3f0;
 }
 
 section.work div.favorites .favoritesContainer .boxColumn {
@@ -461,6 +460,23 @@ section.info .infoBody .aboutVerbiage {
   line-height: 1.15;
   font-family: "Epilogue", sans-serif;
   font-size: 1.85rem;
+}
+
+section.info .infoBody .aboutVerbiage--13 a, section.info .infoBody .aboutVerbiage--14 a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #575757;
+          text-decoration-color: #575757;
+  color: white;
+}
+
+section.info .infoBody .aboutVerbiage--13 a:hover, section.info .infoBody .aboutVerbiage--14 a:hover {
+  color: #97b3f0;
+  -webkit-text-decoration-color: #97b3f0;
+          text-decoration-color: #97b3f0;
+}
+
+section.info .infoBody .aboutVerbiage--13 a:visited, section.info .infoBody .aboutVerbiage--14 a:visited {
+  color: white;
 }
 
 section.contact {
@@ -542,13 +558,28 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a {
   transition: all 100ms ease;
 }
 
+section.contact .contentContainer .copyContainer .contactInfo--1 a:after {
+  content: url("../public/pdf.png");
+  position: absolute;
+  opacity: 1;
+  width: auto;
+  height: 45px;
+  top: 0;
+}
+
 section.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
   color: white;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:hover {
-  color: #ac939d;
+  color: khaki;
   cursor: none;
+  -webkit-text-decoration-color: khaki;
+          text-decoration-color: khaki;
+}
+
+section.contact .contentContainer .copyContainer .contactInfo--1 a:hover:after {
+  opacity: 1;
 }
 
 section.contact .contentContainer .grid img {
@@ -574,8 +605,9 @@ section.resume a {
   position: relative;
   display: block;
   text-align: center;
-  font-family: "Epilogue";
-  font-size: 5rem;
+  font-family: "drucc";
+  font-size: 6.2rem;
+  font-weight: 500;
   padding: 0rem 0rem;
   border: 2px solid white;
   border-radius: 999px;
@@ -586,14 +618,12 @@ section.resume a {
   -webkit-transition: all 100ms ease;
   transition: all 100ms ease;
   height: 200px;
-  line-height: 198px;
-  cursor: none;
+  line-height: 180px;
 }
 
 section.resume a:hover {
-  color: rgba(0, 0, 0, 0);
-  background: #ffdd55;
-  border: 5px solid #ffdd55;
+  color: khaki;
+  border: 2px solid #f0e68c;
 }
 
 .customOverlay {
@@ -632,7 +662,7 @@ section.resume a:hover {
 }
 
 .customModal button:hover svg {
-  fill: #ffdd55 !important;
+  fill: #f0e68c !important;
 }
 
 .customModal button svg {
@@ -821,7 +851,7 @@ section.resume a:hover {
     border-left: solid 0px transparent;
     border-right: solid 0px transparent;
     border-bottom: solid 2px white;
-    color: #ffdd55;
+    color: #f0e68c;
     background: transparent;
   }
   section.work .workContainer .workBody .workItemContainer span:hover:before {

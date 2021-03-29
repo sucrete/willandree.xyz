@@ -1,12 +1,5 @@
 import { useTrail, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
-import classNames from "classnames";
-
-const isMobile = () => {
-  const ua = navigator.userAgent;
-  return /Android|Mobi/i.test(ua);
-};
 
 const schools = [
   "LaunchCodeKC",
@@ -24,54 +17,6 @@ function MailTo() {
     <a className="mailTo" href="mailto:will@willandree.xyz">
       will@willandree.xyz
     </a>
-  );
-}
-
-function Cursor() {
-  if (typeof navigator !== "undefined" && isMobile()) return null;
-
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [hidden, setHidden] = useState(true);
-
-  useEffect(() => {
-    addEventListeners();
-    return () => removeEventListeners();
-  }, []);
-
-  const addEventListeners = () => {
-    document.addEventListener("mousemove", onMouseMove);
-    var emailLink = document.getElementsByClassName("mailTo")[0];
-    emailLink.addEventListener("mouseenter", onMouseEnter);
-    emailLink.addEventListener("mouseleave", onMouseLeave);
-  };
-
-  const removeEventListeners = () => {
-    document.removeEventListener("mousemove", onMouseMove);
-    var emailLink = document.getElementsByClassName("mailTo")[0];
-    emailLink.removeEventListener("mouseenter", onMouseEnter);
-    emailLink.removeEventListener("mouseleave", onMouseLeave);
-  };
-  const onMouseLeave = () => {
-    setHidden(true);
-  };
-
-  const onMouseEnter = () => {
-    setHidden(false);
-  };
-  const onMouseMove = (e) => {
-    setPosition({ x: e.clientX, y: e.clientY });
-  };
-
-  const cursorClasses = classNames("cursor", {
-    "cursor--hidden": hidden,
-  });
-
-  return (
-    <img
-      src="/mailto.svg"
-      className={cursorClasses}
-      style={{ left: `${position.x}px`, top: `${position.y}px` }}
-    />
   );
 }
 
@@ -110,7 +55,6 @@ export default function Contact() {
 
   return (
     <section id="contact" className="contact">
-      <Cursor />
       <div ref={ref} className="contentContainer">
         <div className="copyContainer">
           {trail.map(({ x, ...rest }, index) => (

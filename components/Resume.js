@@ -24,7 +24,7 @@ export default function Resume() {
             top: x.interpolate((x) => `${x}px`),
           }}
         >
-          resumé
+          resumé <img src="/pdf.svg" alt="new window pdf resume" />
         </animated.a>
       ))}
     </section>

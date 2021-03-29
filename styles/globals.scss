@@ -3,7 +3,7 @@ $warmBlack: rgb(24, 23, 22);
 $warmWhite: rgb(253, 252, 244);
 $myOrange: #c46221;
 $myGrey: rgb(151, 151, 151);
-$chartreuse: rgb(255, 221, 85);
+$chartreuse: #f0e68c;
 
 img {
   position: absolute;
@@ -331,14 +331,12 @@ section.work {
                   text-decoration: underline;
                   text-decoration-color: darken($myGrey, 25%);
                   color: white;
-
                   &:visited {
                     color: white;
                   }
                   &:hover {
-                    color: blue;
-                    cursor: url("https://i.imgur.com/tbDTemD.png"), auto;
-                    text-decoration-color: darken(blue, 15%);
+                    color: #97b3f0;
+                    text-decoration-color: #97b3f0;
                   }
                 }
               }
@@ -410,7 +408,18 @@ section.info {
       font-size: 1.85rem;
       &--13,
       &--14 {
-        // line-height: 1.1;
+        a {
+          text-decoration: underline;
+          text-decoration-color: darken($myGrey, 25%);
+          color: white;
+          &:hover {
+            color: #97b3f0;
+            text-decoration-color: #97b3f0;
+          }
+          &:visited {
+            color: white;
+          }
+        }
       }
     }
   }
@@ -488,12 +497,24 @@ section.contact {
             text-decoration-color: rgb(172, 147, 157);
             color: white;
             transition: all 100ms ease;
+            &:after {
+              content: url("../public/pdf.png");
+              position: absolute;
+              opacity: 1;
+              width: auto;
+              height: 45px;
+              top: 0;
+            }
             &:visited {
               color: white;
             }
             &:hover {
-              color: rgb(172, 147, 157);
+              color: khaki;
               cursor: none;
+              text-decoration-color: khaki;
+              &:after {
+                opacity: 1;
+              }
             }
           }
         }
@@ -529,8 +550,9 @@ section.resume {
     position: relative;
     display: block;
     text-align: center;
-    font-family: "Epilogue";
-    font-size: 5rem;
+    font-family: "drucc";
+    font-size: 6.2rem;
+    font-weight: 500;
     // font-weight: 450;
     // letter-spacing: -0.5rem;
     padding: 0rem 0rem;
@@ -543,13 +565,12 @@ section.resume {
     margin: 0;
     transition: all 100ms ease;
     height: 200px;
-    line-height: 198px;
-    cursor: none;
+    line-height: 180px;
     &:hover {
       // font-weight: 800;
-      color: rgba(0, 0, 0, 0);
-      background: $chartreuse;
-      border: 5px solid $chartreuse;
+      color: khaki;
+      // background: $chartreuse;
+      border: 2px solid $chartreuse;
     }
   }
 }

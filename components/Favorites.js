@@ -1,22 +1,33 @@
 import { useTrail, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
+import classNames from "classnames";
+import { useEffect, useState } from "react";
+
 function Box1() {
   return (
     <div className="designers">
       <div>favorite designers:</div>
       <ul>
         <li>
-          <a target="_blank" href="https://www.tmthyl.uk">
+          <a className="designer1" target="_blank" href="https://www.tmthyl.uk">
             Timothy Luke
           </a>
         </li>
         <li>
-          <a target="_blank" href="https://www.instagram.com/trvsbrthrs/">
+          <a
+            className="designer2"
+            target="_blank"
+            href="https://www.instagram.com/trvsbrthrs/"
+          >
             Travis Brothers
           </a>
         </li>
         <li>
-          <a target="_blank" href="http://www.thibaudallie.com/">
+          <a
+            className="designer3"
+            target="_blank"
+            href="http://www.thibaudallie.com/"
+          >
             Thibaud Allie
           </a>
         </li>
@@ -54,7 +65,58 @@ function Box3() {
     </div>
   );
 }
+const isMobile = () => {
+  const ua = navigator.userAgent;
+  return /Android|Mobi/i.test(ua);
+};
 
+function Cursor() {
+  if (typeof navigator !== "undefined" && isMobile()) return null;
+
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [hidden, setHidden] = useState(true);
+
+  useEffect(() => {
+    addEventListeners();
+    return () => removeEventListeners();
+  }, []);
+
+  const addEventListeners = () => {
+    document.addEventListener("mousemove", onMouseMove);
+    var designer1 = document.getElementsByClassName("designer1")[0];
+    designer1.addEventListener("mouseenter", onMouseEnter);
+    designer1.addEventListener("mouseleave", onMouseLeave);
+  };
+
+  const removeEventListeners = () => {
+    document.removeEventListener("mousemove", onMouseMove);
+    var designer1 = document.getElementsByClassName("designer1")[0];
+    designer1.removeEventListener("mouseenter", onMouseEnter);
+    designer1.removeEventListener("mouseleave", onMouseLeave);
+  };
+  const onMouseLeave = () => {
+    setHidden(true);
+  };
+
+  const onMouseEnter = () => {
+    setHidden(false);
+  };
+  const onMouseMove = (e) => {
+    setPosition({ x: e.clientX, y: e.clientY });
+  };
+
+  const cursorClasses = classNames("resumeCursor", {
+    "resumeCursor--hidden": hidden,
+  });
+
+  return (
+    <img
+      src="/pdf.svg"
+      className={cursorClasses}
+      style={{ left: `${position.x}px`, top: `${position.y}px` }}
+    />
+  );
+}
 export default function Favorites() {
   const boxes = [<Box1 />, <Box2 />];
   const oneBox = [<Box3 />];
@@ -77,6 +139,7 @@ export default function Favorites() {
   });
   return (
     <div ref={ref} className="favorites">
+      <Cursor />
       <div className="favoritesContainer">
         {trail2.map(({ x, ...rest }, index) => (
           <animated.div
