@@ -282,7 +282,7 @@ section.work .workContainer .workBody .workItemContainer span {
 }
 
 section.work .workContainer .workBody .workItemContainer span:hover {
-  background: #f0e68c;
+  background: #f0e78e;
   color: black;
 }
 
@@ -564,7 +564,6 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a:after {
   opacity: 1;
   width: auto;
   height: 45px;
-  top: 0;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
@@ -573,7 +572,6 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:hover {
   color: khaki;
-  cursor: none;
   -webkit-text-decoration-color: khaki;
           text-decoration-color: khaki;
 }
@@ -606,24 +604,44 @@ section.resume a {
   display: block;
   text-align: center;
   font-family: "drucc";
-  font-size: 6.2rem;
+  font-size: 4rem;
   font-weight: 500;
   padding: 0rem 0rem;
-  border: 2px solid white;
+  border: 5px solid white;
   border-radius: 999px;
   width: 100%;
   color: white;
   text-decoration: none;
   margin: 0;
-  -webkit-transition: all 100ms ease;
-  transition: all 100ms ease;
+  -webkit-transition: all 0ms ease;
+  transition: all 0ms ease;
   height: 200px;
   line-height: 180px;
+  z-index: 1;
+}
+
+section.resume a img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(10px, -59%);
+          transform: translate(10px, -59%);
+  width: 55px;
+  height: auto;
+  visibility: hidden;
+  z-index: -1;
 }
 
 section.resume a:hover {
   color: khaki;
-  border: 2px solid #f0e68c;
+  text-shadow: 0 0 35px rgba(240, 230, 140, 0.3);
+  border: 5px solid #f0e78e;
+}
+
+section.resume a:hover img {
+  opacity: 1;
+  visibility: visible;
+  -webkit-filter: drop-shadow(0px 0px 20px rgba(240, 230, 140, 0.52));
+          filter: drop-shadow(0px 0px 20px rgba(240, 230, 140, 0.52));
 }
 
 .customOverlay {
@@ -662,7 +680,7 @@ section.resume a:hover {
 }
 
 .customModal button:hover svg {
-  fill: #f0e68c !important;
+  fill: #f0e78e !important;
 }
 
 .customModal button svg {
@@ -851,7 +869,7 @@ section.resume a:hover {
     border-left: solid 0px transparent;
     border-right: solid 0px transparent;
     border-bottom: solid 2px white;
-    color: #f0e68c;
+    color: #f0e78e;
     background: transparent;
   }
   section.work .workContainer .workBody .workItemContainer span:hover:before {
@@ -970,7 +988,7 @@ section.resume a:hover {
             transform: translateY(50px);
   }
   section.resume a {
-    border: solid 2px white;
+    font-size: 4rem;
   }
 }
 

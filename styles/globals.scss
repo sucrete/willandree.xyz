@@ -3,7 +3,7 @@ $warmBlack: rgb(24, 23, 22);
 $warmWhite: rgb(253, 252, 244);
 $myOrange: #c46221;
 $myGrey: rgb(151, 151, 151);
-$chartreuse: #f0e68c;
+$chartreuse: hsl(54, 77%, 75%);
 
 img {
   position: absolute;
@@ -503,14 +503,12 @@ section.contact {
               opacity: 1;
               width: auto;
               height: 45px;
-              top: 0;
             }
             &:visited {
               color: white;
             }
             &:hover {
               color: khaki;
-              cursor: none;
               text-decoration-color: khaki;
               &:after {
                 opacity: 1;
@@ -551,26 +549,37 @@ section.resume {
     display: block;
     text-align: center;
     font-family: "drucc";
-    font-size: 6.2rem;
+    font-size: 4rem;
     font-weight: 500;
-    // font-weight: 450;
-    // letter-spacing: -0.5rem;
     padding: 0rem 0rem;
-    border: 2px solid white;
+    border: 5px solid white;
     border-radius: 999px;
     width: 100%;
     color: white;
-    // transition: all 0.3s ease;
     text-decoration: none;
     margin: 0;
-    transition: all 100ms ease;
+    transition: all 0ms ease;
     height: 200px;
     line-height: 180px;
+    z-index: 1;
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translate(10px, -59%);
+      width: 55px;
+      height: auto;
+      visibility: hidden;
+      z-index: -1;
+    }
     &:hover {
-      // font-weight: 800;
       color: khaki;
-      // background: $chartreuse;
-      border: 2px solid $chartreuse;
+      text-shadow: 0 0 35px rgba(240, 230, 140, 0.3);
+      border: 5px solid $chartreuse;
+      img {
+        opacity: 1;
+        visibility: visible;
+        filter: drop-shadow(0px 0px 20px rgba(240, 230, 140, 0.52));
+      }
     }
   }
 }
@@ -920,7 +929,7 @@ section.resume {
       left: 0px;
       transform: translateY(50px);
       a {
-        border: solid 2px white;
+        font-size: 4rem;
       }
     }
   }
