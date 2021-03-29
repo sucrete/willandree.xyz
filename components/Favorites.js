@@ -86,6 +86,12 @@ function Cursor() {
     var designer1 = document.getElementsByClassName("designer1")[0];
     designer1.addEventListener("mouseenter", onMouseEnter);
     designer1.addEventListener("mouseleave", onMouseLeave);
+    var designer2 = document.getElementsByClassName("designer2")[0];
+    designer2.addEventListener("mouseenter", onMouseEnter);
+    designer2.addEventListener("mouseleave", onMouseLeave);
+    var designer3 = document.getElementsByClassName("designer3")[0];
+    designer3.addEventListener("mouseenter", onMouseEnter);
+    designer3.addEventListener("mouseleave", onMouseLeave);
   };
 
   const removeEventListeners = () => {
@@ -93,6 +99,12 @@ function Cursor() {
     var designer1 = document.getElementsByClassName("designer1")[0];
     designer1.removeEventListener("mouseenter", onMouseEnter);
     designer1.removeEventListener("mouseleave", onMouseLeave);
+    var designer2 = document.getElementsByClassName("designer2")[0];
+    designer2.removeEventListener("mouseenter", onMouseEnter);
+    designer2.removeEventListener("mouseleave", onMouseLeave);
+    var designer3 = document.getElementsByClassName("designer3")[0];
+    designer3.removeEventListener("mouseenter", onMouseEnter);
+    designer3.removeEventListener("mouseleave", onMouseLeave);
   };
   const onMouseLeave = () => {
     setHidden(true);

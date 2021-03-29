@@ -755,6 +755,9 @@ section.resume a:hover img {
 }
 
 @media screen and (max-width: 1090px) {
+  .cursor {
+    display: none;
+  }
   section {
     width: 800px;
   }
