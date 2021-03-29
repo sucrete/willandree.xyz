@@ -66,27 +66,13 @@ section {
 
 .cursor {
   position: fixed;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   pointer-events: none;
-  z-index: 9999;
+  -webkit-transform: translate(-35%, -50%);
+          transform: translate(-35%, -50%);
+  z-index: -1;
 }
 
 .cursor--hidden {
-  visibility: hidden;
-}
-
-.resumeCursor {
-  position: fixed;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  pointer-events: none;
-  height: 60px;
-  width: auto;
-  z-index: 9999;
-}
-
-.resumeCursor--hidden {
   visibility: hidden;
 }
 
@@ -383,6 +369,7 @@ section.work div.favorites .favoritesContainer .leftContainer .boxItem .designer
   -webkit-text-decoration-color: #575757;
           text-decoration-color: #575757;
   color: white;
+  z-index: 12;
 }
 
 section.work div.favorites .favoritesContainer .leftContainer .boxItem .designers ul li a:visited {
@@ -391,8 +378,9 @@ section.work div.favorites .favoritesContainer .leftContainer .boxItem .designer
 
 section.work div.favorites .favoritesContainer .leftContainer .boxItem .designers ul li a:hover {
   color: #97b3f0;
-  -webkit-text-decoration-color: #97b3f0;
-          text-decoration-color: #97b3f0;
+  -webkit-text-decoration-color: #97b3f06b;
+          text-decoration-color: #97b3f06b;
+  cursor: none;
 }
 
 section.work div.favorites .favoritesContainer .boxColumn {
@@ -470,9 +458,9 @@ section.info .infoBody .aboutVerbiage--13 a, section.info .infoBody .aboutVerbia
 }
 
 section.info .infoBody .aboutVerbiage--13 a:hover, section.info .infoBody .aboutVerbiage--14 a:hover {
-  color: #97b3f0;
-  -webkit-text-decoration-color: #97b3f0;
-          text-decoration-color: #97b3f0;
+  color: #97b3f0 !important;
+  -webkit-text-decoration-color: rgba(151, 179, 240, 0.42);
+          text-decoration-color: rgba(151, 179, 240, 0.42);
 }
 
 section.info .infoBody .aboutVerbiage--13 a:visited, section.info .infoBody .aboutVerbiage--14 a:visited {
@@ -506,7 +494,7 @@ section.contact .contentContainer .copyContainer .educationHeader {
 
 section.contact .contentContainer .copyContainer .educationItem {
   font-family: "corporate condensed regular";
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.1;
   color: white;
   z-index: 10;
@@ -551,19 +539,17 @@ section.contact .contentContainer .copyContainer .contactInfo--1 {
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a {
-  -webkit-text-decoration-color: #ac939d;
-          text-decoration-color: #ac939d;
+  -webkit-text-decoration-color: rgba(255, 255, 255, 0.42);
+          text-decoration-color: rgba(255, 255, 255, 0.42);
   color: white;
-  -webkit-transition: all 100ms ease;
-  transition: all 100ms ease;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--1 a:after {
-  content: url("../public/pdf.png");
-  position: absolute;
-  opacity: 1;
-  width: auto;
-  height: 45px;
+section.contact .contentContainer .copyContainer .contactInfo--1 a img {
+  -webkit-transform: translate(4px, -50%);
+          transform: translate(4px, -50%);
+  top: 50%;
+  width: 21px;
+  visibility: hidden;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
@@ -572,20 +558,12 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:hover {
   color: khaki;
-  -webkit-text-decoration-color: khaki;
-          text-decoration-color: khaki;
+  -webkit-text-decoration-color: rgba(240, 230, 140, 0.425);
+          text-decoration-color: rgba(240, 230, 140, 0.425);
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--1 a:hover:after {
-  opacity: 1;
-}
-
-section.contact .contentContainer .grid img {
-  position: absolute;
-  width: 500px;
-  left: 0px;
-  top: 0;
-  overflow: visible;
+section.contact .contentContainer .copyContainer .contactInfo--1 a:hover img {
+  visibility: visible;
 }
 
 section.resume {
@@ -593,10 +571,10 @@ section.resume {
   width: 1077px;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 250px;
+  height: 260px;
   overflow: hidden;
-  -webkit-transform: translateY(-200px);
-          transform: translateY(-200px);
+  -webkit-transform: translateY(-180px);
+          transform: translateY(-180px);
 }
 
 section.resume a {
@@ -623,8 +601,8 @@ section.resume a {
 section.resume a img {
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(10px, -59%);
-          transform: translate(10px, -59%);
+  -webkit-transform: translate(3px, -59%);
+          transform: translate(3px, -59%);
   width: 55px;
   height: auto;
   visibility: hidden;
@@ -980,6 +958,11 @@ section.resume a:hover img {
   }
   section.contact .contentContainer .copyContainer .contactInfo--1 {
     font-size: 2.3rem;
+  }
+  section.contact .contentContainer .copyContainer .contactInfo--1 a img {
+    -webkit-transform: translate(4px, -50%);
+            transform: translate(4px, -50%);
+    width: 35px;
   }
   section.resume {
     width: 720px;

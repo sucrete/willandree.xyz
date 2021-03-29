@@ -105,13 +105,13 @@ function Cursor() {
     setPosition({ x: e.clientX, y: e.clientY });
   };
 
-  const cursorClasses = classNames("resumeCursor", {
-    "resumeCursor--hidden": hidden,
+  const cursorClasses = classNames("cursor", {
+    "cursor--hidden": hidden,
   });
 
   return (
     <img
-      src="/pdf.svg"
+      src="/stars.svg"
       className={cursorClasses}
       style={{ left: `${position.x}px`, top: `${position.y}px` }}
     />

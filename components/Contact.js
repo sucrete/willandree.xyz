@@ -16,6 +16,7 @@ function MailTo() {
   return (
     <a className="mailTo" href="mailto:will@willandree.xyz">
       will@willandree.xyz
+      <img src="/pdf.svg" alt="new window pdf resume" />
     </a>
   );
 }
