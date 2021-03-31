@@ -743,9 +743,6 @@ section.resume a:hover img {
 }
 
 @media screen and (max-width: 1090px) {
-  .cursor {
-    display: none;
-  }
   section {
     width: 800px;
   }
@@ -965,6 +962,9 @@ section.resume a:hover img {
 }
 
 @media screen and (max-width: 750px) {
+  .cursor {
+    display: none;
+  }
   section {
     width: 650px !important;
   }
@@ -1049,6 +1049,9 @@ section.resume a:hover img {
   }
   section.contact .contentContainer .copyContainer .contactInfo {
     left: 0px;
+  }
+  section.contact .contentContainer .copyContainer .contactInfo--1 a img {
+    display: none;
   }
   section.resume {
     width: 650px !important;
@@ -1180,15 +1183,6 @@ section.resume a:hover img {
     left: 3px;
     z-index: 90;
   }
-  section.info .infoBody .aboutHeader:before {
-    position: absolute;
-    bottom: -6px;
-    left: 4px;
-    height: 2000px;
-    content: "";
-    background-color: #b80000;
-    z-index: 77;
-  }
   section.info .infoBody .aboutVerbiage {
     width: 535px !important;
     font-size: 2rem;
@@ -1251,6 +1245,7 @@ section.resume a:hover img {
   }
   section.work {
     width: 400px !important;
+    padding-top: 0rem;
   }
   section.work .workContainer .workBody .workHeader {
     font-size: 1.5rem;
@@ -1279,46 +1274,86 @@ section.resume a:hover img {
     padding: 1.5rem 1.5rem 1.5rem 1.7rem !important;
   }
   section.work .favorites .favoritesContainer .boxColumn .skills {
-    font-size: 1.2rem !important;
+    font-size: 0.9rem !important;
   }
   section.work .favorites .favoritesContainer .boxColumn .skills ul li {
-    font-size: 2rem !important;
+    font-size: 1.4rem !important;
     line-height: 1.2 !important;
   }
   section.work .favorites .favoritesContainer .leftContainer .boxItem {
     padding: 1.5rem 1.5rem 1.5rem 1.7rem !important;
   }
   section.work .favorites .favoritesContainer .leftContainer .boxItem .designers {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
   section.work .favorites .favoritesContainer .leftContainer .boxItem .designers ul li {
-    font-size: 2rem !important;
+    font-size: 1.4rem !important;
   }
   section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
   section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts img {
-    height: 25px !important;
+    height: 17px !important;
     margin-bottom: 20px !important;
   }
   section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts img:nth-of-type(1) {
     margin-bottom: 20px !important;
   }
   section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts img:nth-of-type(2) {
-    height: 27px !important;
+    height: 21px !important;
     margin-bottom: 14px !important;
   }
   section.info {
     width: 400px !important;
   }
+  section.info .infoBody {
+    width: 400px !important;
+  }
+  section.info .infoBody .aboutHeader {
+    font-size: 1.5rem;
+    position: relative;
+    left: 2px;
+  }
+  section.info .infoBody .aboutVerbiage {
+    width: 400px !important;
+    font-size: 1.5rem;
+  }
   section.contact {
     width: 400px !important;
   }
+  section.contact .contentContainer .copyContainer .educationHeader {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    -webkit-margin-after: 0.4rem;
+            margin-block-end: 0.4rem;
+  }
+  section.contact .contentContainer .copyContainer .educationItem {
+    font-size: 1.5rem;
+    padding-left: 0.1rem;
+  }
+  section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
+    font-size: 1.5rem;
+  }
+  section.contact .contentContainer .copyContainer .contactInfo--0 {
+    font-size: 1.5rem;
+    padding-bottom: 0rem;
+    -webkit-margin-after: 0.7rem;
+            margin-block-end: 0.7rem;
+  }
+  section.contact .contentContainer .copyContainer .contactInfo--1 {
+    font-size: 1.5rem;
+    padding-left: 0rem;
+  }
   section.resume {
     width: 400px !important;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+    height: 190px;
   }
   section.resume a {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    height: 150px;
+    line-height: 132px;
   }
 }
 

@@ -2,6 +2,31 @@ import { useTrail, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
 import classNames from "classnames";
 import { useEffect, useState } from "react";
+import window from "global";
+
+function getWindowDimensions() {
+  const { innerWidth: width } = window;
+  return {
+    width,
+  };
+}
+
+function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+}
 
 function Box1() {
   return (
@@ -71,7 +96,9 @@ const isMobile = () => {
 };
 
 function Cursor() {
-  if (typeof navigator !== "undefined" && isMobile()) return null;
+  const { width } = useWindowDimensions();
+  if (typeof navigator !== "undefined" && isMobile() && width > 750)
+    return null;
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hidden, setHidden] = useState(true);
