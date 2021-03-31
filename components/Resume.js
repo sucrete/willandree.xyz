@@ -19,6 +19,7 @@ export default function Resume() {
           href=""
           className="resumePill"
           target="_blank"
+          key="resume"
           style={{
             ...rest,
             top: x.interpolate((x) => `${x}px`),

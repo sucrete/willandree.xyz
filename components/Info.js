@@ -1,7 +1,5 @@
-import react from "react";
 import { useInView } from "react-intersection-observer";
 import { useTrail, animated } from "react-spring";
-import { useEffects } from "react";
 
 const aboutVerbiage = [
   "My name is Will Andrée and I'm a",
@@ -33,7 +31,7 @@ const aboutVerbiage = [
 const aboutTitle = ["About"];
 export default function Info() {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.2,
     triggerOnce: true,
   });
   const trail = useTrail(aboutVerbiage.length, {
