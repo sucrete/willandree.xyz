@@ -984,9 +984,25 @@ section.resume a:hover img {
   }
   section.navigation {
     width: 650px !important;
+    padding-top: 1rem;
+  }
+  section.navigation .name {
+    left: 0px;
+  }
+  section.navigation .cone {
+    -webkit-transform: unset;
+            transform: unset;
+    right: 0px;
   }
   section.header {
     width: 650px !important;
+    font-size: 3.75rem;
+  }
+  section.header .descriptionContainer {
+    left: 0px;
+  }
+  section.header .descriptionContainer .description .dItem {
+    height: 65px;
   }
   section.work {
     width: 650px !important;

@@ -936,9 +936,29 @@ $medWidth: 650px;
     width: $medWidth !important;
     &.navigation {
       width: $medWidth !important;
+      padding-top: 1rem;
+      .name {
+        left: 0px;
+      }
+      .cone {
+        transform: unset;
+        right: 0px;
+      }
     }
     &.header {
       width: $medWidth !important;
+      font-size: 3.75rem;
+      .descriptionContainer {
+        left: 0px;
+        .description {
+          .dItem {
+            height: 65px;
+            .dItemBaby {
+              // height: 90px !important;
+            }
+          }
+        }
+      }
     }
     &.work {
       width: $medWidth !important;
