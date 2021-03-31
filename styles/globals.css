@@ -978,6 +978,81 @@ section.resume a:hover img {
   }
 }
 
+@media screen and (max-width: 750px) {
+  section {
+    width: 650px !important;
+  }
+  section.navigation {
+    width: 650px !important;
+  }
+  section.header {
+    width: 650px !important;
+  }
+  section.work {
+    width: 650px !important;
+    padding-bottom: 5rem;
+  }
+  section.work .workContainer {
+    margin-left: auto;
+    width: 650px !important;
+  }
+  section.work .workContainer .workBody {
+    margin-left: auto;
+  }
+  section.work .workContainer .workBody .workHeader {
+    padding-left: 2px;
+    left: 0px;
+  }
+  section.work .workContainer .workBody .workItemContainer {
+    width: 650px !important;
+  }
+  section.work .favorites {
+    width: 650px !important;
+    padding-top: 0rem;
+  }
+  section.work .favorites .favoritesContainer {
+    width: 650px !important;
+    height: 650px !important;
+  }
+  section.work .favorites .favoritesContainer .boxColumn .skills ul li {
+    line-height: 1.05 !important;
+  }
+  section.info {
+    width: 650px !important;
+  }
+  section.info .infoBody {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  section.info .infoBody .aboutVerbiage {
+    font-size: 2.4rem;
+  }
+  section.contact {
+    width: 650px !important;
+    margin-top: 21rem;
+  }
+  section.contact .contentContainer {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  section.contact .contentContainer .copyContainer {
+    padding: 1.5rem 0 0 0;
+    left: 0px;
+  }
+  section.contact .contentContainer .copyContainer .educationHeader {
+    left: 0px;
+  }
+  section.contact .contentContainer .copyContainer .educationItem {
+    left: 0px;
+  }
+  section.contact .contentContainer .copyContainer .contactInfo {
+    left: 0px;
+  }
+  section.resume {
+    width: 650px !important;
+  }
+}
+
 @font-face {
   font-family: "corporate";
   src: url("./fonts/Corporate-Light.ttf");

@@ -923,6 +923,93 @@ section.resume {
   }
 }
 
+// ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ███████╗███████╗ ██████╗ ██████╗ ██╗  ██╗         ██╗
+// ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ╚════██║██╔════╝██╔═████╗██╔══██╗╚██╗██╔╝         ╚██╗
+// ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝        ██╔╝███████╗██║██╔██║██████╔╝ ╚███╔╝     █████╗╚██╗
+// ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗       ██╔╝ ╚════██║████╔╝██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
+// ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║       ██║  ███████║╚██████╔╝██║     ██╔╝ ██╗         ██╔╝
+//  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝       ╚═╝  ╚══════╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝         ╚═╝
+
+$medWidth: 650px;
+@media screen and (max-width: 750px) {
+  section {
+    width: $medWidth !important;
+    &.navigation {
+      width: $medWidth !important;
+    }
+    &.header {
+      width: $medWidth !important;
+    }
+    &.work {
+      width: $medWidth !important;
+      padding-bottom: 5rem;
+      .workContainer {
+        margin-left: auto;
+        .workBody {
+          margin-left: auto;
+          .workHeader {
+            padding-left: 2px;
+            left: 0px;
+          }
+          .workItemContainer {
+            width: $medWidth !important;
+          }
+        }
+        width: $medWidth !important;
+      }
+      .favorites {
+        width: $medWidth !important;
+        padding-top: 0rem;
+        .favoritesContainer {
+          width: $medWidth !important;
+          height: $medWidth !important;
+          .boxColumn {
+            .skills {
+              ul {
+                li {
+                  line-height: 1.05 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.info {
+      width: $medWidth !important;
+      .infoBody {
+        transform: translateX(0px);
+        .aboutVerbiage {
+          font-size: 2.4rem;
+        }
+      }
+    }
+    &.contact {
+      width: $medWidth !important;
+      margin-top: 21rem;
+      .contentContainer {
+        transform: translateX(0px);
+        .copyContainer {
+          padding: 1.5rem 0 0 0;
+          left: 0px;
+          .educationHeader {
+            left: 0px;
+          }
+          .educationItem {
+            left: 0px;
+          }
+          .contactInfo {
+            left: 0px;
+          }
+        }
+      }
+    }
+    &.resume {
+      width: $medWidth !important;
+    }
+  }
+}
+
 @font-face {
   font-family: "corporate";
   src: url("./fonts/Corporate-Light.ttf");
