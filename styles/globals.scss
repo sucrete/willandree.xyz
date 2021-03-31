@@ -1218,33 +1218,161 @@ $medSmallWidth: 535px;
   }
 }
 
-// section {
-//   width: $medSmallWidth !important;
-//   &.navigation {
-//     width: $medSmallWidth !important;
-//   }
-//   &.header {
-//     width: $medSmallWidth !important;
-//   }
-//   &.work {
-//     width: $medSmallWidth !important;
-//     .favorites {
-//       width: $medSmallWidth !important;
+// ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ███████╗██╗  ██╗ ██████╗ ██████╗ ██╗  ██╗         ██╗
+// ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ██╔════╝██║  ██║██╔═████╗██╔══██╗╚██╗██╔╝         ╚██╗
+// ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝    ███████╗███████║██║██╔██║██████╔╝ ╚███╔╝     █████╗╚██╗
+// ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗    ╚════██║╚════██║████╔╝██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
+// ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║    ███████║     ██║╚██████╔╝██║     ██╔╝ ██╗         ██╔╝
+//  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚══════╝     ╚═╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝         ╚═╝
 
+$smallWidth: 400px;
+@media screen and (max-width: 630px) {
+  section {
+    width: $smallWidth !important;
+    &.navigation {
+      width: $smallWidth !important;
+      .name {
+        font-size: 1.7rem;
+        &:before {
+          bottom: -5px;
+          width: 45px !important;
+        }
+      }
+      .cone {
+        width: 50px;
+        height: 45px;
+      }
+    }
+    &.header {
+      width: $smallWidth !important;
+      font-size: 2.3rem;
+      .descriptionContainer {
+        left: 0px;
+        .description {
+          .dItem {
+            height: 40px;
+          }
+        }
+      }
+    }
+    &.work {
+      width: $smallWidth !important;
+      .workContainer {
+        .workBody {
+          .workHeader {
+            font-size: 1.5rem;
+          }
+          .workItemContainer {
+            width: $smallWidth !important;
+            span {
+              font-size: 1.5rem;
+              &:after {
+                top: -22px;
+              }
+              &:before {
+                top: -22px;
+              }
+            }
+          }
+        }
+      }
+      .favorites {
+        width: 395px !important;
+        height: 397px !important;
+        .favoritesContainer {
+          width: 397px !important;
+          height: 397px !important;
+          .boxColumn {
+            padding: 1.5rem 1.5rem 1.5rem 1.7rem !important;
+            .skills {
+              font-size: 1.2rem !important;
+              ul {
+                li {
+                  font-size: 2rem !important;
+                  line-height: 1.2 !important;
+                }
+              }
+            }
+          }
+          .leftContainer {
+            .boxItem {
+              padding: 1.5rem 1.5rem 1.5rem 1.7rem !important;
+              .designers {
+                font-size: 1.2rem;
+                ul {
+                  li {
+                    font-size: 2rem !important;
+                  }
+                }
+              }
+              .fonts {
+                font-size: 1.2rem;
+                img {
+                  height: 25px !important;
+                  margin-bottom: 20px !important;
+                  &:nth-of-type(1) {
+                    margin-bottom: 20px !important;
+                  }
+                  &:nth-of-type(2) {
+                    height: 27px !important;
+                    margin-bottom: 14px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.info {
+      width: $smallWidth !important;
+    }
+    &.contact {
+      width: $smallWidth !important;
+    }
+    &.resume {
+      width: $smallWidth !important;
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+// $smallWidth: 400px;
+// @media screen and (max-width: 630px) {
+//   section {
+//     width: $smallWidth !important;
+//     &.navigation {
+//       width: $smallWidth !important;
+//     }
+//     &.header {
+//       width: $smallWidth !important;
+//     }
+//     &.work {
+//       width: $smallWidth !important;
+//       .workContainer {
+//         .workBody {
+//           .workItemContainer {
+//             width: $smallWidth !important;
+//           }
+//         }
+//       }
+//       .favorites {
+//         width: $smallWidth !important;
+//       }
+//     }
+//     &.info {
+//       width: $smallWidth !important;
+//     }
+//     &.contact {
+//       width: $smallWidth !important;
+//     }
+//     &.resume {
+//       width: $smallWidth !important;
 //     }
 //   }
-//   &.info {
-//     width: $medSmallWidth !important;
-
-//   }
-//   &.contact {
-//     width: $medSmallWidth !important;
-//   }
-//   &.resume {
-//     width: $medSmallWidth !important;
-//   }
 // }
-
 @font-face {
   font-family: "corporate";
   src: url("./fonts/Corporate-Light.ttf");

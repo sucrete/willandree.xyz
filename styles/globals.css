@@ -1221,6 +1221,107 @@ section.resume a:hover img {
   }
 }
 
+@media screen and (max-width: 630px) {
+  section {
+    width: 400px !important;
+  }
+  section.navigation {
+    width: 400px !important;
+  }
+  section.navigation .name {
+    font-size: 1.7rem;
+  }
+  section.navigation .name:before {
+    bottom: -5px;
+    width: 45px !important;
+  }
+  section.navigation .cone {
+    width: 50px;
+    height: 45px;
+  }
+  section.header {
+    width: 400px !important;
+    font-size: 2.3rem;
+  }
+  section.header .descriptionContainer {
+    left: 0px;
+  }
+  section.header .descriptionContainer .description .dItem {
+    height: 40px;
+  }
+  section.work {
+    width: 400px !important;
+  }
+  section.work .workContainer .workBody .workHeader {
+    font-size: 1.5rem;
+  }
+  section.work .workContainer .workBody .workItemContainer {
+    width: 400px !important;
+  }
+  section.work .workContainer .workBody .workItemContainer span {
+    font-size: 1.5rem;
+  }
+  section.work .workContainer .workBody .workItemContainer span:after {
+    top: -22px;
+  }
+  section.work .workContainer .workBody .workItemContainer span:before {
+    top: -22px;
+  }
+  section.work .favorites {
+    width: 395px !important;
+    height: 397px !important;
+  }
+  section.work .favorites .favoritesContainer {
+    width: 397px !important;
+    height: 397px !important;
+  }
+  section.work .favorites .favoritesContainer .boxColumn {
+    padding: 1.5rem 1.5rem 1.5rem 1.7rem !important;
+  }
+  section.work .favorites .favoritesContainer .boxColumn .skills {
+    font-size: 1.2rem !important;
+  }
+  section.work .favorites .favoritesContainer .boxColumn .skills ul li {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+  section.work .favorites .favoritesContainer .leftContainer .boxItem {
+    padding: 1.5rem 1.5rem 1.5rem 1.7rem !important;
+  }
+  section.work .favorites .favoritesContainer .leftContainer .boxItem .designers {
+    font-size: 1.2rem;
+  }
+  section.work .favorites .favoritesContainer .leftContainer .boxItem .designers ul li {
+    font-size: 2rem !important;
+  }
+  section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts {
+    font-size: 1.2rem;
+  }
+  section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts img {
+    height: 25px !important;
+    margin-bottom: 20px !important;
+  }
+  section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts img:nth-of-type(1) {
+    margin-bottom: 20px !important;
+  }
+  section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts img:nth-of-type(2) {
+    height: 27px !important;
+    margin-bottom: 14px !important;
+  }
+  section.info {
+    width: 400px !important;
+  }
+  section.contact {
+    width: 400px !important;
+  }
+  section.resume {
+    width: 400px !important;
+  }
+  section.resume a {
+    font-size: 2rem;
+  }
+}
+
 @font-face {
   font-family: "corporate";
   src: url("./fonts/Corporate-Light.ttf");
