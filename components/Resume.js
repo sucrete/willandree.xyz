@@ -8,8 +8,8 @@ export default function Resume() {
   const trail = useTrail(1, {
     config: { mass: 5, tension: 2200, friction: 240 },
     opacity: inView ? 1 : 0,
-    x: inView ? 0 : 50,
-    from: { opacity: 0, x: 50 },
+    x: inView ? 0 : 40,
+    from: { opacity: 0, x: 40 },
   });
 
   return (
@@ -17,7 +17,6 @@ export default function Resume() {
       {trail.map(({ x, ...rest }, index) => (
         <animated.a
           href=""
-          className="resumePill"
           target="_blank"
           key="resume"
           style={{

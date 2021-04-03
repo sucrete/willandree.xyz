@@ -45,8 +45,8 @@ export default function Info() {
     config: { mass: 5, tension: 2200, friction: 250 },
     opacity: inView ? 1 : 0,
     delay: 200,
-    x: inView ? 0 : 10,
-    from: { opacity: 0, x: 10 },
+    x: inView ? 0 : 30,
+    from: { opacity: 0, x: 30 },
   });
 
   return (

@@ -584,6 +584,7 @@ section.resume a {
   height: 200px;
   line-height: 180px;
   z-index: 1;
+  overflow: hidden;
 }
 
 section.resume a img {
@@ -743,6 +744,9 @@ section.resume a:hover img {
 }
 
 @media screen and (max-width: 1090px) {
+  .cursor {
+    display: none;
+  }
   section {
     width: 800px;
   }
@@ -775,22 +779,26 @@ section.resume a:hover img {
     width: 800px;
     padding-bottom: 12rem;
     padding-top: 3rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   section.work .workContainer {
-    -webkit-transform: translate(-3px, 35px);
-            transform: translate(-3px, 35px);
     width: 800px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   section.work .workContainer .workBody {
     width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   section.work .workContainer .workBody .workHeader {
-    left: 27px;
-    font-size: 3.2rem;
+    left: 35px;
+    font-size: 3rem;
   }
   section.work .workContainer .workBody .workItemContainer {
     margin-bottom: -25px;
-    width: 695px !important;
+    width: 700px !important;
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -1227,7 +1235,28 @@ section.resume a:hover img {
   }
   section.navigation .name:before {
     bottom: -5px;
-    width: 45px !important;
+    -webkit-animation: 700ms lineAnim2 ease;
+            animation: 700ms lineAnim2 ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 1800ms;
+            animation-delay: 1800ms;
+  }
+  @-webkit-keyframes lineAnim2 {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 40px;
+    }
+  }
+  @keyframes lineAnim2 {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 40px;
+    }
   }
   section.navigation .cone {
     width: 50px;

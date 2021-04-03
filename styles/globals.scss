@@ -532,6 +532,7 @@ section.resume {
     height: 200px;
     line-height: 180px;
     z-index: 1;
+    overflow: hidden;
     img {
       position: absolute;
       top: 50%;
@@ -681,6 +682,9 @@ section.resume {
 //  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝     ╚═╝ ╚═════╝  ╚════╝  ╚═════╝ ╚═╝     ╚═╝  ╚═╝         ╚═╝
 
 @media screen and (max-width: 1090px) {
+  .cursor {
+    display: none;
+  }
   section {
     width: 800px;
 
@@ -718,18 +722,25 @@ section.resume {
       width: 800px;
       padding-bottom: 12rem;
       padding-top: 3rem;
+      margin-left: auto !important;
+      margin-right: auto !important;
       .workContainer {
-        transform: translate(-3px, 35px);
+        // transform: translate(-3px, 35px);
         width: 800px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
         .workBody {
           width: 100%;
+
+          margin-left: auto !important;
+          margin-right: auto !important;
           .workHeader {
-            left: 27px;
-            font-size: 3.2rem;
+            left: 35px;
+            font-size: 3rem;
           }
           .workItemContainer {
             margin-bottom: -25px;
-            width: 695px !important;
+            width: 700px !important;
             display: block !important;
             margin-left: auto !important;
             margin-right: auto !important;
@@ -1233,7 +1244,18 @@ $smallWidth: 400px;
         font-size: 1.7rem;
         &:before {
           bottom: -5px;
-          width: 45px !important;
+          // width: 45px !important;
+          animation: 700ms lineAnim2 ease;
+          animation-fill-mode: forwards;
+          animation-delay: 1800ms;
+        }
+        @keyframes lineAnim2 {
+          from {
+            width: 0px;
+          }
+          to {
+            width: 40px;
+          }
         }
       }
       .cone {

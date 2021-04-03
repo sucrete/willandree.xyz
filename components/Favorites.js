@@ -97,7 +97,7 @@ const isMobile = () => {
 
 function Cursor() {
   const { width } = useWindowDimensions();
-  if (typeof navigator !== "undefined" && isMobile() && width > 750)
+  if (typeof navigator !== "undefined" && isMobile() && width > 1090)
     return null;
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -167,14 +167,14 @@ export default function Favorites() {
     config: { mass: 5, tension: 1600, friction: 300 },
     opacity: inView ? 1 : 0,
     delay: 100,
-    x: inView ? 0 : 20,
-    from: { opacity: 0, x: 20 },
+    x: inView ? 0 : 40,
+    from: { opacity: 0, x: 40 },
   });
   const trail2 = useTrail(oneBox.length, {
     config: { mass: 5, tension: 1600, friction: 300 },
     opacity: inView ? 1 : 0,
-    x: inView ? 0 : 20,
-    from: { opacity: 0, x: 20 },
+    x: inView ? 0 : 40,
+    from: { opacity: 0, x: 40 },
   });
   return (
     <div ref={ref} className="favorites">
