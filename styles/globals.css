@@ -1287,19 +1287,21 @@ section.resume a:hover img {
     margin-right: auto !important;
   }
   section.work .workContainer .workBody .workHeader {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    -webkit-margin-after: 0.8rem;
+            margin-block-end: 0.8rem;
   }
   section.work .workContainer .workBody .workItemContainer {
     width: 390px !important;
   }
   section.work .workContainer .workBody .workItemContainer span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   section.work .workContainer .workBody .workItemContainer span:after {
-    top: -22px;
+    top: -25px;
   }
   section.work .workContainer .workBody .workItemContainer span:before {
-    top: -22px;
+    top: -25px;
   }
   section.work .favorites {
     width: 395px !important;
@@ -1355,19 +1357,20 @@ section.resume a:hover img {
     width: 390px !important;
   }
   section.info .infoBody .aboutHeader {
-    font-size: 1.5rem;
-    position: relative;
+    font-size: 1.2rem;
+    -webkit-margin-after: 0.8rem;
+            margin-block-end: 0.8rem;
     left: 2px;
   }
   section.info .infoBody .aboutVerbiage {
     width: 390px !important;
-    font-size: 1.455rem;
+    font-size: 1.46rem;
   }
   section.contact {
     width: 390px !important;
   }
   section.contact .contentContainer .copyContainer .educationHeader {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-bottom: 0.5rem;
     -webkit-margin-after: 0.4rem;
             margin-block-end: 0.4rem;
@@ -1377,16 +1380,16 @@ section.resume a:hover img {
     padding-left: 0.1rem;
   }
   section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   section.contact .contentContainer .copyContainer .contactInfo--0 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-bottom: 0rem;
     -webkit-margin-after: 0.7rem;
             margin-block-end: 0.7rem;
   }
   section.contact .contentContainer .copyContainer .contactInfo--1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-left: 0rem;
   }
   section.resume {
