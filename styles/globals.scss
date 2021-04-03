@@ -867,7 +867,7 @@ section.resume {
         margin-right: auto;
         transform: translateX(10px);
         .aboutHeader {
-          font-size: 3.5rem;
+          font-size: 3rem;
         }
         .aboutVerbiage {
           font-size: 2.6rem;
@@ -883,7 +883,7 @@ section.resume {
         transform: translateX(9px);
         .copyContainer {
           .educationHeader {
-            font-size: 3.7rem;
+            font-size: 3rem;
             padding-bottom: 1rem;
             left: 10px;
           }
@@ -894,7 +894,7 @@ section.resume {
           .contactInfo {
             left: 9px;
             &--0 {
-              font-size: 3.7rem;
+              font-size: 3rem;
               padding-bottom: 1rem;
               padding-top: 1.5rem;
             }
@@ -1234,14 +1234,16 @@ $medSmallWidth: 535px;
 // ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║    ███████║     ██║╚██████╔╝██║     ██╔╝ ██╗         ██╔╝
 //  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚══════╝     ╚═╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝         ╚═╝
 
-$smallWidth: 400px;
+$smallWidth: 390px;
 @media screen and (max-width: 630px) {
   section {
     width: $smallWidth !important;
     &.navigation {
       width: $smallWidth !important;
+      padding-top: 0.2rem;
       .name {
         font-size: 1.7rem;
+        padding-top: 0.3rem;
         &:before {
           bottom: -5px;
           // width: 45px !important;
@@ -1265,7 +1267,7 @@ $smallWidth: 400px;
     }
     &.header {
       width: $smallWidth !important;
-      font-size: 2.3rem;
+      font-size: 2.25rem;
       .descriptionContainer {
         left: 0px;
         .description {
@@ -1278,7 +1280,11 @@ $smallWidth: 400px;
     &.work {
       width: $smallWidth !important;
       padding-top: 0rem;
+      margin-left: auto !important;
+      margin-right: auto !important;
       .workContainer {
+        margin-left: auto !important;
+        margin-right: auto !important;
         .workBody {
           .workHeader {
             font-size: 1.5rem;
@@ -1300,9 +1306,14 @@ $smallWidth: 400px;
       .favorites {
         width: 395px !important;
         height: 397px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        transform: translate(-2px, 120px);
         .favoritesContainer {
           width: 397px !important;
           height: 397px !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
           .boxColumn {
             padding: 1.5rem 1.5rem 1.5rem 1.7rem !important;
             .skills {
@@ -1356,7 +1367,7 @@ $smallWidth: 400px;
         }
         .aboutVerbiage {
           width: $smallWidth !important;
-          font-size: 1.5rem;
+          font-size: 1.455rem;
         }
       }
     }
@@ -1439,6 +1450,59 @@ $smallWidth: 400px;
 //     }
 //   }
 // }
+
+// ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ██████╗ ███████╗███████╗██████╗ ██╗  ██╗         ██╗
+// ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ╚════██╗╚════██║██╔════╝██╔══██╗╚██╗██╔╝         ╚██╗
+// ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝     █████╔╝    ██╔╝███████╗██████╔╝ ╚███╔╝     █████╗╚██╗
+// ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗     ╚═══██╗   ██╔╝ ╚════██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
+// ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║    ██████╔╝   ██║  ███████║██║     ██╔╝ ██╗         ██╔╝
+//  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚═════╝    ╚═╝  ╚══════╝╚═╝     ╚═╝  ╚═╝         ╚═╝
+
+$xtraSmallWidth: 370px;
+@media screen and (max-width: 411px) {
+  section {
+    width: $xtraSmallWidth !important;
+    &.navigation {
+      width: $xtraSmallWidth !important;
+      padding-top: 0.6rem;
+    }
+    &.header {
+      width: $xtraSmallWidth !important;
+      font-size: 2.1rem;
+      .descriptionContainer {
+        .description {
+          .dItem {
+            .dItemBaby {
+            }
+          }
+        }
+      }
+    }
+    &.work {
+      width: $xtraSmallWidth !important;
+      .workContainer {
+        .workBody {
+          .workItemContainer {
+            width: $xtraSmallWidth !important;
+          }
+        }
+      }
+      .favorites {
+        width: $xtraSmallWidth !important;
+      }
+    }
+    &.info {
+      width: $xtraSmallWidth !important;
+    }
+    &.contact {
+      width: $xtraSmallWidth !important;
+    }
+    &.resume {
+      width: $xtraSmallWidth !important;
+    }
+  }
+}
+
 @font-face {
   font-family: "corporate";
   src: url("./fonts/Corporate-Light.ttf");
