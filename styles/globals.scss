@@ -1111,10 +1111,13 @@ $medSmallWidth: 535px;
               &:hover {
                 border-bottom: solid 1px white;
               }
-              &:after {
+
+              &:before {
+                content: url("../public/expand-button-small-sizes-khaki.svg");
                 top: -15px;
               }
-              &:before {
+              &:after {
+                content: url("../public/expand-button-small-sizes-white.svg");
                 top: -15px;
               }
             }

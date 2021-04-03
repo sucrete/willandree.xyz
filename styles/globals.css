@@ -1126,10 +1126,12 @@ section.resume a:hover img {
   section.work .workContainer .workBody .workItemContainer span:hover {
     border-bottom: solid 1px white;
   }
-  section.work .workContainer .workBody .workItemContainer span:after {
+  section.work .workContainer .workBody .workItemContainer span:before {
+    content: url("../public/expand-button-small-sizes-khaki.svg");
     top: -15px;
   }
-  section.work .workContainer .workBody .workItemContainer span:before {
+  section.work .workContainer .workBody .workItemContainer span:after {
+    content: url("../public/expand-button-small-sizes-white.svg");
     top: -15px;
   }
   section.work .favorites {
