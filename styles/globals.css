@@ -1086,12 +1086,16 @@ section.resume a:hover img {
   section.navigation .name:before {
     bottom: -5px;
     height: 1px;
+    -webkit-animation-delay: 0ms;
+            animation-delay: 0ms;
   }
   section.navigation .cone {
     width: 60px;
     height: 55px;
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
+    -webkit-animation-delay: 0ms;
+            animation-delay: 0ms;
   }
   section.header {
     width: 535px !important;
