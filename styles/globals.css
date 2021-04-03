@@ -1404,33 +1404,101 @@ section.resume a:hover img {
 
 @media screen and (max-width: 411px) {
   section {
-    width: 370px !important;
+    width: 360px !important;
   }
   section.navigation {
-    width: 370px !important;
-    padding-top: 0.6rem;
+    width: 360px !important;
+    padding-top: 0rem;
+  }
+  section.navigation .name {
+    padding-top: 0.1rem;
+    font-size: 1.8rem;
+  }
+  section.navigation .name:before {
+    left: 2px;
+  }
+  section.navigation .cone {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
   }
   section.header {
-    width: 370px !important;
-    font-size: 2.1rem;
+    width: 360px !important;
+    font-size: 2.08rem;
+    padding-bottom: 1rem;
   }
   section.work {
-    width: 370px !important;
+    width: 360px !important;
+    padding-bottom: 4rem;
+  }
+  section.work .workContainer .workBody .workHeader {
+    -webkit-margin-after: 1rem;
+            margin-block-end: 1rem;
+    font-size: 1.2rem;
   }
   section.work .workContainer .workBody .workItemContainer {
-    width: 370px !important;
+    width: 360px !important;
+  }
+  section.work .workContainer .workBody .workItemContainer span {
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+  }
+  section.work .workContainer .workBody .workItemContainer span:after {
+    right: -7px;
   }
   section.work .favorites {
-    width: 370px !important;
+    width: 360px !important;
+    -webkit-transform: translate(0px, 120px);
+            transform: translate(0px, 120px);
+  }
+  section.work .favorites .favoritesContainer .boxColumn .skills div {
+    font-size: 0.8rem !important;
+  }
+  section.work .favorites .favoritesContainer .leftContainer .boxItem .designers div {
+    font-size: 0.8rem !important;
+  }
+  section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts div {
+    font-size: 0.8rem !important;
   }
   section.info {
-    width: 370px !important;
+    width: 360px !important;
+  }
+  section.info .infoBody .aboutHeader {
+    font-size: 1.2rem;
+    -webkit-margin-after: 1rem;
+            margin-block-end: 1rem;
+  }
+  section.info .infoBody .aboutVerbiage {
+    font-size: 1.35rem;
   }
   section.contact {
-    width: 370px !important;
+    width: 360px !important;
+    margin-top: 10rem;
+  }
+  section.contact .contentContainer .copyContainer .educationHeader {
+    font-size: 1.2rem;
+  }
+  section.contact .contentContainer .copyContainer .educationItem {
+    font-size: 1.4rem;
+  }
+  section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
+    font-size: 1.35rem;
+  }
+  section.contact .contentContainer .copyContainer .contactInfo--0 {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+  }
+  section.contact .contentContainer .copyContainer .contactInfo--1 {
+    font-size: 1.35rem;
   }
   section.resume {
-    width: 370px !important;
+    width: 360px !important;
+    height: 135px;
+    -webkit-transform: translateY(-135px);
+            transform: translateY(-135px);
+  }
+  section.resume a {
+    height: 120px;
+    line-height: 105px;
   }
 }
 

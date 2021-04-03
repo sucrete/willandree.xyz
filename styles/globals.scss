@@ -1461,17 +1461,28 @@ $smallWidth: 390px;
 // ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║    ██████╔╝   ██║  ███████║██║     ██╔╝ ██╗         ██╔╝
 //  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚═════╝    ╚═╝  ╚══════╝╚═╝     ╚═╝  ╚═╝         ╚═╝
 
-$xtraSmallWidth: 370px;
+$xtraSmallWidth: 360px;
 @media screen and (max-width: 411px) {
   section {
     width: $xtraSmallWidth !important;
     &.navigation {
       width: $xtraSmallWidth !important;
-      padding-top: 0.6rem;
+      padding-top: 0rem;
+      .name {
+        padding-top: 0.1rem;
+        font-size: 1.8rem;
+        &:before {
+          left: 2px;
+        }
+      }
+      .cone {
+        transform: translateY(-12px);
+      }
     }
     &.header {
       width: $xtraSmallWidth !important;
-      font-size: 2.1rem;
+      font-size: 2.08rem;
+      padding-bottom: 1rem;
       .descriptionContainer {
         .description {
           .dItem {
@@ -1483,25 +1494,101 @@ $xtraSmallWidth: 370px;
     }
     &.work {
       width: $xtraSmallWidth !important;
+      padding-bottom: 4rem;
       .workContainer {
         .workBody {
+          .workHeader {
+            margin-block-end: 1rem;
+            font-size: 1.2rem;
+          }
           .workItemContainer {
             width: $xtraSmallWidth !important;
+            span {
+              font-size: 1.3rem;
+              padding-bottom: 20px;
+              &:after {
+                right: -7px;
+              }
+            }
           }
         }
       }
       .favorites {
         width: $xtraSmallWidth !important;
+        transform: translate(0px, 120px);
+        .favoritesContainer {
+          .boxColumn {
+            .skills {
+              div {
+                font-size: 0.8rem !important;
+              }
+            }
+          }
+          .leftContainer {
+            .boxItem {
+              .designers {
+                div {
+                  font-size: 0.8rem !important;
+                }
+              }
+              .fonts {
+                div {
+                  font-size: 0.8rem !important;
+                }
+              }
+            }
+          }
+        }
       }
     }
     &.info {
       width: $xtraSmallWidth !important;
+      .infoBody {
+        .aboutHeader {
+          font-size: 1.2rem;
+          margin-block-end: 1rem;
+        }
+        .aboutVerbiage {
+          font-size: 1.35rem;
+        }
+      }
     }
     &.contact {
       width: $xtraSmallWidth !important;
+      margin-top: 10rem;
+      .contentContainer {
+        .copyContainer {
+          .educationHeader {
+            font-size: 1.2rem;
+          }
+          .educationItem {
+            font-size: 1.4rem;
+            &--0,
+            &--3,
+            &--6 {
+              font-size: 1.35rem;
+            }
+          }
+          .contactInfo {
+            &--0 {
+              font-size: 1.2rem;
+              padding-top: 1rem;
+            }
+            &--1 {
+              font-size: 1.35rem;
+            }
+          }
+        }
+      }
     }
     &.resume {
       width: $xtraSmallWidth !important;
+      height: 135px;
+      transform: translateY(-135px);
+      a {
+        height: 120px;
+        line-height: 105px;
+      }
     }
   }
 }
