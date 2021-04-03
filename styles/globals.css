@@ -71,7 +71,7 @@ section.navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #fdfcf4;
+  color: white;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -99,7 +99,7 @@ section.navigation .name:before {
   content: "";
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background-color: #fdfcf4;
+  background-color: white;
   -webkit-animation: 700ms lineAnim ease;
           animation: 700ms lineAnim ease;
   -webkit-animation-fill-mode: forwards;
@@ -228,7 +228,7 @@ section.work .workContainer .workBody .workHeader {
           margin-block-end: 1.5rem;
   display: block;
   line-height: 1.1;
-  color: #97b3f0;
+  color: white;
   padding-left: 1rem;
 }
 
@@ -257,7 +257,7 @@ section.work .workContainer .workBody .workItemContainer span {
 }
 
 section.work .workContainer .workBody .workItemContainer span:hover {
-  background: #f0e78e;
+  background: khaki;
   color: black;
 }
 
@@ -272,7 +272,7 @@ section.work div.favorites {
 
 section.work div.favorites .favoritesContainer {
   position: relative;
-  color: #fdfcf4;
+  color: white;
   width: 495px;
   margin-left: auto;
   margin-right: 1rem;
@@ -308,7 +308,7 @@ section.work div.favorites .favoritesContainer .leftContainer {
 
 section.work div.favorites .favoritesContainer .leftContainer .boxItem {
   border-radius: 15px;
-  border: 2px solid #fdfcf4;
+  border: 2px solid white;
   height: 48%;
   padding: 2.2rem 2rem 2rem 2.4rem;
   background-color: black;
@@ -358,12 +358,12 @@ section.work div.favorites .favoritesContainer .leftContainer .boxItem .designer
   text-decoration: underline;
   -webkit-text-decoration-color: #575757;
           text-decoration-color: #575757;
-  color: #fdfcf4;
+  color: white;
   z-index: 12;
 }
 
 section.work div.favorites .favoritesContainer .leftContainer .boxItem .designers ul li a:visited {
-  color: #fdfcf4;
+  color: white;
 }
 
 section.work div.favorites .favoritesContainer .leftContainer .boxItem .designers ul li a:hover {
@@ -375,7 +375,7 @@ section.work div.favorites .favoritesContainer .leftContainer .boxItem .designer
 
 section.work div.favorites .favoritesContainer .boxColumn {
   width: 48%;
-  border: 2px solid #fdfcf4;
+  border: 2px solid white;
   border-radius: 15px;
   padding: 2.2rem 2rem 2rem 2.4rem;
   background-color: black;
@@ -549,8 +549,8 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:hover {
   color: khaki;
-  -webkit-text-decoration-color: rgba(240, 230, 140, 0.425);
-          text-decoration-color: rgba(240, 230, 140, 0.425);
+  -webkit-text-decoration-color: rgba(240, 230, 140, 0.418);
+          text-decoration-color: rgba(240, 230, 140, 0.418);
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:hover img {
@@ -648,7 +648,7 @@ section.resume a:hover img {
 }
 
 .customModal button:hover svg {
-  fill: #f0e78e !important;
+  fill: khaki !important;
 }
 
 .customModal button svg {
@@ -1175,7 +1175,7 @@ section.resume a:hover img {
   }
   section.work .favorites .favoritesContainer .boxColumn {
     padding: 1.9rem 1.9rem 1.9rem 2rem !important;
-    border: solid 1px #dff67b !important;
+    border: solid 1px white !important;
   }
   section.work .favorites .favoritesContainer .boxColumn .skills {
     font-size: 1.2rem !important;
@@ -1186,7 +1186,7 @@ section.resume a:hover img {
   }
   section.work .favorites .favoritesContainer .leftContainer .boxItem {
     padding: 1.9rem 1.9rem 1.9rem 2rem !important;
-    border: solid 1px #dff67b !important;
+    border: solid 1px white !important;
   }
   section.work .favorites .favoritesContainer .leftContainer .boxItem .designers {
     font-size: 1.2rem;
