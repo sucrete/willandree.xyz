@@ -65,6 +65,15 @@ section {
   visibility: hidden;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+ul li {
+  padding-left: 0px;
+}
+
 section.navigation {
   padding-top: 2.7rem;
   padding-bottom: 5rem;
@@ -622,7 +631,7 @@ section.resume a:hover img {
 .customModal {
   -webkit-box-shadow: unset !important;
           box-shadow: unset !important;
-  background-color: #fdfcf4 !important;
+  background-color: white !important;
   max-width: unset !important;
   width: 100vw !important;
   height: 100vh !important;
@@ -632,7 +641,7 @@ section.resume a:hover img {
 }
 
 .customModal .projectDesignation {
-  background-color: #fdfcf4 !important;
+  background-color: white !important;
   padding: 12.5px 0 10px 22px;
   display: block;
   color: #181716;
@@ -659,7 +668,7 @@ section.resume a:hover img {
 
 .customModal .modalBody {
   padding: 1.5rem 5.5rem;
-  background: #fdfcf4;
+  background: white;
   height: 100%;
   position: relative;
 }
@@ -1605,6 +1614,30 @@ section.resume a:hover img {
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes xfade {
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+}
+
+@keyframes xfade {
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=globals.css.map */

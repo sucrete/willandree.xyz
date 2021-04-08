@@ -87,6 +87,13 @@ section {
     visibility: hidden;
   }
 }
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  li {
+    padding-left: 0px;
+  }
+}
 // ███╗   ██╗ █████╗ ██╗   ██╗██╗ ██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗         ██╗
 // ████╗  ██║██╔══██╗██║   ██║██║██╔════╝ ██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║         ╚██╗
 // ██╔██╗ ██║███████║██║   ██║██║██║  ███╗███████║   ██║   ██║██║   ██║██╔██╗ ██║    █████╗╚██╗
@@ -589,7 +596,7 @@ section.resume {
 }
 .customModal {
   box-shadow: unset !important;
-  background-color: $warmWhite !important;
+  background-color: white !important;
   // filter: url(#grain);
   max-width: unset !important;
   width: 100vw !important;
@@ -598,7 +605,7 @@ section.resume {
   padding: 0rem !important;
   margin: 0px !important;
   .projectDesignation {
-    background-color: $warmWhite !important;
+    background-color: white !important;
     padding: 12.5px 0 10px 22px;
     display: block;
     color: $warmBlack;
@@ -623,7 +630,7 @@ section.resume {
   }
   .modalBody {
     padding: 1.5rem 5.5rem;
-    background: $warmWhite;
+    background: white;
     height: 100%;
     position: relative;
     .modalContent {
@@ -1674,5 +1681,16 @@ $xtraSmallWidth: 360px;
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes xfade {
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
   }
 }

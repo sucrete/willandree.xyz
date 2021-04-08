@@ -4,7 +4,11 @@ const slides = [
   { id: 2, url: "/5532_DuckWaddle.gif" },
 ];
 const imageSlides = slides.map((slide, index) => {
-  return <div>{slide.id}</div>;
+  return (
+    <li>
+      <img src={`${slide.url}`} alt="" />
+    </li>
+  );
 });
 export default function DumpTRUCK() {
   return (
@@ -13,7 +17,9 @@ export default function DumpTRUCK() {
       <div className="modalBody">
         <h1 className="modalHeader">dumpTRUCK</h1>
         <div className="modalContent">
-          <div className="modalImagesContainer"></div>
+          <div className="modalImagesContainer">
+            <ul>{imageSlides}</ul>
+          </div>
           <div className="modalDetails"></div>
         </div>
       </div>
