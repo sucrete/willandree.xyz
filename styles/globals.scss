@@ -4,7 +4,17 @@ $warmWhite: rgb(253, 252, 244);
 $myOrange: #c46221;
 $myGrey: rgb(151, 151, 151);
 $chartreuse: hsl(54, 77%, 75%);
-
+@mixin slideShow($slideNumber) {
+  $numberOfSlides: $slideNumber + 1;
+  $time: $numberOfSlides * 5s;
+  @for $i from 0 through $slideNumber {
+    // $delayMultiplier: $i - 1;
+    $delay: $i * 5s;
+    .liImage--#{$i} {
+      animation: xfade $time $delay infinite;
+    }
+  }
+}
 html,
 body {
   padding: 0px;
@@ -19,6 +29,7 @@ body {
 body > * {
   overflow-x: hidden;
 }
+
 body {
   padding: 0;
   margin: 0;
@@ -60,7 +71,7 @@ section {
 }
 .container {
   // clamp(MIN, VAL, MAX)
-  // MIN for a small as you'll allow it to go
+  // MIN for as small as you'll allow it to go
   // VAL for the ideal value
   // MAX for the upper ceiling you'll allow it to go
 
@@ -638,15 +649,29 @@ section.resume {
       position: relative;
       .modalImagesContainer {
         height: 500px;
+        width: 500px;
         position: relative;
-        .modalImage {
-          height: auto;
-          width: 500px;
-          position: absolute;
-          will-change: opacity transform;
-          top: 0;
-          left: 0;
+
+        ul {
+          height: 100%;
+          width: 100%;
+          @include slideShow(2);
+          li {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+          }
         }
+        // .modalImage {
+        //   height: auto;
+        //   width: 500px;
+        //   position: absolute;
+        //   will-change: opacity transform;
+        //   top: 0;
+        //   left: 0;
+        // }
       }
     }
     .modalHeader {

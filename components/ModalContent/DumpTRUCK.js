@@ -5,7 +5,7 @@ const slides = [
 ];
 const imageSlides = slides.map((slide, index) => {
   return (
-    <li>
+    <li className={`liImage--${index}`}>
       <img src={`${slide.url}`} alt="" />
     </li>
   );
@@ -14,7 +14,7 @@ export default function DumpTRUCK() {
   return (
     <>
       <div className="projectDesignation">2020</div>
-      <div className="modalBody">
+      <div className="modalBody dumpTruck">
         <h1 className="modalHeader">dumpTRUCK</h1>
         <div className="modalContent">
           <div className="modalImagesContainer">

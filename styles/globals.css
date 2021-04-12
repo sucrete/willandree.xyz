@@ -680,16 +680,37 @@ section.resume a:hover img {
 
 .customModal .modalBody .modalContent .modalImagesContainer {
   height: 500px;
+  width: 500px;
   position: relative;
 }
 
-.customModal .modalBody .modalContent .modalImagesContainer .modalImage {
-  height: auto;
-  width: 500px;
+.customModal .modalBody .modalContent .modalImagesContainer ul {
+  height: 100%;
+  width: 100%;
+}
+
+.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--0 {
+  -webkit-animation: xfade 15s 0s infinite;
+          animation: xfade 15s 0s infinite;
+}
+
+.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--1 {
+  -webkit-animation: xfade 15s 5s infinite;
+          animation: xfade 15s 5s infinite;
+}
+
+.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--2 {
+  -webkit-animation: xfade 15s 10s infinite;
+          animation: xfade 15s 10s infinite;
+}
+
+.customModal .modalBody .modalContent .modalImagesContainer ul li {
   position: absolute;
-  will-change: opacity transform;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 .customModal .modalBody .modalHeader {
