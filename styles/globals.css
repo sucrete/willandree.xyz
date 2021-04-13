@@ -689,28 +689,72 @@ section.resume a:hover img {
   width: 100%;
 }
 
-.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--0 {
-  -webkit-animation: xfade 15s 0s infinite;
-          animation: xfade 15s 0s infinite;
+.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--2 {
+  -webkit-animation: xfade 17.07s 0s infinite;
+          animation: xfade 17.07s 0s infinite;
 }
 
 .customModal .modalBody .modalContent .modalImagesContainer ul .liImage--1 {
-  -webkit-animation: xfade 15s 5s infinite;
-          animation: xfade 15s 5s infinite;
+  -webkit-animation: xfade 17.07s 5.69s infinite;
+          animation: xfade 17.07s 5.69s infinite;
 }
 
-.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--2 {
-  -webkit-animation: xfade 15s 10s infinite;
-          animation: xfade 15s 10s infinite;
+.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--0 {
+  -webkit-animation: xfade 17.07s 11.38s infinite;
+          animation: xfade 17.07s 11.38s infinite;
+}
+
+@-webkit-keyframes xfade {
+  0% {
+    opacity: 1;
+  }
+  29.29115% {
+    opacity: 1;
+  }
+  33.33333% {
+    opacity: 0;
+  }
+  95.95782% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes xfade {
+  0% {
+    opacity: 1;
+  }
+  29.29115% {
+    opacity: 1;
+  }
+  33.33333% {
+    opacity: 0;
+  }
+  95.95782% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .customModal .modalBody .modalContent .modalImagesContainer ul li {
   position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.customModal .modalBody .modalContent .modalImagesContainer ul li img {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  opacity: 0;
+  position: absolute;
 }
 
 .customModal .modalBody .modalHeader {
@@ -1635,30 +1679,6 @@ section.resume a:hover img {
   }
   to {
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes xfade {
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 0;
-  }
-}
-
-@keyframes xfade {
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 0;
   }
 }
 /*# sourceMappingURL=globals.css.map */

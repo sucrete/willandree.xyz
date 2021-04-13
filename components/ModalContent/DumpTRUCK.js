@@ -5,7 +5,7 @@ const slides = [
 ];
 const imageSlides = slides.map((slide, index) => {
   return (
-    <li className={`liImage--${index}`}>
+    <li className={`liImage liImage--${index}`}>
       <img src={`${slide.url}`} alt="" />
     </li>
   );

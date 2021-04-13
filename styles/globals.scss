@@ -5,13 +5,36 @@ $myOrange: #c46221;
 $myGrey: rgb(151, 151, 151);
 $chartreuse: hsl(54, 77%, 75%);
 @mixin slideShow($slideNumber) {
-  $numberOfSlides: $slideNumber + 1;
-  $time: $numberOfSlides * 5s;
+  $n: $slideNumber + 1;
+  $time: ($n * 1s) * (5.69);
+  $t: ($n * 1) * (5.69);
+  $_2: (5 / $t) * 100%;
+  $_3: (1 / $n) * 100%;
+  $_4: 100% - (0.69 / $t * 100%);
+  $decrementer: $slideNumber;
   @for $i from 0 through $slideNumber {
     // $delayMultiplier: $i - 1;
-    $delay: $i * 5s;
-    .liImage--#{$i} {
+    $delay: $i * 5.69s;
+    $d: $slideNumber - $i;
+    .liImage--#{$d} {
       animation: xfade $time $delay infinite;
+    }
+  }
+  @keyframes xfade {
+    0% {
+      opacity: 1;
+    }
+    #{$_2} {
+      opacity: 1;
+    }
+    #{$_3} {
+      opacity: 0;
+    }
+    #{$_4} {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }
@@ -658,10 +681,16 @@ section.resume {
           @include slideShow(2);
           li {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            height: 100%;
+            width: 100%;
             opacity: 0;
+            animation-timing-function: ease-in-out;
+            img {
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              position: absolute;
+            }
           }
         }
         // .modalImage {
@@ -1706,16 +1735,5 @@ $xtraSmallWidth: 360px;
   }
   to {
     opacity: 1;
-  }
-}
-@keyframes xfade {
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 0;
   }
 }
