@@ -689,32 +689,32 @@ section.resume a:hover img {
   width: 100%;
 }
 
-.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--2 {
-  -webkit-animation: xfade 17.07s 0s infinite;
-          animation: xfade 17.07s 0s infinite;
+.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--0 {
+  -webkit-animation: xfade 15.57s 0s infinite;
+          animation: xfade 15.57s 0s infinite;
 }
 
 .customModal .modalBody .modalContent .modalImagesContainer ul .liImage--1 {
-  -webkit-animation: xfade 17.07s 5.69s infinite;
-          animation: xfade 17.07s 5.69s infinite;
+  -webkit-animation: sixNine 0.69s 4.5s forwards, xfade 15.57s 5.19s infinite;
+          animation: sixNine 0.69s 4.5s forwards, xfade 15.57s 5.19s infinite;
 }
 
-.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--0 {
-  -webkit-animation: xfade 17.07s 11.38s infinite;
-          animation: xfade 17.07s 11.38s infinite;
+.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--2 {
+  -webkit-animation: sixNine 0.69s 9.69s forwards, xfade 15.57s 10.38s infinite;
+          animation: sixNine 0.69s 9.69s forwards, xfade 15.57s 10.38s infinite;
 }
 
 @-webkit-keyframes xfade {
   0% {
     opacity: 1;
   }
-  29.29115% {
+  28.90173% {
     opacity: 1;
   }
   33.33333% {
     opacity: 0;
   }
-  95.95782% {
+  95.5684% {
     opacity: 0;
   }
   100% {
@@ -726,16 +726,34 @@ section.resume a:hover img {
   0% {
     opacity: 1;
   }
-  29.29115% {
+  28.90173% {
     opacity: 1;
   }
   33.33333% {
     opacity: 0;
   }
-  95.95782% {
+  95.5684% {
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes sixNine {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sixNine {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }
