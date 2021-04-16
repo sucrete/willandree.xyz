@@ -153,6 +153,18 @@ ul {
     padding-left: 0px;
   }
 }
+.dumpHeart {
+  position: absolute;
+  top: 35%;
+  width: 7px;
+  right: 8px;
+  -webkit-transform: translatey(-60%);
+  -ms-transform: translatey(-60%);
+  transform: translatey(-60%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
 // ███╗   ██╗ █████╗ ██╗   ██╗██╗ ██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗         ██╗
 // ████╗  ██║██╔══██╗██║   ██║██║██╔════╝ ██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║         ╚██╗
 // ██╔██╗ ██║███████║██║   ██║██║██║  ███╗███████║   ██║   ██║██║   ██║██╔██╗ ██║    █████╗╚██╗
@@ -664,27 +676,28 @@ section.resume {
   padding: 0rem !important;
   margin: 0px !important;
   .projectDesignation {
-    background-color: white !important;
-    padding: 12.5px 0 10px 22px;
+    background: rgb(245, 245, 245);
+    padding: 12px 0 9px 23px;
     display: block;
-    color: $warmBlack;
+    color: rgb(44, 44, 44);
     font-size: 1.3em;
     font-family: "Epilogue";
     font-weight: 500;
+    line-height: 35px;
     // letter-spacing: 0.05em;
-    border-bottom: solid 1px rgb(26, 25, 24);
+    // border-bottom: solid 1px rgb(185, 185, 185);
   }
   button {
     border: none !important;
     outline: none !important;
     &:hover {
       svg {
-        fill: khaki !important;
+        fill: grey !important;
       }
     }
     svg {
       transition: all 0.15s ease;
-      fill: $warmBlack !important;
+      fill: rgb(44, 44, 44) !important;
     }
   }
   .modalBody {
@@ -692,42 +705,6 @@ section.resume {
     background: white;
     height: 100%;
     position: relative;
-    .modalContent {
-      height: 500px;
-      position: relative;
-      .modalImagesContainer {
-        height: 500px;
-        width: 500px;
-        position: relative;
-
-        ul {
-          height: 100%;
-          width: 100%;
-          @include slideShow(2);
-          li {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            animation-timing-function: ease-in-out;
-            img {
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              position: absolute;
-            }
-          }
-        }
-        // .modalImage {
-        //   height: auto;
-        //   width: 500px;
-        //   position: absolute;
-        //   will-change: opacity transform;
-        //   top: 0;
-        //   left: 0;
-        // }
-      }
-    }
     .modalHeader {
       color: $warmBlack;
       font-family: "Epilogue";
@@ -739,12 +716,11 @@ section.resume {
     }
     .modalSubheading {
       color: grey;
-      font-size: 1.3em;
+      font-size: 1rem;
       padding-left: 3px;
-      // letter-spacing: 0.05rem;
       font-family: "Epilogue";
       .lilCapsule {
-        font-size: 0.7em;
+        font-size: 0.5rem;
         font-family: "Epilogue";
         padding: 5px 15px;
         color: $warmBlack;
@@ -754,6 +730,64 @@ section.resume {
         bottom: 2px;
       }
     }
+    .modalContent {
+      height: 500px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      .modalImagesContainer {
+        height: 500px;
+        width: 65%;
+        position: relative;
+        ul {
+          height: 100%;
+          width: 100%;
+
+          li {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            animation-timing-function: ease-in-out;
+          }
+          li > * {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+          }
+        }
+        // .modalImage {
+        //   height: auto;
+        //   width: 500px;
+        //   position: absolute;
+        //   will-change: opacity transform;
+        //   top: 0;
+        //   left: 0;
+        // }
+      }
+      .modalDetails {
+        // background: rgb(245, 245, 245);
+        border-radius: 15px;
+        padding: 3rem 3rem;
+        margin-right: 3rem;
+        width: 26%;
+        font-family: "Epilogue", sans-serif;
+        font-size: 1rem;
+        line-height: 125%;
+        &:before {
+          position: absolute;
+          content: "";
+          height: 80%;
+          width: 1px;
+          right: 30%;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgb(214, 214, 214);
+        }
+      }
+    }
+
     &.maxRosen {
       .modalSubheading {
         padding-left: 2px;
@@ -761,6 +795,15 @@ section.resume {
           background-color: pink;
 
           // border: solid 1px pink;
+        }
+      }
+    }
+    &.dumpTRUCK {
+      .modalContent {
+        .modalImagesContainer {
+          ul {
+            @include slideShow(2);
+          }
         }
       }
     }

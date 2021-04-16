@@ -74,6 +74,18 @@ ul li {
   padding-left: 0px;
 }
 
+.dumpHeart {
+  position: absolute;
+  top: 35%;
+  width: 7px;
+  right: 8px;
+  -webkit-transform: translatey(-60%);
+  transform: translatey(-60%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
 section.navigation {
   padding-top: 2.7rem;
   padding-bottom: 5rem;
@@ -641,14 +653,14 @@ section.resume a:hover img {
 }
 
 .customModal .projectDesignation {
-  background-color: white !important;
-  padding: 12.5px 0 10px 22px;
+  background: whitesmoke;
+  padding: 12px 0 9px 23px;
   display: block;
-  color: #181716;
+  color: #2c2c2c;
   font-size: 1.3em;
   font-family: "Epilogue";
   font-weight: 500;
-  border-bottom: solid 1px #1a1918;
+  line-height: 35px;
 }
 
 .customModal button {
@@ -657,13 +669,13 @@ section.resume a:hover img {
 }
 
 .customModal button:hover svg {
-  fill: khaki !important;
+  fill: grey !important;
 }
 
 .customModal button svg {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
-  fill: #181716 !important;
+  fill: #2c2c2c !important;
 }
 
 .customModal .modalBody {
@@ -673,14 +685,50 @@ section.resume a:hover img {
   position: relative;
 }
 
+.customModal .modalBody .modalHeader {
+  color: #181716;
+  font-family: "Epilogue";
+  font-size: 3em;
+  -webkit-margin-after: 0rem;
+          margin-block-end: 0rem;
+  line-height: 110%;
+  -webkit-margin-before: 2.5rem;
+          margin-block-start: 2.5rem;
+  letter-spacing: 0rem;
+}
+
+.customModal .modalBody .modalSubheading {
+  color: grey;
+  font-size: 1rem;
+  padding-left: 3px;
+  font-family: "Epilogue";
+}
+
+.customModal .modalBody .modalSubheading .lilCapsule {
+  font-size: 0.5rem;
+  font-family: "Epilogue";
+  padding: 5px 15px;
+  color: #181716;
+  line-height: 100%;
+  border-radius: 50px;
+  position: relative;
+  bottom: 2px;
+}
+
 .customModal .modalBody .modalContent {
   height: 500px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .customModal .modalBody .modalContent .modalImagesContainer {
   height: 500px;
-  width: 500px;
+  width: 65%;
   position: relative;
 }
 
@@ -689,17 +737,64 @@ section.resume a:hover img {
   width: 100%;
 }
 
-.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--0 {
+.customModal .modalBody .modalContent .modalImagesContainer ul li {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.customModal .modalBody .modalContent .modalImagesContainer ul li > * {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.customModal .modalBody .modalContent .modalDetails {
+  border-radius: 15px;
+  padding: 3rem 3rem;
+  margin-right: 3rem;
+  width: 26%;
+  font-family: "Epilogue", sans-serif;
+  font-size: 1rem;
+  line-height: 125%;
+}
+
+.customModal .modalBody .modalContent .modalDetails:before {
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 1px;
+  right: 30%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #d6d6d6;
+}
+
+.customModal .modalBody.maxRosen .modalSubheading {
+  padding-left: 2px;
+}
+
+.customModal .modalBody.maxRosen .modalSubheading span {
+  background-color: pink;
+}
+
+.customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul .liImage--0 {
   -webkit-animation: xfade 15.57s 0s infinite;
           animation: xfade 15.57s 0s infinite;
 }
 
-.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--1 {
+.customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul .liImage--1 {
   -webkit-animation: sixNine 0.69s 4.5s forwards, xfade 15.57s 5.19s infinite;
           animation: sixNine 0.69s 4.5s forwards, xfade 15.57s 5.19s infinite;
 }
 
-.customModal .modalBody .modalContent .modalImagesContainer ul .liImage--2 {
+.customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul .liImage--2 {
   -webkit-animation: sixNine 0.69s 9.69s forwards, xfade 15.57s 10.38s infinite;
           animation: sixNine 0.69s 9.69s forwards, xfade 15.57s 10.38s infinite;
 }
@@ -756,61 +851,6 @@ section.resume a:hover img {
   to {
     opacity: 1;
   }
-}
-
-.customModal .modalBody .modalContent .modalImagesContainer ul li {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
-.customModal .modalBody .modalContent .modalImagesContainer ul li img {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  position: absolute;
-}
-
-.customModal .modalBody .modalHeader {
-  color: #181716;
-  font-family: "Epilogue";
-  font-size: 3em;
-  -webkit-margin-after: 0rem;
-          margin-block-end: 0rem;
-  line-height: 110%;
-  -webkit-margin-before: 2.5rem;
-          margin-block-start: 2.5rem;
-  letter-spacing: 0rem;
-}
-
-.customModal .modalBody .modalSubheading {
-  color: grey;
-  font-size: 1.3em;
-  padding-left: 3px;
-  font-family: "Epilogue";
-}
-
-.customModal .modalBody .modalSubheading .lilCapsule {
-  font-size: 0.7em;
-  font-family: "Epilogue";
-  padding: 5px 15px;
-  color: #181716;
-  line-height: 100%;
-  border-radius: 50px;
-  position: relative;
-  bottom: 2px;
-}
-
-.customModal .modalBody.maxRosen .modalSubheading {
-  padding-left: 2px;
-}
-
-.customModal .modalBody.maxRosen .modalSubheading span {
-  background-color: pink;
 }
 
 .inViewtrue {
