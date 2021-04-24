@@ -72,7 +72,7 @@ function RoboPost() {
   );
 }
 const slides = [
-  <img style={{ height: "60px", width: "auto" }} src="/dumpTRUCKlogo.svg" />,
+  <img style={{ height: "70px", width: "auto" }} src="/dumpTRUCKlogo.svg" />,
   <FauxPost />,
   <RoboPost />,
 ];
@@ -92,8 +92,8 @@ export default function DumpTRUCK() {
             <ul>{imageSlides}</ul>
           </div>
           <div className="modalDetails">
-            This site was created to provide a permanent home for a selection of
-            work from a central progenitor of "
+            dumpTRUCK was created to provide a permanent home for a selection of
+            work from a key progenitor of "
             <a
               href="https://www.artspace.com/magazine/interviews_features/trend_report/post_internet_art-52138"
               target="
@@ -101,8 +101,8 @@ export default function DumpTRUCK() {
             >
               post-internet art
             </a>
-            ", an unconventional chatroom called dump.fm. Like a chatroom, a
-            text
+            " and the internet aesthetic. an unconventional chatroom called
+            dump.fm. Like a chatroom, a text
           </div>
         </div>
       </div>

@@ -1,3 +1,19 @@
+function MaxPic() {
+  return (
+    <div class="frame__outside">
+      <div class="frame__inside">
+        <div class="matte">
+          <div class="picture"></div>
+        </div>
+      </div>
+    </div>
+  );
+}
+const slides = [<MaxPic />];
+const imageSlides = slides.map((slide, index) => {
+  return <li className={`liImage liImage--${index}`}>{slide}</li>;
+});
+
 export default function MaxRosen() {
   return (
     <>
@@ -7,6 +23,17 @@ export default function MaxRosen() {
         <div className="modalSubheading">
           personal website for director/editor Max Rosen{" "}
           <span className="lilCapsule">Work In Progress</span>
+        </div>
+        <div className="modalContent">
+          <div className="modalImagesContainer">
+            <ul>{imageSlides}</ul>
+          </div>
+          <div className="modalDetails">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+            impedit numquam praesentium recusandae blanditiis quia sequi,
+            repellat vel consectetur autem labore earum libero, quod minima
+            culpa optio sapiente expedita alias!
+          </div>
         </div>
       </div>
     </>

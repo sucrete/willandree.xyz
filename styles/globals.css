@@ -86,6 +86,109 @@ ul li {
   cursor: pointer;
 }
 
+.desaturatedBuilding {
+  max-height: 90%;
+  -webkit-box-shadow: 0px 1px 0 rgba(249, 245, 208, 0), -1px 1.9px 1px #f9f5d0, -2px 3.8px 2px rgba(249, 245, 208, 0.75), -3px 5.7px 3px rgba(249, 245, 208, 0.5), -4px 7.6px 4px rgba(249, 245, 208, 0.375), -5px 9.5px 5px rgba(249, 245, 208, 0.3), -6px 11.4px 6px rgba(249, 245, 208, 0.25), -7px 13.3px 7px rgba(249, 245, 208, 0.214286), -8px 15.2px 8px rgba(249, 245, 208, 0.1875), -9px 17.1px 9px rgba(249, 245, 208, 0.166667), -10px 19px 10px rgba(249, 245, 208, 0.15), -11px 20.9px 11px rgba(249, 245, 208, 0.136364), -12px 22.8px 12px rgba(249, 245, 208, 0.125);
+          box-shadow: 0px 1px 0 rgba(249, 245, 208, 0), -1px 1.9px 1px #f9f5d0, -2px 3.8px 2px rgba(249, 245, 208, 0.75), -3px 5.7px 3px rgba(249, 245, 208, 0.5), -4px 7.6px 4px rgba(249, 245, 208, 0.375), -5px 9.5px 5px rgba(249, 245, 208, 0.3), -6px 11.4px 6px rgba(249, 245, 208, 0.25), -7px 13.3px 7px rgba(249, 245, 208, 0.214286), -8px 15.2px 8px rgba(249, 245, 208, 0.1875), -9px 17.1px 9px rgba(249, 245, 208, 0.166667), -10px 19px 10px rgba(249, 245, 208, 0.15), -11px 20.9px 11px rgba(249, 245, 208, 0.136364), -12px 22.8px 12px rgba(249, 245, 208, 0.125);
+  border-radius: 2px;
+}
+
+.cardContainer {
+  width: 525px;
+  height: 340px;
+}
+
+.cardContainer .shadow {
+  background: transparent;
+  height: 340px;
+  width: auto;
+  position: absolute;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  fill: #b4af82;
+  opacity: 1;
+}
+
+.cardContainer .bizCard {
+  width: 455px;
+  height: 270px;
+  background-image: linear-gradient(15deg, #e4e2d2 0%, #f0eedf 100%);
+  position: absolute;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  display: block;
+  left: 35px;
+  top: 35px;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8);
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  -webkit-box-shadow: 0px 1px 0 rgba(249, 245, 208, 0), -1px 1.9px 1px #f9f5d0, -2px 3.8px 2px rgba(249, 245, 208, 0.75), -3px 5.7px 3px rgba(249, 245, 208, 0.5), -4px 7.6px 4px rgba(249, 245, 208, 0.375), -5px 9.5px 5px rgba(249, 245, 208, 0.3), -6px 11.4px 6px rgba(249, 245, 208, 0.25), -7px 13.3px 7px rgba(249, 245, 208, 0.214286), -8px 15.2px 8px rgba(249, 245, 208, 0.1875), -9px 17.1px 9px rgba(249, 245, 208, 0.166667), -10px 19px 10px rgba(249, 245, 208, 0.15), -11px 20.9px 11px rgba(249, 245, 208, 0.136364), -12px 22.8px 12px rgba(249, 245, 208, 0.125);
+          box-shadow: 0px 1px 0 rgba(249, 245, 208, 0), -1px 1.9px 1px #f9f5d0, -2px 3.8px 2px rgba(249, 245, 208, 0.75), -3px 5.7px 3px rgba(249, 245, 208, 0.5), -4px 7.6px 4px rgba(249, 245, 208, 0.375), -5px 9.5px 5px rgba(249, 245, 208, 0.3), -6px 11.4px 6px rgba(249, 245, 208, 0.25), -7px 13.3px 7px rgba(249, 245, 208, 0.214286), -8px 15.2px 8px rgba(249, 245, 208, 0.1875), -9px 17.1px 9px rgba(249, 245, 208, 0.166667), -10px 19px 10px rgba(249, 245, 208, 0.15), -11px 20.9px 11px rgba(249, 245, 208, 0.136364), -12px 22.8px 12px rgba(249, 245, 208, 0.125);
+}
+
+.cardContainer .bizCard .quoteBox {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cardContainer .bizCard .quoteBox img {
+  max-width: 100%;
+}
+
+.cardContainer .bizCard .innerFrame {
+  height: calc(100% - 50px);
+  width: calc(100% - 50px);
+  border: 1px solid #c2ba88;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 8;
+}
+
+.cardContainer .bizCard .corner {
+  position: absolute;
+  z-index: 9;
+}
+
+.cardContainer .bizCard .TL {
+  top: 13px;
+  left: 13px;
+  background-color: #ebe9d9;
+}
+
+.cardContainer .bizCard .TR {
+  top: 13px;
+  right: 12px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: #eeeddd;
+}
+
+.cardContainer .bizCard .BL {
+  bottom: 12px;
+  left: 13px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  background: #e3e3d2;
+}
+
+.cardContainer .bizCard .BR {
+  bottom: 12px;
+  right: 12px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: #e4e5d3;
+}
+
 section.navigation {
   padding-top: 2.7rem;
   padding-bottom: 5rem;
@@ -653,10 +756,10 @@ section.resume a:hover img {
 }
 
 .customModal .projectDesignation {
-  background: whitesmoke;
+  background: #fafafa;
   padding: 12px 0 9px 23px;
   display: block;
-  color: #2c2c2c;
+  color: grey;
   font-size: 1.3em;
   font-family: "Epilogue";
   font-weight: 500;
@@ -669,13 +772,13 @@ section.resume a:hover img {
 }
 
 .customModal button:hover svg {
-  fill: grey !important;
+  fill: khaki !important;
 }
 
 .customModal button svg {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
-  fill: #2c2c2c !important;
+  fill: grey !important;
 }
 
 .customModal .modalBody {
@@ -705,9 +808,9 @@ section.resume a:hover img {
 }
 
 .customModal .modalBody .modalSubheading .lilCapsule {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   font-family: "Epilogue";
-  padding: 5px 15px;
+  padding: 6px 13px 4px 13px;
   color: #181716;
   line-height: 100%;
   border-radius: 50px;
@@ -756,7 +859,7 @@ section.resume a:hover img {
 
 .customModal .modalBody .modalContent .modalDetails {
   border-radius: 15px;
-  padding: 3rem 3rem;
+  padding: 4rem 3rem 3rem 3rem;
   margin-right: 3rem;
   width: 26%;
   font-family: "Epilogue", sans-serif;
@@ -767,39 +870,36 @@ section.resume a:hover img {
 .customModal .modalBody .modalContent .modalDetails:before {
   position: absolute;
   content: "";
-  height: 80%;
+  height: 85%;
   width: 1px;
-  right: 30%;
+  right: 29%;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: #d6d6d6;
 }
 
-.customModal .modalBody.maxRosen .modalSubheading {
-  padding-left: 2px;
+.customModal .modalBody.OTL .modalSubheading .lilCapsule {
+  background-color: #fff9a6;
+  color: #181716;
 }
 
-.customModal .modalBody.maxRosen .modalSubheading span {
-  background-color: pink;
+.customModal .modalBody.OTL .modalContent .modalImagesContainer ul .liImage--0 {
+  -webkit-animation: xfade--OTL 15.57s 0s infinite;
+          animation: xfade--OTL 15.57s 0s infinite;
 }
 
-.customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul .liImage--0 {
-  -webkit-animation: xfade 15.57s 0s infinite;
-          animation: xfade 15.57s 0s infinite;
+.customModal .modalBody.OTL .modalContent .modalImagesContainer ul .liImage--1 {
+  -webkit-animation: sixNine--OTL 0.69s 4.5s forwards, xfade--OTL 15.57s 5.19s infinite;
+          animation: sixNine--OTL 0.69s 4.5s forwards, xfade--OTL 15.57s 5.19s infinite;
 }
 
-.customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul .liImage--1 {
-  -webkit-animation: sixNine 0.69s 4.5s forwards, xfade 15.57s 5.19s infinite;
-          animation: sixNine 0.69s 4.5s forwards, xfade 15.57s 5.19s infinite;
+.customModal .modalBody.OTL .modalContent .modalImagesContainer ul .liImage--2 {
+  -webkit-animation: sixNine--OTL 0.69s 9.69s forwards, xfade--OTL 15.57s 10.38s infinite;
+          animation: sixNine--OTL 0.69s 9.69s forwards, xfade--OTL 15.57s 10.38s infinite;
 }
 
-.customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul .liImage--2 {
-  -webkit-animation: sixNine 0.69s 9.69s forwards, xfade 15.57s 10.38s infinite;
-          animation: sixNine 0.69s 9.69s forwards, xfade 15.57s 10.38s infinite;
-}
-
-@-webkit-keyframes xfade {
+@-webkit-keyframes xfade--OTL {
   0% {
     opacity: 1;
   }
@@ -817,7 +917,7 @@ section.resume a:hover img {
   }
 }
 
-@keyframes xfade {
+@keyframes xfade--OTL {
   0% {
     opacity: 1;
   }
@@ -835,7 +935,7 @@ section.resume a:hover img {
   }
 }
 
-@-webkit-keyframes sixNine {
+@-webkit-keyframes sixNine--OTL {
   from {
     opacity: 0;
   }
@@ -844,7 +944,90 @@ section.resume a:hover img {
   }
 }
 
-@keyframes sixNine {
+@keyframes sixNine--OTL {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.customModal .modalBody.OTL .modalContent .modalImagesContainer ul .oldTownLogo {
+  position: relative;
+  width: 550px;
+  translate: transformY(-50px);
+}
+
+.customModal .modalBody.maxRosen .modalSubheading {
+  padding-left: 2px;
+}
+
+.customModal .modalBody.maxRosen .modalSubheading .lilCapsule {
+  background-color: pink;
+}
+
+.customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul .liImage--0 {
+  -webkit-animation: xfade--dumpTRUCK 15.57s 0s infinite;
+          animation: xfade--dumpTRUCK 15.57s 0s infinite;
+}
+
+.customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul .liImage--1 {
+  -webkit-animation: sixNine--dumpTRUCK 0.69s 4.5s forwards, xfade--dumpTRUCK 15.57s 5.19s infinite;
+          animation: sixNine--dumpTRUCK 0.69s 4.5s forwards, xfade--dumpTRUCK 15.57s 5.19s infinite;
+}
+
+.customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul .liImage--2 {
+  -webkit-animation: sixNine--dumpTRUCK 0.69s 9.69s forwards, xfade--dumpTRUCK 15.57s 10.38s infinite;
+          animation: sixNine--dumpTRUCK 0.69s 9.69s forwards, xfade--dumpTRUCK 15.57s 10.38s infinite;
+}
+
+@-webkit-keyframes xfade--dumpTRUCK {
+  0% {
+    opacity: 1;
+  }
+  28.90173% {
+    opacity: 1;
+  }
+  33.33333% {
+    opacity: 0;
+  }
+  95.5684% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes xfade--dumpTRUCK {
+  0% {
+    opacity: 1;
+  }
+  28.90173% {
+    opacity: 1;
+  }
+  33.33333% {
+    opacity: 0;
+  }
+  95.5684% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes sixNine--dumpTRUCK {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sixNine--dumpTRUCK {
   from {
     opacity: 0;
   }

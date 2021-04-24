@@ -4,7 +4,19 @@ $warmWhite: rgb(253, 252, 244);
 $myOrange: #c46221;
 $myGrey: rgb(151, 151, 151);
 $chartreuse: hsl(54, 77%, 75%);
-@mixin slideShow($slideNumber) {
+@mixin shadow($color, $steps) {
+  $all: ();
+  $all: append($all, 0px 1px 0 rgba($color, 0), comma);
+  // $all: append($all, 1px -1px 25px $glow, comma);
+  @for $i from 1 through $steps {
+    $all: append(
+      $all,
+      append($i * -1px $i * 1.9px $i * 1px, rgba($color, 1.5 / $i))
+    );
+  }
+  box-shadow: $all;
+}
+@mixin slideShow($slideNumber, $uniqueName) {
   // time = total animation time
   // time = (a+b) * n
   // where:
@@ -26,18 +38,19 @@ $chartreuse: hsl(54, 77%, 75%);
     $delay: $i * 5.19s;
     @if $i == 0 {
       .liImage--#{$i} {
-        animation: xfade $time $delay infinite;
+        animation: xfade--#{$uniqueName} $time $delay infinite;
       }
     } @else {
       $incrementer: $i - 1;
       $buffer: $incrementer * 5.19s;
       $_69delay: $buffer + 4.5s;
       .liImage--#{$i} {
-        animation: sixNine 0.69s $_69delay forwards, xfade $time $delay infinite;
+        animation: sixNine--#{$uniqueName} 0.69s $_69delay forwards,
+          xfade--#{$uniqueName} $time $delay infinite;
       }
     }
   }
-  @keyframes xfade {
+  @keyframes xfade--#{$uniqueName} {
     0% {
       opacity: 1;
     }
@@ -54,7 +67,7 @@ $chartreuse: hsl(54, 77%, 75%);
       opacity: 1;
     }
   }
-  @keyframes sixNine {
+  @keyframes sixNine--#{$uniqueName} {
     from {
       opacity: 0;
     }
@@ -164,6 +177,87 @@ ul {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
+.desaturatedBuilding {
+  max-height: 90%;
+  @include shadow(lighten(khaki, 15%), 12);
+  border-radius: 2px;
+}
+.cardContainer {
+  width: 525px;
+  height: 340px;
+  .shadow {
+    background: transparent;
+    height: 340px;
+    width: auto;
+    position: absolute;
+    transform-origin: center;
+    fill: #b4af82;
+    opacity: 1;
+  }
+  .bizCard {
+    width: 455px;
+    height: 270px;
+    background-image: linear-gradient(15deg, #e4e2d2 0%, #f0eedf 100%);
+    position: absolute;
+    transform-origin: center;
+    display: block;
+    left: 35px;
+    top: 35px;
+    z-index: 2;
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8);
+    // animation-name: cardSpin, cardChanges;
+    transform: rotate(-5deg);
+    @include shadow(lighten(khaki, 15%), 12);
+    .quoteBox {
+      width: 200px;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      img {
+        max-width: 100%;
+      }
+    }
+    .innerFrame {
+      height: calc(100% - 50px);
+      width: calc(100% - 50px);
+      border: 1px solid rgb(194, 186, 136);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 8;
+    }
+    .corner {
+      position: absolute;
+      z-index: 9;
+    }
+    .TL {
+      top: 13px;
+      left: 13px;
+      background-color: #ebe9d9;
+    }
+    .TR {
+      top: 13px;
+      right: 12px;
+      transform: rotate(90deg);
+      background-color: #eeeddd;
+    }
+    .BL {
+      bottom: 12px;
+      left: 13px;
+      transform: rotate(270deg);
+      background: #e3e3d2;
+    }
+    .BR {
+      bottom: 12px;
+      right: 12px;
+      transform: rotate(180deg);
+      background: #e4e5d3;
+    }
+  }
 }
 // ███╗   ██╗ █████╗ ██╗   ██╗██╗ ██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗         ██╗
 // ████╗  ██║██╔══██╗██║   ██║██║██╔════╝ ██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║         ╚██╗
@@ -668,7 +762,6 @@ section.resume {
 .customModal {
   box-shadow: unset !important;
   background-color: white !important;
-  // filter: url(#grain);
   max-width: unset !important;
   width: 100vw !important;
   height: 100vh !important;
@@ -676,28 +769,28 @@ section.resume {
   padding: 0rem !important;
   margin: 0px !important;
   .projectDesignation {
-    background: rgb(245, 245, 245);
+    background: rgb(250, 250, 250);
     padding: 12px 0 9px 23px;
     display: block;
-    color: rgb(44, 44, 44);
+    color: grey;
     font-size: 1.3em;
     font-family: "Epilogue";
     font-weight: 500;
     line-height: 35px;
     // letter-spacing: 0.05em;
-    // border-bottom: solid 1px rgb(185, 185, 185);
+    // border-bottom: solid 1px rgb(214, 214, 214);
   }
   button {
     border: none !important;
     outline: none !important;
     &:hover {
       svg {
-        fill: grey !important;
+        fill: khaki !important;
       }
     }
     svg {
       transition: all 0.15s ease;
-      fill: rgb(44, 44, 44) !important;
+      fill: grey !important;
     }
   }
   .modalBody {
@@ -720,9 +813,9 @@ section.resume {
       padding-left: 3px;
       font-family: "Epilogue";
       .lilCapsule {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         font-family: "Epilogue";
-        padding: 5px 15px;
+        padding: 6px 13px 4px 13px;
         color: $warmBlack;
         line-height: 100%;
         border-radius: 50px;
@@ -769,7 +862,7 @@ section.resume {
       .modalDetails {
         // background: rgb(245, 245, 245);
         border-radius: 15px;
-        padding: 3rem 3rem;
+        padding: 4rem 3rem 3rem 3rem;
         margin-right: 3rem;
         width: 26%;
         font-family: "Epilogue", sans-serif;
@@ -778,23 +871,40 @@ section.resume {
         &:before {
           position: absolute;
           content: "";
-          height: 80%;
+          height: 85%;
           width: 1px;
-          right: 30%;
+          right: 29%;
           top: 50%;
           transform: translateY(-50%);
           background-color: rgb(214, 214, 214);
         }
       }
     }
-
+    &.OTL {
+      .modalSubheading {
+        .lilCapsule {
+          background-color: rgb(255, 249, 166);
+          color: $warmBlack;
+        }
+      }
+      .modalContent {
+        .modalImagesContainer {
+          ul {
+            @include slideShow(2, "OTL");
+            .oldTownLogo {
+              position: relative;
+              width: 550px;
+              translate: transformY(-50px);
+            }
+          }
+        }
+      }
+    }
     &.maxRosen {
       .modalSubheading {
         padding-left: 2px;
-        span {
+        .lilCapsule {
           background-color: pink;
-
-          // border: solid 1px pink;
         }
       }
     }
@@ -802,7 +912,7 @@ section.resume {
       .modalContent {
         .modalImagesContainer {
           ul {
-            @include slideShow(2);
+            @include slideShow(2, "dumpTRUCK");
           }
         }
       }

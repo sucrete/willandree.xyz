@@ -10,7 +10,6 @@ import MaxContent from "./ModalContent/MaxRosen";
 import CalvinContent from "./ModalContent/CalvinTodd";
 import OTLContent from "./ModalContent/OTL";
 import VOTRContent from "./ModalContent/TheVotersCompanion";
-import WillContent from "./ModalContent/WillAndreedotxyz";
 
 const work = [
   "dumpTRUCK",
@@ -28,7 +27,6 @@ export default function Work() {
   const [OTL, setOTL] = useState(false);
   const [calvin, setCalvin] = useState(false);
   const [votr, setVotr] = useState(false);
-  const [willAndree, setWillAndree] = useState(false);
 
   const functions = {
     // dumpTRUCK
@@ -74,15 +72,6 @@ export default function Work() {
       },
       c: () => {
         setVotr(false);
-      },
-    },
-    // willandree.xyz
-    wil: {
-      o: () => {
-        setWillAndree(true);
-      },
-      c: () => {
-        setWillAndree(false);
       },
     },
   };
@@ -166,9 +155,6 @@ export default function Work() {
       </MyModal>
       <MyModal bool={votr} closeFunction={functions.votr.c}>
         <VOTRContent />
-      </MyModal>
-      <MyModal bool={willAndree} closeFunction={functions.wil.c}>
-        <WillContent />
       </MyModal>
     </section>
   );
