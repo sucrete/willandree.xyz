@@ -3,13 +3,23 @@ function MaxPic() {
     <div class="frame__outside">
       <div class="frame__inside">
         <div class="matte">
-          <div class="picture"></div>
+          <div
+            class="picture"
+            style={{
+              backgroundImage: `url("/spaceMax.jpg")`,
+            }}
+          ></div>
         </div>
       </div>
     </div>
   );
 }
-const slides = [<MaxPic />];
+const slides = [
+  <img src="/imax15.png" />,
+  <img src="/imax17.png" />,
+  <img src="/imax12.png" />,
+  <MaxPic />,
+];
 const imageSlides = slides.map((slide, index) => {
   return <li className={`liImage liImage--${index}`}>{slide}</li>;
 });

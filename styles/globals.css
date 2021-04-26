@@ -19,8 +19,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(8.1%, black), color-stop(15.5%, #010101), color-stop(22.5%, #020202), color-stop(29%, #040404), color-stop(35.3%, #060606), color-stop(41.2%, #080808), color-stop(47.1%, #0a0a0a), color-stop(52.9%, #0d0d0d), color-stop(58.8%, #0f0f0f), color-stop(64.7%, #111111), color-stop(71%, #131313), color-stop(77.5%, #151515), color-stop(84.5%, #161616), color-stop(91.9%, #171717), to(#171717));
-  background: linear-gradient(to bottom, black 0%, black 8.1%, #010101 15.5%, #020202 22.5%, #040404 29%, #060606 35.3%, #080808 41.2%, #0a0a0a 47.1%, #0d0d0d 52.9%, #0f0f0f 58.8%, #111111 64.7%, #131313 71%, #151515 77.5%, #161616 84.5%, #171717 91.9%, #171717 100%);
+  background: black;
 }
 
 * {
@@ -959,12 +958,129 @@ section.resume a:hover img {
   translate: transformY(-50px);
 }
 
+.customModal .modalBody.maxRosen {
+  background: #fefefa !important;
+}
+
 .customModal .modalBody.maxRosen .modalSubheading {
   padding-left: 2px;
 }
 
 .customModal .modalBody.maxRosen .modalSubheading .lilCapsule {
   background-color: pink;
+}
+
+.customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul .liImage--0 {
+  -webkit-animation: xfade--imax 20.76s 0s infinite;
+          animation: xfade--imax 20.76s 0s infinite;
+}
+
+.customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul .liImage--1 {
+  -webkit-animation: sixNine--imax 0.69s 4.5s forwards, xfade--imax 20.76s 5.19s infinite;
+          animation: sixNine--imax 0.69s 4.5s forwards, xfade--imax 20.76s 5.19s infinite;
+}
+
+.customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul .liImage--2 {
+  -webkit-animation: sixNine--imax 0.69s 9.69s forwards, xfade--imax 20.76s 10.38s infinite;
+          animation: sixNine--imax 0.69s 9.69s forwards, xfade--imax 20.76s 10.38s infinite;
+}
+
+.customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul .liImage--3 {
+  -webkit-animation: sixNine--imax 0.69s 14.88s forwards, xfade--imax 20.76s 15.57s infinite;
+          animation: sixNine--imax 0.69s 14.88s forwards, xfade--imax 20.76s 15.57s infinite;
+}
+
+@-webkit-keyframes xfade--imax {
+  0% {
+    opacity: 1;
+  }
+  21.6763% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  96.6763% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes xfade--imax {
+  0% {
+    opacity: 1;
+  }
+  21.6763% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  96.6763% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes sixNine--imax {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sixNine--imax {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul li img {
+  width: 100%;
+  height: auto;
+}
+
+.customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul li .frame__outside {
+  position: relative;
+  background: #333;
+  width: 354px;
+  -webkit-box-shadow: inset -0.5rem -0.5rem 1rem black;
+          box-shadow: inset -0.5rem -0.5rem 1rem black;
+  padding: 0.75rem;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.2), 4px 4px 20px rgba(0, 0, 0, 0.2), 20px 4px 32px rgba(0, 0, 0, 0.12), 4px 30px 32px rgba(0, 0, 0, 0.12), 8px 20px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.2), 4px 4px 20px rgba(0, 0, 0, 0.2), 20px 4px 32px rgba(0, 0, 0, 0.12), 4px 30px 32px rgba(0, 0, 0, 0.12), 8px 20px 20px rgba(0, 0, 0, 0.03);
+}
+
+.customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul li .frame__outside .frame__inside {
+  background: #333;
+  -webkit-box-shadow: inset 0.5rem 0.5rem 1rem black;
+          box-shadow: inset 0.5rem 0.5rem 1rem black;
+  padding: 0.75rem;
+}
+
+.customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul li .frame__outside .frame__inside .matte {
+  padding: 2.5rem;
+  background: #fafafa;
+  -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul li .frame__outside .frame__inside .matte .picture {
+  width: 225px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul .liImage--0 {
