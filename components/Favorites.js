@@ -96,12 +96,13 @@ const isMobile = () => {
 };
 
 function Cursor() {
-  const { width } = useWindowDimensions();
-  if (typeof navigator !== "undefined" && isMobile() && width > 1090)
-    return null;
+  // const { width } = useWindowDimensions();
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hidden, setHidden] = useState(true);
+  const [width, setWindowDimensions] = useState(getWindowDimensions());
+  if (typeof navigator !== "undefined" && isMobile() && width > 1090)
+    return null;
 
   useEffect(() => {
     addEventListeners();
@@ -119,6 +120,7 @@ function Cursor() {
     var designer3 = document.getElementsByClassName("designer3")[0];
     designer3.addEventListener("mouseenter", onMouseEnter);
     designer3.addEventListener("mouseleave", onMouseLeave);
+    window.addEventListener("resize", handleResize);
   };
 
   const removeEventListeners = () => {
@@ -132,11 +134,14 @@ function Cursor() {
     var designer3 = document.getElementsByClassName("designer3")[0];
     designer3.removeEventListener("mouseenter", onMouseEnter);
     designer3.removeEventListener("mouseleave", onMouseLeave);
+    window.removeEventListener("resize", handleResize);
   };
   const onMouseLeave = () => {
     setHidden(true);
   };
-
+  const handleResize = () => {
+    setWindowDimensions(getWindowDimensions());
+  };
   const onMouseEnter = () => {
     setHidden(false);
   };

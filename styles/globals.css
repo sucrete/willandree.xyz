@@ -790,7 +790,7 @@ section.resume a:hover img {
 .customModal .modalBody .modalHeader {
   color: #181716;
   font-family: "Epilogue";
-  font-size: 3em;
+  font-size: 3.5em;
   -webkit-margin-after: 0rem;
           margin-block-end: 0rem;
   line-height: 110%;
@@ -826,6 +826,9 @@ section.resume a:hover img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  top: 50%;
+  -webkit-transform: translateY(-75%);
+          transform: translateY(-75%);
 }
 
 .customModal .modalBody .modalContent .modalImagesContainer {
@@ -971,36 +974,31 @@ section.resume a:hover img {
 }
 
 .customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul .liImage--0 {
-  -webkit-animation: xfade--imax 20.76s 0s infinite;
-          animation: xfade--imax 20.76s 0s infinite;
+  -webkit-animation: xfade--imax 15.57s 0s infinite;
+          animation: xfade--imax 15.57s 0s infinite;
 }
 
 .customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul .liImage--1 {
-  -webkit-animation: sixNine--imax 0.69s 4.5s forwards, xfade--imax 20.76s 5.19s infinite;
-          animation: sixNine--imax 0.69s 4.5s forwards, xfade--imax 20.76s 5.19s infinite;
+  -webkit-animation: sixNine--imax 0.69s 4.5s forwards, xfade--imax 15.57s 5.19s infinite;
+          animation: sixNine--imax 0.69s 4.5s forwards, xfade--imax 15.57s 5.19s infinite;
 }
 
 .customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul .liImage--2 {
-  -webkit-animation: sixNine--imax 0.69s 9.69s forwards, xfade--imax 20.76s 10.38s infinite;
-          animation: sixNine--imax 0.69s 9.69s forwards, xfade--imax 20.76s 10.38s infinite;
-}
-
-.customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul .liImage--3 {
-  -webkit-animation: sixNine--imax 0.69s 14.88s forwards, xfade--imax 20.76s 15.57s infinite;
-          animation: sixNine--imax 0.69s 14.88s forwards, xfade--imax 20.76s 15.57s infinite;
+  -webkit-animation: sixNine--imax 0.69s 9.69s forwards, xfade--imax 15.57s 10.38s infinite;
+          animation: sixNine--imax 0.69s 9.69s forwards, xfade--imax 15.57s 10.38s infinite;
 }
 
 @-webkit-keyframes xfade--imax {
   0% {
     opacity: 1;
   }
-  21.6763% {
+  28.90173% {
     opacity: 1;
   }
-  25% {
+  33.33333% {
     opacity: 0;
   }
-  96.6763% {
+  95.5684% {
     opacity: 0;
   }
   100% {
@@ -1012,13 +1010,13 @@ section.resume a:hover img {
   0% {
     opacity: 1;
   }
-  21.6763% {
+  28.90173% {
     opacity: 1;
   }
-  25% {
+  33.33333% {
     opacity: 0;
   }
-  96.6763% {
+  95.5684% {
     opacity: 0;
   }
   100% {
@@ -1965,6 +1963,14 @@ section.resume a:hover img {
   section.resume a {
     height: 120px;
     line-height: 105px;
+  }
+}
+
+/* Portrait */
+/* Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .modalHeader {
+    font-size: 4.5rem !important;
   }
 }
 

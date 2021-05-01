@@ -16,7 +16,6 @@ function MaxPic() {
 }
 const slides = [
   <img src="/imax15.png" />,
-  <img src="/imax17.png" />,
   <img src="/imax12.png" />,
   <MaxPic />,
 ];
