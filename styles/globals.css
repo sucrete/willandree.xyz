@@ -1483,6 +1483,32 @@ section.resume a:hover img {
   }
 }
 
+@media screen and (max-width: 770px) {
+  section {
+    width: 800px;
+  }
+  section.work .workContainer .workBody .workHeader {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  section.work .workContainer .workBody .workItemContainer {
+    -webkit-transform: translateX(-14px);
+            transform: translateX(-14px);
+  }
+  section.work .favorites {
+    -webkit-transform: translate(-14px, 120px);
+            transform: translate(-14px, 120px);
+  }
+  section.info .infoBody {
+    -webkit-transform: translateX(-4px);
+            transform: translateX(-4px);
+  }
+  section.contact .contentContainer {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+}
+
 @media screen and (max-width: 750px) {
   .cursor {
     display: none;
@@ -1526,9 +1552,13 @@ section.resume a:hover img {
   section.work .workContainer .workBody .workHeader {
     padding-left: 2px;
     left: 0px;
+    -webkit-transform: unset;
+            transform: unset;
   }
   section.work .workContainer .workBody .workItemContainer {
     width: 650px !important;
+    -webkit-transform: unset;
+            transform: unset;
   }
   section.work .favorites {
     width: 650px !important;
@@ -1841,12 +1871,15 @@ section.resume a:hover img {
   }
   section.work .workContainer .workBody .workItemContainer span {
     font-size: 1.2rem;
+    padding-top: 18px;
   }
   section.work .workContainer .workBody .workItemContainer span:after {
-    top: -25px;
+    top: -27px;
+    right: -8px;
   }
   section.work .workContainer .workBody .workItemContainer span:before {
-    top: -25px;
+    top: -27px;
+    right: -8px;
   }
   section.work .favorites {
     width: 395px !important;
@@ -1988,7 +2021,7 @@ section.resume a:hover img {
   }
   section.work .workContainer .workBody .workItemContainer span {
     font-size: 1.3rem;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
   section.work .workContainer .workBody .workItemContainer span:after {
     right: -7px;

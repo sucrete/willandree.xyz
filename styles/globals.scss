@@ -1230,6 +1230,44 @@ section.resume {
 }
 
 // ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ███████╗███████╗ ██████╗ ██████╗ ██╗  ██╗         ██╗
+// ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ╚════██║╚════██║██╔═████╗██╔══██╗╚██╗██╔╝         ╚██╗
+// ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝        ██╔╝    ██╔╝██║██╔██║██████╔╝ ╚███╔╝     █████╗╚██╗
+// ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗       ██╔╝    ██╔╝ ████╔╝██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
+// ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║       ██║     ██║  ╚██████╔╝██║     ██╔╝ ██╗         ██╔╝
+//  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝       ╚═╝     ╚═╝   ╚═════╝ ╚═╝     ╚═╝  ╚═╝         ╚═╝
+
+@media screen and (max-width: 770px) {
+  section {
+    width: 800px;
+
+    &.work {
+      .workContainer {
+        .workBody {
+          .workHeader {
+            transform: translateX(-10px);
+          }
+          .workItemContainer {
+            transform: translateX(-14px);
+          }
+        }
+      }
+      .favorites {
+        transform: translate(-14px, 120px);
+      }
+    }
+    &.info {
+      .infoBody {
+        transform: translateX(-4px);
+      }
+    }
+    &.contact {
+      .contentContainer {
+        transform: translateX(-2px);
+      }
+    }
+  }
+}
+// ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ███████╗███████╗ ██████╗ ██████╗ ██╗  ██╗         ██╗
 // ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ╚════██║██╔════╝██╔═████╗██╔══██╗╚██╗██╔╝         ╚██╗
 // ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝        ██╔╝███████╗██║██╔██║██████╔╝ ╚███╔╝     █████╗╚██╗
 // ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗       ██╔╝ ╚════██║████╔╝██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
@@ -1275,14 +1313,17 @@ $medWidth: 650px;
       .workContainer {
         margin-left: auto;
         width: $medWidth !important;
+        // transform: translateX(px);
         .workBody {
           margin-left: auto;
           .workHeader {
             padding-left: 2px;
             left: 0px;
+            transform: unset;
           }
           .workItemContainer {
             width: $medWidth !important;
+            transform: unset;
           }
         }
       }
@@ -1619,11 +1660,14 @@ $smallWidth: 390px;
             width: $smallWidth !important;
             span {
               font-size: 1.2rem;
+              padding-top: 18px;
               &:after {
-                top: -25px;
+                top: -27px;
+                right: -8px;
               }
               &:before {
-                top: -25px;
+                top: -27px;
+                right: -8px;
               }
             }
           }
@@ -1828,7 +1872,7 @@ $xtraSmallWidth: 360px;
             width: $xtraSmallWidth !important;
             span {
               font-size: 1.3rem;
-              padding-bottom: 20px;
+              padding-bottom: 15px;
               &:after {
                 right: -7px;
               }
