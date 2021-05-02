@@ -162,7 +162,7 @@ ul {
 }
 .desaturatedBuilding {
   max-height: 90%;
-  @include shadow(lighten(khaki, 15%), 12);
+  @include shadow(lighten(rgb(236, 230, 172), 5%), 12);
   border-radius: 2px;
 }
 .cardContainer {
@@ -188,9 +188,8 @@ ul {
     top: 35px;
     z-index: 2;
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8);
-    // animation-name: cardSpin, cardChanges;
     transform: rotate(-5deg);
-    @include shadow(lighten(khaki, 15%), 12);
+    @include shadow(lighten(rgb(236, 230, 172), 10%), 8);
     .quoteBox {
       width: 200px;
       height: auto;
@@ -879,6 +878,23 @@ section.resume {
               position: relative;
               width: 550px;
               translate: transformY(-50px);
+            }
+          }
+        }
+      }
+    }
+    &.calvinTodd {
+      .modalContent {
+        .modalImagesContainer {
+          ul {
+            @include slideShow(3, "cal");
+            li {
+              max-width: 100%;
+              max-height: 100%;
+              img {
+                max-width: 100%;
+                max-height: 100%;
+              }
             }
           }
         }
@@ -1918,26 +1934,26 @@ $xtraSmallWidth: 360px;
   }
 }
 
-@font-face {
-  font-family: "corporate";
-  src: url("./fonts/Corporate-Light.ttf");
-}
+// @font-face {
+//   font-family: "corporate";
+//   src: url("./fonts/Corporate-Light.ttf");
+// }
 @font-face {
   font-family: "corporate condensed regular";
   src: url("./fonts/Corporate\ Condensed\ Regular.woff2")
     format("woff2-variations");
   font-style: normal;
 }
-@font-face {
-  font-family: "corporate condensed light";
-  src: url("./fonts/Corporate\ Condensed\ Light.woff2")
-    format("woff2-variations");
-  font-style: normal;
-}
-@font-face {
-  src: url("./fonts/CorporateABQ-Regular.otf") format("opentype");
-  font-family: "corporate regular";
-}
+// @font-face {
+//   font-family: "corporate condensed light";
+//   src: url("./fonts/Corporate\ Condensed\ Light.woff2")
+//     format("woff2-variations");
+//   font-style: normal;
+// }
+// @font-face {
+//   src: url("./fonts/CorporateABQ-Regular.otf") format("opentype");
+//   font-family: "corporate regular";
+// }
 @font-face {
   src: url("./fonts/durk.otf") format("opentype");
   font-family: "drucc";

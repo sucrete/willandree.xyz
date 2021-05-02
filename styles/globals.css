@@ -87,8 +87,8 @@ ul li {
 
 .desaturatedBuilding {
   max-height: 90%;
-  -webkit-box-shadow: 0px 1px 0 rgba(249, 245, 208, 0), -1px 1.9px 1px #f9f5d0, -2px 3.8px 2px rgba(249, 245, 208, 0.75), -3px 5.7px 3px rgba(249, 245, 208, 0.5), -4px 7.6px 4px rgba(249, 245, 208, 0.375), -5px 9.5px 5px rgba(249, 245, 208, 0.3), -6px 11.4px 6px rgba(249, 245, 208, 0.25), -7px 13.3px 7px rgba(249, 245, 208, 0.214286), -8px 15.2px 8px rgba(249, 245, 208, 0.1875), -9px 17.1px 9px rgba(249, 245, 208, 0.166667), -10px 19px 10px rgba(249, 245, 208, 0.15), -11px 20.9px 11px rgba(249, 245, 208, 0.136364), -12px 22.8px 12px rgba(249, 245, 208, 0.125);
-          box-shadow: 0px 1px 0 rgba(249, 245, 208, 0), -1px 1.9px 1px #f9f5d0, -2px 3.8px 2px rgba(249, 245, 208, 0.75), -3px 5.7px 3px rgba(249, 245, 208, 0.5), -4px 7.6px 4px rgba(249, 245, 208, 0.375), -5px 9.5px 5px rgba(249, 245, 208, 0.3), -6px 11.4px 6px rgba(249, 245, 208, 0.25), -7px 13.3px 7px rgba(249, 245, 208, 0.214286), -8px 15.2px 8px rgba(249, 245, 208, 0.1875), -9px 17.1px 9px rgba(249, 245, 208, 0.166667), -10px 19px 10px rgba(249, 245, 208, 0.15), -11px 20.9px 11px rgba(249, 245, 208, 0.136364), -12px 22.8px 12px rgba(249, 245, 208, 0.125);
+  -webkit-box-shadow: 0px 1px 0 rgba(241, 236, 193, 0), -1px 1.9px 1px #f1ecc1, -2px 3.8px 2px rgba(241, 236, 193, 0.75), -3px 5.7px 3px rgba(241, 236, 193, 0.5), -4px 7.6px 4px rgba(241, 236, 193, 0.375), -5px 9.5px 5px rgba(241, 236, 193, 0.3), -6px 11.4px 6px rgba(241, 236, 193, 0.25), -7px 13.3px 7px rgba(241, 236, 193, 0.214286), -8px 15.2px 8px rgba(241, 236, 193, 0.1875), -9px 17.1px 9px rgba(241, 236, 193, 0.166667), -10px 19px 10px rgba(241, 236, 193, 0.15), -11px 20.9px 11px rgba(241, 236, 193, 0.136364), -12px 22.8px 12px rgba(241, 236, 193, 0.125);
+          box-shadow: 0px 1px 0 rgba(241, 236, 193, 0), -1px 1.9px 1px #f1ecc1, -2px 3.8px 2px rgba(241, 236, 193, 0.75), -3px 5.7px 3px rgba(241, 236, 193, 0.5), -4px 7.6px 4px rgba(241, 236, 193, 0.375), -5px 9.5px 5px rgba(241, 236, 193, 0.3), -6px 11.4px 6px rgba(241, 236, 193, 0.25), -7px 13.3px 7px rgba(241, 236, 193, 0.214286), -8px 15.2px 8px rgba(241, 236, 193, 0.1875), -9px 17.1px 9px rgba(241, 236, 193, 0.166667), -10px 19px 10px rgba(241, 236, 193, 0.15), -11px 20.9px 11px rgba(241, 236, 193, 0.136364), -12px 22.8px 12px rgba(241, 236, 193, 0.125);
   border-radius: 2px;
 }
 
@@ -123,8 +123,8 @@ ul li {
           box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8);
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
-  -webkit-box-shadow: 0px 1px 0 rgba(249, 245, 208, 0), -1px 1.9px 1px #f9f5d0, -2px 3.8px 2px rgba(249, 245, 208, 0.75), -3px 5.7px 3px rgba(249, 245, 208, 0.5), -4px 7.6px 4px rgba(249, 245, 208, 0.375), -5px 9.5px 5px rgba(249, 245, 208, 0.3), -6px 11.4px 6px rgba(249, 245, 208, 0.25), -7px 13.3px 7px rgba(249, 245, 208, 0.214286), -8px 15.2px 8px rgba(249, 245, 208, 0.1875), -9px 17.1px 9px rgba(249, 245, 208, 0.166667), -10px 19px 10px rgba(249, 245, 208, 0.15), -11px 20.9px 11px rgba(249, 245, 208, 0.136364), -12px 22.8px 12px rgba(249, 245, 208, 0.125);
-          box-shadow: 0px 1px 0 rgba(249, 245, 208, 0), -1px 1.9px 1px #f9f5d0, -2px 3.8px 2px rgba(249, 245, 208, 0.75), -3px 5.7px 3px rgba(249, 245, 208, 0.5), -4px 7.6px 4px rgba(249, 245, 208, 0.375), -5px 9.5px 5px rgba(249, 245, 208, 0.3), -6px 11.4px 6px rgba(249, 245, 208, 0.25), -7px 13.3px 7px rgba(249, 245, 208, 0.214286), -8px 15.2px 8px rgba(249, 245, 208, 0.1875), -9px 17.1px 9px rgba(249, 245, 208, 0.166667), -10px 19px 10px rgba(249, 245, 208, 0.15), -11px 20.9px 11px rgba(249, 245, 208, 0.136364), -12px 22.8px 12px rgba(249, 245, 208, 0.125);
+  -webkit-box-shadow: 0px 1px 0 rgba(246, 243, 214, 0), -1px 1.9px 1px #f6f3d6, -2px 3.8px 2px rgba(246, 243, 214, 0.75), -3px 5.7px 3px rgba(246, 243, 214, 0.5), -4px 7.6px 4px rgba(246, 243, 214, 0.375), -5px 9.5px 5px rgba(246, 243, 214, 0.3), -6px 11.4px 6px rgba(246, 243, 214, 0.25), -7px 13.3px 7px rgba(246, 243, 214, 0.214286), -8px 15.2px 8px rgba(246, 243, 214, 0.1875);
+          box-shadow: 0px 1px 0 rgba(246, 243, 214, 0), -1px 1.9px 1px #f6f3d6, -2px 3.8px 2px rgba(246, 243, 214, 0.75), -3px 5.7px 3px rgba(246, 243, 214, 0.5), -4px 7.6px 4px rgba(246, 243, 214, 0.375), -5px 9.5px 5px rgba(246, 243, 214, 0.3), -6px 11.4px 6px rgba(246, 243, 214, 0.25), -7px 13.3px 7px rgba(246, 243, 214, 0.214286), -8px 15.2px 8px rgba(246, 243, 214, 0.1875);
 }
 
 .cardContainer .bizCard .quoteBox {
@@ -959,6 +959,90 @@ section.resume a:hover img {
   position: relative;
   width: 550px;
   translate: transformY(-50px);
+}
+
+.customModal .modalBody.calvinTodd .modalContent .modalImagesContainer ul .liImage--0 {
+  -webkit-animation: xfade--cal 20.76s 0s infinite;
+          animation: xfade--cal 20.76s 0s infinite;
+}
+
+.customModal .modalBody.calvinTodd .modalContent .modalImagesContainer ul .liImage--1 {
+  -webkit-animation: sixNine--cal 0.69s 4.5s forwards, xfade--cal 20.76s 5.19s infinite;
+          animation: sixNine--cal 0.69s 4.5s forwards, xfade--cal 20.76s 5.19s infinite;
+}
+
+.customModal .modalBody.calvinTodd .modalContent .modalImagesContainer ul .liImage--2 {
+  -webkit-animation: sixNine--cal 0.69s 9.69s forwards, xfade--cal 20.76s 10.38s infinite;
+          animation: sixNine--cal 0.69s 9.69s forwards, xfade--cal 20.76s 10.38s infinite;
+}
+
+.customModal .modalBody.calvinTodd .modalContent .modalImagesContainer ul .liImage--3 {
+  -webkit-animation: sixNine--cal 0.69s 14.88s forwards, xfade--cal 20.76s 15.57s infinite;
+          animation: sixNine--cal 0.69s 14.88s forwards, xfade--cal 20.76s 15.57s infinite;
+}
+
+@-webkit-keyframes xfade--cal {
+  0% {
+    opacity: 1;
+  }
+  21.6763% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  96.6763% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes xfade--cal {
+  0% {
+    opacity: 1;
+  }
+  21.6763% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  96.6763% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes sixNine--cal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sixNine--cal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.customModal .modalBody.calvinTodd .modalContent .modalImagesContainer ul li {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.customModal .modalBody.calvinTodd .modalContent .modalImagesContainer ul li img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .customModal .modalBody.maxRosen {
@@ -1975,25 +2059,9 @@ section.resume a:hover img {
 }
 
 @font-face {
-  font-family: "corporate";
-  src: url("./fonts/Corporate-Light.ttf");
-}
-
-@font-face {
   font-family: "corporate condensed regular";
   src: url("./fonts/Corporate Condensed Regular.woff2") format("woff2-variations");
   font-style: normal;
-}
-
-@font-face {
-  font-family: "corporate condensed light";
-  src: url("./fonts/Corporate Condensed Light.woff2") format("woff2-variations");
-  font-style: normal;
-}
-
-@font-face {
-  src: url("./fonts/CorporateABQ-Regular.otf") format("opentype");
-  font-family: "corporate regular";
 }
 
 @font-face {
