@@ -356,7 +356,7 @@ section.work .workContainer .workBody .workHeader {
 }
 
 section.work .workContainer .workBody .workItemContainer {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   position: relative;
   display: block;
   z-index: 3;
@@ -371,7 +371,7 @@ section.work .workContainer .workBody .workItemContainer span {
   color: black;
   height: 100%;
   width: 100%;
-  padding: 20px 42px 19px 42px;
+  padding: 17px 42px 16px 42px;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   background: white;
@@ -898,25 +898,26 @@ section.resume a:hover img {
   background-color: #d6d6d6;
 }
 
-.customModal .modalBody .modalContent .modalDetails a {
-  padding: 16px 16px 12px 16px;
+.customModal .modalBody .modalContent .modalDetails .visitButton {
+  padding: 16px 16px 16px 16px;
   background-color: #f0f0f0;
   color: #5a5a5a;
+  font-family: "drucc";
   border-radius: 55px;
-  border: 1px solid #bdbdbd;
+  border: 1px solid #c5c5c5;
   text-align: center;
-  letter-spacing: .04rem;
+  letter-spacing: .06rem;
   text-decoration: none;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
-  font-weight: 400;
   text-transform: uppercase;
   width: 190px;
 }
 
-.customModal .modalBody .modalContent .modalDetails a:hover {
+.customModal .modalBody .modalContent .modalDetails .visitButton:hover {
   color: black;
   background-color: khaki;
+  border: 1px solid black;
 }
 
 .customModal .modalBody.OTL .modalSubheading .lilCapsule {

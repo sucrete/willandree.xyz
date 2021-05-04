@@ -45,7 +45,11 @@ export default function MaxRosen() {
               culpa optio sapiente expedita alias!
             </p>
 
-            <a href="https://imax.vercel.app" target="_blank">
+            <a
+              className="visitButton"
+              href="https://imax.vercel.app"
+              target="_blank"
+            >
               visit
             </a>
           </div>
