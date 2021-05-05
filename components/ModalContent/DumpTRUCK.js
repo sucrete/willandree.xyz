@@ -72,7 +72,7 @@ function RoboPost() {
   );
 }
 const slides = [
-  <img style={{ height: "0px", width: "auto" }} src="/dumpTRUCKlogo.svg" />,
+  <img style={{ height: "90px", width: "auto" }} src="/dumpTRUCKlogo.svg" />,
   <FauxPost />,
   <RoboPost />,
 ];
@@ -94,7 +94,7 @@ export default function DumpTRUCK() {
           <div className="modalDetails">
             <p>
               dumpTRUCK was created to provide a permanent home for a selection
-              of work from a key progenitor of "
+              of work from a major progenitor of "
               <a
                 href="https://www.artspace.com/magazine/interviews_features/trend_report/post_internet_art-52138"
                 target="
