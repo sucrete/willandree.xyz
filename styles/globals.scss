@@ -324,8 +324,7 @@ section.navigation {
 
 section.header {
   color: white;
-  font-family: "Epilogue", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Epilogue", serif;
   font-size: 6.2rem;
   line-height: 1.08;
   font-weight: 500;
@@ -388,7 +387,7 @@ section.work {
         padding-left: 1rem;
       }
       .workItemContainer {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
         position: relative;
         display: block;
         z-index: 3;
@@ -401,7 +400,7 @@ section.work {
           color: black;
           height: 100%;
           width: 100%;
-          padding: 17px 42px 16px 42px;
+          padding: 20px 42px 14px 42px;
           transition: all 0.1s ease;
           background: white;
           white-space: nowrap;
@@ -856,7 +855,7 @@ section.resume {
         justify-content: space-between;
         p {
           margin-block-start: 0em;
-          margin-block-end:: 0em;
+          margin-block-end: 0em;
         }
         &:before {
           position: absolute;
@@ -876,11 +875,11 @@ section.resume {
           border-radius: 55px;
           border: 1px solid rgb(197, 197, 197);
           text-align: center;
-          letter-spacing: .06rem;
+          letter-spacing: 0.06rem;
           text-decoration: none;
           transition: all 0.15s ease;
           text-transform: uppercase;
-          width: 190px;
+          width: 210px;
           &:hover {
             color: black;
             background-color: khaki;

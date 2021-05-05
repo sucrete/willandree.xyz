@@ -40,10 +40,20 @@ export default function OTL() {
             <ul>{imageSlides}</ul>
           </div>
           <div className="modalDetails">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-            impedit numquam praesentium recusandae blanditiis quia sequi,
-            repellat vel consectetur autem labore earum libero, quod minima
-            culpa optio sapiente expedita alias!
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+              impedit numquam praesentium recusandae blanditiis quia sequi,
+              repellat vel consectetur autem labore earum libero, quod minima
+              culpa optio sapiente expedita alias!
+            </p>
+
+            <a
+              className="visitButton"
+              href="https://oldtownloftskc.vercel.app"
+              target="_blank"
+            >
+              visit
+            </a>
           </div>
         </div>
       </div>
