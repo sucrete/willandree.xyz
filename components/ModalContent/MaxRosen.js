@@ -37,6 +37,11 @@ export default function MaxRosen() {
           <div className="modalImagesContainer">
             <ul>{imageSlides}</ul>
           </div>
+          <h1 className="modalHeaderLower">maxrosen.town</h1>
+          <div className="modalSubheadingLower">
+            personal website for director/editor Max Rosen{" "}
+            <span className="lilCapsule">Work In Progress</span>
+          </div>
           <div className="modalDetails">
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque

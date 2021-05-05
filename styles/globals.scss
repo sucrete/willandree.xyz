@@ -841,6 +841,33 @@ section.resume {
         //   left: 0;
         // }
       }
+      .modalHeaderLower {
+        display: none;
+        color: $warmBlack;
+        font-family: "Epilogue";
+        font-size: 3.5em;
+        margin-block-end: 0rem;
+        line-height: 110%;
+        margin-block-start: 2.5rem;
+        letter-spacing: 0rem;
+      }
+      .modalSubheadingLower {
+        display: none;
+        color: grey;
+        font-size: 1rem;
+        padding-left: 3px;
+        font-family: "Epilogue";
+        .lilCapsule {
+          font-size: 0.7rem;
+          font-family: "Epilogue";
+          padding: 6px 13px 4px 13px;
+          color: $warmBlack;
+          line-height: 100%;
+          border-radius: 50px;
+          position: relative;
+          bottom: 2px;
+        }
+      }
       .modalDetails {
         // background: rgb(245, 245, 245);
         border-radius: 15px;
@@ -1049,24 +1076,64 @@ section.resume {
 // ██║ ╚═╝ ██║╚██████╔╝██████╔╝██║  ██║███████╗    ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║     ██║╚██████╔╝╚██████╔╝╚██████╔╝██║     ██╔╝ ██╗         ██╔╝
 // ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝     ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝     ╚═╝ ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝     ╚═╝  ╚═╝         ╚═╝
 @media screen and (max-width: 1000px) {
+  .react-responsive-modal-overlay {
+    // overflow-y
+  }
   .customModal {
+    overflow-y: visible;
     .modalBody {
+      padding: 3rem 3rem 5rem 3rem;
       .modalHeader {
+        display: none;
       }
       .modalSubheading {
-        .lilCapsule {
-        }
+        display: none;
       }
       .modalContent {
+        display: block;
+        width: 100%;
         .modalImagesContainer {
+          display: block;
+          width: 100%;
+          height: 100%;
+
+          ul {
+            li {
+            }
+          }
+        }
+        .modalHeaderLower {
+          display: block;
+          margin-block-start: 3rem;
+          line-height: 90%;
+        }
+        .modalSubheadingLower {
+          display: block;
+          margin-block-end: 1rem;
+          .lilCapsule {
+            font-size: 0.7rem;
+            font-family: "Epilogue";
+            padding: 6px 13px 4px 13px;
+            color: $warmBlack;
+            line-height: 100%;
+            border-radius: 50px;
+            position: relative;
+            bottom: 2px;
+          }
         }
         .modalDetails {
-          padding: 4rem 0rem 3rem 3rem;
+          display: block;
+          padding: 0rem 0rem 3rem 5px;
+          width: 80%;
           // THE DIVIDING LINE CREATED WITH ':BEFORE' PSEUDO-ELEMENT
           &:before {
+            display: none;
           }
           .visitButton {
-            width: 100%;
+            margin-block-start: 1.5rem;
+            margin-block-end: 2rem;
+            display: block;
+            width: 200px;
           }
         }
       }
