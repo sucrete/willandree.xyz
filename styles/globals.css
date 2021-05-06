@@ -752,9 +752,11 @@ section.resume a:hover img {
   overflow: hidden;
   padding: 0rem !important;
   margin: 0px !important;
+  position: relative;
 }
 
 .customModal .projectDesignation {
+  position: relative;
   background: #fafafa;
   padding: 12px 0 9px 23px;
   display: block;
@@ -763,6 +765,7 @@ section.resume a:hover img {
   font-family: "Epilogue";
   font-weight: 500;
   line-height: 35px;
+  z-index: 777;
 }
 
 .customModal button {
@@ -778,6 +781,7 @@ section.resume a:hover img {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
   fill: grey !important;
+  z-index: 778;
 }
 
 .customModal .modalBody {
@@ -1132,10 +1136,6 @@ section.resume a:hover img {
   max-height: 100%;
 }
 
-.customModal .modalBody.maxRosen {
-  background: #fefefa !important;
-}
-
 .customModal .modalBody.maxRosen .modalSubheading {
   padding-left: 2px;
 }
@@ -1339,7 +1339,7 @@ section.resume a:hover img {
     overflow-y: visible;
   }
   .customModal .modalBody {
-    padding: 3rem 3rem 5rem 3rem;
+    padding: 0rem 1rem 5rem 1rem;
   }
   .customModal .modalBody .modalHeader {
     display: none;
@@ -1350,6 +1350,8 @@ section.resume a:hover img {
   .customModal .modalBody .modalContent {
     display: block;
     width: 100%;
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
   }
   .customModal .modalBody .modalContent .modalImagesContainer {
     display: block;
@@ -1358,14 +1360,16 @@ section.resume a:hover img {
   }
   .customModal .modalBody .modalContent .modalHeaderLower {
     display: block;
-    -webkit-margin-before: 3rem;
-            margin-block-start: 3rem;
+    -webkit-margin-before: 3.5rem;
+            margin-block-start: 3.5rem;
+    padding-left: 4rem;
     line-height: 90%;
   }
   .customModal .modalBody .modalContent .modalSubheadingLower {
     display: block;
-    -webkit-margin-after: 1rem;
-            margin-block-end: 1rem;
+    -webkit-margin-after: 1.8rem;
+            margin-block-end: 1.8rem;
+    padding-left: 4rem;
   }
   .customModal .modalBody .modalContent .modalSubheadingLower .lilCapsule {
     font-size: 0.7rem;
@@ -1379,19 +1383,33 @@ section.resume a:hover img {
   }
   .customModal .modalBody .modalContent .modalDetails {
     display: block;
-    padding: 0rem 0rem 3rem 5px;
-    width: 80%;
+    padding: 0rem 4rem 3rem 4rem;
+    width: 90%;
+  }
+  .customModal .modalBody .modalContent .modalDetails p {
+    font-size: 1.4rem;
+    line-height: 1.3;
   }
   .customModal .modalBody .modalContent .modalDetails:before {
     display: none;
   }
   .customModal .modalBody .modalContent .modalDetails .visitButton {
-    -webkit-margin-before: 1.5rem;
-            margin-block-start: 1.5rem;
+    -webkit-margin-before: 2.5rem;
+            margin-block-start: 2.5rem;
     -webkit-margin-after: 2rem;
             margin-block-end: 2rem;
     display: block;
     width: 200px;
+  }
+  .customModal .modalBody.maxRosen .modalContent .modalSubheadingLower .lilCapsule {
+    background: pink;
+  }
+  .customModal .modalBody.calvinTodd .modalContent .modalImagesContainer ul li {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .customModal .modalBody.calvinTodd .modalContent .modalImagesContainer ul li img {
+    max-width: 850px;
   }
 }
 
