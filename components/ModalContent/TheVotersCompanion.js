@@ -8,6 +8,7 @@ export default function TheVotersCompanion() {
           <div className="modalImagesContainer">
             {/* <ul>{imageSlides}</ul> */}
           </div>
+          <h1 className="modalHeaderLower">The Voter's Companion</h1>
           <div className="modalDetails">
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque

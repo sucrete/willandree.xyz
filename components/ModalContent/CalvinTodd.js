@@ -19,6 +19,8 @@ export default function CalvinTodd() {
           <div className="modalImagesContainer">
             <ul>{imageSlides}</ul>
           </div>
+          <h1 className="modalHeaderLower">calvintodd.com</h1>
+          <div className="modalSubheadingLower">personal website</div>
           <div className="modalDetails">
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque

@@ -33,11 +33,15 @@ export default function OTL() {
       <div className="modalBody OTL">
         <h1 className="modalHeader">Old Town Lofts</h1>
         <div className="modalSubheading">
-          <span className="lilCapsule">Prototype</span>
+          <span className="lilCapsule lilCapsule-OTL">Prototype</span>
         </div>
         <div className="modalContent">
           <div className="modalImagesContainer">
             <ul>{imageSlides}</ul>
+          </div>
+          <h1 className="modalHeaderLower">Old Town Lofts</h1>
+          <div className="modalSubheadingLower">
+            <span className="lilCapsule lilCapsule--OTL">Prototype</span>
           </div>
           <div className="modalDetails">
             <p>

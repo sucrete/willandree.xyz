@@ -91,6 +91,8 @@ export default function DumpTRUCK() {
           <div className="modalImagesContainer">
             <ul>{imageSlides}</ul>
           </div>
+          <h1 className="modalHeaderLower">dumpTRUCK</h1>
+          <div className="modalSubheadingLower">personal project</div>
           <div className="modalDetails">
             <p>
               dumpTRUCK was created to provide a permanent home for a selection
