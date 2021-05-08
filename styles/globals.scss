@@ -1196,6 +1196,7 @@ section.resume {
         }
         .modalDetails {
           padding: 0rem 1rem 2rem 1rem;
+
           p {
             font-size: 1.4rem;
           }
@@ -1239,7 +1240,7 @@ section.resume {
           display: block;
         }
         .modalHeaderLower {
-          padding-left: 1rem;
+          padding-left: 0.9rem;
         }
         .modalSubheadingLower {
           padding-left: 1rem;
@@ -1248,6 +1249,7 @@ section.resume {
         }
         .modalDetails {
           padding: 0rem 1rem 2rem 1rem;
+          width: 100%;
           p {
             font-size: 1.4rem;
           }
@@ -1286,16 +1288,16 @@ section.resume {
       padding: 0rem 1rem 5rem 1rem;
 
       .modalContent {
-        transform: translateY(-62%);
+        transform: translateY(-60%);
         .modalImagesContainer {
           display: block;
         }
         .modalHeaderLower {
-          padding-left: 1rem;
+          padding-left: 0.9rem;
           margin-block-start: 1rem;
         }
         .modalSubheadingLower {
-          padding-left: 1rem;
+          padding-left: 1.1rem;
           .lilCapsule {
           }
         }
@@ -1305,6 +1307,25 @@ section.resume {
             font-size: 1.4rem;
           }
           .visitButton {
+          }
+        }
+      }
+      &.dumpTRUCK {
+        .modalContent {
+          .modalImagesContainer {
+            ul {
+              li.liImage--2 {
+                .workContainer {
+                  width: 90vw !important;
+                  img.workComponent:nth-of-type(1) {
+                    height: 270px !important;
+                  }
+                  img:nth-of-type(2) {
+                    width: 200px !important;
+                  }
+                }
+              }
+            }
           }
         }
       }

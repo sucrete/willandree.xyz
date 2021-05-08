@@ -1459,13 +1459,14 @@ section.resume a:hover img {
     display: block;
   }
   .customModal .modalBody .modalContent .modalHeaderLower {
-    padding-left: 1rem;
+    padding-left: 0.9rem;
   }
   .customModal .modalBody .modalContent .modalSubheadingLower {
     padding-left: 1rem;
   }
   .customModal .modalBody .modalContent .modalDetails {
     padding: 0rem 1rem 2rem 1rem;
+    width: 100%;
   }
   .customModal .modalBody .modalContent .modalDetails p {
     font-size: 1.4rem;
@@ -1483,25 +1484,34 @@ section.resume a:hover img {
     padding: 0rem 1rem 5rem 1rem;
   }
   .customModal .modalBody .modalContent {
-    -webkit-transform: translateY(-62%);
-            transform: translateY(-62%);
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
   }
   .customModal .modalBody .modalContent .modalImagesContainer {
     display: block;
   }
   .customModal .modalBody .modalContent .modalHeaderLower {
-    padding-left: 1rem;
+    padding-left: 0.9rem;
     -webkit-margin-before: 1rem;
             margin-block-start: 1rem;
   }
   .customModal .modalBody .modalContent .modalSubheadingLower {
-    padding-left: 1rem;
+    padding-left: 1.1rem;
   }
   .customModal .modalBody .modalContent .modalDetails {
     padding: 0rem 1rem 2rem 1rem;
   }
   .customModal .modalBody .modalContent .modalDetails p {
     font-size: 1.4rem;
+  }
+  .customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul li.liImage--2 .workContainer {
+    width: 90vw !important;
+  }
+  .customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul li.liImage--2 .workContainer img.workComponent:nth-of-type(1) {
+    height: 270px !important;
+  }
+  .customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul li.liImage--2 .workContainer img:nth-of-type(2) {
+    width: 200px !important;
   }
   .customModal .modalBody.calvinTodd .modalContent .modalImagesContainer ul li img {
     max-width: 100%;
