@@ -1321,6 +1321,37 @@ section.resume {
           }
         }
       }
+      &.OTL {
+        .modalContent {
+          .modalImagesContainer {
+            ul {
+              li {
+                img {
+                  max-width: 95%;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.maxRosen {
+        .modalContent {
+          .modalImagesContainer {
+            ul {
+              li {
+                margin: 0 auto;
+              }
+              .liImage--0,
+              .liImage--1 {
+                width: 100%;
+                img {
+                  width: 108%;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -1506,6 +1506,20 @@ section.resume a:hover img {
   .customModal .modalBody.calvinTodd .modalContent .modalImagesContainer ul li img {
     max-width: 100%;
   }
+  .customModal .modalBody.OTL .modalContent .modalImagesContainer ul li img {
+    max-width: 95%;
+  }
+  .customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul li {
+    margin: 0 auto;
+  }
+  .customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul .liImage--0,
+  .customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul .liImage--1 {
+    width: 100%;
+  }
+  .customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul .liImage--0 img,
+  .customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul .liImage--1 img {
+    width: 108%;
+  }
 }
 
 .inViewtrue {
