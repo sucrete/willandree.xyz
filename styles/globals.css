@@ -1475,6 +1475,39 @@ section.resume a:hover img {
   }
 }
 
+@media screen and (max-width: 630px) {
+  .customModal {
+    overflow-y: visible;
+  }
+  .customModal .modalBody {
+    padding: 0rem 1rem 5rem 1rem;
+  }
+  .customModal .modalBody .modalContent {
+    -webkit-transform: translateY(-62%);
+            transform: translateY(-62%);
+  }
+  .customModal .modalBody .modalContent .modalImagesContainer {
+    display: block;
+  }
+  .customModal .modalBody .modalContent .modalHeaderLower {
+    padding-left: 1rem;
+    -webkit-margin-before: 1rem;
+            margin-block-start: 1rem;
+  }
+  .customModal .modalBody .modalContent .modalSubheadingLower {
+    padding-left: 1rem;
+  }
+  .customModal .modalBody .modalContent .modalDetails {
+    padding: 0rem 1rem 2rem 1rem;
+  }
+  .customModal .modalBody .modalContent .modalDetails p {
+    font-size: 1.4rem;
+  }
+  .customModal .modalBody.calvinTodd .modalContent .modalImagesContainer ul li img {
+    max-width: 100%;
+  }
+}
+
 .inViewtrue {
   -webkit-animation: entranceAnimation2;
           animation: entranceAnimation2;
