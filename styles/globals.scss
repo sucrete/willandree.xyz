@@ -1386,9 +1386,11 @@ section.resume {
     overflow-y: hidden;
     .modalBody {
       padding: 0rem 1rem 0rem 1rem;
+      overflow-y: hidden;
       .modalContent {
         transform: translateY(-92%);
         height: 350px;
+        overflow-y: hidden;
         .modalImagesContainer {
           display: block;
         }

@@ -1535,11 +1535,13 @@ section.resume a:hover img {
   }
   .customModal .modalBody {
     padding: 0rem 1rem 0rem 1rem;
+    overflow-y: hidden;
   }
   .customModal .modalBody .modalContent {
     -webkit-transform: translateY(-92%);
             transform: translateY(-92%);
     height: 350px;
+    overflow-y: hidden;
   }
   .customModal .modalBody .modalContent .modalImagesContainer {
     display: block;
