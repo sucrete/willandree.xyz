@@ -1395,7 +1395,6 @@ section.resume {
         .modalHeaderLower {
           padding-left: 0.4rem;
           margin-block-start: 1.5rem;
-          margin-block-end: 0.2rem;
           font-size: 2rem;
         }
         .modalSubheadingLower {
@@ -1406,7 +1405,7 @@ section.resume {
         .modalDetails {
           padding: 0rem 0.5rem 0rem 0.5rem;
           p {
-            font-size: 1rem;
+            font-size: 0.9rem;
           }
           .visitButton {
             margin-block-start: 1.5rem;
@@ -1496,13 +1495,16 @@ section.resume {
                       .quoteBox {
                         width: 150px;
                       }
+                      .corner {
+                        width: 20px;
+                      }
                       .BL {
-                        bottom: 2px;
+                        bottom: 3px;
                         left: 3px;
                       }
                       .BR {
-                        bottom: 2px;
-                        right: 2px;
+                        bottom: 3px;
+                        right: 3px;
                       }
                       .TL {
                         top: 3px;
@@ -1510,7 +1512,7 @@ section.resume {
                       }
                       .TR {
                         top: 3px;
-                        right: 2px;
+                        right: 3px;
                       }
                     }
                   }
@@ -1543,13 +1545,19 @@ section.resume {
       &.maxRosen {
         .modalContent {
           height: 300px;
-          transform: translateY(-120%);
+          transform: translateY(-119%);
+          .modalSubheadingLower {
+            .lilCapsule {
+              display: inline-block;
+              margin-block-start: 0.1rem;
+            }
+          }
           .modalImagesContainer {
             ul {
               li {
                 .frame__outside {
-                  width: 230px;
-                  height: 280px;
+                  width: 250px;
+                  height: 300px;
                 }
               }
               .liImage--0,
