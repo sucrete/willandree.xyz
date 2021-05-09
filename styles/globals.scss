@@ -1283,10 +1283,8 @@ section.resume {
 
 @media screen and (max-width: 630px) {
   .customModal {
-    overflow-y: visible;
     .modalBody {
       padding: 0rem 1rem 5rem 1rem;
-
       .modalContent {
         transform: translateY(-60%);
         .modalImagesContainer {
@@ -1376,6 +1374,199 @@ section.resume {
     }
   }
 }
+
+// ███╗   ███╗ ██████╗ ██████╗  █████╗ ██╗         ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ██╗  ██╗ ██╗ ██╗██████╗ ██╗  ██╗         ██╗
+// ████╗ ████║██╔═══██╗██╔══██╗██╔══██╗██║         ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ██║  ██║███║███║██╔══██╗╚██╗██╔╝         ╚██╗
+// ██╔████╔██║██║   ██║██║  ██║███████║██║         ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝    ███████║╚██║╚██║██████╔╝ ╚███╔╝     █████╗╚██╗
+// ██║╚██╔╝██║██║   ██║██║  ██║██╔══██║██║         ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗    ╚════██║ ██║ ██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
+// ██║ ╚═╝ ██║╚██████╔╝██████╔╝██║  ██║███████╗    ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║         ██║ ██║ ██║██║     ██╔╝ ██╗         ██╔╝
+// ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝     ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝         ╚═╝ ╚═╝ ╚═╝╚═╝     ╚═╝  ╚═╝         ╚═╝
+@media screen and (max-width: 414px) {
+  .customModal {
+    overflow-y: hidden;
+    .modalBody {
+      padding: 0rem 1rem 0rem 1rem;
+      .modalContent {
+        transform: translateY(-92%);
+        height: 350px;
+        .modalImagesContainer {
+          display: block;
+        }
+        .modalHeaderLower {
+          padding-left: 0.4rem;
+          margin-block-start: 1.5rem;
+          margin-block-end: 0.2rem;
+          font-size: 2rem;
+        }
+        .modalSubheadingLower {
+          padding-left: 0.5rem;
+          font-size: 0.9rem;
+          margin-block-end: 1rem;
+        }
+        .modalDetails {
+          padding: 0rem 0.5rem 0rem 0.5rem;
+          p {
+            font-size: 1rem;
+          }
+          .visitButton {
+            margin-block-start: 1.5rem;
+            margin-block-end: 1rem;
+          }
+        }
+      }
+      &.dumpTRUCK {
+        .modalContent {
+          max-height: 190px;
+          transform: translateY(-190%);
+          .modalImagesContainer {
+            ul {
+              li {
+                // max-width: 90vw !important;
+                margin: 0 auto;
+                .workContainer {
+                  width: 90vw !important;
+                  margin: 0 auto;
+                }
+                img {
+                  max-width: 90vw;
+                  max-height: 100%;
+                }
+              }
+              li.liImage--1 {
+                margin-left: 1rem;
+                padding-top: 2rem;
+                height: 100%;
+                .workContainer {
+                  .artistName {
+                    font-size: 0.7rem !important;
+                  }
+                  img.workComponent:nth-of-type(1) {
+                    max-width: 240px !important;
+                  }
+                }
+              }
+              li.liImage--2 {
+                margin-left: 0.5rem;
+                .workContainer {
+                  // width: 90vw !important;
+                  .artistName {
+                    font-size: 0.7rem !important;
+                  }
+                  img.workComponent:nth-of-type(1) {
+                    max-height: 170px !important;
+                    margin-left: -15px;
+                  }
+                  img.workComponent:nth-of-type(2) {
+                    width: 120px !important;
+                    margin-left: -15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.OTL {
+        .modalContent {
+          height: 270px;
+          transform: translateY(-132%);
+          .modalImagesContainer {
+            ul {
+              li.liImage--0 {
+                width: 90vw;
+              }
+              li.liImage--2 {
+                .parentCardContainer {
+                  width: 100%;
+                  height: 100%;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  position: absolute;
+                  .cardContainer {
+                    width: 100%;
+                    height: 100%;
+                    .bizCard {
+                      width: 300px;
+                      height: 178px;
+                      .innerFrame {
+                        height: calc(100% - 30px);
+                        width: calc(100% - 30px);
+                      }
+                      .quoteBox {
+                        width: 150px;
+                      }
+                      .BL {
+                        bottom: 2px;
+                        left: 3px;
+                      }
+                      .BR {
+                        bottom: 2px;
+                        right: 2px;
+                      }
+                      .TL {
+                        top: 3px;
+                        left: 3px;
+                      }
+                      .TR {
+                        top: 3px;
+                        right: 2px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.calvinTodd {
+        .modalContent {
+          height: 275px;
+          transform: translateY(-132%);
+          .modalHeaderLower {
+            margin-block-start: 1.8rem;
+          }
+          .modalImagesContainer {
+            ul {
+              li.liImage--0 {
+                img {
+                  height: 300px;
+                }
+              }
+              li.liImage--2 {
+              }
+            }
+          }
+        }
+      }
+      &.maxRosen {
+        .modalContent {
+          height: 300px;
+          transform: translateY(-120%);
+          .modalImagesContainer {
+            ul {
+              li {
+                .frame__outside {
+                  width: 230px;
+                  height: 280px;
+                }
+              }
+              .liImage--0,
+              .liImage--1 {
+                width: 100%;
+                img {
+                  width: 116%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .inViewtrue {
   animation: entranceAnimation2;
   animation-timing-function: ease;
