@@ -900,6 +900,9 @@ section.resume {
             &:visited {
               color: black;
             }
+            &:focus {
+              outline: 0;
+            }
           }
         }
         &:before {
@@ -1387,8 +1390,9 @@ section.resume {
     .modalBody {
       padding: 0rem 1rem 0rem 1rem;
       // overflow-y: hidden;
+      height: unset;
       .modalContent {
-        transform: translateY(-92%);
+        transform: unset;
         height: 350px;
         // overflow-y: hidden;
         .modalImagesContainer {
@@ -1396,18 +1400,22 @@ section.resume {
         }
         .modalHeaderLower {
           padding-left: 0.4rem;
-          margin-block-start: 1.5rem;
-          font-size: 2rem;
+          margin-block-start: 1rem;
+          font-size: 1.9rem;
         }
         .modalSubheadingLower {
           padding-left: 0.5rem;
-          font-size: 0.9rem;
+          font-size: 0.8rem;
           margin-block-end: 1rem;
+          .lilCapsule {
+            display: inline-block;
+            margin-block-start: 0.2rem;
+          }
         }
         .modalDetails {
           padding: 0rem 0.5rem 0rem 0.5rem;
           p {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
           }
           .visitButton {
             margin-block-start: 1.5rem;
@@ -1418,7 +1426,6 @@ section.resume {
       &.dumpTRUCK {
         .modalContent {
           max-height: 190px;
-          transform: translateY(-190%);
           .modalImagesContainer {
             ul {
               li {
@@ -1470,7 +1477,6 @@ section.resume {
       &.OTL {
         .modalContent {
           height: 270px;
-          transform: translateY(-132%);
           .modalImagesContainer {
             ul {
               li.liImage--0 {
@@ -1527,7 +1533,6 @@ section.resume {
       &.calvinTodd {
         .modalContent {
           height: 275px;
-          transform: translateY(-132%);
           .modalHeaderLower {
             margin-block-start: 1.8rem;
           }
@@ -1547,15 +1552,11 @@ section.resume {
       &.maxRosen {
         .modalContent {
           height: 300px;
-          transform: translateY(-119%);
-          .modalSubheadingLower {
-            .lilCapsule {
-              display: inline-block;
-              margin-block-start: 0.1rem;
-            }
-          }
+          // transform: translateY(-100px);
           .modalImagesContainer {
             ul {
+              position: relative;
+              display: block;
               li {
                 .frame__outside {
                   width: 250px;

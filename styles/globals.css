@@ -943,6 +943,10 @@ section.resume a:hover img {
   color: black;
 }
 
+.customModal .modalBody .modalContent .modalDetails p a:focus {
+  outline: 0;
+}
+
 .customModal .modalBody .modalContent .modalDetails:before {
   position: absolute;
   content: "";
@@ -1535,10 +1539,11 @@ section.resume a:hover img {
   }
   .customModal .modalBody {
     padding: 0rem 1rem 0rem 1rem;
+    height: unset;
   }
   .customModal .modalBody .modalContent {
-    -webkit-transform: translateY(-92%);
-            transform: translateY(-92%);
+    -webkit-transform: unset;
+            transform: unset;
     height: 350px;
   }
   .customModal .modalBody .modalContent .modalImagesContainer {
@@ -1546,21 +1551,26 @@ section.resume a:hover img {
   }
   .customModal .modalBody .modalContent .modalHeaderLower {
     padding-left: 0.4rem;
-    -webkit-margin-before: 1.5rem;
-            margin-block-start: 1.5rem;
-    font-size: 2rem;
+    -webkit-margin-before: 1rem;
+            margin-block-start: 1rem;
+    font-size: 1.9rem;
   }
   .customModal .modalBody .modalContent .modalSubheadingLower {
     padding-left: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     -webkit-margin-after: 1rem;
             margin-block-end: 1rem;
+  }
+  .customModal .modalBody .modalContent .modalSubheadingLower .lilCapsule {
+    display: inline-block;
+    -webkit-margin-before: 0.2rem;
+            margin-block-start: 0.2rem;
   }
   .customModal .modalBody .modalContent .modalDetails {
     padding: 0rem 0.5rem 0rem 0.5rem;
   }
   .customModal .modalBody .modalContent .modalDetails p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .customModal .modalBody .modalContent .modalDetails .visitButton {
     -webkit-margin-before: 1.5rem;
@@ -1570,8 +1580,6 @@ section.resume a:hover img {
   }
   .customModal .modalBody.dumpTRUCK .modalContent {
     max-height: 190px;
-    -webkit-transform: translateY(-190%);
-            transform: translateY(-190%);
   }
   .customModal .modalBody.dumpTRUCK .modalContent .modalImagesContainer ul li {
     margin: 0 auto;
@@ -1611,8 +1619,6 @@ section.resume a:hover img {
   }
   .customModal .modalBody.OTL .modalContent {
     height: 270px;
-    -webkit-transform: translateY(-132%);
-            transform: translateY(-132%);
   }
   .customModal .modalBody.OTL .modalContent .modalImagesContainer ul li.liImage--0 {
     width: 90vw;
@@ -1662,8 +1668,6 @@ section.resume a:hover img {
   }
   .customModal .modalBody.calvinTodd .modalContent {
     height: 275px;
-    -webkit-transform: translateY(-132%);
-            transform: translateY(-132%);
   }
   .customModal .modalBody.calvinTodd .modalContent .modalHeaderLower {
     -webkit-margin-before: 1.8rem;
@@ -1674,13 +1678,10 @@ section.resume a:hover img {
   }
   .customModal .modalBody.maxRosen .modalContent {
     height: 300px;
-    -webkit-transform: translateY(-119%);
-            transform: translateY(-119%);
   }
-  .customModal .modalBody.maxRosen .modalContent .modalSubheadingLower .lilCapsule {
-    display: inline-block;
-    -webkit-margin-before: 0.1rem;
-            margin-block-start: 0.1rem;
+  .customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul {
+    position: relative;
+    display: block;
   }
   .customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul li .frame__outside {
     width: 250px;
