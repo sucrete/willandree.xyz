@@ -928,7 +928,9 @@ section.resume {
           transition: all 0.15s ease;
           text-transform: uppercase;
           width: 210px;
-
+          &:focus {
+            outline: 0;
+          }
           &:hover {
             color: black;
             background-color: khaki;
@@ -1402,11 +1404,12 @@ section.resume {
           padding-left: 0.4rem;
           margin-block-start: 1rem;
           font-size: 1.9rem;
+          letter-spacing: -0.05rem;
         }
         .modalSubheadingLower {
           padding-left: 0.5rem;
           font-size: 0.8rem;
-          margin-block-end: 1rem;
+          margin-block-end: 0rem;
           .lilCapsule {
             display: inline-block;
             margin-block-start: 0.2rem;
@@ -1414,6 +1417,7 @@ section.resume {
         }
         .modalDetails {
           padding: 0rem 0.5rem 0rem 0.5rem;
+          margin-block-start: 0.5rem;
           p {
             font-size: 0.8rem;
           }
