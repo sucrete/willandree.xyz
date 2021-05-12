@@ -1413,6 +1413,7 @@ section.resume {
           .lilCapsule {
             display: inline-block;
             margin-block-start: 0.2rem;
+            margin-left: -3px;
           }
         }
         .modalDetails {
@@ -1424,6 +1425,7 @@ section.resume {
           .visitButton {
             margin-block-start: 1.5rem;
             margin-block-end: 1rem;
+            width: 100%;
           }
         }
       }

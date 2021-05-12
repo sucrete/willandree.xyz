@@ -1570,6 +1570,7 @@ section.resume a:hover img {
     display: inline-block;
     -webkit-margin-before: 0.2rem;
             margin-block-start: 0.2rem;
+    margin-left: -3px;
   }
   .customModal .modalBody .modalContent .modalDetails {
     padding: 0rem 0.5rem 0rem 0.5rem;
@@ -1584,6 +1585,7 @@ section.resume a:hover img {
             margin-block-start: 1.5rem;
     -webkit-margin-after: 1rem;
             margin-block-end: 1rem;
+    width: 100%;
   }
   .customModal .modalBody.dumpTRUCK .modalContent {
     max-height: 190px;

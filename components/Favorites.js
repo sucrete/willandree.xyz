@@ -11,23 +11,6 @@ function getWindowDimensions() {
   };
 }
 
-function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return windowDimensions;
-}
-
 function Box1() {
   return (
     <div className="designers">
@@ -96,8 +79,6 @@ const isMobile = () => {
 };
 
 function Cursor() {
-  // const { width } = useWindowDimensions();
-
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hidden, setHidden] = useState(true);
   const [width, setWindowDimensions] = useState(getWindowDimensions());
