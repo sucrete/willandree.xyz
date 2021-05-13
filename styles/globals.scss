@@ -255,7 +255,7 @@ section.navigation {
   justify-content: space-between;
   text-align: left;
   z-index: 11;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: "corporate condensed regular";
 
   .name {
@@ -267,7 +267,7 @@ section.navigation {
     }
     &:before {
       position: absolute;
-      bottom: -6px;
+      bottom: -8px;
       left: 4px;
       height: 2px;
       content: "";
@@ -306,11 +306,11 @@ section.navigation {
   @keyframes coneAnim {
     from {
       opacity: 0;
-      top: 10px;
+      top: 5px;
     }
     to {
       opacity: 1;
-      top: 20px;
+      top: 15px;
     }
   }
 }
@@ -336,7 +336,7 @@ section.header {
       position: relative;
       .dItem {
         position: relative;
-        height: 105px;
+        height: 100px;
         .dItemBaby {
           overflow: hidden;
         }
@@ -378,7 +378,7 @@ section.work {
       margin-left: -0.25rem;
       z-index: 2;
       .workHeader {
-        font-size: 3.5rem;
+        font-size: 2rem;
         position: relative;
         margin-block-end: 1.5rem;
         display: block;
@@ -387,20 +387,20 @@ section.work {
         padding-left: 1rem;
       }
       .workItemContainer {
-        margin-bottom: 16px;
+        margin-bottom: 18px;
         position: relative;
         display: block;
         z-index: 3;
         span {
           font-family: "Epilogue", sans-serif;
-          font-size: 2.5rem;
+          font-size: 2.2rem;
           font-weight: 400;
           position: relative;
           border-radius: 599px;
           color: black;
           height: 100%;
           width: 100%;
-          padding: 20px 42px 14px 42px;
+          padding: 20px 32px 14px 32px;
           transition: all 0.1s ease;
           background: white;
           white-space: nowrap;
@@ -550,6 +550,7 @@ section.info {
       color: white;
       margin-block-end: 1.5rem;
       left: 5px;
+      font-size: 2rem;
     }
     .aboutVerbiage {
       width: 100%;
@@ -558,7 +559,7 @@ section.info {
       justify-content: space-between;
       line-height: 1.15;
       font-family: "Epilogue", sans-serif;
-      font-size: 1.85rem;
+      font-size: 1.6rem;
       &--13,
       &--14 {
         a {
@@ -601,10 +602,11 @@ section.contact {
         z-index: 10;
         position: relative;
         margin-block-end: 0.7rem;
+        font-size: 2rem;
       }
       .educationItem {
         font-family: "corporate condensed regular";
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 1.1;
         color: white;
         z-index: 10;
@@ -616,7 +618,7 @@ section.contact {
         &--6 {
           font-family: "Epilogue", sans-serif;
           // font-weight: 400;
-          font-size: 1.85rem;
+          font-size: 1.6rem;
         }
         &--1,
         &--4,
@@ -637,14 +639,14 @@ section.contact {
         z-index: 10;
         // text-transform: uppercase;
         &--0 {
-          font-size: 3rem;
+          font-size: 2rem;
           font-family: "drucc", serif;
           margin-block-end: 0.7rem;
         }
         &--1 {
           font-family: "Epilogue", sans-serif;
           font-weight: 500;
-          font-size: 1.5rem;
+          font-size: 1.6rem;
           position: relative;
           padding-left: 0.3rem;
           a {
@@ -692,7 +694,7 @@ section.resume {
     display: block;
     text-align: center;
     font-family: "drucc";
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 500;
     padding: 0rem 0rem;
     border: 5px solid white;
@@ -710,8 +712,8 @@ section.resume {
     img {
       position: absolute;
       top: 50%;
-      transform: translate(3px, -59%);
-      width: 55px;
+      transform: translate(3px, -69%);
+      width: 27px;
       height: auto;
       visibility: hidden;
       z-index: -1;
@@ -792,8 +794,8 @@ section.resume {
       letter-spacing: 0rem;
     }
     .modalSubheading {
-      color: grey;
-      font-size: 1rem;
+      color: rgb(141, 141, 141);
+      font-size: 0.9rem;
       padding-left: 3px;
       font-family: "Epilogue";
       .lilCapsule {
@@ -1408,12 +1410,12 @@ section.resume {
         }
         .modalSubheadingLower {
           padding-left: 0.5rem;
-          font-size: 1rem;
+          font-size: 0.8rem;
           margin-block-end: 0rem;
           .lilCapsule {
             display: inline-block;
             margin-block-start: 0.2rem;
-            margin-left: -3px;
+            // margin-left: -3px;
           }
         }
         .modalDetails {

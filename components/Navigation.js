@@ -6,11 +6,11 @@ export default function Navigation() {
   const fullName = "Will Andrée";
   const splitName = fullName.split(" ");
   const trail = useTrail(splitName.length, {
-    config: { mass: 5, tension: 2200, friction: 200 },
+    config: { mass: 5, tension: 2200, friction: 250 },
     opacity: 1,
-    x: 0,
+    x: 10,
     delay: underSixHundo ? 0 : 2000,
-    from: { opacity: 0, x: -10 },
+    from: { opacity: 0, x: 3 },
   });
   return (
     <section className="navigation">

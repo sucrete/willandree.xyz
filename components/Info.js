@@ -2,21 +2,21 @@ import { useInView } from "react-intersection-observer";
 import { useTrail, animated } from "react-spring";
 
 const aboutVerbiage = [
-  "My name is Will Andrée and I'm a",
-  "front-end developer based in",
-  "Kansas City. My expertise lies in",
-  "creating unique websites using",
-  "JavaScript-driven technologies.",
+  "My name is Will Andrée and I'm a front-",
+  "end developer based in Kansas City. My",
+  "expertise lies in creating unique web-",
+  "sites using JavaScript-driven tech-",
+  "nologies.",
   <br />,
-  "Possessed of a lifelong love for",
-  "art and design, I am keenly drawn",
-  "to the challenges of creating",
-  "singular user-facing experiences.",
+  "Possessed of a lifelong love for art",
+  "and design, I am keenly drawn to the",
+  "challenges of creating singular user-",
+  "facing experiences.",
   <br />,
-  "In addition to my design work, I",
-  "teach practical web development",
+  "In addition to my design work, I teach",
+  "practical web development skills",
   <span>
-    skills through{" "}
+    through{" "}
     <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
       Nucamp Coding Bootcamp.
     </a>
@@ -24,14 +24,14 @@ const aboutVerbiage = [
   <a href="https://www.nucamp.co/" target="_blank" className="nucamp"></a>,
   <br />,
   "If you are interested in using my",
-  "development services, please,",
-  "feel free to reach out.",
+  "development services, please, feel",
+  "free to reach out.",
 ];
 
 const aboutTitle = ["About"];
 export default function Info() {
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: 0.45,
     triggerOnce: true,
   });
   const trail = useTrail(aboutVerbiage.length, {
