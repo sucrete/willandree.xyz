@@ -696,10 +696,10 @@ section.resume {
     display: block;
     text-align: center;
     font-family: "drucc";
-    font-size: 2rem;
+    font-size: 9rem;
     padding: 0rem 0rem;
     border: 2px solid white;
-    border-radius: 100%;
+    border-radius: 999px;
     width: 100%;
     color: white;
     text-decoration: none;
@@ -713,7 +713,7 @@ section.resume {
     img {
       position: absolute;
       top: 50%;
-      transform: translate(3px, -69%);
+      transform: translate(3px, -80%);
       width: 27px;
       height: auto;
       visibility: hidden;
@@ -2242,7 +2242,7 @@ $smallWidth: 390px;
           bottom: -5px;
           animation: 500ms lineAnim2 ease;
           animation-fill-mode: forwards;
-          animation-delay: 1800ms;
+          animation-delay: 1000ms;
         }
         @keyframes lineAnim2 {
           from {
