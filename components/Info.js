@@ -3,10 +3,10 @@ import { useTrail, animated } from "react-spring";
 
 const aboutVerbiage = [
   "My name is Will Andrée and I'm a front-",
-  "end developer based in Kansas City. My",
-  "expertise lies in creating unique web-",
-  "sites using JavaScript-driven tech-",
-  "nologies.",
+  "end developer based in Kansas City.",
+  "My expertise lies in creating unique ",
+  "websites using JavaScript-driven ",
+  "technologies.",
   <br />,
   "Possessed of a lifelong love for art",
   "and design, I am keenly drawn to the",

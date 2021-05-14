@@ -87,8 +87,8 @@ ul li {
 
 .desaturatedBuilding {
   max-height: 90%;
-  -webkit-box-shadow: 0px 1px 0 rgba(241, 236, 193, 0), -1px 1.9px 1px #f1ecc1, -2px 3.8px 2px rgba(241, 236, 193, 0.75), -3px 5.7px 3px rgba(241, 236, 193, 0.5), -4px 7.6px 4px rgba(241, 236, 193, 0.375), -5px 9.5px 5px rgba(241, 236, 193, 0.3), -6px 11.4px 6px rgba(241, 236, 193, 0.25), -7px 13.3px 7px rgba(241, 236, 193, 0.214286), -8px 15.2px 8px rgba(241, 236, 193, 0.1875), -9px 17.1px 9px rgba(241, 236, 193, 0.166667), -10px 19px 10px rgba(241, 236, 193, 0.15), -11px 20.9px 11px rgba(241, 236, 193, 0.136364), -12px 22.8px 12px rgba(241, 236, 193, 0.125);
-          box-shadow: 0px 1px 0 rgba(241, 236, 193, 0), -1px 1.9px 1px #f1ecc1, -2px 3.8px 2px rgba(241, 236, 193, 0.75), -3px 5.7px 3px rgba(241, 236, 193, 0.5), -4px 7.6px 4px rgba(241, 236, 193, 0.375), -5px 9.5px 5px rgba(241, 236, 193, 0.3), -6px 11.4px 6px rgba(241, 236, 193, 0.25), -7px 13.3px 7px rgba(241, 236, 193, 0.214286), -8px 15.2px 8px rgba(241, 236, 193, 0.1875), -9px 17.1px 9px rgba(241, 236, 193, 0.166667), -10px 19px 10px rgba(241, 236, 193, 0.15), -11px 20.9px 11px rgba(241, 236, 193, 0.136364), -12px 22.8px 12px rgba(241, 236, 193, 0.125);
+  -webkit-box-shadow: 0px 1px 0 rgba(227, 240, 223, 0), -1px 1.9px 1px #e3f0df, -2px 3.8px 2px rgba(227, 240, 223, 0.75), -3px 5.7px 3px rgba(227, 240, 223, 0.5), -4px 7.6px 4px rgba(227, 240, 223, 0.375), -5px 9.5px 5px rgba(227, 240, 223, 0.3), -6px 11.4px 6px rgba(227, 240, 223, 0.25), -7px 13.3px 7px rgba(227, 240, 223, 0.214286), -8px 15.2px 8px rgba(227, 240, 223, 0.1875), -9px 17.1px 9px rgba(227, 240, 223, 0.166667), -10px 19px 10px rgba(227, 240, 223, 0.15), -11px 20.9px 11px rgba(227, 240, 223, 0.136364), -12px 22.8px 12px rgba(227, 240, 223, 0.125);
+          box-shadow: 0px 1px 0 rgba(227, 240, 223, 0), -1px 1.9px 1px #e3f0df, -2px 3.8px 2px rgba(227, 240, 223, 0.75), -3px 5.7px 3px rgba(227, 240, 223, 0.5), -4px 7.6px 4px rgba(227, 240, 223, 0.375), -5px 9.5px 5px rgba(227, 240, 223, 0.3), -6px 11.4px 6px rgba(227, 240, 223, 0.25), -7px 13.3px 7px rgba(227, 240, 223, 0.214286), -8px 15.2px 8px rgba(227, 240, 223, 0.1875), -9px 17.1px 9px rgba(227, 240, 223, 0.166667), -10px 19px 10px rgba(227, 240, 223, 0.15), -11px 20.9px 11px rgba(227, 240, 223, 0.136364), -12px 22.8px 12px rgba(227, 240, 223, 0.125);
   border-radius: 2px;
 }
 
@@ -123,8 +123,8 @@ ul li {
           box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8);
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
-  -webkit-box-shadow: 0px 1px 0 rgba(246, 243, 214, 0), -1px 1.9px 1px #f6f3d6, -2px 3.8px 2px rgba(246, 243, 214, 0.75), -3px 5.7px 3px rgba(246, 243, 214, 0.5), -4px 7.6px 4px rgba(246, 243, 214, 0.375), -5px 9.5px 5px rgba(246, 243, 214, 0.3), -6px 11.4px 6px rgba(246, 243, 214, 0.25), -7px 13.3px 7px rgba(246, 243, 214, 0.214286), -8px 15.2px 8px rgba(246, 243, 214, 0.1875);
-          box-shadow: 0px 1px 0 rgba(246, 243, 214, 0), -1px 1.9px 1px #f6f3d6, -2px 3.8px 2px rgba(246, 243, 214, 0.75), -3px 5.7px 3px rgba(246, 243, 214, 0.5), -4px 7.6px 4px rgba(246, 243, 214, 0.375), -5px 9.5px 5px rgba(246, 243, 214, 0.3), -6px 11.4px 6px rgba(246, 243, 214, 0.25), -7px 13.3px 7px rgba(246, 243, 214, 0.214286), -8px 15.2px 8px rgba(246, 243, 214, 0.1875);
+  -webkit-box-shadow: 0px 1px 0 rgba(227, 240, 223, 0), -1px 1.9px 1px #e3f0df, -2px 3.8px 2px rgba(227, 240, 223, 0.75), -3px 5.7px 3px rgba(227, 240, 223, 0.5), -4px 7.6px 4px rgba(227, 240, 223, 0.375), -5px 9.5px 5px rgba(227, 240, 223, 0.3), -6px 11.4px 6px rgba(227, 240, 223, 0.25), -7px 13.3px 7px rgba(227, 240, 223, 0.214286), -8px 15.2px 8px rgba(227, 240, 223, 0.1875);
+          box-shadow: 0px 1px 0 rgba(227, 240, 223, 0), -1px 1.9px 1px #e3f0df, -2px 3.8px 2px rgba(227, 240, 223, 0.75), -3px 5.7px 3px rgba(227, 240, 223, 0.5), -4px 7.6px 4px rgba(227, 240, 223, 0.375), -5px 9.5px 5px rgba(227, 240, 223, 0.3), -6px 11.4px 6px rgba(227, 240, 223, 0.25), -7px 13.3px 7px rgba(227, 240, 223, 0.214286), -8px 15.2px 8px rgba(227, 240, 223, 0.1875);
 }
 
 .cardContainer .bizCard .quoteBox {
@@ -648,7 +648,6 @@ section.contact .contentContainer .copyContainer .contactInfo--0 {
 
 section.contact .contentContainer .copyContainer .contactInfo--1 {
   font-family: "Epilogue", sans-serif;
-  font-weight: 500;
   font-size: 1.6rem;
   position: relative;
   padding-left: 0.3rem;
@@ -699,10 +698,9 @@ section.resume a {
   text-align: center;
   font-family: "drucc";
   font-size: 2rem;
-  font-weight: 500;
   padding: 0rem 0rem;
-  border: 5px solid white;
-  border-radius: 999px;
+  border: 2px solid white;
+  border-radius: 100%;
   width: 100%;
   color: white;
   text-decoration: none;
@@ -729,7 +727,7 @@ section.resume a img {
 
 section.resume a:hover {
   color: khaki;
-  border: 5px solid #f0e78e;
+  border: 2px solid #f0e78e;
 }
 
 section.resume a:hover img {
@@ -1337,7 +1335,8 @@ section.resume a:hover img {
 
 @media screen and (max-width: 1300px) {
   .customModal .modalBody .modalContent .modalDetails {
-    padding: 4rem 0rem 3rem 3rem;
+    padding: 4rem 0rem 3rem 2rem;
+    margin-right: 1rem;
   }
   .customModal .modalBody .modalContent .modalDetails .visitButton {
     width: 100%;
@@ -1740,7 +1739,7 @@ section.resume a:hover img {
     width: 800px;
   }
   section.navigation {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     padding-bottom: 5rem;
     width: 750px !important;
     margin-left: auto !important;
@@ -1783,7 +1782,7 @@ section.resume a:hover img {
   }
   section.work .workContainer .workBody .workHeader {
     left: 35px;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   section.work .workContainer .workBody .workItemContainer {
     margin-bottom: -25px;
@@ -1793,7 +1792,7 @@ section.resume a:hover img {
     margin-right: auto !important;
   }
   section.work .workContainer .workBody .workItemContainer span {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     display: block !important;
     border-radius: 0px;
     display: block !important;
@@ -1811,7 +1810,7 @@ section.resume a:hover img {
     width: auto;
     background-color: transparent;
     right: -2px;
-    top: -5px;
+    top: -11px;
     opacity: 0;
     -webkit-transition: all 100ms ease;
     transition: all 100ms ease;
@@ -1822,7 +1821,7 @@ section.resume a:hover img {
     width: auto;
     background-color: transparent;
     right: -2px;
-    top: -5px;
+    top: -11px;
     opacity: 1;
     -webkit-transition: all 100ms ease;
     transition: all 100ms ease;
@@ -1907,10 +1906,10 @@ section.resume a:hover img {
             transform: translateX(10px);
   }
   section.info .infoBody .aboutHeader {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   section.info .infoBody .aboutVerbiage {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
@@ -1925,19 +1924,19 @@ section.resume a:hover img {
             transform: translateX(9px);
   }
   section.contact .contentContainer .copyContainer .educationHeader {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-bottom: 1rem;
     left: 10px;
   }
   section.contact .contentContainer .copyContainer .educationItem {
     left: 9px;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   section.contact .contentContainer .copyContainer .contactInfo {
     left: 9px;
   }
   section.contact .contentContainer .copyContainer .contactInfo--0 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-bottom: 1rem;
     padding-top: 1.5rem;
   }
@@ -1950,17 +1949,21 @@ section.resume a:hover img {
   section.resume {
     width: 720px;
     left: 0px;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   section.resume a {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 770px) {
   section {
     width: 800px;
+  }
+  section.navigation {
+    padding-top: 0.8rem;
+    font-size: 2.8rem;
   }
   section.work .workContainer .workBody .workHeader {
     -webkit-transform: translateX(-10px);
@@ -2105,10 +2108,10 @@ section.resume a:hover img {
     padding-top: 0.5rem;
   }
   section.navigation .name:before {
-    bottom: -5px;
+    bottom: -15px !important;
     height: 1px;
-    -webkit-animation-delay: 0ms;
-            animation-delay: 0ms;
+    -webkit-animation-delay: 700ms !important;
+            animation-delay: 700ms !important;
   }
   section.navigation .cone {
     width: 60px;
@@ -2119,8 +2122,8 @@ section.resume a:hover img {
             animation: 700ms coneAnim2 ease;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-animation-delay: 1300ms;
-            animation-delay: 1300ms;
+    -webkit-animation-delay: 1000ms;
+            animation-delay: 1000ms;
     opacity: 0;
     -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
             box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
@@ -2128,21 +2131,21 @@ section.resume a:hover img {
   @-webkit-keyframes coneAnim2 {
     from {
       opacity: 0;
-      top: 10px;
+      top: 20px;
     }
     to {
       opacity: 1;
-      top: 20px;
+      top: 28px;
     }
   }
   @keyframes coneAnim2 {
     from {
       opacity: 0;
-      top: 10px;
+      top: 20px;
     }
     to {
       opacity: 1;
-      top: 20px;
+      top: 28px;
     }
   }
   section.header {

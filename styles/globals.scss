@@ -162,7 +162,7 @@ ul {
 }
 .desaturatedBuilding {
   max-height: 90%;
-  @include shadow(lighten(rgb(236, 230, 172), 5%), 12);
+  @include shadow(lighten(rgb(196, 223, 189), 10%), 12);
   border-radius: 2px;
 }
 .cardContainer {
@@ -189,7 +189,7 @@ ul {
     z-index: 2;
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8);
     transform: rotate(-5deg);
-    @include shadow(lighten(rgb(236, 230, 172), 10%), 8);
+    @include shadow(lighten(rgb(196, 223, 189), 10%), 8);
     .quoteBox {
       width: 200px;
       height: auto;
@@ -645,7 +645,7 @@ section.contact {
         }
         &--1 {
           font-family: "Epilogue", sans-serif;
-          font-weight: 500;
+          // font-weight: 500;
           font-size: 1.6rem;
           position: relative;
           padding-left: 0.3rem;
@@ -695,10 +695,9 @@ section.resume {
     text-align: center;
     font-family: "drucc";
     font-size: 2rem;
-    font-weight: 500;
     padding: 0rem 0rem;
-    border: 5px solid white;
-    border-radius: 999px;
+    border: 2px solid white;
+    border-radius: 100%;
     width: 100%;
     color: white;
     text-decoration: none;
@@ -720,7 +719,7 @@ section.resume {
     }
     &:hover {
       color: khaki;
-      border: 5px solid $chartreuse;
+      border: 2px solid $chartreuse;
       img {
         opacity: 1;
         visibility: visible;
@@ -1063,8 +1062,9 @@ section.resume {
         .modalImagesContainer {
         }
         .modalDetails {
-          padding: 4rem 0rem 3rem 3rem;
+          padding: 4rem 0rem 3rem 2rem;
           // THE DIVIDING LINE CREATED WITH ':BEFORE' PSEUDO-ELEMENT
+          margin-right: 1rem;
           &:before {
           }
           .visitButton {
@@ -1616,7 +1616,7 @@ section.resume {
     width: 800px;
 
     &.navigation {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       padding-bottom: 5rem;
       width: 750px !important;
       margin-left: auto !important;
@@ -1658,12 +1658,11 @@ section.resume {
         margin-right: auto !important;
         .workBody {
           width: 100%;
-
           margin-left: auto !important;
           margin-right: auto !important;
           .workHeader {
             left: 35px;
-            font-size: 3rem;
+            font-size: 2.5rem;
           }
           .workItemContainer {
             margin-bottom: -25px;
@@ -1672,7 +1671,7 @@ section.resume {
             margin-left: auto !important;
             margin-right: auto !important;
             span {
-              font-size: 2.8rem;
+              font-size: 2.3rem;
               display: block !important;
               border-radius: 0px;
               display: block !important;
@@ -1689,7 +1688,7 @@ section.resume {
                 width: auto;
                 background-color: transparent;
                 right: -2px;
-                top: -5px;
+                top: -11px;
                 opacity: 0;
                 transition: all 100ms ease;
               }
@@ -1699,7 +1698,7 @@ section.resume {
                 width: auto;
                 background-color: transparent;
                 right: -2px;
-                top: -5px;
+                top: -11px;
                 opacity: 1;
                 transition: all 100ms ease;
               }
@@ -1794,10 +1793,10 @@ section.resume {
         margin-right: auto;
         transform: translateX(10px);
         .aboutHeader {
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
         .aboutVerbiage {
-          font-size: 2.6rem;
+          font-size: 2.3rem;
           justify-content: unset;
         }
       }
@@ -1810,18 +1809,18 @@ section.resume {
         transform: translateX(9px);
         .copyContainer {
           .educationHeader {
-            font-size: 3rem;
+            font-size: 2.5rem;
             padding-bottom: 1rem;
             left: 10px;
           }
           .educationItem {
             left: 9px;
-            font-size: 2.5rem;
+            font-size: 2.3rem;
           }
           .contactInfo {
             left: 9px;
             &--0 {
-              font-size: 3rem;
+              font-size: 2.5rem;
               padding-bottom: 1rem;
               padding-top: 1.5rem;
             }
@@ -1841,9 +1840,9 @@ section.resume {
     &.resume {
       width: 720px;
       left: 0px;
-      transform: translateY(50px);
+      transform: translateY(-30px);
       a {
-        font-size: 4rem;
+        font-size: 2rem;
       }
     }
   }
@@ -1859,7 +1858,10 @@ section.resume {
 @media screen and (max-width: 770px) {
   section {
     width: 800px;
-
+    &.navigation {
+      padding-top: 0.8rem;
+      font-size: 2.8rem;
+    }
     &.work {
       .workContainer {
         .workBody {
@@ -2034,9 +2036,9 @@ $medSmallWidth: 535px;
         line-height: 1.5;
         padding-top: 0.5rem;
         &:before {
-          bottom: -5px;
+          bottom: -15px !important;
           height: 1px;
-          animation-delay: 0ms;
+          animation-delay: 700ms !important;
         }
       }
       .cone {
@@ -2045,18 +2047,18 @@ $medSmallWidth: 535px;
         transform: translateY(-10px);
         animation: 700ms coneAnim2 ease;
         animation-fill-mode: forwards;
-        animation-delay: 1300ms;
+        animation-delay: 1000ms;
         opacity: 0;
         box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
       }
       @keyframes coneAnim2 {
         from {
           opacity: 0;
-          top: 10px;
+          top: 20px;
         }
         to {
           opacity: 1;
-          top: 20px;
+          top: 28px;
         }
       }
     }

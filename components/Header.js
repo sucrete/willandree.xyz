@@ -4,7 +4,8 @@ export default function Header() {
   const descriptionItems = [
     "Front-end Developer/",
     "Graphic Designer/ UX",
-    "Designer",
+    "Designer/ Student of",
+    "Novelty",
   ];
 
   const trail = useTrail(descriptionItems.length, {
