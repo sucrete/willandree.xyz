@@ -2244,12 +2244,15 @@ $smallWidth: 390px;
           bottom: -5px;
           animation: 700ms lineAnim2 ease;
           animation-fill-mode: forwards;
-          animation-delay: 1000ms;
+          animation-delay: 1200ms;
         }
         @keyframes lineAnim2 {
           from {
             opacity: 0;
             width: 0px;
+          }
+          20% {
+            opacity: 0;
           }
           to {
             opacity: 1;
@@ -2369,7 +2372,7 @@ $smallWidth: 390px;
         }
         .aboutVerbiage {
           width: $smallWidth !important;
-          font-size: 1.46rem;
+          font-size: 1.3rem;
         }
       }
     }
