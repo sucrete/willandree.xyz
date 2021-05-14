@@ -2244,7 +2244,7 @@ $smallWidth: 390px;
           bottom: -5px;
           animation: 700ms lineAnim2 ease;
           animation-fill-mode: forwards;
-          animation-delay: 1200ms;
+          animation-delay: 700ms;
         }
         @keyframes lineAnim2 {
           from {
@@ -2263,7 +2263,7 @@ $smallWidth: 390px;
       .cone {
         width: 50px;
         height: 45px;
-        animation-delay: 1300ms;
+        animation-delay: 900ms;
       }
     }
     &.header {

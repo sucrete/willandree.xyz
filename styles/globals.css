@@ -2303,8 +2303,8 @@ section.resume a:hover img {
             animation: 700ms lineAnim2 ease;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-animation-delay: 1200ms;
-            animation-delay: 1200ms;
+    -webkit-animation-delay: 700ms;
+            animation-delay: 700ms;
   }
   @-webkit-keyframes lineAnim2 {
     from {
@@ -2335,8 +2335,8 @@ section.resume a:hover img {
   section.navigation .cone {
     width: 50px;
     height: 45px;
-    -webkit-animation-delay: 1300ms;
-            animation-delay: 1300ms;
+    -webkit-animation-delay: 900ms;
+            animation-delay: 900ms;
   }
   section.header {
     width: 390px !important;
