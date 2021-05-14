@@ -233,18 +233,22 @@ section.navigation .name:before {
 
 @-webkit-keyframes lineAnim {
   from {
+    opacity: 0;
     width: 0px;
   }
   to {
+    opacity: 1;
     width: 70px;
   }
 }
 
 @keyframes lineAnim {
   from {
+    opacity: 0;
     width: 0px;
   }
   to {
+    opacity: 1;
     width: 70px;
   }
 }
@@ -2110,8 +2114,8 @@ section.resume a:hover img {
   section.navigation .name:before {
     bottom: -15px !important;
     height: 1px;
-    -webkit-animation-delay: 700ms !important;
-            animation-delay: 700ms !important;
+    -webkit-animation-delay: 1200ms !important;
+            animation-delay: 1200ms !important;
   }
   section.navigation .cone {
     width: 60px;
@@ -2122,8 +2126,8 @@ section.resume a:hover img {
             animation: 700ms coneAnim2 ease;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-animation-delay: 1000ms;
-            animation-delay: 1000ms;
+    -webkit-animation-delay: 1400ms;
+            animation-delay: 1400ms;
     opacity: 0;
     -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
             box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
@@ -2286,7 +2290,8 @@ section.resume a:hover img {
   }
   section.navigation {
     width: 390px !important;
-    padding-top: 0.2rem;
+    padding-top: 0rem;
+    margin-top: -0.2rem;
   }
   section.navigation .name {
     font-size: 1.7rem;
@@ -2294,8 +2299,8 @@ section.resume a:hover img {
   }
   section.navigation .name:before {
     bottom: -5px;
-    -webkit-animation: 700ms lineAnim2 ease;
-            animation: 700ms lineAnim2 ease;
+    -webkit-animation: 500ms lineAnim2 ease;
+            animation: 500ms lineAnim2 ease;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-delay: 1800ms;
@@ -2303,23 +2308,29 @@ section.resume a:hover img {
   }
   @-webkit-keyframes lineAnim2 {
     from {
+      opacity: 0;
       width: 0px;
     }
     to {
+      opacity: 1;
       width: 40px;
     }
   }
   @keyframes lineAnim2 {
     from {
+      opacity: 0;
       width: 0px;
     }
     to {
+      opacity: 1;
       width: 40px;
     }
   }
   section.navigation .cone {
     width: 50px;
     height: 45px;
+    -webkit-animation-delay: 1500ms;
+            animation-delay: 1500ms;
   }
   section.header {
     width: 390px !important;

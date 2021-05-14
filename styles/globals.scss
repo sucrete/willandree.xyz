@@ -279,9 +279,11 @@ section.navigation {
     }
     @keyframes lineAnim {
       from {
+        opacity: 0;
         width: 0px;
       }
       to {
+        opacity: 1;
         width: 70px;
       }
     }
@@ -2038,7 +2040,7 @@ $medSmallWidth: 535px;
         &:before {
           bottom: -15px !important;
           height: 1px;
-          animation-delay: 700ms !important;
+          animation-delay: 1200ms !important;
         }
       }
       .cone {
@@ -2047,7 +2049,7 @@ $medSmallWidth: 535px;
         transform: translateY(-10px);
         animation: 700ms coneAnim2 ease;
         animation-fill-mode: forwards;
-        animation-delay: 1000ms;
+        animation-delay: 1400ms;
         opacity: 0;
         box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
       }
@@ -2231,21 +2233,24 @@ $smallWidth: 390px;
     width: $smallWidth !important;
     &.navigation {
       width: $smallWidth !important;
-      padding-top: 0.2rem;
+      padding-top: 0rem;
+      margin-top: -0.2rem;
       .name {
         font-size: 1.7rem;
         padding-top: 0.3rem;
         &:before {
           bottom: -5px;
-          animation: 700ms lineAnim2 ease;
+          animation: 500ms lineAnim2 ease;
           animation-fill-mode: forwards;
           animation-delay: 1800ms;
         }
         @keyframes lineAnim2 {
           from {
+            opacity: 0;
             width: 0px;
           }
           to {
+            opacity: 1;
             width: 40px;
           }
         }
@@ -2253,6 +2258,7 @@ $smallWidth: 390px;
       .cone {
         width: 50px;
         height: 45px;
+        animation-delay: 1500ms;
       }
     }
     &.header {
