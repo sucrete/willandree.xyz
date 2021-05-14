@@ -24,7 +24,7 @@ function MailTo() {
 const contactInfo = ["Contact", <MailTo />];
 export default function Contact() {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 1,
     triggerOnce: true,
   });
   // EDUCATION HEADER 👇

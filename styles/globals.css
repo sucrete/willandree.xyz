@@ -551,7 +551,7 @@ section.info .infoBody .aboutHeader {
   color: white;
   -webkit-margin-after: 1.5rem;
           margin-block-end: 1.5rem;
-  left: 5px;
+  left: 7px;
   font-size: 2rem;
 }
 
@@ -567,6 +567,7 @@ section.info .infoBody .aboutVerbiage {
   line-height: 1.15;
   font-family: "Epilogue", sans-serif;
   font-size: 1.6rem;
+  left: 6px;
 }
 
 section.info .infoBody .aboutVerbiage--13 a, section.info .infoBody .aboutVerbiage--14 a {
@@ -619,7 +620,7 @@ section.contact .contentContainer .copyContainer .educationItem {
   color: white;
   z-index: 10;
   position: relative;
-  padding-left: 0.2rem;
+  padding-left: 0.1rem;
 }
 
 section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
@@ -654,7 +655,7 @@ section.contact .contentContainer .copyContainer .contactInfo--1 {
   font-family: "Epilogue", sans-serif;
   font-size: 1.6rem;
   position: relative;
-  padding-left: 0.3rem;
+  padding-left: 0.1rem;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a {
@@ -1917,6 +1918,7 @@ section.resume a:hover img {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
+    left: 0;
   }
   section.contact {
     margin-top: 23rem;
@@ -2063,7 +2065,7 @@ section.resume a:hover img {
             transform: translateX(0px);
   }
   section.info .infoBody .aboutVerbiage {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
   section.contact {
     width: 650px !important;
@@ -2114,8 +2116,6 @@ section.resume a:hover img {
   section.navigation .name:before {
     bottom: -15px !important;
     height: 1px;
-    -webkit-animation-delay: 1200ms !important;
-            animation-delay: 1200ms !important;
   }
   section.navigation .cone {
     width: 60px;
@@ -2254,7 +2254,7 @@ section.resume a:hover img {
   }
   section.info .infoBody .aboutVerbiage {
     width: 535px !important;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   section.contact {
     width: 535px !important;
@@ -2284,14 +2284,14 @@ section.resume a:hover img {
   }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 540px) {
   section {
     width: 390px !important;
   }
   section.navigation {
     width: 390px !important;
     padding-top: 0rem;
-    margin-top: -0.2rem;
+    margin-top: -0.3rem;
   }
   section.navigation .name {
     font-size: 1.7rem;
@@ -2299,8 +2299,8 @@ section.resume a:hover img {
   }
   section.navigation .name:before {
     bottom: -5px;
-    -webkit-animation: 500ms lineAnim2 ease;
-            animation: 500ms lineAnim2 ease;
+    -webkit-animation: 700ms lineAnim2 ease;
+            animation: 700ms lineAnim2 ease;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-delay: 1000ms;
@@ -2329,8 +2329,8 @@ section.resume a:hover img {
   section.navigation .cone {
     width: 50px;
     height: 45px;
-    -webkit-animation-delay: 1500ms;
-            animation-delay: 1500ms;
+    -webkit-animation-delay: 1300ms;
+            animation-delay: 1300ms;
   }
   section.header {
     width: 390px !important;
