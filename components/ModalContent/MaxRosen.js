@@ -30,7 +30,6 @@ export default function MaxRosen() {
       <div className="modalBody maxRosen">
         <h1 className="modalHeader">maxrosen.town</h1>
         <div className="modalSubheading">
-          WEBSITE FOR DIRECTOR/EDITOR{" "}
           <span className="lilCapsule">Work In Progress</span>
         </div>
         <div className="modalContent">
@@ -39,7 +38,6 @@ export default function MaxRosen() {
           </div>
           <h1 className="modalHeaderLower">maxrosen.town</h1>
           <div className="modalSubheadingLower">
-            WEBSITE FOR DIRECTOR/EDITOR{" "}
             <span className="lilCapsule">Work In Progress</span>
           </div>
           <div className="modalDetails">

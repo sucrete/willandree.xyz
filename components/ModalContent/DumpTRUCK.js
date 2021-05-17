@@ -86,17 +86,15 @@ export default function DumpTRUCK() {
       <div className="projectDesignation">2020</div>
       <div className="modalBody dumpTRUCK">
         <h1 className="modalHeader">dumpTRUCK</h1>
-        <div className="modalSubheading">personal project</div>
         <div className="modalContent">
           <div className="modalImagesContainer">
             <ul>{imageSlides}</ul>
           </div>
           <h1 className="modalHeaderLower">dumpTRUCK</h1>
-          <div className="modalSubheadingLower">personal project</div>
           <div className="modalDetails">
             <p>
-              dumpTRUCK was created to provide a permanent home for a selection
-              of work from a major progenitor of "
+              dumpTRUCK was created to be a lasting home for a of work from the
+              vanguard of"
               <a
                 href="https://www.artspace.com/magazine/interviews_features/trend_report/post_internet_art-52138"
                 target="
@@ -104,8 +102,8 @@ export default function DumpTRUCK() {
               >
                 post-internet art
               </a>
-              " and the internet aesthetic. an unconventional chatroom called
-              dump.fm. Like a chatroom, a text
+              " . an unconventional chatroom called dump.fm. Like a chatroom, a
+              text
             </p>
 
             <a

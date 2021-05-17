@@ -647,8 +647,6 @@ section.contact .contentContainer .copyContainer .contactInfo {
 section.contact .contentContainer .copyContainer .contactInfo--0 {
   font-size: 2rem;
   font-family: "drucc", serif;
-  -webkit-margin-after: 0.7rem;
-          margin-block-end: 0.7rem;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 {
@@ -1853,6 +1851,9 @@ section.resume a:hover img {
     -webkit-transform: translateY(120px);
             transform: translateY(120px);
     width: 800px;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
   }
   section.work .favorites .favoritesContainer {
     width: 700px !important;
@@ -1900,8 +1901,9 @@ section.resume a:hover img {
   }
   section.info {
     width: 800px !important;
-    -webkit-transform: translateY(290px);
-            transform: translateY(290px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    margin-top: 0rem;
   }
   section.info .infoBody {
     width: 710px !important;
@@ -1921,7 +1923,7 @@ section.resume a:hover img {
     left: 0;
   }
   section.contact {
-    margin-top: 23rem;
+    margin-top: 3rem;
   }
   section.contact .contentContainer {
     margin-left: auto;
@@ -2059,17 +2061,18 @@ section.resume a:hover img {
   }
   section.info {
     width: 650px !important;
+    margin-top: 3rem;
   }
   section.info .infoBody {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
   section.info .infoBody .aboutVerbiage {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
   section.contact {
     width: 650px !important;
-    margin-top: 21rem;
+    margin-top: 3rem;
   }
   section.contact .contentContainer {
     -webkit-transform: translateX(0px);
@@ -2237,8 +2240,8 @@ section.resume a:hover img {
   }
   section.info {
     width: 535px !important;
-    -webkit-transform: translateY(125px);
-            transform: translateY(125px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
     padding-top: 0;
     position: relative;
   }
@@ -2469,8 +2472,8 @@ section.resume a:hover img {
   }
   section.resume {
     width: 390px !important;
-    -webkit-transform: translateY(-80px);
-            transform: translateY(-80px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
     height: 190px;
   }
   section.resume a {
@@ -2571,8 +2574,8 @@ section.resume a:hover img {
   section.resume {
     width: 360px !important;
     height: 135px;
-    -webkit-transform: translateY(-135px);
-            transform: translateY(-135px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   section.resume a {
     height: 120px;
