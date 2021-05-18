@@ -20,7 +20,7 @@ function MailTo() {
   );
 }
 function Resume() {
-  return <a className="resume">Resumé</a>;
+  return <a className="resume">resumé</a>;
 }
 const contactInfo = ["Contact", <MailTo />, <Resume />];
 export default function Contact() {
