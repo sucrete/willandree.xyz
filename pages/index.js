@@ -4,7 +4,6 @@ import Contact from "../components/Contact";
 import Work from "../components/Work";
 import Info from "../components/Info";
 import Nav from "../components/Navigation";
-import Resume from "../components/Resume";
 
 export default function Home() {
   return (
@@ -17,9 +16,11 @@ export default function Home() {
         <Nav />
         <Header />
         <Work />
-        <Info />
-        <Contact />
-        <Resume />
+        <div className="lowerContainer">
+          <Info />
+          <Contact />
+        </div>
+        {/* <Resume /> */}
       </main>
     </div>
   );

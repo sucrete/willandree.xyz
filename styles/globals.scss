@@ -122,6 +122,7 @@ section {
   // overflow: hidden;
   position: relative;
   height: 100vh;
+  padding-bottom: 3rem;
   main {
     position: relative;
     height: 100vh;
@@ -129,7 +130,7 @@ section {
   }
 }
 .title {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-family: "drucc", serif;
 }
 .cursor {
@@ -240,6 +241,7 @@ ul {
     }
   }
 }
+
 // ███╗   ██╗ █████╗ ██╗   ██╗██╗ ██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗         ██╗
 // ████╗  ██║██╔══██╗██║   ██║██║██╔════╝ ██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║         ╚██╗
 // ██╔██╗ ██║███████║██║   ██║██║██║  ███╗███████║   ██║   ██║██║   ██║██╔██╗ ██║    █████╗╚██╗
@@ -250,12 +252,14 @@ ul {
 section.navigation {
   padding-top: 2.7rem;
   padding-bottom: 5rem;
+  padding-left: 5px;
+  padding-right: 5px;
   display: flex;
   color: white;
   justify-content: space-between;
   text-align: left;
   z-index: 11;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-family: "corporate condensed regular";
 
   .name {
@@ -267,7 +271,7 @@ section.navigation {
     }
     &:before {
       position: absolute;
-      bottom: -8px;
+      bottom: -14px;
       left: 4px;
       height: 2px;
       content: "";
@@ -312,7 +316,7 @@ section.navigation {
     }
     to {
       opacity: 1;
-      top: 15px;
+      top: 18px;
     }
   }
 }
@@ -380,7 +384,7 @@ section.work {
       margin-left: -0.25rem;
       z-index: 2;
       .workHeader {
-        font-size: 2rem;
+        // font-size: 2rem;
         position: relative;
         margin-block-end: 1.5rem;
         display: block;
@@ -522,6 +526,21 @@ section.work {
     }
   }
 }
+
+// ██╗      ██████╗ ██╗    ██╗███████╗██████╗      ██████╗ ██████╗ ███╗   ██╗████████╗ █████╗ ██╗███╗   ██╗███████╗██████╗          ██╗
+// ██║     ██╔═══██╗██║    ██║██╔════╝██╔══██╗    ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔══██╗██║████╗  ██║██╔════╝██╔══██╗         ╚██╗
+// ██║     ██║   ██║██║ █╗ ██║█████╗  ██████╔╝    ██║     ██║   ██║██╔██╗ ██║   ██║   ███████║██║██╔██╗ ██║█████╗  ██████╔╝    █████╗╚██╗
+// ██║     ██║   ██║██║███╗██║██╔══╝  ██╔══██╗    ██║     ██║   ██║██║╚██╗██║   ██║   ██╔══██║██║██║╚██╗██║██╔══╝  ██╔══██╗    ╚════╝██╔╝
+// ███████╗╚██████╔╝╚███╔███╔╝███████╗██║  ██║    ╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║██║██║ ╚████║███████╗██║  ██║         ██╔╝
+// ╚══════╝ ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝         ╚═╝
+
+.lowerContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1077px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
 // ██╗███╗   ██╗███████╗ ██████╗          ██╗
 // ██║████╗  ██║██╔════╝██╔═══██╗         ╚██╗
 // ██║██╔██╗ ██║█████╗  ██║   ██║    █████╗╚██╗
@@ -552,7 +571,7 @@ section.info {
       color: white;
       margin-block-end: 1.5rem;
       left: 7px;
-      font-size: 2rem;
+      // font-size: 2rem;
     }
     .aboutVerbiage {
       width: 100%;
@@ -590,22 +609,28 @@ section.info {
 //  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═╝            ╚═╝
 
 section.contact {
-  margin-top: -490px;
-  height: 750px;
+  // margin-top: -490px;
+  height: 350px;
   .contentContainer {
     position: relative;
     .copyContainer {
       position: absolute;
-      padding: 2rem;
+      padding-left: 1.5rem;
       padding-top: 1.5rem;
       left: 4px;
+      .anchor {
+        position: absolute;
+        visibility: hidden;
+        height: 200px;
+        bottom: 0px;
+      }
       .educationHeader {
         line-height: 1.1;
         color: white;
         z-index: 10;
         position: relative;
         margin-block-end: 0.7rem;
-        font-size: 2rem;
+        font-size: 2.4rem;
       }
       .educationItem {
         font-family: "corporate condensed regular";
@@ -642,9 +667,9 @@ section.contact {
         z-index: 10;
         // text-transform: uppercase;
         &--0 {
-          font-size: 2rem;
+          font-size: 2.4rem;
           font-family: "drucc", serif;
-          // margin-block-end: 0.7rem;
+          margin-block-end: 0.7rem;
         }
         &--1 {
           font-family: "Epilogue", sans-serif;
@@ -652,6 +677,7 @@ section.contact {
           font-size: 1.6rem;
           position: relative;
           padding-left: 0.1rem;
+          margin-block-end: 0.2rem;
           a {
             text-decoration-color: rgba(255, 255, 255, 0.42);
             color: white;
@@ -673,59 +699,10 @@ section.contact {
             }
           }
         }
-      }
-    }
-  }
-}
-
-// ██████╗ ███████╗███████╗██╗   ██╗███╗   ███╗███████╗         ██╗
-// ██╔══██╗██╔════╝██╔════╝██║   ██║████╗ ████║██╔════╝         ╚██╗
-// ██████╔╝█████╗  ███████╗██║   ██║██╔████╔██║█████╗      █████╗╚██╗
-// ██╔══██╗██╔══╝  ╚════██║██║   ██║██║╚██╔╝██║██╔══╝      ╚════╝██╔╝
-// ██║  ██║███████╗███████║╚██████╔╝██║ ╚═╝ ██║███████╗         ██╔╝
-// ╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝         ╚═╝
-
-section.resume {
-  display: block;
-  width: 1077px;
-  align-content: center;
-  height: 260px;
-  overflow: hidden;
-  transform: translateY(-180px);
-  a {
-    position: relative;
-    display: block;
-    text-align: center;
-    font-family: "drucc";
-    font-size: 9rem;
-    padding: 0rem 0rem;
-    border: 2px solid white;
-    border-radius: 999px;
-    width: 100%;
-    color: white;
-    text-decoration: none;
-    margin: 0;
-    transition: all 0ms ease;
-    height: 200px;
-    line-height: 180px;
-    z-index: 1;
-    overflow: hidden;
-    background-color: black;
-    img {
-      position: absolute;
-      top: 50%;
-      transform: translate(3px, -80%);
-      width: 27px;
-      height: auto;
-      visibility: hidden;
-      z-index: -1;
-    }
-    &:hover {
-      color: khaki;
-      border: 2px solid $chartreuse;
-      img {
-        opacity: 1;
-        visibility: visible;
+        &--2 {
+          font-family: "Epilogue";
+          font-size: 1.6rem;
+        }
       }
     }
   }
@@ -809,6 +786,9 @@ section.resume {
         border-radius: 50px;
         position: relative;
         bottom: 2px;
+        &--OTL {
+          background: yellow;
+        }
       }
     }
     .modalContent {

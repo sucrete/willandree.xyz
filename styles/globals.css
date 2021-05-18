@@ -40,6 +40,7 @@ section {
 .container {
   position: relative;
   height: 100vh;
+  padding-bottom: 3rem;
 }
 
 .container main {
@@ -48,7 +49,7 @@ section {
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-family: "drucc", serif;
 }
 
@@ -191,6 +192,8 @@ ul li {
 section.navigation {
   padding-top: 2.7rem;
   padding-bottom: 5rem;
+  padding-left: 5px;
+  padding-right: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +203,7 @@ section.navigation {
           justify-content: space-between;
   text-align: left;
   z-index: 11;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-family: "corporate condensed regular";
 }
 
@@ -216,7 +219,7 @@ section.navigation .name .nameItem {
 
 section.navigation .name:before {
   position: absolute;
-  bottom: -8px;
+  bottom: -14px;
   left: 4px;
   height: 2px;
   content: "";
@@ -277,7 +280,7 @@ section.navigation .cone {
   }
   to {
     opacity: 1;
-    top: 15px;
+    top: 18px;
   }
 }
 
@@ -288,7 +291,7 @@ section.navigation .cone {
   }
   to {
     opacity: 1;
-    top: 15px;
+    top: 18px;
   }
 }
 
@@ -349,7 +352,6 @@ section.work .workContainer .workBody {
 }
 
 section.work .workContainer .workBody .workHeader {
-  font-size: 2rem;
   position: relative;
   -webkit-margin-after: 1.5rem;
           margin-block-end: 1.5rem;
@@ -525,6 +527,19 @@ section.work div.favorites .favoritesContainer .boxColumn .skills ul li {
   font-family: "corporate condensed regular";
 }
 
+.lowerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 1077px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
 section.info {
   z-index: 17;
   color: white;
@@ -552,7 +567,6 @@ section.info .infoBody .aboutHeader {
   -webkit-margin-after: 1.5rem;
           margin-block-end: 1.5rem;
   left: 7px;
-  font-size: 2rem;
 }
 
 section.info .infoBody .aboutVerbiage {
@@ -588,8 +602,7 @@ section.info .infoBody .aboutVerbiage--13 a:visited, section.info .infoBody .abo
 }
 
 section.contact {
-  margin-top: -490px;
-  height: 750px;
+  height: 350px;
 }
 
 section.contact .contentContainer {
@@ -598,9 +611,16 @@ section.contact .contentContainer {
 
 section.contact .contentContainer .copyContainer {
   position: absolute;
-  padding: 2rem;
+  padding-left: 1.5rem;
   padding-top: 1.5rem;
   left: 4px;
+}
+
+section.contact .contentContainer .copyContainer .anchor {
+  position: absolute;
+  visibility: hidden;
+  height: 200px;
+  bottom: 0px;
 }
 
 section.contact .contentContainer .copyContainer .educationHeader {
@@ -610,7 +630,7 @@ section.contact .contentContainer .copyContainer .educationHeader {
   position: relative;
   -webkit-margin-after: 0.7rem;
           margin-block-end: 0.7rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 section.contact .contentContainer .copyContainer .educationItem {
@@ -645,8 +665,10 @@ section.contact .contentContainer .copyContainer .contactInfo {
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--0 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-family: "drucc", serif;
+  -webkit-margin-after: 0.7rem;
+          margin-block-end: 0.7rem;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 {
@@ -654,6 +676,8 @@ section.contact .contentContainer .copyContainer .contactInfo--1 {
   font-size: 1.6rem;
   position: relative;
   padding-left: 0.1rem;
+  -webkit-margin-after: 0.2rem;
+          margin-block-end: 0.2rem;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a {
@@ -684,58 +708,9 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a:hover img {
   visibility: visible;
 }
 
-section.resume {
-  display: block;
-  width: 1077px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  height: 260px;
-  overflow: hidden;
-  -webkit-transform: translateY(-180px);
-          transform: translateY(-180px);
-}
-
-section.resume a {
-  position: relative;
-  display: block;
-  text-align: center;
-  font-family: "drucc";
-  font-size: 9rem;
-  padding: 0rem 0rem;
-  border: 2px solid white;
-  border-radius: 999px;
-  width: 100%;
-  color: white;
-  text-decoration: none;
-  margin: 0;
-  -webkit-transition: all 0ms ease;
-  transition: all 0ms ease;
-  height: 200px;
-  line-height: 180px;
-  z-index: 1;
-  overflow: hidden;
-  background-color: black;
-}
-
-section.resume a img {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(3px, -80%);
-          transform: translate(3px, -80%);
-  width: 27px;
-  height: auto;
-  visibility: hidden;
-  z-index: -1;
-}
-
-section.resume a:hover {
-  color: khaki;
-  border: 2px solid #f0e78e;
-}
-
-section.resume a:hover img {
-  opacity: 1;
-  visibility: visible;
+section.contact .contentContainer .copyContainer .contactInfo--2 {
+  font-family: "Epilogue";
+  font-size: 1.6rem;
 }
 
 .customOverlay {
@@ -822,6 +797,10 @@ section.resume a:hover img {
   border-radius: 50px;
   position: relative;
   bottom: 2px;
+}
+
+.customModal .modalBody .modalSubheading .lilCapsule--OTL {
+  background: yellow;
 }
 
 .customModal .modalBody .modalContent {

@@ -1,6 +1,5 @@
 import { useTrail, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
-
 const schools = [
   "LaunchCodeKC",
   "Kansas City, MO",
@@ -20,8 +19,10 @@ function MailTo() {
     </a>
   );
 }
-
-const contactInfo = ["Contact", <MailTo />];
+function Resume() {
+  return <a className="resume">Resumé</a>;
+}
+const contactInfo = ["Contact", <MailTo />, <Resume />];
 export default function Contact() {
   const { ref, inView } = useInView({
     threshold: 1,
@@ -56,7 +57,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="contact">
-      <div ref={ref} className="contentContainer">
+      <div className="contentContainer">
         <div className="copyContainer">
           {trail.map(({ x, ...rest }, index) => (
             <animated.div
@@ -70,6 +71,7 @@ export default function Contact() {
               Education
             </animated.div>
           ))}
+          <div ref={ref} className="anchor"></div>
           {trail3.map(({ x, ...rest }, index) => (
             <animated.div
               className={`educationItem educationItem--${index}`}
