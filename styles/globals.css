@@ -786,6 +786,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   font-size: 0.9rem;
   padding-left: 3px;
   font-family: "Epilogue";
+  min-height: 23px;
 }
 
 .customModal .modalBody .modalSubheading .lilCapsule {
@@ -800,7 +801,17 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
 }
 
 .customModal .modalBody .modalSubheading .lilCapsule--OTL {
-  background: yellow;
+  background: #ffff5f;
+}
+
+.customModal .modalBody .modalSubheading .lilCapsule--maxRosen {
+  color: white;
+  background: #615a8a;
+}
+
+.customModal .modalBody .modalSubheading .lilCapsule--votr {
+  color: red;
+  background: pink;
 }
 
 .customModal .modalBody .modalContent {
@@ -1128,10 +1139,6 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
 
 .customModal .modalBody.maxRosen .modalSubheading {
   padding-left: 2px;
-}
-
-.customModal .modalBody.maxRosen .modalSubheading .lilCapsule {
-  background-color: pink;
 }
 
 .customModal .modalBody.maxRosen .modalContent .modalImagesContainer ul .liImage--0 {
@@ -1717,6 +1724,18 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   .cursor {
     display: none;
   }
+  .lowerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+  }
   section {
     width: 800px;
   }
@@ -1734,8 +1753,8 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     width: 75px;
     height: 63.63;
     right: 15px;
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
   }
   section.header {
     width: 750px;
@@ -1764,7 +1783,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   }
   section.work .workContainer .workBody .workHeader {
     left: 35px;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   section.work .workContainer .workBody .workItemContainer {
     margin-bottom: -25px;
@@ -1892,7 +1911,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
             transform: translateX(10px);
   }
   section.info .infoBody .aboutHeader {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   section.info .infoBody .aboutVerbiage {
     font-size: 2.3rem;
@@ -1911,7 +1930,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
             transform: translateX(9px);
   }
   section.contact .contentContainer .copyContainer .educationHeader {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     padding-bottom: 1rem;
     left: 10px;
   }
@@ -1923,7 +1942,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     left: 9px;
   }
   section.contact .contentContainer .copyContainer .contactInfo--0 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     padding-bottom: 1rem;
     padding-top: 1.5rem;
   }

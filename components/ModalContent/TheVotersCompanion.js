@@ -4,8 +4,8 @@ export default function TheVotersCompanion() {
       <div className="projectDesignation">2018-2020</div>
       <div className="modalBody votersCompanion">
         <h1 className="modalHeader">The Voter's Companion</h1>
-        <div className="modalSubheadingLower">
-          <span className="lilCapsule">Unsupported</span>
+        <div className="modalSubheading">
+          <span className="lilCapsule lilCapsule--votr">Unsupported</span>
         </div>
         <div className="modalContent">
           <div className="modalImagesContainer">
@@ -13,7 +13,7 @@ export default function TheVotersCompanion() {
           </div>
           <h1 className="modalHeaderLower">The Voter's Companion</h1>
           <div className="modalSubheadingLower">
-            <span className="lilCapsule">Unsupported</span>
+            <span className="lilCapsule lilCapsule--votr">Unsupported</span>
           </div>
           <div className="modalDetails">
             <p>

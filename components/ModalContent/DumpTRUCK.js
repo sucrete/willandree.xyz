@@ -86,6 +86,7 @@ export default function DumpTRUCK() {
       <div className="projectDesignation">2020</div>
       <div className="modalBody dumpTRUCK">
         <h1 className="modalHeader">dumpTRUCK</h1>
+        <div className="modalSubheading"></div>
         <div className="modalContent">
           <div className="modalImagesContainer">
             <ul>{imageSlides}</ul>
