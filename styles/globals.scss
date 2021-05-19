@@ -1909,6 +1909,9 @@ section.contact {
 
 $medWidth: 650px;
 @media screen and (max-width: 750px) {
+  .lowerContainer {
+    width: 100vw;
+  }
   .cursor {
     display: none;
   }
@@ -2042,7 +2045,7 @@ $medSmallWidth: 535px;
     &.navigation {
       width: $medSmallWidth !important;
       padding-bottom: 4rem;
-      padding-top: 1rem;
+      padding-top: 0.7rem;
       .name {
         font-size: 2.2rem;
         line-height: 1.5;
@@ -2050,7 +2053,22 @@ $medSmallWidth: 535px;
         &:before {
           bottom: -15px !important;
           height: 1px;
-          // animation-delay: 1200ms;
+          animation-delay: 1200ms !important;
+          animation: 700ms lineAnim3 ease;
+          animation-fill-mode: forwards;
+        }
+        @keyframes lineAnim3 {
+          from {
+            opacity: 0;
+            width: 0px;
+          }
+          20% {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+            width: 40px;
+          }
         }
       }
       .cone {
@@ -2070,7 +2088,7 @@ $medSmallWidth: 535px;
         }
         to {
           opacity: 1;
-          top: 28px;
+          top: 34px;
         }
       }
     }
@@ -2095,8 +2113,9 @@ $medSmallWidth: 535px;
         width: $medSmallWidth !important;
         .workBody {
           .workHeader {
-            font-size: 2rem;
+            font-size: 1.9rem;
             padding-left: 5px;
+            margin-block-end: 1rem;
           }
           .workItemContainer {
             width: $medSmallWidth !important;
@@ -2106,7 +2125,7 @@ $medSmallWidth: 535px;
               }
             }
             span {
-              font-size: 2rem;
+              font-size: 1.7rem;
               border-bottom: solid 1px white;
               &:hover {
                 border-bottom: solid 1px white;
@@ -2114,11 +2133,13 @@ $medSmallWidth: 535px;
 
               &:before {
                 content: url("../public/expand-button-small-sizes-khaki.svg");
-                top: -15px;
+                top: -18px;
+                right: -11px;
               }
               &:after {
                 content: url("../public/expand-button-small-sizes-white.svg");
-                top: -15px;
+                top: -18px;
+                right: -11px;
               }
             }
           }
@@ -2175,14 +2196,14 @@ $medSmallWidth: 535px;
     }
     &.info {
       width: $medSmallWidth !important;
-      transform: translateY(0px);
-      padding-top: 0;
+      transform: translateX(5px);
+      // padding-top: 0;
       position: relative;
       .infoBody {
         width: $medSmallWidth !important;
         position: relative;
         .aboutHeader {
-          font-size: 2rem;
+          font-size: 1.9rem;
           position: relative;
           left: 3px;
           z-index: 90;
@@ -2195,15 +2216,17 @@ $medSmallWidth: 535px;
     }
     &.contact {
       width: $medSmallWidth !important;
-      margin-top: 11rem;
+      // margin-top: 11rem;
       height: 570px;
+      transform: translateX(5px);
+      // transform: translateY(3px);
       .contentContainer {
         .copyContainer {
           .educationHeader {
-            font-size: 2rem;
+            font-size: 1.9rem;
           }
           .educationItem {
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             padding-left: 0.1rem;
             &--0,
             &--3,
@@ -2213,12 +2236,15 @@ $medSmallWidth: 535px;
           }
           .contactInfo {
             &--0 {
-              font-size: 2rem;
+              font-size: 1.9rem;
               padding-bottom: 0.5rem;
             }
             &--1 {
-              font-size: 2rem;
+              font-size: 1.7rem;
               font-weight: 400;
+            }
+            &--2 {
+              font-size: 1.7rem;
             }
           }
         }
@@ -2243,7 +2269,7 @@ $smallWidth: 390px;
     width: $smallWidth !important;
     &.navigation {
       width: $smallWidth !important;
-      padding-top: 0rem;
+      padding-top: 0.8rem;
       margin-top: -0.3rem;
       .name {
         font-size: 1.7rem;
@@ -2252,7 +2278,7 @@ $smallWidth: 390px;
           bottom: -5px;
           animation: 700ms lineAnim2 ease;
           animation-fill-mode: forwards;
-          animation-delay: 700ms;
+          animation-delay: 300ms;
         }
         @keyframes lineAnim2 {
           from {
@@ -2271,7 +2297,8 @@ $smallWidth: 390px;
       .cone {
         width: 50px;
         height: 45px;
-        animation-delay: 900ms;
+        animation-delay: 1100ms;
+        transform: translateY(-15px);
       }
     }
     &.header {
@@ -2386,6 +2413,7 @@ $smallWidth: 390px;
     }
     &.contact {
       width: $smallWidth !important;
+      margin-top: 1.8rem;
       .contentContainer {
         .copyContainer {
           .educationHeader {
@@ -2411,6 +2439,9 @@ $smallWidth: 390px;
             &--1 {
               font-size: 1.2rem;
               padding-left: 0rem;
+            }
+            &--2 {
+              font-size: 1.2rem;
             }
           }
         }
