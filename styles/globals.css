@@ -19,7 +19,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(cubic-bezier(0.02, 1, 0, 1)), to(rgba(0, 115, 230, 0)));
+  background: linear-gradient(to bottom, black, cubic-bezier(0.02, 1, 0, 1), rgba(0, 115, 230, 0));
+  background-color: #0f0f0f;
 }
 
 * {
@@ -269,8 +271,6 @@ section.navigation .cone {
   -webkit-animation-delay: 2200ms;
           animation-delay: 2200ms;
   opacity: 0;
-  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
-          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
 }
 
 @-webkit-keyframes coneAnim {
@@ -440,7 +440,6 @@ section.work div.favorites .favoritesContainer .leftContainer .boxItem {
   border: 2px solid white;
   height: 48%;
   padding: 2.2rem 2rem 2rem 2.4rem;
-  background-color: black;
   position: relative;
   z-index: 3;
   font-size: 1rem;
@@ -507,7 +506,6 @@ section.work div.favorites .favoritesContainer .boxColumn {
   border: 2px solid white;
   border-radius: 15px;
   padding: 2.2rem 2rem 2rem 2.4rem;
-  background-color: black;
   position: relative;
 }
 
@@ -1800,7 +1798,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     display: block !important;
     border-bottom: solid 2px white;
     color: white;
-    padding-left: 5px;
+    padding-left: 2px;
     padding-right: 5px;
     padding-top: 22px;
     padding-bottom: 15px;
@@ -1811,7 +1809,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     position: absolute;
     width: auto;
     background-color: transparent;
-    right: -2px;
+    right: -13px;
     top: -11px;
     opacity: 0;
     -webkit-transition: all 100ms ease;
@@ -1822,7 +1820,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     position: absolute;
     width: auto;
     background-color: transparent;
-    right: -2px;
+    right: -13px;
     top: -11px;
     opacity: 1;
     -webkit-transition: all 100ms ease;
@@ -1999,14 +1997,26 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
             transform: translateX(-4px);
   }
   section.info .infoBody .aboutHeader {
-    border-bottom: 1px solid white;
-    padding-bottom: 0.5rem;
-    width: 100%;
-    left: 0px;
+    -webkit-margin-after: 0.1rem;
+            margin-block-end: 0.1rem;
+    left: 1px;
+  }
+  section.info .infoBody .aboutVerbiage--0 {
+    border-top: 1px solid white;
+    padding-top: 1rem;
   }
   section.contact .contentContainer {
     -webkit-transform: translateX(-2px);
             transform: translateX(-2px);
+  }
+  section.contact .contentContainer .copyContainer .educationHeader {
+    padding-bottom: 0.5rem;
+    -webkit-margin-after: 0rem;
+            margin-block-end: 0rem;
+  }
+  section.contact .contentContainer .copyContainer .educationItem--0 {
+    border-top: 1px solid white;
+    padding-top: 1rem;
   }
 }
 
@@ -2137,8 +2147,8 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   section.navigation .name:before {
     bottom: -15px !important;
     height: 1px;
-    -webkit-animation-delay: 1200ms !important;
-            animation-delay: 1200ms !important;
+    -webkit-animation-delay: 1200ms;
+            animation-delay: 1200ms;
     -webkit-animation: 700ms lineAnim3 ease;
             animation: 700ms lineAnim3 ease;
     -webkit-animation-fill-mode: forwards;
@@ -2182,8 +2192,6 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     -webkit-animation-delay: 1400ms;
             animation-delay: 1400ms;
     opacity: 0;
-    -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
-            box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
   }
   @-webkit-keyframes coneAnim2 {
     from {
@@ -2322,7 +2330,6 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   }
   section.contact .contentContainer .copyContainer .educationItem {
     font-size: 1.7rem;
-    padding-left: 0.1rem;
   }
   section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
     font-size: 2rem;
@@ -2352,8 +2359,10 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   }
   section.navigation {
     width: 390px !important;
-    padding-top: 0.3rem;
+    padding-top: 0.1rem;
     margin-top: -0.3rem;
+    padding-right: 3px;
+    padding-left: 0px;
   }
   section.navigation .name {
     font-size: 1.7rem;
@@ -2365,8 +2374,8 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
             animation: 700ms lineAnim2 ease;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-animation-delay: 300ms;
-            animation-delay: 300ms;
+    -webkit-animation-delay: 900ms;
+            animation-delay: 900ms;
   }
   @-webkit-keyframes lineAnim2 {
     from {
@@ -2424,8 +2433,8 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   }
   section.work .workContainer .workBody .workHeader {
     font-size: 1.2rem;
-    -webkit-margin-after: 0.8rem;
-            margin-block-end: 0.8rem;
+    -webkit-margin-after: 0.5rem;
+            margin-block-end: 0.5rem;
   }
   section.work .workContainer .workBody .workItemContainer {
     width: 390px !important;
@@ -2436,11 +2445,11 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   }
   section.work .workContainer .workBody .workItemContainer span:after {
     top: -27px;
-    right: -8px;
+    right: -12px;
   }
   section.work .workContainer .workBody .workItemContainer span:before {
     top: -27px;
-    right: -8px;
+    right: -12px;
   }
   section.work .favorites {
     width: 395px !important;
@@ -2499,8 +2508,8 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   }
   section.info .infoBody .aboutHeader {
     font-size: 1.2rem;
-    -webkit-margin-after: 0.8rem;
-            margin-block-end: 0.8rem;
+    -webkit-margin-after: 0.5rem;
+            margin-block-end: 0.5rem;
   }
   section.info .infoBody .aboutVerbiage {
     width: 390px !important;
@@ -2515,12 +2524,9 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   section.contact .contentContainer .copyContainer .educationHeader {
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
-    -webkit-margin-after: 0.4rem;
-            margin-block-end: 0.4rem;
   }
   section.contact .contentContainer .copyContainer .educationItem {
     font-size: 1.5rem;
-    padding-left: 0.1rem;
   }
   section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
     font-size: 1.4rem;

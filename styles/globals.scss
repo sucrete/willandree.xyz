@@ -16,6 +16,7 @@ $chartreuse: hsl(54, 77%, 75%);
   }
   box-shadow: $all;
 }
+
 @mixin slideShow($slideNumber, $uniqueName) {
   // time = total animation time
   // time = (a+b) * n
@@ -97,7 +98,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  background: black;
+  background: linear-gradient(
+    to bottom,
+    hsla(330, 0%, 0%, 1),
+    cubic-bezier(0.02, 1, 0, 1),
+    hsla(210, 100%, 45%, 0)
+  );
+  background-color: hsl(0, 0%, 6%);
 }
 * {
   box-sizing: border-box;
@@ -307,7 +314,7 @@ section.navigation {
     animation-fill-mode: forwards;
     animation-delay: 2200ms;
     opacity: 0;
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
+    // box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
   }
   @keyframes coneAnim {
     from {
@@ -449,7 +456,6 @@ section.work {
           border: 2px solid $favoritesColor;
           height: 48%;
           padding: 2.2rem 2rem 2rem 2.4rem;
-          background-color: rgb(0, 0, 0);
           position: relative;
           z-index: 3;
           font-size: 1rem;
@@ -507,7 +513,6 @@ section.work {
         border: 2px solid $favoritesColor;
         border-radius: 15px;
         padding: 2.2rem 2rem 2rem 2.4rem;
-        background-color: black;
         position: relative;
         .skills {
           font-size: 1rem;
@@ -1674,7 +1679,7 @@ section.contact {
               display: block !important;
               border-bottom: solid 2px white;
               color: white;
-              padding-left: 5px;
+              padding-left: 2px;
               padding-right: 5px;
               padding-top: 22px;
               padding-bottom: 15px;
@@ -1684,7 +1689,7 @@ section.contact {
                 position: absolute;
                 width: auto;
                 background-color: transparent;
-                right: -2px;
+                right: -13px;
                 top: -11px;
                 opacity: 0;
                 transition: all 100ms ease;
@@ -1694,7 +1699,7 @@ section.contact {
                 position: absolute;
                 width: auto;
                 background-color: transparent;
-                right: -2px;
+                right: -13px;
                 top: -11px;
                 opacity: 1;
                 transition: all 100ms ease;
@@ -1892,16 +1897,32 @@ section.contact {
       .infoBody {
         transform: translateX(-4px);
         .aboutHeader {
-          border-bottom: 1px solid white;
-          padding-bottom: 0.5rem;
-          width: 100%;
-          left: 0px;
+          // padding-bottom: 0.1rem;
+          margin-block-end: 0.1rem;
+          // width: 100%;
+          left: 1px;
+        }
+        .aboutVerbiage--0 {
+          border-top: 1px solid white;
+          // width: 90%;
+          padding-top: 1rem;
         }
       }
     }
     &.contact {
       .contentContainer {
         transform: translateX(-2px);
+        .copyContainer {
+          .educationHeader {
+            padding-bottom: 0.5rem;
+            margin-block-end: 0rem;
+            // padding-left: 3px;
+          }
+          .educationItem--0 {
+            border-top: 1px solid white;
+            padding-top: 1rem;
+          }
+        }
       }
     }
   }
@@ -2059,7 +2080,7 @@ $medSmallWidth: 535px;
         &:before {
           bottom: -15px !important;
           height: 1px;
-          animation-delay: 1200ms !important;
+          animation-delay: 1200ms;
           animation: 700ms lineAnim3 ease;
           animation-fill-mode: forwards;
         }
@@ -2085,7 +2106,6 @@ $medSmallWidth: 535px;
         animation-fill-mode: forwards;
         animation-delay: 1400ms;
         opacity: 0;
-        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
       }
       @keyframes coneAnim2 {
         from {
@@ -2233,7 +2253,7 @@ $medSmallWidth: 535px;
           }
           .educationItem {
             font-size: 1.7rem;
-            padding-left: 0.1rem;
+            // padding-left: 0.1rem;
             &--0,
             &--3,
             &--6 {
@@ -2278,8 +2298,10 @@ $smallWidth: 390px;
     width: $smallWidth !important;
     &.navigation {
       width: $smallWidth !important;
-      padding-top: 0.3rem;
+      padding-top: 0.1rem;
       margin-top: -0.3rem;
+      padding-right: 3px;
+      padding-left: 0px;
       .name {
         font-size: 1.7rem;
         padding-top: 0.3rem;
@@ -2287,7 +2309,7 @@ $smallWidth: 390px;
           bottom: -5px;
           animation: 700ms lineAnim2 ease;
           animation-fill-mode: forwards;
-          animation-delay: 300ms;
+          animation-delay: 900ms;
         }
         @keyframes lineAnim2 {
           from {
@@ -2333,7 +2355,7 @@ $smallWidth: 390px;
         .workBody {
           .workHeader {
             font-size: 1.2rem;
-            margin-block-end: 0.8rem;
+            margin-block-end: 0.5rem;
           }
           .workItemContainer {
             width: $smallWidth !important;
@@ -2342,11 +2364,11 @@ $smallWidth: 390px;
               padding-top: 18px;
               &:after {
                 top: -27px;
-                right: -8px;
+                right: -12px;
               }
               &:before {
                 top: -27px;
-                right: -8px;
+                right: -12px;
               }
             }
           }
@@ -2412,7 +2434,7 @@ $smallWidth: 390px;
         width: $smallWidth !important;
         .aboutHeader {
           font-size: 1.2rem;
-          margin-block-end: 0.8rem;
+          margin-block-end: 0.5rem;
           // left: 2px;
         }
         .aboutVerbiage {
@@ -2430,11 +2452,11 @@ $smallWidth: 390px;
           .educationHeader {
             font-size: 1.2rem;
             padding-bottom: 0.5rem;
-            margin-block-end: 0.4rem;
+            // margin-block-end: 0.4rem;
           }
           .educationItem {
             font-size: 1.5rem;
-            padding-left: 0.1rem;
+            // padding-left: 0.1rem;
             &--0,
             &--3,
             &--6 {
