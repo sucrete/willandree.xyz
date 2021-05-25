@@ -888,6 +888,22 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   bottom: 2px;
 }
 
+.customModal .modalBody .modalContent .modalSubheadingLower .lilCapsule--OTL {
+  background: #ffff8d;
+  color: #52392f;
+}
+
+.customModal .modalBody .modalContent .modalSubheadingLower .lilCapsule--maxRosen {
+  color: #615a8a;
+  background: #f3f3f3;
+  border: 1px solid #615a8a;
+}
+
+.customModal .modalBody .modalContent .modalSubheadingLower .lilCapsule--votr {
+  color: red;
+  background: pink;
+}
+
 .customModal .modalBody .modalContent .modalDetails {
   border-radius: 15px;
   padding: 4rem 3rem 3rem 3rem;
@@ -1899,13 +1915,13 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     line-height: 1.24 !important;
   }
   section.info {
-    width: 800px !important;
+    width: 800px;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     margin-top: 0rem;
   }
   section.info .infoBody {
-    width: 710px !important;
+    width: 710px;
     margin-left: auto;
     margin-right: auto;
     -webkit-transform: translateX(10px);
@@ -2311,13 +2327,13 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     margin-bottom: 14px !important;
   }
   section.info {
-    width: 535px !important;
+    width: 535px;
     -webkit-transform: translateX(5px);
             transform: translateX(5px);
     position: relative;
   }
   section.info .infoBody {
-    width: 535px !important;
+    width: 535px;
     position: relative;
   }
   section.info .infoBody .aboutHeader {
@@ -2326,7 +2342,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     z-index: 90;
   }
   section.info .infoBody .aboutVerbiage {
-    width: 535px !important;
+    width: 535px;
     font-size: 1.7rem;
   }
   section.contact {
@@ -2509,12 +2525,12 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     margin-bottom: 14px !important;
   }
   section.info {
-    width: 390px !important;
+    width: 390px;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
   section.info .infoBody {
-    width: 390px !important;
+    width: 390px;
   }
   section.info .infoBody .aboutHeader {
     font-size: 1.2rem;
@@ -2522,21 +2538,36 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
             margin-block-end: 0.5rem;
   }
   section.info .infoBody .aboutVerbiage {
-    width: 390px !important;
+    width: 390px;
     font-size: 1.25rem;
+  }
+  section.info .infoBody .aboutVerbiage--0 {
+    border-top: 1px solid white;
+    width: 100%;
   }
   section.contact {
     width: 390px !important;
-    margin-top: 1.8rem;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
+  }
+  section.contact .contentContainer {
+    width: 100%;
+  }
+  section.contact .contentContainer .copyContainer {
+    width: 100%;
   }
   section.contact .contentContainer .copyContainer .educationHeader {
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
+    -webkit-margin-after: 0rem;
+            margin-block-end: 0rem;
   }
   section.contact .contentContainer .copyContainer .educationItem {
     font-size: 1.5rem;
+  }
+  section.contact .contentContainer .copyContainer .educationItem--0 {
+    border-top: 1px solid white;
+    width: 100%;
   }
   section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
     font-size: 1.4rem;
@@ -2544,12 +2575,14 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   section.contact .contentContainer .copyContainer .contactInfo--0 {
     font-size: 1.2rem;
     padding-bottom: 0rem;
-    -webkit-margin-after: 0.7rem;
-            margin-block-end: 0.7rem;
+    -webkit-margin-after: 0.5rem;
+            margin-block-end: 0.5rem;
   }
   section.contact .contentContainer .copyContainer .contactInfo--1 {
     font-size: 1.2rem;
     padding-left: 0rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid white;
   }
   section.contact .contentContainer .copyContainer .contactInfo--2 {
     font-size: 1.2rem;
@@ -2583,8 +2616,8 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     left: 2px;
   }
   section.navigation .cone {
-    -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
+    -webkit-transform: translateY(-17px);
+            transform: translateY(-17px);
   }
   section.header {
     width: 360px !important;
@@ -2596,8 +2629,8 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     padding-bottom: 4rem;
   }
   section.work .workContainer .workBody .workHeader {
-    -webkit-margin-after: 1rem;
-            margin-block-end: 1rem;
+    -webkit-margin-after: 0.5rem;
+            margin-block-end: 0.5rem;
     font-size: 1.2rem;
   }
   section.work .workContainer .workBody .workItemContainer {
@@ -2608,7 +2641,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     padding-bottom: 15px;
   }
   section.work .workContainer .workBody .workItemContainer span:after {
-    right: -7px;
+    right: -10px;
   }
   section.work .favorites {
     width: 360px !important;
@@ -2627,17 +2660,24 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   section.info {
     width: 360px !important;
   }
+  section.info .infoBody {
+    width: 100%;
+  }
   section.info .infoBody .aboutHeader {
     font-size: 1.2rem;
-    -webkit-margin-after: 1rem;
-            margin-block-end: 1rem;
+    -webkit-margin-after: 0.5rem;
+            margin-block-end: 0.5rem;
   }
   section.info .infoBody .aboutVerbiage {
-    font-size: 1.35rem;
+    font-size: 1.19rem;
   }
   section.contact {
     width: 360px !important;
-    margin-top: 10rem;
+    height: 530px;
+    padding-top: 0rem;
+  }
+  section.contact .contentContainer .copyContainer {
+    padding-top: 0rem;
   }
   section.contact .contentContainer .copyContainer .educationHeader {
     font-size: 1.2rem;
