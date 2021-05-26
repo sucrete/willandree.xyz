@@ -2114,7 +2114,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     line-height: 1.05 !important;
   }
   section.info {
-    width: 650px !important;
+    width: 650px;
     margin-top: 3rem;
   }
   section.info .infoBody {

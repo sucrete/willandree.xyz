@@ -2029,7 +2029,7 @@ $medWidth: 650px;
       }
     }
     &.info {
-      width: $medWidth !important;
+      width: $medWidth;
       margin-top: 3rem;
       .infoBody {
         transform: translateX(0px);
