@@ -723,7 +723,7 @@ section.contact {
             transition: transform 0.2s ease;
             cursor: pointer;
             &:hover {
-              transform: rotate(-6deg);
+              transform: rotate(-8deg);
             }
             img {
               position: relative;
@@ -1653,13 +1653,12 @@ section.contact {
   }
   section {
     width: 800px;
-
     &.navigation {
       font-size: 2.5rem;
       padding-bottom: 5rem;
-      width: 750px !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
+      width: 750px;
+      margin-left: auto;
+      margin-right: auto;
       .name {
         &:before {
           height: 2px;
@@ -1686,35 +1685,35 @@ section.contact {
     }
     &.work {
       width: 800px;
-      padding-bottom: 12rem;
+      padding-bottom: 8rem;
       padding-top: 3rem;
-      margin-left: auto !important;
-      margin-right: auto !important;
+      margin-left: auto;
+      margin-right: auto;
       .workContainer {
         // transform: translate(-3px, 35px);
-        width: 800px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
         .workBody {
           width: 100%;
-          margin-left: auto !important;
-          margin-right: auto !important;
+          margin-left: auto;
+          margin-right: auto;
           .workHeader {
             left: 36px;
-            font-size: 2.3rem;
+            font-size: 2rem;
             margin-block-end: 0.7rem;
           }
           .workItemContainer {
             margin-bottom: -25px;
-            width: 700px !important;
-            display: block !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
+            width: 700px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
             span {
-              font-size: 2.3rem;
-              display: block !important;
+              font-size: 2rem;
+              display: block;
               border-radius: 0px;
-              display: block !important;
+              display: block;
               border-bottom: solid 2px white;
               color: white;
               padding-left: 2px;
@@ -1728,7 +1727,7 @@ section.contact {
                 width: auto;
                 background-color: transparent;
                 right: -10px;
-                top: -11px;
+                top: -14px;
                 opacity: 0;
                 transition: all 100ms ease;
               }
@@ -1738,7 +1737,7 @@ section.contact {
                 width: auto;
                 background-color: transparent;
                 right: -10px;
-                top: -11px;
+                top: -14px;
                 opacity: 1;
                 transition: all 100ms ease;
               }
@@ -1765,35 +1764,35 @@ section.contact {
           }
         }
       }
-      .favorites {
-        padding-top: 2rem;
+      div.favorites {
+        padding-top: 1rem;
         transform: translateY(120px);
         width: 800px;
-        height: fit-content !important;
-        .favoritesContainer {
-          width: 700px !important;
-          height: 700px !important;
-          margin-left: auto !important;
-          margin-right: auto !important;
-          .leftContainer {
-            .boxItem {
-              .fonts {
+        height: 800px;
+        div.favoritesContainer {
+          width: 700px;
+          height: 700px;
+          margin-left: auto;
+          margin-right: auto;
+          div.leftContainer {
+            div.boxItem {
+              div.fonts {
                 font-size: 1.5rem;
                 div {
                   padding-bottom: 1rem;
                 }
                 img {
-                  height: 33px !important;
+                  height: 33px;
                   width: auto;
                   display: block;
                   position: relative;
                   &:nth-of-type(1) {
-                    margin-bottom: 27px !important;
+                    margin-bottom: 27px;
                     // height: 20px;
                   }
                   &:nth-of-type(2) {
-                    margin-bottom: 17px !important;
-                    height: 37px !important;
+                    margin-bottom: 17px;
+                    height: 37px;
                   }
                 }
               }
@@ -1801,23 +1800,25 @@ section.contact {
                 font-size: 1.5rem;
                 ul {
                   li {
-                    font-size: 2.65rem !important;
+                    font-size: 2.65rem;
                     a {
-                      text-decoration-thickness: 2px !important;
+                      text-decoration-thickness: 2px;
                     }
                   }
                 }
               }
             }
           }
-          .boxColumn {
+          div.boxColumn {
             width: 48%;
-            .skills {
-              font-size: 1.5rem !important;
+            div.skills {
+              div {
+                font-size: 1.5rem;
+              }
               ul {
                 li {
-                  font-size: 2.65rem !important;
-                  line-height: 1.24 !important;
+                  font-size: 2.65rem;
+                  line-height: 1.24;
                 }
               }
             }
@@ -1829,13 +1830,14 @@ section.contact {
       width: 800px;
       transform: translateY(0px);
       margin-top: 0rem;
+      padding-top: 1rem;
       .infoBody {
         width: 710px;
         margin-left: auto;
         margin-right: auto;
         transform: translateX(10px);
         .aboutHeader {
-          font-size: 2.3rem;
+          font-size: 2rem;
           // left: 3px;
         }
         .aboutVerbiage {
@@ -1873,7 +1875,7 @@ section.contact {
           padding-left: 0rem;
           width: 100%;
           .educationHeader {
-            font-size: 2.3rem;
+            font-size: 2rem;
             padding-bottom: 1rem;
           }
           .educationItem {
@@ -1894,7 +1896,7 @@ section.contact {
           .contactInfo {
             left: 0px;
             &--0 {
-              font-size: 2.3rem;
+              font-size: 2rem;
               padding-top: 1.5rem;
             }
             &--1 {
@@ -1911,7 +1913,7 @@ section.contact {
             &--2 {
               a {
                 right: 30px;
-                top: -120px;
+                top: -130px;
                 width: 165px;
                 height: 165px;
                 line-height: 165px;
@@ -1998,9 +2000,9 @@ $medWidth: 650px;
     display: none;
   }
   section {
-    width: $medWidth !important;
+    width: $medWidth;
     &.navigation {
-      width: $medWidth !important;
+      width: $medWidth;
       padding-top: 1rem;
       .name {
         left: 0px;
@@ -2011,7 +2013,7 @@ $medWidth: 650px;
       }
     }
     &.header {
-      width: $medWidth !important;
+      width: $medWidth;
       font-size: 3.75rem;
       .descriptionContainer {
         left: 0px;
@@ -2019,18 +2021,18 @@ $medWidth: 650px;
           .dItem {
             height: 65px;
             .dItemBaby {
-              // height: 90px !important;
+              // height: 90px ;
             }
           }
         }
       }
     }
     &.work {
-      width: $medWidth !important;
+      width: $medWidth;
       padding-bottom: 5rem;
       .workContainer {
         margin-left: auto;
-        width: $medWidth !important;
+        width: $medWidth;
         // transform: translateX(px);
         .workBody {
           margin-left: auto;
@@ -2040,23 +2042,23 @@ $medWidth: 650px;
             transform: unset;
           }
           .workItemContainer {
-            width: $medWidth !important;
+            width: $medWidth;
             transform: unset;
           }
         }
       }
       .favorites {
-        width: $medWidth !important;
+        width: $medWidth;
         padding-top: 0rem;
         transform: translate(0px, 120px);
         .favoritesContainer {
-          width: $medWidth !important;
-          height: $medWidth !important;
+          width: $medWidth;
+          height: $medWidth;
           .boxColumn {
             .skills {
               ul {
                 li {
-                  line-height: 1.05 !important;
+                  line-height: 1.05;
                 }
               }
             }
@@ -2075,7 +2077,7 @@ $medWidth: 650px;
       }
     }
     &.contact {
-      width: $medWidth !important;
+      width: $medWidth;
       margin-top: 3rem;
       .contentContainer {
         transform: translateX(0px);
@@ -2102,7 +2104,7 @@ $medWidth: 650px;
       }
     }
     &.resume {
-      width: $medWidth !important;
+      width: $medWidth;
       a {
         img {
           display: none;
@@ -2123,9 +2125,9 @@ $medSmallWidth: 535px;
 
 @media screen and (max-width: 630px) {
   section {
-    width: $medSmallWidth !important;
+    width: $medSmallWidth;
     &.navigation {
-      width: $medSmallWidth !important;
+      width: $medSmallWidth;
       padding-bottom: 4rem;
       padding-top: 0.7rem;
       .name {
@@ -2133,7 +2135,7 @@ $medSmallWidth: 535px;
         line-height: 1.5;
         padding-top: 0.5rem;
         &:before {
-          bottom: -15px !important;
+          bottom: -15px;
           height: 1px;
           animation-delay: 1200ms;
           animation: 700ms lineAnim3 ease;
@@ -2174,7 +2176,7 @@ $medSmallWidth: 535px;
       }
     }
     &.header {
-      width: $medSmallWidth !important;
+      width: $medSmallWidth;
       font-size: 3.1rem;
       .descriptionContainer {
         left: 0px;
@@ -2182,16 +2184,16 @@ $medSmallWidth: 535px;
           .dItem {
             height: 55px;
             .dItemBaby {
-              // height: 90px !important;
+              // height: 90px ;
             }
           }
         }
       }
     }
     &.work {
-      width: $medSmallWidth !important;
+      width: $medSmallWidth;
       .workContainer {
-        width: $medSmallWidth !important;
+        width: $medSmallWidth;
         .workBody {
           .workHeader {
             font-size: 1.9rem;
@@ -2199,7 +2201,7 @@ $medSmallWidth: 535px;
             margin-block-end: 1rem;
           }
           .workItemContainer {
-            width: $medSmallWidth !important;
+            width: $medSmallWidth;
             &.dtContainer {
               span {
                 border-top: solid 1px white;
@@ -2227,46 +2229,46 @@ $medSmallWidth: 535px;
         }
       }
       .favorites {
-        width: $medSmallWidth !important;
-        height: $medSmallWidth !important;
+        width: $medSmallWidth;
+        height: $medSmallWidth;
         .favoritesContainer {
-          height: $medSmallWidth !important;
+          height: $medSmallWidth;
           .boxColumn {
-            padding: 1.9rem 1.9rem 1.9rem 2rem !important;
-            border: solid 1px white !important;
+            padding: 1.9rem 1.9rem 1.9rem 2rem;
+            border: solid 1px white;
             .skills {
-              font-size: 1.2rem !important;
+              font-size: 1.2rem;
               ul {
                 li {
-                  font-size: 2rem !important;
-                  line-height: 1.2 !important;
+                  font-size: 2rem;
+                  line-height: 1.2;
                 }
               }
             }
           }
           .leftContainer {
             .boxItem {
-              padding: 1.9rem 1.9rem 1.9rem 2rem !important;
-              border: solid 1px white !important;
+              padding: 1.9rem 1.9rem 1.9rem 2rem;
+              border: solid 1px white;
               .designers {
                 font-size: 1.2rem;
                 ul {
                   li {
-                    font-size: 2rem !important;
+                    font-size: 2rem;
                   }
                 }
               }
               .fonts {
                 font-size: 1.2rem;
                 img {
-                  height: 25px !important;
-                  margin-bottom: 20px !important;
+                  height: 25px;
+                  margin-bottom: 20px;
                   &:nth-of-type(1) {
-                    margin-bottom: 20px !important;
+                    margin-bottom: 20px;
                   }
                   &:nth-of-type(2) {
-                    height: 27px !important;
-                    margin-bottom: 14px !important;
+                    height: 27px;
+                    margin-bottom: 14px;
                   }
                 }
               }
@@ -2296,7 +2298,7 @@ $medSmallWidth: 535px;
       }
     }
     &.contact {
-      width: $medSmallWidth !important;
+      width: $medSmallWidth;
       // margin-top: 11rem;
       height: 570px;
       transform: translateX(5px);
@@ -2332,7 +2334,7 @@ $medSmallWidth: 535px;
       }
     }
     &.resume {
-      width: $medSmallWidth !important;
+      width: $medSmallWidth;
     }
   }
 }
@@ -2348,11 +2350,12 @@ $smallWidth: 390px;
 @media screen and (max-width: 540px) {
   .lowerContainer {
     padding-bottom: 0rem;
+    height: 1150px;
   }
   section {
-    width: $smallWidth !important;
+    width: $smallWidth;
     &.navigation {
-      width: $smallWidth !important;
+      width: $smallWidth;
       padding-top: 0.1rem;
       margin-top: -0.3rem;
       padding-right: 3px;
@@ -2361,7 +2364,7 @@ $smallWidth: 390px;
         font-size: 1.7rem;
         padding-top: 0.3rem;
         &:before {
-          bottom: -5px;
+          bottom: -15px;
           animation: 700ms lineAnim2 ease;
           animation-fill-mode: forwards;
           animation-delay: 900ms;
@@ -2388,7 +2391,7 @@ $smallWidth: 390px;
       }
     }
     &.header {
-      width: $smallWidth !important;
+      width: $smallWidth;
       font-size: 2.25rem;
       .descriptionContainer {
         left: 0px;
@@ -2400,20 +2403,21 @@ $smallWidth: 390px;
       }
     }
     &.work {
-      width: $smallWidth !important;
+      width: $smallWidth;
       padding-top: 0rem;
-      margin-left: auto !important;
-      margin-right: auto !important;
+      margin-left: auto;
+      margin-right: auto;
       .workContainer {
-        margin-left: auto !important;
-        margin-right: auto !important;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateY(82px);
         .workBody {
           .workHeader {
             font-size: 1.2rem;
             margin-block-end: 0.5rem;
           }
           .workItemContainer {
-            width: $smallWidth !important;
+            width: $smallWidth;
             span {
               font-size: 1.2rem;
               padding-top: 18px;
@@ -2429,51 +2433,56 @@ $smallWidth: 390px;
           }
         }
       }
-      .favorites {
-        width: 395px !important;
-        height: 397px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+      div.favorites {
+        width: 395px;
+        height: 397px;
+        margin-left: auto;
+        margin-right: auto;
         transform: translate(-2px, 120px);
-        .favoritesContainer {
-          width: 397px !important;
-          height: 397px !important;
-          margin-left: auto !important;
-          margin-right: auto !important;
-          .boxColumn {
-            padding: 1.5rem 1.5rem 1.5rem 1.7rem !important;
-            .skills {
-              font-size: 0.9rem !important;
+        padding-top: 0rem;
+        div.favoritesContainer {
+          width: 397px;
+          height: 397px;
+          margin-left: auto;
+          margin-right: auto;
+          div.boxColumn {
+            padding: 1.5rem 1.5rem 1.5rem 1.7rem;
+            border: 1px solid white;
+            div.skills {
+              div {
+                font-size: 0.9rem;
+              }
               ul {
                 li {
-                  font-size: 1.4rem !important;
-                  line-height: 1.2 !important;
+                  font-size: 1.4rem;
+                  line-height: 1.2;
                 }
               }
             }
           }
-          .leftContainer {
-            .boxItem {
-              padding: 1.5rem 1.5rem 1.5rem 1.7rem !important;
+          div.leftContainer {
+            div.boxItem {
+              padding: 1.5rem 1.5rem 1.5rem 1.7rem;
+              border: 1px solid white;
               .designers {
                 font-size: 0.9rem;
                 ul {
                   li {
-                    font-size: 1.4rem !important;
+                    font-size: 1.4rem;
                   }
                 }
               }
-              .fonts {
+              div.fonts {
                 font-size: 0.9rem;
                 img {
-                  height: 17px !important;
-                  margin-bottom: 20px !important;
+                  height: 17px;
+                  margin-bottom: 20px;
                   &:nth-of-type(1) {
-                    margin-bottom: 20px !important;
+                    margin-bottom: 20px;
                   }
                   &:nth-of-type(2) {
-                    height: 21px !important;
-                    margin-bottom: 14px !important;
+                    height: 21px;
+                    margin-bottom: 14px;
                   }
                 }
               }
@@ -2485,6 +2494,8 @@ $smallWidth: 390px;
     &.info {
       width: $smallWidth;
       transform: translateX(0px);
+      padding-top: 2rem;
+      margin-bottom: 1.5rem;
       .infoBody {
         width: $smallWidth;
         .aboutHeader {
@@ -2503,13 +2514,16 @@ $smallWidth: 390px;
       }
     }
     &.contact {
-      width: $smallWidth !important;
-      // margin-top: 1.8rem;
+      width: $smallWidth;
+      margin-top: 0rem;
       transform: translateX(0px);
+      margin-bottom: 0rem;
+      height: 200px;
       .contentContainer {
         width: 100%;
         .copyContainer {
           width: 100%;
+          padding-top: 0.5rem;
           .educationHeader {
             font-size: 1.2rem;
             padding-bottom: 0.5rem;
@@ -2533,6 +2547,7 @@ $smallWidth: 390px;
               font-size: 1.2rem;
               padding-bottom: 0rem;
               margin-block-end: 0.5rem;
+              padding-top: 0.6rem;
             }
             &--1 {
               font-size: 1.2rem;
@@ -2541,20 +2556,22 @@ $smallWidth: 390px;
               border-top: 1px solid white;
             }
             &--2 {
-              font-size: 1.2rem;
+              a {
+                font-size: 1rem;
+                height: 100px;
+                width: 100px;
+                line-height: 100px;
+                border: 1px solid white;
+                top: -80px;
+                right: 12px;
+                img {
+                  height: 10px;
+                  width: auto;
+                }
+              }
             }
           }
         }
-      }
-    }
-    &.resume {
-      width: $smallWidth !important;
-      transform: translateY(0px);
-      height: 190px;
-      a {
-        font-size: 1.7rem;
-        height: 150px;
-        line-height: 132px;
       }
     }
   }
@@ -2563,34 +2580,34 @@ $smallWidth: 390px;
 // $smallWidth: 400px;
 // @media screen and (max-width: 630px) {
 //   section {
-//     width: $smallWidth !important;
+//     width: $smallWidth ;
 //     &.navigation {
-//       width: $smallWidth !important;
+//       width: $smallWidth ;
 //     }
 //     &.header {
-//       width: $smallWidth !important;
+//       width: $smallWidth ;
 //     }
 //     &.work {
-//       width: $smallWidth !important;
+//       width: $smallWidth ;
 //       .workContainer {
 //         .workBody {
 //           .workItemContainer {
-//             width: $smallWidth !important;
+//             width: $smallWidth ;
 //           }
 //         }
 //       }
 //       .favorites {
-//         width: $smallWidth !important;
+//         width: $smallWidth ;
 //       }
 //     }
 //     &.info {
-//       width: $smallWidth !important;
+//       width: $smallWidth ;
 //     }
 //     &.contact {
-//       width: $smallWidth !important;
+//       width: $smallWidth ;
 //     }
 //     &.resume {
-//       width: $smallWidth !important;
+//       width: $smallWidth ;
 //     }
 //   }
 // }
@@ -2604,10 +2621,13 @@ $smallWidth: 390px;
 
 $xtraSmallWidth: 360px;
 @media screen and (max-width: 411px) {
+  .lowerContainer {
+    height: 1030px;
+  }
   section {
-    width: $xtraSmallWidth !important;
+    width: $xtraSmallWidth;
     &.navigation {
-      width: $xtraSmallWidth !important;
+      width: $xtraSmallWidth;
       padding-top: 0rem;
       .name {
         padding-top: 0.1rem;
@@ -2621,7 +2641,7 @@ $xtraSmallWidth: 360px;
       }
     }
     &.header {
-      width: $xtraSmallWidth !important;
+      width: $xtraSmallWidth;
       font-size: 2.08rem;
       padding-bottom: 1rem;
       .descriptionContainer {
@@ -2634,7 +2654,7 @@ $xtraSmallWidth: 360px;
       }
     }
     &.work {
-      width: $xtraSmallWidth !important;
+      width: $xtraSmallWidth;
       padding-bottom: 4rem;
       .workContainer {
         .workBody {
@@ -2643,7 +2663,7 @@ $xtraSmallWidth: 360px;
             font-size: 1.2rem;
           }
           .workItemContainer {
-            width: $xtraSmallWidth !important;
+            width: $xtraSmallWidth;
             span {
               font-size: 1.3rem;
               padding-bottom: 15px;
@@ -2654,27 +2674,27 @@ $xtraSmallWidth: 360px;
           }
         }
       }
-      .favorites {
-        width: $xtraSmallWidth !important;
-        transform: translate(0px, 120px);
-        .favoritesContainer {
-          .boxColumn {
+      div.favorites {
+        width: $xtraSmallWidth;
+        transform: translate(0px, 115px);
+        div.favoritesContainer {
+          div.boxColumn {
             .skills {
               div {
-                font-size: 0.8rem !important;
+                font-size: 0.8rem;
               }
             }
           }
-          .leftContainer {
+          div.leftContainer {
             .boxItem {
               .designers {
                 div {
-                  font-size: 0.8rem !important;
+                  font-size: 0.8rem;
                 }
               }
-              .fonts {
+              div.fonts {
                 div {
-                  font-size: 0.8rem !important;
+                  font-size: 0.8rem;
                 }
               }
             }
@@ -2683,7 +2703,8 @@ $xtraSmallWidth: 360px;
       }
     }
     &.info {
-      width: $xtraSmallWidth !important;
+      width: $xtraSmallWidth;
+      padding-top: 3rem;
       .infoBody {
         width: 100%;
         .aboutHeader {
@@ -2692,11 +2713,14 @@ $xtraSmallWidth: 360px;
         }
         .aboutVerbiage {
           font-size: 1.19rem;
+          &--0 {
+            padding-top: 1rem;
+          }
         }
       }
     }
     &.contact {
-      width: $xtraSmallWidth !important;
+      width: $xtraSmallWidth;
       // margin-top: 10rem;
       height: 530px;
       padding-top: 0rem;
@@ -2708,6 +2732,9 @@ $xtraSmallWidth: 360px;
           }
           .educationItem {
             font-size: 1.4rem;
+            &--0 {
+              padding-top: 1rem;
+            }
             &--0,
             &--3,
             &--6 {
@@ -2717,22 +2744,14 @@ $xtraSmallWidth: 360px;
           .contactInfo {
             &--0 {
               font-size: 1.2rem;
-              padding-top: 1rem;
+              padding-top: 0rem;
             }
             &--1 {
               font-size: 1.35rem;
+              padding-top: 1rem;
             }
           }
         }
-      }
-    }
-    &.resume {
-      width: $xtraSmallWidth !important;
-      height: 135px;
-      transform: translateY(0px);
-      a {
-        height: 120px;
-        line-height: 105px;
       }
     }
   }
