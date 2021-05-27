@@ -1,5 +1,6 @@
 import { useTrail, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
+
 const schools = [
   "LaunchCodeKC",
   "Kansas City, MO",
@@ -15,12 +16,20 @@ function MailTo() {
   return (
     <a className="mailTo" href="mailto:will@willandree.xyz">
       will@willandree.xyz
-      <img src="/pdf.svg" alt="new window pdf resume" />
     </a>
   );
 }
 function Resume() {
-  return <a className="resume">resumé</a>;
+  return (
+    <a className="resume">
+      resumé{" "}
+      <img
+        src="/pdf-file.svg"
+        className="pdfFileSVG"
+        alt="new window pdf resume"
+      />
+    </a>
+  );
 }
 const contactInfo = ["Contact", <MailTo />, <Resume />];
 export default function Contact() {
@@ -48,7 +57,7 @@ export default function Contact() {
 
   // CONTACT SECTION 👇
   const trail2 = useTrail(contactInfo.length, {
-    config: { mass: 5, tension: 2200, friction: 220 },
+    config: { mass: 6, tension: 2200, friction: 220 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 10,
     delay: 900,

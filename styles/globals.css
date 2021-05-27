@@ -706,9 +706,41 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a:hover img {
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--2 {
+  width: 100%;
+}
+
+section.contact .contentContainer .copyContainer .contactInfo--2 a {
   font-family: "Epilogue", sans-serif;
-  font-size: 1.6rem;
-  padding-bottom: 5rem;
+  font-size: 1.4rem;
+  position: absolute;
+  top: -110px;
+  right: -30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: #0f0f0f;
+  border: 2px solid white;
+  line-height: 150px;
+  text-align: center;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  cursor: pointer;
+}
+
+section.contact .contentContainer .copyContainer .contactInfo--2 a:hover {
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+
+section.contact .contentContainer .copyContainer .contactInfo--2 a img {
+  position: relative;
+  height: 15px;
+  width: auto;
+  top: 1px;
 }
 
 .customOverlay {
@@ -734,13 +766,12 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
 .customModal .projectDesignation {
   position: relative;
   background: #fafafa;
-  padding: 12px 0 9px 23px;
+  padding: 13px 0 8px 23px;
   display: block;
   color: grey;
   font-size: 1.3em;
   font-family: "Epilogue";
   font-weight: 500;
-  line-height: 35px;
   z-index: 777;
 }
 
@@ -1747,9 +1778,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     margin: 0 auto;
     padding-bottom: 5rem;
     margin-bottom: 5rem;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 1700px;
   }
   section {
     width: 800px;
@@ -1937,14 +1966,23 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
             justify-content: unset;
     left: 0;
   }
+  section.info .infoBody .aboutHeader {
+    -webkit-margin-after: 0.8rem;
+            margin-block-end: 0.8rem;
+    left: 1px;
+  }
+  section.info .infoBody .aboutVerbiage--0 {
+    border-top: 2px solid white;
+    width: 97%;
+    padding-top: 1.5rem;
+  }
   section.contact {
     margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3rem;
     width: 690px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 100%;
   }
   section.contact .contentContainer {
     margin-left: auto;
@@ -1953,6 +1991,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   section.contact .contentContainer .copyContainer {
     left: 0px;
     padding-left: 0rem;
+    width: 100%;
   }
   section.contact .contentContainer .copyContainer .educationHeader {
     font-size: 2.3rem;
@@ -1962,31 +2001,38 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
     font-size: 2.3rem;
     padding-left: 0rem;
   }
+  section.contact .contentContainer .copyContainer .educationHeader {
+    padding-bottom: 0.5rem;
+    -webkit-margin-after: 0.2rem;
+            margin-block-end: 0.2rem;
+  }
+  section.contact .contentContainer .copyContainer .educationItem--0 {
+    border-top: 2px solid white;
+    padding-top: 1.5rem;
+    width: 100%;
+  }
   section.contact .contentContainer .copyContainer .contactInfo {
     left: 0px;
   }
   section.contact .contentContainer .copyContainer .contactInfo--0 {
     font-size: 2.3rem;
-    padding-bottom: 1rem;
     padding-top: 1.5rem;
   }
   section.contact .contentContainer .copyContainer .contactInfo--1 {
     font-size: 2.3rem;
+    border-top: 2px solid white;
+    padding-top: 1.5rem;
   }
   section.contact .contentContainer .copyContainer .contactInfo--1 a img {
     width: 35px;
   }
-  section.contact .contentContainer .copyContainer .contactInfo--2 {
-    font-size: 2.3rem;
-  }
-  section.resume {
-    width: 720px;
-    left: 0px;
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  section.resume a {
-    font-size: 2rem;
+  section.contact .contentContainer .copyContainer .contactInfo--2 a {
+    right: 30px;
+    top: -120px;
+    width: 165px;
+    height: 165px;
+    line-height: 165px;
+    font-size: 1.6rem;
   }
 }
 
@@ -2013,16 +2059,6 @@ section.contact .contentContainer .copyContainer .contactInfo--2 {
   section.info .infoBody {
     -webkit-transform: translateX(-4px);
             transform: translateX(-4px);
-  }
-  section.info .infoBody .aboutHeader {
-    -webkit-margin-after: 0.8rem;
-            margin-block-end: 0.8rem;
-    left: 1px;
-  }
-  section.info .infoBody .aboutVerbiage--0 {
-    border-top: 2px solid white;
-    width: 97%;
-    padding-top: 1.5rem;
   }
   section.contact {
     width: 100%;
