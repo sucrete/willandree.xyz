@@ -2656,7 +2656,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
   }
   section.navigation {
     width: 360px;
-    padding-top: 0rem;
+    padding-top: 0.5rem;
   }
   section.navigation .name {
     padding-top: 0.1rem;
