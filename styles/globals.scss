@@ -2757,6 +2757,151 @@ $xtraSmallWidth: 360px;
   }
 }
 
+// ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ██████╗  ██████╗  ██████╗ ██████╗ ██╗  ██╗         ██╗
+// ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ╚════██╗██╔════╝ ██╔═████╗██╔══██╗╚██╗██╔╝         ╚██╗
+// ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝     █████╔╝███████╗ ██║██╔██║██████╔╝ ╚███╔╝     █████╗╚██╗
+// ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗     ╚═══██╗██╔═══██╗████╔╝██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
+// ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║    ██████╔╝╚██████╔╝╚██████╔╝██║     ██╔╝ ██╗         ██╔╝
+//  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝     ╚═╝  ╚═╝         ╚═╝
+// UNDER 360PX
+$xtraXtraSmallWidth: 350px;
+@media screen and (max-width: 360px) {
+  .lowerContainer {
+    height: 1030px;
+  }
+  section {
+    width: $xtraXtraSmallWidth;
+    &.navigation {
+      width: $xtraXtraSmallWidth;
+      padding-top: 0.5rem;
+      .name {
+        padding-top: 0.1rem;
+        font-size: 1.8rem;
+        &:before {
+          left: 2px;
+        }
+      }
+    }
+    &.header {
+      width: $xtraXtraSmallWidth;
+      font-size: 2.04rem;
+    }
+    &.work {
+      width: $xtraXtraSmallWidth;
+      .workContainer {
+        .workBody {
+          .workItemContainer {
+            width: $xtraXtraSmallWidth;
+          }
+        }
+      }
+      div.favorites {
+        width: $xtraXtraSmallWidth;
+
+        div.favoritesContainer {
+          height: $xtraXtraSmallWidth;
+          div.boxColumn {
+            padding: 22px;
+            div.skills {
+              div {
+                font-size: 0.8rem;
+              }
+              ul li {
+                font-size: 1.3rem;
+              }
+            }
+          }
+          div.leftContainer {
+            div.boxItem {
+              padding: 22px;
+              div.designers {
+                div {
+                  font-size: 0.8rem;
+                }
+                ul {
+                  li {
+                    font-size: 1.3rem;
+                  }
+                }
+              }
+              div.fonts {
+                div {
+                  font-size: 0.8rem;
+                }
+                img {
+                  &:nth-of-type(1) {
+                    height: 15px;
+                    margin-bottom: 15px;
+                  }
+                  &:nth-of-type(2) {
+                    height: 20px;
+                    margin-bottom: 12px;
+                  }
+                  &:nth-of-type(3) {
+                    height: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.info {
+      width: $xtraXtraSmallWidth;
+      padding-top: 1rem;
+      .infoBody {
+        width: 100%;
+        .aboutHeader {
+          font-size: 1.2rem;
+          margin-block-end: 0.5rem;
+        }
+        .aboutVerbiage {
+          font-size: 1.17rem;
+          &--0 {
+            padding-top: 1rem;
+          }
+        }
+      }
+    }
+    &.contact {
+      width: $xtraXtraSmallWidth;
+      // margin-top: 10rem;
+      height: 530px;
+      padding-top: 0rem;
+      .contentContainer {
+        .copyContainer {
+          padding-top: 0rem;
+          .educationHeader {
+            font-size: 1.2rem;
+          }
+          .educationItem {
+            font-size: 1.4rem;
+            &--0 {
+              padding-top: 1rem;
+            }
+            &--0,
+            &--3,
+            &--6 {
+              font-size: 1.35rem;
+            }
+          }
+          .contactInfo {
+            &--0 {
+              font-size: 1.2rem;
+              padding-top: 0rem;
+            }
+            &--1 {
+              font-size: 1.35rem;
+              padding-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // ██╗██████╗  █████╗ ██████╗     ██████╗ ██████╗  ██████╗          ██╗
 // ██║██╔══██╗██╔══██╗██╔══██╗    ██╔══██╗██╔══██╗██╔═══██╗         ╚██╗
 // ██║██████╔╝███████║██║  ██║    ██████╔╝██████╔╝██║   ██║    █████╗╚██╗
