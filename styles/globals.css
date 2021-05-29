@@ -2414,7 +2414,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
 @media screen and (max-width: 540px) {
   .lowerContainer {
     padding-bottom: 0rem;
-    height: 1150px;
+    height: 1100px;
   }
   section {
     width: 390px;
@@ -2649,7 +2649,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
 
 @media screen and (max-width: 411px) {
   .lowerContainer {
-    height: 1030px;
+    height: 1000px;
   }
   section {
     width: 360px;
