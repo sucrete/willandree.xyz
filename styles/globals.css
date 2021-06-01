@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300..800&display=swap");
+.linksContainer a img {
+  height: 40px;
+  width: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.linksContainer .linkedInLink {
+  padding-left: 3px;
+}
+
+.react-responsive-modal-closeButton {
+  top: 13px !important;
+}
+
 html,
 body {
   padding: 0px;
@@ -386,7 +401,7 @@ section.work .workContainer .workBody .workItemContainer span {
 }
 
 section.work .workContainer .workBody .workItemContainer span:hover {
-  background: khaki;
+  background: #b4c7f0;
   color: black;
 }
 
@@ -696,9 +711,9 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:hover {
-  color: khaki;
-  -webkit-text-decoration-color: rgba(240, 230, 140, 0.418);
-          text-decoration-color: rgba(240, 230, 140, 0.418);
+  color: #97b3f0;
+  -webkit-text-decoration-color: rgba(151, 179, 240, 0.42);
+          text-decoration-color: rgba(151, 179, 240, 0.42);
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--1 a:hover img {
@@ -713,7 +728,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a {
   font-family: "Epilogue", sans-serif;
   font-size: 1.4rem;
   position: absolute;
-  top: -110px;
+  top: -80px;
   right: -30px;
   width: 150px;
   height: 150px;
@@ -1763,6 +1778,15 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
 }
 
 @media screen and (max-width: 1090px) {
+  .linksContainer a img {
+    height: 55px;
+    width: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  .linksContainer .linkedInLink {
+    padding-left: 3px;
+  }
   .cursor {
     display: none;
   }
@@ -2051,9 +2075,9 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
     -webkit-transform: translateX(-14px);
             transform: translateX(-14px);
   }
-  section.work .favorites {
-    -webkit-transform: translate(-14px, 120px);
-            transform: translate(-14px, 120px);
+  section.work div.favorites {
+    -webkit-transform: translateY(120px) translateX(-15px);
+            transform: translateY(120px) translateX(-15px);
   }
   section.info .infoBody {
     -webkit-transform: translateX(-4px);
@@ -2192,6 +2216,9 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
 }
 
 @media screen and (max-width: 630px) {
+  .lowerContainer {
+    height: 1300px;
+  }
   section {
     width: 535px;
   }
@@ -2319,45 +2346,47 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
     top: -18px;
     right: -11px;
   }
-  section.work .favorites {
+  section.work div.favorites {
     width: 535px;
     height: 535px;
+    -webkit-transform: translate(0px, 120px);
+            transform: translate(0px, 120px);
   }
-  section.work .favorites .favoritesContainer {
+  section.work div.favorites div.favoritesContainer {
     height: 535px;
   }
-  section.work .favorites .favoritesContainer .boxColumn {
+  section.work div.favorites div.favoritesContainer div.boxColumn {
     padding: 1.9rem 1.9rem 1.9rem 2rem;
     border: solid 1px white;
   }
-  section.work .favorites .favoritesContainer .boxColumn .skills {
+  section.work div.favorites div.favoritesContainer div.boxColumn div.skills {
     font-size: 1.2rem;
   }
-  section.work .favorites .favoritesContainer .boxColumn .skills ul li {
+  section.work div.favorites div.favoritesContainer div.boxColumn div.skills ul li {
     font-size: 2rem;
     line-height: 1.2;
   }
-  section.work .favorites .favoritesContainer .leftContainer .boxItem {
+  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem {
     padding: 1.9rem 1.9rem 1.9rem 2rem;
     border: solid 1px white;
   }
-  section.work .favorites .favoritesContainer .leftContainer .boxItem .designers {
+  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers {
     font-size: 1.2rem;
   }
-  section.work .favorites .favoritesContainer .leftContainer .boxItem .designers ul li {
+  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
     font-size: 2rem;
   }
-  section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts {
+  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts {
     font-size: 1.2rem;
   }
-  section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts img {
+  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img {
     height: 25px;
     margin-bottom: 20px;
   }
-  section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts img:nth-of-type(1) {
+  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
     margin-bottom: 20px;
   }
-  section.work .favorites .favoritesContainer .leftContainer .boxItem .fonts img:nth-of-type(2) {
+  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
     height: 27px;
     margin-bottom: 14px;
   }
@@ -2367,17 +2396,17 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
             transform: translateX(5px);
     position: relative;
   }
-  section.info .infoBody {
+  section.info div.infoBody {
     width: 535px;
     position: relative;
   }
-  section.info .infoBody .aboutHeader {
+  section.info div.infoBody div.aboutHeader {
     font-size: 1.9rem;
     position: relative;
     z-index: 90;
   }
-  section.info .infoBody .aboutVerbiage {
-    width: 535px;
+  section.info div.infoBody span.aboutVerbiage {
+    width: calc($medSmallWidth - 1px);
     font-size: 1.7rem;
   }
   section.contact {
@@ -2386,24 +2415,25 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
     -webkit-transform: translateX(5px);
             transform: translateX(5px);
   }
-  section.contact .contentContainer .copyContainer .educationHeader {
+  section.contact div.contentContainer div.copyContainer div.educationHeader {
     font-size: 1.9rem;
   }
-  section.contact .contentContainer .copyContainer .educationItem {
+  section.contact div.contentContainer div.copyContainer div.educationItem {
     font-size: 1.7rem;
+    width: calc($medSmallWidth - 1px);
   }
-  section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
+  section.contact div.contentContainer div.copyContainer div.educationItem--0, section.contact div.contentContainer div.copyContainer div.educationItem--3, section.contact div.contentContainer div.copyContainer div.educationItem--6 {
     font-size: 2rem;
   }
-  section.contact .contentContainer .copyContainer .contactInfo--0 {
+  section.contact div.contentContainer div.copyContainer .contactInfo--0 {
     font-size: 1.9rem;
     padding-bottom: 0.5rem;
   }
-  section.contact .contentContainer .copyContainer .contactInfo--1 {
+  section.contact div.contentContainer div.copyContainer .contactInfo--1 {
     font-size: 1.7rem;
     font-weight: 400;
   }
-  section.contact .contentContainer .copyContainer .contactInfo--2 {
+  section.contact div.contentContainer div.copyContainer .contactInfo--2 {
     font-size: 1.7rem;
   }
   section.resume {
@@ -2610,7 +2640,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
             margin-block-end: 0rem;
   }
   section.contact .contentContainer .copyContainer .educationItem {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   section.contact .contentContainer .copyContainer .educationItem--0 {
     border-top: 1px solid white;
@@ -2698,7 +2728,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
     -webkit-transform: translate(0px, 115px);
             transform: translate(0px, 115px);
   }
-  section.work div.favorites div.favoritesContainer div.boxColumn .skills div {
+  section.work div.favorites div.favoritesContainer div.boxColumn div.skills div {
     font-size: 0.8rem;
   }
   section.work div.favorites div.favoritesContainer div.leftContainer .boxItem .designers div {

@@ -16,7 +16,22 @@ $chartreuse: hsl(54, 77%, 75%);
   }
   box-shadow: $all;
 }
-
+.linksContainer {
+  a {
+    img {
+      height: 40px;
+      width: auto;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+  }
+  .linkedInLink {
+    padding-left: 3px;
+  }
+}
+.react-responsive-modal-closeButton {
+  top: 13px !important;
+}
 @mixin slideShow($slideNumber, $uniqueName) {
   // time = total animation time
   // time = (a+b) * n
@@ -419,7 +434,7 @@ section.work {
           white-space: nowrap;
           z-index: 99;
           &:hover {
-            background: khaki;
+            background: #b4c7f0;
             color: black;
           }
         }
@@ -696,8 +711,8 @@ section.contact {
               color: white;
             }
             &:hover {
-              color: khaki;
-              text-decoration-color: rgba(240, 230, 140, 0.418);
+              color: #97b3f0;
+              text-decoration-color: rgba(151, 179, 240, 0.42);
               img {
                 visibility: visible;
               }
@@ -710,7 +725,7 @@ section.contact {
             font-family: "Epilogue", sans-serif;
             font-size: 1.4rem;
             position: absolute;
-            top: -110px;
+            top: -80px;
             right: -30px;
             width: 150px;
             height: 150px;
@@ -1639,6 +1654,19 @@ section.contact {
 //  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝     ╚═╝ ╚═════╝  ╚════╝  ╚═════╝ ╚═╝     ╚═╝  ╚═╝         ╚═╝
 
 @media screen and (max-width: 1090px) {
+  .linksContainer {
+    a {
+      img {
+        height: 55px;
+        width: auto;
+        margin-right: 20px;
+        margin-top: 20px;
+      }
+    }
+    .linkedInLink {
+      padding-left: 3px;
+    }
+  }
   .cursor {
     display: none;
   }
@@ -1952,8 +1980,9 @@ section.contact {
           }
         }
       }
-      .favorites {
-        transform: translate(-14px, 120px);
+      div.favorites {
+        transform: translateY(120px) translateX(-15px);
+        // width: 100vw;
       }
     }
     &.info {
@@ -2124,6 +2153,9 @@ $medWidth: 650px;
 $medSmallWidth: 535px;
 
 @media screen and (max-width: 630px) {
+  .lowerContainer {
+    height: 1300px;
+  }
   section {
     width: $medSmallWidth;
     &.navigation {
@@ -2228,15 +2260,16 @@ $medSmallWidth: 535px;
           }
         }
       }
-      .favorites {
+      div.favorites {
         width: $medSmallWidth;
         height: $medSmallWidth;
-        .favoritesContainer {
+        transform: translate(0px, 120px);
+        div.favoritesContainer {
           height: $medSmallWidth;
-          .boxColumn {
+          div.boxColumn {
             padding: 1.9rem 1.9rem 1.9rem 2rem;
             border: solid 1px white;
-            .skills {
+            div.skills {
               font-size: 1.2rem;
               ul {
                 li {
@@ -2246,11 +2279,11 @@ $medSmallWidth: 535px;
               }
             }
           }
-          .leftContainer {
-            .boxItem {
+          div.leftContainer {
+            div.boxItem {
               padding: 1.9rem 1.9rem 1.9rem 2rem;
               border: solid 1px white;
-              .designers {
+              div.designers {
                 font-size: 1.2rem;
                 ul {
                   li {
@@ -2258,7 +2291,7 @@ $medSmallWidth: 535px;
                   }
                 }
               }
-              .fonts {
+              div.fonts {
                 font-size: 1.2rem;
                 img {
                   height: 25px;
@@ -2282,17 +2315,17 @@ $medSmallWidth: 535px;
       transform: translateX(5px);
       // padding-top: 0;
       position: relative;
-      .infoBody {
+      div.infoBody {
         width: $medSmallWidth;
         position: relative;
-        .aboutHeader {
+        div.aboutHeader {
           font-size: 1.9rem;
           position: relative;
           // left: 3px;
           z-index: 90;
         }
-        .aboutVerbiage {
-          width: $medSmallWidth;
+        span.aboutVerbiage {
+          width: calc($medSmallWidth - 1px);
           font-size: 1.7rem;
         }
       }
@@ -2303,13 +2336,14 @@ $medSmallWidth: 535px;
       height: 570px;
       transform: translateX(5px);
       // transform: translateY(3px);
-      .contentContainer {
-        .copyContainer {
-          .educationHeader {
+      div.contentContainer {
+        div.copyContainer {
+          div.educationHeader {
             font-size: 1.9rem;
           }
-          .educationItem {
+          div.educationItem {
             font-size: 1.7rem;
+            width: calc($medSmallWidth - 1px);
             // padding-left: 0.1rem;
             &--0,
             &--3,
@@ -2530,7 +2564,7 @@ $smallWidth: 390px;
             margin-block-end: 0rem;
           }
           .educationItem {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             // padding-left: 0.1rem;
             &--0 {
               border-top: 1px solid white;
@@ -2679,7 +2713,7 @@ $xtraSmallWidth: 360px;
         transform: translate(0px, 115px);
         div.favoritesContainer {
           div.boxColumn {
-            .skills {
+            div.skills {
               div {
                 font-size: 0.8rem;
               }

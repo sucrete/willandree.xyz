@@ -64,7 +64,7 @@ function Box3() {
         <li>HTML/CSS</li>
         <li>SCSS</li>
         <li>Graphic Design</li>
-        <li>Adobe Illustrator</li>
+        <li>Illustrator</li>
         <li>Photoshop</li>
         <li>Wordpress</li>
         <li>Vue</li>
