@@ -2325,7 +2325,7 @@ $medSmallWidth: 535px;
           z-index: 90;
         }
         span.aboutVerbiage {
-          width: calc($medSmallWidth - 1px);
+          width: 534px;
           font-size: 1.7rem;
         }
       }
@@ -2343,7 +2343,7 @@ $medSmallWidth: 535px;
           }
           div.educationItem {
             font-size: 1.7rem;
-            width: calc($medSmallWidth - 1px);
+            width: 534px;
             // padding-left: 0.1rem;
             &--0,
             &--3,

@@ -2406,7 +2406,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
     z-index: 90;
   }
   section.info div.infoBody span.aboutVerbiage {
-    width: calc($medSmallWidth - 1px);
+    width: 534px;
     font-size: 1.7rem;
   }
   section.contact {
@@ -2420,7 +2420,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
   }
   section.contact div.contentContainer div.copyContainer div.educationItem {
     font-size: 1.7rem;
-    width: calc($medSmallWidth - 1px);
+    width: 534px;
   }
   section.contact div.contentContainer div.copyContainer div.educationItem--0, section.contact div.contentContainer div.copyContainer div.educationItem--3, section.contact div.contentContainer div.copyContainer div.educationItem--6 {
     font-size: 2rem;
