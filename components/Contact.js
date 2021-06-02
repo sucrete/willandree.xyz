@@ -7,7 +7,7 @@ const schools = [
   "Computer Science/Front-End Development",
   "Drury University",
   "Springfield, MO",
-  "Art History, with emphasis on History of Architecture",
+  "Art History with an emphasis on the History of Architecture",
   "SCAD",
   "Savannah, GA",
   "Art and Architecture fundamentals",
