@@ -3072,6 +3072,14 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
     font-size: 1.2rem;
     padding-top: 1rem;
   }
+  section.contact div.contentContainer div.copyContainer div.contactInfo--2 a {
+    height: 85px;
+    width: 85px;
+    line-height: 85px;
+  }
+  section.contact div.contentContainer div.copyContainer .linksContainer a img {
+    height: 35px;
+  }
 }
 
 /* Portrait */
