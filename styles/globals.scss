@@ -2540,7 +2540,7 @@ $smallWidth: 390px;
         }
         span.aboutVerbiage {
           width: $smallWidth;
-          font-size: 1.29rem;
+          font-size: 1.25rem;
           &--0 {
             border-top: 1px solid white;
             width: 100%;
@@ -2567,6 +2567,7 @@ $smallWidth: 390px;
           div.educationItem {
             font-size: 1.4rem;
             // padding-left: 0.1rem;
+            width: $smallWidth;
             &--0 {
               border-top: 1px solid white;
               width: 100%;

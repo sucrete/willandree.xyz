@@ -2613,7 +2613,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
   }
   section.info div.infoBody span.aboutVerbiage {
     width: 390px;
-    font-size: 1.29rem;
+    font-size: 1.25rem;
   }
   section.info div.infoBody span.aboutVerbiage--0 {
     border-top: 1px solid white;
@@ -2642,6 +2642,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
   }
   section.contact div.contentContainer div.copyContainer div.educationItem {
     font-size: 1.4rem;
+    width: 390px;
   }
   section.contact div.contentContainer div.copyContainer div.educationItem--0 {
     border-top: 1px solid white;
