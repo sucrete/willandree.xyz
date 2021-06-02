@@ -4,6 +4,7 @@
   width: auto;
   margin-right: 20px;
   margin-top: 20px;
+  opacity: 0.7;
 }
 
 .linksContainer .linkedInLink {
@@ -2575,10 +2576,10 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
     padding: 1.5rem 1.5rem 1.5rem 1.7rem;
     border: 1px solid white;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem .designers {
+  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers {
     font-size: 0.9rem;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem .designers ul li {
+  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
     font-size: 1.4rem;
   }
   section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts {
@@ -2602,19 +2603,19 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
     padding-top: 2rem;
     margin-bottom: 1.5rem;
   }
-  section.info .infoBody {
+  section.info div.infoBody {
     width: 390px;
   }
-  section.info .infoBody .aboutHeader {
+  section.info div.infoBody div.aboutHeader {
     font-size: 1.2rem;
     -webkit-margin-after: 0.5rem;
             margin-block-end: 0.5rem;
   }
-  section.info .infoBody .aboutVerbiage {
+  section.info div.infoBody span.aboutVerbiage {
     width: 390px;
-    font-size: 1.25rem;
+    font-size: 1.29rem;
   }
-  section.info .infoBody .aboutVerbiage--0 {
+  section.info div.infoBody span.aboutVerbiage--0 {
     border-top: 1px solid white;
     width: 100%;
   }
@@ -2626,43 +2627,43 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
     margin-bottom: 0rem;
     height: 200px;
   }
-  section.contact .contentContainer {
+  section.contact div.contentContainer {
     width: 100%;
   }
-  section.contact .contentContainer .copyContainer {
+  section.contact div.contentContainer div.copyContainer {
     width: 100%;
     padding-top: 0.5rem;
   }
-  section.contact .contentContainer .copyContainer .educationHeader {
+  section.contact div.contentContainer div.copyContainer div.educationHeader {
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
     -webkit-margin-after: 0rem;
             margin-block-end: 0rem;
   }
-  section.contact .contentContainer .copyContainer .educationItem {
+  section.contact div.contentContainer div.copyContainer div.educationItem {
     font-size: 1.4rem;
   }
-  section.contact .contentContainer .copyContainer .educationItem--0 {
+  section.contact div.contentContainer div.copyContainer div.educationItem--0 {
     border-top: 1px solid white;
     width: 100%;
   }
-  section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
+  section.contact div.contentContainer div.copyContainer div.educationItem--0, section.contact div.contentContainer div.copyContainer div.educationItem--3, section.contact div.contentContainer div.copyContainer div.educationItem--6 {
     font-size: 1.4rem;
   }
-  section.contact .contentContainer .copyContainer .contactInfo--0 {
+  section.contact div.contentContainer div.copyContainer div.contactInfo--0 {
     font-size: 1.2rem;
     padding-bottom: 0rem;
     -webkit-margin-after: 0.5rem;
             margin-block-end: 0.5rem;
     padding-top: 0.6rem;
   }
-  section.contact .contentContainer .copyContainer .contactInfo--1 {
+  section.contact div.contentContainer div.copyContainer div.contactInfo--1 {
     font-size: 1.2rem;
     padding-left: 0rem;
     padding-top: 1.5rem;
     border-top: 1px solid white;
   }
-  section.contact .contentContainer .copyContainer .contactInfo--2 a {
+  section.contact div.contentContainer div.copyContainer div.contactInfo--2 a {
     font-size: 1rem;
     height: 100px;
     width: 100px;
@@ -2671,9 +2672,12 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
     top: -80px;
     right: 12px;
   }
-  section.contact .contentContainer .copyContainer .contactInfo--2 a img {
+  section.contact div.contentContainer div.copyContainer div.contactInfo--2 a img {
     height: 10px;
     width: auto;
+  }
+  section.contact div.contentContainer div.copyContainer .linksContainer a img {
+    height: 40px;
   }
 }
 

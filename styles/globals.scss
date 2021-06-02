@@ -23,6 +23,7 @@ $chartreuse: hsl(54, 77%, 75%);
       width: auto;
       margin-right: 20px;
       margin-top: 20px;
+      opacity: 0.7;
     }
   }
   .linkedInLink {
@@ -2498,7 +2499,7 @@ $smallWidth: 390px;
             div.boxItem {
               padding: 1.5rem 1.5rem 1.5rem 1.7rem;
               border: 1px solid white;
-              .designers {
+              div.designers {
                 font-size: 0.9rem;
                 ul {
                   li {
@@ -2530,16 +2531,16 @@ $smallWidth: 390px;
       transform: translateX(0px);
       padding-top: 2rem;
       margin-bottom: 1.5rem;
-      .infoBody {
+      div.infoBody {
         width: $smallWidth;
-        .aboutHeader {
+        div.aboutHeader {
           font-size: 1.2rem;
           margin-block-end: 0.5rem;
           // left: 2px;
         }
-        .aboutVerbiage {
+        span.aboutVerbiage {
           width: $smallWidth;
-          font-size: 1.25rem;
+          font-size: 1.29rem;
           &--0 {
             border-top: 1px solid white;
             width: 100%;
@@ -2553,17 +2554,17 @@ $smallWidth: 390px;
       transform: translateX(0px);
       margin-bottom: 0rem;
       height: 200px;
-      .contentContainer {
+      div.contentContainer {
         width: 100%;
-        .copyContainer {
+        div.copyContainer {
           width: 100%;
           padding-top: 0.5rem;
-          .educationHeader {
+          div.educationHeader {
             font-size: 1.2rem;
             padding-bottom: 0.5rem;
             margin-block-end: 0rem;
           }
-          .educationItem {
+          div.educationItem {
             font-size: 1.4rem;
             // padding-left: 0.1rem;
             &--0 {
@@ -2576,7 +2577,7 @@ $smallWidth: 390px;
               font-size: 1.4rem;
             }
           }
-          .contactInfo {
+          div.contactInfo {
             &--0 {
               font-size: 1.2rem;
               padding-bottom: 0rem;
@@ -2602,6 +2603,13 @@ $smallWidth: 390px;
                   height: 10px;
                   width: auto;
                 }
+              }
+            }
+          }
+          .linksContainer {
+            a {
+              img {
+                height: 40px;
               }
             }
           }
