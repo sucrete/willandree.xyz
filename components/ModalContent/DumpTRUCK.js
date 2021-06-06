@@ -110,8 +110,10 @@ export default function DumpTRUCK() {
               >
                 dump.fm
               </a>
-              , an unconventional chatroom that allowed users to post arrays of
-              images
+              , a chatroom where, in addition to text, users could paste arrays
+              of images sourced from all corners of the web, often "remixing"
+              (and "re-remixing") still images and gifs to create utterly new
+              forms of internet art.
               <span className="tech"> Created with React and Next.js.</span>
             </p>
 

@@ -851,14 +851,13 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
 }
 
 .customModal .modalBody .modalSubheading .lilCapsule--OTL {
-  background: #ffff8d;
+  background: #8dffd3;
   color: #52392f;
 }
 
 .customModal .modalBody .modalSubheading .lilCapsule--maxRosen {
-  color: #615a8a;
-  background: #f3f3f3;
-  border: 1px solid #615a8a;
+  color: #535121;
+  background-color: #f3ea9d;
 }
 
 .customModal .modalBody .modalSubheading .lilCapsule--votr {
@@ -962,7 +961,7 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
   margin-right: 3rem;
   width: 26%;
   font-family: "Epilogue", sans-serif;
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 125%;
   display: -webkit-box;
   display: -ms-flexbox;
