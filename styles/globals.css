@@ -745,6 +745,12 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a {
   transition: transform 0.2s ease;
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+section.contact .contentContainer .copyContainer .contactInfo--2 a:visited {
+  color: white;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--2 a:hover {

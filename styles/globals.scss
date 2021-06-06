@@ -738,6 +738,12 @@ section.contact {
             transform: rotate(-12deg);
             transition: transform 0.2s ease;
             cursor: pointer;
+            text-decoration: none;
+            color: white;
+            &:visited {
+              color: white;
+            }
+
             &:hover {
               transform: rotate(-8deg);
             }

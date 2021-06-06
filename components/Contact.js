@@ -20,7 +20,11 @@ function MailTo() {
   );
 }
 function Resume() {
-  return <a className="resume">resumé </a>;
+  return (
+    <a className="resume" target="_blank" href="/resume.pdf">
+      resumé{" "}
+    </a>
+  );
 }
 const contactInfo = ["Contact", <MailTo />, <Resume />];
 export default function Contact() {
