@@ -631,13 +631,14 @@ section.info {
 
 section.contact {
   // margin-top: -490px;
-  height: 350px;
+  height: 480px;
   .contentContainer {
     position: relative;
     .copyContainer {
       position: absolute;
       padding-left: 1.5rem;
       padding-top: 1.5rem;
+      padding-bottom: 4rem;
       left: 4px;
       .anchor {
         position: absolute;
@@ -727,21 +728,21 @@ section.contact {
             font-size: 1.4rem;
             position: absolute;
             top: -80px;
-            right: -30px;
+            right: 70px;
             width: 150px;
             height: 150px;
             border-radius: 100%;
-            background-color: #0f0f0f;
-            border: 2px solid white;
+            background-color: white;
+            // border: 2px solid white;
             line-height: 150px;
             text-align: center;
             transform: rotate(-12deg);
             transition: transform 0.2s ease;
             cursor: pointer;
             text-decoration: none;
-            color: white;
+            color: black;
             &:visited {
-              color: white;
+              color: black;
             }
 
             &:hover {

@@ -616,7 +616,7 @@ section.info .infoBody .aboutVerbiage--13 a:visited, section.info .infoBody .abo
 }
 
 section.contact {
-  height: 350px;
+  height: 480px;
 }
 
 section.contact .contentContainer {
@@ -627,6 +627,7 @@ section.contact .contentContainer .copyContainer {
   position: absolute;
   padding-left: 1.5rem;
   padding-top: 1.5rem;
+  padding-bottom: 4rem;
   left: 4px;
 }
 
@@ -730,12 +731,11 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a {
   font-size: 1.4rem;
   position: absolute;
   top: -80px;
-  right: -30px;
+  right: 70px;
   width: 150px;
   height: 150px;
   border-radius: 100%;
-  background-color: #0f0f0f;
-  border: 2px solid white;
+  background-color: white;
   line-height: 150px;
   text-align: center;
   -webkit-transform: rotate(-12deg);
@@ -746,11 +746,11 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a {
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
   cursor: pointer;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--2 a:visited {
-  color: white;
+  color: black;
 }
 
 section.contact .contentContainer .copyContainer .contactInfo--2 a:hover {
