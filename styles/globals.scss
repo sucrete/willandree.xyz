@@ -2520,13 +2520,13 @@ $smallWidth: 390px;
                 font-size: 0.9rem;
                 img {
                   height: 17px;
-                  margin-bottom: 20px;
+                  // margin-bottom: 20px;
                   &:nth-of-type(1) {
-                    margin-bottom: 20px;
+                    margin-bottom: 12px;
                   }
                   &:nth-of-type(2) {
                     height: 21px;
-                    margin-bottom: 14px;
+                    margin-bottom: 8px;
                   }
                 }
               }

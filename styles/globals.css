@@ -2595,14 +2595,13 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a img {
   }
   section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img {
     height: 17px;
-    margin-bottom: 20px;
   }
   section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
   section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
     height: 21px;
-    margin-bottom: 14px;
+    margin-bottom: 8px;
   }
   section.info {
     width: 390px;
