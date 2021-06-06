@@ -108,9 +108,6 @@ export default function Contact() {
             >
               <img src="/linkedin.svg" alt="LinkedIn link image" />
             </a>
-            <a href="https://codepen.io/sucrete" className="codepenLink">
-              <img src="/3d-outlined-shape.svg" alt="Codepen link image" />
-            </a>
           </div>
         </div>
       </div>

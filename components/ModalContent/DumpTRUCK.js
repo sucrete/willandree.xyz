@@ -94,8 +94,8 @@ export default function DumpTRUCK() {
           <h1 className="modalHeaderLower">dumpTRUCK</h1>
           <div className="modalDetails">
             <p>
-              dumpTRUCK was created to be a lasting home for a of work from the
-              vanguard of"
+              dumpTRUCK was created to serve as a lasting home for a collection
+              of work from some of the preeminent artists of the "
               <a
                 href="https://www.artspace.com/magazine/interviews_features/trend_report/post_internet_art-52138"
                 target="
@@ -103,13 +103,21 @@ export default function DumpTRUCK() {
               >
                 post-internet art
               </a>
-              " . an unconventional chatroom called dump.fm. Like a chatroom, a
-              text
+              " era. dumpTRUCK takes it's name from{" "}
+              <a
+                href="https://sites.rhizome.org/surfclubs/#dump.fm"
+                target="_blank"
+              >
+                dump.fm
+              </a>
+              , an unconventional chatroom that allowed users to post arrays of
+              images
+              <span className="tech"> Created with React and Next.js.</span>
             </p>
 
             <a
               className="visitButton"
-              href="https://www.calvintodd.com"
+              href="https://dumptruck.vercel.app/"
               target="_blank"
             >
               visit
