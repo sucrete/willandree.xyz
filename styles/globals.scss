@@ -257,14 +257,14 @@ ul {
 section.navigation {
   padding-top: 2rem;
   padding-bottom: 5rem;
-  padding-left: 5px;
+  padding-left: 6px;
   padding-right: 5px;
   display: flex;
   color: white;
   justify-content: space-between;
   text-align: left;
   z-index: 11;
-  font-size: 2.1rem;
+  font-size: 2.3rem;
   font-family: "corporate condensed regular";
 
   .name {
@@ -276,8 +276,8 @@ section.navigation {
     }
     &:before {
       position: absolute;
-      bottom: -22px;
-      left: 0px;
+      bottom: -18px;
+      left: -3px;
       height: 1px;
       content: "";
       transition: 1.4s;
@@ -296,7 +296,7 @@ section.navigation {
       }
       to {
         opacity: 1;
-        width: 96%;
+        width: 97%;
       }
     }
   }
@@ -314,9 +314,9 @@ section.navigation {
     li {
       position: absolute;
       font-family: "drucc";
-      font-size: 1.7rem;
-      right: 15px;
-      bottom: 38px;
+      font-size: 1.5rem;
+      right: 10px;
+      bottom: 37px;
       opacity: 0;
       animation-timing-function: ease-in-out;
     }
@@ -360,11 +360,13 @@ section.navigation {
 
 section.header {
   color: white;
-  font-family: "drucc", serif;
-  font-size: 4rem;
-  line-height: 1;
+  font-family: "Epilogue", serif;
+  font-size: 2.5rem;
+  line-height: 1.1;
   font-weight: 500;
   padding-top: 0.5rem;
+  padding-left: 0.6rem;
+  padding-right: 3rem;
   // text-transform: capitalize;
   .descriptionContainer {
     position: relative;
@@ -373,7 +375,7 @@ section.header {
       position: relative;
       .dItem {
         position: relative;
-        height: 70px;
+        height: 44px;
         .dItemBaby {
           overflow: hidden;
         }
@@ -959,11 +961,12 @@ section.contact {
       .modalDetails {
         // background: rgb(245, 245, 245);
         border-radius: 15px;
-        padding: 4rem 3rem 3rem 3rem;
+        padding: 4rem 0rem 3rem 3rem;
         margin-right: 3rem;
         width: 26%;
         font-family: "Epilogue", sans-serif;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+        font-weight: 400;
         line-height: 125%;
         display: flex;
         flex-direction: column;
