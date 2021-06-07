@@ -2,19 +2,18 @@ import { useTrail, animated } from "react-spring";
 
 export default function Header() {
   const descriptionItems = [
-    "Front-end Developer/",
-    "Graphic Designer/ UX",
-    "Designer/ Student of",
-    "Novelty",
+    "front-end developer",
+    "graphic designer",
+    "UX designer",
+    "student of novelty",
   ];
 
   const trail = useTrail(descriptionItems.length, {
     config: { mass: 5, tension: 2000, friction: 220 },
-    opacity: 1,
     delay: 700,
     x: 0,
-    height: 110,
-    from: { opacity: 0, x: 10, height: 0 },
+    height: 80,
+    from: { x: 10, height: 0 },
   });
 
   return (

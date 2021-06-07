@@ -46,7 +46,7 @@ function Box1() {
 function Box2() {
   return (
     <div className="fonts">
-      <div>favorite fonts atm:</div>
+      <div>favorite fonts:</div>
       <img src="/editorialnew.svg" alt="editorial new font svg" />
       <img src="/rightgrotesk.svg" alt="right grotesk font svg" />
       <img src="/mincho.svg" alt="mincho font svg" />

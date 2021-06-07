@@ -16,21 +16,9 @@ $chartreuse: hsl(54, 77%, 75%);
   }
   box-shadow: $all;
 }
-.linksContainer {
-  a {
-    img {
-      height: 40px;
-      width: auto;
-      margin-right: 20px;
-      margin-top: 20px;
-    }
-  }
-  .linkedInLink {
-    padding-left: 3px;
-  }
-}
+
 .react-responsive-modal-closeButton {
-  top: 13px !important;
+  top: 12.5px !important;
 }
 @mixin slideShow($slideNumber, $uniqueName) {
   // time = total animation time
@@ -113,13 +101,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  background: linear-gradient(
-    to bottom,
-    hsla(330, 0%, 0%, 1),
-    cubic-bezier(0.02, 1, 0, 1),
-    hsla(210, 100%, 45%, 0)
-  );
-  background-color: hsl(0, 0%, 6%);
+
+  background-color: #224afb;
 }
 * {
   box-sizing: border-box;
@@ -152,7 +135,7 @@ section {
   }
 }
 .title {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-family: "drucc", serif;
 }
 .cursor {
@@ -281,7 +264,7 @@ section.navigation {
   justify-content: space-between;
   text-align: left;
   z-index: 11;
-  font-size: 2.8rem;
+  font-size: 2.1rem;
   font-family: "corporate condensed regular";
 
   .name {
@@ -293,12 +276,12 @@ section.navigation {
     }
     &:before {
       position: absolute;
-      bottom: -14px;
-      left: 4px;
-      height: 2px;
+      bottom: -22px;
+      left: 0px;
+      height: 1px;
       content: "";
-      transition: 0.3s;
-      background-color: white;
+      transition: 1.4s;
+      background-color: #ffffffe1;
       animation: 700ms lineAnim ease;
       animation-fill-mode: forwards;
       animation-delay: 1800ms;
@@ -308,37 +291,62 @@ section.navigation {
         opacity: 0;
         width: 0px;
       }
+      50% {
+        opacity: 0;
+      }
       to {
         opacity: 1;
-        width: 70px;
+        width: 96%;
       }
     }
   }
-  .cone {
-    height: 70px;
-    width: 77px;
-    position: relative;
-    right: 10px;
-    background: conic-gradient(
-      from 3.1416rad at 50% 50%,
-      black,
-      white 80%,
-      white
-    );
+  ul {
+    @include slideShow(3, "navigation");
+    position: absolute;
+    right: 15px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
     animation: 700ms coneAnim ease;
     animation-fill-mode: forwards;
     animation-delay: 2200ms;
     opacity: 0;
-    // box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
+    li {
+      position: absolute;
+      font-family: "drucc";
+      font-size: 1.7rem;
+      right: 15px;
+      bottom: 38px;
+      opacity: 0;
+      animation-timing-function: ease-in-out;
+    }
   }
+  // .cone {
+  //   height: 70px;
+  //   width: 77px;
+  //   position: relative;
+  //   right: 10px;
+  //   display: none;
+  //   background: conic-gradient(
+  //     from 3.1416rad at 50% 50%,
+  //     transparent,
+  //     white 80%,
+  //     white
+  //   );
+  //   animation: 700ms coneAnim ease;
+  //   animation-fill-mode: forwards;
+  //   animation-delay: 2200ms;
+  //   opacity: 0;
+  //   // box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.384);
+  // }
   @keyframes coneAnim {
     from {
       opacity: 0;
-      top: 5px;
+      bottom: 10px;
     }
     to {
       opacity: 1;
-      top: 25px;
+      bottom: 0px;
     }
   }
 }
@@ -352,11 +360,12 @@ section.navigation {
 
 section.header {
   color: white;
-  font-family: "Epilogue", serif;
-  font-size: 6.2rem;
-  line-height: 1.08;
+  font-family: "drucc", serif;
+  font-size: 4rem;
+  line-height: 1;
   font-weight: 500;
   padding-top: 0.5rem;
+  // text-transform: capitalize;
   .descriptionContainer {
     position: relative;
     left: 1.2rem;
@@ -364,7 +373,7 @@ section.header {
       position: relative;
       .dItem {
         position: relative;
-        height: 100px;
+        height: 70px;
         .dItemBaby {
           overflow: hidden;
         }
@@ -425,8 +434,8 @@ section.work {
           font-weight: 400;
           position: relative;
           border-radius: 599px;
-          color: black;
           height: 100%;
+          color: #224afb;
           width: 100%;
           padding: 20px 32px 14px 32px;
           transition: all 0.1s ease;
@@ -435,7 +444,7 @@ section.work {
           z-index: 99;
           &:hover {
             background: #b4c7f0;
-            color: black;
+            color: #224afb;
           }
         }
       }
@@ -458,6 +467,7 @@ section.work {
       justify-content: space-between;
       font-family: "Epilogue", sans-serif;
       font-size: 1rem;
+      font-weight: 600;
       z-index: 1;
       .leftContainer {
         width: 48%;
@@ -466,15 +476,15 @@ section.work {
         justify-content: space-between;
         position: relative;
         z-index: 2;
-        .boxItem {
+        div.boxItem {
           border-radius: 15px;
-          border: 2px solid $favoritesColor;
+          border: 1px solid #ffffffe1;
           height: 48%;
           padding: 2.2rem 2rem 2rem 2.4rem;
           position: relative;
           z-index: 3;
           font-size: 1rem;
-          .fonts {
+          div.fonts {
             div {
               padding-bottom: 1rem;
             }
@@ -501,12 +511,14 @@ section.work {
               padding-left: 2px;
               margin-top: 10px;
               font-size: 1.6rem;
+
               li {
                 line-height: 1.3;
                 font-family: "corporate condensed regular";
+                font-weight: 100;
                 a {
                   text-decoration: underline;
-                  text-decoration-color: darken($myGrey, 25%);
+                  text-decoration-color: #ffffff49;
                   color: $favoritesColor;
                   z-index: 12;
                   &:visited {
@@ -514,7 +526,7 @@ section.work {
                   }
                   &:hover {
                     color: #97b3f0;
-                    text-decoration-color: #97b3f06b;
+                    text-decoration-color: #97b3f05d;
                     cursor: none;
                   }
                 }
@@ -525,7 +537,7 @@ section.work {
       }
       .boxColumn {
         width: 48%;
-        border: 2px solid $favoritesColor;
+        border: 1px solid #ffffffe1;
         border-radius: 15px;
         padding: 2.2rem 2rem 2rem 2.4rem;
         position: relative;
@@ -538,6 +550,7 @@ section.work {
             li {
               font-size: 1.5rem;
               line-height: 1.25;
+              font-weight: 100;
               font-family: "corporate condensed regular";
             }
           }
@@ -606,11 +619,11 @@ section.info {
       &--14 {
         a {
           text-decoration: underline;
-          text-decoration-color: darken($myGrey, 25%);
+          text-decoration-color: #ffffff49;
           color: white;
           &:hover {
             color: #97b3f0 !important;
-            text-decoration-color: rgba(151, 179, 240, 0.42);
+            text-decoration-color: #97b3f05d;
           }
           &:visited {
             color: white;
@@ -739,9 +752,9 @@ section.contact {
             transition: transform 0.2s ease;
             cursor: pointer;
             text-decoration: none;
-            color: black;
+            color: #224afb;
             &:visited {
-              color: black;
+              color: #224afb;
             }
 
             &:hover {
@@ -753,6 +766,19 @@ section.contact {
               width: auto;
               top: 1px;
             }
+          }
+        }
+        &--3 {
+          a {
+            img {
+              height: 40px;
+              width: auto;
+              margin-right: 20px;
+              margin-top: 18px;
+            }
+          }
+          .linkedInLink {
+            padding-left: 3px;
           }
         }
       }
@@ -917,13 +943,12 @@ section.contact {
           position: relative;
           bottom: 2px;
           &--OTL {
-            background: rgb(255, 255, 141);
+            background: rgb(141, 255, 211);
             color: rgb(82, 57, 47);
           }
           &--maxRosen {
-            color: rgb(97, 90, 138);
-            background: rgb(243, 243, 243);
-            border: 1px solid rgb(97, 90, 138);
+            color: rgb(83, 81, 33);
+            background-color: rgb(243, 234, 157);
           }
           &--votr {
             color: red;
@@ -1478,6 +1503,13 @@ section.contact {
           margin-block-start: 0.9rem;
           p {
             font-size: 1rem;
+            font-weight: 600;
+            a {
+              color: black;
+              &:visited {
+                color: black;
+              }
+            }
           }
           .visitButton {
             margin-block-start: 1.5rem;

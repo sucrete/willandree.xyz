@@ -12,6 +12,17 @@ const schools = [
   "Savannah, GA",
   "Art and Architecture fundamentals",
 ];
+function LinkedIn() {
+  return (
+    <a
+      href="https://www.linkedin.com/in/william-andree/"
+      target="_blank"
+      className="linkedInLink"
+    >
+      <img src="/linkedin.svg" alt="LinkedIn link image" />
+    </a>
+  );
+}
 function MailTo() {
   return (
     <a className="mailTo" href="mailto:will@willandree.xyz">
@@ -26,7 +37,7 @@ function Resume() {
     </a>
   );
 }
-const contactInfo = ["Contact", <MailTo />, <Resume />];
+const contactInfo = ["Contact", <MailTo />, <Resume />, <LinkedIn />];
 export default function Contact() {
   const { ref, inView } = useInView({
     threshold: 1,
@@ -100,15 +111,6 @@ export default function Contact() {
               {contactInfo[index]}
             </animated.div>
           ))}
-          <div className="linksContainer">
-            <a
-              href="https://www.linkedin.com/in/william-andree/"
-              target="_blank"
-              className="linkedInLink"
-            >
-              <img src="/linkedin.svg" alt="LinkedIn link image" />
-            </a>
-          </div>
         </div>
       </div>
     </section>
