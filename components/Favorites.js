@@ -146,7 +146,7 @@ export default function Favorites() {
   const boxes = [<Box1 />, <Box2 />];
   const oneBox = [<Box3 />];
   const { ref, inView } = useInView({
-    threshold: 0.7,
+    threshold: 0.86,
     triggerOnce: true,
   });
   const trail = useTrail(boxes.length, {

@@ -2,17 +2,6 @@ import { useInView } from "react-intersection-observer";
 import { useTrail, animated } from "react-spring";
 
 const aboutVerbiage = [
-  "My name is Will Andrée and I'm a front-",
-  "end developer based in Kansas City.",
-  "My expertise lies in creating unique ",
-  "websites using JavaScript-driven ",
-  "technologies.",
-  <br />,
-  "Possessed of a lifelong love for art",
-  "and design, I am keenly drawn to the",
-  "challenges of creating singular user-",
-  "facing experiences.",
-  <br />,
   "In addition to my design work, I teach",
   "practical web development skills",
   <span>
@@ -25,10 +14,10 @@ const aboutVerbiage = [
   <br />,
   "If you are interested in using my",
   "development services, please, feel",
-  "free to reach out.",
+  "free to reach out. :^)",
 ];
 
-const aboutTitle = ["About"];
+const aboutTitle = ["about"];
 export default function Info() {
   const { ref, inView } = useInView({
     threshold: 0.45,

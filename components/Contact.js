@@ -37,7 +37,7 @@ function Resume() {
     </a>
   );
 }
-const contactInfo = ["Contact", <MailTo />, <Resume />, <LinkedIn />];
+const contactInfo = ["contact", <MailTo />, <Resume />, <LinkedIn />];
 export default function Contact() {
   const { ref, inView } = useInView({
     threshold: 1,
@@ -83,7 +83,7 @@ export default function Contact() {
                 top: x.interpolate((x) => `${x}px`),
               }}
             >
-              Education
+              education
             </animated.div>
           ))}
           <div ref={ref} className="anchor"></div>
