@@ -12,33 +12,8 @@ const schools = [
   "Savannah, GA",
   "Art and Architecture fundamentals",
 ];
-function LinkedIn() {
-  return (
-    <a
-      href="https://www.linkedin.com/in/william-andree/"
-      target="_blank"
-      className="linkedInLink"
-    >
-      <img src="/linkedin.svg" alt="LinkedIn link image" />
-    </a>
-  );
-}
-function MailTo() {
-  return (
-    <a className="mailTo" href="mailto:will@willandree.xyz">
-      will@willandree.xyz
-    </a>
-  );
-}
-function Resume() {
-  return (
-    <a className="resume" target="_blank" href="/resume.pdf">
-      resumé{" "}
-    </a>
-  );
-}
-const contactInfo = ["contact", <MailTo />, <Resume />, <LinkedIn />];
-export default function Contact() {
+
+export default function Education() {
   const { ref, inView } = useInView({
     threshold: 1,
     triggerOnce: true,
@@ -62,16 +37,16 @@ export default function Contact() {
   });
 
   // CONTACT SECTION 👇
-  const trail2 = useTrail(contactInfo.length, {
-    config: { mass: 6, tension: 2200, friction: 220 },
-    opacity: inView ? 1 : 0,
-    x: inView ? 0 : 10,
-    delay: 900,
-    from: { opacity: 0, x: 10 },
-  });
+  // const trail2 = useTrail(contactInfo.length, {
+  //   config: { mass: 6, tension: 2200, friction: 220 },
+  //   opacity: inView ? 1 : 0,
+  //   x: inView ? 0 : 10,
+  //   delay: 900,
+  //   from: { opacity: 0, x: 10 },
+  // });
 
   return (
-    <section id="contact" className="contact">
+    <div id="contact" className="contact">
       <div className="contentContainer">
         <div className="copyContainer">
           {trail.map(({ x, ...rest }, index) => (
@@ -86,7 +61,7 @@ export default function Contact() {
               education
             </animated.div>
           ))}
-          <div ref={ref} className="anchor"></div>
+
           {trail3.map(({ x, ...rest }, index) => (
             <animated.div
               className={`educationItem educationItem--${index}`}
@@ -99,7 +74,8 @@ export default function Contact() {
               {schools[index]}
             </animated.div>
           ))}
-          {trail2.map(({ x, ...rest }, index) => (
+
+          {/* {trail2.map(({ x, ...rest }, index) => (
             <animated.div
               className={`contactInfo contactInfo--${index}`}
               key={`contact${index}`}
@@ -110,9 +86,10 @@ export default function Contact() {
             >
               {contactInfo[index]}
             </animated.div>
-          ))}
+          ))} */}
         </div>
       </div>
-    </section>
+      <div ref={ref} className="anchor"></div>
+    </div>
   );
 }

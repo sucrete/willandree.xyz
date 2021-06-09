@@ -1,6 +1,31 @@
 import { useInView } from "react-intersection-observer";
 import { useTrail, animated } from "react-spring";
 
+function LinkedIn() {
+  return (
+    <a
+      href="https://www.linkedin.com/in/william-andree/"
+      target="_blank"
+      className="linkedInLink"
+    >
+      <img src="/linkedin.svg" alt="LinkedIn link image" />
+    </a>
+  );
+}
+function MailTo() {
+  return (
+    <a className="mailTo" href="mailto:will@willandree.xyz">
+      will@willandree.xyz
+    </a>
+  );
+}
+function Resume() {
+  return (
+    <a className="resume" target="_blank" href="/resume.pdf">
+      resumé{" "}
+    </a>
+  );
+}
 const aboutVerbiage = [
   "In addition to my design work, I teach",
   "practical web development skills",
@@ -15,9 +40,12 @@ const aboutVerbiage = [
   "If you are interested in using my",
   "development services, please, feel",
   "free to reach out. :^)",
+  <MailTo />,
+  <Resume />,
+  <LinkedIn />,
 ];
 
-const aboutTitle = ["about"];
+// const aboutTitle = ["about"];
 export default function Info() {
   const { ref, inView } = useInView({
     threshold: 0.45,
@@ -30,18 +58,18 @@ export default function Info() {
     x: inView ? 0 : 10,
     from: { opacity: 0, x: 10 },
   });
-  const trail1 = useTrail(aboutTitle.length, {
-    config: { mass: 5, tension: 2200, friction: 250 },
-    opacity: inView ? 1 : 0,
-    delay: 200,
-    x: inView ? 0 : 30,
-    from: { opacity: 0, x: 30 },
-  });
+  // const trail1 = useTrail(aboutTitle.length, {
+  //   config: { mass: 5, tension: 2200, friction: 250 },
+  //   opacity: inView ? 1 : 0,
+  //   delay: 200,
+  //   x: inView ? 0 : 30,
+  //   from: { opacity: 0, x: 30 },
+  // });
 
   return (
     <section className="info">
       <div ref={ref} className="infoBody">
-        {trail1.map(({ x, ...rest }, index) => (
+        {/* {trail1.map(({ x, ...rest }, index) => (
           <animated.div
             className="aboutHeader title"
             key={aboutTitle[index]}
@@ -52,7 +80,7 @@ export default function Info() {
           >
             {aboutTitle[index]}
           </animated.div>
-        ))}
+        ))} */}
         {trail.map(({ x, ...rest }, index) => (
           <animated.span
             className={`aboutVerbiage aboutVerbiage--${index}`}
@@ -65,10 +93,6 @@ export default function Info() {
             {aboutVerbiage[index]}
           </animated.span>
         ))}
-        {/* My name is Will Andrée and I'm a front-end developer based in Kansas
-        City. My expertise lies in sculpting unique websites on the industry's
-        fastest tech. I am an enthusiast of design, drawn to the hard task of
-        creating truly novel user experiences. */}
       </div>
     </section>
   );

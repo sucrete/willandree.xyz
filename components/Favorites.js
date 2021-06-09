@@ -163,7 +163,7 @@ export default function Favorites() {
     from: { opacity: 0, x: 40 },
   });
   return (
-    <div ref={ref} className="favorites">
+    <section ref={ref} className="favorites">
       <Cursor />
       <div className="favoritesContainer">
         {trail2.map(({ x, ...rest }, index) => (
@@ -193,6 +193,6 @@ export default function Favorites() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

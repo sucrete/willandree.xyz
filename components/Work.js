@@ -3,7 +3,7 @@ import { Modal } from "react-responsive-modal";
 import { useState } from "react";
 import { useTrail, animated } from "react-spring";
 
-import Favorites from "./Favorites";
+import Education from "./Education";
 
 import DumpTRUCKContent from "./ModalContent/DumpTRUCK";
 import MaxContent from "./ModalContent/MaxRosen";
@@ -90,7 +90,7 @@ export default function Work() {
     </Modal>
   );
   const { ref, inView } = useInView({
-    threshold: 0.8,
+    threshold: 0.6,
     triggerOnce: true,
   });
   const trail = useTrail(work.length, {
@@ -139,8 +139,9 @@ export default function Work() {
             </animated.span>
           ))}
         </div>
+        <Education />
       </div>
-      <Favorites />
+
       <MyModal bool={dumpTRUCK} closeFunction={functions.dt.c}>
         <DumpTRUCKContent />
       </MyModal>

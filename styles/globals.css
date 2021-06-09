@@ -53,7 +53,7 @@ section {
 }
 
 .title {
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   font-family: "drucc", serif;
 }
 
@@ -422,24 +422,20 @@ section.work {
   z-index: 20;
   color: white;
   padding-top: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  padding-left: 1.6rem;
+  padding-right: 0.5rem;
 }
 
 section.work .workContainer {
-  width: 520px;
-  margin-right: auto;
-  margin-left: 1rem;
   z-index: 1;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   top: 0px;
-  -webkit-transform: translateY(75px);
-          transform: translateY(75px);
 }
 
 section.work .workContainer .workBody {
@@ -454,7 +450,7 @@ section.work .workContainer .workBody .workHeader {
   display: block;
   line-height: 1.1;
   color: white;
-  padding-left: 1rem;
+  padding-left: 1.2rem;
 }
 
 section.work .workContainer .workBody .workItemContainer {
@@ -466,7 +462,7 @@ section.work .workContainer .workBody .workItemContainer {
 
 section.work .workContainer .workBody .workItemContainer span {
   font-family: "Epilogue", sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   position: relative;
   border-radius: 599px;
@@ -486,23 +482,21 @@ section.work .workContainer .workBody .workItemContainer span:hover {
   background: #b4c7f0;
 }
 
-section.work div.favorites {
+section.favorites {
   position: relative;
   z-index: 20;
   height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: translateY(150px);
-          transform: translateY(150px);
 }
 
-section.work div.favorites .favoritesContainer {
+section.favorites .favoritesContainer {
   position: relative;
   color: white;
   width: 495px;
   margin-left: auto;
-  margin-right: 1rem;
+  margin-right: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,7 +512,7 @@ section.work div.favorites .favoritesContainer {
   z-index: 1;
 }
 
-section.work div.favorites .favoritesContainer .leftContainer {
+section.favorites .favoritesContainer .leftContainer {
   width: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,8 +528,8 @@ section.work div.favorites .favoritesContainer .leftContainer {
   z-index: 2;
 }
 
-section.work div.favorites .favoritesContainer .leftContainer div.boxItem {
-  border-radius: 15px;
+section.favorites .favoritesContainer .leftContainer div.boxItem {
+  border-radius: 20px;
   border: 1px solid #ffffffe8;
   height: 48%;
   padding: 2.2rem 2rem 2rem 2.4rem;
@@ -544,45 +538,45 @@ section.work div.favorites .favoritesContainer .leftContainer div.boxItem {
   font-size: 1rem;
 }
 
-section.work div.favorites .favoritesContainer .leftContainer div.boxItem div.fonts div {
+section.favorites .favoritesContainer .leftContainer div.boxItem div.fonts div {
   padding-bottom: 1rem;
 }
 
-section.work div.favorites .favoritesContainer .leftContainer div.boxItem div.fonts img {
+section.favorites .favoritesContainer .leftContainer div.boxItem div.fonts img {
   height: 20px;
   width: auto;
   display: block;
   position: relative;
 }
 
-section.work div.favorites .favoritesContainer .leftContainer div.boxItem div.fonts img:nth-of-type(1) {
+section.favorites .favoritesContainer .leftContainer div.boxItem div.fonts img:nth-of-type(1) {
   margin-bottom: 14px;
 }
 
-section.work div.favorites .favoritesContainer .leftContainer div.boxItem div.fonts img:nth-of-type(2) {
+section.favorites .favoritesContainer .leftContainer div.boxItem div.fonts img:nth-of-type(2) {
   margin-bottom: 9px;
   height: 24px;
 }
 
-section.work div.favorites .favoritesContainer .leftContainer div.boxItem .designers {
+section.favorites .favoritesContainer .leftContainer div.boxItem .designers {
   z-index: 90;
   font-family: "Epilogue", sans-serif;
 }
 
-section.work div.favorites .favoritesContainer .leftContainer div.boxItem .designers ul {
+section.favorites .favoritesContainer .leftContainer div.boxItem .designers ul {
   list-style: none;
   padding-left: 2px;
   margin-top: 10px;
   font-size: 1.6rem;
 }
 
-section.work div.favorites .favoritesContainer .leftContainer div.boxItem .designers ul li {
+section.favorites .favoritesContainer .leftContainer div.boxItem .designers ul li {
   line-height: 1.3;
   font-family: "corporate condensed regular";
   font-weight: 100;
 }
 
-section.work div.favorites .favoritesContainer .leftContainer div.boxItem .designers ul li a {
+section.favorites .favoritesContainer .leftContainer div.boxItem .designers ul li a {
   text-decoration: underline;
   -webkit-text-decoration-color: #ffffff49;
           text-decoration-color: #ffffff49;
@@ -590,18 +584,18 @@ section.work div.favorites .favoritesContainer .leftContainer div.boxItem .desig
   z-index: 12;
 }
 
-section.work div.favorites .favoritesContainer .leftContainer div.boxItem .designers ul li a:visited {
+section.favorites .favoritesContainer .leftContainer div.boxItem .designers ul li a:visited {
   color: white;
 }
 
-section.work div.favorites .favoritesContainer .leftContainer div.boxItem .designers ul li a:hover {
+section.favorites .favoritesContainer .leftContainer div.boxItem .designers ul li a:hover {
   color: #97b3f0;
   -webkit-text-decoration-color: #97b3f05d;
           text-decoration-color: #97b3f05d;
   cursor: none;
 }
 
-section.work div.favorites .favoritesContainer .boxColumn {
+section.favorites .favoritesContainer .boxColumn {
   width: 48%;
   border: 1px solid #ffffffe8;
   border-radius: 15px;
@@ -609,34 +603,21 @@ section.work div.favorites .favoritesContainer .boxColumn {
   position: relative;
 }
 
-section.work div.favorites .favoritesContainer .boxColumn .skills {
+section.favorites .favoritesContainer .boxColumn .skills {
   font-size: 1rem;
 }
 
-section.work div.favorites .favoritesContainer .boxColumn .skills ul {
+section.favorites .favoritesContainer .boxColumn .skills ul {
   list-style: none;
   padding-left: 1px;
   margin-top: 10px;
 }
 
-section.work div.favorites .favoritesContainer .boxColumn .skills ul li {
+section.favorites .favoritesContainer .boxColumn .skills ul li {
   font-size: 1.5rem;
   line-height: 1.25;
   font-weight: 100;
   font-family: "corporate condensed regular";
-}
-
-.lowerContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  width: 1077px;
-  margin: 0 auto;
-  padding-bottom: 5rem;
 }
 
 section.info {
@@ -700,40 +681,34 @@ section.info .infoBody .aboutVerbiage--13 a:visited, section.info .infoBody .abo
   color: white;
 }
 
-section.contact {
+div.contact {
+  margin-top: 150px;
   height: 480px;
+  width: 450px;
 }
 
-section.contact .contentContainer {
+div.contact .contentContainer {
   position: relative;
 }
 
-section.contact .contentContainer .copyContainer {
-  position: absolute;
-  padding-left: 1.5rem;
-  padding-top: 1.5rem;
-  padding-bottom: 4rem;
-  left: 4px;
-}
-
-section.contact .contentContainer .copyContainer .anchor {
+div.contact .contentContainer .copyContainer .anchor {
   position: absolute;
   visibility: hidden;
   height: 200px;
   bottom: 0px;
 }
 
-section.contact .contentContainer .copyContainer .educationHeader {
+div.contact .contentContainer .copyContainer .educationHeader {
   line-height: 1.1;
   color: white;
   z-index: 10;
   position: relative;
   -webkit-margin-after: 0.7rem;
           margin-block-end: 0.7rem;
-  font-size: 2.2rem;
+  font-size: 1.9rem;
 }
 
-section.contact .contentContainer .copyContainer .educationItem {
+div.contact .contentContainer .copyContainer .educationItem {
   font-family: "corporate condensed regular";
   font-size: 1.6rem;
   line-height: 1.1;
@@ -743,35 +718,35 @@ section.contact .contentContainer .copyContainer .educationItem {
   padding-left: 0.1rem;
 }
 
-section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
+div.contact .contentContainer .copyContainer .educationItem--0, div.contact .contentContainer .copyContainer .educationItem--3, div.contact .contentContainer .copyContainer .educationItem--6 {
   font-family: "Epilogue", sans-serif;
   font-size: 1.6rem;
 }
 
-section.contact .contentContainer .copyContainer .educationItem--1, section.contact .contentContainer .copyContainer .educationItem--4, section.contact .contentContainer .copyContainer .educationItem--7 {
+div.contact .contentContainer .copyContainer .educationItem--1, div.contact .contentContainer .copyContainer .educationItem--4, div.contact .contentContainer .copyContainer .educationItem--7 {
   margin-top: -3px;
 }
 
-section.contact .contentContainer .copyContainer .educationItem--2, section.contact .contentContainer .copyContainer .educationItem--5, section.contact .contentContainer .copyContainer .educationItem--8 {
+div.contact .contentContainer .copyContainer .educationItem--2, div.contact .contentContainer .copyContainer .educationItem--5, div.contact .contentContainer .copyContainer .educationItem--8 {
   -webkit-margin-after: 1.5rem;
           margin-block-end: 1.5rem;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo {
+div.contact .contentContainer .copyContainer .contactInfo {
   line-height: 1.1;
   color: white;
   position: relative;
   z-index: 10;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--0 {
+div.contact .contentContainer .copyContainer .contactInfo--0 {
   font-size: 2.4rem;
   font-family: "drucc", serif;
   -webkit-margin-after: 0.7rem;
           margin-block-end: 0.7rem;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--1 {
+div.contact .contentContainer .copyContainer .contactInfo--1 {
   font-family: "Epilogue", sans-serif;
   font-size: 1.6rem;
   position: relative;
@@ -779,13 +754,13 @@ section.contact .contentContainer .copyContainer .contactInfo--1 {
           margin-block-end: 0.2rem;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--1 a {
+div.contact .contentContainer .copyContainer .contactInfo--1 a {
   -webkit-text-decoration-color: rgba(255, 255, 255, 0.42);
           text-decoration-color: rgba(255, 255, 255, 0.42);
   color: white;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--1 a img {
+div.contact .contentContainer .copyContainer .contactInfo--1 a img {
   -webkit-transform: translate(5%, 10%);
           transform: translate(5%, 10%);
   width: 21px;
@@ -793,25 +768,25 @@ section.contact .contentContainer .copyContainer .contactInfo--1 a img {
   position: relative;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
+div.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
   color: white;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--1 a:hover {
+div.contact .contentContainer .copyContainer .contactInfo--1 a:hover {
   color: #97b3f0;
   -webkit-text-decoration-color: rgba(151, 179, 240, 0.42);
           text-decoration-color: rgba(151, 179, 240, 0.42);
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--1 a:hover img {
+div.contact .contentContainer .copyContainer .contactInfo--1 a:hover img {
   visibility: visible;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--2 {
+div.contact .contentContainer .copyContainer .contactInfo--2 {
   width: 100%;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--2 a {
+div.contact .contentContainer .copyContainer .contactInfo--2 a {
   font-family: "Epilogue", sans-serif;
   font-size: 1.4rem;
   position: absolute;
@@ -834,30 +809,30 @@ section.contact .contentContainer .copyContainer .contactInfo--2 a {
   color: #224afb;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--2 a:visited {
+div.contact .contentContainer .copyContainer .contactInfo--2 a:visited {
   color: #224afb;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--2 a:hover {
+div.contact .contentContainer .copyContainer .contactInfo--2 a:hover {
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--2 a img {
+div.contact .contentContainer .copyContainer .contactInfo--2 a img {
   position: relative;
   height: 15px;
   width: auto;
   top: 1px;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--3 a img {
+div.contact .contentContainer .copyContainer .contactInfo--3 a img {
   height: 40px;
   width: auto;
   margin-right: 20px;
   margin-top: 18px;
 }
 
-section.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
+div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   padding-left: 3px;
 }
 
