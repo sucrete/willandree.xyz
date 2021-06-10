@@ -46,7 +46,7 @@ function Box1() {
 function Box2() {
   return (
     <div className="fonts">
-      <div>favorite fonts:</div>
+      <div>favorite fonts rn:</div>
       <img src="/editorialnew.svg" alt="editorial new font svg" />
       <img src="/rightgrotesk.svg" alt="right grotesk font svg" />
       <img src="/mincho.svg" alt="mincho font svg" />
@@ -146,7 +146,7 @@ export default function Favorites() {
   const boxes = [<Box1 />, <Box2 />];
   const oneBox = [<Box3 />];
   const { ref, inView } = useInView({
-    threshold: 0.86,
+    threshold: 0.6,
     triggerOnce: true,
   });
   const trail = useTrail(boxes.length, {

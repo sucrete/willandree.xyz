@@ -27,16 +27,16 @@ function Resume() {
   );
 }
 const aboutVerbiage = [
-  "In addition to my design work, I teach",
-  "practical web development skills",
+  "In addition to my design work I",
+  "teach practical web development",
   <span>
     through{" "}
     <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
       Nucamp Coding Bootcamp.
     </a>
   </span>,
-  <a href="https://www.nucamp.co/" target="_blank" className="nucamp"></a>,
   <br />,
+  <a href="https://www.nucamp.co/" target="_blank" className="nucamp"></a>,
   "If you are interested in using my",
   "development services, please, feel",
   "free to reach out. :^)",
@@ -48,7 +48,7 @@ const aboutVerbiage = [
 // const aboutTitle = ["about"];
 export default function Info() {
   const { ref, inView } = useInView({
-    threshold: 0.45,
+    threshold: 0.2,
     triggerOnce: true,
   });
   const trail = useTrail(aboutVerbiage.length, {

@@ -1,21 +1,9 @@
 import { useTrail, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
 
-const schools = [
-  "LaunchCodeKC",
-  "Kansas City, MO",
-  "Computer Science/Front-End Development",
-  "Drury University",
-  "Springfield, MO",
-  "Art History with an emphasis on the History of Architecture",
-  "SCAD",
-  "Savannah, GA",
-  "Art and Architecture fundamentals",
-];
-
 export default function Education() {
   const { ref, inView } = useInView({
-    threshold: 1,
+    threshold: 0.9,
     triggerOnce: true,
   });
   // EDUCATION HEADER 👇
@@ -26,7 +14,17 @@ export default function Education() {
     delay: 200,
     from: { opacity: 0, x: 10 },
   });
-
+  const schools = [
+    "LaunchCodeKC",
+    "Kansas City, MO",
+    "Computer Science/Front-End Development",
+    "Drury University",
+    "Springfield, MO",
+    "Art History with an emphasis on the History of Architecture",
+    "SCAD",
+    "Savannah, GA",
+    "Art and Architecture fundamentals",
+  ];
   // SCHOOLS 👇
   const trail3 = useTrail(schools.length, {
     config: { mass: 5, tension: 2200, friction: 220 },
@@ -47,7 +45,7 @@ export default function Education() {
 
   return (
     <div id="contact" className="contact">
-      <div className="contentContainer">
+      <div ref={ref} className="contentContainer">
         <div className="copyContainer">
           {trail.map(({ x, ...rest }, index) => (
             <animated.div
@@ -89,7 +87,6 @@ export default function Education() {
           ))} */}
         </div>
       </div>
-      <div ref={ref} className="anchor"></div>
     </div>
   );
 }
