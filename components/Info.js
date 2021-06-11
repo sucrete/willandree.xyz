@@ -54,7 +54,7 @@ const aboutVerbiage = [
 // const aboutTitle = ["about"];
 export default function Info() {
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: 0.4,
     triggerOnce: true,
   });
   const trail = useTrail(aboutVerbiage.length, {

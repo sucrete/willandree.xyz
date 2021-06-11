@@ -498,7 +498,7 @@ section.favorites .favoritesContainer {
   color: white;
   width: 495px;
   margin-left: auto;
-  margin-right: 2rem;
+  margin-right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,15 +645,17 @@ section.info {
   padding-top: 3rem;
   height: auto;
   overflow: visible;
-  -webkit-transform: translateY(-5rem);
-          transform: translateY(-5rem);
+  -webkit-transform: translateY(-35rem);
+          transform: translateY(-35rem);
+  z-index: 99;
 }
 
 section.info .infoBody {
   width: 500px;
-  margin-left: 1.5rem;
+  margin-left: 2.5rem;
   margin-right: auto;
   position: relative;
+  padding-bottom: 9rem;
 }
 
 section.info .infoBody .aboutVerbiage {
@@ -694,6 +696,41 @@ section.info .infoBody .aboutVerbiage span a.mailTo:visited {
 
 section.info .infoBody .aboutVerbiage span img {
   height: 33px;
+}
+
+section.info .infoBody .aboutVerbiage--9 {
+  margin-bottom: 1rem;
+}
+
+section.info .infoBody .aboutVerbiage--10 {
+  display: inline;
+}
+
+section.info .infoBody .aboutVerbiage--10 a.resume {
+  padding: 10px 24px;
+  background: white;
+  color: #224afb;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+section.info .infoBody .aboutVerbiage--10 a.resume:visited {
+  color: #224afb;
+}
+
+section.info .infoBody .aboutVerbiage--11 {
+  display: inline;
+  line-height: 38px;
+  margin-left: 10px;
+}
+
+section.info .infoBody .aboutVerbiage--11 a.linkedInLink img {
+  position: absolute;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  left: 0px;
+  height: 40px;
 }
 
 div.contact {

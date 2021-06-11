@@ -471,7 +471,7 @@ section.favorites {
     color: $favoritesColor;
     width: 495px;
     margin-left: auto;
-    margin-right: 2rem;
+    margin-right: 1rem;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -598,12 +598,14 @@ section.info {
   padding-top: 3rem;
   height: auto;
   overflow: visible;
-  transform: translateY(-5rem);
+  transform: translateY(-35rem);
+  z-index: 99;
   .infoBody {
     width: 500px;
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
     margin-right: auto;
     position: relative;
+    padding-bottom: 9rem;
     .aboutVerbiage {
       width: 100%;
       position: relative;
@@ -628,8 +630,39 @@ section.info {
             color: white;
           }
         }
+
         img {
           height: 33px;
+        }
+      }
+      &--9 {
+        margin-bottom: 1rem;
+      }
+      &--10 {
+        display: inline;
+        a.resume {
+          padding: 10px 24px;
+          background: white;
+          color: #224afb;
+          border-radius: 6px;
+          font-size: 1.2rem;
+          text-decoration: none;
+          &:visited {
+            color: #224afb;
+          }
+        }
+      }
+      &--11 {
+        display: inline;
+        line-height: 38px;
+        margin-left: 10px;
+        a.linkedInLink {
+          img {
+            position: absolute;
+            transform: translateY(4px);
+            left: 0px;
+            height: 40px;
+          }
         }
       }
     }
