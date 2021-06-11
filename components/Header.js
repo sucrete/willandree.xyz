@@ -15,7 +15,7 @@ export default function Header() {
     delay: 200,
     x: 0,
     height: 44,
-    from: { x: 40, height: 0 },
+    from: { x: 30, height: 0 },
   });
 
   return (

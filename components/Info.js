@@ -14,9 +14,12 @@ function LinkedIn() {
 }
 function MailTo() {
   return (
-    <a className="mailTo" href="mailto:will@willandree.xyz">
-      will@willandree.xyz
-    </a>
+    <span>
+      →{" "}
+      <a className="mailTo" href="mailto:will@willandree.xyz">
+        will@willandree.xyz
+      </a>
+    </span>
   );
 }
 function Resume() {
@@ -27,19 +30,22 @@ function Resume() {
   );
 }
 const aboutVerbiage = [
-  "In addition to my design work I",
-  "teach practical web development",
+  "In addition to my design",
+  "work I teach practical",
   <span>
-    through{" "}
+    web development skills through{" "}
     <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
       Nucamp Coding Bootcamp.
     </a>
   </span>,
   <br />,
   <a href="https://www.nucamp.co/" target="_blank" className="nucamp"></a>,
-  "If you are interested in using my",
-  "development services, please, feel",
-  "free to reach out. :^)",
+  "If you are interested in",
+  " using my development",
+  "services, please, feel",
+  <span>
+    free to reach out. <img src="/peace.svg" />
+  </span>,
   <MailTo />,
   <Resume />,
   <LinkedIn />,
