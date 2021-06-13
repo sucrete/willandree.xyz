@@ -1790,14 +1790,30 @@ div.contact {
       margin-right: auto;
       .name {
         &:before {
-          height: 2px;
+          height: 1px;
+          animation: 700ms lineAnim77 ease;
+          animation-fill-mode: forwards;
+          animation-delay: 1800ms;
+        }
+        @keyframes lineAnim77 {
+          from {
+            opacity: 0;
+            width: 0px;
+          }
+          50% {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+            width: 100%;
+          }
         }
       }
-      .cone {
-        width: 75px;
-        height: 63.63;
-        right: 15px;
-        transform: translateY(-3px);
+      ul {
+        right: 0px;
+        li {
+          right: -4px;
+        }
       }
     }
     &.header {
@@ -1805,18 +1821,19 @@ div.contact {
       font-size: 3rem;
       padding-bottom: 0rem;
       padding-right: 0rem;
+      padding-left: 0.4rem;
       .descriptionContainer {
         .description {
           .dItem {
-            height: 79px;
+            height: 55px;
           }
         }
       }
     }
     &.work {
       width: 800px;
-      padding-bottom: 8rem;
-      padding-top: 3rem;
+      padding-bottom: 5rem;
+      padding-top: 14rem;
       margin-left: auto;
       margin-right: auto;
       .workContainer {
@@ -1824,18 +1841,19 @@ div.contact {
         width: 800px;
         margin-left: auto;
         margin-right: auto;
+        flex-wrap: wrap;
         .workBody {
           width: 100%;
           margin-left: auto;
           margin-right: auto;
           .workHeader {
-            left: 36px;
+            left: 14px;
             font-size: 2rem;
             margin-block-end: 0.7rem;
           }
           .workItemContainer {
             margin-bottom: -25px;
-            width: 700px;
+            width: 746px;
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -1844,19 +1862,23 @@ div.contact {
               display: block;
               border-radius: 0px;
               display: block;
-              border-bottom: solid 2px white;
+              border-bottom: solid 1px white;
+              border-right: unset;
+              border-left: unset;
+              border-top: unset;
               color: white;
-              padding-left: 2px;
+              padding-left: 5px;
               padding-right: 5px;
               padding-top: 22px;
               padding-bottom: 15px;
               background: transparent;
+              box-shadow: unset;
               &:before {
                 content: url("../public/expand-button.svg");
                 position: absolute;
                 width: auto;
                 background-color: transparent;
-                right: -10px;
+                right: -8px;
                 top: -14px;
                 opacity: 0;
                 transition: all 100ms ease;
@@ -1866,7 +1888,7 @@ div.contact {
                 position: absolute;
                 width: auto;
                 background-color: transparent;
-                right: -10px;
+                right: -8px;
                 top: -14px;
                 opacity: 1;
                 transition: all 100ms ease;
@@ -1875,8 +1897,8 @@ div.contact {
                 border-top: solid 0px transparent;
                 border-left: solid 0px transparent;
                 border-right: solid 0px transparent;
-                border-bottom: solid 2px white;
-                color: $chartreuse;
+                border-bottom: solid 1px white;
+                color: #b4c7f0;
                 background: transparent;
                 &:before {
                   opacity: 1;
@@ -1888,7 +1910,38 @@ div.contact {
             }
             &.dtContainer {
               span {
-                border-top: solid 2px white;
+                border-top: solid 1px white;
+              }
+            }
+          }
+        }
+        div.contact {
+          width: 800px;
+          height: unset;
+          margin-top: 100px;
+          .contentContainer {
+            width: 730px;
+            margin-left: auto;
+            margin-right: auto;
+            .copyContainer {
+              .educationItem {
+                font-size: 2rem;
+                // TITLE OF SCHOOL
+                &--0,
+                &--3,
+                &--6 {
+                  font-size: 2rem;
+                }
+                &--1,
+                &--4,
+                &--7 {
+                  margin-top: -3px;
+                }
+                &--2,
+                &--5,
+                &--8 {
+                  margin-block-end: 1.5rem;
+                }
               }
             }
           }

@@ -1991,28 +1991,60 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     margin-right: auto;
   }
   section.navigation .name:before {
-    height: 2px;
+    height: 1px;
+    -webkit-animation: 700ms lineAnim77 ease;
+            animation: 700ms lineAnim77 ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 1800ms;
+            animation-delay: 1800ms;
   }
-  section.navigation .cone {
-    width: 75px;
-    height: 63.63;
-    right: 15px;
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+  @-webkit-keyframes lineAnim77 {
+    from {
+      opacity: 0;
+      width: 0px;
+    }
+    50% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  @keyframes lineAnim77 {
+    from {
+      opacity: 0;
+      width: 0px;
+    }
+    50% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  section.navigation ul {
+    right: 0px;
+  }
+  section.navigation ul li {
+    right: -4px;
   }
   section.header {
     width: 750px;
     font-size: 3rem;
     padding-bottom: 0rem;
     padding-right: 0rem;
+    padding-left: 0.4rem;
   }
   section.header .descriptionContainer .description .dItem {
-    height: 79px;
+    height: 55px;
   }
   section.work {
     width: 800px;
-    padding-bottom: 8rem;
-    padding-top: 3rem;
+    padding-bottom: 5rem;
+    padding-top: 14rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2020,6 +2052,8 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   section.work .workContainer .workBody {
     width: 100%;
@@ -2027,14 +2061,14 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     margin-right: auto;
   }
   section.work .workContainer .workBody .workHeader {
-    left: 36px;
+    left: 14px;
     font-size: 2rem;
     -webkit-margin-after: 0.7rem;
             margin-block-end: 0.7rem;
   }
   section.work .workContainer .workBody .workItemContainer {
     margin-bottom: -25px;
-    width: 700px;
+    width: 746px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -2044,20 +2078,25 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     display: block;
     border-radius: 0px;
     display: block;
-    border-bottom: solid 2px white;
+    border-bottom: solid 1px white;
+    border-right: unset;
+    border-left: unset;
+    border-top: unset;
     color: white;
-    padding-left: 2px;
+    padding-left: 5px;
     padding-right: 5px;
     padding-top: 22px;
     padding-bottom: 15px;
     background: transparent;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
   }
   section.work .workContainer .workBody .workItemContainer span:before {
     content: url("../public/expand-button.svg");
     position: absolute;
     width: auto;
     background-color: transparent;
-    right: -10px;
+    right: -8px;
     top: -14px;
     opacity: 0;
     -webkit-transition: all 100ms ease;
@@ -2068,7 +2107,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     position: absolute;
     width: auto;
     background-color: transparent;
-    right: -10px;
+    right: -8px;
     top: -14px;
     opacity: 1;
     -webkit-transition: all 100ms ease;
@@ -2078,8 +2117,8 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     border-top: solid 0px transparent;
     border-left: solid 0px transparent;
     border-right: solid 0px transparent;
-    border-bottom: solid 2px white;
-    color: #f0e78e;
+    border-bottom: solid 1px white;
+    color: #b4c7f0;
     background: transparent;
   }
   section.work .workContainer .workBody .workItemContainer span:hover:before {
@@ -2089,7 +2128,30 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     opacity: 0;
   }
   section.work .workContainer .workBody .workItemContainer.dtContainer span {
-    border-top: solid 2px white;
+    border-top: solid 1px white;
+  }
+  section.work .workContainer div.contact {
+    width: 800px;
+    height: unset;
+    margin-top: 100px;
+  }
+  section.work .workContainer div.contact .contentContainer {
+    width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section.work .workContainer div.contact .contentContainer .copyContainer .educationItem {
+    font-size: 2rem;
+  }
+  section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--0, section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--3, section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--6 {
+    font-size: 2rem;
+  }
+  section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--1, section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--4, section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--7 {
+    margin-top: -3px;
+  }
+  section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--2, section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--5, section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--8 {
+    -webkit-margin-after: 1.5rem;
+            margin-block-end: 1.5rem;
   }
   section.work div.favorites {
     padding-top: 1rem;

@@ -60,10 +60,10 @@ function MobileHeader() {
     "in creating unique websites ",
     "using JavaScript-driven ",
     "technologies. Possessed of a",
-    "lifelong love for art and design,",
-    "I am keenly drawn to the",
-    "challenges of creating singular",
-    "creating singular user-facing",
+    "lifelong love for art and",
+    "design, I am keenly drawn to",
+    "the challenges of creating",
+    "singular user-facing",
     "experiences...",
   ];
 
@@ -71,7 +71,7 @@ function MobileHeader() {
     config: { mass: 5, tension: 2000, friction: 200 },
     delay: 200,
     x: 0,
-    height: 30,
+    height: 50,
     from: { x: 20, height: 0 },
   });
   return (

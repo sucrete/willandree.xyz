@@ -39,7 +39,6 @@ export default function Navigation() {
         ))}
       </span>
       <ul>{aboutMeList}</ul>
-      <span className="cone"></span>
     </section>
   );
 }
