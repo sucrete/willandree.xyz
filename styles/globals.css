@@ -734,15 +734,15 @@ section.info .infoBody .aboutVerbiage span img {
   height: 32px;
 }
 
-section.info .infoBody .aboutVerbiage--9 {
+section.info .infoBody .aboutVerbiage--10 {
   margin-bottom: 1rem;
 }
 
-section.info .infoBody .aboutVerbiage--10 {
+section.info .infoBody .aboutVerbiage--11 {
   display: inline;
 }
 
-section.info .infoBody .aboutVerbiage--10 a.resume {
+section.info .infoBody .aboutVerbiage--11 a.resume {
   padding: 10px 24px;
   background: white;
   color: #224afb;
@@ -751,17 +751,17 @@ section.info .infoBody .aboutVerbiage--10 a.resume {
   text-decoration: none;
 }
 
-section.info .infoBody .aboutVerbiage--10 a.resume:visited {
+section.info .infoBody .aboutVerbiage--11 a.resume:visited {
   color: #224afb;
 }
 
-section.info .infoBody .aboutVerbiage--11 {
+section.info .infoBody .aboutVerbiage--12 {
   display: inline;
   line-height: 38px;
   margin-left: 10px;
 }
 
-section.info .infoBody .aboutVerbiage--11 a.linkedInLink img {
+section.info .infoBody .aboutVerbiage--12 a.linkedInLink img {
   position: absolute;
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
@@ -2004,6 +2004,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     width: 750px;
     font-size: 3rem;
     padding-bottom: 0rem;
+    padding-right: 0rem;
   }
   section.header .descriptionContainer .description .dItem {
     height: 79px;
@@ -2681,13 +2682,13 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   }
   section.header {
     width: 390px;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
   }
   section.header .descriptionContainer {
     left: 0px;
   }
   section.header .descriptionContainer .description .dItem {
-    height: 40px;
+    height: 30px;
   }
   section.work {
     width: 390px;

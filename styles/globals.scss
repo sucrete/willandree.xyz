@@ -662,10 +662,10 @@ section.info {
           height: 32px;
         }
       }
-      &--9 {
+      &--10 {
         margin-bottom: 1rem;
       }
-      &--10 {
+      &--11 {
         display: inline;
         a.resume {
           padding: 10px 24px;
@@ -679,7 +679,7 @@ section.info {
           }
         }
       }
-      &--11 {
+      &--12 {
         display: inline;
         line-height: 38px;
         margin-left: 10px;
@@ -1804,6 +1804,7 @@ div.contact {
       width: 750px;
       font-size: 3rem;
       padding-bottom: 0rem;
+      padding-right: 0rem;
       .descriptionContainer {
         .description {
           .dItem {
@@ -2527,12 +2528,12 @@ $smallWidth: 390px;
     }
     &.header {
       width: $smallWidth;
-      font-size: 2.25rem;
+      font-size: 1.5rem;
       .descriptionContainer {
         left: 0px;
         .description {
           .dItem {
-            height: 40px;
+            height: 30px;
           }
         }
       }

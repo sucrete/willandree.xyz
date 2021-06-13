@@ -32,8 +32,9 @@ function Resume() {
 const aboutVerbiage = [
   "In addition to my design",
   "work I teach practical",
+  "web development skills",
   <span>
-    web development skills through{" "}
+    through{" "}
     <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
       Nucamp Coding Bootcamp.
     </a>

@@ -11,7 +11,7 @@ function getWindowDimensions() {
 function DesktopHeader() {
   var descriptionItems = [
     <span>
-      <span className="hola">Hola.</span> My name is Will and I'm a front-end
+      <span className="hola">Hola!</span> My name is Will and I'm a front-end
       developer
     </span>,
     "based in Kansas City. My expertise lies in creating",
@@ -53,22 +53,26 @@ function DesktopHeader() {
 function MobileHeader() {
   var descriptionItems = [
     <span>
-      <span className="hola">Hola!</span> My name is Will and I'm a front-end
-      developer
+      <span className="hola">Hola!</span> My name is Will and I'm a
     </span>,
-    "based in Kansas City. My expertise lies in creating",
-    "unique websites using JavaScript-driven",
-    "technologies. Possessed of a lifelong love for art",
-    "and design, I am keenly drawn to the challenge of",
-    "creating singular user-facing experiences...",
+    "front-end developer based in",
+    "Kansas City. My expertise lies",
+    "in creating unique websites ",
+    "using JavaScript-driven ",
+    "technologies. Possessed of a",
+    "lifelong love for art and design,",
+    "I am keenly drawn to the",
+    "challenges of creating singular",
+    "creating singular user-facing",
+    "experiences...",
   ];
 
   const trail = useTrail(descriptionItems.length, {
     config: { mass: 5, tension: 2000, friction: 200 },
     delay: 200,
     x: 0,
-    height: 44,
-    from: { x: 30, height: 0 },
+    height: 30,
+    from: { x: 20, height: 0 },
   });
   return (
     <>
