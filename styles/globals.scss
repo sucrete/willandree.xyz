@@ -110,7 +110,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-weight: unset;
 }
-
+.hola {
+  // background-image: url("https://products.ls.graphics/mesh-gradients/images/37.-Light-Sky-Blue_1.jpg");
+  // background-repeat: no-repeat;
+  // background-size: 200% 200%;
+  // background-position: 100% 100%;
+  // animation: square 4s linear infinite;
+  // -webkit-background-clip: text;
+  // color: transparent;
+  // text-align: center;
+  // position: relative;
+}
+@keyframes square {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 section {
   width: 1077px;
   display: block;
@@ -632,7 +659,7 @@ section.info {
         }
 
         img {
-          height: 33px;
+          height: 32px;
         }
       }
       &--9 {
@@ -1775,7 +1802,7 @@ div.contact {
     }
     &.header {
       width: 750px;
-      font-size: 4.2rem;
+      font-size: 3rem;
       padding-bottom: 0rem;
       .descriptionContainer {
         .description {

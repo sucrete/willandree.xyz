@@ -34,6 +34,42 @@ body {
   font-weight: unset;
 }
 
+@-webkit-keyframes square {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes square {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
 section {
   width: 1077px;
   display: block;
@@ -695,7 +731,7 @@ section.info .infoBody .aboutVerbiage span a.mailTo:visited {
 }
 
 section.info .infoBody .aboutVerbiage span img {
-  height: 33px;
+  height: 32px;
 }
 
 section.info .infoBody .aboutVerbiage--9 {
@@ -1966,7 +2002,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   }
   section.header {
     width: 750px;
-    font-size: 4.2rem;
+    font-size: 3rem;
     padding-bottom: 0rem;
   }
   section.header .descriptionContainer .description .dItem {
