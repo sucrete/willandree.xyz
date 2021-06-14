@@ -1874,27 +1874,26 @@ div.contact {
               padding-right: 5px;
               padding-top: 22px;
               padding-bottom: 15px;
-              transition: all 0.3s ease;
               background: linear-gradient(
                 to bottom,
                 hsla(0, 0%, 100%, 0) 0%,
-                hsla(0, 0%, 100%, 0) 15%,
-                hsla(0, 0%, 100%, 0.002) 28.6%,
-                hsla(0, 0%, 100%, 0.006) 40.7%,
-                hsla(0, 0%, 100%, 0.015) 51.5%,
-                hsla(0, 0%, 100%, 0.03) 61%,
-                hsla(0, 0%, 100%, 0.052) 69.3%,
-                hsla(0, 0%, 100%, 0.082) 76.5%,
-                hsla(0, 0%, 100%, 0.123) 82.5%,
-                hsla(0, 0%, 100%, 0.175) 87.6%,
-                hsla(0, 0%, 100%, 0.24) 91.6%,
-                hsla(0, 0%, 100%, 0.319) 94.8%,
-                hsla(0, 0%, 100%, 0.415) 97.2%,
-                hsla(0, 0%, 100%, 0.527) 98.8%,
-                hsla(0, 0%, 100%, 0.659) 99.7%,
+                hsla(0, 0%, 100%, 0) 17.1%,
+                hsla(0, 0%, 100%, 0.002) 32.2%,
+                hsla(0, 0%, 100%, 0.006) 45.3%,
+                hsla(0, 0%, 100%, 0.015) 56.7%,
+                hsla(0, 0%, 100%, 0.03) 66.4%,
+                hsla(0, 0%, 100%, 0.052) 74.5%,
+                hsla(0, 0%, 100%, 0.082) 81.2%,
+                hsla(0, 0%, 100%, 0.123) 86.7%,
+                hsla(0, 0%, 100%, 0.175) 91%,
+                hsla(0, 0%, 100%, 0.24) 94.3%,
+                hsla(0, 0%, 100%, 0.319) 96.7%,
+                hsla(0, 0%, 100%, 0.415) 98.3%,
+                hsla(0, 0%, 100%, 0.527) 99.3%,
+                hsla(0, 0%, 100%, 0.659) 99.9%,
                 hsla(0, 0%, 100%, 0.81) 100%
               );
-              box-shadow: inset 0em 0.8em 20px 19px #224afb;
+              box-shadow: inset 0em 0.8em 20px 17px #224afb;
               &:before {
                 content: url("../public/expand-button.svg");
                 position: absolute;
@@ -1920,7 +1919,7 @@ div.contact {
                 border-left: solid 0px transparent;
                 border-right: solid 0px transparent;
                 border-bottom: solid 1px white;
-                box-shadow: inset 0em 0.8em 15px 12px #224afb;
+                box-shadow: unset;
                 background: linear-gradient(
                   to bottom,
                   hsla(0, 0%, 100%, 0) 0%,
