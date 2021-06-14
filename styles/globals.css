@@ -734,15 +734,15 @@ section.info .infoBody .aboutVerbiage span img {
   height: 32px;
 }
 
-section.info .infoBody .aboutVerbiage--10 {
-  margin-bottom: 1rem;
+section.info .infoBody .aboutVerbiage--7 {
+  margin-bottom: 0.5rem;
 }
 
-section.info .infoBody .aboutVerbiage--11 {
+section.info .infoBody .aboutVerbiage--8 {
   display: inline;
 }
 
-section.info .infoBody .aboutVerbiage--11 a.resume {
+section.info .infoBody .aboutVerbiage--8 a.resume {
   padding: 10px 24px;
   background: white;
   color: #224afb;
@@ -751,17 +751,17 @@ section.info .infoBody .aboutVerbiage--11 a.resume {
   text-decoration: none;
 }
 
-section.info .infoBody .aboutVerbiage--11 a.resume:visited {
+section.info .infoBody .aboutVerbiage--8 a.resume:visited {
   color: #224afb;
 }
 
-section.info .infoBody .aboutVerbiage--12 {
+section.info .infoBody .aboutVerbiage--9 {
   display: inline;
   line-height: 38px;
   margin-left: 10px;
 }
 
-section.info .infoBody .aboutVerbiage--12 a.linkedInLink img {
+section.info .infoBody .aboutVerbiage--9 a.linkedInLink img {
   position: absolute;
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
@@ -2093,6 +2093,8 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     padding-right: 5px;
     padding-top: 22px;
     padding-bottom: 15px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(15%, rgba(255, 255, 255, 0)), color-stop(28.6%, rgba(255, 255, 255, 0.002)), color-stop(40.7%, rgba(255, 255, 255, 0.006)), color-stop(51.5%, rgba(255, 255, 255, 0.015)), color-stop(61%, rgba(255, 255, 255, 0.03)), color-stop(69.3%, rgba(255, 255, 255, 0.052)), color-stop(76.5%, rgba(255, 255, 255, 0.082)), color-stop(82.5%, rgba(255, 255, 255, 0.123)), color-stop(87.6%, rgba(255, 255, 255, 0.175)), color-stop(91.6%, rgba(255, 255, 255, 0.24)), color-stop(94.8%, rgba(255, 255, 255, 0.319)), color-stop(97.2%, rgba(255, 255, 255, 0.415)), color-stop(98.8%, rgba(255, 255, 255, 0.527)), color-stop(99.7%, rgba(255, 255, 255, 0.659)), to(rgba(255, 255, 255, 0.81)));
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.002) 28.6%, rgba(255, 255, 255, 0.006) 40.7%, rgba(255, 255, 255, 0.015) 51.5%, rgba(255, 255, 255, 0.03) 61%, rgba(255, 255, 255, 0.052) 69.3%, rgba(255, 255, 255, 0.082) 76.5%, rgba(255, 255, 255, 0.123) 82.5%, rgba(255, 255, 255, 0.175) 87.6%, rgba(255, 255, 255, 0.24) 91.6%, rgba(255, 255, 255, 0.319) 94.8%, rgba(255, 255, 255, 0.415) 97.2%, rgba(255, 255, 255, 0.527) 98.8%, rgba(255, 255, 255, 0.659) 99.7%, rgba(255, 255, 255, 0.81) 100%);
     -webkit-box-shadow: inset 0em 0.8em 20px 19px #224afb;
@@ -2125,9 +2127,10 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     border-left: solid 0px transparent;
     border-right: solid 0px transparent;
     border-bottom: solid 1px white;
-    color: #b4c7f0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(8.6%, rgba(255, 255, 255, 0.006)), color-stop(17.4%, rgba(255, 255, 255, 0.023)), color-stop(26.3%, rgba(255, 255, 255, 0.051)), color-stop(35.3%, rgba(255, 255, 255, 0.088)), color-stop(44.1%, rgba(255, 255, 255, 0.135)), color-stop(52.8%, rgba(255, 255, 255, 0.189)), color-stop(61%, rgba(255, 255, 255, 0.251)), color-stop(68.8%, rgba(255, 255, 255, 0.319)), color-stop(76%, rgba(255, 255, 255, 0.393)), color-stop(82.5%, rgba(255, 255, 255, 0.472)), color-stop(88.2%, rgba(255, 255, 255, 0.555)), color-stop(92.9%, rgba(255, 255, 255, 0.641)), color-stop(96.5%, rgba(255, 255, 255, 0.729)), color-stop(98.9%, rgba(255, 255, 255, 0.819)), to(rgba(255, 255, 255, 0.91)));
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.006) 8.6%, rgba(255, 255, 255, 0.023) 17.4%, rgba(255, 255, 255, 0.051) 26.3%, rgba(255, 255, 255, 0.088) 35.3%, rgba(255, 255, 255, 0.135) 44.1%, rgba(255, 255, 255, 0.189) 52.8%, rgba(255, 255, 255, 0.251) 61%, rgba(255, 255, 255, 0.319) 68.8%, rgba(255, 255, 255, 0.393) 76%, rgba(255, 255, 255, 0.472) 82.5%, rgba(255, 255, 255, 0.555) 88.2%, rgba(255, 255, 255, 0.641) 92.9%, rgba(255, 255, 255, 0.729) 96.5%, rgba(255, 255, 255, 0.819) 98.9%, rgba(255, 255, 255, 0.91) 100%);
+    -webkit-box-shadow: inset 0em 0.8em 15px 12px #224afb;
+            box-shadow: inset 0em 0.8em 15px 12px #224afb;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(15%, rgba(255, 255, 255, 0.005)), color-stop(28.6%, rgba(255, 255, 255, 0.018)), color-stop(40.7%, rgba(255, 255, 255, 0.041)), color-stop(51.5%, rgba(255, 255, 255, 0.071)), color-stop(61%, rgba(255, 255, 255, 0.109)), color-stop(69.3%, rgba(255, 255, 255, 0.154)), color-stop(76.5%, rgba(255, 255, 255, 0.207)), color-stop(82.5%, rgba(255, 255, 255, 0.265)), color-stop(87.6%, rgba(255, 255, 255, 0.329)), color-stop(91.6%, rgba(255, 255, 255, 0.398)), color-stop(94.8%, rgba(255, 255, 255, 0.473)), color-stop(97.2%, rgba(255, 255, 255, 0.552)), color-stop(98.8%, rgba(255, 255, 255, 0.634)), color-stop(99.7%, rgba(255, 255, 255, 0.721)), to(rgba(255, 255, 255, 0.81)));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.005) 15%, rgba(255, 255, 255, 0.018) 28.6%, rgba(255, 255, 255, 0.041) 40.7%, rgba(255, 255, 255, 0.071) 51.5%, rgba(255, 255, 255, 0.109) 61%, rgba(255, 255, 255, 0.154) 69.3%, rgba(255, 255, 255, 0.207) 76.5%, rgba(255, 255, 255, 0.265) 82.5%, rgba(255, 255, 255, 0.329) 87.6%, rgba(255, 255, 255, 0.398) 91.6%, rgba(255, 255, 255, 0.473) 94.8%, rgba(255, 255, 255, 0.552) 97.2%, rgba(255, 255, 255, 0.634) 98.8%, rgba(255, 255, 255, 0.721) 99.7%, rgba(255, 255, 255, 0.81) 100%);
   }
   section.work div.workContainer .workBody .workItemContainer span:hover:before {
     opacity: 1;
@@ -2153,6 +2156,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   }
   section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--0, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--3, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--6 {
     font-size: 2.5rem;
+    font-weight: 500;
   }
   section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--1, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--4, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--7 {
     margin-top: -3px;
@@ -2256,11 +2260,11 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     width: 800px;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
-    margin-top: 7rem;
+    margin-top: 9rem;
     padding-top: 1rem;
   }
   section.info .infoBody {
-    width: 710px;
+    width: 736px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2271,13 +2275,32 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
             justify-content: unset;
     left: 0;
   }
+  section.info .infoBody .aboutVerbiage--8 a.resume {
+    padding: 11px 24px 10px 24px;
+    background: white;
+    color: #224afb;
+    border-radius: 6px;
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+  section.info .infoBody .aboutVerbiage--8 a.resume:visited {
+    color: #224afb;
+  }
+  section.info .infoBody .aboutVerbiage--9 {
+    margin-left: 1rem;
+  }
+  section.info .infoBody .aboutVerbiage--9 a.linkedInLink img {
+    width: 51px;
+    height: auto;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
   section.info .infoBody .aboutHeader {
     -webkit-margin-after: 0.8rem;
             margin-block-end: 0.8rem;
     left: 1px;
   }
   section.info .infoBody .aboutVerbiage--0 {
-    width: 97%;
     padding-top: 1.5rem;
   }
   section.contact {

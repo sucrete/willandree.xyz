@@ -40,29 +40,26 @@ function Resume() {
 
 function MobileInfo() {
   const aboutVerbiage1 = [
-    "In addition to my design",
-    "work I teach practical",
-    "web development skills",
+    "In addition to my design work I",
+    "teach practical web develop-",
     <span>
-      through{" "}
+      ment skills through{" "}
       <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
         Nucamp Coding Bootcamp.
       </a>
     </span>,
     <br />,
-    <a href="https://www.nucamp.co/" target="_blank" className="nucamp"></a>,
-    "If you are interested in",
-    " using my development",
-    "services, please, feel",
+    "If you are interested in using",
+    "my development services,",
+    "please, feel free to reach",
     <span>
-      free to reach out. <img src="/peace.svg" />
+      out. <MailTo />
     </span>,
-    <MailTo />,
     <Resume />,
     <LinkedIn />,
   ];
   const { ref, inView } = useInView({
-    threshold: 0.4,
+    threshold: 0.3,
     triggerOnce: true,
   });
   const trail = useTrail(aboutVerbiage1.length, {
