@@ -1990,6 +1990,9 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     margin-left: auto;
     margin-right: auto;
   }
+  section.navigation .name {
+    left: 0px;
+  }
   section.navigation .name:before {
     height: 1px;
     -webkit-animation: 700ms lineAnim77 ease;
@@ -2026,10 +2029,10 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     }
   }
   section.navigation ul {
-    right: 0px;
+    right: 10px;
   }
   section.navigation ul li {
-    right: -4px;
+    right: 0px;
   }
   section.header {
     width: 750px;
@@ -2038,42 +2041,45 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     padding-right: 0rem;
     padding-left: 0.4rem;
   }
+  section.header .descriptionContainer {
+    left: 0px;
+  }
   section.header .descriptionContainer .description .dItem {
     height: 55px;
   }
   section.work {
-    width: 800px;
-    padding-bottom: 5rem;
-    padding-top: 14rem;
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+    padding-left: unset;
     margin-left: auto;
     margin-right: auto;
   }
-  section.work .workContainer {
+  section.work div.workContainer {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  section.work .workContainer .workBody {
+  section.work div.workContainer .workBody {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-  section.work .workContainer .workBody .workHeader {
+  section.work div.workContainer .workBody .workHeader {
     left: 14px;
     font-size: 2rem;
     -webkit-margin-after: 0.7rem;
             margin-block-end: 0.7rem;
   }
-  section.work .workContainer .workBody .workItemContainer {
+  section.work div.workContainer .workBody .workItemContainer {
     margin-bottom: -25px;
     width: 746px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  section.work .workContainer .workBody .workItemContainer span {
+  section.work div.workContainer .workBody .workItemContainer span {
     font-size: 2rem;
     display: block;
     border-radius: 0px;
@@ -2087,11 +2093,12 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     padding-right: 5px;
     padding-top: 22px;
     padding-bottom: 15px;
-    background: transparent;
-    -webkit-box-shadow: unset;
-            box-shadow: unset;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(15%, rgba(255, 255, 255, 0)), color-stop(28.6%, rgba(255, 255, 255, 0.002)), color-stop(40.7%, rgba(255, 255, 255, 0.006)), color-stop(51.5%, rgba(255, 255, 255, 0.015)), color-stop(61%, rgba(255, 255, 255, 0.03)), color-stop(69.3%, rgba(255, 255, 255, 0.052)), color-stop(76.5%, rgba(255, 255, 255, 0.082)), color-stop(82.5%, rgba(255, 255, 255, 0.123)), color-stop(87.6%, rgba(255, 255, 255, 0.175)), color-stop(91.6%, rgba(255, 255, 255, 0.24)), color-stop(94.8%, rgba(255, 255, 255, 0.319)), color-stop(97.2%, rgba(255, 255, 255, 0.415)), color-stop(98.8%, rgba(255, 255, 255, 0.527)), color-stop(99.7%, rgba(255, 255, 255, 0.659)), to(rgba(255, 255, 255, 0.81)));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.002) 28.6%, rgba(255, 255, 255, 0.006) 40.7%, rgba(255, 255, 255, 0.015) 51.5%, rgba(255, 255, 255, 0.03) 61%, rgba(255, 255, 255, 0.052) 69.3%, rgba(255, 255, 255, 0.082) 76.5%, rgba(255, 255, 255, 0.123) 82.5%, rgba(255, 255, 255, 0.175) 87.6%, rgba(255, 255, 255, 0.24) 91.6%, rgba(255, 255, 255, 0.319) 94.8%, rgba(255, 255, 255, 0.415) 97.2%, rgba(255, 255, 255, 0.527) 98.8%, rgba(255, 255, 255, 0.659) 99.7%, rgba(255, 255, 255, 0.81) 100%);
+    -webkit-box-shadow: inset 0em 0.8em 20px 19px #224afb;
+            box-shadow: inset 0em 0.8em 20px 19px #224afb;
   }
-  section.work .workContainer .workBody .workItemContainer span:before {
+  section.work div.workContainer .workBody .workItemContainer span:before {
     content: url("../public/expand-button.svg");
     position: absolute;
     width: auto;
@@ -2102,7 +2109,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     -webkit-transition: all 100ms ease;
     transition: all 100ms ease;
   }
-  section.work .workContainer .workBody .workItemContainer span:after {
+  section.work div.workContainer .workBody .workItemContainer span:after {
     content: url("../public/expand-button2.svg");
     position: absolute;
     width: auto;
@@ -2113,94 +2120,135 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     -webkit-transition: all 100ms ease;
     transition: all 100ms ease;
   }
-  section.work .workContainer .workBody .workItemContainer span:hover {
+  section.work div.workContainer .workBody .workItemContainer span:hover {
     border-top: solid 0px transparent;
     border-left: solid 0px transparent;
     border-right: solid 0px transparent;
     border-bottom: solid 1px white;
     color: #b4c7f0;
-    background: transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(8.6%, rgba(255, 255, 255, 0.006)), color-stop(17.4%, rgba(255, 255, 255, 0.023)), color-stop(26.3%, rgba(255, 255, 255, 0.051)), color-stop(35.3%, rgba(255, 255, 255, 0.088)), color-stop(44.1%, rgba(255, 255, 255, 0.135)), color-stop(52.8%, rgba(255, 255, 255, 0.189)), color-stop(61%, rgba(255, 255, 255, 0.251)), color-stop(68.8%, rgba(255, 255, 255, 0.319)), color-stop(76%, rgba(255, 255, 255, 0.393)), color-stop(82.5%, rgba(255, 255, 255, 0.472)), color-stop(88.2%, rgba(255, 255, 255, 0.555)), color-stop(92.9%, rgba(255, 255, 255, 0.641)), color-stop(96.5%, rgba(255, 255, 255, 0.729)), color-stop(98.9%, rgba(255, 255, 255, 0.819)), to(rgba(255, 255, 255, 0.91)));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.006) 8.6%, rgba(255, 255, 255, 0.023) 17.4%, rgba(255, 255, 255, 0.051) 26.3%, rgba(255, 255, 255, 0.088) 35.3%, rgba(255, 255, 255, 0.135) 44.1%, rgba(255, 255, 255, 0.189) 52.8%, rgba(255, 255, 255, 0.251) 61%, rgba(255, 255, 255, 0.319) 68.8%, rgba(255, 255, 255, 0.393) 76%, rgba(255, 255, 255, 0.472) 82.5%, rgba(255, 255, 255, 0.555) 88.2%, rgba(255, 255, 255, 0.641) 92.9%, rgba(255, 255, 255, 0.729) 96.5%, rgba(255, 255, 255, 0.819) 98.9%, rgba(255, 255, 255, 0.91) 100%);
   }
-  section.work .workContainer .workBody .workItemContainer span:hover:before {
+  section.work div.workContainer .workBody .workItemContainer span:hover:before {
     opacity: 1;
   }
-  section.work .workContainer .workBody .workItemContainer span:hover:after {
+  section.work div.workContainer .workBody .workItemContainer span:hover:after {
     opacity: 0;
   }
-  section.work .workContainer .workBody .workItemContainer.dtContainer span {
+  section.work div.workContainer .workBody .workItemContainer.dtContainer span {
     border-top: solid 1px white;
   }
-  section.work .workContainer div.contact {
+  section.work div.workContainer div.contact {
     width: 800px;
     height: unset;
     margin-top: 100px;
   }
-  section.work .workContainer div.contact .contentContainer {
+  section.work div.workContainer div.contact .contentContainer {
     width: 730px;
     margin-left: auto;
     margin-right: auto;
   }
-  section.work .workContainer div.contact .contentContainer .copyContainer .educationItem {
-    font-size: 2rem;
+  section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem {
+    font-size: 2.5rem;
   }
-  section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--0, section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--3, section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--6 {
-    font-size: 2rem;
+  section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--0, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--3, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--6 {
+    font-size: 2.5rem;
   }
-  section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--1, section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--4, section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--7 {
+  section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--1, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--4, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--7 {
     margin-top: -3px;
   }
-  section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--2, section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--5, section.work .workContainer div.contact .contentContainer .copyContainer .educationItem--8 {
+  section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--2, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--5, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--8 {
     -webkit-margin-after: 1.5rem;
             margin-block-end: 1.5rem;
   }
-  section.work div.favorites {
+  section.favorites {
     padding-top: 1rem;
     -webkit-transform: translateY(120px);
             transform: translateY(120px);
     width: 800px;
     height: 800px;
   }
-  section.work div.favorites div.favoritesContainer {
-    width: 700px;
-    height: 700px;
+  section.favorites:after {
+    content: "";
+    position: absolute;
+    height: 960px;
+    width: 960px;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: radial-gradient(rgba(255, 255, 255, 0.603) 0%, transparent 70%);
+  }
+  section.favorites div.favoritesContainer {
+    width: 736px;
+    height: 736px;
     margin-left: auto;
     margin-right: auto;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts {
+  section.favorites div.favoritesContainer div.leftContainer {
+    width: 48%;
+    -webkit-transform: translate(0px, -4rem);
+            transform: translate(0px, -4rem);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem {
+    border-radius: 18px;
+    height: 48%;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    padding: 3rem;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem--0 {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem--1 {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts {
     font-size: 1.5rem;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts div {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts div {
     padding-bottom: 1rem;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img {
     height: 33px;
     width: auto;
     display: block;
     position: relative;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
     margin-bottom: 27px;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
     margin-bottom: 17px;
     height: 37px;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem .designers {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem .designers {
     font-size: 1.5rem;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem .designers ul li {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem .designers ul li {
     font-size: 2.65rem;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem .designers ul li a {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem .designers ul li a {
     text-decoration-thickness: 2px;
   }
-  section.work div.favorites div.favoritesContainer div.boxColumn {
+  section.favorites div.favoritesContainer div.boxColumn {
     width: 48%;
+    border-radius: 18px;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    height: 100%;
+    padding: 3rem;
+    background: #224afb;
   }
-  section.work div.favorites div.favoritesContainer div.boxColumn div.skills div {
+  section.favorites div.favoritesContainer div.boxColumn div.skills div {
     font-size: 1.5rem;
   }
-  section.work div.favorites div.favoritesContainer div.boxColumn div.skills ul li {
+  section.favorites div.favoritesContainer div.boxColumn div.skills ul li {
     font-size: 2.65rem;
     line-height: 1.24;
   }
@@ -2208,21 +2256,16 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     width: 800px;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
-    margin-top: 0rem;
+    margin-top: 7rem;
     padding-top: 1rem;
   }
   section.info .infoBody {
     width: 710px;
     margin-left: auto;
     margin-right: auto;
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
-  }
-  section.info .infoBody .aboutHeader {
-    font-size: 2rem;
   }
   section.info .infoBody .aboutVerbiage {
-    font-size: 2.3rem;
+    font-size: 3rem;
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
@@ -2234,7 +2277,6 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     left: 1px;
   }
   section.info .infoBody .aboutVerbiage--0 {
-    border-top: 2px solid white;
     width: 97%;
     padding-top: 1.5rem;
   }

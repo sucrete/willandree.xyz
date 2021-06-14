@@ -1,6 +1,14 @@
 import { useInView } from "react-intersection-observer";
 import { useTrail, animated } from "react-spring";
+import { useEffect, useState } from "react";
+import window from "global";
 
+function getWindowDimensions() {
+  const { innerWidth: width } = window;
+  return {
+    width,
+  };
+}
 function LinkedIn() {
   return (
     <a
@@ -29,31 +37,84 @@ function Resume() {
     </a>
   );
 }
-const aboutVerbiage = [
-  "In addition to my design",
-  "work I teach practical",
-  "web development skills",
-  <span>
-    through{" "}
-    <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
-      Nucamp Coding Bootcamp.
-    </a>
-  </span>,
-  <br />,
-  <a href="https://www.nucamp.co/" target="_blank" className="nucamp"></a>,
-  "If you are interested in",
-  " using my development",
-  "services, please, feel",
-  <span>
-    free to reach out. <img src="/peace.svg" />
-  </span>,
-  <MailTo />,
-  <Resume />,
-  <LinkedIn />,
-];
 
-// const aboutTitle = ["about"];
-export default function Info() {
+function MobileInfo() {
+  const aboutVerbiage1 = [
+    "In addition to my design",
+    "work I teach practical",
+    "web development skills",
+    <span>
+      through{" "}
+      <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
+        Nucamp Coding Bootcamp.
+      </a>
+    </span>,
+    <br />,
+    <a href="https://www.nucamp.co/" target="_blank" className="nucamp"></a>,
+    "If you are interested in",
+    " using my development",
+    "services, please, feel",
+    <span>
+      free to reach out. <img src="/peace.svg" />
+    </span>,
+    <MailTo />,
+    <Resume />,
+    <LinkedIn />,
+  ];
+  const { ref, inView } = useInView({
+    threshold: 0.4,
+    triggerOnce: true,
+  });
+  const trail = useTrail(aboutVerbiage1.length, {
+    config: { mass: 5, tension: 2200, friction: 200 },
+    opacity: inView ? 1 : 0,
+    delay: 300,
+    x: inView ? 0 : 10,
+    from: { opacity: 0, x: 10 },
+  });
+  return (
+    <>
+      <div ref={ref} className="infoBody">
+        {trail.map(({ x, ...rest }, index) => (
+          <animated.span
+            className={`aboutVerbiage aboutVerbiage--${index}`}
+            key={aboutVerbiage1[index]}
+            style={{
+              ...rest,
+              top: x.interpolate((x) => `${x}px`),
+            }}
+          >
+            {aboutVerbiage1[index]}
+          </animated.span>
+        ))}
+      </div>
+    </>
+  );
+}
+function DesktopInfo() {
+  const aboutVerbiage = [
+    "In addition to my design",
+    "work I teach practical",
+    "web development skills",
+    <span>
+      through{" "}
+      <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
+        Nucamp Coding Bootcamp.
+      </a>
+    </span>,
+    <br />,
+    <a href="https://www.nucamp.co/" target="_blank" className="nucamp"></a>,
+    "If you are interested in",
+    " using my development",
+    "services, please, feel",
+    <span>
+      free to reach out. <img src="/peace.svg" />
+    </span>,
+    <MailTo />,
+    <Resume />,
+    <LinkedIn />,
+  ];
+
   const { ref, inView } = useInView({
     threshold: 0.4,
     triggerOnce: true,
@@ -65,29 +126,9 @@ export default function Info() {
     x: inView ? 0 : 10,
     from: { opacity: 0, x: 10 },
   });
-  // const trail1 = useTrail(aboutTitle.length, {
-  //   config: { mass: 5, tension: 2200, friction: 250 },
-  //   opacity: inView ? 1 : 0,
-  //   delay: 200,
-  //   x: inView ? 0 : 30,
-  //   from: { opacity: 0, x: 30 },
-  // });
-
   return (
-    <section className="info">
+    <>
       <div ref={ref} className="infoBody">
-        {/* {trail1.map(({ x, ...rest }, index) => (
-          <animated.div
-            className="aboutHeader title"
-            key={aboutTitle[index]}
-            style={{
-              ...rest,
-              top: x.interpolate((x) => `${x}px`),
-            }}
-          >
-            {aboutTitle[index]}
-          </animated.div>
-        ))} */}
         {trail.map(({ x, ...rest }, index) => (
           <animated.span
             className={`aboutVerbiage aboutVerbiage--${index}`}
@@ -101,6 +142,30 @@ export default function Info() {
           </animated.span>
         ))}
       </div>
+    </>
+  );
+}
+export default function Info() {
+  const [width, setWindowDimensions] = useState(getWindowDimensions());
+
+  useEffect(() => {
+    addEventListeners();
+    return () => removeEventListeners();
+  }, []);
+  const addEventListeners = () => {
+    window.addEventListener("resize", handleResize);
+  };
+
+  const removeEventListeners = () => {
+    window.removeEventListener("resize", handleResize);
+  };
+  const handleResize = () => {
+    setWindowDimensions(getWindowDimensions());
+  };
+
+  return (
+    <section className="info">
+      {width.width > 1090 ? <DesktopInfo /> : <MobileInfo />}
     </section>
   );
 }

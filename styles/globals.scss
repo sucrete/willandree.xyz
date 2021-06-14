@@ -1788,7 +1788,9 @@ div.contact {
       width: 750px;
       margin-left: auto;
       margin-right: auto;
+
       .name {
+        left: 0px;
         &:before {
           height: 1px;
           animation: 700ms lineAnim77 ease;
@@ -1810,9 +1812,9 @@ div.contact {
         }
       }
       ul {
-        right: 0px;
+        right: 10px;
         li {
-          right: -4px;
+          right: 0px;
         }
       }
     }
@@ -1823,6 +1825,7 @@ div.contact {
       padding-right: 0rem;
       padding-left: 0.4rem;
       .descriptionContainer {
+        left: 0px;
         .description {
           .dItem {
             height: 55px;
@@ -1831,12 +1834,12 @@ div.contact {
       }
     }
     &.work {
-      width: 800px;
-      padding-bottom: 5rem;
-      padding-top: 14rem;
+      padding-bottom: 1rem;
+      padding-top: 4rem;
+      padding-left: unset;
       margin-left: auto;
       margin-right: auto;
-      .workContainer {
+      div.workContainer {
         // transform: translate(-3px, 35px);
         width: 800px;
         margin-left: auto;
@@ -1871,8 +1874,27 @@ div.contact {
               padding-right: 5px;
               padding-top: 22px;
               padding-bottom: 15px;
-              background: transparent;
-              box-shadow: unset;
+
+              background: linear-gradient(
+                to bottom,
+                hsla(0, 0%, 100%, 0) 0%,
+                hsla(0, 0%, 100%, 0) 15%,
+                hsla(0, 0%, 100%, 0.002) 28.6%,
+                hsla(0, 0%, 100%, 0.006) 40.7%,
+                hsla(0, 0%, 100%, 0.015) 51.5%,
+                hsla(0, 0%, 100%, 0.03) 61%,
+                hsla(0, 0%, 100%, 0.052) 69.3%,
+                hsla(0, 0%, 100%, 0.082) 76.5%,
+                hsla(0, 0%, 100%, 0.123) 82.5%,
+                hsla(0, 0%, 100%, 0.175) 87.6%,
+                hsla(0, 0%, 100%, 0.24) 91.6%,
+                hsla(0, 0%, 100%, 0.319) 94.8%,
+                hsla(0, 0%, 100%, 0.415) 97.2%,
+                hsla(0, 0%, 100%, 0.527) 98.8%,
+                hsla(0, 0%, 100%, 0.659) 99.7%,
+                hsla(0, 0%, 100%, 0.81) 100%
+              );
+              box-shadow: inset 0em 0.8em 20px 19px #224afb;
               &:before {
                 content: url("../public/expand-button.svg");
                 position: absolute;
@@ -1898,8 +1920,26 @@ div.contact {
                 border-left: solid 0px transparent;
                 border-right: solid 0px transparent;
                 border-bottom: solid 1px white;
-                color: #b4c7f0;
-                background: transparent;
+                color: rgb(180, 199, 240);
+                background: linear-gradient(
+                  to bottom,
+                  hsla(0, 0%, 100%, 0) 0%,
+                  hsla(0, 0%, 100%, 0.006) 8.6%,
+                  hsla(0, 0%, 100%, 0.023) 17.4%,
+                  hsla(0, 0%, 100%, 0.051) 26.3%,
+                  hsla(0, 0%, 100%, 0.088) 35.3%,
+                  hsla(0, 0%, 100%, 0.135) 44.1%,
+                  hsla(0, 0%, 100%, 0.189) 52.8%,
+                  hsla(0, 0%, 100%, 0.251) 61%,
+                  hsla(0, 0%, 100%, 0.319) 68.8%,
+                  hsla(0, 0%, 100%, 0.393) 76%,
+                  hsla(0, 0%, 100%, 0.472) 82.5%,
+                  hsla(0, 0%, 100%, 0.555) 88.2%,
+                  hsla(0, 0%, 100%, 0.641) 92.9%,
+                  hsla(0, 0%, 100%, 0.729) 96.5%,
+                  hsla(0, 0%, 100%, 0.819) 98.9%,
+                  hsla(0, 0%, 100%, 0.91) 100%
+                );
                 &:before {
                   opacity: 1;
                 }
@@ -1925,12 +1965,12 @@ div.contact {
             margin-right: auto;
             .copyContainer {
               .educationItem {
-                font-size: 2rem;
+                font-size: 2.5rem;
                 // TITLE OF SCHOOL
                 &--0,
                 &--3,
                 &--6 {
-                  font-size: 2rem;
+                  font-size: 2.5rem;
                 }
                 &--1,
                 &--4,
@@ -1947,62 +1987,97 @@ div.contact {
           }
         }
       }
-      div.favorites {
-        padding-top: 1rem;
-        transform: translateY(120px);
-        width: 800px;
-        height: 800px;
-        div.favoritesContainer {
-          width: 700px;
-          height: 700px;
-          margin-left: auto;
-          margin-right: auto;
-          div.leftContainer {
-            div.boxItem {
-              div.fonts {
-                font-size: 1.5rem;
-                div {
-                  padding-bottom: 1rem;
+    }
+    &.favorites {
+      padding-top: 1rem;
+      transform: translateY(120px);
+      width: 800px;
+      height: 800px;
+      &:after {
+        content: "";
+        position: absolute;
+        height: 960px;
+        width: 960px;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // z-index: ;
+        background: radial-gradient(
+          rgba(255, 255, 255, 0.603) 0%,
+          transparent 70%
+        );
+      }
+      div.favoritesContainer {
+        width: 736px;
+        height: 736px;
+        margin-left: auto;
+        margin-right: auto;
+
+        div.leftContainer {
+          width: 48%;
+          transform: translate(0px, -4rem);
+          justify-content: space-between;
+          div.boxItem {
+            border-radius: 18px;
+            // width: 48%;
+            height: 48%;
+            box-shadow: unset;
+            padding: 3rem;
+            &--0 {
+              transform: translate(0px, 0px);
+            }
+            &--1 {
+              transform: translate(0px, 0px);
+            }
+
+            div.fonts {
+              font-size: 1.5rem;
+              div {
+                padding-bottom: 1rem;
+              }
+              img {
+                height: 33px;
+                width: auto;
+                display: block;
+                position: relative;
+                &:nth-of-type(1) {
+                  margin-bottom: 27px;
+                  // height: 20px;
                 }
-                img {
-                  height: 33px;
-                  width: auto;
-                  display: block;
-                  position: relative;
-                  &:nth-of-type(1) {
-                    margin-bottom: 27px;
-                    // height: 20px;
-                  }
-                  &:nth-of-type(2) {
-                    margin-bottom: 17px;
-                    height: 37px;
-                  }
+                &:nth-of-type(2) {
+                  margin-bottom: 17px;
+                  height: 37px;
                 }
               }
-              .designers {
-                font-size: 1.5rem;
-                ul {
-                  li {
-                    font-size: 2.65rem;
-                    a {
-                      text-decoration-thickness: 2px;
-                    }
+            }
+            .designers {
+              font-size: 1.5rem;
+              ul {
+                li {
+                  font-size: 2.65rem;
+                  a {
+                    text-decoration-thickness: 2px;
                   }
                 }
               }
             }
           }
-          div.boxColumn {
-            width: 48%;
-            div.skills {
-              div {
-                font-size: 1.5rem;
-              }
-              ul {
-                li {
-                  font-size: 2.65rem;
-                  line-height: 1.24;
-                }
+        }
+        div.boxColumn {
+          width: 48%;
+          border-radius: 18px;
+          box-shadow: unset;
+          height: 100%;
+          padding: 3rem;
+          background: #224afb;
+          div.skills {
+            div {
+              font-size: 1.5rem;
+            }
+            ul {
+              li {
+                font-size: 2.65rem;
+                line-height: 1.24;
               }
             }
           }
@@ -2012,19 +2087,14 @@ div.contact {
     &.info {
       width: 800px;
       transform: translateY(0px);
-      margin-top: 0rem;
+      margin-top: 7rem;
       padding-top: 1rem;
       .infoBody {
         width: 710px;
         margin-left: auto;
         margin-right: auto;
-        transform: translateX(10px);
-        .aboutHeader {
-          font-size: 2rem;
-          // left: 3px;
-        }
         .aboutVerbiage {
-          font-size: 2.3rem;
+          font-size: 3rem;
           justify-content: unset;
           left: 0;
         }
@@ -2035,7 +2105,7 @@ div.contact {
           left: 1px;
         }
         .aboutVerbiage--0 {
-          border-top: 2px solid white;
+          // border-top: 2px solid white;
           width: 97%;
           padding-top: 1.5rem;
         }
