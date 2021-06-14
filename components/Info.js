@@ -22,12 +22,12 @@ function LinkedIn() {
 }
 function MailTo() {
   return (
-    <span>
+    <div>
       →{" "}
       <a className="mailTo" href="mailto:will@willandree.xyz">
         will@willandree.xyz
       </a>
-    </span>
+    </div>
   );
 }
 function Resume() {
@@ -53,13 +53,14 @@ function MobileInfo() {
     "my development services,",
     "please, feel free to reach",
     <span>
-      out. <MailTo />
+      out <MailTo />
     </span>,
+    <br />,
     <Resume />,
     <LinkedIn />,
   ];
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.5,
     triggerOnce: true,
   });
   const trail = useTrail(aboutVerbiage1.length, {
@@ -108,6 +109,7 @@ function DesktopInfo() {
       free to reach out. <img src="/peace.svg" />
     </span>,
     <MailTo />,
+    <br />,
     <Resume />,
     <LinkedIn />,
   ];
@@ -119,7 +121,6 @@ function DesktopInfo() {
   const trail = useTrail(aboutVerbiage.length, {
     config: { mass: 5, tension: 2200, friction: 200 },
     opacity: inView ? 1 : 0,
-    delay: 300,
     x: inView ? 0 : 10,
     from: { opacity: 0, x: 10 },
   });

@@ -644,8 +644,7 @@ section.info {
       font-weight: 500;
       left: 6px;
       span {
-        a.nucamp,
-        a.mailTo {
+        a.nucamp {
           text-decoration: underline;
           text-decoration-color: #ffffff49;
           color: white;
@@ -662,33 +661,52 @@ section.info {
           height: 32px;
         }
       }
-      &--7 {
-        margin-bottom: 0.5rem;
+      div {
+        a.mailTo {
+          text-decoration: underline;
+          text-decoration-color: #ffffff49;
+          color: white;
+          &:hover {
+            color: #97b3f0 !important;
+            text-decoration-color: #97b3f05d;
+          }
+          &:visited {
+            color: white;
+          }
+        }
       }
-      &--8 {
+      &--9,
+      &--12 {
         display: inline;
         a.resume {
-          padding: 10px 24px;
+          padding: 11px 24px 10px 24px;
           background: white;
           color: #224afb;
-          border-radius: 6px;
-          font-size: 1.2rem;
+          border-radius: 7px;
+          font-size: 1.8rem;
           text-decoration: none;
           &:visited {
             color: #224afb;
           }
         }
       }
-      &--9 {
+      &--10,
+      &--13 {
         display: inline;
-        line-height: 38px;
-        margin-left: 10px;
+        margin-left: 1.5rem;
         a.linkedInLink {
           img {
-            position: absolute;
-            transform: translateY(4px);
-            left: 0px;
-            height: 40px;
+            width: 51px;
+            height: auto;
+          }
+        }
+      }
+      &--13 {
+        a.linkedInLink {
+          img {
+            width: 51px;
+            height: auto;
+            transform: translateY(17px);
           }
         }
       }
@@ -2097,7 +2115,8 @@ div.contact {
           font-size: 3rem;
           justify-content: unset;
           left: 0;
-          &--8 {
+          &--9,
+          &--11 {
             a.resume {
               padding: 11px 24px 10px 24px;
               background: white;
@@ -2110,7 +2129,8 @@ div.contact {
               }
             }
           }
-          &--9 {
+          &--10,
+          &--12 {
             margin-left: 1rem;
             a.linkedInLink {
               img {

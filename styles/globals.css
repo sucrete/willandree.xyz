@@ -710,23 +710,20 @@ section.info .infoBody .aboutVerbiage {
   left: 6px;
 }
 
-section.info .infoBody .aboutVerbiage span a.nucamp,
-section.info .infoBody .aboutVerbiage span a.mailTo {
+section.info .infoBody .aboutVerbiage span a.nucamp {
   text-decoration: underline;
   -webkit-text-decoration-color: #ffffff49;
           text-decoration-color: #ffffff49;
   color: white;
 }
 
-section.info .infoBody .aboutVerbiage span a.nucamp:hover,
-section.info .infoBody .aboutVerbiage span a.mailTo:hover {
+section.info .infoBody .aboutVerbiage span a.nucamp:hover {
   color: #97b3f0 !important;
   -webkit-text-decoration-color: #97b3f05d;
           text-decoration-color: #97b3f05d;
 }
 
-section.info .infoBody .aboutVerbiage span a.nucamp:visited,
-section.info .infoBody .aboutVerbiage span a.mailTo:visited {
+section.info .infoBody .aboutVerbiage span a.nucamp:visited {
   color: white;
 }
 
@@ -734,39 +731,55 @@ section.info .infoBody .aboutVerbiage span img {
   height: 32px;
 }
 
-section.info .infoBody .aboutVerbiage--7 {
-  margin-bottom: 0.5rem;
+section.info .infoBody .aboutVerbiage div a.mailTo {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #ffffff49;
+          text-decoration-color: #ffffff49;
+  color: white;
 }
 
-section.info .infoBody .aboutVerbiage--8 {
+section.info .infoBody .aboutVerbiage div a.mailTo:hover {
+  color: #97b3f0 !important;
+  -webkit-text-decoration-color: #97b3f05d;
+          text-decoration-color: #97b3f05d;
+}
+
+section.info .infoBody .aboutVerbiage div a.mailTo:visited {
+  color: white;
+}
+
+section.info .infoBody .aboutVerbiage--9, section.info .infoBody .aboutVerbiage--12 {
   display: inline;
 }
 
-section.info .infoBody .aboutVerbiage--8 a.resume {
-  padding: 10px 24px;
+section.info .infoBody .aboutVerbiage--9 a.resume, section.info .infoBody .aboutVerbiage--12 a.resume {
+  padding: 11px 24px 10px 24px;
   background: white;
   color: #224afb;
-  border-radius: 6px;
-  font-size: 1.2rem;
+  border-radius: 7px;
+  font-size: 1.8rem;
   text-decoration: none;
 }
 
-section.info .infoBody .aboutVerbiage--8 a.resume:visited {
+section.info .infoBody .aboutVerbiage--9 a.resume:visited, section.info .infoBody .aboutVerbiage--12 a.resume:visited {
   color: #224afb;
 }
 
-section.info .infoBody .aboutVerbiage--9 {
+section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage--13 {
   display: inline;
-  line-height: 38px;
-  margin-left: 10px;
+  margin-left: 1.5rem;
 }
 
-section.info .infoBody .aboutVerbiage--9 a.linkedInLink img {
-  position: absolute;
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
-  left: 0px;
-  height: 40px;
+section.info .infoBody .aboutVerbiage--10 a.linkedInLink img, section.info .infoBody .aboutVerbiage--13 a.linkedInLink img {
+  width: 51px;
+  height: auto;
+}
+
+section.info .infoBody .aboutVerbiage--13 a.linkedInLink img {
+  width: 51px;
+  height: auto;
+  -webkit-transform: translateY(17px);
+          transform: translateY(17px);
 }
 
 div.contact {
@@ -2273,7 +2286,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
             justify-content: unset;
     left: 0;
   }
-  section.info .infoBody .aboutVerbiage--8 a.resume {
+  section.info .infoBody .aboutVerbiage--9 a.resume, section.info .infoBody .aboutVerbiage--11 a.resume {
     padding: 11px 24px 10px 24px;
     background: white;
     color: #224afb;
@@ -2281,13 +2294,13 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     font-size: 1.8rem;
     text-decoration: none;
   }
-  section.info .infoBody .aboutVerbiage--8 a.resume:visited {
+  section.info .infoBody .aboutVerbiage--9 a.resume:visited, section.info .infoBody .aboutVerbiage--11 a.resume:visited {
     color: #224afb;
   }
-  section.info .infoBody .aboutVerbiage--9 {
+  section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage--12 {
     margin-left: 1rem;
   }
-  section.info .infoBody .aboutVerbiage--9 a.linkedInLink img {
+  section.info .infoBody .aboutVerbiage--10 a.linkedInLink img, section.info .infoBody .aboutVerbiage--12 a.linkedInLink img {
     width: 51px;
     height: auto;
     -webkit-transform: translateY(5px);
