@@ -3098,6 +3098,7 @@ $xtraSmallWidth: 360px;
         }
       }
       ul {
+        font-size: 1.21rem;
         li {
           font-size: 0.8rem;
         }
@@ -3175,6 +3176,7 @@ $xtraSmallWidth: 360px;
       div.favoritesContainer {
         height: 100%;
         div.boxColumn {
+          border-radius: 10px;
           div.skills {
             div {
               font-size: 0.75rem;
@@ -3188,6 +3190,7 @@ $xtraSmallWidth: 360px;
         }
         div.leftContainer {
           div.boxItem {
+            border-radius: 10px;
             div.designers {
               div {
                 font-size: 0.75rem;
@@ -3208,7 +3211,7 @@ $xtraSmallWidth: 360px;
               }
               img:nth-of-type(2) {
                 height: 19px;
-                margin-bottom: 10px;
+                margin-bottom: 8px;
               }
               img:nth-of-type(3) {
                 height: 16px;
@@ -3223,6 +3226,7 @@ $xtraSmallWidth: 360px;
       div.infoBody {
         width: 100%;
         span.aboutVerbiage {
+          width: 100%;
           font-size: 1.4rem;
           line-height: 1.22;
         }
