@@ -2119,8 +2119,6 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     right: -8px;
     top: -14px;
     opacity: 0;
-    -webkit-transition: all 100ms ease;
-    transition: all 100ms ease;
   }
   section.work div.workContainer .workBody .workItemContainer span:after {
     content: url("../public/expand-button2.svg");
@@ -2130,8 +2128,6 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     right: -8px;
     top: -14px;
     opacity: 1;
-    -webkit-transition: all 100ms ease;
-    transition: all 100ms ease;
   }
   section.work div.workContainer .workBody .workItemContainer span:hover {
     border-top: solid 0px transparent;
@@ -2192,7 +2188,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    background: radial-gradient(rgba(255, 255, 255, 0.603) 0%, transparent 70%);
+    background: radial-gradient(rgba(255, 255, 255, 0.67) 0%, rgba(255, 255, 255, 0.661) 8.1%, rgba(255, 255, 255, 0.637) 15.5%, rgba(255, 255, 255, 0.6) 22.5%, rgba(255, 255, 255, 0.552) 29%, rgba(255, 255, 255, 0.496) 35.3%, rgba(255, 255, 255, 0.434) 41.2%, rgba(255, 255, 255, 0.368) 47.1%, rgba(255, 255, 255, 0.35) 52.9%, rgba(255, 255, 255, 0.23) 58.8%, rgba(255, 255, 255, 0.1) 64.7%, rgba(255, 255, 255, 0) 71%, rgba(255, 255, 255, 0) 77.5%, rgba(255, 255, 255, 0) 84.5%, rgba(255, 255, 255, 0) 91.9%, rgba(255, 255, 255, 0) 100%);
   }
   section.favorites div.favoritesContainer {
     width: 736px;
@@ -2306,6 +2302,10 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
   }
+  section.info .infoBody .aboutVerbiage--10 a.linkedInLink img {
+    -webkit-transform: translateY(17px);
+            transform: translateY(17px);
+  }
   section.info .infoBody .aboutHeader {
     -webkit-margin-after: 0.8rem;
             margin-block-end: 0.8rem;
@@ -2390,13 +2390,16 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     -webkit-transform: translateX(-14px);
             transform: translateX(-14px);
   }
-  section.work div.favorites {
-    -webkit-transform: translateY(120px) translateX(-15px);
-            transform: translateY(120px) translateX(-15px);
-  }
   section.info .infoBody {
     -webkit-transform: translateX(-4px);
             transform: translateX(-4px);
+  }
+  section.favorites {
+    width: 100vw;
+  }
+  section.favorites div.favoritesContainer {
+    height: 700px;
+    width: 700px;
   }
   section.contact {
     width: 100%;
@@ -2436,43 +2439,72 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   }
   section.navigation .name {
     left: 0px;
+    font-size: 2rem;
   }
-  section.navigation .cone {
-    -webkit-transform: unset;
-            transform: unset;
-    right: 0px;
+  section.navigation ul {
+    font-size: 2.2rem;
+  }
+  section.navigation ul li {
+    font-size: 1.4rem;
   }
   section.header {
     width: 650px;
-    font-size: 3.75rem;
+    font-size: 2.6rem;
   }
   section.header .descriptionContainer {
     left: 0px;
   }
   section.header .descriptionContainer .description .dItem {
-    height: 65px;
+    height: 50px;
   }
   section.work {
     width: 650px;
     padding-bottom: 5rem;
   }
-  section.work .workContainer {
+  section.work div.workContainer {
     margin-left: auto;
     width: 650px;
   }
-  section.work .workContainer .workBody {
+  section.work div.workContainer div.workBody {
     margin-left: auto;
+    width: 650px;
   }
-  section.work .workContainer .workBody .workHeader {
+  section.work div.workContainer div.workBody .workHeader {
     padding-left: 2px;
     left: 0px;
     -webkit-transform: unset;
             transform: unset;
   }
-  section.work .workContainer .workBody .workItemContainer {
+  section.work div.workContainer div.workBody .workItemContainer {
     width: 650px;
     -webkit-transform: unset;
             transform: unset;
+  }
+  section.work div.workContainer div.contact {
+    width: 650px;
+    margin-top: 3rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer {
+    padding: 1.5rem 0 0 0;
+    left: 0px;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationHeader {
+    left: 0px;
+    -webkit-margin-after: 1rem;
+            margin-block-end: 1rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer .educationItem {
+    left: 0px;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer .contactInfo {
+    left: 0px;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer .contactInfo--1 a img {
+    display: none;
   }
   section.work .favorites {
     width: 650px;
@@ -2498,30 +2530,6 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   section.info .infoBody .aboutVerbiage {
     font-size: 2.1rem;
   }
-  section.contact {
-    width: 650px;
-    margin-top: 3rem;
-  }
-  section.contact .contentContainer {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  section.contact .contentContainer .copyContainer {
-    padding: 1.5rem 0 0 0;
-    left: 0px;
-  }
-  section.contact .contentContainer .copyContainer .educationHeader {
-    left: 0px;
-  }
-  section.contact .contentContainer .copyContainer .educationItem {
-    left: 0px;
-  }
-  section.contact .contentContainer .copyContainer .contactInfo {
-    left: 0px;
-  }
-  section.contact .contentContainer .copyContainer .contactInfo--1 a img {
-    display: none;
-  }
   section.resume {
     width: 650px;
   }
@@ -2540,15 +2548,15 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   section.navigation {
     width: 535px;
     padding-bottom: 4rem;
-    padding-top: 0.7rem;
+    padding-top: 0rem;
   }
   section.navigation .name {
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 1.5;
     padding-top: 0.5rem;
   }
   section.navigation .name:before {
-    bottom: -15px;
+    bottom: -24px;
     height: 1px;
     -webkit-animation-delay: 1200ms;
             animation-delay: 1200ms;
@@ -2567,7 +2575,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     }
     to {
       opacity: 1;
-      width: 40px;
+      width: 100%;
     }
   }
   @keyframes lineAnim3 {
@@ -2580,51 +2588,24 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     }
     to {
       opacity: 1;
-      width: 40px;
+      width: 100%;
     }
   }
-  section.navigation .cone {
-    width: 60px;
-    height: 55px;
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-    -webkit-animation: 700ms coneAnim2 ease;
-            animation: 700ms coneAnim2 ease;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-delay: 1400ms;
-            animation-delay: 1400ms;
-    opacity: 0;
+  section.navigation ul {
+    font-size: 1.3rem;
   }
-  @-webkit-keyframes coneAnim2 {
-    from {
-      opacity: 0;
-      top: 20px;
-    }
-    to {
-      opacity: 1;
-      top: 34px;
-    }
-  }
-  @keyframes coneAnim2 {
-    from {
-      opacity: 0;
-      top: 20px;
-    }
-    to {
-      opacity: 1;
-      top: 34px;
-    }
+  section.navigation ul li {
+    font-size: 1.2rem;
   }
   section.header {
     width: 535px;
-    font-size: 3.1rem;
+    font-size: 2.1rem;
   }
   section.header .descriptionContainer {
     left: 0px;
   }
   section.header .descriptionContainer .description .dItem {
-    height: 55px;
+    height: 40px;
   }
   section.work {
     width: 535px;

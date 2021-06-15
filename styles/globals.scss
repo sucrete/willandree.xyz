@@ -1920,7 +1920,7 @@ div.contact {
                 right: -8px;
                 top: -14px;
                 opacity: 0;
-                transition: all 100ms ease;
+                // transition: all 100ms ease;
               }
               &:after {
                 content: url("../public/expand-button2.svg");
@@ -1930,7 +1930,7 @@ div.contact {
                 right: -8px;
                 top: -14px;
                 opacity: 1;
-                transition: all 100ms ease;
+                // transition: all 100ms ease;
               }
               &:hover {
                 border-top: solid 0px transparent;
@@ -2020,9 +2020,24 @@ div.contact {
         left: 50%;
         transform: translate(-50%, -50%);
         // z-index: ;
+
         background: radial-gradient(
-          rgba(255, 255, 255, 0.603) 0%,
-          transparent 70%
+          hsla(0, 0%, 100%, 0.67) 0%,
+          hsla(0, 0%, 100%, 0.661) 8.1%,
+          hsla(0, 0%, 100%, 0.637) 15.5%,
+          hsla(0, 0%, 100%, 0.6) 22.5%,
+          hsla(0, 0%, 100%, 0.552) 29%,
+          hsla(0, 0%, 100%, 0.496) 35.3%,
+          hsla(0, 0%, 100%, 0.434) 41.2%,
+          hsla(0, 0%, 100%, 0.368) 47.1%,
+          hsla(0, 0%, 100%, 0.35) 52.9%,
+          hsla(0, 0%, 100%, 0.23) 58.8%,
+          hsla(0, 0%, 100%, 0.1) 64.7%,
+          hsla(0, 0%, 100%, 0) 71%,
+          hsla(0, 0%, 100%, 0) 77.5%,
+          hsla(0, 0%, 100%, 0) 84.5%,
+          hsla(0, 0%, 100%, 0) 91.9%,
+          hsla(0, 0%, 100%, 0) 100%
         );
       }
       div.favoritesContainer {
@@ -2140,6 +2155,13 @@ div.contact {
               }
             }
           }
+          &--10 {
+            a.linkedInLink {
+              img {
+                transform: translateY(17px);
+              }
+            }
+          }
         }
         .aboutHeader {
           // padding-bottom: 0.1rem;
@@ -2248,14 +2270,17 @@ div.contact {
           }
         }
       }
-      div.favorites {
-        transform: translateY(120px) translateX(-15px);
-        // width: 100vw;
-      }
     }
     &.info {
       .infoBody {
         transform: translateX(-4px);
+      }
+    }
+    &.favorites {
+      width: 100vw;
+      div.favoritesContainer {
+        height: 700px;
+        width: 700px;
       }
     }
     &.contact {
@@ -2303,20 +2328,23 @@ $medWidth: 650px;
       padding-top: 1rem;
       .name {
         left: 0px;
+        font-size: 2rem;
       }
-      .cone {
-        transform: unset;
-        right: 0px;
+      ul {
+        font-size: 2.2rem;
+        li {
+          font-size: 1.4rem;
+        }
       }
     }
     &.header {
       width: $medWidth;
-      font-size: 3.75rem;
+      font-size: 2.6rem;
       .descriptionContainer {
         left: 0px;
         .description {
           .dItem {
-            height: 65px;
+            height: 50px;
             .dItemBaby {
               // height: 90px ;
             }
@@ -2327,12 +2355,13 @@ $medWidth: 650px;
     &.work {
       width: $medWidth;
       padding-bottom: 5rem;
-      .workContainer {
+      div.workContainer {
         margin-left: auto;
         width: $medWidth;
         // transform: translateX(px);
-        .workBody {
+        div.workBody {
           margin-left: auto;
+          width: $medWidth;
           .workHeader {
             padding-left: 2px;
             left: 0px;
@@ -2341,6 +2370,34 @@ $medWidth: 650px;
           .workItemContainer {
             width: $medWidth;
             transform: unset;
+          }
+        }
+        div.contact {
+          width: $medWidth;
+          margin-top: 3rem;
+          div.contentContainer {
+            transform: translateX(0px);
+            div.copyContainer {
+              padding: 1.5rem 0 0 0;
+              left: 0px;
+              div.educationHeader {
+                left: 0px;
+                margin-block-end: 1rem;
+              }
+              .educationItem {
+                left: 0px;
+              }
+              .contactInfo {
+                left: 0px;
+                &--1 {
+                  a {
+                    img {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -2373,33 +2430,7 @@ $medWidth: 650px;
         }
       }
     }
-    &.contact {
-      width: $medWidth;
-      margin-top: 3rem;
-      .contentContainer {
-        transform: translateX(0px);
-        .copyContainer {
-          padding: 1.5rem 0 0 0;
-          left: 0px;
-          .educationHeader {
-            left: 0px;
-          }
-          .educationItem {
-            left: 0px;
-          }
-          .contactInfo {
-            left: 0px;
-            &--1 {
-              a {
-                img {
-                  display: none;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+
     &.resume {
       width: $medWidth;
       a {
@@ -2429,13 +2460,13 @@ $medSmallWidth: 535px;
     &.navigation {
       width: $medSmallWidth;
       padding-bottom: 4rem;
-      padding-top: 0.7rem;
+      padding-top: 0rem;
       .name {
-        font-size: 2.2rem;
+        font-size: 2rem;
         line-height: 1.5;
         padding-top: 0.5rem;
         &:before {
-          bottom: -15px;
+          bottom: -24px;
           height: 1px;
           animation-delay: 1200ms;
           animation: 700ms lineAnim3 ease;
@@ -2451,38 +2482,25 @@ $medSmallWidth: 535px;
           }
           to {
             opacity: 1;
-            width: 40px;
+            width: 100%;
           }
         }
       }
-      .cone {
-        width: 60px;
-        height: 55px;
-        transform: translateY(-10px);
-        animation: 700ms coneAnim2 ease;
-        animation-fill-mode: forwards;
-        animation-delay: 1400ms;
-        opacity: 0;
-      }
-      @keyframes coneAnim2 {
-        from {
-          opacity: 0;
-          top: 20px;
-        }
-        to {
-          opacity: 1;
-          top: 34px;
+      ul {
+        font-size: 1.3rem;
+        li {
+          font-size: 1.2rem;
         }
       }
     }
     &.header {
       width: $medSmallWidth;
-      font-size: 3.1rem;
+      font-size: 2.1rem;
       .descriptionContainer {
         left: 0px;
         .description {
           .dItem {
-            height: 55px;
+            height: 40px;
             .dItemBaby {
               // height: 90px ;
             }

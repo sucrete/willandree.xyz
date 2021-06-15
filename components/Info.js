@@ -53,7 +53,7 @@ function MobileInfo() {
     "my development services,",
     "please, feel free to reach",
     <span>
-      out <MailTo />
+      out. <MailTo />
     </span>,
     <br />,
     <Resume />,
