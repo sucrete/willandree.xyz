@@ -2945,7 +2945,7 @@ $smallWidth: 390px;
       margin-left: auto;
       margin-right: auto;
       transform: translate(-2px, 0px);
-      margin-top: 3rem;
+      margin-top: 1rem;
       padding-top: 0rem;
       &:after {
         display: none;
@@ -2964,7 +2964,7 @@ $smallWidth: 390px;
             }
             ul {
               li {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
                 line-height: 1.2;
               }
             }
@@ -2979,7 +2979,7 @@ $smallWidth: 390px;
               font-size: 0.85em;
               ul {
                 li {
-                  font-size: 1.4rem;
+                  font-size: 1.5rem;
                 }
               }
             }
@@ -3008,7 +3008,7 @@ $smallWidth: 390px;
     &.info {
       width: $smallWidth;
       transform: translateX(0px);
-      padding-top: 1rem;
+      padding-top: 0rem;
       margin-bottom: 1.5rem;
       div.infoBody {
         width: $smallWidth;
@@ -3020,6 +3020,9 @@ $smallWidth: 390px;
         span.aboutVerbiage {
           width: $smallWidth;
           font-size: 1.6rem;
+          &--0 {
+            padding-top: 0rem;
+          }
           a.resume {
             font-size: 1.5rem;
           }

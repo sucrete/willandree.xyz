@@ -2994,7 +2994,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     margin-right: auto;
     -webkit-transform: translate(-2px, 0px);
             transform: translate(-2px, 0px);
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding-top: 0rem;
   }
   section.favorites:after {
@@ -3014,7 +3014,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     font-size: 0.85rem;
   }
   section.favorites div.favoritesContainer div.boxColumn div.skills ul li {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.2;
   }
   section.favorites div.favoritesContainer div.leftContainer {
@@ -3029,7 +3029,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     font-size: 0.85em;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts div {
     font-size: 0.85rem;
@@ -3049,7 +3049,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     width: 390px;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-    padding-top: 1rem;
+    padding-top: 0rem;
     margin-bottom: 1.5rem;
   }
   section.info div.infoBody {
@@ -3063,6 +3063,9 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   section.info div.infoBody span.aboutVerbiage {
     width: 390px;
     font-size: 1.6rem;
+  }
+  section.info div.infoBody span.aboutVerbiage--0 {
+    padding-top: 0rem;
   }
   section.info div.infoBody span.aboutVerbiage a.resume {
     font-size: 1.5rem;
