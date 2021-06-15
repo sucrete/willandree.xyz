@@ -3077,7 +3077,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   }
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 415px) {
   .lowerContainer {
     height: 1000px;
   }
@@ -3090,38 +3090,63 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   }
   section.navigation .name {
     padding-top: 0.1rem;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
   section.navigation .name:before {
     left: 2px;
   }
-  section.navigation .cone {
-    -webkit-transform: translateY(-17px);
-            transform: translateY(-17px);
+  section.navigation ul li {
+    font-size: 0.8rem;
   }
   section.header {
     width: 360px;
-    font-size: 2.08rem;
+    font-size: 1.5rem;
     padding-bottom: 1rem;
   }
   section.work {
     width: 360px;
     padding-bottom: 4rem;
   }
-  section.work .workContainer .workBody .workHeader {
+  section.work div.workContainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section.work div.workContainer div.workBody div.workHeader {
     -webkit-margin-after: 0.5rem;
             margin-block-end: 0.5rem;
     font-size: 1.2rem;
   }
-  section.work .workContainer .workBody .workItemContainer {
+  section.work div.workContainer div.workBody span.workItemContainer {
     width: 360px;
   }
-  section.work .workContainer .workBody .workItemContainer span {
+  section.work div.workContainer div.workBody span.workItemContainer span {
     font-size: 1.3rem;
     padding-bottom: 15px;
   }
-  section.work .workContainer .workBody .workItemContainer span:after {
+  section.work div.workContainer div.workBody span.workItemContainer span:after {
     right: -10px;
+  }
+  section.work div.workContainer div.contact {
+    width: 360px;
+    height: 530px;
+    padding-top: 0rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer {
+    padding-top: 0rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationHeader {
+    font-size: 1.2rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem {
+    font-size: 1.4rem;
+    width: 360px;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0 {
+    padding-top: 0.6rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--3, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--6 {
+    font-size: 1.35rem;
   }
   section.work div.favorites {
     width: 360px;
@@ -3176,41 +3201,6 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   }
   section.info div.infoBody span.aboutVerbiage--0 {
     padding-top: 1rem;
-  }
-  section.contact {
-    width: 360px;
-    height: 530px;
-    padding-top: 0rem;
-  }
-  section.contact div.contentContainer div.copyContainer {
-    padding-top: 0rem;
-  }
-  section.contact div.contentContainer div.copyContainer div.educationHeader {
-    font-size: 1.2rem;
-  }
-  section.contact div.contentContainer div.copyContainer div.educationItem {
-    font-size: 1.4rem;
-    width: 360px;
-  }
-  section.contact div.contentContainer div.copyContainer div.educationItem--0 {
-    padding-top: 1rem;
-  }
-  section.contact div.contentContainer div.copyContainer div.educationItem--0, section.contact div.contentContainer div.copyContainer div.educationItem--3, section.contact div.contentContainer div.copyContainer div.educationItem--6 {
-    font-size: 1.35rem;
-  }
-  section.contact div.contentContainer div.copyContainer div.contactInfo--0 {
-    font-size: 1.2rem;
-    padding-top: 0rem;
-  }
-  section.contact div.contentContainer div.copyContainer div.contactInfo--1 {
-    font-size: 1.35rem;
-    padding-top: 1rem;
-  }
-  section.contact div.contentContainer div.copyContainer .linksContainer {
-    padding-bottom: 1rem;
-  }
-  section.contact div.contentContainer div.copyContainer .linksContainer a img {
-    margin-top: 15px;
   }
 }
 

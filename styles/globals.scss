@@ -3073,15 +3073,15 @@ $smallWidth: 390px;
 //   }
 // }
 
-// ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ██╗  ██╗ ██╗ ██╗██████╗ ██╗  ██╗         ██╗
-// ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ██║  ██║███║███║██╔══██╗╚██╗██╔╝         ╚██╗
-// ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝    ███████║╚██║╚██║██████╔╝ ╚███╔╝     █████╗╚██╗
-// ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗    ╚════██║ ██║ ██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
-// ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║         ██║ ██║ ██║██║     ██╔╝ ██╗         ██╔╝
-//  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝         ╚═╝ ╚═╝ ╚═╝╚═╝     ╚═╝  ╚═╝         ╚═╝
+// ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ██╗  ██╗ ██╗██╗  ██╗    ██╗██╗  ██╗ ██╗ ██╗██████╗ ██╗  ██╗         ██╗
+// ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ██║  ██║███║██║  ██║   ██╔╝██║  ██║███║███║██╔══██╗╚██╗██╔╝         ╚██╗
+// ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝    ███████║╚██║███████║  ██╔╝ ███████║╚██║╚██║██████╔╝ ╚███╔╝     █████╗╚██╗
+// ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗    ╚════██║ ██║╚════██║ ██╔╝  ╚════██║ ██║ ██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
+// ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║         ██║ ██║     ██║██╔╝        ██║ ██║ ██║██║     ██╔╝ ██╗         ██╔╝
+//  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝         ╚═╝ ╚═╝     ╚═╝╚═╝         ╚═╝ ╚═╝ ╚═╝╚═╝     ╚═╝  ╚═╝         ╚═╝
 
 $xtraSmallWidth: 360px;
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 415px) {
   .lowerContainer {
     height: 1000px;
   }
@@ -3092,18 +3092,20 @@ $xtraSmallWidth: 360px;
       padding-top: 0.5rem;
       .name {
         padding-top: 0.1rem;
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         &:before {
           left: 2px;
         }
       }
-      .cone {
-        transform: translateY(-17px);
+      ul {
+        li {
+          font-size: 0.8rem;
+        }
       }
     }
     &.header {
       width: $xtraSmallWidth;
-      font-size: 2.08rem;
+      font-size: 1.5rem;
       padding-bottom: 1rem;
       .descriptionContainer {
         .description {
@@ -3117,19 +3119,48 @@ $xtraSmallWidth: 360px;
     &.work {
       width: $xtraSmallWidth;
       padding-bottom: 4rem;
-      .workContainer {
-        .workBody {
-          .workHeader {
+      div.workContainer {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        div.workBody {
+          div.workHeader {
             margin-block-end: 0.5rem;
             font-size: 1.2rem;
           }
-          .workItemContainer {
+          span.workItemContainer {
             width: $xtraSmallWidth;
             span {
               font-size: 1.3rem;
               padding-bottom: 15px;
               &:after {
                 right: -10px;
+              }
+            }
+          }
+        }
+        div.contact {
+          width: $xtraSmallWidth;
+          // margin-top: 10rem;
+          height: 530px;
+          padding-top: 0rem;
+          div.contentContainer {
+            div.copyContainer {
+              padding-top: 0rem;
+              div.educationHeader {
+                font-size: 1.2rem;
+              }
+              div.educationItem {
+                font-size: 1.4rem;
+                width: $xtraSmallWidth;
+                &--0 {
+                  padding-top: 0.6rem;
+                }
+                &--0,
+                &--3,
+                &--6 {
+                  font-size: 1.35rem;
+                }
               }
             }
           }
@@ -3200,50 +3231,6 @@ $xtraSmallWidth: 360px;
           font-size: 1.19rem;
           &--0 {
             padding-top: 1rem;
-          }
-        }
-      }
-    }
-    &.contact {
-      width: $xtraSmallWidth;
-      // margin-top: 10rem;
-      height: 530px;
-      padding-top: 0rem;
-      div.contentContainer {
-        div.copyContainer {
-          padding-top: 0rem;
-          div.educationHeader {
-            font-size: 1.2rem;
-          }
-          div.educationItem {
-            font-size: 1.4rem;
-            width: $xtraSmallWidth;
-            &--0 {
-              padding-top: 1rem;
-            }
-            &--0,
-            &--3,
-            &--6 {
-              font-size: 1.35rem;
-            }
-          }
-          div.contactInfo {
-            &--0 {
-              font-size: 1.2rem;
-              padding-top: 0rem;
-            }
-            &--1 {
-              font-size: 1.35rem;
-              padding-top: 1rem;
-            }
-          }
-          .linksContainer {
-            padding-bottom: 1rem;
-            a {
-              img {
-                margin-top: 15px;
-              }
-            }
           }
         }
       }
