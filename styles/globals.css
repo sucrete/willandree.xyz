@@ -520,6 +520,57 @@ section.work .workContainer .workBody .workItemContainer span:hover {
   background: #b4c7f0;
 }
 
+div.contact {
+  margin-top: 150px;
+  height: 450px;
+  width: 450px;
+}
+
+div.contact .contentContainer {
+  position: relative;
+}
+
+div.contact .contentContainer .copyContainer .anchor {
+  position: absolute;
+  visibility: hidden;
+  height: 200px;
+  bottom: 0px;
+}
+
+div.contact .contentContainer .copyContainer .educationHeader {
+  line-height: 1.1;
+  color: white;
+  z-index: 10;
+  position: relative;
+  -webkit-margin-after: 0.7rem;
+          margin-block-end: 0.7rem;
+  font-size: 1.9rem;
+}
+
+div.contact .contentContainer .copyContainer .educationItem {
+  font-family: "corporate condensed regular";
+  font-size: 1.6rem;
+  line-height: 1.1;
+  color: white;
+  z-index: 10;
+  position: relative;
+  padding-left: 0.1rem;
+}
+
+div.contact .contentContainer .copyContainer .educationItem--0, div.contact .contentContainer .copyContainer .educationItem--3, div.contact .contentContainer .copyContainer .educationItem--6 {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.6rem;
+}
+
+div.contact .contentContainer .copyContainer .educationItem--1, div.contact .contentContainer .copyContainer .educationItem--4, div.contact .contentContainer .copyContainer .educationItem--7 {
+  margin-top: -3px;
+}
+
+div.contact .contentContainer .copyContainer .educationItem--2, div.contact .contentContainer .copyContainer .educationItem--5, div.contact .contentContainer .copyContainer .educationItem--8 {
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
+}
+
 section.favorites {
   position: relative;
   z-index: 20;
@@ -710,6 +761,26 @@ section.info .infoBody .aboutVerbiage {
   left: 6px;
 }
 
+section.info .infoBody .aboutVerbiage a.resume {
+  padding: 11px 24px 10px 24px;
+  background: white;
+  color: #224afb;
+  border-radius: 7px;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+section.info .infoBody .aboutVerbiage a.resume:visited {
+  color: #224afb;
+}
+
+section.info .infoBody .aboutVerbiage a.linkedInLink img {
+  width: 51px;
+  height: auto;
+  -webkit-transform: translateY(17px);
+          transform: translateY(17px);
+}
+
 section.info .infoBody .aboutVerbiage span a.nucamp {
   text-decoration: underline;
   -webkit-text-decoration-color: #ffffff49;
@@ -752,189 +823,8 @@ section.info .infoBody .aboutVerbiage--9, section.info .infoBody .aboutVerbiage-
   display: inline;
 }
 
-section.info .infoBody .aboutVerbiage--9 a.resume, section.info .infoBody .aboutVerbiage--12 a.resume {
-  padding: 11px 24px 10px 24px;
-  background: white;
-  color: #224afb;
-  border-radius: 7px;
-  font-size: 1.8rem;
-  text-decoration: none;
-}
-
-section.info .infoBody .aboutVerbiage--9 a.resume:visited, section.info .infoBody .aboutVerbiage--12 a.resume:visited {
-  color: #224afb;
-}
-
 section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage--13 {
   display: inline;
-  margin-left: 1.5rem;
-}
-
-section.info .infoBody .aboutVerbiage--10 a.linkedInLink img, section.info .infoBody .aboutVerbiage--13 a.linkedInLink img {
-  width: 51px;
-  height: auto;
-}
-
-section.info .infoBody .aboutVerbiage--13 a.linkedInLink img {
-  width: 51px;
-  height: auto;
-  -webkit-transform: translateY(17px);
-          transform: translateY(17px);
-}
-
-div.contact {
-  margin-top: 150px;
-  height: 450px;
-  width: 450px;
-}
-
-div.contact .contentContainer {
-  position: relative;
-}
-
-div.contact .contentContainer .copyContainer .anchor {
-  position: absolute;
-  visibility: hidden;
-  height: 200px;
-  bottom: 0px;
-}
-
-div.contact .contentContainer .copyContainer .educationHeader {
-  line-height: 1.1;
-  color: white;
-  z-index: 10;
-  position: relative;
-  -webkit-margin-after: 0.7rem;
-          margin-block-end: 0.7rem;
-  font-size: 1.9rem;
-}
-
-div.contact .contentContainer .copyContainer .educationItem {
-  font-family: "corporate condensed regular";
-  font-size: 1.6rem;
-  line-height: 1.1;
-  color: white;
-  z-index: 10;
-  position: relative;
-  padding-left: 0.1rem;
-}
-
-div.contact .contentContainer .copyContainer .educationItem--0, div.contact .contentContainer .copyContainer .educationItem--3, div.contact .contentContainer .copyContainer .educationItem--6 {
-  font-family: "Epilogue", sans-serif;
-  font-size: 1.6rem;
-}
-
-div.contact .contentContainer .copyContainer .educationItem--1, div.contact .contentContainer .copyContainer .educationItem--4, div.contact .contentContainer .copyContainer .educationItem--7 {
-  margin-top: -3px;
-}
-
-div.contact .contentContainer .copyContainer .educationItem--2, div.contact .contentContainer .copyContainer .educationItem--5, div.contact .contentContainer .copyContainer .educationItem--8 {
-  -webkit-margin-after: 1.5rem;
-          margin-block-end: 1.5rem;
-}
-
-div.contact .contentContainer .copyContainer .contactInfo {
-  line-height: 1.1;
-  color: white;
-  position: relative;
-  z-index: 10;
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--0 {
-  font-size: 2.4rem;
-  font-family: "drucc", serif;
-  -webkit-margin-after: 0.7rem;
-          margin-block-end: 0.7rem;
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--1 {
-  font-family: "Epilogue", sans-serif;
-  font-size: 1.6rem;
-  position: relative;
-  -webkit-margin-after: 0.2rem;
-          margin-block-end: 0.2rem;
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--1 a {
-  -webkit-text-decoration-color: rgba(255, 255, 255, 0.42);
-          text-decoration-color: rgba(255, 255, 255, 0.42);
-  color: white;
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--1 a img {
-  -webkit-transform: translate(5%, 10%);
-          transform: translate(5%, 10%);
-  width: 21px;
-  visibility: hidden;
-  position: relative;
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--1 a:visited {
-  color: white;
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--1 a:hover {
-  color: #97b3f0;
-  -webkit-text-decoration-color: rgba(151, 179, 240, 0.42);
-          text-decoration-color: rgba(151, 179, 240, 0.42);
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--1 a:hover img {
-  visibility: visible;
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--2 {
-  width: 100%;
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--2 a {
-  font-family: "Epilogue", sans-serif;
-  font-size: 1.4rem;
-  position: absolute;
-  top: -80px;
-  right: 70px;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  background-color: white;
-  line-height: 150px;
-  text-align: center;
-  -webkit-transform: rotate(-12deg);
-          transform: rotate(-12deg);
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
-  cursor: pointer;
-  text-decoration: none;
-  color: #224afb;
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--2 a:visited {
-  color: #224afb;
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--2 a:hover {
-  -webkit-transform: rotate(-8deg);
-          transform: rotate(-8deg);
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--2 a img {
-  position: relative;
-  height: 15px;
-  width: auto;
-  top: 1px;
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--3 a img {
-  height: 40px;
-  width: auto;
-  margin-right: 20px;
-  margin-top: 18px;
-}
-
-div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
-  padding-left: 3px;
 }
 
 .customOverlay {
@@ -3087,16 +2977,14 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   section.navigation {
     width: 360px;
     padding-top: 0.5rem;
+    padding-bottom: 3.5rem;
   }
   section.navigation .name {
     padding-top: 0.1rem;
     font-size: 1.3rem;
   }
-  section.navigation .name:before {
-    left: 2px;
-  }
   section.navigation ul {
-    font-size: 1.21rem;
+    font-size: 0.75rem;
   }
   section.navigation ul li {
     font-size: 0.8rem;
@@ -3205,266 +3093,246 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
   .lowerContainer {
     height: 973px;
     margin-bottom: 0rem;
   }
   section {
-    width: 350px;
+    width: 340px;
   }
   section.navigation {
-    width: 350px;
+    width: 340px;
     padding-top: 0.5rem;
+    padding-bottom: 3rem;
   }
   section.navigation .name {
     padding-top: 0.1rem;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
-  section.navigation .name:before {
-    left: 2px;
+  section.navigation ul {
+    font-size: 0.14rem;
+  }
+  section.navigation ul li {
+    font-size: 0.7rem;
   }
   section.header {
-    width: 350px;
-    font-size: 2.04rem;
+    width: 340px;
+    font-size: 1.4rem;
   }
   section.work {
-    width: 350px;
+    width: 340px;
   }
-  section.work .workContainer .workBody .workItemContainer {
-    width: 350px;
+  section.work div.workContainer div.workBody span.workItemContainer {
+    width: 340px;
   }
-  section.work .workContainer .workBody .workItemContainer span {
+  section.work div.workContainer div.workBody span.workItemContainer span {
     font-size: 1.17rem;
   }
-  section.work .workContainer .workBody .workItemContainer span:after {
+  section.work div.workContainer div.workBody span.workItemContainer span:after {
     right: -12px;
     top: -28px;
   }
-  section.work div.favorites {
-    width: 350px;
-  }
-  section.work div.favorites div.favoritesContainer {
-    height: 350px;
-  }
-  section.work div.favorites div.favoritesContainer div.boxColumn {
-    padding: 22px;
-  }
-  section.work div.favorites div.favoritesContainer div.boxColumn div.skills div {
-    font-size: 0.8rem;
-  }
-  section.work div.favorites div.favoritesContainer div.boxColumn div.skills ul li {
-    font-size: 1.3rem;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem {
-    padding: 22px;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers div {
-    font-size: 0.8rem;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
-    font-size: 1.3rem;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts div {
-    font-size: 0.8rem;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
-    height: 15px;
-    margin-bottom: 15px;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
-    height: 20px;
-    margin-bottom: 12px;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(3) {
-    height: 16px;
-  }
-  section.info {
-    width: 350px;
-    padding-top: 0.3rem;
-  }
-  section.info .infoBody {
-    width: 100%;
-  }
-  section.info .infoBody .aboutHeader {
-    font-size: 1.2rem;
-    -webkit-margin-after: 0.5rem;
-            margin-block-end: 0.5rem;
-  }
-  section.info .infoBody .aboutVerbiage {
-    font-size: 1.17rem;
-  }
-  section.info .infoBody .aboutVerbiage--0 {
-    padding-top: 1rem;
-  }
-  section.contact {
-    width: 350px;
-    height: 530px;
+  section.work div.workContainer div.contact {
+    width: 340px;
     padding-top: 0rem;
   }
-  section.contact .contentContainer .copyContainer {
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer {
     padding-top: 0rem;
   }
-  section.contact .contentContainer .copyContainer .educationHeader {
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationHeader {
     font-size: 1.2rem;
   }
-  section.contact .contentContainer .copyContainer .educationItem {
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem {
+    width: 340px;
     font-size: 1.4rem;
   }
-  section.contact .contentContainer .copyContainer .educationItem--0 {
-    padding-top: 1rem;
-  }
-  section.contact .contentContainer .copyContainer .educationItem--0, section.contact .contentContainer .copyContainer .educationItem--3, section.contact .contentContainer .copyContainer .educationItem--6 {
-    font-size: 1.35rem;
-  }
-  section.contact .contentContainer .copyContainer .contactInfo--0 {
-    font-size: 1.2rem;
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0 {
     padding-top: 0rem;
   }
-  section.contact .contentContainer .copyContainer .contactInfo--1 {
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--3, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--6 {
     font-size: 1.35rem;
-    padding-top: 1rem;
   }
-}
-
-@media screen and (max-width: 320px) {
-  .lowerContainer {
-    height: 850px;
-    margin-bottom: 0rem;
+  section.favorites {
+    width: 340px;
+    height: 340px;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
-  section {
-    width: 310px;
+  section.favorites div.favoritesContainer {
+    height: 100%;
   }
-  section.navigation {
-    width: 310px;
-    padding-top: 0.5rem;
+  section.favorites div.favoritesContainer div.boxColumn {
+    padding: 22px;
   }
-  section.navigation .name {
-    padding-top: 0.1rem;
-    font-size: 1.8rem;
+  section.favorites div.favoritesContainer div.boxColumn div.skills div {
+    font-size: 0.75rem;
   }
-  section.navigation .name:before {
-    left: 2px;
+  section.favorites div.favoritesContainer div.boxColumn div.skills ul li {
+    font-size: 1.3rem;
   }
-  section.header {
-    width: 310px;
-    font-size: 1.8rem;
-    padding-bottom: 0rem;
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem {
+    padding: 22px;
   }
-  section.header .descriptionContainer .description .dItem {
-    height: 34px;
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers div {
+    font-size: 0.75rem;
   }
-  section.work {
-    width: 310px;
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
+    font-size: 1.3rem;
   }
-  section.work .workContainer .workBody .workHeader {
-    font-size: 1.1rem;
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts div {
+    font-size: 0.75rem;
   }
-  section.work .workContainer .workBody .workItemContainer {
-    width: 310px;
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
+    height: 14px;
+    margin-bottom: 12px;
   }
-  section.work .workContainer .workBody .workItemContainer span {
-    font-size: 1rem;
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
+    height: 19px;
+    margin-bottom: 9px;
   }
-  section.work .workContainer .workBody .workItemContainer span:after {
-    right: -12px;
-    top: -30px;
-  }
-  section.work div.favorites {
-    width: 310px;
-  }
-  section.work div.favorites div.favoritesContainer {
-    height: 310px;
-  }
-  section.work div.favorites div.favoritesContainer div.boxColumn {
-    padding: 18px;
-  }
-  section.work div.favorites div.favoritesContainer div.boxColumn div.skills div {
-    font-size: 0.7rem;
-  }
-  section.work div.favorites div.favoritesContainer div.boxColumn div.skills ul {
-    margin-top: 5px;
-  }
-  section.work div.favorites div.favoritesContainer div.boxColumn div.skills ul li {
-    font-size: 1.1rem;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem {
-    padding: 18px;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers div {
-    font-size: 0.7rem;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
-    font-size: 1.1rem;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts div {
-    font-size: 0.7rem;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
-    height: 13px;
-    margin-bottom: 13px;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
-    height: 17px;
-    margin-bottom: 10px;
-  }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(3) {
-    height: 12px;
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(3) {
+    height: 15px;
   }
   section.info {
-    width: 310px;
-    padding-top: 0.3rem;
-    margin-top: 1rem;
+    width: 340px;
   }
   section.info div.infoBody {
     width: 100%;
   }
-  section.info div.infoBody div.aboutHeader {
-    font-size: 1.1rem;
-    -webkit-margin-after: 0.5rem;
-            margin-block-end: 0.5rem;
-  }
   section.info div.infoBody span.aboutVerbiage {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section {
+    width: 265px;
+  }
+  section.navigation {
+    width: 265px;
+    padding-top: 0.5rem;
+  }
+  section.navigation span.name {
+    padding-top: 0.1rem;
+    font-size: 0.9rem;
+  }
+  section.navigation span.name:before {
+    width: 265px !important;
+  }
+  section.navigation ul {
+    font-size: 0.185rem;
+  }
+  section.navigation ul li {
+    font-size: 0.5rem;
+  }
+  section.header {
+    width: 265px;
+    font-size: 1.1rem;
+    padding-bottom: 0rem;
+  }
+  section.header div.descriptionContainer div.description div.dItem {
+    height: 23px;
+  }
+  section.work {
+    width: 265px;
+  }
+  section.work div.workContainer div.workBody div.workHeader {
+    font-size: 0.9rem;
+  }
+  section.work div.workContainer div.workBody span.workItemContainer {
+    width: 265px;
+  }
+  section.work div.workContainer div.workBody span.workItemContainer span {
+    font-size: 0.9rem;
+  }
+  section.work div.workContainer div.workBody span.workItemContainer span:after {
+    right: -12px;
+    top: -30px;
+  }
+  section.work div.workContainer div.contact {
+    width: 265px;
+    padding-top: 0rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer {
+    padding-top: 0rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationHeader {
+    font-size: 0.9rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem {
+    width: 265px;
+    font-size: 01rem;
+    line-height: 1.2rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0 {
+    padding-top: 0rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--3, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--6 {
+    font-size: 0.9rem;
+  }
+  section.favorites {
+    width: 265px;
+    height: 265px;
+  }
+  section.favorites div.favoritesContainer div.boxColumn {
+    padding: 18px;
+  }
+  section.favorites div.favoritesContainer div.boxColumn div.skills div {
+    font-size: 0.5rem;
+  }
+  section.favorites div.favoritesContainer div.boxColumn div.skills ul {
+    margin-top: 5px;
+  }
+  section.favorites div.favoritesContainer div.boxColumn div.skills ul li {
     font-size: 1rem;
   }
-  section.info div.infoBody span.aboutVerbiage--0 {
-    padding-top: 1rem;
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem {
+    padding: 18px;
   }
-  section.contact {
-    width: 310px;
-    height: 530px;
-    padding-top: 0rem;
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers div {
+    font-size: 0.5rem;
   }
-  section.contact div.contentContainer div.copyContainer {
-    padding-top: 0rem;
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul {
+    margin-top: 5px;
   }
-  section.contact div.contentContainer div.copyContainer div.educationHeader {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts div {
+    font-size: 0.5rem;
+    padding-bottom: 7px;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
+    height: 10px;
+    margin-bottom: 10px;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
+    height: 13px;
+    margin-bottom: 7px;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(3) {
+    height: 10px;
+  }
+  section.info {
+    width: 265px;
+    margin-top: 2rem;
+  }
+  section.info div.infoBody {
+    width: 100%;
+  }
+  section.info div.infoBody span.aboutVerbiage {
     font-size: 1.1rem;
   }
-  section.contact div.contentContainer div.copyContainer div.educationItem {
-    width: 310px;
-    font-size: 1.2rem;
+  section.info div.infoBody span.aboutVerbiage--8 {
+    height: 5px;
   }
-  section.contact div.contentContainer div.copyContainer div.educationItem--0 {
-    padding-top: 1rem;
+  section.info div.infoBody span.aboutVerbiage a.resume {
+    margin-top: -20px;
+    font-size: 0.9rem;
   }
-  section.contact div.contentContainer div.copyContainer div.educationItem--0, section.contact div.contentContainer div.copyContainer div.educationItem--3, section.contact div.contentContainer div.copyContainer div.educationItem--6 {
-    font-size: 1.2rem;
-  }
-  section.contact div.contentContainer div.copyContainer div.contactInfo--0 {
-    font-size: 1.1rem;
-    padding-top: 0rem;
-  }
-  section.contact div.contentContainer div.copyContainer div.contactInfo--1 {
-    font-size: 1.2rem;
-    padding-top: 1rem;
-  }
-  section.contact div.contentContainer div.copyContainer div.contactInfo--2 a {
-    height: 85px;
-    width: 85px;
-    line-height: 85px;
-  }
-  section.contact div.contentContainer div.copyContainer .linksContainer a img {
+  section.info div.infoBody span.aboutVerbiage a.linkedInLink img {
     height: 35px;
   }
 }

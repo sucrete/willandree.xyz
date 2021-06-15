@@ -56,8 +56,8 @@ function MobileInfo() {
       out. <MailTo />
     </span>,
     <br />,
-    <Resume />,
     <LinkedIn />,
+    <Resume />,
   ];
   const { ref, inView } = useInView({
     threshold: 0.5,
@@ -110,8 +110,8 @@ function DesktopInfo() {
     </span>,
     <MailTo />,
     <br />,
-    <Resume />,
     <LinkedIn />,
+    <Resume />,
   ];
 
   const { ref, inView } = useInView({

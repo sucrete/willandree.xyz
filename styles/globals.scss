@@ -478,7 +478,64 @@ section.work {
     }
   }
 }
+// ███████╗██████╗ ██╗   ██╗ ██████╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗         ██╗
+// ██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║         ╚██╗
+// █████╗  ██║  ██║██║   ██║██║     ███████║   ██║   ██║██║   ██║██╔██╗ ██║    █████╗╚██╗
+// ██╔══╝  ██║  ██║██║   ██║██║     ██╔══██║   ██║   ██║██║   ██║██║╚██╗██║    ╚════╝██╔╝
+// ███████╗██████╔╝╚██████╔╝╚██████╗██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║         ██╔╝
+// ╚══════╝╚═════╝  ╚═════╝  ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝         ╚═╝
 
+div.contact {
+  margin-top: 150px;
+  height: 450px;
+  width: 450px;
+  .contentContainer {
+    position: relative;
+    .copyContainer {
+      .anchor {
+        position: absolute;
+        visibility: hidden;
+        height: 200px;
+        bottom: 0px;
+      }
+      .educationHeader {
+        line-height: 1.1;
+        color: white;
+        z-index: 10;
+        position: relative;
+        margin-block-end: 0.7rem;
+        font-size: 1.9rem;
+      }
+      .educationItem {
+        font-family: "corporate condensed regular";
+        font-size: 1.6rem;
+        line-height: 1.1;
+        color: white;
+        z-index: 10;
+        position: relative;
+        padding-left: 0.1rem;
+        // TITLE OF SCHOOL
+        &--0,
+        &--3,
+        &--6 {
+          font-family: "Epilogue", sans-serif;
+          // font-weight: 400;
+          font-size: 1.6rem;
+        }
+        &--1,
+        &--4,
+        &--7 {
+          margin-top: -3px;
+        }
+        &--2,
+        &--5,
+        &--8 {
+          margin-block-end: 1.5rem;
+        }
+      }
+    }
+  }
+}
 // ███████╗ █████╗ ██╗   ██╗ ██████╗ ██████╗ ██╗████████╗███████╗███████╗         ██╗
 // ██╔════╝██╔══██╗██║   ██║██╔═══██╗██╔══██╗██║╚══██╔══╝██╔════╝██╔════╝         ╚██╗
 // █████╗  ███████║██║   ██║██║   ██║██████╔╝██║   ██║   █████╗  ███████╗    █████╗╚██╗
@@ -643,6 +700,24 @@ section.info {
       font-size: 2.2rem;
       font-weight: 500;
       left: 6px;
+      a.resume {
+        padding: 11px 24px 10px 24px;
+        background: white;
+        color: #224afb;
+        border-radius: 7px;
+        font-size: 1.8rem;
+        text-decoration: none;
+        &:visited {
+          color: #224afb;
+        }
+      }
+      a.linkedInLink {
+        img {
+          width: 51px;
+          height: auto;
+          transform: translateY(17px);
+        }
+      }
       span {
         a.nucamp {
           text-decoration: underline;
@@ -678,185 +753,10 @@ section.info {
       &--9,
       &--12 {
         display: inline;
-        a.resume {
-          padding: 11px 24px 10px 24px;
-          background: white;
-          color: #224afb;
-          border-radius: 7px;
-          font-size: 1.8rem;
-          text-decoration: none;
-          &:visited {
-            color: #224afb;
-          }
-        }
       }
       &--10,
       &--13 {
         display: inline;
-        margin-left: 1.5rem;
-        a.linkedInLink {
-          img {
-            width: 51px;
-            height: auto;
-          }
-        }
-      }
-      &--13 {
-        a.linkedInLink {
-          img {
-            width: 51px;
-            height: auto;
-            transform: translateY(17px);
-          }
-        }
-      }
-    }
-  }
-}
-
-// ███████╗██████╗ ██╗   ██╗ ██████╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗         ██╗
-// ██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║         ╚██╗
-// █████╗  ██║  ██║██║   ██║██║     ███████║   ██║   ██║██║   ██║██╔██╗ ██║    █████╗╚██╗
-// ██╔══╝  ██║  ██║██║   ██║██║     ██╔══██║   ██║   ██║██║   ██║██║╚██╗██║    ╚════╝██╔╝
-// ███████╗██████╔╝╚██████╔╝╚██████╗██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║         ██╔╝
-// ╚══════╝╚═════╝  ╚═════╝  ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝         ╚═╝
-
-div.contact {
-  margin-top: 150px;
-  height: 450px;
-  width: 450px;
-  .contentContainer {
-    position: relative;
-    .copyContainer {
-      .anchor {
-        position: absolute;
-        visibility: hidden;
-        height: 200px;
-        bottom: 0px;
-      }
-      .educationHeader {
-        line-height: 1.1;
-        color: white;
-        z-index: 10;
-        position: relative;
-        margin-block-end: 0.7rem;
-        font-size: 1.9rem;
-      }
-      .educationItem {
-        font-family: "corporate condensed regular";
-        font-size: 1.6rem;
-        line-height: 1.1;
-        color: white;
-        z-index: 10;
-        position: relative;
-        padding-left: 0.1rem;
-        // TITLE OF SCHOOL
-        &--0,
-        &--3,
-        &--6 {
-          font-family: "Epilogue", sans-serif;
-          // font-weight: 400;
-          font-size: 1.6rem;
-        }
-        &--1,
-        &--4,
-        &--7 {
-          margin-top: -3px;
-        }
-        &--2,
-        &--5,
-        &--8 {
-          margin-block-end: 1.5rem;
-        }
-      }
-
-      .contactInfo {
-        line-height: 1.1;
-        color: white;
-        position: relative;
-        z-index: 10;
-        // text-transform: uppercase;
-        &--0 {
-          font-size: 2.4rem;
-          font-family: "drucc", serif;
-          margin-block-end: 0.7rem;
-        }
-        &--1 {
-          font-family: "Epilogue", sans-serif;
-          // font-weight: 500;
-          font-size: 1.6rem;
-          position: relative;
-          // padding-left: 0.1rem;
-          margin-block-end: 0.2rem;
-          a {
-            text-decoration-color: rgba(255, 255, 255, 0.42);
-            color: white;
-            img {
-              transform: translate(5%, 10%);
-              width: 21px;
-              visibility: hidden;
-              position: relative;
-            }
-            &:visited {
-              color: white;
-            }
-            &:hover {
-              color: #97b3f0;
-              text-decoration-color: rgba(151, 179, 240, 0.42);
-              img {
-                visibility: visible;
-              }
-            }
-          }
-        }
-        &--2 {
-          width: 100%;
-          a {
-            font-family: "Epilogue", sans-serif;
-            font-size: 1.4rem;
-            position: absolute;
-            top: -80px;
-            right: 70px;
-            width: 150px;
-            height: 150px;
-            border-radius: 100%;
-            background-color: white;
-            // border: 2px solid white;
-            line-height: 150px;
-            text-align: center;
-            transform: rotate(-12deg);
-            transition: transform 0.2s ease;
-            cursor: pointer;
-            text-decoration: none;
-            color: #224afb;
-            &:visited {
-              color: #224afb;
-            }
-
-            &:hover {
-              transform: rotate(-8deg);
-            }
-            img {
-              position: relative;
-              height: 15px;
-              width: auto;
-              top: 1px;
-            }
-          }
-        }
-        &--3 {
-          a {
-            img {
-              height: 40px;
-              width: auto;
-              margin-right: 20px;
-              margin-top: 18px;
-            }
-          }
-          .linkedInLink {
-            padding-left: 3px;
-          }
-        }
       }
     }
   }
@@ -3091,15 +2991,13 @@ $xtraSmallWidth: 360px;
     &.navigation {
       width: $xtraSmallWidth;
       padding-top: 0.5rem;
+      padding-bottom: 3.5rem;
       .name {
         padding-top: 0.1rem;
         font-size: 1.3rem;
-        &:before {
-          left: 2px;
-        }
       }
       ul {
-        font-size: 1.21rem;
+        font-size: 0.75rem;
         li {
           font-size: 0.8rem;
         }
@@ -3236,15 +3134,16 @@ $xtraSmallWidth: 360px;
   }
 }
 
-// ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ██████╗  ██████╗  ██████╗ ██████╗ ██╗  ██╗         ██╗
-// ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ╚════██╗██╔════╝ ██╔═████╗██╔══██╗╚██╗██╔╝         ╚██╗
-// ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝     █████╔╝███████╗ ██║██╔██║██████╔╝ ╚███╔╝     █████╗╚██╗
-// ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗     ╚═══██╗██╔═══██╗████╔╝██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
-// ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║    ██████╔╝╚██████╔╝╚██████╔╝██║     ██╔╝ ██╗         ██╔╝
-//  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝     ╚═╝  ╚═╝         ╚═╝
-// UNDER 360PX
-$xtraXtraSmallWidth: 350px;
-@media screen and (max-width: 360px) {
+// ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ██████╗  ██████╗  ██████╗     ██╗██████╗ ███████╗███████╗██████╗ ██╗  ██╗         ██╗
+// ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ╚════██╗██╔════╝ ██╔═████╗   ██╔╝╚════██╗╚════██║██╔════╝██╔══██╗╚██╗██╔╝         ╚██╗
+// ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝     █████╔╝███████╗ ██║██╔██║  ██╔╝  █████╔╝    ██╔╝███████╗██████╔╝ ╚███╔╝     █████╗╚██╗
+// ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗     ╚═══██╗██╔═══██╗████╔╝██║ ██╔╝   ╚═══██╗   ██╔╝ ╚════██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
+// ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║    ██████╔╝╚██████╔╝╚██████╔╝██╔╝   ██████╔╝   ██║  ███████║██║     ██╔╝ ██╗         ██╔╝
+//  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝    ╚═════╝    ╚═╝  ╚══════╝╚═╝     ╚═╝  ╚═╝         ╚═╝
+// UNDER 360 and 375px
+
+$xtraXtraSmallWidth: 340px;
+@media screen and (max-width: 375px) {
   .lowerContainer {
     height: 973px;
     margin-bottom: 0rem;
@@ -3254,23 +3153,27 @@ $xtraXtraSmallWidth: 350px;
     &.navigation {
       width: $xtraXtraSmallWidth;
       padding-top: 0.5rem;
+      padding-bottom: 3rem;
       .name {
         padding-top: 0.1rem;
-        font-size: 1.8rem;
-        &:before {
-          left: 2px;
+        font-size: 1.2rem;
+      }
+      ul {
+        font-size: 0.14rem;
+        li {
+          font-size: 0.7rem;
         }
       }
     }
     &.header {
       width: $xtraXtraSmallWidth;
-      font-size: 2.04rem;
+      font-size: 1.4rem;
     }
     &.work {
       width: $xtraXtraSmallWidth;
-      .workContainer {
-        .workBody {
-          .workItemContainer {
+      div.workContainer {
+        div.workBody {
+          span.workItemContainer {
             width: $xtraXtraSmallWidth;
             span {
               font-size: 1.17rem;
@@ -3281,52 +3184,79 @@ $xtraXtraSmallWidth: 350px;
             }
           }
         }
-      }
-      div.favorites {
-        width: $xtraXtraSmallWidth;
-
-        div.favoritesContainer {
-          height: $xtraXtraSmallWidth;
-          div.boxColumn {
-            padding: 22px;
-            div.skills {
-              div {
-                font-size: 0.8rem;
+        div.contact {
+          width: $xtraXtraSmallWidth;
+          // margin-top: 10rem;
+          // height: 530px;
+          padding-top: 0rem;
+          div.contentContainer {
+            div.copyContainer {
+              padding-top: 0rem;
+              div.educationHeader {
+                font-size: 1.2rem;
               }
-              ul li {
-                font-size: 1.3rem;
+              div.educationItem {
+                width: $xtraXtraSmallWidth;
+                font-size: 1.4rem;
+                &--0 {
+                  padding-top: 0rem;
+                }
+                &--0,
+                &--3,
+                &--6 {
+                  font-size: 1.35rem;
+                }
               }
             }
           }
-          div.leftContainer {
-            div.boxItem {
-              padding: 22px;
-              div.designers {
-                div {
-                  font-size: 0.8rem;
-                }
-                ul {
-                  li {
-                    font-size: 1.3rem;
-                  }
+        }
+      }
+    }
+    &.favorites {
+      width: $xtraXtraSmallWidth;
+      height: $xtraXtraSmallWidth;
+      transform: translate(0, 0);
+      div.favoritesContainer {
+        height: 100%;
+        div.boxColumn {
+          padding: 22px;
+          div.skills {
+            div {
+              font-size: 0.75rem;
+            }
+            ul li {
+              font-size: 1.3rem;
+            }
+          }
+        }
+        div.leftContainer {
+          div.boxItem {
+            padding: 22px;
+            div.designers {
+              div {
+                font-size: 0.75rem;
+              }
+              ul {
+                li {
+                  font-size: 1.3rem;
                 }
               }
-              div.fonts {
-                div {
-                  font-size: 0.8rem;
+            }
+            div.fonts {
+              div {
+                font-size: 0.75rem;
+              }
+              img {
+                &:nth-of-type(1) {
+                  height: 14px;
+                  margin-bottom: 12px;
                 }
-                img {
-                  &:nth-of-type(1) {
-                    height: 15px;
-                    margin-bottom: 15px;
-                  }
-                  &:nth-of-type(2) {
-                    height: 20px;
-                    margin-bottom: 12px;
-                  }
-                  &:nth-of-type(3) {
-                    height: 16px;
-                  }
+                &:nth-of-type(2) {
+                  height: 19px;
+                  margin-bottom: 9px;
+                }
+                &:nth-of-type(3) {
+                  height: 15px;
                 }
               }
             }
@@ -3336,163 +3266,154 @@ $xtraXtraSmallWidth: 350px;
     }
     &.info {
       width: $xtraXtraSmallWidth;
-      padding-top: 0.3rem;
-      .infoBody {
+      // padding-top: 0.3rem;
+      div.infoBody {
         width: 100%;
-        .aboutHeader {
-          font-size: 1.2rem;
-          margin-block-end: 0.5rem;
-        }
-        .aboutVerbiage {
-          font-size: 1.17rem;
-          &--0 {
-            padding-top: 1rem;
-          }
-        }
-      }
-    }
-    &.contact {
-      width: $xtraXtraSmallWidth;
-      // margin-top: 10rem;
-      height: 530px;
-      padding-top: 0rem;
-      .contentContainer {
-        .copyContainer {
-          padding-top: 0rem;
-          .educationHeader {
-            font-size: 1.2rem;
-          }
-          .educationItem {
-            font-size: 1.4rem;
-            &--0 {
-              padding-top: 1rem;
-            }
-            &--0,
-            &--3,
-            &--6 {
-              font-size: 1.35rem;
-            }
-          }
-          .contactInfo {
-            &--0 {
-              font-size: 1.2rem;
-              padding-top: 0rem;
-            }
-            &--1 {
-              font-size: 1.35rem;
-              padding-top: 1rem;
-            }
-          }
+        span.aboutVerbiage {
+          font-size: 1.4rem;
         }
       }
     }
   }
 }
 
-// ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ██████╗ ██████╗  ██████╗ ██████╗ ██╗  ██╗         ██╗
-// ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ╚════██╗╚════██╗██╔═████╗██╔══██╗╚██╗██╔╝         ╚██╗
-// ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝     █████╔╝ █████╔╝██║██╔██║██████╔╝ ╚███╔╝     █████╗╚██╗
-// ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗     ╚═══██╗██╔═══╝ ████╔╝██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
-// ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║    ██████╔╝███████╗╚██████╔╝██║     ██╔╝ ██╗         ██╔╝
-//  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝         ╚═╝
+// ██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗     ██████╗  █████╗  ██████╗     ██╗██████╗ ██████╗  ██████╗ ██████╗ ██╗  ██╗         ██╗
+// ██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗    ╚════██╗██╔══██╗██╔═████╗   ██╔╝╚════██╗╚════██╗██╔═████╗██╔══██╗╚██╗██╔╝         ╚██╗
+// ██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝     █████╔╝╚█████╔╝██║██╔██║  ██╔╝  █████╔╝ █████╔╝██║██╔██║██████╔╝ ╚███╔╝     █████╗╚██╗
+// ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗    ██╔═══╝ ██╔══██╗████╔╝██║ ██╔╝   ╚═══██╗██╔═══╝ ████╔╝██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
+// ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║    ███████╗╚█████╔╝╚██████╔╝██╔╝   ██████╔╝███████╗╚██████╔╝██║     ██╔╝ ██╗         ██╔╝
+//  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚══════╝ ╚════╝  ╚═════╝ ╚═╝    ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝         ╚═╝
 
-$xtraXtraXtraSmallWidth: 310px;
+// under 280px and 320px wide
+
+$xtraXtraXtraSmallWidth: 265px;
 @media screen and (max-width: 320px) {
-  .lowerContainer {
-    height: 850px;
-    margin-bottom: 0rem;
-  }
   section {
     width: $xtraXtraXtraSmallWidth;
     &.navigation {
       width: $xtraXtraXtraSmallWidth;
       padding-top: 0.5rem;
-      .name {
+      span.name {
         padding-top: 0.1rem;
-        font-size: 1.8rem;
+        font-size: 0.9rem;
         &:before {
-          left: 2px;
+          width: $xtraXtraXtraSmallWidth !important;
+        }
+      }
+      ul {
+        font-size: 0.185rem;
+        li {
+          font-size: 0.5rem;
         }
       }
     }
     &.header {
       width: $xtraXtraXtraSmallWidth;
-      font-size: 1.8rem;
+      font-size: 1.1rem;
       padding-bottom: 0rem;
-      .descriptionContainer {
-        .description {
-          .dItem {
-            height: 34px;
+      div.descriptionContainer {
+        div.description {
+          div.dItem {
+            height: 23px;
           }
         }
       }
     }
     &.work {
       width: $xtraXtraXtraSmallWidth;
-      .workContainer {
-        .workBody {
-          .workHeader {
-            font-size: 1.1rem;
+      div.workContainer {
+        div.workBody {
+          div.workHeader {
+            font-size: 0.9rem;
           }
-          .workItemContainer {
+          span.workItemContainer {
             width: $xtraXtraXtraSmallWidth;
             span {
-              font-size: 1rem;
+              font-size: 0.9rem;
               &:after {
                 right: -12px;
                 top: -30px;
+                // width: 50px;
+              }
+            }
+          }
+        }
+        div.contact {
+          width: $xtraXtraXtraSmallWidth;
+          padding-top: 0rem;
+          div.contentContainer {
+            div.copyContainer {
+              padding-top: 0rem;
+              div.educationHeader {
+                font-size: 0.9rem;
+              }
+              div.educationItem {
+                width: $xtraXtraXtraSmallWidth;
+                font-size: 01rem;
+                line-height: 1.2rem;
+                &--0 {
+                  padding-top: 0rem;
+                }
+                &--0,
+                &--3,
+                &--6 {
+                  font-size: 0.9rem;
+                }
               }
             }
           }
         }
       }
-      div.favorites {
-        width: $xtraXtraXtraSmallWidth;
-        div.favoritesContainer {
-          height: $xtraXtraXtraSmallWidth;
-          div.boxColumn {
+    }
+    &.favorites {
+      width: $xtraXtraXtraSmallWidth;
+      height: $xtraXtraXtraSmallWidth;
+      div.favoritesContainer {
+        div.boxColumn {
+          padding: 18px;
+          div.skills {
+            div {
+              font-size: 0.5rem;
+            }
+            ul {
+              margin-top: 5px;
+              li {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+        div.leftContainer {
+          div.boxItem {
             padding: 18px;
-            div.skills {
+            div.designers {
               div {
-                font-size: 0.7rem;
+                font-size: 0.5rem;
               }
               ul {
                 margin-top: 5px;
                 li {
-                  font-size: 1.1rem;
+                  font-size: 1rem;
+                  line-height: 1.2rem;
                 }
               }
             }
-          }
-          div.leftContainer {
-            div.boxItem {
-              padding: 18px;
-              div.designers {
-                div {
-                  font-size: 0.7rem;
-                }
-                ul {
-                  li {
-                    font-size: 1.1rem;
-                  }
-                }
+            div.fonts {
+              div {
+                font-size: 0.5rem;
+                padding-bottom: 7px;
               }
-              div.fonts {
-                div {
-                  font-size: 0.7rem;
+              img {
+                &:nth-of-type(1) {
+                  height: 10px;
+                  margin-bottom: 10px;
                 }
-                img {
-                  &:nth-of-type(1) {
-                    height: 13px;
-                    margin-bottom: 13px;
-                  }
-                  &:nth-of-type(2) {
-                    height: 17px;
-                    margin-bottom: 10px;
-                  }
-                  &:nth-of-type(3) {
-                    height: 12px;
-                  }
+                &:nth-of-type(2) {
+                  height: 13px;
+                  margin-bottom: 7px;
+                }
+                &:nth-of-type(3) {
+                  height: 10px;
                 }
               }
             }
@@ -3502,67 +3423,24 @@ $xtraXtraXtraSmallWidth: 310px;
     }
     &.info {
       width: $xtraXtraXtraSmallWidth;
-      padding-top: 0.3rem;
-      margin-top: 1rem;
+      // padding-top: 0.3rem;
+      margin-top: 2rem;
       div.infoBody {
         width: 100%;
-        div.aboutHeader {
-          font-size: 1.1rem;
-          margin-block-end: 0.5rem;
-        }
+
         span.aboutVerbiage {
-          font-size: 1rem;
-          &--0 {
-            padding-top: 1rem;
+          font-size: 1.1rem;
+          // display: unset;
+          &--8 {
+            height: 5px;
           }
-        }
-      }
-    }
-    &.contact {
-      width: $xtraXtraXtraSmallWidth;
-      // margin-top: 10rem;
-      height: 530px;
-      padding-top: 0rem;
-      div.contentContainer {
-        div.copyContainer {
-          padding-top: 0rem;
-          div.educationHeader {
-            font-size: 1.1rem;
+          a.resume {
+            margin-top: -20px;
+            font-size: 0.9rem;
           }
-          div.educationItem {
-            width: $xtraXtraXtraSmallWidth;
-            font-size: 1.2rem;
-            &--0 {
-              padding-top: 1rem;
-            }
-            &--0,
-            &--3,
-            &--6 {
-              font-size: 1.2rem;
-            }
-          }
-          div.contactInfo {
-            &--0 {
-              font-size: 1.1rem;
-              padding-top: 0rem;
-            }
-            &--1 {
-              font-size: 1.2rem;
-              padding-top: 1rem;
-            }
-            &--2 {
-              a {
-                height: 85px;
-                width: 85px;
-                line-height: 85px;
-              }
-            }
-          }
-          .linksContainer {
-            a {
-              img {
-                height: 35px;
-              }
+          a.linkedInLink {
+            img {
+              height: 35px;
             }
           }
         }
