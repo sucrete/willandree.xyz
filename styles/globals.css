@@ -2877,7 +2877,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     font-size: 1.15rem;
   }
   section.navigation ul li {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   section.header {
     width: 390px;
@@ -2913,6 +2913,13 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     font-size: 1.2rem;
     padding-top: 18px;
   }
+  section.work div.workContainer div.workBody span.workItemContainer span:hover {
+    color: rgba(255, 255, 255, 0.822);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(17.1%, rgba(255, 255, 255, 0)), color-stop(32.2%, rgba(255, 255, 255, 0.002)), color-stop(45.3%, rgba(255, 255, 255, 0.006)), color-stop(56.7%, rgba(255, 255, 255, 0.015)), color-stop(66.4%, rgba(255, 255, 255, 0.03)), color-stop(74.5%, rgba(255, 255, 255, 0.052)), color-stop(81.2%, rgba(255, 255, 255, 0.082)), color-stop(86.7%, rgba(255, 255, 255, 0.123)), color-stop(91%, rgba(255, 255, 255, 0.175)), color-stop(94.3%, rgba(255, 255, 255, 0.24)), color-stop(96.7%, rgba(255, 255, 255, 0.319)), color-stop(98.3%, rgba(255, 255, 255, 0.415)), color-stop(99.3%, rgba(255, 255, 255, 0.527)), color-stop(99.9%, rgba(255, 255, 255, 0.659)), to(rgba(255, 255, 255, 0.81)));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 17.1%, rgba(255, 255, 255, 0.002) 32.2%, rgba(255, 255, 255, 0.006) 45.3%, rgba(255, 255, 255, 0.015) 56.7%, rgba(255, 255, 255, 0.03) 66.4%, rgba(255, 255, 255, 0.052) 74.5%, rgba(255, 255, 255, 0.082) 81.2%, rgba(255, 255, 255, 0.123) 86.7%, rgba(255, 255, 255, 0.175) 91%, rgba(255, 255, 255, 0.24) 94.3%, rgba(255, 255, 255, 0.319) 96.7%, rgba(255, 255, 255, 0.415) 98.3%, rgba(255, 255, 255, 0.527) 99.3%, rgba(255, 255, 255, 0.659) 99.9%, rgba(255, 255, 255, 0.81) 100%);
+    -webkit-box-shadow: inset 0em 0.8em 20px 17px #224afb;
+            box-shadow: inset 0em 0.8em 20px 17px #224afb;
+  }
   section.work div.workContainer div.workBody span.workItemContainer span:after {
     top: -27px;
     right: -12px;
@@ -2927,7 +2934,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
     margin-bottom: 0rem;
-    height: 200px;
+    height: unset;
   }
   section.work div.workContainer div.contact div.contentContainer {
     width: 100%;
@@ -2985,13 +2992,13 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     height: 397px;
     margin-left: auto;
     margin-right: auto;
-    -webkit-transform: translate(-2px, 120px);
-            transform: translate(-2px, 120px);
+    -webkit-transform: translate(-2px, 0px);
+            transform: translate(-2px, 0px);
+    margin-top: 3rem;
     padding-top: 0rem;
   }
   section.favorites:after {
-    width: 500px;
-    height: 500px;
+    display: none;
   }
   section.favorites div.favoritesContainer {
     width: 397px;
@@ -3004,40 +3011,45 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     border: 1px solid white;
   }
   section.favorites div.favoritesContainer div.boxColumn div.skills div {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
   section.favorites div.favoritesContainer div.boxColumn div.skills ul li {
     font-size: 1.4rem;
     line-height: 1.2;
+  }
+  section.favorites div.favoritesContainer div.leftContainer {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem {
     padding: 1.5rem 1.5rem 1.5rem 1.7rem;
     border: 1px solid white;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers {
-    font-size: 0.9rem;
+    font-size: 0.85em;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
     font-size: 1.4rem;
   }
-  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts {
-    font-size: 0.9rem;
-  }
-  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img {
-    height: 17px;
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts div {
+    font-size: 0.85rem;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
-    margin-bottom: 12px;
+    height: 16px;
+    margin-bottom: 13px;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
-    height: 21px;
+    height: 20px;
     margin-bottom: 8px;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(3) {
+    height: 17px;
   }
   section.info {
     width: 390px;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-    padding-top: 2rem;
+    padding-top: 1rem;
     margin-bottom: 1.5rem;
   }
   section.info div.infoBody {
@@ -3050,11 +3062,15 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   }
   section.info div.infoBody span.aboutVerbiage {
     width: 390px;
-    font-size: 1.25rem;
+    font-size: 1.6rem;
   }
-  section.info div.infoBody span.aboutVerbiage--0 {
-    border-top: 1px solid white;
-    width: 100%;
+  section.info div.infoBody span.aboutVerbiage a.resume {
+    font-size: 1.5rem;
+  }
+  section.info div.infoBody span.aboutVerbiage a.linkedInLink img {
+    height: 46px;
+    -webkit-transform: translateY(16px);
+            transform: translateY(16px);
   }
 }
 

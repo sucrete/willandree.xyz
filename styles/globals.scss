@@ -2798,7 +2798,7 @@ $smallWidth: 390px;
       ul {
         font-size: 1.15rem;
         li {
-          font-size: 1rem;
+          font-size: 0.9rem;
         }
       }
     }
@@ -2832,7 +2832,31 @@ $smallWidth: 390px;
           }
           span.workItemContainer {
             width: $smallWidth;
+
             span {
+              &:hover {
+                color: rgba(255, 255, 255, 0.822);
+                background: linear-gradient(
+                  to bottom,
+                  hsla(0, 0%, 100%, 0) 0%,
+                  hsla(0, 0%, 100%, 0) 17.1%,
+                  hsla(0, 0%, 100%, 0.002) 32.2%,
+                  hsla(0, 0%, 100%, 0.006) 45.3%,
+                  hsla(0, 0%, 100%, 0.015) 56.7%,
+                  hsla(0, 0%, 100%, 0.03) 66.4%,
+                  hsla(0, 0%, 100%, 0.052) 74.5%,
+                  hsla(0, 0%, 100%, 0.082) 81.2%,
+                  hsla(0, 0%, 100%, 0.123) 86.7%,
+                  hsla(0, 0%, 100%, 0.175) 91%,
+                  hsla(0, 0%, 100%, 0.24) 94.3%,
+                  hsla(0, 0%, 100%, 0.319) 96.7%,
+                  hsla(0, 0%, 100%, 0.415) 98.3%,
+                  hsla(0, 0%, 100%, 0.527) 99.3%,
+                  hsla(0, 0%, 100%, 0.659) 99.9%,
+                  hsla(0, 0%, 100%, 0.81) 100%
+                );
+                box-shadow: inset 0em 0.8em 20px 17px #224afb;
+              }
               font-size: 1.2rem;
               padding-top: 18px;
               &:after {
@@ -2851,7 +2875,7 @@ $smallWidth: 390px;
           margin-top: 3rem;
           transform: translateX(0px);
           margin-bottom: 0rem;
-          height: 200px;
+          height: unset;
           div.contentContainer {
             width: 100%;
             div.copyContainer {
@@ -2920,11 +2944,11 @@ $smallWidth: 390px;
       height: 397px;
       margin-left: auto;
       margin-right: auto;
-      transform: translate(-2px, 120px);
+      transform: translate(-2px, 0px);
+      margin-top: 3rem;
       padding-top: 0rem;
       &:after {
-        width: 500px;
-        height: 500px;
+        display: none;
       }
       div.favoritesContainer {
         width: 397px;
@@ -2936,7 +2960,7 @@ $smallWidth: 390px;
           border: 1px solid white;
           div.skills {
             div {
-              font-size: 0.9rem;
+              font-size: 0.85rem;
             }
             ul {
               li {
@@ -2947,11 +2971,12 @@ $smallWidth: 390px;
           }
         }
         div.leftContainer {
+          transform: translate(0, 0);
           div.boxItem {
             padding: 1.5rem 1.5rem 1.5rem 1.7rem;
             border: 1px solid white;
             div.designers {
-              font-size: 0.9rem;
+              font-size: 0.85em;
               ul {
                 li {
                   font-size: 1.4rem;
@@ -2959,16 +2984,20 @@ $smallWidth: 390px;
               }
             }
             div.fonts {
-              font-size: 0.9rem;
+              div {
+                font-size: 0.85rem;
+              }
               img {
-                height: 17px;
-                // margin-bottom: 20px;
                 &:nth-of-type(1) {
-                  margin-bottom: 12px;
+                  height: 16px;
+                  margin-bottom: 13px;
                 }
                 &:nth-of-type(2) {
-                  height: 21px;
+                  height: 20px;
                   margin-bottom: 8px;
+                }
+                &:nth-of-type(3) {
+                  height: 17px;
                 }
               }
             }
@@ -2979,7 +3008,7 @@ $smallWidth: 390px;
     &.info {
       width: $smallWidth;
       transform: translateX(0px);
-      padding-top: 2rem;
+      padding-top: 1rem;
       margin-bottom: 1.5rem;
       div.infoBody {
         width: $smallWidth;
@@ -2990,10 +3019,15 @@ $smallWidth: 390px;
         }
         span.aboutVerbiage {
           width: $smallWidth;
-          font-size: 1.25rem;
-          &--0 {
-            border-top: 1px solid white;
-            width: 100%;
+          font-size: 1.6rem;
+          a.resume {
+            font-size: 1.5rem;
+          }
+          a.linkedInLink {
+            img {
+              height: 46px;
+              transform: translateY(16px);
+            }
           }
         }
       }
