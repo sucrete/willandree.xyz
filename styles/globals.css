@@ -2268,12 +2268,12 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     margin-top: 9rem;
-    padding-top: 1rem;
   }
   section.info .infoBody {
     width: 736px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 2rem;
   }
   section.info .infoBody .aboutVerbiage {
     font-size: 3rem;
@@ -3107,7 +3107,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     padding-bottom: 1rem;
   }
   section.header div.descriptionContainer div.description div.dItem {
-    height: 27px;
+    height: 28px;
   }
   section.work {
     width: 360px;

@@ -2121,11 +2121,12 @@ div.contact {
       width: 800px;
       transform: translateY(0px);
       margin-top: 9rem;
-      padding-top: 1rem;
+      // padding-top: 1rem;
       .infoBody {
         width: 736px;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 2rem;
         .aboutVerbiage {
           font-size: 3rem;
           justify-content: unset;
@@ -3111,7 +3112,7 @@ $xtraSmallWidth: 360px;
       div.descriptionContainer {
         div.description {
           div.dItem {
-            height: 27px;
+            height: 28px;
             div.dItemBaby {
               // height: 40px;
             }
