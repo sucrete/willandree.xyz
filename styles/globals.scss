@@ -2016,7 +2016,7 @@ div.contact {
         position: absolute;
         height: 960px;
         width: 960px;
-        top: 45%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         // z-index: ;
@@ -2130,6 +2130,24 @@ div.contact {
           font-size: 3rem;
           justify-content: unset;
           left: 0;
+          &--7 {
+            span {
+              span {
+                a.mailTo {
+                  text-decoration: underline;
+                  text-decoration-color: #ffffff49;
+                  color: white;
+                  &:hover {
+                    color: #97b3f0 !important;
+                    text-decoration-color: #97b3f05d;
+                  }
+                  &:visited {
+                    color: white;
+                  }
+                }
+              }
+            }
+          }
           &--9,
           &--11 {
             a.resume {
@@ -2387,7 +2405,7 @@ $medWidth: 650px;
     }
     &.work {
       width: $medWidth;
-      padding-bottom: 5rem;
+      padding-bottom: 1rem;
       div.workContainer {
         margin-left: auto;
         width: $medWidth;
@@ -2417,10 +2435,13 @@ $medWidth: 650px;
                 left: 0px;
                 margin-block-end: 1rem;
               }
-              .educationItem {
+              div.educationItem {
                 left: 0px;
+                &--0 {
+                  padding-top: 0.5rem;
+                }
               }
-              .contactInfo {
+              div.contactInfo {
                 left: 0px;
                 &--1 {
                   a {
@@ -2434,19 +2455,50 @@ $medWidth: 650px;
           }
         }
       }
-      .favorites {
+    }
+    &.favorites {
+      width: $medWidth;
+      padding-top: 0rem;
+      transform: translate(0px, 120px);
+      div.favoritesContainer {
         width: $medWidth;
-        padding-top: 0rem;
-        transform: translate(0px, 120px);
-        .favoritesContainer {
-          width: $medWidth;
-          height: $medWidth;
-          .boxColumn {
-            .skills {
-              ul {
-                li {
-                  line-height: 1.05;
-                }
+        height: $medWidth;
+        div.boxColumn {
+          div.skills {
+            div {
+              font-size: 1.3rem;
+            }
+            ul {
+              li {
+                line-height: 1.1;
+                font-size: 2.5rem;
+              }
+            }
+          }
+        }
+        div.leftContainer {
+          div.boxItem {
+            div.designers {
+              font-size: 1.3rem;
+              ul li {
+                font-size: 2.5rem;
+                line-height: 1.1;
+              }
+            }
+            div.fonts {
+              div {
+                font-size: 1.3rem;
+              }
+              img:nth-of-type(1) {
+                height: 28px;
+                margin-bottom: 20px;
+              }
+              img:nth-of-type(2) {
+                height: 34px;
+                margin-bottom: 14px;
+              }
+              img:nth-of-type(3) {
+                height: 28px;
               }
             }
           }
@@ -2459,7 +2511,7 @@ $medWidth: 650px;
       .infoBody {
         transform: translateX(0px);
         .aboutVerbiage {
-          font-size: 2.1rem;
+          font-size: 2.6rem;
         }
       }
     }
@@ -2499,6 +2551,7 @@ $medSmallWidth: 535px;
         line-height: 1.5;
         padding-top: 0.5rem;
         &:before {
+          left: 0px;
           bottom: -24px;
           height: 1px;
           animation-delay: 1200ms;
@@ -2520,7 +2573,8 @@ $medSmallWidth: 535px;
         }
       }
       ul {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
+        right: 0px;
         li {
           font-size: 1.2rem;
         }
@@ -2528,7 +2582,7 @@ $medSmallWidth: 535px;
     }
     &.header {
       width: $medSmallWidth;
-      font-size: 2.1rem;
+      font-size: 2.25rem;
       .descriptionContainer {
         left: 0px;
         .description {
@@ -2543,15 +2597,15 @@ $medSmallWidth: 535px;
     }
     &.work {
       width: $medSmallWidth;
-      .workContainer {
+      div.workContainer {
         width: $medSmallWidth;
-        .workBody {
-          .workHeader {
-            font-size: 1.9rem;
+        div.workBody {
+          div.workHeader {
+            font-size: 1.7rem;
             padding-left: 5px;
             margin-block-end: 1rem;
           }
-          .workItemContainer {
+          span.workItemContainer {
             width: $medSmallWidth;
             &.dtContainer {
               span {
@@ -2559,7 +2613,7 @@ $medSmallWidth: 535px;
               }
             }
             span {
-              font-size: 1.7rem;
+              font-size: 1.5rem;
               border-bottom: solid 1px white;
               &:hover {
                 border-bottom: solid 1px white;
@@ -2567,61 +2621,106 @@ $medSmallWidth: 535px;
 
               &:before {
                 content: url("../public/expand-button-small-sizes-khaki.svg");
-                top: -18px;
+                top: -20px;
                 right: -11px;
               }
               &:after {
                 content: url("../public/expand-button-small-sizes-white.svg");
-                top: -18px;
+                top: -20px;
                 right: -11px;
               }
             }
           }
         }
-      }
-      div.favorites {
-        width: $medSmallWidth;
-        height: $medSmallWidth;
-        transform: translate(0px, 120px);
-        div.favoritesContainer {
-          height: $medSmallWidth;
-          div.boxColumn {
-            padding: 1.9rem 1.9rem 1.9rem 2rem;
-            border: solid 1px white;
-            div.skills {
-              font-size: 1.2rem;
-              ul {
-                li {
-                  font-size: 2rem;
-                  line-height: 1.2;
+        div.contact {
+          width: $medSmallWidth;
+          // margin-top: 11rem;
+          height: 570px;
+          transform: translateX(5px);
+          // transform: translateY(3px);
+          div.contentContainer {
+            div.copyContainer {
+              div.educationHeader {
+                font-size: 1.7rem;
+              }
+              div.educationItem {
+                font-size: 1.9rem;
+                width: 534px;
+                // padding-left: 0.1rem;
+                &--0,
+                &--3,
+                &--6 {
+                  font-size: 1.8rem;
+                }
+              }
+              .contactInfo {
+                &--0 {
+                  font-size: 1.9rem;
+                  padding-bottom: 0.5rem;
+                }
+                &--1 {
+                  font-size: 1.7rem;
+                  font-weight: 400;
+                }
+                &--2 {
+                  font-size: 1.7rem;
                 }
               }
             }
           }
-          div.leftContainer {
-            div.boxItem {
-              padding: 1.9rem 1.9rem 1.9rem 2rem;
-              border: solid 1px white;
-              div.designers {
-                font-size: 1.2rem;
-                ul {
-                  li {
-                    font-size: 2rem;
-                  }
+        }
+      }
+    }
+    &.favorites {
+      width: $medSmallWidth;
+      height: $medSmallWidth;
+      transform: translate(0px, 0px);
+      &:after {
+        height: 700px;
+        width: 700px;
+      }
+      div.favoritesContainer {
+        height: $medSmallWidth;
+        div.boxColumn {
+          padding: 1.9rem 1.9rem 1.9rem 2rem;
+          border: solid 1px white;
+          div.skills {
+            font-size: 1.2rem;
+            ul {
+              li {
+                font-size: 2rem;
+                line-height: 1.2;
+              }
+            }
+          }
+        }
+        div.leftContainer {
+          div.boxItem {
+            padding: 1.9rem 1.9rem 1.9rem 2rem;
+            border: solid 1px white;
+            div.designers {
+              font-size: 1.2rem;
+              ul {
+                li {
+                  font-size: 2rem;
                 }
               }
-              div.fonts {
-                font-size: 1.2rem;
-                img {
-                  height: 25px;
+            }
+            div.fonts {
+              font-size: 1.2rem;
+              img {
+                height: 25px;
+                margin-bottom: 20px;
+                &:nth-of-type(1) {
                   margin-bottom: 20px;
-                  &:nth-of-type(1) {
-                    margin-bottom: 20px;
-                  }
-                  &:nth-of-type(2) {
-                    height: 27px;
-                    margin-bottom: 14px;
-                  }
+                  height: 24px;
+                }
+                &:nth-of-type(2) {
+                  height: 29px;
+                  margin-bottom: 14px;
+                }
+                &:nth-of-type(3) {
+                  height: 24px;
                 }
               }
             }
@@ -2631,7 +2730,7 @@ $medSmallWidth: 535px;
     }
     &.info {
       width: $medSmallWidth;
-      transform: translateX(5px);
+      transform: translateX(0px);
       // padding-top: 0;
       position: relative;
       div.infoBody {
@@ -2645,49 +2744,9 @@ $medSmallWidth: 535px;
         }
         span.aboutVerbiage {
           width: 534px;
-          font-size: 1.7rem;
+          font-size: 2.2rem;
         }
       }
-    }
-    &.contact {
-      width: $medSmallWidth;
-      // margin-top: 11rem;
-      height: 570px;
-      transform: translateX(5px);
-      // transform: translateY(3px);
-      div.contentContainer {
-        div.copyContainer {
-          div.educationHeader {
-            font-size: 1.9rem;
-          }
-          div.educationItem {
-            font-size: 1.7rem;
-            width: 534px;
-            // padding-left: 0.1rem;
-            &--0,
-            &--3,
-            &--6 {
-              font-size: 2rem;
-            }
-          }
-          .contactInfo {
-            &--0 {
-              font-size: 1.9rem;
-              padding-bottom: 0.5rem;
-            }
-            &--1 {
-              font-size: 1.7rem;
-              font-weight: 400;
-            }
-            &--2 {
-              font-size: 1.7rem;
-            }
-          }
-        }
-      }
-    }
-    &.resume {
-      width: $medSmallWidth;
     }
   }
 }
@@ -2714,7 +2773,7 @@ $smallWidth: 390px;
       padding-right: 3px;
       padding-left: 0px;
       .name {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         padding-top: 0.3rem;
         &:before {
           bottom: -15px;
@@ -2732,20 +2791,20 @@ $smallWidth: 390px;
           }
           to {
             opacity: 1;
-            width: 40px;
+            width: 100%;
           }
         }
       }
-      .cone {
-        width: 50px;
-        height: 45px;
-        animation-delay: 1100ms;
-        transform: translateY(-15px);
+      ul {
+        font-size: 1.15rem;
+        li {
+          font-size: 1rem;
+        }
       }
     }
     &.header {
       width: $smallWidth;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       .descriptionContainer {
         left: 0px;
         .description {
@@ -2760,16 +2819,18 @@ $smallWidth: 390px;
       padding-top: 0rem;
       margin-left: auto;
       margin-right: auto;
-      .workContainer {
+      margin-top: 82px;
+      div.workContainer {
         margin-left: auto;
         margin-right: auto;
-        transform: translateY(82px);
-        .workBody {
-          .workHeader {
+
+        width: $smallWidth;
+        div.workBody {
+          div.workHeader {
             font-size: 1.2rem;
             margin-block-end: 0.5rem;
           }
-          .workItemContainer {
+          span.workItemContainer {
             width: $smallWidth;
             span {
               font-size: 1.2rem;
@@ -2785,58 +2846,129 @@ $smallWidth: 390px;
             }
           }
         }
-      }
-      div.favorites {
-        width: 395px;
-        height: 397px;
-        margin-left: auto;
-        margin-right: auto;
-        transform: translate(-2px, 120px);
-        padding-top: 0rem;
-        div.favoritesContainer {
-          width: 397px;
-          height: 397px;
-          margin-left: auto;
-          margin-right: auto;
-          div.boxColumn {
-            padding: 1.5rem 1.5rem 1.5rem 1.7rem;
-            border: 1px solid white;
-            div.skills {
-              div {
-                font-size: 0.9rem;
+        div.contact {
+          width: $smallWidth;
+          margin-top: 3rem;
+          transform: translateX(0px);
+          margin-bottom: 0rem;
+          height: 200px;
+          div.contentContainer {
+            width: 100%;
+            div.copyContainer {
+              width: 100%;
+              padding-top: 0.5rem;
+              div.educationHeader {
+                font-size: 1.2rem;
+                padding-bottom: 0.5rem;
+                margin-block-end: 0rem;
               }
-              ul {
-                li {
+              div.educationItem {
+                font-size: 1.4rem;
+                // padding-left: 0.1rem;
+                width: $smallWidth;
+                &--0 {
+                  width: 100%;
+                }
+                &--0,
+                &--3,
+                &--6 {
                   font-size: 1.4rem;
-                  line-height: 1.2;
+                }
+              }
+              div.contactInfo {
+                &--0 {
+                  font-size: 1.2rem;
+                  padding-bottom: 0rem;
+                  margin-block-end: 0.5rem;
+                  padding-top: 0.6rem;
+                }
+                &--1 {
+                  font-size: 1.2rem;
+                  padding-left: 0rem;
+                  padding-top: 1.5rem;
+                  border-top: 1px solid white;
+                }
+                &--2 {
+                  a {
+                    font-size: 1rem;
+                    height: 100px;
+                    width: 100px;
+                    line-height: 100px;
+                    top: -80px;
+                    right: 12px;
+                    img {
+                      height: 10px;
+                      width: auto;
+                    }
+                  }
+                }
+              }
+              .linksContainer {
+                a {
+                  img {
+                    height: 40px;
+                  }
                 }
               }
             }
           }
-          div.leftContainer {
-            div.boxItem {
-              padding: 1.5rem 1.5rem 1.5rem 1.7rem;
-              border: 1px solid white;
-              div.designers {
-                font-size: 0.9rem;
-                ul {
-                  li {
-                    font-size: 1.4rem;
-                  }
+        }
+      }
+    }
+    &.favorites {
+      width: 395px;
+      height: 397px;
+      margin-left: auto;
+      margin-right: auto;
+      transform: translate(-2px, 120px);
+      padding-top: 0rem;
+      &:after {
+        width: 500px;
+        height: 500px;
+      }
+      div.favoritesContainer {
+        width: 397px;
+        height: 397px;
+        margin-left: auto;
+        margin-right: auto;
+        div.boxColumn {
+          padding: 1.5rem 1.5rem 1.5rem 1.7rem;
+          border: 1px solid white;
+          div.skills {
+            div {
+              font-size: 0.9rem;
+            }
+            ul {
+              li {
+                font-size: 1.4rem;
+                line-height: 1.2;
+              }
+            }
+          }
+        }
+        div.leftContainer {
+          div.boxItem {
+            padding: 1.5rem 1.5rem 1.5rem 1.7rem;
+            border: 1px solid white;
+            div.designers {
+              font-size: 0.9rem;
+              ul {
+                li {
+                  font-size: 1.4rem;
                 }
               }
-              div.fonts {
-                font-size: 0.9rem;
-                img {
-                  height: 17px;
-                  // margin-bottom: 20px;
-                  &:nth-of-type(1) {
-                    margin-bottom: 12px;
-                  }
-                  &:nth-of-type(2) {
-                    height: 21px;
-                    margin-bottom: 8px;
-                  }
+            }
+            div.fonts {
+              font-size: 0.9rem;
+              img {
+                height: 17px;
+                // margin-bottom: 20px;
+                &:nth-of-type(1) {
+                  margin-bottom: 12px;
+                }
+                &:nth-of-type(2) {
+                  height: 21px;
+                  margin-bottom: 8px;
                 }
               }
             }
@@ -2862,75 +2994,6 @@ $smallWidth: 390px;
           &--0 {
             border-top: 1px solid white;
             width: 100%;
-          }
-        }
-      }
-    }
-    &.contact {
-      width: $smallWidth;
-      margin-top: 0rem;
-      transform: translateX(0px);
-      margin-bottom: 0rem;
-      height: 200px;
-      div.contentContainer {
-        width: 100%;
-        div.copyContainer {
-          width: 100%;
-          padding-top: 0.5rem;
-          div.educationHeader {
-            font-size: 1.2rem;
-            padding-bottom: 0.5rem;
-            margin-block-end: 0rem;
-          }
-          div.educationItem {
-            font-size: 1.4rem;
-            // padding-left: 0.1rem;
-            width: $smallWidth;
-            &--0 {
-              border-top: 1px solid white;
-              width: 100%;
-            }
-            &--0,
-            &--3,
-            &--6 {
-              font-size: 1.4rem;
-            }
-          }
-          div.contactInfo {
-            &--0 {
-              font-size: 1.2rem;
-              padding-bottom: 0rem;
-              margin-block-end: 0.5rem;
-              padding-top: 0.6rem;
-            }
-            &--1 {
-              font-size: 1.2rem;
-              padding-left: 0rem;
-              padding-top: 1.5rem;
-              border-top: 1px solid white;
-            }
-            &--2 {
-              a {
-                font-size: 1rem;
-                height: 100px;
-                width: 100px;
-                line-height: 100px;
-                border: 1px solid white;
-                top: -80px;
-                right: 12px;
-                img {
-                  height: 10px;
-                  width: auto;
-                }
-              }
-            }
-          }
-          .linksContainer {
-            a {
-              img {
-                height: 40px;
-              }
-            }
           }
         }
       }

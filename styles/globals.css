@@ -2184,7 +2184,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     position: absolute;
     height: 960px;
     width: 960px;
-    top: 45%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -2281,6 +2281,20 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
         -ms-flex-pack: unset;
             justify-content: unset;
     left: 0;
+  }
+  section.info .infoBody .aboutVerbiage--7 span span a.mailTo {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #ffffff49;
+            text-decoration-color: #ffffff49;
+    color: white;
+  }
+  section.info .infoBody .aboutVerbiage--7 span span a.mailTo:hover {
+    color: #97b3f0 !important;
+    -webkit-text-decoration-color: #97b3f05d;
+            text-decoration-color: #97b3f05d;
+  }
+  section.info .infoBody .aboutVerbiage--7 span span a.mailTo:visited {
+    color: white;
   }
   section.info .infoBody .aboutVerbiage--9 a.resume, section.info .infoBody .aboutVerbiage--11 a.resume {
     padding: 11px 24px 10px 24px;
@@ -2492,7 +2506,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   }
   section.work {
     width: 650px;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
   }
   section.work div.workContainer {
     margin-left: auto;
@@ -2530,27 +2544,55 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     -webkit-margin-after: 1rem;
             margin-block-end: 1rem;
   }
-  section.work div.workContainer div.contact div.contentContainer div.copyContainer .educationItem {
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem {
     left: 0px;
   }
-  section.work div.workContainer div.contact div.contentContainer div.copyContainer .contactInfo {
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0 {
+    padding-top: 0.5rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.contactInfo {
     left: 0px;
   }
-  section.work div.workContainer div.contact div.contentContainer div.copyContainer .contactInfo--1 a img {
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.contactInfo--1 a img {
     display: none;
   }
-  section.work .favorites {
+  section.favorites {
     width: 650px;
     padding-top: 0rem;
     -webkit-transform: translate(0px, 120px);
             transform: translate(0px, 120px);
   }
-  section.work .favorites .favoritesContainer {
+  section.favorites div.favoritesContainer {
     width: 650px;
     height: 650px;
   }
-  section.work .favorites .favoritesContainer .boxColumn .skills ul li {
-    line-height: 1.05;
+  section.favorites div.favoritesContainer div.boxColumn div.skills div {
+    font-size: 1.3rem;
+  }
+  section.favorites div.favoritesContainer div.boxColumn div.skills ul li {
+    line-height: 1.1;
+    font-size: 2.5rem;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers {
+    font-size: 1.3rem;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts div {
+    font-size: 1.3rem;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
+    height: 28px;
+    margin-bottom: 20px;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
+    height: 34px;
+    margin-bottom: 14px;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(3) {
+    height: 28px;
   }
   section.info {
     width: 650px;
@@ -2561,7 +2603,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
             transform: translateX(0px);
   }
   section.info .infoBody .aboutVerbiage {
-    font-size: 2.1rem;
+    font-size: 2.6rem;
   }
   section.resume {
     width: 650px;
@@ -2589,6 +2631,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     padding-top: 0.5rem;
   }
   section.navigation .name:before {
+    left: 0px;
     bottom: -24px;
     height: 1px;
     -webkit-animation-delay: 1200ms;
@@ -2625,14 +2668,15 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     }
   }
   section.navigation ul {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+    right: 0px;
   }
   section.navigation ul li {
     font-size: 1.2rem;
   }
   section.header {
     width: 535px;
-    font-size: 2.1rem;
+    font-size: 2.25rem;
   }
   section.header .descriptionContainer {
     left: 0px;
@@ -2643,86 +2687,121 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   section.work {
     width: 535px;
   }
-  section.work .workContainer {
+  section.work div.workContainer {
     width: 535px;
   }
-  section.work .workContainer .workBody .workHeader {
-    font-size: 1.9rem;
+  section.work div.workContainer div.workBody div.workHeader {
+    font-size: 1.7rem;
     padding-left: 5px;
     -webkit-margin-after: 1rem;
             margin-block-end: 1rem;
   }
-  section.work .workContainer .workBody .workItemContainer {
+  section.work div.workContainer div.workBody span.workItemContainer {
     width: 535px;
   }
-  section.work .workContainer .workBody .workItemContainer.dtContainer span {
+  section.work div.workContainer div.workBody span.workItemContainer.dtContainer span {
     border-top: solid 1px white;
   }
-  section.work .workContainer .workBody .workItemContainer span {
-    font-size: 1.7rem;
+  section.work div.workContainer div.workBody span.workItemContainer span {
+    font-size: 1.5rem;
     border-bottom: solid 1px white;
   }
-  section.work .workContainer .workBody .workItemContainer span:hover {
+  section.work div.workContainer div.workBody span.workItemContainer span:hover {
     border-bottom: solid 1px white;
   }
-  section.work .workContainer .workBody .workItemContainer span:before {
+  section.work div.workContainer div.workBody span.workItemContainer span:before {
     content: url("../public/expand-button-small-sizes-khaki.svg");
-    top: -18px;
+    top: -20px;
     right: -11px;
   }
-  section.work .workContainer .workBody .workItemContainer span:after {
+  section.work div.workContainer div.workBody span.workItemContainer span:after {
     content: url("../public/expand-button-small-sizes-white.svg");
-    top: -18px;
+    top: -20px;
     right: -11px;
   }
-  section.work div.favorites {
+  section.work div.workContainer div.contact {
+    width: 535px;
+    height: 570px;
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationHeader {
+    font-size: 1.7rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem {
+    font-size: 1.9rem;
+    width: 534px;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--3, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--6 {
+    font-size: 1.8rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer .contactInfo--0 {
+    font-size: 1.9rem;
+    padding-bottom: 0.5rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer .contactInfo--1 {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer .contactInfo--2 {
+    font-size: 1.7rem;
+  }
+  section.favorites {
     width: 535px;
     height: 535px;
-    -webkit-transform: translate(0px, 120px);
-            transform: translate(0px, 120px);
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
-  section.work div.favorites div.favoritesContainer {
+  section.favorites:after {
+    height: 700px;
+    width: 700px;
+  }
+  section.favorites div.favoritesContainer {
     height: 535px;
   }
-  section.work div.favorites div.favoritesContainer div.boxColumn {
+  section.favorites div.favoritesContainer div.boxColumn {
     padding: 1.9rem 1.9rem 1.9rem 2rem;
     border: solid 1px white;
   }
-  section.work div.favorites div.favoritesContainer div.boxColumn div.skills {
+  section.favorites div.favoritesContainer div.boxColumn div.skills {
     font-size: 1.2rem;
   }
-  section.work div.favorites div.favoritesContainer div.boxColumn div.skills ul li {
+  section.favorites div.favoritesContainer div.boxColumn div.skills ul li {
     font-size: 2rem;
     line-height: 1.2;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem {
     padding: 1.9rem 1.9rem 1.9rem 2rem;
     border: solid 1px white;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers {
     font-size: 1.2rem;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
     font-size: 2rem;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts {
     font-size: 1.2rem;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img {
     height: 25px;
     margin-bottom: 20px;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
     margin-bottom: 20px;
+    height: 24px;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
-    height: 27px;
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
+    height: 29px;
     margin-bottom: 14px;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(3) {
+    height: 24px;
   }
   section.info {
     width: 535px;
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
     position: relative;
   }
   section.info div.infoBody {
@@ -2736,37 +2815,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   }
   section.info div.infoBody span.aboutVerbiage {
     width: 534px;
-    font-size: 1.7rem;
-  }
-  section.contact {
-    width: 535px;
-    height: 570px;
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-  section.contact div.contentContainer div.copyContainer div.educationHeader {
-    font-size: 1.9rem;
-  }
-  section.contact div.contentContainer div.copyContainer div.educationItem {
-    font-size: 1.7rem;
-    width: 534px;
-  }
-  section.contact div.contentContainer div.copyContainer div.educationItem--0, section.contact div.contentContainer div.copyContainer div.educationItem--3, section.contact div.contentContainer div.copyContainer div.educationItem--6 {
-    font-size: 2rem;
-  }
-  section.contact div.contentContainer div.copyContainer .contactInfo--0 {
-    font-size: 1.9rem;
-    padding-bottom: 0.5rem;
-  }
-  section.contact div.contentContainer div.copyContainer .contactInfo--1 {
-    font-size: 1.7rem;
-    font-weight: 400;
-  }
-  section.contact div.contentContainer div.copyContainer .contactInfo--2 {
-    font-size: 1.7rem;
-  }
-  section.resume {
-    width: 535px;
+    font-size: 2.2rem;
   }
 }
 
@@ -2786,7 +2835,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     padding-left: 0px;
   }
   section.navigation .name {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding-top: 0.3rem;
   }
   section.navigation .name:before {
@@ -2808,7 +2857,7 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     }
     to {
       opacity: 1;
-      width: 40px;
+      width: 100%;
     }
   }
   @keyframes lineAnim2 {
@@ -2821,20 +2870,18 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     }
     to {
       opacity: 1;
-      width: 40px;
+      width: 100%;
     }
   }
-  section.navigation .cone {
-    width: 50px;
-    height: 45px;
-    -webkit-animation-delay: 1100ms;
-            animation-delay: 1100ms;
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+  section.navigation ul {
+    font-size: 1.15rem;
+  }
+  section.navigation ul li {
+    font-size: 1rem;
   }
   section.header {
     width: 390px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   section.header .descriptionContainer {
     left: 0px;
@@ -2847,34 +2894,93 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
     padding-top: 0rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 82px;
   }
-  section.work .workContainer {
+  section.work div.workContainer {
     margin-left: auto;
     margin-right: auto;
-    -webkit-transform: translateY(82px);
-            transform: translateY(82px);
+    width: 390px;
   }
-  section.work .workContainer .workBody .workHeader {
+  section.work div.workContainer div.workBody div.workHeader {
     font-size: 1.2rem;
     -webkit-margin-after: 0.5rem;
             margin-block-end: 0.5rem;
   }
-  section.work .workContainer .workBody .workItemContainer {
+  section.work div.workContainer div.workBody span.workItemContainer {
     width: 390px;
   }
-  section.work .workContainer .workBody .workItemContainer span {
+  section.work div.workContainer div.workBody span.workItemContainer span {
     font-size: 1.2rem;
     padding-top: 18px;
   }
-  section.work .workContainer .workBody .workItemContainer span:after {
+  section.work div.workContainer div.workBody span.workItemContainer span:after {
     top: -27px;
     right: -12px;
   }
-  section.work .workContainer .workBody .workItemContainer span:before {
+  section.work div.workContainer div.workBody span.workItemContainer span:before {
     top: -27px;
     right: -12px;
   }
-  section.work div.favorites {
+  section.work div.workContainer div.contact {
+    width: 390px;
+    margin-top: 3rem;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    margin-bottom: 0rem;
+    height: 200px;
+  }
+  section.work div.workContainer div.contact div.contentContainer {
+    width: 100%;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer {
+    width: 100%;
+    padding-top: 0.5rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationHeader {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+    -webkit-margin-after: 0rem;
+            margin-block-end: 0rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem {
+    font-size: 1.4rem;
+    width: 390px;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0 {
+    width: 100%;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--3, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--6 {
+    font-size: 1.4rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.contactInfo--0 {
+    font-size: 1.2rem;
+    padding-bottom: 0rem;
+    -webkit-margin-after: 0.5rem;
+            margin-block-end: 0.5rem;
+    padding-top: 0.6rem;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.contactInfo--1 {
+    font-size: 1.2rem;
+    padding-left: 0rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid white;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.contactInfo--2 a {
+    font-size: 1rem;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    top: -80px;
+    right: 12px;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.contactInfo--2 a img {
+    height: 10px;
+    width: auto;
+  }
+  section.work div.workContainer div.contact div.contentContainer div.copyContainer .linksContainer a img {
+    height: 40px;
+  }
+  section.favorites {
     width: 395px;
     height: 397px;
     margin-left: auto;
@@ -2883,43 +2989,47 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
             transform: translate(-2px, 120px);
     padding-top: 0rem;
   }
-  section.work div.favorites div.favoritesContainer {
+  section.favorites:after {
+    width: 500px;
+    height: 500px;
+  }
+  section.favorites div.favoritesContainer {
     width: 397px;
     height: 397px;
     margin-left: auto;
     margin-right: auto;
   }
-  section.work div.favorites div.favoritesContainer div.boxColumn {
+  section.favorites div.favoritesContainer div.boxColumn {
     padding: 1.5rem 1.5rem 1.5rem 1.7rem;
     border: 1px solid white;
   }
-  section.work div.favorites div.favoritesContainer div.boxColumn div.skills div {
+  section.favorites div.favoritesContainer div.boxColumn div.skills div {
     font-size: 0.9rem;
   }
-  section.work div.favorites div.favoritesContainer div.boxColumn div.skills ul li {
+  section.favorites div.favoritesContainer div.boxColumn div.skills ul li {
     font-size: 1.4rem;
     line-height: 1.2;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem {
     padding: 1.5rem 1.5rem 1.5rem 1.7rem;
     border: 1px solid white;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers {
     font-size: 0.9rem;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
     font-size: 1.4rem;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts {
     font-size: 0.9rem;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img {
     height: 17px;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
     margin-bottom: 12px;
   }
-  section.work div.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(2) {
     height: 21px;
     margin-bottom: 8px;
   }
@@ -2945,67 +3055,6 @@ div.contact .contentContainer .copyContainer .contactInfo--3 .linkedInLink {
   section.info div.infoBody span.aboutVerbiage--0 {
     border-top: 1px solid white;
     width: 100%;
-  }
-  section.contact {
-    width: 390px;
-    margin-top: 0rem;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    margin-bottom: 0rem;
-    height: 200px;
-  }
-  section.contact div.contentContainer {
-    width: 100%;
-  }
-  section.contact div.contentContainer div.copyContainer {
-    width: 100%;
-    padding-top: 0.5rem;
-  }
-  section.contact div.contentContainer div.copyContainer div.educationHeader {
-    font-size: 1.2rem;
-    padding-bottom: 0.5rem;
-    -webkit-margin-after: 0rem;
-            margin-block-end: 0rem;
-  }
-  section.contact div.contentContainer div.copyContainer div.educationItem {
-    font-size: 1.4rem;
-    width: 390px;
-  }
-  section.contact div.contentContainer div.copyContainer div.educationItem--0 {
-    border-top: 1px solid white;
-    width: 100%;
-  }
-  section.contact div.contentContainer div.copyContainer div.educationItem--0, section.contact div.contentContainer div.copyContainer div.educationItem--3, section.contact div.contentContainer div.copyContainer div.educationItem--6 {
-    font-size: 1.4rem;
-  }
-  section.contact div.contentContainer div.copyContainer div.contactInfo--0 {
-    font-size: 1.2rem;
-    padding-bottom: 0rem;
-    -webkit-margin-after: 0.5rem;
-            margin-block-end: 0.5rem;
-    padding-top: 0.6rem;
-  }
-  section.contact div.contentContainer div.copyContainer div.contactInfo--1 {
-    font-size: 1.2rem;
-    padding-left: 0rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid white;
-  }
-  section.contact div.contentContainer div.copyContainer div.contactInfo--2 a {
-    font-size: 1rem;
-    height: 100px;
-    width: 100px;
-    line-height: 100px;
-    border: 1px solid white;
-    top: -80px;
-    right: 12px;
-  }
-  section.contact div.contentContainer div.copyContainer div.contactInfo--2 a img {
-    height: 10px;
-    width: auto;
-  }
-  section.contact div.contentContainer div.copyContainer .linksContainer a img {
-    height: 40px;
   }
 }
 

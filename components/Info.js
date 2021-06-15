@@ -22,12 +22,12 @@ function LinkedIn() {
 }
 function MailTo() {
   return (
-    <div>
-      →{" "}
+    <span>
+      ⮑{" "}
       <a className="mailTo" href="mailto:will@willandree.xyz">
         will@willandree.xyz
       </a>
-    </div>
+    </span>
   );
 }
 function Resume() {
