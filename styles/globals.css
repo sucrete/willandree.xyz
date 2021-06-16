@@ -2975,6 +2975,7 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   }
   section.info div.infoBody span.aboutVerbiage a.linkedInLink img {
     height: 36px;
+    width: 36px;
     -webkit-transform: translateY(13px);
             transform: translateY(13px);
   }
