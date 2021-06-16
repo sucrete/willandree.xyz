@@ -40,20 +40,20 @@ function Resume() {
 
 function MobileInfo() {
   const aboutVerbiage1 = [
-    "In addition to my design work I",
-    "teach practical web develop-",
+    "In addition to my design work I teach",
+    "teach practical web development",
     <span>
-      ment skills through{" "}
+      skills through{" "}
       <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
         Nucamp Coding Bootcamp.
       </a>
     </span>,
     <br />,
-    "If you are interested in using",
-    "my development services,",
-    "please, feel free to reach",
+    "If you are interested in using my",
+    "development services, please, feel",
+    "free to reach out.",
     <span>
-      out. <MailTo />
+      <MailTo />
     </span>,
     <br />,
     <LinkedIn />,

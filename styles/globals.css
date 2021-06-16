@@ -405,7 +405,7 @@ section.navigation ul li {
 @-webkit-keyframes coneAnim {
   from {
     opacity: 0;
-    bottom: 10px;
+    bottom: 7px;
   }
   to {
     opacity: 1;
@@ -416,7 +416,7 @@ section.navigation ul li {
 @keyframes coneAnim {
   from {
     opacity: 0;
-    bottom: 10px;
+    bottom: 7px;
   }
   to {
     opacity: 1;
@@ -1915,8 +1915,8 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     }
   }
   section.navigation ul {
-    -webkit-animation-delay: 1000ms;
-            animation-delay: 1000ms;
+    -webkit-animation-delay: 2000ms;
+            animation-delay: 2000ms;
     right: 10px;
   }
   section.navigation ul li {
@@ -2057,8 +2057,8 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   section.favorites:after {
     content: "";
     position: absolute;
-    height: 960px;
-    width: 960px;
+    height: 750px;
+    width: 750px;
     top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -2142,13 +2142,13 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     width: 800px;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
-    margin-top: 9rem;
+    margin-top: 7rem;
   }
   section.info .infoBody {
     width: 736px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 2rem;
+    padding-bottom: 3.5rem;
   }
   section.info .infoBody .aboutVerbiage {
     font-size: 3rem;
@@ -2202,64 +2202,6 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   }
   section.info .infoBody .aboutVerbiage--0 {
     padding-top: 1.5rem;
-  }
-  section.contact {
-    margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3rem;
-    width: 690px;
-    height: 100%;
-  }
-  section.contact .contentContainer {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  section.contact .contentContainer .copyContainer {
-    left: 0px;
-    padding-left: 0rem;
-    width: 100%;
-  }
-  section.contact .contentContainer .copyContainer .educationHeader {
-    font-size: 2rem;
-    padding-bottom: 1rem;
-  }
-  section.contact .contentContainer .copyContainer .educationItem {
-    font-size: 2.3rem;
-    padding-left: 0rem;
-  }
-  section.contact .contentContainer .copyContainer .educationHeader {
-    padding-bottom: 0.5rem;
-    -webkit-margin-after: 0.2rem;
-            margin-block-end: 0.2rem;
-  }
-  section.contact .contentContainer .copyContainer .educationItem--0 {
-    border-top: 2px solid white;
-    padding-top: 1.5rem;
-    width: 100%;
-  }
-  section.contact .contentContainer .copyContainer .contactInfo {
-    left: 0px;
-  }
-  section.contact .contentContainer .copyContainer .contactInfo--0 {
-    font-size: 2rem;
-    padding-top: 1.5rem;
-  }
-  section.contact .contentContainer .copyContainer .contactInfo--1 {
-    font-size: 2.3rem;
-    border-top: 2px solid white;
-    padding-top: 1.5rem;
-  }
-  section.contact .contentContainer .copyContainer .contactInfo--1 a img {
-    width: 35px;
-  }
-  section.contact .contentContainer .copyContainer .contactInfo--2 a {
-    right: 30px;
-    top: -130px;
-    width: 165px;
-    height: 165px;
-    line-height: 165px;
-    font-size: 1.6rem;
   }
 }
 
@@ -3020,7 +2962,7 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     font-size: 1rem;
   }
   section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     width: 360px;
   }
   section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0 {
@@ -3037,25 +2979,34 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     height: 100%;
   }
   section.favorites div.favoritesContainer div.boxColumn {
-    border-radius: 10px;
+    border-radius: 8px;
+    padding: 1.4rem 1.4rem 1.4rem 1.5rem;
   }
   section.favorites div.favoritesContainer div.boxColumn div.skills div {
     font-size: 0.75rem;
+  }
+  section.favorites div.favoritesContainer div.boxColumn div.skills ul {
+    margin-top: 5px;
   }
   section.favorites div.favoritesContainer div.boxColumn div.skills ul li {
     font-size: 1.35rem;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem {
-    border-radius: 10px;
+    padding: 1.4rem 1.4rem 1.4rem 1.5rem;
+    border-radius: 8px;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers div {
     font-size: 0.75rem;
+  }
+  section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul {
+    margin-top: 5px;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers ul li {
     font-size: 1.35rem;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts div {
     font-size: 0.75rem;
+    padding-bottom: 8px;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(1) {
     height: 15px;
@@ -3066,7 +3017,7 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     margin-bottom: 8px;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.fonts img:nth-of-type(3) {
-    height: 16px;
+    height: 15.5px;
   }
   section.info {
     width: 360px;
@@ -3076,11 +3027,17 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   }
   section.info div.infoBody span.aboutVerbiage {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.22;
   }
   section.info div.infoBody span.aboutVerbiage a.resume {
-    width: 80%;
+    font-size: 0.9rem;
+  }
+  section.info div.infoBody span.aboutVerbiage a.linkedInLink img {
+    height: 35px;
+    width: 35px;
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
   }
 }
 
