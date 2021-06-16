@@ -351,7 +351,7 @@ section.navigation {
   @keyframes coneAnim {
     from {
       opacity: 0;
-      bottom: 7px;
+      bottom: 4px;
     }
     to {
       opacity: 1;
@@ -3092,7 +3092,10 @@ $xtraXtraSmallWidth: 340px;
       div.infoBody {
         width: 100%;
         span.aboutVerbiage {
-          font-size: 1.4rem;
+          font-size: 1.1rem;
+          &--8 {
+            line-height: 1;
+          }
         }
       }
     }
@@ -3119,7 +3122,22 @@ $xtraXtraXtraSmallWidth: 265px;
         padding-top: 0.1rem;
         font-size: 0.9rem;
         &:before {
-          width: $xtraXtraXtraSmallWidth !important;
+          animation: 700ms lineAnim77 ease;
+          animation-fill-mode: forwards;
+          animation-delay: 1200ms;
+        }
+        @keyframes lineAnim77 {
+          from {
+            opacity: 0;
+            width: 0px;
+          }
+          50% {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+            width: 100%;
+          }
         }
       }
       ul {
@@ -3246,23 +3264,26 @@ $xtraXtraXtraSmallWidth: 265px;
     &.info {
       width: $xtraXtraXtraSmallWidth;
       // padding-top: 0.3rem;
-      margin-top: 2rem;
       div.infoBody {
         width: 100%;
 
         span.aboutVerbiage {
-          font-size: 1.1rem;
+          font-size: 0.9rem;
           // display: unset;
           &--8 {
             height: 5px;
           }
           a.resume {
             margin-top: -20px;
-            font-size: 0.9rem;
+            font-size: 0.7rem;
+            padding: 7px 20px 6px 20px;
+            border-radius: 4px;
           }
           a.linkedInLink {
             img {
-              height: 35px;
+              height: 25px;
+              width: 25px;
+              transform: translateY(9px);
             }
           }
         }

@@ -405,7 +405,7 @@ section.navigation ul li {
 @-webkit-keyframes coneAnim {
   from {
     opacity: 0;
-    bottom: 7px;
+    bottom: 4px;
   }
   to {
     opacity: 1;
@@ -416,7 +416,7 @@ section.navigation ul li {
 @keyframes coneAnim {
   from {
     opacity: 0;
-    bottom: 7px;
+    bottom: 4px;
   }
   to {
     opacity: 1;
@@ -3086,7 +3086,10 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     width: 100%;
   }
   section.info div.infoBody span.aboutVerbiage {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+  }
+  section.info div.infoBody span.aboutVerbiage--8 {
+    line-height: 1;
   }
 }
 
@@ -3103,7 +3106,38 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     font-size: 0.9rem;
   }
   section.navigation span.name:before {
-    width: 265px !important;
+    -webkit-animation: 700ms lineAnim77 ease;
+            animation: 700ms lineAnim77 ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 1200ms;
+            animation-delay: 1200ms;
+  }
+  @-webkit-keyframes lineAnim77 {
+    from {
+      opacity: 0;
+      width: 0px;
+    }
+    50% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  @keyframes lineAnim77 {
+    from {
+      opacity: 0;
+      width: 0px;
+    }
+    50% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      width: 100%;
+    }
   }
   section.navigation ul {
     font-size: 0.185rem;
@@ -3202,23 +3236,27 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   }
   section.info {
     width: 265px;
-    margin-top: 2rem;
   }
   section.info div.infoBody {
     width: 100%;
   }
   section.info div.infoBody span.aboutVerbiage {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   section.info div.infoBody span.aboutVerbiage--8 {
     height: 5px;
   }
   section.info div.infoBody span.aboutVerbiage a.resume {
     margin-top: -20px;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+    padding: 7px 20px 6px 20px;
+    border-radius: 4px;
   }
   section.info div.infoBody span.aboutVerbiage a.linkedInLink img {
-    height: 35px;
+    height: 25px;
+    width: 25px;
+    -webkit-transform: translateY(9px);
+            transform: translateY(9px);
   }
 }
 
