@@ -3019,7 +3019,7 @@ $xtraSmallWidth: 360px;
         div.workBody {
           div.workHeader {
             margin-block-end: 0.5rem;
-            font-size: 0.8rem;
+            font-size: 1rem;
           }
           span.workItemContainer {
             width: $xtraSmallWidth;
@@ -3035,25 +3035,23 @@ $xtraSmallWidth: 360px;
         }
         div.contact {
           width: $xtraSmallWidth;
-          // margin-top: 10rem;
-          // height: 530px;
           padding-top: 0rem;
           div.contentContainer {
             div.copyContainer {
               padding-top: 0rem;
               div.educationHeader {
-                font-size: 1.2rem;
+                font-size: 1rem;
               }
               div.educationItem {
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 width: $xtraSmallWidth;
                 &--0 {
-                  padding-top: 0.6rem;
+                  padding-top: 0.2rem;
                 }
                 &--0,
                 &--3,
                 &--6 {
-                  font-size: 1.35rem;
+                  font-size: 1.2rem;
                 }
               }
             }

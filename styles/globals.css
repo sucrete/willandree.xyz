@@ -2996,7 +2996,7 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   section.work div.workContainer div.workBody div.workHeader {
     -webkit-margin-after: 0.5rem;
             margin-block-end: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   section.work div.workContainer div.workBody span.workItemContainer {
     width: 360px;
@@ -3017,17 +3017,17 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     padding-top: 0rem;
   }
   section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationHeader {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     width: 360px;
   }
   section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0 {
-    padding-top: 0.6rem;
+    padding-top: 0.2rem;
   }
   section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--3, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--6 {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
   }
   section.favorites {
     width: 360px;
