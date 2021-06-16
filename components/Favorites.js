@@ -82,7 +82,7 @@ function Cursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hidden, setHidden] = useState(true);
   const [width, setWindowDimensions] = useState(getWindowDimensions());
-  if (typeof navigator !== "undefined" && isMobile() && width > 630)
+  if (typeof navigator !== "undefined" && isMobile() && width.width > 1090)
     return null;
 
   useEffect(() => {
@@ -164,7 +164,6 @@ export default function Favorites() {
   });
   return (
     <section ref={ref} className="favorites">
-      <Cursor />
       <div className="favoritesContainer">
         {trail2.map(({ x, ...rest }, index) => (
           <animated.div

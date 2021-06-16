@@ -22,12 +22,12 @@ function LinkedIn() {
 }
 function MailTo() {
   return (
-    <span>
+    <div>
       ⮑{" "}
       <a className="mailTo" href="mailto:will@willandree.xyz">
         will@willandree.xyz
       </a>
-    </span>
+    </div>
   );
 }
 function Resume() {
@@ -41,9 +41,9 @@ function Resume() {
 function MobileInfo() {
   const aboutVerbiage1 = [
     "In addition to my design work I teach",
-    "teach practical web development",
+    "practical web development skills",
     <span>
-      skills through{" "}
+      through{" "}
       <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
         Nucamp Coding Bootcamp.
       </a>
@@ -105,9 +105,7 @@ function DesktopInfo() {
     "If you are interested in",
     " using my development",
     "services, please, feel",
-    <span>
-      free to reach out. <img src="/peace.svg" />
-    </span>,
+    <span>free to reach out.</span>,
     <MailTo />,
     <br />,
     <LinkedIn />,

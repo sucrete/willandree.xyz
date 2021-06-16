@@ -71,7 +71,7 @@ function MobileHeader() {
     config: { mass: 5, tension: 2200, friction: 200 },
     delay: 200,
     x: 0,
-    height: 45,
+    height: 55,
     from: { x: 15, height: 0 },
   });
   return (
