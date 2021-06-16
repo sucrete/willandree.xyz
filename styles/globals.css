@@ -3002,12 +3002,12 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     width: 360px;
   }
   section.work div.workContainer div.workBody span.workItemContainer span {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-bottom: 15px;
   }
   section.work div.workContainer div.workBody span.workItemContainer span:after {
     right: -11px;
-    top: -29px;
+    top: -27px;
   }
   section.work div.workContainer div.contact {
     width: 360px;
