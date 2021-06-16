@@ -2910,6 +2910,8 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   section.favorites {
     width: 360px;
     height: 360px;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
   section.favorites div.favoritesContainer {
     height: 100%;
@@ -2969,12 +2971,12 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   }
   section.info div.infoBody span.aboutVerbiage a.resume {
     font-size: 0.9rem;
+    height: 36px;
   }
   section.info div.infoBody span.aboutVerbiage a.linkedInLink img {
-    height: 35px;
-    width: 35px;
-    -webkit-transform: translateY(12px);
-            transform: translateY(12px);
+    height: 36px;
+    -webkit-transform: translateY(13px);
+            transform: translateY(13px);
   }
 }
 

@@ -2877,6 +2877,7 @@ $xtraSmallWidth: 360px;
     &.favorites {
       width: $xtraSmallWidth;
       height: $xtraSmallWidth;
+      transform: translate(0px, 0px);
       div.favoritesContainer {
         height: 100%;
         div.boxColumn {
@@ -2942,12 +2943,13 @@ $xtraSmallWidth: 360px;
           line-height: 1.22;
           a.resume {
             font-size: 0.9rem;
+            height: 36px;
           }
           a.linkedInLink {
             img {
-              height: 35px;
-              width: 35px;
-              transform: translateY(12px);
+              height: 36px;
+              // width: 36px;
+              transform: translateY(13px);
             }
           }
         }
