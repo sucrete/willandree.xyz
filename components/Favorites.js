@@ -82,7 +82,7 @@ function Cursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hidden, setHidden] = useState(true);
   const [width, setWindowDimensions] = useState(getWindowDimensions());
-  if (typeof navigator !== "undefined" && isMobile() && width > 1090)
+  if (typeof navigator !== "undefined" && isMobile() && width > 630)
     return null;
 
   useEffect(() => {
