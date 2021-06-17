@@ -91,7 +91,7 @@ section {
 
 .title {
   font-size: 1.9rem;
-  font-family: "drucc", serif;
+  font-family: "corporate condensed regular", serif;
 }
 
 .cursor {
@@ -266,7 +266,7 @@ section.navigation .name:before {
   content: "";
   -webkit-transition: 1.4s;
   transition: 1.4s;
-  background-color: #ffffffe1;
+  background-color: #ffffff94;
   -webkit-animation: 700ms lineAnim ease;
           animation: 700ms lineAnim ease;
   -webkit-animation-fill-mode: forwards;
@@ -394,7 +394,7 @@ section.navigation ul .liImage--3 {
 
 section.navigation ul li {
   position: absolute;
-  font-family: "drucc";
+  font-family: "corporate condensed regular";
   font-size: 1.5rem;
   right: 10px;
   bottom: 37px;
@@ -507,7 +507,7 @@ section.work .workContainer .workBody .workItemContainer span {
   color: white;
   width: 100%;
   padding: 20px 32px 14px 32px;
-  border: 1px solid #ffffffe1;
+  border: 1px solid #ffffff94;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   background: #224afb;
@@ -620,7 +620,7 @@ section.favorites .favoritesContainer .leftContainer {
 
 section.favorites .favoritesContainer .leftContainer div.boxItem {
   border-radius: 25px;
-  border: 1px solid #ffffffe8;
+  border: 1px solid #ffffff94;
   height: 52%;
   padding: 2.2rem 2rem 2rem 2.4rem;
   position: relative;
@@ -700,7 +700,7 @@ section.favorites .favoritesContainer .leftContainer div.boxItem--1 {
 
 section.favorites .favoritesContainer .boxColumn {
   width: 48%;
-  border: 1px solid #ffffffe8;
+  border: 1px solid #ffffff94;
   border-radius: 25px;
   padding: 2.2rem 2rem 2rem 2.4rem;
   position: relative;
@@ -1945,30 +1945,30 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  section.work div.workContainer .workBody {
+  section.work div.workContainer div.workBody {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-  section.work div.workContainer .workBody .workHeader {
+  section.work div.workContainer div.workBody div.workHeader {
     left: 14px;
     font-size: 2rem;
     -webkit-margin-after: 0.7rem;
             margin-block-end: 0.7rem;
   }
-  section.work div.workContainer .workBody .workItemContainer {
+  section.work div.workContainer div.workBody span.workItemContainer {
     margin-bottom: -25px;
     width: 746px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  section.work div.workContainer .workBody .workItemContainer span {
+  section.work div.workContainer div.workBody span.workItemContainer span {
     font-size: 2rem;
     display: block;
     border-radius: 0px;
     display: block;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px #ffffff94;
     border-right: unset;
     border-left: unset;
     border-top: unset;
@@ -1977,12 +1977,10 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     padding-right: 5px;
     padding-top: 22px;
     padding-bottom: 15px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(17.1%, rgba(255, 255, 255, 0)), color-stop(32.2%, rgba(255, 255, 255, 0.002)), color-stop(45.3%, rgba(255, 255, 255, 0.006)), color-stop(56.7%, rgba(255, 255, 255, 0.015)), color-stop(66.4%, rgba(255, 255, 255, 0.03)), color-stop(74.5%, rgba(255, 255, 255, 0.052)), color-stop(81.2%, rgba(255, 255, 255, 0.082)), color-stop(86.7%, rgba(255, 255, 255, 0.123)), color-stop(91%, rgba(255, 255, 255, 0.175)), color-stop(94.3%, rgba(255, 255, 255, 0.24)), color-stop(96.7%, rgba(255, 255, 255, 0.319)), color-stop(98.3%, rgba(255, 255, 255, 0.415)), color-stop(99.3%, rgba(255, 255, 255, 0.527)), color-stop(99.9%, rgba(255, 255, 255, 0.659)), to(rgba(255, 255, 255, 0.81)));
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 17.1%, rgba(255, 255, 255, 0.002) 32.2%, rgba(255, 255, 255, 0.006) 45.3%, rgba(255, 255, 255, 0.015) 56.7%, rgba(255, 255, 255, 0.03) 66.4%, rgba(255, 255, 255, 0.052) 74.5%, rgba(255, 255, 255, 0.082) 81.2%, rgba(255, 255, 255, 0.123) 86.7%, rgba(255, 255, 255, 0.175) 91%, rgba(255, 255, 255, 0.24) 94.3%, rgba(255, 255, 255, 0.319) 96.7%, rgba(255, 255, 255, 0.415) 98.3%, rgba(255, 255, 255, 0.527) 99.3%, rgba(255, 255, 255, 0.659) 99.9%, rgba(255, 255, 255, 0.81) 100%);
-    -webkit-box-shadow: inset 0em 0.8em 20px 17px #224afb;
-            box-shadow: inset 0em 0.8em 20px 17px #224afb;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
   }
-  section.work div.workContainer .workBody .workItemContainer span:before {
+  section.work div.workContainer div.workBody span.workItemContainer span:before {
     content: url("../public/expand-button.svg");
     position: absolute;
     width: auto;
@@ -1991,7 +1989,7 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     top: -14px;
     opacity: 0;
   }
-  section.work div.workContainer .workBody .workItemContainer span:after {
+  section.work div.workContainer div.workBody span.workItemContainer span:after {
     content: url("../public/expand-button2.svg");
     position: absolute;
     width: auto;
@@ -2000,7 +1998,7 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     top: -14px;
     opacity: 1;
   }
-  section.work div.workContainer .workBody .workItemContainer span:hover {
+  section.work div.workContainer div.workBody span.workItemContainer span:hover {
     border-top: solid 0px transparent;
     border-left: solid 0px transparent;
     border-right: solid 0px transparent;
@@ -2010,14 +2008,14 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(15%, rgba(255, 255, 255, 0.005)), color-stop(28.6%, rgba(255, 255, 255, 0.018)), color-stop(40.7%, rgba(255, 255, 255, 0.041)), color-stop(51.5%, rgba(255, 255, 255, 0.071)), color-stop(61%, rgba(255, 255, 255, 0.109)), color-stop(69.3%, rgba(255, 255, 255, 0.154)), color-stop(76.5%, rgba(255, 255, 255, 0.207)), color-stop(82.5%, rgba(255, 255, 255, 0.265)), color-stop(87.6%, rgba(255, 255, 255, 0.329)), color-stop(91.6%, rgba(255, 255, 255, 0.398)), color-stop(94.8%, rgba(255, 255, 255, 0.473)), color-stop(97.2%, rgba(255, 255, 255, 0.552)), color-stop(98.8%, rgba(255, 255, 255, 0.634)), color-stop(99.7%, rgba(255, 255, 255, 0.721)), to(rgba(255, 255, 255, 0.81)));
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.005) 15%, rgba(255, 255, 255, 0.018) 28.6%, rgba(255, 255, 255, 0.041) 40.7%, rgba(255, 255, 255, 0.071) 51.5%, rgba(255, 255, 255, 0.109) 61%, rgba(255, 255, 255, 0.154) 69.3%, rgba(255, 255, 255, 0.207) 76.5%, rgba(255, 255, 255, 0.265) 82.5%, rgba(255, 255, 255, 0.329) 87.6%, rgba(255, 255, 255, 0.398) 91.6%, rgba(255, 255, 255, 0.473) 94.8%, rgba(255, 255, 255, 0.552) 97.2%, rgba(255, 255, 255, 0.634) 98.8%, rgba(255, 255, 255, 0.721) 99.7%, rgba(255, 255, 255, 0.81) 100%);
   }
-  section.work div.workContainer .workBody .workItemContainer span:hover:before {
+  section.work div.workContainer div.workBody span.workItemContainer span:hover:before {
     opacity: 1;
   }
-  section.work div.workContainer .workBody .workItemContainer span:hover:after {
+  section.work div.workContainer div.workBody span.workItemContainer span:hover:after {
     opacity: 0;
   }
-  section.work div.workContainer .workBody .workItemContainer.dtContainer span {
-    border-top: solid 1px white;
+  section.work div.workContainer div.workBody span.workItemContainer.dtContainer span {
+    border-top: solid 1px #ffffff94;
   }
   section.work div.workContainer div.contact {
     width: 800px;
@@ -2484,15 +2482,8 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   section.work div.workContainer div.workBody span.workItemContainer {
     width: 535px;
   }
-  section.work div.workContainer div.workBody span.workItemContainer.dtContainer span {
-    border-top: solid 1px white;
-  }
   section.work div.workContainer div.workBody span.workItemContainer span {
     font-size: 1.5rem;
-    border-bottom: solid 1px white;
-  }
-  section.work div.workContainer div.workBody span.workItemContainer span:hover {
-    border-bottom: solid 1px white;
   }
   section.work div.workContainer div.workBody span.workItemContainer span:before {
     content: url("../public/expand-button-small-sizes-khaki.svg");
@@ -2546,18 +2537,16 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   }
   section.favorites div.favoritesContainer div.boxColumn {
     padding: 1.9rem 1.9rem 1.9rem 2rem;
-    border: solid 1px white;
   }
-  section.favorites div.favoritesContainer div.boxColumn div.skills {
+  section.favorites div.favoritesContainer div.boxColumn \ div.skills {
     font-size: 1.2rem;
   }
-  section.favorites div.favoritesContainer div.boxColumn div.skills ul li {
+  section.favorites div.favoritesContainer div.boxColumn \ div.skills ul li {
     font-size: 2rem;
     line-height: 1.2;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem {
     padding: 1.9rem 1.9rem 1.9rem 2rem;
-    border: solid 1px white;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers {
     font-size: 1.2rem;
@@ -2760,7 +2749,6 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   }
   section.favorites div.favoritesContainer div.boxColumn {
     padding: 1.5rem 1.5rem 1.5rem 1.7rem;
-    border: 1px solid white;
   }
   section.favorites div.favoritesContainer div.boxColumn div.skills div {
     font-size: 0.85rem;
@@ -2775,7 +2763,6 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem {
     padding: 1.5rem 1.5rem 1.5rem 1.7rem;
-    border: 1px solid white;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers {
     font-size: 0.85em;
@@ -2842,9 +2829,9 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
     padding-top: 0.5rem;
     padding-bottom: 3.5rem;
   }
-  section.navigation .name {
-    padding-top: 0.1rem;
-    font-size: 1.3rem;
+  section.navigation span.name {
+    font-size: 1.4rem;
+    line-height: 1.8;
   }
   section.navigation ul {
     font-size: 0.75rem;
@@ -2852,7 +2839,7 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
             animation-delay: 1200ms;
   }
   section.navigation ul li {
-    font-size: 0.8rem;
+    font-size: 1.4rem;
   }
   section.header {
     width: 360px;
@@ -2874,7 +2861,7 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   section.work div.workContainer div.workBody div.workHeader {
     -webkit-margin-after: 0.5rem;
             margin-block-end: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   section.work div.workContainer div.workBody span.workItemContainer {
     width: 360px;
@@ -2890,7 +2877,7 @@ section.info .infoBody .aboutVerbiage--10, section.info .infoBody .aboutVerbiage
   section.work div.workContainer div.contact {
     width: 360px;
     padding-top: 0rem;
-    margin-top: 2.15rem;
+    margin-top: 4.15rem;
   }
   section.work div.workContainer div.contact div.contentContainer div.copyContainer {
     padding-top: 0rem;

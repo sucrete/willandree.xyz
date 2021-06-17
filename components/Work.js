@@ -18,7 +18,7 @@ const work = [
   "calvintodd.com",
   "The Voter's Companion",
 ];
-const tittle = ["work"];
+const tittle = ["select work"];
 const modals = ["dt", "mr", "otl", "cal", "votr", "wil"];
 
 export default function Work() {

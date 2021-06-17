@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300..800&display=swap");
 $warmBlack: rgb(24, 23, 22);
 $warmWhite: rgb(253, 252, 244);
-$myOrange: #c46221;
-$myGrey: rgb(151, 151, 151);
-$chartreuse: hsl(54, 77%, 75%);
+$lineColor: #ffffff94;
 @mixin shadow($color, $steps) {
   $all: ();
   $all: append($all, 0px 1px 0 rgba($color, 0), comma);
@@ -168,7 +166,7 @@ section {
 }
 .title {
   font-size: 1.9rem;
-  font-family: "drucc", serif;
+  font-family: "corporate condensed regular", serif;
 }
 .cursor {
   position: fixed;
@@ -313,7 +311,7 @@ section.navigation {
       height: 1px;
       content: "";
       transition: 1.4s;
-      background-color: #ffffffe1;
+      background-color: $lineColor;
       animation: 700ms lineAnim ease;
       animation-fill-mode: forwards;
       animation-delay: 1800ms;
@@ -345,7 +343,7 @@ section.navigation {
     opacity: 0;
     li {
       position: absolute;
-      font-family: "drucc";
+      font-family: "corporate condensed regular";
       font-size: 1.5rem;
       right: 10px;
       bottom: 37px;
@@ -413,19 +411,15 @@ section.work {
   padding-left: 1.6rem;
   padding-right: 0.5rem;
   .workContainer {
-    // margin-right: auto;
-    // margin-left: 1rem;
     z-index: 1;
     position: relative;
     display: flex;
     justify-content: space-between;
     top: 0px;
-    // transform: translateY(75px);
     .workBody {
       margin-left: -0.25rem;
       z-index: 2;
       .workHeader {
-        // font-size: 2rem;
         position: relative;
         margin-block-end: 1.5rem;
         display: block;
@@ -448,7 +442,7 @@ section.work {
           color: white;
           width: 100%;
           padding: 20px 32px 14px 32px;
-          border: 1px solid #ffffffe1;
+          border: 1px solid $lineColor;
           transition: all 0.1s ease;
           background: #224afb;
           white-space: nowrap;
@@ -561,7 +555,7 @@ section.favorites {
       transform: translate(-20px, 27px);
       div.boxItem {
         border-radius: 25px;
-        border: 1px solid #ffffffe8;
+        border: 1px solid $lineColor;
         height: 52%;
         padding: 2.2rem 2rem 2rem 2.4rem;
         position: relative;
@@ -630,7 +624,7 @@ section.favorites {
     }
     .boxColumn {
       width: 48%;
-      border: 1px solid #ffffffe8;
+      border: 1px solid $lineColor;
       border-radius: 25px;
       padding: 2.2rem 2rem 2rem 2.4rem;
       position: relative;
@@ -1732,16 +1726,16 @@ section.info {
         margin-left: auto;
         margin-right: auto;
         flex-wrap: wrap;
-        .workBody {
+        div.workBody {
           width: 100%;
           margin-left: auto;
           margin-right: auto;
-          .workHeader {
+          div.workHeader {
             left: 14px;
             font-size: 2rem;
             margin-block-end: 0.7rem;
           }
-          .workItemContainer {
+          span.workItemContainer {
             margin-bottom: -25px;
             width: 746px;
             display: block;
@@ -1752,7 +1746,7 @@ section.info {
               display: block;
               border-radius: 0px;
               display: block;
-              border-bottom: solid 1px white;
+              border-bottom: solid 1px $lineColor;
               border-right: unset;
               border-left: unset;
               border-top: unset;
@@ -1761,26 +1755,27 @@ section.info {
               padding-right: 5px;
               padding-top: 22px;
               padding-bottom: 15px;
-              background: linear-gradient(
-                to bottom,
-                hsla(0, 0%, 100%, 0) 0%,
-                hsla(0, 0%, 100%, 0) 17.1%,
-                hsla(0, 0%, 100%, 0.002) 32.2%,
-                hsla(0, 0%, 100%, 0.006) 45.3%,
-                hsla(0, 0%, 100%, 0.015) 56.7%,
-                hsla(0, 0%, 100%, 0.03) 66.4%,
-                hsla(0, 0%, 100%, 0.052) 74.5%,
-                hsla(0, 0%, 100%, 0.082) 81.2%,
-                hsla(0, 0%, 100%, 0.123) 86.7%,
-                hsla(0, 0%, 100%, 0.175) 91%,
-                hsla(0, 0%, 100%, 0.24) 94.3%,
-                hsla(0, 0%, 100%, 0.319) 96.7%,
-                hsla(0, 0%, 100%, 0.415) 98.3%,
-                hsla(0, 0%, 100%, 0.527) 99.3%,
-                hsla(0, 0%, 100%, 0.659) 99.9%,
-                hsla(0, 0%, 100%, 0.81) 100%
-              );
-              box-shadow: inset 0em 0.8em 20px 17px #224afb;
+              // background: linear-gradient(
+              //   to bottom,
+              //   hsla(0, 0%, 100%, 0) 0%,
+              //   hsla(0, 0%, 100%, 0) 17.1%,
+              //   hsla(0, 0%, 100%, 0.002) 32.2%,
+              //   hsla(0, 0%, 100%, 0.006) 45.3%,
+              //   hsla(0, 0%, 100%, 0.015) 56.7%,
+              //   hsla(0, 0%, 100%, 0.03) 66.4%,
+              //   hsla(0, 0%, 100%, 0.052) 74.5%,
+              //   hsla(0, 0%, 100%, 0.082) 81.2%,
+              //   hsla(0, 0%, 100%, 0.123) 86.7%,
+              //   hsla(0, 0%, 100%, 0.175) 91%,
+              //   hsla(0, 0%, 100%, 0.24) 94.3%,
+              //   hsla(0, 0%, 100%, 0.319) 96.7%,
+              //   hsla(0, 0%, 100%, 0.415) 98.3%,
+              //   hsla(0, 0%, 100%, 0.527) 99.3%,
+              //   hsla(0, 0%, 100%, 0.659) 99.9%,
+              //   hsla(0, 0%, 100%, 0.81) 100%
+              // );
+              // box-shadow: inset 0em 0.8em 20px 17px #224afb;
+              box-shadow: unset;
               &:before {
                 content: url("../public/expand-button.svg");
                 position: absolute;
@@ -1836,7 +1831,7 @@ section.info {
             }
             &.dtContainer {
               span {
-                border-top: solid 1px white;
+                border-top: solid 1px $lineColor;
               }
             }
           }
@@ -2356,16 +2351,10 @@ $medSmallWidth: 535px;
           }
           span.workItemContainer {
             width: $medSmallWidth;
-            &.dtContainer {
-              span {
-                border-top: solid 1px white;
-              }
-            }
+
             span {
               font-size: 1.5rem;
-              border-bottom: solid 1px white;
               &:hover {
-                border-bottom: solid 1px white;
               }
 
               &:before {
@@ -2432,8 +2421,7 @@ $medSmallWidth: 535px;
         height: $medSmallWidth;
         div.boxColumn {
           padding: 1.9rem 1.9rem 1.9rem 2rem;
-          border: solid 1px white;
-          div.skills {
+          \ div.skills {
             font-size: 1.2rem;
             ul {
               li {
@@ -2446,7 +2434,6 @@ $medSmallWidth: 535px;
         div.leftContainer {
           div.boxItem {
             padding: 1.9rem 1.9rem 1.9rem 2rem;
-            border: solid 1px white;
             div.designers {
               font-size: 1.2rem;
               ul {
@@ -2666,7 +2653,6 @@ $smallWidth: 390px;
         margin-right: auto;
         div.boxColumn {
           padding: 1.5rem 1.5rem 1.5rem 1.7rem;
-          border: 1px solid white;
           div.skills {
             div {
               font-size: 0.85rem;
@@ -2683,7 +2669,6 @@ $smallWidth: 390px;
           transform: translate(0, 0);
           div.boxItem {
             padding: 1.5rem 1.5rem 1.5rem 1.7rem;
-            border: 1px solid white;
             div.designers {
               font-size: 0.85em;
               ul {
@@ -2801,15 +2786,16 @@ $xtraSmallWidth: 360px;
       width: $xtraSmallWidth;
       padding-top: 0.5rem;
       padding-bottom: 3.5rem;
-      .name {
-        padding-top: 0.1rem;
-        font-size: 1.3rem;
+      span.name {
+        // padding-top: 0.1rem;
+        font-size: 1.4rem;
+        line-height: 1.8;
       }
       ul {
         font-size: 0.75rem;
         animation-delay: 1200ms;
         li {
-          font-size: 0.8rem;
+          font-size: 1.4rem;
         }
       }
     }
@@ -2838,7 +2824,7 @@ $xtraSmallWidth: 360px;
         div.workBody {
           div.workHeader {
             margin-block-end: 0.5rem;
-            font-size: 1rem;
+            font-size: 1.4rem;
           }
           span.workItemContainer {
             width: $xtraSmallWidth;
@@ -2855,7 +2841,7 @@ $xtraSmallWidth: 360px;
         div.contact {
           width: $xtraSmallWidth;
           padding-top: 0rem;
-          margin-top: 2.15rem;
+          margin-top: 4.15rem;
           div.contentContainer {
             div.copyContainer {
               padding-top: 0rem;
