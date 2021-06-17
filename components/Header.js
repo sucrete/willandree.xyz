@@ -56,8 +56,7 @@ function MobileHeader() {
   ];
 
   const trail = useTrail(descriptionItems.length, {
-    config: { mass: 5, tension: 2200, friction: 200 },
-    delay: 200,
+    config: { mass: 5, tension: 2200, friction: 220 },
     opacity: 1,
     from: { opacity: 0 },
   });
