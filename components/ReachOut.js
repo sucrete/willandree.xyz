@@ -3,7 +3,7 @@ import { useTrail, animated } from "react-spring";
 
 export default function ReachOut() {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.9,
     triggerOnce: true,
   });
   const trail = useTrail(1, {

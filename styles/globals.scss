@@ -641,82 +641,44 @@ section.info {
   transform: translateY(-35rem);
   z-index: 99;
   .infoBody {
-    width: 500px;
+    width: 450px;
     margin-left: 2.5rem;
     margin-right: auto;
     position: relative;
     padding-bottom: 9rem;
+    left: 6px;
     .aboutVerbiage {
       width: 100%;
       position: relative;
       display: flex;
       justify-content: space-between;
-      line-height: 1.1;
+      line-height: 1.3;
       font-family: "Epilogue", sans-serif;
-      font-size: 2.2rem;
-      font-weight: 500;
-      left: 6px;
-      &--13 {
-        a.resume {
-          margin-left: 1rem;
-        }
-      }
-      a.resume {
-        padding: 11px 24px 10px 24px;
-        color: white;
-        border-radius: 7px;
-        font-size: 1.8rem;
-        text-decoration: none;
-        &:visited {
-          color: #224afb;
-        }
-      }
-      a.linkedInLink {
-        img {
-          width: 51px;
-          height: auto;
-          transform: translateY(17px);
-        }
-      }
-      span {
-        a.nucamp {
+      font-size: 1.3rem;
+    }
+    .reachOut {
+      .reachOutBody {
+        a {
+          font-family: "corporate condensed regular";
+          font-size: 1.6rem;
           text-decoration: underline;
           text-decoration-color: #ffffff49;
-          color: white;
-          &:hover {
-            color: #97b3f0 !important;
-            text-decoration-color: #97b3f05d;
-          }
-          &:visited {
-            color: white;
-          }
-        }
+          color: $favoritesColor;
+          z-index: 12;
 
-        img {
-          height: 32px;
-        }
-      }
-      div {
-        a.mailTo {
-          text-decoration: underline;
-          text-decoration-color: #ffffff49;
-          color: white;
+          &:visited {
+            color: $favoritesColor;
+          }
           &:hover {
-            color: #97b3f0 !important;
+            color: #97b3f0;
             text-decoration-color: #97b3f05d;
           }
-          &:visited {
-            color: white;
+          .linkArrow {
+            display: inline-block;
+            transform: rotate(45deg);
+            font-family: sans-serif;
           }
         }
-      }
-      &--9,
-      &--12 {
-        display: inline;
-      }
-      &--10,
-      &--13 {
-        display: inline;
       }
     }
   }
