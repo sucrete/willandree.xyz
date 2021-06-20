@@ -10,7 +10,7 @@ function getWindowDimensions() {
 }
 function DesktopHeader() {
   var descriptionItems = [
-    "¡Hola! My name is Will and I'm a front-end developer",
+    "Hola! My name is Will and I'm a front-end developer",
     "based in Kansas City. My expertise lies in creating",
     "unique websites using JavaScript-driven",
     "technologies. Possessed of a lifelong love for art",
@@ -19,11 +19,11 @@ function DesktopHeader() {
   ];
 
   const trail = useTrail(descriptionItems.length, {
-    config: { mass: 5, tension: 2000, friction: 200 },
+    config: { mass: 5, tension: 2000, friction: 250 },
     delay: 200,
     x: 0,
     height: 46,
-    from: { x: 30, height: 0 },
+    from: { x: 46, height: 0 },
   });
   return (
     <>
@@ -49,7 +49,7 @@ function DesktopHeader() {
 }
 function MobileHeader() {
   var descriptionItems = [
-    "¡Hola! My name is Will and I'm a front-end developer based in Kansas City. My expertise lies in creating unique websites using JavaScript-driven technologies. Possessed of a lifelong love for art and design, I am keenly drawn to the challenges of creating singular user-facing experiences...",
+    "Hola! My name is Will and I'm a front-end developer based in Kansas City. My expertise lies in creating unique websites using JavaScript-driven technologies. Possessed of a lifelong love for art and design, I am keenly drawn to the challenges of creating singular user-facing experiences...",
   ];
 
   const trail = useTrail(descriptionItems.length, {
@@ -61,9 +61,9 @@ function MobileHeader() {
   });
   return (
     <>
-      {trail.map(({ x, ...rest }, index) => (
+      {trail.map(({ x, opacity, ...rest }, index) => (
         <animated.div
-          className={`dItem`}
+          className={`dItem dItem--${index} trails-text`}
           key={descriptionItems[index]}
           style={{
             ...rest,

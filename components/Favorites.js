@@ -150,14 +150,14 @@ export default function Favorites() {
     triggerOnce: true,
   });
   const trail = useTrail(boxes.length, {
-    config: { mass: 5, tension: 1600, friction: 300 },
+    config: { mass: 5, tension: 1600, friction: 350 },
     opacity: inView ? 1 : 0,
     delay: 100,
     x: inView ? 0 : 40,
     from: { opacity: 0, x: 40 },
   });
   const trail2 = useTrail(oneBox.length, {
-    config: { mass: 5, tension: 1600, friction: 300 },
+    config: { mass: 5, tension: 1600, friction: 350 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 40,
     from: { opacity: 0, x: 40 },

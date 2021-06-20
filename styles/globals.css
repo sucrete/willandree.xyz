@@ -731,7 +731,6 @@ section.info .infoBody {
   margin-left: 2.5rem;
   margin-right: auto;
   position: relative;
-  padding-bottom: 4rem;
   left: 6px;
   -webkit-transform: translateY(-3rem);
           transform: translateY(-3rem);
@@ -833,6 +832,19 @@ section.info .infoBody .aboutVerbiage .reachOut .reachOutBody a .linkArrow {
 section.info .infoBody .aboutVerbiage img {
   width: 100%;
   height: auto;
+  position: relative;
+}
+
+section.info .infoBody .aboutVerbiage--4::after {
+  content: "";
+  position: absolute;
+  z-index: 22;
+  height: 50%;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 75, 251, 0)), color-stop(3.6%, rgba(35, 75, 251, 0.121)), color-stop(7.8%, rgba(35, 75, 251, 0.232)), color-stop(12.7%, rgba(35, 75, 251, 0.334)), color-stop(18.2%, rgba(35, 75, 251, 0.428)), color-stop(24.1%, rgba(35, 75, 251, 0.513)), color-stop(30.6%, rgba(35, 75, 251, 0.59)), color-stop(37.4%, rgba(35, 75, 251, 0.659)), color-stop(44.6%, rgba(35, 75, 251, 0.722)), color-stop(52.1%, rgba(35, 75, 251, 0.778)), color-stop(59.9%, rgba(35, 75, 251, 0.877)), color-stop(67.8%, rgba(35, 75, 251, 0.892)), color-stop(75.8%, rgba(35, 75, 251, 0.93)), color-stop(83.9%, rgba(35, 75, 251, 0.954)), color-stop(92%, rgba(35, 75, 251, 0.994)), to(#234bfb));
+  background: linear-gradient(to bottom, rgba(35, 75, 251, 0) 0%, rgba(35, 75, 251, 0.121) 3.6%, rgba(35, 75, 251, 0.232) 7.8%, rgba(35, 75, 251, 0.334) 12.7%, rgba(35, 75, 251, 0.428) 18.2%, rgba(35, 75, 251, 0.513) 24.1%, rgba(35, 75, 251, 0.59) 30.6%, rgba(35, 75, 251, 0.659) 37.4%, rgba(35, 75, 251, 0.722) 44.6%, rgba(35, 75, 251, 0.778) 52.1%, rgba(35, 75, 251, 0.877) 59.9%, rgba(35, 75, 251, 0.892) 67.8%, rgba(35, 75, 251, 0.93) 75.8%, rgba(35, 75, 251, 0.954) 83.9%, rgba(35, 75, 251, 0.994) 92%, #234bfb 100%);
 }
 
 .customOverlay {

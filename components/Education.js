@@ -3,16 +3,14 @@ import { useInView } from "react-intersection-observer";
 
 export default function Education() {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.6,
     triggerOnce: true,
   });
-  // EDUCATION HEADER 👇
   const trail = useTrail(1, {
-    config: { mass: 5, tension: 2200, friction: 220 },
+    config: { mass: 5, tension: 2200, friction: 500 },
     opacity: inView ? 1 : 0,
-    x: inView ? 0 : 30,
-    delay: 200,
-    from: { opacity: 0, x: 30 },
+    x: inView ? 0 : 20,
+    from: { opacity: 0, x: 20 },
   });
 
   return (

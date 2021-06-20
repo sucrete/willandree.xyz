@@ -651,7 +651,6 @@ section.info {
     margin-left: 2.5rem;
     margin-right: auto;
     position: relative;
-    padding-bottom: 4rem;
     left: 6px;
     transform: translateY(-3rem);
     position: relative;
@@ -726,6 +725,37 @@ section.info {
       img {
         width: 100%;
         height: auto;
+        position: relative;
+      }
+      &--4 {
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: 22;
+          height: 50%;
+          width: 100%;
+          bottom: 0px;
+          left: 0px;
+          background: linear-gradient(
+            to bottom,
+            hsla(228.89, 96.43%, 56.08%, 0) 0%,
+            hsla(228.89, 96.43%, 56.08%, 0.121) 3.6%,
+            hsla(228.89, 96.43%, 56.08%, 0.232) 7.8%,
+            hsla(228.89, 96.43%, 56.08%, 0.334) 12.7%,
+            hsla(228.89, 96.43%, 56.08%, 0.428) 18.2%,
+            hsla(228.89, 96.43%, 56.08%, 0.513) 24.1%,
+            hsla(228.89, 96.43%, 56.08%, 0.59) 30.6%,
+            hsla(228.89, 96.43%, 56.08%, 0.659) 37.4%,
+            hsla(228.89, 96.43%, 56.08%, 0.722) 44.6%,
+            hsla(228.89, 96.43%, 56.08%, 0.778) 52.1%,
+            hsla(228.89, 96.43%, 56.08%, 0.877) 59.9%,
+            hsla(228.89, 96.43%, 56.08%, 0.892) 67.8%,
+            hsla(229, 96%, 56%, 0.93) 75.8%,
+            hsla(229, 96%, 56%, 0.954) 83.9%,
+            hsla(229, 96%, 56%, 0.994) 92%,
+            hsl(229, 96%, 56%) 100%
+          );
+        }
       }
     }
   }

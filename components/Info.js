@@ -14,14 +14,12 @@ function Bod() {
       .
       <br />
       <br />
-      If you are interested in using my development services, please, feel free
-      to reach out.
+      If you are interested in collaborating, please, feel free to reach out.
     </div>
   );
 }
 const elements = [
   <Bod />,
-  <br />,
   <br />,
   <ReachOut />,
   <br />,
@@ -29,14 +27,14 @@ const elements = [
 ];
 export default function Info() {
   const { ref, inView } = useInView({
-    threshold: 0.1,
+    threshold: 0.3,
     triggerOnce: true,
   });
   const trail = useTrail(elements.length, {
-    config: { mass: 5, tension: 2200, friction: 200 },
+    config: { mass: 5, tension: 2200, friction: 500 },
     opacity: inView ? 1 : 0,
-    x: inView ? 0 : 10,
-    from: { opacity: 0, x: 10 },
+    x: inView ? 0 : 20,
+    from: { opacity: 0, x: 20 },
   });
 
   return (
@@ -44,7 +42,7 @@ export default function Info() {
       <div ref={ref} className="infoBody">
         {trail.map(({ x, ...rest }, index) => (
           <animated.span
-            className="aboutVerbiage"
+            className={`aboutVerbiage aboutVerbiage--${index}`}
             key="aboutVerbiageOneTime"
             style={{
               ...rest,
