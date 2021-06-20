@@ -11,10 +11,8 @@ function Bod() {
         {" "}
         Nucamp Coding Bootcamp
       </a>
-      .
-      <br />
-      <br />
-      If you are interested in collaborating, please, feel free to reach out.
+      . If you are interested in collaborating or acquiring my services, please,
+      feel free to reach out.
     </div>
   );
 }

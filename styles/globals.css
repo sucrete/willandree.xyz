@@ -3,15 +3,32 @@
   top: 12.5px !important;
 }
 
+main {
+  overflow: hidden;
+  position: relative;
+}
+
+main:before {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 1px;
+  content: "";
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+  background-color: #ffffff94;
+  width: 1034px;
+  z-index: 990;
+}
+
 html,
 body {
   padding: 0px;
   margin: 0px;
-  height: 100%;
   position: relative;
-  scroll-behavior: smooth;
   width: 100%;
-  overflow-x: hidden;
 }
 
 body > * {
@@ -24,7 +41,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   background-color: #224afb;
-  overflow-y: auto;
 }
 
 * {
@@ -35,42 +51,6 @@ body {
   font-weight: unset;
 }
 
-@-webkit-keyframes square {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 100% 0;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  75% {
-    background-position: 0 100%;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-@keyframes square {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 100% 0;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  75% {
-    background-position: 0 100%;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
 section {
   width: 1077px;
   display: block;
@@ -79,31 +59,73 @@ section {
 }
 
 .container {
+  overflow: hidden;
+  height: 100%;
   position: relative;
-  height: 100vh;
-  padding-bottom: 3rem;
+}
+
+.container::before, .container::after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 1px;
+  background: #ffffff94;
+  top: 0px;
+  -webkit-animation: 3000ms lineAnim777 ease;
+          animation: 3000ms lineAnim777 ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.container::after {
+  left: 10%;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.container::before {
+  right: 10%;
+  -webkit-animation-delay: 1700ms;
+          animation-delay: 1700ms;
+}
+
+@-webkit-keyframes lineAnim777 {
+  from {
+    opacity: 0;
+    height: 0px;
+  }
+  20% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    height: 2000px;
+  }
+}
+
+@keyframes lineAnim777 {
+  from {
+    opacity: 0;
+    height: 0px;
+  }
+  20% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    height: 2000px;
+  }
 }
 
 .container main {
   position: relative;
-  height: 100vh;
+  height: 1900px;
 }
 
 .title {
   font-size: 1.9rem;
   font-family: "corporate condensed regular", serif;
-}
-
-.cursor {
-  position: fixed;
-  pointer-events: none;
-  -webkit-transform: translate(-35%, -50%);
-          transform: translate(-35%, -50%);
-  z-index: 999;
-}
-
-.cursor--hidden {
-  visibility: hidden;
 }
 
 ul {
@@ -546,7 +568,7 @@ div.education .educationContainer .educationHeader:before {
   -webkit-transition: 1.4s;
   transition: 1.4s;
   background-color: #ffffff94;
-  width: 100%;
+  width: 98%;
 }
 
 div.education .educationContainer .schoolsBody {
@@ -612,7 +634,7 @@ section.favorites .favoritesContainer .leftContainer div.boxItem {
   height: 52%;
   padding: 2.2rem 2rem 2rem 2.4rem;
   position: relative;
-  z-index: 3;
+  z-index: 300;
   font-size: 1rem;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.01), 0 2px 2px rgba(0, 0, 0, 0.012), 0 4px 4px rgba(0, 0, 0, 0.014), 0 8px 8px rgba(0, 0, 0, 0.016), 0 16px 16px rgba(0, 0, 0, 0.018);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.01), 0 2px 2px rgba(0, 0, 0, 0.012), 0 4px 4px rgba(0, 0, 0, 0.014), 0 8px 8px rgba(0, 0, 0, 0.016), 0 16px 16px rgba(0, 0, 0, 0.018);
@@ -720,7 +742,6 @@ section.info {
   z-index: 5;
   padding-top: 3rem;
   height: auto;
-  overflow: visible;
   -webkit-transform: translateY(-35rem);
           transform: translateY(-35rem);
   z-index: 99;
@@ -776,20 +797,13 @@ section.info .infoBody .aboutVerbiage .reachOut {
   width: 100%;
 }
 
-section.info .infoBody .aboutVerbiage .reachOut::after, section.info .infoBody .aboutVerbiage .reachOut::before {
+section.info .infoBody .aboutVerbiage .reachOut::before {
   content: "";
   width: 100%;
   height: 1px;
   background: #ffffff94;
   position: absolute;
   left: 0px;
-}
-
-section.info .infoBody .aboutVerbiage .reachOut::after {
-  bottom: -10px;
-}
-
-section.info .infoBody .aboutVerbiage .reachOut::before {
   top: -10px;
 }
 
@@ -833,18 +847,19 @@ section.info .infoBody .aboutVerbiage img {
   width: 100%;
   height: auto;
   position: relative;
+  z-index: -2;
 }
 
 section.info .infoBody .aboutVerbiage--4::after {
   content: "";
   position: absolute;
   z-index: 22;
-  height: 50%;
+  height: 60%;
   width: 100%;
   bottom: 0px;
   left: 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 75, 251, 0)), color-stop(3.6%, rgba(35, 75, 251, 0.121)), color-stop(7.8%, rgba(35, 75, 251, 0.232)), color-stop(12.7%, rgba(35, 75, 251, 0.334)), color-stop(18.2%, rgba(35, 75, 251, 0.428)), color-stop(24.1%, rgba(35, 75, 251, 0.513)), color-stop(30.6%, rgba(35, 75, 251, 0.59)), color-stop(37.4%, rgba(35, 75, 251, 0.659)), color-stop(44.6%, rgba(35, 75, 251, 0.722)), color-stop(52.1%, rgba(35, 75, 251, 0.778)), color-stop(59.9%, rgba(35, 75, 251, 0.877)), color-stop(67.8%, rgba(35, 75, 251, 0.892)), color-stop(75.8%, rgba(35, 75, 251, 0.93)), color-stop(83.9%, rgba(35, 75, 251, 0.954)), color-stop(92%, rgba(35, 75, 251, 0.994)), to(#234bfb));
-  background: linear-gradient(to bottom, rgba(35, 75, 251, 0) 0%, rgba(35, 75, 251, 0.121) 3.6%, rgba(35, 75, 251, 0.232) 7.8%, rgba(35, 75, 251, 0.334) 12.7%, rgba(35, 75, 251, 0.428) 18.2%, rgba(35, 75, 251, 0.513) 24.1%, rgba(35, 75, 251, 0.59) 30.6%, rgba(35, 75, 251, 0.659) 37.4%, rgba(35, 75, 251, 0.722) 44.6%, rgba(35, 75, 251, 0.778) 52.1%, rgba(35, 75, 251, 0.877) 59.9%, rgba(35, 75, 251, 0.892) 67.8%, rgba(35, 75, 251, 0.93) 75.8%, rgba(35, 75, 251, 0.954) 83.9%, rgba(35, 75, 251, 0.994) 92%, #234bfb 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 75, 251, 0)), color-stop(9.9%, rgba(35, 75, 251, 0.103)), color-stop(18.4%, rgba(35, 75, 251, 0.201)), color-stop(25.5%, rgba(35, 75, 251, 0.293)), color-stop(31.5%, rgba(35, 75, 251, 0.38)), color-stop(36.8%, rgba(35, 75, 251, 0.461)), color-stop(41.5%, rgba(35, 75, 251, 0.538)), color-stop(46%, rgba(35, 75, 251, 0.609)), color-stop(50.3%, rgba(35, 75, 251, 0.675)), color-stop(54.9%, rgba(35, 75, 251, 0.736)), color-stop(60.1%, rgba(35, 75, 251, 0.9)), color-stop(80%, #234bfb), to(#234bfb));
+  background: linear-gradient(to bottom, rgba(35, 75, 251, 0) 0%, rgba(35, 75, 251, 0.103) 9.9%, rgba(35, 75, 251, 0.201) 18.4%, rgba(35, 75, 251, 0.293) 25.5%, rgba(35, 75, 251, 0.38) 31.5%, rgba(35, 75, 251, 0.461) 36.8%, rgba(35, 75, 251, 0.538) 41.5%, rgba(35, 75, 251, 0.609) 46%, rgba(35, 75, 251, 0.675) 50.3%, rgba(35, 75, 251, 0.736) 54.9%, rgba(35, 75, 251, 0.9) 60.1%, #234bfb 80%, #234bfb 100%);
 }
 
 .customOverlay {
@@ -1876,7 +1891,67 @@ section.info .infoBody .aboutVerbiage--4::after {
           animation-delay: 0.75s;
 }
 
+@media screen and (max-width: 1390px) {
+  .container::before {
+    right: 8%;
+  }
+  .container::after {
+    left: 8%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .container::before {
+    right: 6%;
+  }
+  .container::after {
+    left: 6%;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .container::before {
+    right: 5%;
+  }
+  .container::after {
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container::before {
+    right: 4%;
+  }
+  .container::after {
+    left: 4%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .container::before {
+    right: 3%;
+  }
+  .container::after {
+    left: 3%;
+  }
+}
+
+@media screen and (max-width: 1145px) {
+  .container::before {
+    display: none;
+  }
+  .container::after {
+    display: none;
+  }
+  main::before {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1090px) {
+  .container main {
+    height: 4200px;
+  }
   section {
     width: 800px;
   }
@@ -2037,6 +2112,10 @@ section.info .infoBody .aboutVerbiage--4::after {
     height: unset;
     margin-top: 100px;
   }
+  section.work div.workContainer div.education .educationHeader::before {
+    width: 100%;
+    left: 0px;
+  }
   section.work div.workContainer div.education .educationContainer {
     width: 740px;
     margin-left: auto;
@@ -2145,6 +2224,9 @@ section.info .infoBody .aboutVerbiage--4::after {
         -ms-flex-pack: unset;
             justify-content: unset;
     left: 0;
+  }
+  section.info div.infoBody span.aboutVerbiage--3 {
+    display: none;
   }
   section.info div.infoBody span.aboutVerbiage .reachOut {
     font-size: 3rem;

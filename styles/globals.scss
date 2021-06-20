@@ -14,9 +14,28 @@ $lineColor: #ffffff94;
   }
   box-shadow: $all;
 }
-
 .react-responsive-modal-closeButton {
   top: 12.5px !important;
+}
+// html,
+// body {
+//   overflow: hidden;
+// }
+main {
+  overflow: hidden;
+  position: relative;
+  &:before {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    content: "";
+    transition: 1.4s;
+    background-color: $lineColor;
+    width: 1034px;
+    z-index: 990;
+  }
 }
 @mixin slideShow($slideNumber, $uniqueName) {
   // time = total animation time
@@ -82,11 +101,10 @@ html,
 body {
   padding: 0px;
   margin: 0px;
-  height: 100%;
+  // height: 100%;
   position: relative;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
   width: 100%;
-  overflow-x: hidden;
   // overflow-y: hidden;
 }
 body > * {
@@ -101,45 +119,13 @@ body {
   line-height: 1.6;
   background-color: #224afb;
   // height: 1500px;
-  overflow-y: auto;
-  #__next {
-    .container {
-    }
-  }
+  // overflow-y: auto;
 }
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: unset;
-}
-.hola {
-  // background-image: url("https://products.ls.graphics/mesh-gradients/images/37.-Light-Sky-Blue_1.jpg");
-  // background-repeat: no-repeat;
-  // background-size: 200% 200%;
-  // background-position: 100% 100%;
-  // animation: square 4s linear infinite;
-  // -webkit-background-clip: text;
-  // color: transparent;
-  // text-align: center;
-  // position: relative;
-}
-@keyframes square {
-  0% {
-    background-position: 0 0;
-  }
-  25% {
-    background-position: 100% 0;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  75% {
-    background-position: 0 100%;
-  }
-  100% {
-    background-position: 0 0;
-  }
 }
 section {
   width: 1077px;
@@ -152,15 +138,49 @@ section {
   // MIN for as small as you'll allow it to go
   // VAL for the ideal value
   // MAX for the upper ceiling you'll allow it to go
-
   // padding: clamp(2vw, 1.5vw, 0.5vw);
-  // overflow: hidden;
+  overflow: hidden;
+  height: 100%;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 1px;
+    background: $lineColor;
+    top: 0px;
+    animation: 3000ms lineAnim777 ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  &::after {
+    left: 10%;
+    animation-delay: 1200ms;
+  }
+  &::before {
+    right: 10%;
+    animation-delay: 1700ms;
+  }
+  @keyframes lineAnim777 {
+    from {
+      opacity: 0;
+      height: 0px;
+    }
+    20% {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+      height: 2000px;
+    }
+  }
   position: relative;
-  height: 100vh;
-  padding-bottom: 3rem;
+  // height: 100vh;
+  // padding-bottom: 3rem;
   main {
     position: relative;
-    height: 100vh;
+    height: 1900px;
     // overflow-y: hidden;
   }
 }
@@ -168,15 +188,7 @@ section {
   font-size: 1.9rem;
   font-family: "corporate condensed regular", serif;
 }
-.cursor {
-  position: fixed;
-  pointer-events: none;
-  transform: translate(-35%, -50%);
-  z-index: 999;
-  &--hidden {
-    visibility: hidden;
-  }
-}
+
 ul {
   list-style-type: none;
   padding-left: 0px;
@@ -484,7 +496,7 @@ div.education {
         content: "";
         transition: 1.4s;
         background-color: $lineColor;
-        width: 100%;
+        width: 98%;
       }
     }
     .schoolsBody {
@@ -540,7 +552,7 @@ section.favorites {
         height: 52%;
         padding: 2.2rem 2rem 2rem 2.4rem;
         position: relative;
-        z-index: 3;
+        z-index: 300;
         font-size: 1rem;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.01),
           0 2px 2px rgba(0, 0, 0, 0.012), 0 4px 4px rgba(0, 0, 0, 0.014),
@@ -643,7 +655,7 @@ section.info {
   z-index: 5;
   padding-top: 3rem;
   height: auto;
-  overflow: visible;
+  // overflow: visible;
   transform: translateY(-35rem);
   z-index: 99;
   .infoBody {
@@ -680,7 +692,6 @@ section.info {
         height: fit-content;
         position: relative;
         width: 100%;
-        &::after,
         &::before {
           content: "";
           width: 100%;
@@ -688,11 +699,6 @@ section.info {
           background: $lineColor;
           position: absolute;
           left: 0px;
-        }
-        &::after {
-          bottom: -10px;
-        }
-        &::before {
           top: -10px;
         }
         .reachOutBody {
@@ -726,33 +732,32 @@ section.info {
         width: 100%;
         height: auto;
         position: relative;
+        z-index: -2;
       }
+
       &--4 {
         &::after {
           content: "";
           position: absolute;
           z-index: 22;
-          height: 50%;
+          height: 60%;
           width: 100%;
           bottom: 0px;
           left: 0px;
           background: linear-gradient(
             to bottom,
             hsla(228.89, 96.43%, 56.08%, 0) 0%,
-            hsla(228.89, 96.43%, 56.08%, 0.121) 3.6%,
-            hsla(228.89, 96.43%, 56.08%, 0.232) 7.8%,
-            hsla(228.89, 96.43%, 56.08%, 0.334) 12.7%,
-            hsla(228.89, 96.43%, 56.08%, 0.428) 18.2%,
-            hsla(228.89, 96.43%, 56.08%, 0.513) 24.1%,
-            hsla(228.89, 96.43%, 56.08%, 0.59) 30.6%,
-            hsla(228.89, 96.43%, 56.08%, 0.659) 37.4%,
-            hsla(228.89, 96.43%, 56.08%, 0.722) 44.6%,
-            hsla(228.89, 96.43%, 56.08%, 0.778) 52.1%,
-            hsla(228.89, 96.43%, 56.08%, 0.877) 59.9%,
-            hsla(228.89, 96.43%, 56.08%, 0.892) 67.8%,
-            hsla(229, 96%, 56%, 0.93) 75.8%,
-            hsla(229, 96%, 56%, 0.954) 83.9%,
-            hsla(229, 96%, 56%, 0.994) 92%,
+            hsla(228.89, 96.43%, 56.08%, 0.103) 9.9%,
+            hsla(228.89, 96.43%, 56.08%, 0.201) 18.4%,
+            hsla(228.89, 96.43%, 56.08%, 0.293) 25.5%,
+            hsla(228.89, 96.43%, 56.08%, 0.38) 31.5%,
+            hsla(228.89, 96.43%, 56.08%, 0.461) 36.8%,
+            hsla(228.89, 96.43%, 56.08%, 0.538) 41.5%,
+            hsla(228.89, 96.43%, 56.08%, 0.609) 46%,
+            hsla(228.89, 96.43%, 56.08%, 0.675) 50.3%,
+            hsla(228.89, 96.43%, 56.08%, 0.736) 54.9%,
+            hsla(229, 96%, 56%, 0.9) 60.1%,
+            hsl(229, 96%, 56%) 80%,
             hsl(229, 96%, 56%) 100%
           );
         }
@@ -1108,21 +1113,11 @@ section.info {
 @media screen and (max-width: 1300px) {
   .customModal {
     .modalBody {
-      .modalHeader {
-      }
-      .modalSubheading {
-        .lilCapsule {
-        }
-      }
       .modalContent {
-        .modalImagesContainer {
-        }
         .modalDetails {
           padding: 4rem 0rem 3rem 2rem;
           // THE DIVIDING LINE CREATED WITH ':BEFORE' PSEUDO-ELEMENT
           margin-right: 1rem;
-          &:before {
-          }
           .visitButton {
             width: 100%;
           }
@@ -1671,8 +1666,75 @@ section.info {
 // ██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗     ██║████╔╝██║ ╚═══██║████╔╝██║██╔═══╝  ██╔██╗     ╚════╝██╔╝
 // ╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║     ██║╚██████╔╝ █████╔╝╚██████╔╝██║     ██╔╝ ██╗         ██╔╝
 //  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝     ╚═╝ ╚═════╝  ╚════╝  ╚═════╝ ╚═╝     ╚═╝  ╚═╝         ╚═╝
-
+@media screen and (max-width: 1390px) {
+  .container {
+    &::before {
+      right: 8%;
+    }
+    &::after {
+      left: 8%;
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    &::before {
+      right: 6%;
+    }
+    &::after {
+      left: 6%;
+    }
+  }
+}
+@media screen and (max-width: 1230px) {
+  .container {
+    &::before {
+      right: 5%;
+    }
+    &::after {
+      left: 5%;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    &::before {
+      right: 4%;
+    }
+    &::after {
+      left: 4%;
+    }
+  }
+}
+@media screen and (max-width: 1180px) {
+  .container {
+    &::before {
+      right: 3%;
+    }
+    &::after {
+      left: 3%;
+    }
+  }
+}
+@media screen and (max-width: 1145px) {
+  .container {
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  main {
+    &::before {
+      display: none;
+    }
+  }
+}
 @media screen and (max-width: 1090px) {
+  .container main {
+    height: 4200px;
+  }
   section {
     width: 800px;
     &.navigation {
@@ -1851,6 +1913,12 @@ section.info {
           width: 100%;
           height: unset;
           margin-top: 100px;
+          .educationHeader {
+            &::before {
+              width: 100%;
+              left: 0px;
+            }
+          }
           .educationContainer {
             width: 740px;
             margin-left: auto;
@@ -1960,6 +2028,9 @@ section.info {
           font-size: 2rem;
           justify-content: unset;
           left: 0;
+          &--3 {
+            display: none;
+          }
           .reachOut {
             font-size: 3rem;
           }
