@@ -28,15 +28,14 @@ export default function ReachOut() {
             target="_blank"
             className="linkedInLink"
           >
-            LinkedIn <span className="linkArrow">↑</span>
+            LinkedIn <span className="linkArrow">→</span>
           </a>
-          ,
+
           <a className="mailTo" href="mailto:will@willandree.xyz">
-            will@willandree.xyz <span className="linkArrow">↑</span>
+            will@willandree.xyz <span className="linkArrow">→</span>
           </a>
-          ,
           <a className="resume" target="_blank" href="/resume.pdf">
-            Resumé<span className="linkArrow">↑</span>
+            Resumé<span className="linkArrow">→</span>
           </a>
         </animated.span>
       ))}

@@ -374,7 +374,7 @@ section.header {
   color: white;
   font-family: "Epilogue", serif;
   font-size: 2.5rem;
-  line-height: 1.1;
+  line-height: 1.3;
   font-weight: 500;
   padding-top: 0.5rem;
   padding-left: 0.6rem;
@@ -385,6 +385,11 @@ section.header {
     margin-right: auto;
     margin-left: auto;
     left: 20px;
+    height: 47px;
+    .dItemBaby {
+      height: 47px;
+      overflow: hidden;
+    }
   }
 }
 
@@ -511,7 +516,7 @@ section.favorites {
     color: $favoritesColor;
     width: 495px;
     margin-left: auto;
-    margin-right: 1rem;
+    margin-right: 0rem;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -519,6 +524,7 @@ section.favorites {
     font-size: 1rem;
     font-weight: 600;
     z-index: 1;
+    margin-top: 1rem;
     .leftContainer {
       width: 48%;
       display: flex;
@@ -569,7 +575,7 @@ section.favorites {
             font-size: 1.6rem;
 
             li {
-              line-height: 1.3;
+              line-height: 1.2;
               font-family: "corporate condensed regular";
               font-weight: 100;
               a {
@@ -615,7 +621,7 @@ section.favorites {
           margin-top: 10px;
           li {
             font-size: 1.5rem;
-            line-height: 1.25;
+            line-height: 1.2;
             font-weight: 100;
             font-family: "corporate condensed regular";
           }
@@ -645,8 +651,10 @@ section.info {
     margin-left: 2.5rem;
     margin-right: auto;
     position: relative;
-    padding-bottom: 9rem;
+    padding-bottom: 4rem;
     left: 6px;
+    transform: translateY(-3rem);
+    position: relative;
     .aboutVerbiage {
       width: 100%;
       position: relative;
@@ -655,17 +663,11 @@ section.info {
       line-height: 1.3;
       font-family: "Epilogue", sans-serif;
       font-size: 1.3rem;
-    }
-    .reachOut {
-      .reachOutBody {
+      div {
         a {
-          font-family: "corporate condensed regular";
-          font-size: 1.6rem;
           text-decoration: underline;
           text-decoration-color: #ffffff49;
           color: $favoritesColor;
-          z-index: 12;
-
           &:visited {
             color: $favoritesColor;
           }
@@ -673,12 +675,57 @@ section.info {
             color: #97b3f0;
             text-decoration-color: #97b3f05d;
           }
-          .linkArrow {
-            display: inline-block;
-            transform: rotate(45deg);
-            font-family: sans-serif;
+        }
+      }
+      .reachOut {
+        height: fit-content;
+        position: relative;
+        width: 100%;
+        &::after,
+        &::before {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background: $lineColor;
+          position: absolute;
+          left: 0px;
+        }
+        &::after {
+          bottom: -10px;
+        }
+        &::before {
+          top: -10px;
+        }
+        .reachOutBody {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            font-family: "corporate condensed regular";
+            font-size: 1.6rem;
+            text-decoration: underline;
+            text-decoration-color: #ffffff49;
+            color: $favoritesColor;
+            z-index: 12;
+
+            &:visited {
+              color: $favoritesColor;
+            }
+            &:hover {
+              color: #97b3f0;
+              text-decoration-color: #97b3f05d;
+            }
+            .linkArrow {
+              display: inline-block;
+              transform: rotate(-45deg);
+              font-family: sans-serif;
+            }
           }
         }
+      }
+      img {
+        width: 100%;
+        height: auto;
       }
     }
   }
@@ -863,7 +910,7 @@ section.info {
         font-family: "Epilogue", sans-serif;
         font-size: 0.9rem;
         font-weight: 400;
-        line-height: 125%;
+        line-height: 1.4;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1632,6 +1679,7 @@ section.info {
         right: 10px;
         li {
           right: 0px;
+          bottom: 29px;
         }
       }
     }
@@ -1641,13 +1689,10 @@ section.info {
       padding-bottom: 0rem;
       padding-right: 0rem;
       padding-left: 0.4rem;
-      .descriptionContainer {
+      .dItem {
+        height: unset;
+        line-height: 1.2;
         left: 0px;
-        .description {
-          .dItem {
-            height: unset;
-          }
-        }
       }
     }
     &.work {
@@ -1772,35 +1817,16 @@ section.info {
             }
           }
         }
-        div.contact {
-          width: 800px;
+        div.education {
+          width: 100%;
           height: unset;
           margin-top: 100px;
-          .contentContainer {
+          .educationContainer {
             width: 740px;
             margin-left: auto;
             margin-right: auto;
-            .copyContainer {
-              .educationItem {
-                font-size: 2.5rem;
-                // TITLE OF SCHOOL
-                &--0,
-                &--3,
-                &--6 {
-                  font-size: 2.5rem;
-                  font-weight: 500;
-                }
-                &--1,
-                &--4,
-                &--7 {
-                  margin-top: -3px;
-                }
-                &--2,
-                &--5,
-                &--8 {
-                  margin-block-end: 1.5rem;
-                }
-              }
+            .schoolsBody {
+              font-size: 2rem;
             }
           }
         }
@@ -1899,52 +1925,14 @@ section.info {
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 3.5rem;
+        transform: translateY(1rem);
         span.aboutVerbiage {
-          font-size: 2.5rem;
+          font-size: 2rem;
           justify-content: unset;
           left: 0;
-          &--0 {
-            padding-top: 0.8rem;
+          .reachOut {
+            font-size: 3rem;
           }
-          span {
-            span {
-              a.mailTo {
-                text-decoration: underline;
-                text-decoration-color: #ffffff49;
-                color: white;
-                &:hover {
-                  color: #97b3f0 !important;
-                  text-decoration-color: #97b3f05d;
-                }
-                &:visited {
-                  color: white;
-                }
-              }
-            }
-          }
-          a.resume {
-            padding: 11px 24px 10px 24px;
-            background: white;
-            color: #224afb;
-            border-radius: 6px;
-            font-size: 1.8rem;
-            text-decoration: none;
-            margin-left: 1rem;
-            &:visited {
-              color: #224afb;
-            }
-          }
-          a.linkedInLink {
-            img {
-              width: 51px;
-              height: auto;
-              transform: translateY(17px);
-            }
-          }
-        }
-        .aboutVerbiage--0 {
-          // border-top: 2px solid white;
-          // width: 97%;
         }
       }
     }

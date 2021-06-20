@@ -1,14 +1,38 @@
 import { useInView } from "react-intersection-observer";
 import { useTrail, animated } from "react-spring";
 import ReachOut from "./ReachOut";
-import Photogs from "./Photogs";
 
+function Bod() {
+  return (
+    <div>
+      In addition to my design work I teach practical web development skills
+      through{" "}
+      <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
+        {" "}
+        Nucamp Coding Bootcamp
+      </a>
+      .
+      <br />
+      <br />
+      If you are interested in using my development services, please, feel free
+      to reach out.
+    </div>
+  );
+}
+const elements = [
+  <Bod />,
+  <br />,
+  <br />,
+  <ReachOut />,
+  <br />,
+  <img src="/me_2.jpeg" />,
+];
 export default function Info() {
   const { ref, inView } = useInView({
     threshold: 0.1,
     triggerOnce: true,
   });
-  const trail = useTrail(1, {
+  const trail = useTrail(elements.length, {
     config: { mass: 5, tension: 2200, friction: 200 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 10,
@@ -27,28 +51,10 @@ export default function Info() {
               top: x.interpolate((x) => `${x}px`),
             }}
           >
-            <div>
-              In addition to my design work I teach practical web development
-              skills through{" "}
-              <a
-                href="https://www.nucamp.co/"
-                target="_blank"
-                className="nucamp"
-              >
-                {" "}
-                Nucamp Coding Bootcamp
-              </a>
-              .
-              <br />
-              <br />
-              If you are interested in using my development services, please,
-              feel free to reach out.
-            </div>
+            {elements[index]}
           </animated.span>
         ))}
         <br />
-        <ReachOut />
-        <Photogs />
       </div>
     </section>
   );

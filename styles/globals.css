@@ -429,7 +429,7 @@ section.header {
   color: white;
   font-family: "Epilogue", serif;
   font-size: 2.5rem;
-  line-height: 1.1;
+  line-height: 1.3;
   font-weight: 500;
   padding-top: 0.5rem;
   padding-left: 0.6rem;
@@ -442,6 +442,12 @@ section.header .dItem {
   margin-right: auto;
   margin-left: auto;
   left: 20px;
+  height: 47px;
+}
+
+section.header .dItem .dItemBaby {
+  height: 47px;
+  overflow: hidden;
 }
 
 section.work {
@@ -567,7 +573,7 @@ section.favorites .favoritesContainer {
   color: white;
   width: 495px;
   margin-left: auto;
-  margin-right: 1rem;
+  margin-right: 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,6 +587,7 @@ section.favorites .favoritesContainer {
   font-size: 1rem;
   font-weight: 600;
   z-index: 1;
+  margin-top: 1rem;
 }
 
 section.favorites .favoritesContainer .leftContainer {
@@ -645,7 +652,7 @@ section.favorites .favoritesContainer .leftContainer div.boxItem .designers ul {
 }
 
 section.favorites .favoritesContainer .leftContainer div.boxItem .designers ul li {
-  line-height: 1.3;
+  line-height: 1.2;
   font-family: "corporate condensed regular";
   font-weight: 100;
 }
@@ -702,7 +709,7 @@ section.favorites .favoritesContainer .boxColumn .skills ul {
 
 section.favorites .favoritesContainer .boxColumn .skills ul li {
   font-size: 1.5rem;
-  line-height: 1.25;
+  line-height: 1.2;
   font-weight: 100;
   font-family: "corporate condensed regular";
 }
@@ -724,8 +731,11 @@ section.info .infoBody {
   margin-left: 2.5rem;
   margin-right: auto;
   position: relative;
-  padding-bottom: 9rem;
+  padding-bottom: 4rem;
   left: 6px;
+  -webkit-transform: translateY(-3rem);
+          transform: translateY(-3rem);
+  position: relative;
 }
 
 section.info .infoBody .aboutVerbiage {
@@ -742,7 +752,58 @@ section.info .infoBody .aboutVerbiage {
   font-size: 1.3rem;
 }
 
-section.info .infoBody .reachOut .reachOutBody a {
+section.info .infoBody .aboutVerbiage div a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #ffffff49;
+          text-decoration-color: #ffffff49;
+  color: white;
+}
+
+section.info .infoBody .aboutVerbiage div a:visited {
+  color: white;
+}
+
+section.info .infoBody .aboutVerbiage div a:hover {
+  color: #97b3f0;
+  -webkit-text-decoration-color: #97b3f05d;
+          text-decoration-color: #97b3f05d;
+}
+
+section.info .infoBody .aboutVerbiage .reachOut {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  width: 100%;
+}
+
+section.info .infoBody .aboutVerbiage .reachOut::after, section.info .infoBody .aboutVerbiage .reachOut::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ffffff94;
+  position: absolute;
+  left: 0px;
+}
+
+section.info .infoBody .aboutVerbiage .reachOut::after {
+  bottom: -10px;
+}
+
+section.info .infoBody .aboutVerbiage .reachOut::before {
+  top: -10px;
+}
+
+section.info .infoBody .aboutVerbiage .reachOut .reachOutBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.info .infoBody .aboutVerbiage .reachOut .reachOutBody a {
   font-family: "corporate condensed regular";
   font-size: 1.6rem;
   text-decoration: underline;
@@ -752,21 +813,26 @@ section.info .infoBody .reachOut .reachOutBody a {
   z-index: 12;
 }
 
-section.info .infoBody .reachOut .reachOutBody a:visited {
+section.info .infoBody .aboutVerbiage .reachOut .reachOutBody a:visited {
   color: white;
 }
 
-section.info .infoBody .reachOut .reachOutBody a:hover {
+section.info .infoBody .aboutVerbiage .reachOut .reachOutBody a:hover {
   color: #97b3f0;
   -webkit-text-decoration-color: #97b3f05d;
           text-decoration-color: #97b3f05d;
 }
 
-section.info .infoBody .reachOut .reachOutBody a .linkArrow {
+section.info .infoBody .aboutVerbiage .reachOut .reachOutBody a .linkArrow {
   display: inline-block;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   font-family: sans-serif;
+}
+
+section.info .infoBody .aboutVerbiage img {
+  width: 100%;
+  height: auto;
 }
 
 .customOverlay {
@@ -967,7 +1033,7 @@ section.info .infoBody .reachOut .reachOutBody a .linkArrow {
   font-family: "Epilogue", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
-  line-height: 125%;
+  line-height: 1.4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1854,6 +1920,7 @@ section.info .infoBody .reachOut .reachOutBody a .linkArrow {
   }
   section.navigation ul li {
     right: 0px;
+    bottom: 29px;
   }
   section.header {
     width: 750px;
@@ -1862,11 +1929,10 @@ section.info .infoBody .reachOut .reachOutBody a .linkArrow {
     padding-right: 0rem;
     padding-left: 0.4rem;
   }
-  section.header .descriptionContainer {
-    left: 0px;
-  }
-  section.header .descriptionContainer .description .dItem {
+  section.header .dItem {
     height: unset;
+    line-height: 1.2;
+    left: 0px;
   }
   section.work {
     padding-bottom: 1rem;
@@ -1954,29 +2020,18 @@ section.info .infoBody .reachOut .reachOutBody a .linkArrow {
   section.work div.workContainer div.workBody span.workItemContainer.dtContainer span {
     border-top: solid 1px #ffffff94;
   }
-  section.work div.workContainer div.contact {
-    width: 800px;
+  section.work div.workContainer div.education {
+    width: 100%;
     height: unset;
     margin-top: 100px;
   }
-  section.work div.workContainer div.contact .contentContainer {
+  section.work div.workContainer div.education .educationContainer {
     width: 740px;
     margin-left: auto;
     margin-right: auto;
   }
-  section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem {
-    font-size: 2.5rem;
-  }
-  section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--0, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--3, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--6 {
-    font-size: 2.5rem;
-    font-weight: 500;
-  }
-  section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--1, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--4, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--7 {
-    margin-top: -3px;
-  }
-  section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--2, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--5, section.work div.workContainer div.contact .contentContainer .copyContainer .educationItem--8 {
-    -webkit-margin-after: 1.5rem;
-            margin-block-end: 1.5rem;
+  section.work div.workContainer div.education .educationContainer .schoolsBody {
+    font-size: 2rem;
   }
   section.favorites {
     padding-top: 1rem;
@@ -2069,48 +2124,18 @@ section.info .infoBody .reachOut .reachOutBody a .linkArrow {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 3.5rem;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   section.info div.infoBody span.aboutVerbiage {
-    font-size: 2.5rem;
+    font-size: 2rem;
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
     left: 0;
   }
-  section.info div.infoBody span.aboutVerbiage--0 {
-    padding-top: 0.8rem;
-  }
-  section.info div.infoBody span.aboutVerbiage span span a.mailTo {
-    text-decoration: underline;
-    -webkit-text-decoration-color: #ffffff49;
-            text-decoration-color: #ffffff49;
-    color: white;
-  }
-  section.info div.infoBody span.aboutVerbiage span span a.mailTo:hover {
-    color: #97b3f0 !important;
-    -webkit-text-decoration-color: #97b3f05d;
-            text-decoration-color: #97b3f05d;
-  }
-  section.info div.infoBody span.aboutVerbiage span span a.mailTo:visited {
-    color: white;
-  }
-  section.info div.infoBody span.aboutVerbiage a.resume {
-    padding: 11px 24px 10px 24px;
-    background: white;
-    color: #224afb;
-    border-radius: 6px;
-    font-size: 1.8rem;
-    text-decoration: none;
-    margin-left: 1rem;
-  }
-  section.info div.infoBody span.aboutVerbiage a.resume:visited {
-    color: #224afb;
-  }
-  section.info div.infoBody span.aboutVerbiage a.linkedInLink img {
-    width: 51px;
-    height: auto;
-    -webkit-transform: translateY(17px);
-            transform: translateY(17px);
+  section.info div.infoBody span.aboutVerbiage .reachOut {
+    font-size: 3rem;
   }
 }
 
