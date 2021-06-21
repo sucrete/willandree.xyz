@@ -2492,7 +2492,7 @@ $smallWidth: 390px;
           bottom: -15px;
           animation: 700ms lineAnim2 ease;
           animation-fill-mode: forwards;
-          animation-delay: 900ms;
+          animation-delay: 500ms;
         }
         @keyframes lineAnim2 {
           from {
@@ -2510,6 +2510,7 @@ $smallWidth: 390px;
       }
       ul {
         font-size: 1.15rem;
+        animation-delay: 800ms;
         li {
           font-size: 1.5rem;
           bottom: 18px;
@@ -2735,8 +2736,10 @@ $smallWidth: 390px;
 
 $xtraSmallWidth: 360px;
 @media screen and (max-width: 415px) {
-  .lowerContainer {
-    height: 1000px;
+  .container {
+    main {
+      height: 2350px;
+    }
   }
   section {
     width: $xtraSmallWidth;
@@ -2754,6 +2757,7 @@ $xtraSmallWidth: 360px;
         animation-delay: 1200ms;
         li {
           font-size: 1.4rem;
+          bottom: 37px;
         }
       }
     }
@@ -2784,37 +2788,27 @@ $xtraSmallWidth: 360px;
           span.workItemContainer {
             width: $xtraSmallWidth;
             span {
-              font-size: 1.2rem;
+              font-size: 1.1rem;
               padding-bottom: 15px;
               &:after {
                 right: -11px;
-                top: -27px;
+                top: -28px;
               }
             }
           }
         }
-        div.contact {
+        div.education {
           width: $xtraSmallWidth;
           padding-top: 0rem;
-          margin-top: 4.15rem;
-          div.contentContainer {
-            div.copyContainer {
-              padding-top: 0rem;
-              div.educationHeader {
-                font-size: 1.4rem;
-              }
-              div.educationItem {
-                font-size: 1.3rem;
+          margin-top: 2.15rem;
+          div.educationContainer {
+            div.educationHeader {
+              &::before {
                 width: $xtraSmallWidth;
-                &--0 {
-                  padding-top: 0.2rem;
-                }
-                &--0,
-                &--3,
-                &--6 {
-                  font-size: 1.2rem;
-                }
               }
+            }
+            .schoolsBody {
+              font-size: 1.1rem;
             }
           }
         }
@@ -2880,23 +2874,23 @@ $xtraSmallWidth: 360px;
     &.info {
       width: $xtraSmallWidth;
       // margin-top: 2.5rem;
-      padding-top: 2.5rem;
+      padding-top: 0.5rem;
       div.infoBody {
         width: 100%;
         span.aboutVerbiage {
           width: 100%;
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           line-height: 1.22;
-          a.resume {
-            font-size: 0.9rem;
-            height: 36px;
-          }
-          a.linkedInLink {
-            img {
-              height: 36px;
-              width: 36px;
-              transform: translateY(13px);
+          div.reachOut {
+            margin-top: 1.2rem;
+            span.reachOutBody {
+              a {
+                font-size: 1.2rem;
+              }
             }
+          }
+          img {
+            transform: translateY(27px);
           }
         }
       }
