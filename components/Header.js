@@ -23,7 +23,8 @@ function DesktopHeader() {
     delay: 200,
     x: 0,
     height: 46,
-    from: { x: 46, height: 0 },
+    opacity: 1,
+    from: { x: 46, height: 0, opacity: 1 },
   });
   return (
     <>
@@ -61,7 +62,7 @@ function MobileHeader() {
   });
   return (
     <>
-      {trail.map(({ x, opacity, ...rest }, index) => (
+      {trail.map(({ x, ...rest }, index) => (
         <animated.div
           className={`dItem dItem--${index} trails-text`}
           key={descriptionItems[index]}
