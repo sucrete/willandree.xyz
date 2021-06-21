@@ -116,7 +116,7 @@ export default function DumpTRUCK() {
               , a chatroom where, in addition to text, users could paste arrays
               of images sourced from all corners of the web, often "remixing"
               (and "re-remixing") still images and gifs, making for an utterly
-              novel form of art making.
+              novel form of artistic practice.
               <span className="tech"> Tech: React and Next.js.</span>
             </p>
 

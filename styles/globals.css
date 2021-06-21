@@ -2900,11 +2900,14 @@ section.info .infoBody .aboutVerbiage--4::after {
     padding-top: 0rem;
     margin-top: 2.15rem;
   }
+  section.work div.workContainer div.education div.educationContainer {
+    width: 100%;
+  }
   section.work div.workContainer div.education div.educationContainer div.educationHeader {
     margin-bottom: 1.7rem;
   }
   section.work div.workContainer div.education div.educationContainer div.educationHeader::before {
-    width: 100%;
+    width: 360px;
     bottom: -7px;
   }
   section.work div.workContainer div.education div.educationContainer .schoolsBody {

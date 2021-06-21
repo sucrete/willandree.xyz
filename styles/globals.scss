@@ -2800,10 +2800,11 @@ $xtraSmallWidth: 360px;
           padding-top: 0rem;
           margin-top: 2.15rem;
           div.educationContainer {
+            width: 100%;
             div.educationHeader {
               margin-bottom: 1.7rem;
               &::before {
-                width: 100%;
+                width: $xtraSmallWidth;
                 bottom: -7px;
               }
             }
