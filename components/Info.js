@@ -6,12 +6,12 @@ function Bod() {
   return (
     <div>
       In addition to my design work I teach practical web development skills
-      through{" "}
+      with{" "}
       <a href="https://www.nucamp.co/" target="_blank" className="nucamp">
         {" "}
         Nucamp Coding Bootcamp
       </a>
-      . If you are interested in collaborating or acquiring my services, please,
+      . If you are interested in collaborating or using my services, please,
       feel free to reach out.
     </div>
   );

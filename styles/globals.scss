@@ -701,6 +701,15 @@ section.info {
           left: 0px;
           top: -10px;
         }
+        &::after {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background: $lineColor;
+          position: absolute;
+          left: 0px;
+          bottom: -10px;
+        }
         .reachOutBody {
           display: flex;
           justify-content: space-between;
@@ -1935,7 +1944,6 @@ section.info {
       transform: translateY(120px);
       width: 800px;
       height: 800px;
-
       div.favoritesContainer {
         width: 736px;
         height: 736px;
@@ -2031,8 +2039,16 @@ section.info {
           &--3 {
             display: none;
           }
-          .reachOut {
-            font-size: 3rem;
+          img {
+            position: relative;
+            transform: translateY(55px);
+          }
+          div.reachOut {
+            span.reachOutBody {
+              a {
+                font-size: 2.3rem;
+              }
+            }
           }
         }
       }
