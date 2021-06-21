@@ -1510,6 +1510,9 @@ section.info .infoBody .aboutVerbiage--4::after {
   .customModal {
     overflow-y: visible;
   }
+  .customModal .projectDesignation {
+    margin-bottom: 1.5rem;
+  }
   .customModal .modalBody {
     padding: 0rem 1rem 5rem 1rem;
   }
@@ -1719,8 +1722,8 @@ section.info .infoBody .aboutVerbiage--4::after {
   }
   .customModal .modalBody .modalContent .modalHeaderLower {
     padding-left: 0.4rem;
-    -webkit-margin-before: 1rem;
-            margin-block-start: 1rem;
+    -webkit-margin-before: 1.2rem;
+            margin-block-start: 1.2rem;
     font-size: 1.9rem;
     letter-spacing: -0.05rem;
   }
@@ -1737,8 +1740,6 @@ section.info .infoBody .aboutVerbiage--4::after {
   }
   .customModal .modalBody .modalContent .modalDetails {
     padding: 0rem 0.5rem 0rem 0.5rem;
-    -webkit-margin-before: 0.9rem;
-            margin-block-start: 0.9rem;
   }
   .customModal .modalBody .modalContent .modalDetails p {
     font-size: 0.9rem;
@@ -1751,8 +1752,8 @@ section.info .infoBody .aboutVerbiage--4::after {
     color: black;
   }
   .customModal .modalBody .modalContent .modalDetails .visitButton {
-    -webkit-margin-before: 1.5rem;
-            margin-block-start: 1.5rem;
+    -webkit-margin-before: 2rem;
+            margin-block-start: 2rem;
     -webkit-margin-after: 1rem;
             margin-block-end: 1rem;
     -webkit-box-pack: center;
@@ -2857,8 +2858,8 @@ section.info .infoBody .aboutVerbiage--4::after {
   }
   section.navigation ul {
     font-size: 0.75rem;
-    -webkit-animation-delay: 1200ms;
-            animation-delay: 1200ms;
+    -webkit-animation-delay: 1000ms;
+            animation-delay: 1000ms;
   }
   section.navigation ul li {
     font-size: 1.4rem;
@@ -2899,8 +2900,12 @@ section.info .infoBody .aboutVerbiage--4::after {
     padding-top: 0rem;
     margin-top: 2.15rem;
   }
+  section.work div.workContainer div.education div.educationContainer div.educationHeader {
+    margin-bottom: 1.7rem;
+  }
   section.work div.workContainer div.education div.educationContainer div.educationHeader::before {
-    width: 360px;
+    width: 100%;
+    bottom: -7px;
   }
   section.work div.workContainer div.education div.educationContainer .schoolsBody {
     font-size: 1.1rem;
@@ -2980,9 +2985,8 @@ section.info .infoBody .aboutVerbiage--4::after {
 }
 
 @media screen and (max-width: 375px) {
-  .lowerContainer {
-    height: 973px;
-    margin-bottom: 0rem;
+  .container main {
+    height: 2270px;
   }
   section {
     width: 340px;
@@ -3000,7 +3004,7 @@ section.info .infoBody .aboutVerbiage--4::after {
     font-size: 0.14rem;
   }
   section.navigation ul li {
-    font-size: 0.7rem;
+    bottom: 39px;
   }
   section.header {
     width: 340px;
@@ -3019,25 +3023,11 @@ section.info .infoBody .aboutVerbiage--4::after {
     right: -12px;
     top: -28px;
   }
-  section.work div.workContainer div.contact {
+  section.work div.workContainer div.education {
     width: 340px;
-    padding-top: 0rem;
   }
-  section.work div.workContainer div.contact div.contentContainer div.copyContainer {
-    padding-top: 0rem;
-  }
-  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationHeader {
-    font-size: 1.2rem;
-  }
-  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem {
+  section.work div.workContainer div.education div.educationContainer div.educationHeader::before {
     width: 340px;
-    font-size: 1.4rem;
-  }
-  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0 {
-    padding-top: 0rem;
-  }
-  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--3, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--6 {
-    font-size: 1.35rem;
   }
   section.favorites {
     width: 340px;
@@ -3095,6 +3085,9 @@ section.info .infoBody .aboutVerbiage--4::after {
 }
 
 @media screen and (max-width: 320px) {
+  .container main {
+    height: 1872px;
+  }
   section {
     width: 265px;
   }
@@ -3104,7 +3097,7 @@ section.info .infoBody .aboutVerbiage--4::after {
   }
   section.navigation span.name {
     padding-top: 0.1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   section.navigation span.name:before {
     -webkit-animation: 700ms lineAnim77 ease;
@@ -3144,7 +3137,8 @@ section.info .infoBody .aboutVerbiage--4::after {
     font-size: 0.185rem;
   }
   section.navigation ul li {
-    font-size: 0.5rem;
+    font-size: 1rem;
+    bottom: 36px;
   }
   section.header {
     width: 265px;
@@ -3158,7 +3152,7 @@ section.info .infoBody .aboutVerbiage--4::after {
     width: 265px;
   }
   section.work div.workContainer div.workBody div.workHeader {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   section.work div.workContainer div.workBody span.workItemContainer {
     width: 265px;
@@ -3170,25 +3164,17 @@ section.info .infoBody .aboutVerbiage--4::after {
     right: -12px;
     top: -30px;
   }
-  section.work div.workContainer div.contact {
+  section.work div.workContainer div.education {
     width: 265px;
     padding-top: 0rem;
   }
-  section.work div.workContainer div.contact div.contentContainer div.copyContainer {
-    padding-top: 0rem;
+  section.work div.workContainer div.education div.educationContainer div.educationHeader {
+    font-size: 1rem;
   }
-  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationHeader {
-    font-size: 0.9rem;
-  }
-  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem {
+  section.work div.workContainer div.education div.educationContainer div.educationHeader::before {
     width: 265px;
-    font-size: 01rem;
-    line-height: 1.2rem;
   }
-  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0 {
-    padding-top: 0rem;
-  }
-  section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--0, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--3, section.work div.workContainer div.contact div.contentContainer div.copyContainer div.educationItem--6 {
+  section.work div.workContainer div.education div.educationContainer .schoolsBody {
     font-size: 0.9rem;
   }
   section.favorites {
@@ -3244,20 +3230,8 @@ section.info .infoBody .aboutVerbiage--4::after {
   section.info div.infoBody span.aboutVerbiage {
     font-size: 0.9rem;
   }
-  section.info div.infoBody span.aboutVerbiage--8 {
-    height: 5px;
-  }
-  section.info div.infoBody span.aboutVerbiage a.resume {
-    margin-top: -20px;
-    font-size: 0.7rem;
-    padding: 7px 20px 6px 20px;
-    border-radius: 4px;
-  }
-  section.info div.infoBody span.aboutVerbiage a.linkedInLink img {
-    height: 25px;
-    width: 25px;
-    -webkit-transform: translateY(9px);
-            transform: translateY(9px);
+  section.info div.infoBody span.aboutVerbiage div.reachOut span.reachOutBody a {
+    font-size: 0.9rem;
   }
 }
 

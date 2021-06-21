@@ -1145,6 +1145,9 @@ section.info {
 @media screen and (max-width: 1000px) {
   .customModal {
     overflow-y: visible;
+    .projectDesignation {
+      margin-bottom: 1.5rem;
+    }
     .modalBody {
       padding: 0rem 1rem 5rem 1rem;
       .modalHeader {
@@ -1161,11 +1164,6 @@ section.info {
           display: block;
           width: 100%;
           height: 100%;
-
-          ul {
-            li {
-            }
-          }
         }
         .modalHeaderLower {
           display: block;
@@ -1464,7 +1462,7 @@ section.info {
         }
         .modalHeaderLower {
           padding-left: 0.4rem;
-          margin-block-start: 1rem;
+          margin-block-start: 1.2rem;
           font-size: 1.9rem;
           letter-spacing: -0.05rem;
         }
@@ -1480,7 +1478,7 @@ section.info {
         }
         .modalDetails {
           padding: 0rem 0.5rem 0rem 0.5rem;
-          margin-block-start: 0.9rem;
+          // margin-block-start: 1.5rem;
           p {
             font-size: 0.9rem;
             line-height: 1.5;
@@ -1493,7 +1491,7 @@ section.info {
             }
           }
           .visitButton {
-            margin-block-start: 1.5rem;
+            margin-block-start: 2rem;
             margin-block-end: 1rem;
             // width: 100%;
             justify-content: center;
@@ -2754,7 +2752,7 @@ $xtraSmallWidth: 360px;
       }
       ul {
         font-size: 0.75rem;
-        animation-delay: 1200ms;
+        animation-delay: 1000ms;
         li {
           font-size: 1.4rem;
           bottom: 37px;
@@ -2803,8 +2801,10 @@ $xtraSmallWidth: 360px;
           margin-top: 2.15rem;
           div.educationContainer {
             div.educationHeader {
+              margin-bottom: 1.7rem;
               &::before {
-                width: $xtraSmallWidth;
+                width: 100%;
+                bottom: -7px;
               }
             }
             .schoolsBody {
@@ -2908,9 +2908,8 @@ $xtraSmallWidth: 360px;
 
 $xtraXtraSmallWidth: 340px;
 @media screen and (max-width: 375px) {
-  .lowerContainer {
-    height: 973px;
-    margin-bottom: 0rem;
+  .container main {
+    height: 2270px;
   }
   section {
     width: $xtraXtraSmallWidth;
@@ -2925,7 +2924,8 @@ $xtraXtraSmallWidth: 340px;
       ul {
         font-size: 0.14rem;
         li {
-          font-size: 0.7rem;
+          // font-size: 0.7rem;
+          bottom: 39px;
         }
       }
     }
@@ -2948,28 +2948,12 @@ $xtraXtraSmallWidth: 340px;
             }
           }
         }
-        div.contact {
+        div.education {
           width: $xtraXtraSmallWidth;
-          // margin-top: 10rem;
-          // height: 530px;
-          padding-top: 0rem;
-          div.contentContainer {
-            div.copyContainer {
-              padding-top: 0rem;
-              div.educationHeader {
-                font-size: 1.2rem;
-              }
-              div.educationItem {
+          div.educationContainer {
+            div.educationHeader {
+              &::before {
                 width: $xtraXtraSmallWidth;
-                font-size: 1.4rem;
-                &--0 {
-                  padding-top: 0rem;
-                }
-                &--0,
-                &--3,
-                &--6 {
-                  font-size: 1.35rem;
-                }
               }
             }
           }
@@ -3055,6 +3039,9 @@ $xtraXtraSmallWidth: 340px;
 
 $xtraXtraXtraSmallWidth: 265px;
 @media screen and (max-width: 320px) {
+  .container main {
+    height: 1872px;
+  }
   section {
     width: $xtraXtraXtraSmallWidth;
     &.navigation {
@@ -3062,7 +3049,7 @@ $xtraXtraXtraSmallWidth: 265px;
       padding-top: 0.5rem;
       span.name {
         padding-top: 0.1rem;
-        font-size: 0.9rem;
+        font-size: 1rem;
         &:before {
           animation: 700ms lineAnim77 ease;
           animation-fill-mode: forwards;
@@ -3085,7 +3072,8 @@ $xtraXtraXtraSmallWidth: 265px;
       ul {
         font-size: 0.185rem;
         li {
-          font-size: 0.5rem;
+          font-size: 1rem;
+          bottom: 36px;
         }
       }
     }
@@ -3106,7 +3094,7 @@ $xtraXtraXtraSmallWidth: 265px;
       div.workContainer {
         div.workBody {
           div.workHeader {
-            font-size: 0.9rem;
+            font-size: 1rem;
           }
           span.workItemContainer {
             width: $xtraXtraXtraSmallWidth;
@@ -3120,28 +3108,18 @@ $xtraXtraXtraSmallWidth: 265px;
             }
           }
         }
-        div.contact {
+        div.education {
           width: $xtraXtraXtraSmallWidth;
           padding-top: 0rem;
-          div.contentContainer {
-            div.copyContainer {
-              padding-top: 0rem;
-              div.educationHeader {
-                font-size: 0.9rem;
-              }
-              div.educationItem {
+          div.educationContainer {
+            div.educationHeader {
+              font-size: 1rem;
+              &::before {
                 width: $xtraXtraXtraSmallWidth;
-                font-size: 01rem;
-                line-height: 1.2rem;
-                &--0 {
-                  padding-top: 0rem;
-                }
-                &--0,
-                &--3,
-                &--6 {
-                  font-size: 0.9rem;
-                }
               }
+            }
+            .schoolsBody {
+              font-size: 0.9rem;
             }
           }
         }
@@ -3211,21 +3189,11 @@ $xtraXtraXtraSmallWidth: 265px;
 
         span.aboutVerbiage {
           font-size: 0.9rem;
-          // display: unset;
-          &--8 {
-            height: 5px;
-          }
-          a.resume {
-            margin-top: -20px;
-            font-size: 0.7rem;
-            padding: 7px 20px 6px 20px;
-            border-radius: 4px;
-          }
-          a.linkedInLink {
-            img {
-              height: 25px;
-              width: 25px;
-              transform: translateY(9px);
+          div.reachOut {
+            span.reachOutBody {
+              a {
+                font-size: 0.9rem;
+              }
             }
           }
         }
