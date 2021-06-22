@@ -721,7 +721,6 @@ section.info {
             text-decoration-color: #ffffff49;
             color: $favoritesColor;
             z-index: 12;
-
             &:visited {
               color: $favoritesColor;
             }
@@ -1980,7 +1979,7 @@ section.info {
     &.info {
       width: 800px;
       transform: translateY(0px);
-      margin-top: 4rem;
+      margin-top: 8rem;
       // padding-top: 1rem;
       div.infoBody {
         width: 736px;
@@ -3209,7 +3208,7 @@ $xtraXtraXtraSmallWidth: 265px;
 // ██║██╔═══╝ ██╔══██║██║  ██║    ██╔═══╝ ██╔══██╗██║   ██║    ╚════╝██╔╝
 // ██║██║     ██║  ██║██████╔╝    ██║     ██║  ██║╚██████╔╝         ██╔╝
 // ╚═╝╚═╝     ╚═╝  ╚═╝╚═════╝     ╚═╝     ╚═╝  ╚═╝ ╚═════╝          ╚═╝
-// CHANGING SIZE OF MODAL HEADER FONT OTHERWISE LOOKS KIND OF SMALL
+// CHANGING SIZE OF MODAL HEADER FONT OTHERWISE LOOKS KIND OF SMALL #iPad #ipad
 /* Portrait */
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
   .customModal {

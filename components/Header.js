@@ -10,7 +10,7 @@ function getWindowDimensions() {
 }
 function DesktopHeader() {
   var descriptionItems = [
-    "Hola! My name is Will and I'm a front-end developer",
+    "Howdy! My name is Will and I'm a front-end developer",
     "based in Kansas City. My expertise lies in creating",
     "unique websites using JavaScript-driven",
     "technologies. Possessed of a lifelong love for art",
@@ -50,7 +50,7 @@ function DesktopHeader() {
 }
 function MobileHeader() {
   var descriptionItems = [
-    "Hola! My name is Will and I'm a front-end developer based in Kansas City. My expertise lies in creating unique websites using JavaScript-driven technologies. Possessed of a lifelong love for art and design, I am keenly drawn to the challenges of creating singular user-facing experiences...",
+    "Howdy! My name is Will and I'm a front-end developer based in Kansas City. My expertise lies in creating unique websites using JavaScript-driven technologies. Possessed of a lifelong love for art and design, I am keenly drawn to the challenges of creating singular user-facing experiences...",
   ];
 
   const trail = useTrail(descriptionItems.length, {

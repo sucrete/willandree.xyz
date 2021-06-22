@@ -104,6 +104,7 @@ export default function Work() {
     config: { mass: 5, tension: 2200, friction: 500 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 20,
+    delay: 90,
     from: { opacity: 0, x: 20 },
   });
   return (

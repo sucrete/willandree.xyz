@@ -2215,7 +2215,7 @@ section.info .infoBody .aboutVerbiage--4::after {
     width: 800px;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
-    margin-top: 4rem;
+    margin-top: 8rem;
   }
   section.info div.infoBody {
     width: 736px;
