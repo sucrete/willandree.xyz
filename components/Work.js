@@ -1,8 +1,15 @@
 import { useInView } from "react-intersection-observer";
 import { Modal } from "react-responsive-modal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTrail, animated } from "react-spring";
+import window from "global";
 
+function getWindowDimensions() {
+  const { innerHeight: height } = window;
+  const highEnough = height > 800;
+  if (highEnough) return { titleDelay: 2000, bodyDelay: 2110 };
+  return { titleDelay: 0, bodyDelay: 110 };
+}
 import Education from "./Education";
 
 import DumpTRUCKContent from "./ModalContent/DumpTRUCK";
@@ -75,7 +82,21 @@ export default function Work() {
       },
     },
   };
+  const [heightCheck, checkHeight] = useState(getWindowDimensions());
+  useEffect(() => {
+    addEventListeners();
+    return () => removeEventListeners();
+  }, []);
+  const addEventListeners = () => {
+    window.addEventListener("resize", handleResize);
+  };
 
+  const removeEventListeners = () => {
+    window.removeEventListener("resize", handleResize);
+  };
+  const handleResize = () => {
+    checkHeight(getWindowDimensions());
+  };
   const MyModal = (props) => (
     <Modal
       classNames={{
@@ -97,16 +118,17 @@ export default function Work() {
     config: { mass: 5, tension: 2000, friction: 250 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 20,
-    delay: 200,
+    delay: heightCheck.bodyDelay,
     from: { opacity: 0, x: 20 },
   });
   const trail2 = useTrail(tittle.length, {
     config: { mass: 5, tension: 2200, friction: 500 },
     opacity: inView ? 1 : 0,
     x: inView ? 0 : 20,
-    delay: 90,
+    delay: heightCheck.titleDelay,
     from: { opacity: 0, x: 20 },
   });
+
   return (
     <section className="work">
       <div className="workContainer scroll">
