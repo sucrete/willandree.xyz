@@ -25,10 +25,11 @@ export default function CalvinTodd() {
           </div>
           <div className="modalDetails">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-              impedit numquam praesentium recusandae blanditiis quia sequi,
-              repellat vel consectetur autem labore earum libero, quod minima
-              culpa optio sapiente expedita alias!
+              In an effort to present the varied works of maker and
+              singer/song-writer Calvin Todd, this website was built with a
+              turn-key approach in mind; I provided some out-of-the-box graphic
+              design and, using Wordpress, created the website's framework;
+              Calvin could
             </p>
 
             <a
