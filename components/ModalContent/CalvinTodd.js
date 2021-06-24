@@ -20,6 +20,9 @@ export default function CalvinTodd() {
             <ul>{imageSlides}</ul>
           </div>
           <h1 className="modalHeaderLower">calvintodd.com</h1>
+          <div className="modalSubheadingLower" style={{ color: "white" }}>
+            |{" "}
+          </div>
           <div className="modalDetails">
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque

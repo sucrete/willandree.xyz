@@ -2667,7 +2667,7 @@ section.info .infoBody .aboutVerbiage--4::after {
       opacity: 0;
       width: 0px;
     }
-    20% {
+    40% {
       opacity: 0;
     }
     to {
@@ -2680,7 +2680,7 @@ section.info .infoBody .aboutVerbiage--4::after {
       opacity: 0;
       width: 0px;
     }
-    20% {
+    40% {
       opacity: 0;
     }
     to {
