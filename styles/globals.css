@@ -855,7 +855,7 @@ section.info .infoBody .aboutVerbiage .reachOut .reachOutBody a .linkArrow {
 
 section.info .infoBody .aboutVerbiage img {
   width: 100%;
-  height: auto;
+  height: 624px;
   position: relative;
   z-index: -2;
 }
@@ -2239,6 +2239,7 @@ section.info .infoBody .aboutVerbiage--4::after {
     position: relative;
     -webkit-transform: translateY(50px);
             transform: translateY(50px);
+    height: auto;
   }
   section.info div.infoBody span.aboutVerbiage div.reachOut span.reachOutBody a {
     font-size: 2.3rem;

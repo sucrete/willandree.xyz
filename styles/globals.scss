@@ -738,7 +738,7 @@ section.info {
       }
       img {
         width: 100%;
-        height: auto;
+        height: 624px;
         position: relative;
         z-index: -2;
       }
@@ -1997,6 +1997,7 @@ section.info {
           img {
             position: relative;
             transform: translateY(50px);
+            height: auto;
           }
           div.reachOut {
             span.reachOutBody {
