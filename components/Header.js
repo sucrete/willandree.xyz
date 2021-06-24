@@ -10,7 +10,7 @@ function getWindowDimensions() {
 }
 function DesktopHeader() {
   var descriptionItems = [
-    "Howdy! My name is Will and I'm a front-end developer",
+    "Hola! My name is Will and I'm a front-end developer",
     "based in Kansas City. My expertise lies in creating",
     "unique websites using JavaScript-driven",
     "technologies. Possessed of a lifelong love for art",
@@ -54,7 +54,7 @@ function MobileHeader() {
   ];
 
   const trail = useTrail(descriptionItems.length, {
-    config: { mass: 5, tension: 2200, friction: 220 },
+    config: { mass: 5, tension: 2200, friction: 500 },
     opacity: 1,
     delay: 500,
     x: 0,
