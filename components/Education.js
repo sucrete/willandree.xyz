@@ -6,7 +6,7 @@ import window from "global";
 function getWindowDimensions() {
   const { innerHeight: height, innerWidth: width } = window;
   const highEnough = height > 800;
-  const withinWidth = width < 414;
+  const withinWidth = width < 417;
   if (highEnough) return { educationDelay: 2200 };
   if (withinWidth) return { educationDelay: 0 };
   return { educationDelay: 200 };
