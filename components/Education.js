@@ -4,10 +4,12 @@ import { useEffect, useState } from "react";
 import window from "global";
 
 function getWindowDimensions() {
-  const { innerHeight: height } = window;
+  const { innerHeight: height, innerWidth: width } = window;
   const highEnough = height > 800;
+  const withinWidth = width < 414;
   if (highEnough) return { educationDelay: 2200 };
-  return { educationDelay: 0 };
+  if (withinWidth) return { educationDelay: 0 };
+  return { educationDelay: 200 };
 }
 export default function Education() {
   const [heightCheck, checkHeight] = useState(getWindowDimensions());

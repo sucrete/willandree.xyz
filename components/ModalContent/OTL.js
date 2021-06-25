@@ -45,10 +45,19 @@ export default function OTL() {
           </div>
           <div className="modalDetails">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-              impedit numquam praesentium recusandae blanditiis quia sequi,
-              repellat vel consectetur autem labore earum libero, quod minima
-              culpa optio sapiente expedita alias!
+              Old Town Lofts is a leasing company serving downtown Kansas City.
+              In partnership with the local government they have retrofitted
+              derelict or underutilized buildings from the Crossroads to the
+              River Market as part of a rather successful effort to provide
+              modern, affordable housing for scores of middle-income families.
+              And they have a{" "}
+              <a href="https://www.oldtownloftskc.com/" target="_blank">
+                truly terrible website
+              </a>
+              . This was the proof of concept I presented to them that, for
+              reasons of excessive red tape, could not be adapted for their use.
+              C'est la vie.
+              <span className="tech"> Tech: React and Next.js.</span>
             </p>
 
             <a

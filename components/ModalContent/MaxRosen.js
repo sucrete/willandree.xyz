@@ -46,10 +46,12 @@ export default function MaxRosen() {
           </div>
           <div className="modalDetails">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-              impedit numquam praesentium recusandae blanditiis quia sequi,
-              repellat vel consectetur autem labore earum libero, quod minima
-              culpa optio sapiente expedita alias!
+              Personal website for Vice News/Bloomberg Business/Disney+ director
+              and editor, Max Rosen.
+              <span className="tech">
+                {" "}
+                Tech: React, react-spring, and react-transition.
+              </span>
             </p>
 
             <a
