@@ -1705,9 +1705,6 @@ section.info .infoBody .aboutVerbiage--4::after {
 }
 
 @media screen and (max-width: 414px) {
-  .customModal {
-    overflow-y: hidden;
-  }
   .customModal .modalBody {
     padding: 0rem 1rem 0rem 1rem;
     height: unset;
@@ -1724,8 +1721,9 @@ section.info .infoBody .aboutVerbiage--4::after {
     padding-left: 0.4rem;
     -webkit-margin-before: 1.2rem;
             margin-block-start: 1.2rem;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     letter-spacing: -0.05rem;
+    font-weight: 500;
   }
   .customModal .modalBody .modalContent .modalSubheadingLower {
     padding-left: 0.5rem;
@@ -1739,10 +1737,10 @@ section.info .infoBody .aboutVerbiage--4::after {
             margin-block-start: 0.2rem;
   }
   .customModal .modalBody .modalContent .modalDetails {
-    padding: 0rem 0.5rem 0rem 0.5rem;
+    padding: 0rem 0.5rem 1rem 0.5rem;
   }
   .customModal .modalBody .modalContent .modalDetails p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.5;
   }
   .customModal .modalBody .modalContent .modalDetails p a {

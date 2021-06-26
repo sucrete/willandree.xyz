@@ -1447,7 +1447,7 @@ section.info {
 // ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝     ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝         ╚═╝ ╚═╝ ╚═╝╚═╝     ╚═╝  ╚═╝         ╚═╝
 @media screen and (max-width: 414px) {
   .customModal {
-    overflow-y: hidden;
+    // overflow-y: hidden;
     .modalBody {
       padding: 0rem 1rem 0rem 1rem;
       // overflow-y: hidden;
@@ -1462,8 +1462,9 @@ section.info {
         .modalHeaderLower {
           padding-left: 0.4rem;
           margin-block-start: 1.2rem;
-          font-size: 1.9rem;
+          font-size: 1.5rem;
           letter-spacing: -0.05rem;
+          font-weight: 500;
         }
         .modalSubheadingLower {
           padding-left: 0.5rem;
@@ -1476,10 +1477,10 @@ section.info {
           }
         }
         .modalDetails {
-          padding: 0rem 0.5rem 0rem 0.5rem;
+          padding: 0rem 0.5rem 1rem 0.5rem;
           // margin-block-start: 1.5rem;
           p {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             line-height: 1.5;
             // font-weight: 500;
             a {

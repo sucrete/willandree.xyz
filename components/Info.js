@@ -41,7 +41,7 @@ export default function Info() {
         {trail.map(({ x, ...rest }, index) => (
           <animated.span
             className={`aboutVerbiage aboutVerbiage--${index}`}
-            key="aboutVerbiageOneTime"
+            key={`aboutVerbiage--${index}`}
             style={{
               ...rest,
               top: x.interpolate((x) => `${x}px`),

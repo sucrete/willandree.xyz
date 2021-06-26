@@ -25,15 +25,12 @@ export default function CalvinTodd() {
           </div>
           <div className="modalDetails">
             <p>
-              This website, for maker/singer/song-writer Calvin Todd, was built
-              as a turn-key approach for exhibiting Calvin's varied work; I
-              provided him some out-of-the-box graphic design and, using
-              WordPress, put together the website's basic structure and
-              e-commerce functionality; using the CMS, Calvin could easily edit
-              content based on his aesthetic needs.
+              This site was built to exhibit the varied work of maker/singer/song-writer Calvin Todd. A turn-key approach: 
+              I put together the site's structure, 
+              e-commerce functionality, and some out-of-the-box graphic design; and being built on WordPress, Calvin could manage the content based on what he was working on at any given moment.
               <span className="tech">
                 {" "}
-                Tech: WordPress, WooCommerce, and custom CSS.
+                Made using WordPress, WooCommerce, and custom CSS.
               </span>
             </p>
 

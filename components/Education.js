@@ -7,6 +7,7 @@ function getWindowDimensions() {
   const { innerHeight: height, innerWidth: width } = window;
   if (height > 800) return { educationDelay: 2200 };
   if (width < 417) return { educationDelay: 0 };
+  console.log("height over 800? " + height > 800 + ". width under 414? -> " + width < 417);
   return { educationDelay: 200 };
 }
 export default function Education() {
