@@ -9,7 +9,7 @@ const meList = [
   "student of novelty",
 ];
 const aboutMeList = meList.map((item, index) => (
-  <li className={`liImage liImage--${index}`}>{item}</li>
+  <li key={`liItem--${index}`}className={`liImage liImage--${index}`}>{item}</li>
 ));
 export default function Navigation() {
   const fullName = "Wm. Andrée";

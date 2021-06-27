@@ -2823,7 +2823,7 @@ $xtraSmallWidth: 360px;
       div.favoritesContainer {
         height: 100%;
         div.boxColumn {
-          border-radius: 5px;
+          border-radius: 10px;
           padding: 1.4rem 1.4rem 1.4rem 1.5rem;
           div.skills {
             div {
@@ -2840,7 +2840,7 @@ $xtraSmallWidth: 360px;
         div.leftContainer {
           div.boxItem {
             padding: 1.4rem 1.4rem 1.4rem 1.5rem;
-            border-radius: 5px;
+            border-radius: 10px;
             div.designers {
               div {
                 font-size: 0.75rem;
@@ -2924,10 +2924,9 @@ $xtraXtraSmallWidth: 340px;
         font-size: 1.2rem;
       }
       ul {
-        font-size: 0.14rem;
+        font-size: unset;
         li {
-          // font-size: 0.7rem;
-          bottom: 39px;
+          bottom: 7px;
         }
       }
     }
@@ -3072,10 +3071,10 @@ $xtraXtraXtraSmallWidth: 265px;
         }
       }
       ul {
-        font-size: 0.185rem;
+        // font-size: 0.185rem;
         li {
           font-size: 1rem;
-          bottom: 36px;
+          bottom: 7px;
         }
       }
     }

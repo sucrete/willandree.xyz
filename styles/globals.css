@@ -2922,7 +2922,7 @@ section.info .infoBody .aboutVerbiage--4::after {
     height: 100%;
   }
   section.favorites div.favoritesContainer div.boxColumn {
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 1.4rem 1.4rem 1.4rem 1.5rem;
   }
   section.favorites div.favoritesContainer div.boxColumn div.skills div {
@@ -2936,7 +2936,7 @@ section.info .infoBody .aboutVerbiage--4::after {
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem {
     padding: 1.4rem 1.4rem 1.4rem 1.5rem;
-    border-radius: 5px;
+    border-radius: 10px;
   }
   section.favorites div.favoritesContainer div.leftContainer div.boxItem div.designers div {
     font-size: 0.75rem;
@@ -3003,10 +3003,10 @@ section.info .infoBody .aboutVerbiage--4::after {
     font-size: 1.2rem;
   }
   section.navigation ul {
-    font-size: 0.14rem;
+    font-size: unset;
   }
   section.navigation ul li {
-    bottom: 39px;
+    bottom: 7px;
   }
   section.header {
     width: 340px;
@@ -3135,12 +3135,9 @@ section.info .infoBody .aboutVerbiage--4::after {
       width: 100%;
     }
   }
-  section.navigation ul {
-    font-size: 0.185rem;
-  }
   section.navigation ul li {
     font-size: 1rem;
-    bottom: 36px;
+    bottom: 7px;
   }
   section.header {
     width: 265px;
