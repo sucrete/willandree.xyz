@@ -22,6 +22,20 @@ const slides = [
   <img className="desaturatedBuilding" src="/COVER_8desaturated.png" />,
   <ACard />,
 ];
+function ReactCapsule() {
+  return (
+<span style={{ color: "white", background: "blue", marginLeft: "3px"}}className="lilCapsule">
+            React
+          </span>
+  )
+}
+function NextCapsule() {
+  return (
+<span style={{ color: "white", background: "black", marginLeft: "3px"}}className="lilCapsule">
+            Next.js
+          </span>
+  )
+}
 const imageSlides = slides.map((slide, index) => {
   return <li className={`liImage liImage--${index}`}>{slide}</li>;
 });
@@ -34,6 +48,7 @@ export default function OTL() {
         <h1 className="modalHeader">Old Town Lofts</h1>
         <div className="modalSubheading">
           <span className="lilCapsule lilCapsule--OTL">Prototype</span>
+          <ReactCapsule/><NextCapsule/>
         </div>
         <div className="modalContent">
           <div className="modalImagesContainer">
@@ -41,7 +56,7 @@ export default function OTL() {
           </div>
           <h1 className="modalHeaderLower">Old Town Lofts</h1>
           <div className="modalSubheadingLower">
-            <span className="lilCapsule lilCapsule--OTL">Prototype</span>
+            <span className="lilCapsule lilCapsule--OTL">Prototype</span><ReactCapsule/><NextCapsule/>
           </div>
           <div className="modalDetails">
             <p>
@@ -54,8 +69,7 @@ export default function OTL() {
                 garbage website
               </a>
               . This was the proof of concept I presented to them that, for
-              reasons of excessive red tape, could not be adapted for use.
-              <span className="tech"> Tech: React and Next.js.</span>
+              lack of expendable resources, could not be adapted for use.
             </p>
 
             <a

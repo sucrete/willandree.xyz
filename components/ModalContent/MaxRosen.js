@@ -22,7 +22,20 @@ const slides = [
 const imageSlides = slides.map((slide, index) => {
   return <li className={`liImage liImage--${index}`}>{slide}</li>;
 });
-
+function ReactCapsule() {
+  return (
+<span style={{ color: "white", background: "blue", marginLeft: "3px"}}className="lilCapsule lilCapsule--React">
+            React
+          </span>
+  )
+}
+function ReactSpringCapsule() {
+  return (
+<span style={{ color: "white", background: "#ef696c", marginLeft: "3px"}} className="lilCapsule lilCapsule--React">
+            React Spring
+          </span>
+  )
+}
 export default function MaxRosen() {
   return (
     <>
@@ -33,6 +46,8 @@ export default function MaxRosen() {
           <span className="lilCapsule lilCapsule--maxRosen">
             Work In Progress
           </span>
+          <ReactCapsule/>
+          <ReactSpringCapsule/>
         </div>
         <div className="modalContent">
           <div className="modalImagesContainer">
@@ -43,15 +58,13 @@ export default function MaxRosen() {
             <span className="lilCapsule lilCapsule--maxRosen">
               Work In Progress
             </span>
+            <ReactCapsule/>
+            <ReactSpringCapsule/>
           </div>
           <div className="modalDetails">
             <p>
               Personal website for Vice News/Bloomberg Business/Disney+ director
               and editor, Max Rosen.
-              <span className="tech">
-                {" "}
-                Tech: React, react-spring, and react-transition.
-              </span>
             </p>
 
             <a

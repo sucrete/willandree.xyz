@@ -151,8 +151,8 @@ ul li {
 
 .desaturatedBuilding {
   max-height: 90%;
-  -webkit-box-shadow: 0px 1px 0 rgba(227, 240, 223, 0), -1px 1.9px 1px #e3f0df, -2px 3.8px 2px rgba(227, 240, 223, 0.75), -3px 5.7px 3px rgba(227, 240, 223, 0.5), -4px 7.6px 4px rgba(227, 240, 223, 0.375), -5px 9.5px 5px rgba(227, 240, 223, 0.3), -6px 11.4px 6px rgba(227, 240, 223, 0.25), -7px 13.3px 7px rgba(227, 240, 223, 0.214286), -8px 15.2px 8px rgba(227, 240, 223, 0.1875), -9px 17.1px 9px rgba(227, 240, 223, 0.166667), -10px 19px 10px rgba(227, 240, 223, 0.15), -11px 20.9px 11px rgba(227, 240, 223, 0.136364), -12px 22.8px 12px rgba(227, 240, 223, 0.125);
-          box-shadow: 0px 1px 0 rgba(227, 240, 223, 0), -1px 1.9px 1px #e3f0df, -2px 3.8px 2px rgba(227, 240, 223, 0.75), -3px 5.7px 3px rgba(227, 240, 223, 0.5), -4px 7.6px 4px rgba(227, 240, 223, 0.375), -5px 9.5px 5px rgba(227, 240, 223, 0.3), -6px 11.4px 6px rgba(227, 240, 223, 0.25), -7px 13.3px 7px rgba(227, 240, 223, 0.214286), -8px 15.2px 8px rgba(227, 240, 223, 0.1875), -9px 17.1px 9px rgba(227, 240, 223, 0.166667), -10px 19px 10px rgba(227, 240, 223, 0.15), -11px 20.9px 11px rgba(227, 240, 223, 0.136364), -12px 22.8px 12px rgba(227, 240, 223, 0.125);
+  -webkit-box-shadow: 0px 1px 0 rgba(224, 224, 224, 0), -1px 1.9px 1px #e0e0e0, -2px 3.8px 2px rgba(224, 224, 224, 0.75), -3px 5.7px 3px rgba(224, 224, 224, 0.5), -4px 7.6px 4px rgba(224, 224, 224, 0.375), -5px 9.5px 5px rgba(224, 224, 224, 0.3), -6px 11.4px 6px rgba(224, 224, 224, 0.25), -7px 13.3px 7px rgba(224, 224, 224, 0.214286), -8px 15.2px 8px rgba(224, 224, 224, 0.1875), -9px 17.1px 9px rgba(224, 224, 224, 0.166667), -10px 19px 10px rgba(224, 224, 224, 0.15), -11px 20.9px 11px rgba(224, 224, 224, 0.136364), -12px 22.8px 12px rgba(224, 224, 224, 0.125);
+          box-shadow: 0px 1px 0 rgba(224, 224, 224, 0), -1px 1.9px 1px #e0e0e0, -2px 3.8px 2px rgba(224, 224, 224, 0.75), -3px 5.7px 3px rgba(224, 224, 224, 0.5), -4px 7.6px 4px rgba(224, 224, 224, 0.375), -5px 9.5px 5px rgba(224, 224, 224, 0.3), -6px 11.4px 6px rgba(224, 224, 224, 0.25), -7px 13.3px 7px rgba(224, 224, 224, 0.214286), -8px 15.2px 8px rgba(224, 224, 224, 0.1875), -9px 17.1px 9px rgba(224, 224, 224, 0.166667), -10px 19px 10px rgba(224, 224, 224, 0.15), -11px 20.9px 11px rgba(224, 224, 224, 0.136364), -12px 22.8px 12px rgba(224, 224, 224, 0.125);
   border-radius: 2px;
 }
 
@@ -187,8 +187,8 @@ ul li {
           box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8);
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
-  -webkit-box-shadow: 0px 1px 0 rgba(227, 240, 223, 0), -1px 1.9px 1px #e3f0df, -2px 3.8px 2px rgba(227, 240, 223, 0.75), -3px 5.7px 3px rgba(227, 240, 223, 0.5), -4px 7.6px 4px rgba(227, 240, 223, 0.375), -5px 9.5px 5px rgba(227, 240, 223, 0.3), -6px 11.4px 6px rgba(227, 240, 223, 0.25), -7px 13.3px 7px rgba(227, 240, 223, 0.214286), -8px 15.2px 8px rgba(227, 240, 223, 0.1875);
-          box-shadow: 0px 1px 0 rgba(227, 240, 223, 0), -1px 1.9px 1px #e3f0df, -2px 3.8px 2px rgba(227, 240, 223, 0.75), -3px 5.7px 3px rgba(227, 240, 223, 0.5), -4px 7.6px 4px rgba(227, 240, 223, 0.375), -5px 9.5px 5px rgba(227, 240, 223, 0.3), -6px 11.4px 6px rgba(227, 240, 223, 0.25), -7px 13.3px 7px rgba(227, 240, 223, 0.214286), -8px 15.2px 8px rgba(227, 240, 223, 0.1875);
+  -webkit-box-shadow: 0px 1px 0 rgba(217, 217, 217, 0), -1px 1.9px 1px #d9d9d9, -2px 3.8px 2px rgba(217, 217, 217, 0.75), -3px 5.7px 3px rgba(217, 217, 217, 0.5);
+          box-shadow: 0px 1px 0 rgba(217, 217, 217, 0), -1px 1.9px 1px #d9d9d9, -2px 3.8px 2px rgba(217, 217, 217, 0.75), -3px 5.7px 3px rgba(217, 217, 217, 0.5);
 }
 
 .cardContainer .bizCard .quoteBox {
@@ -1090,10 +1090,6 @@ section.info .infoBody .aboutVerbiage--4::after {
           margin-block-end: 0em;
 }
 
-.customModal .modalBody .modalContent .modalDetails p span.tech {
-  color: #757474;
-}
-
 .customModal .modalBody .modalContent .modalDetails p a {
   text-decoration: underline;
   -webkit-text-decoration-color: #bdbdbd;
@@ -1127,10 +1123,12 @@ section.info .infoBody .aboutVerbiage--4::after {
 }
 
 .customModal .modalBody .modalContent .modalDetails .visitButton {
-  padding: 16px 16px 16px 16px;
+  padding: 16px 16px 13px 16px;
   background-color: #f0f0f0;
   color: #5a5a5a;
-  font-family: "drucc";
+  font-family: "Epilogue", sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
   border-radius: 55px;
   border: 1px solid #c5c5c5;
   text-align: center;

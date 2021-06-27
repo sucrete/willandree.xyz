@@ -79,26 +79,39 @@ const slides = [
 const imageSlides = slides.map((slide, index) => {
   return <li className={`liImage liImage--${index}`}>{slide}</li>;
 });
-
+function ReactCapsule() {
+  return (
+<span style={{ color: "white", background: "blue", marginLeft: "3px"}}className="lilCapsule">
+            React
+          </span>
+  )
+}
+function NextCapsule() {
+  return (
+<span style={{ color: "white", background: "black", marginLeft: "3px"}}className="lilCapsule">
+            Next.js
+          </span>
+  )
+}
 export default function DumpTRUCK() {
   return (
     <>
       <div className="projectDesignation">2020</div>
       <div className="modalBody dumpTRUCK">
         <h1 className="modalHeader">dumpTRUCK</h1>
-        <div className="modalSubheading"></div>
+        <div className="modalSubheading"><ReactCapsule/><NextCapsule/></div>
         <div className="modalContent">
           <div className="modalImagesContainer">
             <ul>{imageSlides}</ul>
           </div>
           <h1 className="modalHeaderLower">dumpTRUCK</h1>
-          <div className="modalSubheadingLower" style={{ color: "white" }}>
-            |{" "}
+          <div className="modalSubheadingLower" >
+            <ReactCapsule/> <NextCapsule/>
           </div>
           <div className="modalDetails">
             <p>
               dumpTRUCK was created to serve as a lasting home for a collection
-              of work from a some of the preeminent artists of the "
+              of work from some of the preeminent artists of the "
               <a
                 href="https://www.artspace.com/magazine/interviews_features/trend_report/post_internet_art-52138"
                 target="
@@ -117,7 +130,6 @@ export default function DumpTRUCK() {
               of images sourced from all corners of the web, often "remixing"
               (and "re-remixing") still images and gifs, making for an utterly
               novel form of artistic practice.
-              <span className="tech"> Tech: React and Next.js.</span>
             </p>
 
             <a
