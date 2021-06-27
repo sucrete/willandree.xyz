@@ -2735,6 +2735,10 @@ $smallWidth: 390px;
 
 $xtraSmallWidth: 360px;
 @media screen and (max-width: 415px) {
+  .customModal {
+    overflow-y: hidden;
+
+  }
   .container {
     main {
       height: 2350px;
@@ -2910,6 +2914,12 @@ $xtraSmallWidth: 360px;
 
 $xtraXtraSmallWidth: 340px;
 @media screen and (max-width: 375px) {
+  .customModal {
+    overflow-y: visible;
+  }
+  .modalDetails {
+    padding-bottom: 2rem;
+  }
   .container main {
     height: 2270px;
   }

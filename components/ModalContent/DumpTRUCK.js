@@ -98,7 +98,7 @@ export default function DumpTRUCK() {
           <div className="modalDetails">
             <p>
               dumpTRUCK was created to serve as a lasting home for a collection
-              of work from some of the preeminent artists of the "
+              of work from a some of the preeminent artists of the "
               <a
                 href="https://www.artspace.com/magazine/interviews_features/trend_report/post_internet_art-52138"
                 target="
