@@ -1,3 +1,8 @@
+function VueCapsule() {
+  return (
+    <span className="lilCapsule" style={{color: "white", background: "#54b883", marginLeft: "3px"}}>Vue</span>
+  )
+}
 export default function TheVotersCompanion() {
   return (
     <>
@@ -5,7 +10,8 @@ export default function TheVotersCompanion() {
       <div className="modalBody votersCompanion">
         <h1 className="modalHeader">The Voter's Companion</h1>
         <div className="modalSubheading">
-          <span className="lilCapsule lilCapsule--votr">Unsupported</span>
+        <VueCapsule/><span style={{marginLeft: "3px"}} className="lilCapsule lilCapsule--votr">Unsupported</span>
+          
         </div>
         <div className="modalContent">
           <div className="modalImagesContainer">
@@ -13,7 +19,8 @@ export default function TheVotersCompanion() {
           </div>
           <h1 className="modalHeaderLower">The Voter's Companion</h1>
           <div className="modalSubheadingLower">
-            <span className="lilCapsule lilCapsule--votr">Unsupported</span>
+          <VueCapsule/><span style={{marginLeft: "3px"}} className="lilCapsule lilCapsule--votr">Unsupported</span>
+            
           </div>
           <div className="modalDetails">
             <p>
