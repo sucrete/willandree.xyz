@@ -24,7 +24,7 @@ const imageSlides = slides.map((slide, index) => {
 });
 function ReactCapsule() {
   return (
-<span style={{ color: "white", background: "blue", marginLeft: "3px"}}className="lilCapsule lilCapsule--React">
+<span style={{ color: "white", background: "blue"}}className="lilCapsule lilCapsule--React">
             React
           </span>
   )
@@ -43,11 +43,12 @@ export default function MaxRosen() {
       <div className="modalBody maxRosen">
         <h1 className="modalHeader">maxrosen.town</h1>
         <div className="modalSubheading">
-          <span className="lilCapsule lilCapsule--maxRosen">
-            Work In Progress
-          </span>
+          
           <ReactCapsule/>
           <ReactSpringCapsule/>
+          <span style={{marginLeft: "3px"}}className="lilCapsule lilCapsule--maxRosen">
+            Work In Progress
+          </span>
         </div>
         <div className="modalContent">
           <div className="modalImagesContainer">
@@ -55,11 +56,11 @@ export default function MaxRosen() {
           </div>
           <h1 className="modalHeaderLower">maxrosen.town</h1>
           <div className="modalSubheadingLower">
-            <span className="lilCapsule lilCapsule--maxRosen">
-              Work In Progress
-            </span>
             <ReactCapsule/>
             <ReactSpringCapsule/>
+            <span style={{marginLeft: "3px"}} className="lilCapsule lilCapsule--maxRosen">
+            Work In Progress
+          </span>
           </div>
           <div className="modalDetails">
             <p>

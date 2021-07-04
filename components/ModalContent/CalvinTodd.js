@@ -9,7 +9,7 @@ const imageSlides = slides.map((slide, index) => {
 });
 function WordPressCapsule() {
   return (
-    <span className="lilCapsule" style={{color: "#24180f", background: "#ebe3da"}}>WordPress</span>
+    <span className="lilCapsule" style={{color: "rgb(92, 64, 43)", background: "#ebe3da"}}>WordPress</span>
   )
 }
 export default function CalvinTodd() {

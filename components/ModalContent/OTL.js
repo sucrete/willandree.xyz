@@ -24,7 +24,7 @@ const slides = [
 ];
 function ReactCapsule() {
   return (
-<span style={{ color: "white", background: "blue", marginLeft: "3px"}}className="lilCapsule">
+<span style={{ color: "white", background: "blue", marginLeft: "1px"}}className="lilCapsule">
             React
           </span>
   )
@@ -47,16 +47,15 @@ export default function OTL() {
       <div className="modalBody OTL">
         <h1 className="modalHeader">Old Town Lofts</h1>
         <div className="modalSubheading">
-          <span className="lilCapsule lilCapsule--OTL">Prototype</span>
-          <ReactCapsule/><NextCapsule/>
+          
+          <ReactCapsule/><NextCapsule/><span style={{ marginLeft: "3px"}} className="lilCapsule lilCapsule--OTL">Prototype</span>
         </div>
         <div className="modalContent">
           <div className="modalImagesContainer">
             <ul>{imageSlides}</ul>
           </div>
           <h1 className="modalHeaderLower">Old Town Lofts</h1>
-          <div className="modalSubheadingLower">
-            <span className="lilCapsule lilCapsule--OTL">Prototype</span><ReactCapsule/><NextCapsule/>
+          <div className="modalSubheadingLower"><ReactCapsule/><NextCapsule/><span style={{ marginLeft: "3px"}} className="lilCapsule lilCapsule--OTL">Prototype</span>
           </div>
           <div className="modalDetails">
             <p>

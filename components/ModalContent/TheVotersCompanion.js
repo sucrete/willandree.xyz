@@ -1,6 +1,6 @@
 function VueCapsule() {
   return (
-    <span className="lilCapsule" style={{color: "white", background: "#54b883", marginLeft: "3px"}}>Vue</span>
+    <span className="lilCapsule" style={{color: "white", background: "#54b883", marginLeft: "1px"}}>Vue.js</span>
   )
 }
 export default function TheVotersCompanion() {
@@ -15,7 +15,7 @@ export default function TheVotersCompanion() {
         </div>
         <div className="modalContent">
           <div className="modalImagesContainer">
-            {/* <ul>{imageSlides}</ul> */}
+            <ul><li style={{opacity: "1"}}><img style={{height: "100%", width: "auto"}} src="/votr.svg" className="liImage" alt="Voter's Companion image" /></li></ul>
           </div>
           <h1 className="modalHeaderLower">The Voter's Companion</h1>
           <div className="modalSubheadingLower">

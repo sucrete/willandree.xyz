@@ -81,7 +81,7 @@ const imageSlides = slides.map((slide, index) => {
 });
 function ReactCapsule() {
   return (
-<span style={{ color: "white", background: "blue", marginLeft: "3px"}}className="lilCapsule">
+<span style={{ color: "white", background: "blue", marginLeft: "1px"}}className="lilCapsule">
             React
           </span>
   )

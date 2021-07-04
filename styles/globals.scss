@@ -834,7 +834,7 @@ section.info {
       font-family: "Epilogue";
       font-size: 3.5em;
       margin-block-end: 0rem;
-      line-height: 110%;
+      line-height: 112%;
       margin-block-start: 2.5rem;
       letter-spacing: 0rem;
     }
@@ -845,26 +845,47 @@ section.info {
       font-family: "Epilogue";
       min-height: 23px;
       .lilCapsule {
-        font-size: 0.8rem;
+        font-size: 0.8em;
         font-family: "Epilogue";
         padding: 6px 13px 4px 13px;
         color: $warmBlack;
+        font-weight: 550;
         line-height: 100%;
         border-radius: 50px;
         position: relative;
         bottom: 2px;
         &--OTL {
           background: rgb(141, 255, 211);
-          color: rgb(82, 57, 47);
+          color: rgb(57, 107, 89);
         }
         &--maxRosen {
           color: rgb(83, 81, 33);
-          background-color: rgb(243, 234, 157);
-          // background: url(https://static.wixstatic.com/media/8e71a2_03b74f3a66ff4edf928eedcf5fc84b41~mv2.gif/v1/fill/w_155,h_155,q_90/8e71a2_03b74f3a66ff4edf928eedcf5fc84b41~mv2.gif);
+          background: linear-gradient(
+            114deg,
+            hsl(58.6, 93.48%, 81.96%) 0%,
+            hsl(58.6, 92.95%, 82.12%) 8.1%,
+            hsl(58.59, 91.41%, 82.58%) 15.5%,
+            hsl(58.57, 88.86%, 83.26%) 22.5%,
+            hsl(58.55, 85.28%, 84.11%) 29%,
+            hsl(58.53, 80.59%, 85.07%) 35.3%,
+            hsl(58.5, 74.7%, 86.07%) 41.2%,
+            hsl(58.47, 67.58%, 87.08%) 47.1%,
+            hsl(58.45, 59.2%, 88.07%) 52.9%,
+            hsl(58.42, 49.66%, 88.99%) 58.8%,
+            hsl(58.39, 39.21%, 89.83%) 64.7%,
+            hsl(58.37, 28.35%, 90.56%) 71%,
+            hsl(58.35, 17.83%, 91.16%) 77.5%,
+            hsl(58.34, 8.74%, 91.61%) 84.5%,
+            hsl(58.33, 2.37%, 91.9%) 91.9%,
+            hsl(0, 0%, 92%) 100%
+          );
         }
         &--votr {
           color: red;
-          background: pink;
+          background: url("/unsupportedbg.png");
+          font-weight: 450;
+          background-size: 550%;
+          background-position: center;
         }
       }
     }
@@ -922,7 +943,7 @@ section.info {
         padding-left: 3px;
         font-family: "Epilogue";
         .lilCapsule {
-          font-size: 0.7rem;
+          font-size: 0.5em;
           font-family: "Epilogue";
           padding: 6px 13px 4px 13px;
           color: $warmBlack;
@@ -936,11 +957,31 @@ section.info {
           }
           &--maxRosen {
             color: rgb(83, 81, 33);
-            background-color: rgb(243, 234, 157);
+          background: linear-gradient(
+            114deg,
+            hsl(58.6, 93.48%, 81.96%) 0%,
+            hsl(58.6, 92.95%, 82.12%) 8.1%,
+            hsl(58.59, 91.41%, 82.58%) 15.5%,
+            hsl(58.57, 88.86%, 83.26%) 22.5%,
+            hsl(58.55, 85.28%, 84.11%) 29%,
+            hsl(58.53, 80.59%, 85.07%) 35.3%,
+            hsl(58.5, 74.7%, 86.07%) 41.2%,
+            hsl(58.47, 67.58%, 87.08%) 47.1%,
+            hsl(58.45, 59.2%, 88.07%) 52.9%,
+            hsl(58.42, 49.66%, 88.99%) 58.8%,
+            hsl(58.39, 39.21%, 89.83%) 64.7%,
+            hsl(58.37, 28.35%, 90.56%) 71%,
+            hsl(58.35, 17.83%, 91.16%) 77.5%,
+            hsl(58.34, 8.74%, 91.61%) 84.5%,
+            hsl(58.33, 2.37%, 91.9%) 91.9%,
+            hsl(0, 0%, 92%) 100%
+          );
           }
           &--votr {
             color: red;
-            background: pink;
+            background: url("/unsupportedbg.png");
+            background-size: 550%;
+          background-position: center;
           }
         }
       }
@@ -1174,14 +1215,19 @@ section.info {
           margin-block-end: 1.8rem;
           padding-left: 4rem;
           .lilCapsule {
-            font-size: 0.7rem;
+            font-weight: 550;
+            font-size: 0.7em;
             font-family: "Epilogue";
-            padding: 6px 13px 4px 13px;
+            padding: 6.5px 13px 4px 13px;
             color: $warmBlack;
             line-height: 100%;
             border-radius: 50px;
             position: relative;
             bottom: 2px;
+            &--votr {
+              color: red;
+              font-weight: 470;
+            }
           }
         }
         .modalDetails {
@@ -1207,9 +1253,9 @@ section.info {
       &.maxRosen {
         .modalContent {
           .modalSubheadingLower {
-            .lilCapsule {
-              background: pink;
-            }
+            // .lilCapsule {
+            //   background: pink;
+            // }
           }
         }
       }
@@ -1468,7 +1514,8 @@ section.info {
         .modalSubheadingLower {
           padding-left: 0.5rem;
           font-size: 0.8rem;
-          margin-block-end: 0rem;
+          margin-block-end: .7rem;
+          margin-block-start: .1rem;
           .lilCapsule {
             display: inline-block;
             margin-block-start: 0.2rem;
@@ -3259,6 +3306,7 @@ $xtraXtraXtraSmallWidth: 265px;
             font-size: 0.8rem;
             font-family: "Epilogue";
             padding: 6px 13px 4px 13px;
+            font-weight: 550;
             color: $warmBlack;
             line-height: 100%;
             border-radius: 50px;
@@ -3290,7 +3338,7 @@ $xtraXtraXtraSmallWidth: 265px;
         .modalContent {
           .modalSubheadingLower {
             .lilCapsule {
-              background: pink;
+              // background: pink;
             }
           }
         }
