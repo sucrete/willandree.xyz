@@ -68,8 +68,7 @@ export default function OTL() {
               <a href="https://www.oldtownloftskc.com/" target="_blank">
                 garbage website
               </a>
-              . This was the proof of concept I presented to them that, for
-              lack of expendable resources, could not be adapted for use.
+              . This was the proof of concept I presented to them that, due to budgetary constraints, could not be adapted for use.
             </p>
 
             <a
