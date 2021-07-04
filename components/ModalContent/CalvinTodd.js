@@ -29,7 +29,7 @@ export default function CalvinTodd() {
           </div>
           <div className="modalDetails">
             <p>
-              This site was built to exhibit the various work of maker/singer/song-writer Calvin Todd. Using WordPress, the overall structure, e-commerce functionality, and some out-of-the-box graphic design were created so, even as a layperson, Calvin could readily acclimate to creating his own content.
+              This site was built to exhibit the various work of maker/singer/song-writer Calvin Todd. Using WordPress, the overall structure, e-commerce functionality, and some out-of-the-box graphic design were created so, even as a layperson, Calvin could readily begin creating his own content.
   
             </p>
 

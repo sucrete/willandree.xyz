@@ -61,14 +61,13 @@ export default function OTL() {
           <div className="modalDetails">
             <p>
               Old Town Lofts is a leasing company serving downtown Kansas City.
-              In partnership with the local government they've retrofitted
-              derelict or underutilized buildings as part of a rather successful effort to provide
+              In partnership with the local government Old Town Lofts has retrofitted dozens of underutilized buildings as part of a rather successful effort to provide
               modern, affordable housing for scores of middle-income families.
-              And they have a{" "}
+              And they have an{" "}
               <a href="https://www.oldtownloftskc.com/" target="_blank">
-                garbage website
+                utterly garbage website
               </a>
-              . This was the proof of concept I presented to them that, due to budgetary constraints, could not be adapted for use.
+              . This was the prototype I presented to them that, due to a number of constraints, could not be adapted for use. 🙁
             </p>
 
             <a
