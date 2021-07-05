@@ -1,6 +1,6 @@
 function VueCapsule() {
   return (
-    <span className="lilCapsule" style={{color: "white", background: "#54b883", marginLeft: "1px"}}>Vue.js</span>
+    <span className="lilCapsule" style={{color: "white", background: "#54b883"}}>Vue.js</span>
   )
 }
 export default function TheVotersCompanion() {
@@ -24,10 +24,7 @@ export default function TheVotersCompanion() {
           </div>
           <div className="modalDetails">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-              impedit numquam praesentium recusandae blanditiis quia sequi,
-              repellat vel consectetur autem labore earum libero, quod minima
-              culpa optio sapiente expedita alias!
+            Originally created to display my acumen as a developer, The Voter's Companion quickly evolved in to an undertaking of great personal significance. In response to the scarcity of basic voting information - such as when and where to vote, voting requirements and eligibility, who one's representatives are, and registering to vote online - I created this "pamphlet"
             </p>
 
             <a
