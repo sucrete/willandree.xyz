@@ -8,7 +8,7 @@ function getWindowDimensions() {
   const { innerHeight: height, innerWidth: width } = window;
   if (height > 800) return { titleDelay: 2000, bodyDelay: 2110 };
   if (width < 417) return { titleDelay: 700, bodyDelay: 810 };
-  return { titleDelay: 200, bodyDelay: 310 };
+  return { titleDelay: 200, bodyDelay: 320 };
 }
 import Education from "./Education";
 

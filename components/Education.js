@@ -3,9 +3,14 @@ import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 import window from "global";
 
+// function getWindowDimensions() {
+//   const { innerWidth: width } = window;
+//   return width;
+// }
 function getWindowDimensions() {
-  const { innerWidth: width } = window;
-  return width;
+  const { innerHeight: height, innerWidth: width } = window;
+  if (height > 800) return { width: width, edDelay: 2100};
+  return { width: width, edDelay: 700 };
 }
 function EducationComponent() {
 return (
@@ -57,7 +62,7 @@ function DesktopEducation(props) {
   const trail = useTrail(1, {
     config: { mass: 5, tension: 2200, friction: 500 },
     opacity: props.youInView ? 1 : 0,
-    delay: 700,
+    delay: props._delay,
     x: props.youInView ? 0 : 20,
     from: { opacity: 0, x: 20 },
   });
@@ -81,7 +86,7 @@ export default function Education() {
     threshold: 0.4,
     triggerOnce: true,
   });
-  const [width, setWindowDimensions] = useState(getWindowDimensions());
+  const [widthTiming, setWindowDimensions] = useState(getWindowDimensions());
 
   useEffect(() => {
     addEventListeners();
@@ -100,7 +105,7 @@ export default function Education() {
   
   return (
     <div ref={ref} className="education">
-      {width < 1090 ? <MobileEducation dudeYouInView={inView}/> : <DesktopEducation youInView={inView}/>}
+      {widthTiming.width < 1090 ? <MobileEducation dudeYouInView={inView} _delay={widthTiming.edDelay}/> : <DesktopEducation _delay={widthTiming.edDelay} youInView={inView}/>}
     </div>
   );
 }
