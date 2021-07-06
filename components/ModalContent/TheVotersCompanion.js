@@ -24,7 +24,7 @@ export default function TheVotersCompanion() {
           </div>
           <div className="modalDetails">
             <p>
-            Originally created to display my acumen as a developer, The Voter's Companion quickly evolved in to an undertaking of great personal significance. In response to the scarcity of basic voting information - such as when and where to vote, voting requirements and eligibility, who one's representatives are, and registering to vote online - I created this "pamphlet"
+            Originally created to display my acumen as a developer, The Voter's Companion soon became an undertaking of great personal significance. In response to the scarcity of basic voting information - such as when and where to vote, requirements to vote, who one's representatives are, and how to register to vote online - I made this app to centralize these services online. Made with generous cooperation from the U.S. Vote Foundation (and their API) The Voter's Companion became, in one way or another, a powerful tool of public utility.
             </p>
 
             <a
