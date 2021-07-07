@@ -33,13 +33,13 @@ export default function CalvinTodd() {
   
             </p>
 
-            <a
+            {/* <a
               className="visitButton"
               href="https://www.calvintodd.com"
               target="_blank"
             >
               visit
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
