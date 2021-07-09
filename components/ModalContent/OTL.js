@@ -1,8 +1,8 @@
 function ACard() {
   return (
     <div className="parentCardContainer">
-      <div class="cardContainer">
-        <div class="bizCard">
+      <div className="cardContainer">
+        <div className="bizCard">
           <img src="/corner.svg" className="corner TL" />
           <img src="/corner.svg" className="corner TR" />
           <img src="/corner.svg" className="corner BL" />
@@ -37,7 +37,7 @@ function NextCapsule() {
   )
 }
 const imageSlides = slides.map((slide, index) => {
-  return <li className={`liImage liImage--${index}`}>{slide}</li>;
+  return <li key={`imagesforOTL--${index}`} className={`liImage liImage--${index}`}>{slide}</li>;
 });
 export default function OTL() {
   return (

@@ -1711,6 +1711,9 @@ section.info .infoBody .aboutVerbiage--4::after {
 }
 
 @media screen and (max-width: 414px) {
+  .customModal {
+    overflow-y: visible;
+  }
   .customModal .modalBody {
     padding: 0rem 1rem 0rem 1rem;
     height: unset;
@@ -2848,9 +2851,6 @@ section.info .infoBody .aboutVerbiage--4::after {
 }
 
 @media screen and (max-width: 415px) {
-  .customModal {
-    overflow-y: hidden;
-  }
   .container main {
     height: 2350px;
   }

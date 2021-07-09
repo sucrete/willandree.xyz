@@ -1492,7 +1492,7 @@ section.info {
 // ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝     ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝         ╚═╝ ╚═╝ ╚═╝╚═╝     ╚═╝  ╚═╝         ╚═╝
 @media screen and (max-width: 414px) {
   .customModal {
-    // overflow-y: hidden;
+    overflow-y: visible;
     .modalBody {
       padding: 0rem 1rem 0rem 1rem;
       // overflow-y: hidden;
@@ -2782,7 +2782,7 @@ $smallWidth: 390px;
 $xtraSmallWidth: 360px;
 @media screen and (max-width: 415px) {
   .customModal {
-    overflow-y: hidden;
+    // overflow-y: hidden;
 
   }
   .container {

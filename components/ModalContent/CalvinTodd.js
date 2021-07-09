@@ -5,7 +5,7 @@ const slides = [
   <img src="/CalLeather.png" />,
 ];
 const imageSlides = slides.map((slide, index) => {
-  return <li className={`liImage liImage--${index}`}>{slide}</li>;
+  return <li key={`imagesforCal--${index}`} className={`liImage liImage--${index}`}>{slide}</li>;
 });
 function WordPressCapsule() {
   return (

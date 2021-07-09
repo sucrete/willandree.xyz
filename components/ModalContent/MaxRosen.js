@@ -1,10 +1,10 @@
 function MaxPic() {
   return (
-    <div class="frame__outside">
-      <div class="frame__inside">
-        <div class="matte">
+    <div className="frame__outside">
+      <div className="frame__inside">
+        <div className="matte">
           <div
-            class="picture"
+            className="picture"
             style={{
               backgroundImage: `url("/spaceMax.jpg")`,
             }}
@@ -20,7 +20,7 @@ const slides = [
   <MaxPic />,
 ];
 const imageSlides = slides.map((slide, index) => {
-  return <li className={`liImage liImage--${index}`}>{slide}</li>;
+  return <li key={`imagesforMax--${index}`} className={`liImage liImage--${index}`}>{slide}</li>;
 });
 function ReactCapsule() {
   return (
