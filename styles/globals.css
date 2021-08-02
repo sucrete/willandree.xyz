@@ -280,82 +280,30 @@ section.navigation .name .nameItem {
   position: relative;
 }
 
-section.navigation .name:before {
+section.navigation .name .nameItem--3 {
   position: absolute;
-  bottom: -15px;
-  left: -3px;
-  height: 1px;
-  content: "";
-  -webkit-transition: 1.4s;
-  transition: 1.4s;
-  background-color: #ffffff94;
-  -webkit-animation: 700ms lineAnim ease;
-          animation: 700ms lineAnim ease;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 1800ms;
-          animation-delay: 1800ms;
-}
-
-@-webkit-keyframes lineAnim {
-  from {
-    opacity: 0;
-    width: 0px;
-  }
-  50% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    width: 97%;
-  }
-}
-
-@keyframes lineAnim {
-  from {
-    opacity: 0;
-    width: 0px;
-  }
-  50% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    width: 97%;
-  }
-}
-
-section.navigation ul {
-  position: absolute;
-  right: 15px;
+  right: 20px;
   bottom: 0px;
   height: 100%;
   width: 100%;
-  -webkit-animation: 700ms coneAnim ease;
-          animation: 700ms coneAnim ease;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 2200ms;
-          animation-delay: 2200ms;
-  opacity: 0;
 }
 
-section.navigation ul .liImage--0 {
+section.navigation .name .nameItem--3 ul .liImage--0 {
   -webkit-animation: xfade--navigation 20.76s 0s infinite;
           animation: xfade--navigation 20.76s 0s infinite;
 }
 
-section.navigation ul .liImage--1 {
+section.navigation .name .nameItem--3 ul .liImage--1 {
   -webkit-animation: sixNine--navigation 0.69s 4.5s forwards, xfade--navigation 20.76s 5.19s infinite;
           animation: sixNine--navigation 0.69s 4.5s forwards, xfade--navigation 20.76s 5.19s infinite;
 }
 
-section.navigation ul .liImage--2 {
+section.navigation .name .nameItem--3 ul .liImage--2 {
   -webkit-animation: sixNine--navigation 0.69s 9.69s forwards, xfade--navigation 20.76s 10.38s infinite;
           animation: sixNine--navigation 0.69s 9.69s forwards, xfade--navigation 20.76s 10.38s infinite;
 }
 
-section.navigation ul .liImage--3 {
+section.navigation .name .nameItem--3 ul .liImage--3 {
   -webkit-animation: sixNine--navigation 0.69s 14.88s forwards, xfade--navigation 20.76s 15.57s infinite;
           animation: sixNine--navigation 0.69s 14.88s forwards, xfade--navigation 20.76s 15.57s infinite;
 }
@@ -414,36 +362,59 @@ section.navigation ul .liImage--3 {
   }
 }
 
-section.navigation ul li {
+section.navigation .name .nameItem--3 ul li {
   position: absolute;
   font-family: "corporate condensed regular";
   font-size: 2.3rem;
-  right: 10px;
-  bottom: 54px;
+  right: 18px;
+  bottom: 00px;
   opacity: 0;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }
 
-@-webkit-keyframes coneAnim {
+section.navigation .name:before {
+  position: absolute;
+  bottom: -15px;
+  left: -3px;
+  height: 1px;
+  content: "";
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+  background-color: #ffffff94;
+  -webkit-animation: 700ms lineAnim ease;
+          animation: 700ms lineAnim ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+}
+
+@-webkit-keyframes lineAnim {
   from {
     opacity: 0;
-    bottom: 4px;
+    width: 0px;
+  }
+  50% {
+    opacity: 0;
   }
   to {
     opacity: 1;
-    bottom: 0px;
+    width: 97%;
   }
 }
 
-@keyframes coneAnim {
+@keyframes lineAnim {
   from {
     opacity: 0;
-    bottom: 4px;
+    width: 0px;
+  }
+  50% {
+    opacity: 0;
   }
   to {
     opacity: 1;
-    bottom: 0px;
+    width: 97%;
   }
 }
 
@@ -1737,10 +1708,10 @@ section.info .infoBody .aboutVerbiage--4::after {
   .customModal .modalBody .modalContent .modalSubheadingLower {
     padding-left: 0.5rem;
     font-size: 0.8rem;
-    -webkit-margin-after: .7rem;
-            margin-block-end: .7rem;
-    -webkit-margin-before: .1rem;
-            margin-block-start: .1rem;
+    -webkit-margin-after: 0.7rem;
+            margin-block-end: 0.7rem;
+    -webkit-margin-before: 0.1rem;
+            margin-block-start: 0.1rem;
   }
   .customModal .modalBody .modalContent .modalSubheadingLower .lilCapsule {
     display: inline-block;
@@ -1985,6 +1956,9 @@ section.info .infoBody .aboutVerbiage--4::after {
   section.navigation .name {
     left: 0px;
   }
+  section.navigation .name .nameItem--3 ul li {
+    right: -13px;
+  }
   section.navigation .name:before {
     height: 1px;
     -webkit-animation: 700ms lineAnim77 ease;
@@ -2019,15 +1993,6 @@ section.info .infoBody .aboutVerbiage--4::after {
       opacity: 1;
       width: 100%;
     }
-  }
-  section.navigation ul {
-    -webkit-animation-delay: 2000ms;
-            animation-delay: 2000ms;
-    right: 10px;
-  }
-  section.navigation ul li {
-    right: 0px;
-    bottom: 29px;
   }
   section.header {
     width: 750px;
@@ -2352,13 +2317,12 @@ section.info .infoBody .aboutVerbiage--4::after {
     left: 0px;
     font-size: 2rem;
   }
-  section.navigation ul {
+  section.navigation .name .nameItem--3 ul {
     font-size: 2.2rem;
-    -webkit-animation-delay: 1200ms;
-            animation-delay: 1200ms;
   }
-  section.navigation ul li {
+  section.navigation .name .nameItem--3 ul li {
     font-size: 2rem;
+    right: -23px;
   }
   section.header {
     width: 650px;
@@ -2472,9 +2436,14 @@ section.info .infoBody .aboutVerbiage--4::after {
     padding-top: 0rem;
   }
   section.navigation .name {
-    font-size: 2rem;
     line-height: 1.5;
     padding-top: 0.5rem;
+  }
+  section.navigation .name .nameItem--3 ul {
+    font-size: 1.25rem;
+  }
+  section.navigation .name .nameItem--3 ul li {
+    font-size: 1.5rem;
   }
   section.navigation .name:before {
     left: 0px;
@@ -2512,14 +2481,6 @@ section.info .infoBody .aboutVerbiage--4::after {
       opacity: 1;
       width: 100%;
     }
-  }
-  section.navigation ul {
-    font-size: 1.25rem;
-    right: 0px;
-  }
-  section.navigation ul li {
-    font-size: 2rem;
-    bottom: 32.5px;
   }
   section.header {
     width: 535px;
@@ -2866,14 +2827,8 @@ section.info .infoBody .aboutVerbiage--4::after {
     font-size: 1.4rem;
     line-height: 1.8;
   }
-  section.navigation ul {
-    font-size: 0.75rem;
-    -webkit-animation-delay: 1000ms;
-            animation-delay: 1000ms;
-  }
-  section.navigation ul li {
+  section.navigation span.name .nameItem--3 ul li {
     font-size: 1.4rem;
-    bottom: 37px;
   }
   section.header {
     width: 360px;
@@ -3118,6 +3073,9 @@ section.info .infoBody .aboutVerbiage--4::after {
     padding-top: 0.1rem;
     font-size: 1rem;
   }
+  section.navigation span.name span.nameItem--3 ul li {
+    font-size: 1rem;
+  }
   section.navigation span.name:before {
     -webkit-animation: 700ms lineAnim77 ease;
             animation: 700ms lineAnim77 ease;
@@ -3151,10 +3109,6 @@ section.info .infoBody .aboutVerbiage--4::after {
       opacity: 1;
       width: 100%;
     }
-  }
-  section.navigation ul li {
-    font-size: 1rem;
-    bottom: 7px;
   }
   section.header {
     width: 265px;

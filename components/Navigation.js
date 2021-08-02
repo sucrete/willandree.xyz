@@ -2,18 +2,22 @@ import { useTrail, animated } from "react-spring";
 import window from "global";
 
 const underSixHundo = 650 > window.innerWidth;
+
 const meList = [
   "front-end developer",
   "graphic designer",
   "ux designer",
   "student of novelty",
 ];
+
 const aboutMeList = meList.map((item, index) => (
-  <li key={`liItem--${index}`}className={`liImage liImage--${index}`}>{item}</li>
+  <li key={`liItem--${index}`} className={`liImage liImage--${index}`}>
+    {item}
+  </li>
 ));
+
 export default function Navigation() {
-  const fullName = "Wm. Andrée";
-  const splitName = fullName.split(" ");
+  const splitName = ["Wm. ", "Andrée", <span> </span>, <ul>{aboutMeList}</ul>];
   const trail = useTrail(splitName.length, {
     config: { mass: 5, tension: 2200, friction: 200 },
     opacity: 1,
@@ -34,11 +38,9 @@ export default function Navigation() {
             }}
           >
             {splitName[index]}
-            <span> </span>
           </animated.span>
         ))}
       </span>
-      <ul>{aboutMeList}</ul>
     </section>
   );
 }
