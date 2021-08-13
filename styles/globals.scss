@@ -531,7 +531,7 @@ section.favorites {
       flex-direction: column;
       // justify-content: space-between;
       position: relative;
-      z-index: 2;
+      z-index: 20;
       height: 100%;
       transform: translate(-20px, 27px);
       div.boxItem {
@@ -580,7 +580,7 @@ section.favorites {
               font-weight: 100;
               a {
                 text-decoration: underline;
-                text-decoration-color: #ffffff49;
+                text-decoration-color: transparent;
                 color: $favoritesColor;
                 z-index: 12;
                 &:visited {
@@ -589,7 +589,6 @@ section.favorites {
                 &:hover {
                   color: #97b3f0;
                   text-decoration-color: #97b3f05d;
-                  cursor: none;
                 }
               }
             }
@@ -645,7 +644,7 @@ section.info {
   height: auto;
   // overflow: visible;
   transform: translateY(-35rem);
-  z-index: 99;
+  z-index: 20;
   .infoBody {
     width: 450px;
     margin-left: 2.5rem;
@@ -1976,7 +1975,8 @@ section.info {
                 li {
                   font-size: 2.65rem;
                   a {
-                    text-decoration-thickness: 2px;
+                    text-decoration-thickness: 3px;
+                    text-decoration-color: #ffffff49;
                   }
                 }
               }
