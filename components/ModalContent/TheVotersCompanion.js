@@ -4,7 +4,7 @@ function VueCapsule() {
       className="lilCapsule"
       style={{ color: "white", background: "#54b883" }}
     >
-      Vue.js
+      Vue
     </span>
   );
 }
@@ -18,6 +18,12 @@ export default function TheVotersCompanion() {
           <VueCapsule />
           <span
             style={{ marginLeft: "3px" }}
+            className="lilCapsule lilCapsule--vuetify"
+          >
+            Vuetify
+          </span>
+          <span
+            style={{ marginLeft: "3px" }}
             className="lilCapsule lilCapsule--votr"
           >
             Unsupported
@@ -29,7 +35,7 @@ export default function TheVotersCompanion() {
               <li style={{ opacity: "1" }}>
                 <img
                   style={{ height: "100%", width: "auto" }}
-                  src="/votr.svg"
+                  src="/Votr2.png"
                   className="liImage"
                   alt="Voter's Companion image"
                 />
@@ -53,7 +59,7 @@ export default function TheVotersCompanion() {
               response to the scarcity of basic voting information - such as
               when and where to vote, requirements to vote, who one's
               representatives are, and where to register to vote online - this
-              app was made to centralize these services. With generous
+              app was developed to centralize these services. With generous
               cooperation from the U.S. Vote Foundation (and their API) The
               Voter's Companion became, in one way or another, a powerful tool
               of public utility.

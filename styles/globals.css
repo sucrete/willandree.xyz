@@ -947,6 +947,12 @@ section.info .infoBody .aboutVerbiage--4::after {
   background-position: center;
 }
 
+.customModal .modalBody .modalSubheading .lilCapsule--vuetify {
+  color: #ebf7ff;
+  background: #2a98f6;
+  font-weight: 450;
+}
+
 .customModal .modalBody .modalContent {
   height: 500px;
   position: relative;
