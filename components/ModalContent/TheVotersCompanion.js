@@ -46,7 +46,12 @@ export default function TheVotersCompanion() {
           <div className="modalSubheadingLower">
             <VueCapsule />
             <span
-              style={{ marginLeft: "3px" }}
+              style={{
+                marginLeft: "3px",
+                color: "#ebf7ff",
+                background: "#2a98f6",
+                fontWeight: "450",
+              }}
               className="lilCapsule lilCapsule--vuetify"
             >
               Vuetify

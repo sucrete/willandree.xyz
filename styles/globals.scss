@@ -767,7 +767,11 @@ section.info {
 // ██║╚██╔╝██║██║   ██║██║  ██║██╔══██║██║         ╚════██║   ██║     ╚██╔╝  ██║     ██║██║╚██╗██║██║   ██║    ╚════╝██╔╝
 // ██║ ╚═╝ ██║╚██████╔╝██████╔╝██║  ██║███████╗    ███████║   ██║      ██║   ███████╗██║██║ ╚████║╚██████╔╝         ██╔╝
 // ╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝          ╚═╝
-
+.lilCapsule--vuetify {
+  color: #ebf7ff;
+  background: #2a98f6;
+  font-weight: 450;
+}
 .customOverlay {
   background: rgba(41, 36, 25, 0.089) !important;
   backdrop-filter: blur(7px);
@@ -1337,16 +1341,12 @@ section.info {
         }
         .modalSubheadingLower {
           padding-left: 1rem;
-          .lilCapsule {
-          }
         }
         .modalDetails {
           padding: 0rem 1rem 2rem 1rem;
           width: 100%;
           p {
             font-size: 1.4rem;
-          }
-          .visitButton {
           }
         }
       }
