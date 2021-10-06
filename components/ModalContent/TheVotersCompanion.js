@@ -47,6 +47,12 @@ export default function TheVotersCompanion() {
             <VueCapsule />
             <span
               style={{ marginLeft: "3px" }}
+              className="lilCapsule lilCapsule--vuetify"
+            >
+              Vuetify
+            </span>
+            <span
+              style={{ marginLeft: "3px" }}
               className="lilCapsule lilCapsule--votr"
             >
               Unsupported
