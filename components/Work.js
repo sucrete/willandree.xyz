@@ -19,14 +19,14 @@ import OTLContent from "./ModalContent/OTL";
 import VOTRContent from "./ModalContent/TheVotersCompanion";
 
 const work = [
-  "dumpTRUCK",
+  "The Voter's Companion",
   "maxrosen.town",
   "Old Town Lofts",
+  "dumpTRUCK",
   "calvintodd.com",
-  "The Voter's Companion",
 ];
 const tittle = ["select work"];
-const modals = ["dt", "mr", "otl", "cal", "votr", "wil"];
+const modals = ["votr", "mr", "otl", "dt", "cal"];
 
 export default function Work() {
   const [dumpTRUCK, setDumpTRUCK] = useState(false);
@@ -163,9 +163,8 @@ export default function Work() {
         </div>
         <Education />
       </div>
-
-      <MyModal bool={dumpTRUCK} closeFunction={functions.dt.c}>
-        <DumpTRUCKContent />
+      <MyModal bool={votr} closeFunction={functions.votr.c}>
+        <VOTRContent />
       </MyModal>
       <MyModal bool={maxRosen} closeFunction={functions.mr.c}>
         <MaxContent />
@@ -176,8 +175,8 @@ export default function Work() {
       <MyModal bool={calvin} closeFunction={functions.cal.c}>
         <CalvinContent />
       </MyModal>
-      <MyModal bool={votr} closeFunction={functions.votr.c}>
-        <VOTRContent />
+      <MyModal bool={dumpTRUCK} closeFunction={functions.dt.c}>
+        <DumpTRUCKContent />
       </MyModal>
     </section>
   );

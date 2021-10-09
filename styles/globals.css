@@ -2093,7 +2093,7 @@ section.info .infoBody .aboutVerbiage--4::after {
   section.work div.workContainer div.workBody span.workItemContainer span:hover:after {
     opacity: 0;
   }
-  section.work div.workContainer div.workBody span.workItemContainer.dtContainer span {
+  section.work div.workContainer div.workBody span.workItemContainer.votrContainer span {
     border-top: solid 1px #ffffff94;
   }
   section.work div.workContainer div.education {
